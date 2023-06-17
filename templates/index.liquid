@@ -1,7 +1,21 @@
-<h1>Floristeria Cardo</h1>
 <header>
   <img
     src="{{ settings.logo.src | img_url }}"
     alt="{{ settings.logo.alt }}"
     class="" />
+  <nav></nav>
 </header>
+
+
+{% schema %}
+  {
+    "name": "Header",
+    "settings": [
+      {
+        "type": "link_list",
+        "id": "main-menu",
+        "label": "Menu principal del encabezado"
+      }
+    ]
+  }
+{% endschema %}
