@@ -1,6 +1,14 @@
 {
   "current": {
     "logo": "shopify:\/\/shop_images\/LOGO.png",
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "main-menu": "main-menu"
+        }
+      }
+    },
     "content_for_index": [
 
     ]
