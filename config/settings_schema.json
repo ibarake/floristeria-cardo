@@ -6,5 +6,15 @@
     "theme_author": "Kymbo devs",
     "theme_documentation_url": "https://help.shopify.com/manual/online-store/themes",
     "theme_support_url": "https://support.shopify.com/"
+  },
+  {
+    "name": "Logo",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "logo",
+        "label": "Image"
+      }
+    ]
   }
 ]
