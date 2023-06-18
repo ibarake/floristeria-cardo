@@ -54,7 +54,7 @@ header button.add-to-cart svg{
 header button.add-to-cart {
     display: flex;
     flex-direction: row;
-    width: 70px;
+    max-width: 100px;
     align-items: center;
     justify-content: center;
     background-color: #F7F0E2;
