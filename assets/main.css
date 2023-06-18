@@ -45,6 +45,10 @@ header button.add-to-cart svg{
     margin-right: 5px;
 }
 
+header button.add-to-cart p.add-to-cart-text{
+    margin-right: 5px;
+}
+
 nav ul li a.menu-link{
     font-size: 14px;
     margin: 0 25px;
