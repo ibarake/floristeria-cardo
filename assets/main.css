@@ -39,6 +39,7 @@ nav ul{
 
 nav ul li{
     font-size: 12px;
+    width: fit-content;
 }
 
 nav ul li a.menu-link{
