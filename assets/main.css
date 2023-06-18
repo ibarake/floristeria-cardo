@@ -48,7 +48,7 @@ nav ul li a.menu-link{
 header button.add-to-cart {
     display: flex;
     flex-direction: row;
-    width: 50px;
+    width: 70px;
     align-items: center;
     justify-content: center;
     background-color: #F7F0E2;
