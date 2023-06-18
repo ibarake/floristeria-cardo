@@ -46,6 +46,9 @@ nav ul li{
 }
 
 nav ul li a.menu-link{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     font-size: 14px;
     margin: 0 15px;
     color: #9F9F9F;
@@ -76,12 +79,6 @@ svg{
 
 .mega-menu{
     display: none;
-}
-
-.menu-link{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
 }
 
 header button.add-to-cart p.add-to-cart-text{
