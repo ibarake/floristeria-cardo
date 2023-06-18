@@ -40,6 +40,9 @@ nav ul{
 }
 
 nav ul li{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     width: fit-content;
 }
 
