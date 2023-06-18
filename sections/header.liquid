@@ -5,9 +5,9 @@
     class="header-logo" />
 
   <nav class="navigation-menu">
-    <ul>
+    <ul class="menu-items">
       {% for link in section.settings.main-menu.links %}
-        <li>
+        <li class="menu-item {% if link.links != blank %}has-mega-menu{% endif %}">
           <a href="{{ link.url }}" class="menu-link">
             <span class="menu-link-title">{{ link.title }}</span>
             {% if link.links != blank %}

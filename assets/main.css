@@ -58,10 +58,6 @@ nav ul li a.menu-link{
     white-space: nowrap;
 }
 
-nav div.mega-menu-item{
-    position: absolute;
-}
-
 nav p.menu-link-title{
     width: fit-content;
 }
@@ -85,7 +81,13 @@ svg{
 
 .mega-menu{
     display: none;
+    position: absolute;
 }
+
+.has-mega-menu:hover .mega-menu {
+    display: block;
+}
+  
 
 header button.add-to-cart p.add-to-cart-text{
     width: fit-content;
