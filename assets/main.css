@@ -23,3 +23,7 @@ nav ul{
     align-items: center;
     justify-content: center;
 }
+
+nav ul li{
+    font-size: 12px;
+}
