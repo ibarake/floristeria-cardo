@@ -55,4 +55,6 @@ header button.add-to-cart {
     align-items: center;
     justify-content: center;
     background-color: #F7F0E2;
+    border: none;
+    padding: 15px 20px 15px 20px;
 }
