@@ -61,6 +61,10 @@ nav div.mega-menu-item{
     position: absolute;
 }
 
+nav p.menu-link-title{
+    width: fit-content;
+}
+
 header button.add-to-cart {
     display: flex;
     flex-direction: row;
