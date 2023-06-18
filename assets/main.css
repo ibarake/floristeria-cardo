@@ -74,6 +74,10 @@ svg{
     margin: 0;
 }
 
+.mega-menu{
+    display: none;
+}
+
 header button.add-to-cart p.add-to-cart-text{
     width: fit-content;
     padding: 0 5px;
