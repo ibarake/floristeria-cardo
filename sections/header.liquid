@@ -3,7 +3,17 @@
     src="{{ settings.logo.src | img_url }}"
     alt="{{ settings.logo.alt }}"
     class="" />
-  <nav></nav>
+
+  <nav>
+    <ul>
+      {% for link in section.settings.main-menu.values %}
+        <li>
+          <a href="{{ link.url }}" class="menu-link">{{ link.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+
 </header>
 
 
