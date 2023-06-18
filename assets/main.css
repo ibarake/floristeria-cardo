@@ -20,8 +20,9 @@ header {
 header img.header-logo{
     align-self: center;
     justify-self: end;
+    max-height: 90px;
     width: auto;
-    height: auto;
+    height: 90px;
 }
 
 nav {
