@@ -94,6 +94,7 @@ svg{
 .mega-menu-item{
     padding: 10px 20px;
     border-bottom: solid 1px #9f9f9f;
+    width: fit-content;
 }
 
 header button.add-to-cart p.add-to-cart-text{
