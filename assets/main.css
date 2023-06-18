@@ -4,6 +4,7 @@ header {
     flex-wrap: nowrap;
     justify-content: space-between;
     width: 100%;
+    background-color: #F7F0E2;
 }
 
 nav ul{
