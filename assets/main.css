@@ -83,6 +83,7 @@ svg{
     display: none;
     position: absolute;
     width: fit-content;
+    padding: 10px 20px;
     background-color: red;
 }
 
