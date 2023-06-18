@@ -43,11 +43,9 @@ nav ul li{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    width: fit-content;
 }
 
 nav ul li a.menu-link{
-    width: fit-content;
     font-size: 14px;
     margin: 0 15px;
     color: #9F9F9F;
