@@ -18,6 +18,7 @@ header {
 }
 
 header img.header-logo{
+    align-self: end;
     width: auto;
     height: auto;
 }
@@ -41,14 +42,10 @@ nav ul li{
 }
 
 nav ul li a.menu-link{
-    font-size: 16px;
+    font-size: 14px;
     margin: 0 25px;
     color: #9F9F9F;
     text-decoration: none;
-}
-
-header button.add-to-cart svg{
-    size: 20px;
 }
 
 header button.add-to-cart {
