@@ -9,13 +9,14 @@ header {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
     align-items: center;
+    justify-content: center;
     width: 100%;
     background-color: #F7F0E2;
     height: 85px;
     padding: 5px 20px;
 }
 
-header img{
+header img.header-logo{
     width: auto;
     height: auto;
     max-height: 70px;
