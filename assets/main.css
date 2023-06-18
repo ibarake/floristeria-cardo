@@ -61,6 +61,7 @@ header button.add-to-cart {
 }
 
 header button.add-to-cart svg{
+    width: fit-content;
     margin: 0;
 }
 
