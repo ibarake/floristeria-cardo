@@ -45,6 +45,7 @@ nav ul li{
 
 nav ul li a.menu-link{
     width: fit-content;
+    font-size: 14px;
     margin: 0 15px;
     color: #9F9F9F;
     text-decoration: none;
