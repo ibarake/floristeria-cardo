@@ -91,7 +91,10 @@ svg{
 .has-mega-menu:hover .mega-menu {
     display: block;
 }
-  
+
+.mega-menu-item{
+    border-bottom: solid 1px #9f9f9f;
+}
 
 header button.add-to-cart p.add-to-cart-text{
     width: fit-content;
