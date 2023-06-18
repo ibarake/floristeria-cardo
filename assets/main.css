@@ -83,7 +83,6 @@ svg{
     display: none;
     position: absolute;
     width: fit-content;
-    padding: 10px 20px;
     background-color: #fff;
     margin-top: 16px;
 }
@@ -93,6 +92,7 @@ svg{
 }
 
 .mega-menu-item{
+    padding: 10px 20px;
     border-bottom: solid 1px #9f9f9f;
 }
 
