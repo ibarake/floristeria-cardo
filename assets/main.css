@@ -29,7 +29,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
 }
 
 nav ul{
@@ -49,6 +48,7 @@ nav ul li a.menu-link{
     margin: 0 25px;
     color: #9F9F9F;
     text-decoration: none;
+    text-align: center;
 }
 
 header button.add-to-cart {
