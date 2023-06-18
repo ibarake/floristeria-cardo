@@ -9,7 +9,7 @@
       {% for link in section.settings.main-menu.links %}
         <li>
           <a href="{{ link.url }}" class="menu-link">
-            {{ link.title }}
+            <p class="menu-link-title">{{ link.title }}</p>
             {% if link.links %}
               {% render 'icon-arrow-down' %}
             {% endif %}
