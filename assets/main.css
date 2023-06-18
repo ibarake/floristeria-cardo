@@ -85,7 +85,7 @@ svg{
     width: fit-content;
     padding: 10px 20px;
     background-color: red;
-    top: 14px;
+    margin-top: 14px;
 }
 
 .has-mega-menu:hover .mega-menu {
