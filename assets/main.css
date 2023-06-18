@@ -40,7 +40,7 @@ nav ul li{
     margin: 0px 10px;
 }
 
-header button.menu-link {
+header button.add-to-cart {
     display: flex;
     flex-direction: row;
     width: 100%;
