@@ -8,6 +8,7 @@
 header {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
+    align-items: center;
     width: 100%;
     background-color: #F7F0E2;
     height: 85px;
