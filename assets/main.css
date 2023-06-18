@@ -55,6 +55,10 @@ nav ul li a.menu-link{
     white-space: nowrap;
 }
 
+nav div.mega-menu-item{
+    position: absolute;
+}
+
 header button.add-to-cart {
     display: flex;
     flex-direction: row;

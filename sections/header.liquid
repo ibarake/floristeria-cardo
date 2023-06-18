@@ -8,7 +8,23 @@
     <ul>
       {% for link in section.settings.main-menu.links %}
         <li>
-          <a href="{{ link.url }}" class="menu-link">{{ link.title }}{% render 'icon-arrow-down' %}</a>
+          <a href="{{ link.url }}" class="menu-link">
+            {{ link.title }}
+            {% if link.links %}
+              {% render 'icon-arrow-down' %}
+            {% endif %}
+          </a>
+          {% if link.links %}
+            <div class="mega-menu">
+              {% for mega_link in link.links %}
+                <div class="mega-menu-item">
+                  <p class="mega-menu-text">
+                    {{ mega_link.title }}
+                  </p>
+                </div>
+              {% endfor %}
+            </div>
+          {% endif %}
         </li>
       {% endfor %}
     </ul>
