@@ -9,12 +9,17 @@ header {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
     background-color: #F7F0E2;
+    height: 112px;
+    padding: 21px 125px;
 }
 
 nav ul{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
 }
