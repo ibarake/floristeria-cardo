@@ -3,6 +3,7 @@
     padding: 0;
     overflow: hidden;
     width: 100%;
+    font-family: 'DM sans';
 }
 
 header {
@@ -37,7 +38,6 @@ nav ul{
 
 nav ul li{
     font-size: 12px;
-    margin: 0px 5px;
 }
 
 nav ul li a.menu-link{
