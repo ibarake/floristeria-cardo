@@ -17,10 +17,10 @@
           {% if link.links != blank %}
             <div class="mega-menu">
               {% for mega_link in link.links %}
-                <div class="mega-menu-item">
-                  <p class="mega-menu-text">
+                <div href="{{ mega_link.url }}" class="mega-menu-item">
+                  <a class="mega-menu-text">
                     {{ mega_link.title }}
-                  </p>
+                  </a>
                 </div>
               {% endfor %}
             </div>
