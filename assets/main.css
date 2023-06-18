@@ -37,7 +37,6 @@ nav ul{
 }
 
 nav ul li{
-    font-size: 12px;
     width: fit-content;
 }
 
@@ -46,6 +45,10 @@ nav ul li a.menu-link{
     margin: 0 25px;
     color: #9F9F9F;
     text-decoration: none;
+}
+
+header button.add-to-cart svg{
+    size: 20px;
 }
 
 header button.add-to-cart {
