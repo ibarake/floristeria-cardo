@@ -10,11 +10,11 @@
         <li>
           <a href="{{ link.url }}" class="menu-link">
             <span class="menu-link-title">{{ link.title }}</span>
-            {% if link.links %}
+            {% if link.links != blank %}
               {% render 'icon-arrow-down' %}
             {% endif %}
           </a>
-          {% if link.links %}
+          {% if link.links != blank %}
             <div class="mega-menu">
               {% for mega_link in link.links %}
                 <div class="mega-menu-item">
