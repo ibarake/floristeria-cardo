@@ -78,6 +78,12 @@ svg{
     display: none;
 }
 
+.menu-link{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
 header button.add-to-cart p.add-to-cart-text{
     width: fit-content;
     padding: 0 5px;
