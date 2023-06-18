@@ -81,10 +81,10 @@ svg{
 
 .mega-menu{
     display: none;
-    position: relative;
+    position: absolute;
     width: fit-content;
     background-color: #fff;
-    margin-top: 100%;
+    margin-top: 20px;
 }
 
 .has-mega-menu:hover .mega-menu {
