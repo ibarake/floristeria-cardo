@@ -6,7 +6,7 @@
 
   <nav>
     <ul>
-      {% for link in section.settings.main-menu.values %}
+      {% for link in section.settings.main-menu.links %}
         <li>
           <a href="{{ link.url }}" class="menu-link">{{ link.title }}</a>
         </li>
