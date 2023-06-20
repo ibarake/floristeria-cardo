@@ -2,7 +2,7 @@
 var hamburguerMenu = document.querySelector(".hamburguer-menu");
 var responsiveMenu = document.querySelector(".responsive-menu");
 var closeMenu = document.querySelector(".close-drawer");
-var dropdownMenu = document.querySelector(".dropdown-open");
+var dropdownMenu = document.querySelectorAll(".dropdown-open");
 
 responsiveMenu.style.height = screen.height;
 
