@@ -18,13 +18,15 @@ closeMenu.addEventListener("click", function () {
   responsiveMenu.style.display = "none";
 });
 
-dropdownMenu.addEventListener("click", function () {
-  var parentLi = this.closest(".drawer-item");
-  var childLi = parentLi.querySelector(".dropdown-mega-menu");
+dropdownMenus.forEach(function (dropdownMenu) {
+  dropdownMenu.addEventListener("click", function () {
+    var parentLi = this.closest(".drawer-item");
+    var childLi = parentLi.querySelector(".dropdown-mega-menu");
 
-  if (childLi.style.height === "0px") {
-    childLi.style.height = childLi.scrollHeight + "px";
-  } else {
-    childLi.style.height = "0";
-  }
+    if (childLi.style.height === "0px") {
+      childLi.style.height = childLi.scrollHeight + "px";
+    } else {
+      childLi.style.height = "0";
+    }
+  });
 });
