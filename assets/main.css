@@ -162,10 +162,13 @@ nav ul{
     justify-content: center;
 }
 
-nav ul li{
+nav.navigation-menu ul li{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    width: fit-content;
+}
+nav ul li{
     width: fit-content;
 }
 
