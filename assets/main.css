@@ -11,6 +11,7 @@ body {
     --main-color: #F7F0E2;
     --main-white: #fff;
     --main-gray: #9f9f9f;
+    --main-dark-gray: #33363F;
 }
 
 
@@ -232,6 +233,12 @@ svg{
 
 .hamburguer-menu{
     display: none;
+    background-color: var(--main-white);
+    border: none;
+}
+
+.hamburguer-menu svg{
+    fill: var(--main-dark-gray);
 }
 
 .responsive-menu{
