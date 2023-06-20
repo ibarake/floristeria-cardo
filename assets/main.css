@@ -247,11 +247,12 @@ header button.add-to-cart p.add-to-cart-text{
 
 .close-drawer{
     position: absolute;
-    top: 0;
-    right: 0;
     background-color: var(--main-color);
     width: fit-content;
     padding: 10px;
+    border: none;
+    top: 0;
+    right: 0;
 }
 
 .close-drawer svg{
