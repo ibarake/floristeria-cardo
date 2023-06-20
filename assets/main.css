@@ -230,6 +230,9 @@ header button.add-to-cart p.add-to-cart-text{
     z-index: 1;
     top: 0;
     left: 0;
+    -webkit-box-shadow: 10px 0px 25px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 10px 0px 25px 0px rgba(0,0,0,0.3);
+    box-shadow: 10px 0px 25px 0px rgba(0,0,0,0.3);
 }
 
 .close-drawer{
