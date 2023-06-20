@@ -227,6 +227,8 @@ header button.add-to-cart p.add-to-cart-text{
     position: absolute;
     background-color: red;
     z-index: 1;
+    top: 0;
+    left: 0;
 }
 
 @media only screen and (max-width: 768px) {
