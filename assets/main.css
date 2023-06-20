@@ -184,7 +184,7 @@ nav.navigation-menu ul li{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-end;
     flex-wrap: nowrap;
     margin: 0 15px;
     color: var(--main-gray);
@@ -255,6 +255,9 @@ svg{
     -webkit-box-shadow: 10px 0px 25px 0px rgba(0,0,0,0.3);
     -moz-box-shadow: 10px 0px 25px 0px rgba(0,0,0,0.3);
     box-shadow: 10px 0px 25px 0px rgba(0,0,0,0.3);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .close-drawer{
