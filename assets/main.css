@@ -263,6 +263,12 @@ svg{
     left: 0;
 }
 
+drawer-content{
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
 .close-drawer{
     position: absolute;
     background-color: var(--main-gray);

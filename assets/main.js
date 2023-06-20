@@ -1,19 +1,24 @@
+/* DRAWER MENU ACTION JAVASCRIPT */
 var hamburguerMenu = document.querySelector(".hamburguer-menu");
 var responsiveMenu = document.querySelector(".responsive-menu");
 var closeMenu = document.querySelector(".close-drawer");
 var dropdownMenus = document.querySelectorAll(".dropdown-open");
 var activeDropdown = null;
 
-responsiveMenu.style.height = screen.height + "px";
+responsiveMenu.style.height = screen.height;
 
 hamburguerMenu.addEventListener("click", function () {
   responsiveMenu.style.display = "flex";
-  responsiveMenu.classList.add("open");
+  responsiveMenu.style.right = "auto";
+  responsiveMenu.style.left = 0;
+  responsiveMenu.style.width = screen.width * 0.8;
 });
 
 closeMenu.addEventListener("click", function () {
-  responsiveMenu.style.display = "none";
-  responsiveMenu.classList.remove("open");
+  responsiveMenu.style.width = 0;
+  responsiveMenu.style.opacity = 0;
+  responsiveMenu.style.right = "100%";
+  responsiveMenu.style.left = "auto";
 
   if (activeDropdown) {
     activeDropdown.style.height = "0";
