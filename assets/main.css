@@ -138,7 +138,6 @@ header {
     width: 100%;
     background-color: var(--main-white);
     height: 85px;
-    padding: 5px 20px;
 }
 
 header img.header-logo{
@@ -311,7 +310,6 @@ svg{
 
     header{
         grid-template-columns: 1fr 2fr 1fr;
-        padding: 0px 0px;
     }
     header img.header-logo {
         align-self: center;
