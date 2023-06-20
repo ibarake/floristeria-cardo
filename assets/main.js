@@ -22,5 +22,9 @@ dropdownMenu.addEventListener("click", function () {
   var parentLi = this.closest(".drawer-item");
   var childLi = parentLi.querySelector(".dropdown-mega-menu");
 
-  childLi.style.height = childLi.scrollHeight + "px";
+  if (childLi.style.height === "0px") {
+    childLi.style.height = childLi.scrollHeight + "px";
+  } else {
+    childLi.style.height = "0";
+  }
 });
