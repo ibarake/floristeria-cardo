@@ -216,5 +216,22 @@ header button.add-to-cart p.add-to-cart-text{
     margin: 0;
 }
 
+.hamburguer-menu{
+    display: none;
+}
+
+.responsive-menu{
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .hamburguer-menu{
+        display: block;
+    }
+    .navigation-menu{
+        display: none;
+    }
+}
+
 /* HERO BANNER STYLES */
 
