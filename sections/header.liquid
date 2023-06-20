@@ -19,18 +19,18 @@
               {% render 'icon-arrow-down' %}
             {% endif %}
           </span>
-          {% if link.links != blank %}
-            <div class="dropdown-mega-menu">
-              {% for mega_link in link.links %}
-                <div class="mega-menu-item">
-                  <a href="{{ mega_link.url }}" class="mega-menu-text menu-link subtitulo-3">
-                    {{ mega_link.title }}
-                  </a>
-                </div>
-              {% endfor %}
-            </div>
-          {% endif %}
         </li>
+        {% if link.links != blank %}
+          <div class="dropdown-mega-menu">
+            {% for mega_link in link.links %}
+              <div class="mega-menu-item">
+                <a href="{{ mega_link.url }}" class="mega-menu-text menu-link subtitulo-3">
+                  {{ mega_link.title }}
+                </a>
+              </div>
+            {% endfor %}
+          </div>
+        {% endif %}
       </ul>
     {% endfor %}
   </nav>
