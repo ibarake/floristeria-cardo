@@ -1,0 +1,25 @@
+<hero-banner>
+  <div class="left">
+    <h1 class="titulo-h1">
+      {{ section.settings.hero-title }}
+    </h1>
+    <p class="paragraph-p2">
+      Pellentesque cras adipiscing tempus libero vel nullam mauris tellus. Aliquam ultrices tellus consequat amet,
+    </p>
+  </div>
+  <div class="right"></div>
+</hero-banner>
+
+{% schema %}
+  {
+    "name": "hero-banner",
+    "settings": [
+      {
+        "type": "text",
+        "id": "hero-title",
+        "label": "Titulo principal H1",
+        "default": "¿No sabes cómo decirlo? Dilo con Flores."
+      }
+    ]
+  }
+{% endschema %}

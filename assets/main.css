@@ -3,8 +3,122 @@
     padding: 0;
     overflow: hidden;
     width: 100%;
-    font-family: 'DM sans';
 }
+
+/* TEXT PRESET STYLES*/
+
+.titulo-1{
+    font-family: 'NewYork';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 72px;
+}
+
+.titulo-2{
+    font-family: 'NewYork';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 66px;
+}
+
+.titulo-3{
+    font-family: 'NewYork';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+}
+
+.titulo-4{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 47px;
+}
+
+.titulo-5{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+}
+
+.subtitulo-1{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 31px;
+}
+
+.subtitulo-2{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.subtitulo-3{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.subtitulo-4{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.subtitulo-5{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.parrafo-1{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.parrafo-2{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.parrafo-3{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+}
+
+.parrafo-4{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+/* HEADER STYLES*/
 
 header {
     display: grid;
@@ -51,7 +165,6 @@ nav ul li a.menu-link{
     flex-direction: row;
     align-items: center;
     flex-wrap: nowrap;
-    font-size: 14px;
     margin: 0 15px;
     color: #9F9F9F;
     text-decoration: none;
@@ -103,3 +216,6 @@ header button.add-to-cart p.add-to-cart-text{
     padding: 0 5px;
     margin: 0;
 }
+
+/* HERO BANNER STYLES */
+
