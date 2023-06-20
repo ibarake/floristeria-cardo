@@ -14,7 +14,7 @@ hamburguerMenu.addEventListener("click", function () {
 });
 
 closeMenu.addEventListener("click", function () {
-  responsiveMenu.style.right = "100%";
+  responsiveMenu.style.right = "110%";
   responsiveMenu.style.left = "auto";
 
   if (activeDropdown) {
