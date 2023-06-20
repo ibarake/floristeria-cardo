@@ -3,6 +3,7 @@ var hamburguerMenu = document.querySelector(".hamburguer-menu");
 var responsiveMenu = document.querySelector(".responsive-menu");
 var closeMenu = document.querySelector(".close-drawer");
 var dropdownMenus = document.querySelectorAll(".dropdown-open");
+var activeDropdown = null;
 
 responsiveMenu.style.height = screen.height;
 
@@ -23,10 +24,16 @@ dropdownMenus.forEach(function (dropdownMenu) {
     var parentLi = this.closest(".drawer-item");
     var childLi = parentLi.querySelector(".dropdown-mega-menu");
 
+    if (activeDropdown && activeDropdown !== childLi) {
+      activeDropdown.style.height = "0";
+    }
+
     if (childLi.style.height === "0px") {
       childLi.style.height = childLi.scrollHeight + "px";
+      activeDropdown = childLi;
     } else {
       childLi.style.height = "0";
+      activeDropdown = null;
     }
   });
 });
