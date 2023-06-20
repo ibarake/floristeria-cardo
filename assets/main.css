@@ -222,10 +222,7 @@ header button.add-to-cart p.add-to-cart-text{
 
 .responsive-menu{
     transition: all 0.5s ease-out;
-    display: none;
     position: absolute;
-    height:100vh;
-    width: 80vw;
     background-color: red;
     z-index: 1;
 }
