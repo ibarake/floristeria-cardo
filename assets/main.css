@@ -278,6 +278,10 @@ svg{
 .drawer-items{
     margin-right: 10px;
 }
+.drawer-item-container{
+    display: flex;
+    flex-direction: column;
+}
 .drawer-item{
     display: flex;
     flex-direction: row;

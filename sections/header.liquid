@@ -8,29 +8,31 @@
     </button>
     {% for link in section.settings.main-menu.links %}
       <ul class="drawer-items">
-        <li class="drawer-item">
-          <span class="menu-link-title subtitulo-3">
-            <a href="{{ link.url }}" class="menu-link">
-              {{ link.title }}
-            </a>
-          </span>
-          <span class="dropdown-open">
-            {% if link.links != blank %}
-              {% render 'icon-arrow-down' %}
-            {% endif %}
-          </span>
+        <li class="drawer-item-container">
+          <navigation-item class="drawer-item">
+            <span class="menu-link-title subtitulo-3">
+              <a href="{{ link.url }}" class="menu-link">
+                {{ link.title }}
+              </a>
+            </span>
+            <span class="dropdown-open">
+              {% if link.links != blank %}
+                {% render 'icon-arrow-down' %}
+              {% endif %}
+            </span>
+          </navigation-item>
+          {% if link.links != blank %}
+            <div class="dropdown-mega-menu">
+              {% for mega_link in link.links %}
+                <div class="mega-menu-item">
+                  <a href="{{ mega_link.url }}" class="mega-menu-text menu-link subtitulo-3">
+                    {{ mega_link.title }}
+                  </a>
+                </div>
+              {% endfor %}
+            </div>
+          {% endif %}
         </li>
-        {% if link.links != blank %}
-          <div class="dropdown-mega-menu">
-            {% for mega_link in link.links %}
-              <div class="mega-menu-item">
-                <a href="{{ mega_link.url }}" class="mega-menu-text menu-link subtitulo-3">
-                  {{ mega_link.title }}
-                </a>
-              </div>
-            {% endfor %}
-          </div>
-        {% endif %}
       </ul>
     {% endfor %}
   </nav>
