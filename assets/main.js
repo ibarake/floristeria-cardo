@@ -1,14 +1,14 @@
 /* DRAWER MENU ACTION JAVASCRIPT */
+var hamburgerMenu = document.querySelector(".hamburger-menu");
+var responsiveMenu = document.querySelector(".responsive-menu");
+var closeMenu = document.querySelector(".close-drawer");
 
-document.addEventListener("DOMContentLoaded", function () {
-  var hamburgerMenu = document.querySelector(".hamburger-menu");
-  var responsiveMenu = document.querySelector(".responsive-menu");
-  var closeMenu = document.querySelector(".close-drawer");
-
-  hamburgerMenu.addEventListener("click", function () {
-    responsiveMenu.style.display = "block";
-  });
-  closeMenu.addEventListener("click", function () {
-    responsiveMenu.style.display = "none";
-  });
+hamburgerMenu.addEventListener("click", function () {
+  responsiveMenu.style.display = "block";
+  responsiveMenu.style.height = screen.height;
+  responsiveMenu.style.width = screen.width * 0.8;
+});
+closeMenu.addEventListener("click", function () {
+  responsiveMenu.style.display = "none";
+  responsiveMenu.style.width = 0;
 });
