@@ -226,7 +226,6 @@ header button.add-to-cart p.add-to-cart-text{
     height: 100%;
     position: absolute;
     background-color: red;
-    top: 0;
     z-index: 1;
 }
 
