@@ -3,6 +3,7 @@ var hamburguerMenu = document.querySelector(".hamburguer-menu");
 var responsiveMenu = document.querySelector(".responsive-menu");
 var closeMenu = document.querySelector(".close-drawer");
 var dropdownMenus = document.querySelectorAll(".dropdown-open");
+var drawerItems = document.querySelectorAll(".drawer-items");
 var activeDropdown = null;
 
 responsiveMenu.style.height = screen.height;
@@ -12,12 +13,22 @@ hamburguerMenu.addEventListener("click", function () {
   responsiveMenu.style.right = "auto";
   responsiveMenu.style.left = 0;
   responsiveMenu.style.width = screen.width * 0.8;
+  drawerItems.forEach(function (drawerItem) {
+    drawerItem.style.right = "auto";
+    drawerItem.style.left = 0;
+  });
 });
 
 closeMenu.addEventListener("click", function () {
   responsiveMenu.style.width = 0;
   responsiveMenu.style.opacity = 0;
-  responsiveMenu.style.display = "none";
+  responsiveMenu.style.right = "100%";
+  responsiveMenu.style.left = "auto";
+
+  drawerItems.forEach(function (drawerItem) {
+    drawerItem.style.left = "auto";
+    drawerItem.style.right = "100%";
+  });
 
   if (activeDropdown) {
     activeDropdown.style.height = "0";
