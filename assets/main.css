@@ -246,9 +246,14 @@ header button.add-to-cart p.add-to-cart-text{
 }
 
 .close-drawer{
-    position: relative;
+    position: absolute;
     top: 0;
     right: 0;
+    background-color: var(--main-color);
+}
+
+.close-drawer svg{
+    fill: var(--main-white);
 }
 
 @media only screen and (max-width: 768px) {
