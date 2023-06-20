@@ -183,7 +183,8 @@ nav.navigation-menu ul li{
 .drawer-link{
     display: flex;
     flex-direction: row;
-    align-items: left;
+    align-items: center;
+    justify-content: flex-start;
     flex-wrap: nowrap;
     margin: 0 15px;
     color: var(--main-gray);
