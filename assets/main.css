@@ -5,6 +5,8 @@
     width: 100%;
 }
 
+/* VARIABLES */
+
 :root {
     --main-color: #F7F0E2;
     --main-white: #fff;
@@ -133,7 +135,7 @@ header {
     align-items: center;
     justify-content: center;
     width: 100%;
-    background-color: #fff;
+    background-color: var(--main-white);
     height: 85px;
     padding: 5px 20px;
 }
@@ -188,7 +190,7 @@ header button.add-to-cart {
     max-width: 120px;
     align-items: center;
     justify-content: center;
-    background-color: #F7F0E2;
+    background-color: var(--main-color);
     border: none;
     padding: 10px 15px;
     border-radius: 8px;
