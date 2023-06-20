@@ -17,6 +17,11 @@ closeMenu.addEventListener("click", function () {
   responsiveMenu.style.width = 0;
   responsiveMenu.style.opacity = 0;
   responsiveMenu.style.display = "none";
+
+  if (activeDropdown) {
+    activeDropdown.style.height = "0";
+    activeDropdown = null;
+  }
 });
 
 dropdownMenus.forEach(function (dropdownMenu) {

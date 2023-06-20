@@ -292,6 +292,7 @@ svg{
 .dropdown-mega-menu{
     height: 0px;
     overflow-y: hidden;
+    transition: all 1s ease-out;
 }
 
 .dropdown-open{
