@@ -1,3 +1,5 @@
+/* DRAWER MENU ACTION JAVASCRIPT */
+
 document.addEventListener("DOMContentLoaded", function () {
   var hamburgerMenu = document.querySelector(".hamburger-menu");
   var responsiveMenu = document.querySelector(".responsive-menu");

@@ -223,8 +223,8 @@ header button.add-to-cart p.add-to-cart-text{
 .responsive-menu{
     display: none;
     position: absolute;
-    height:100%;
-    width: 80%;
+    height:100vh;
+    width: 80vw;
     background-color: #fff;
     z-index: 1;
 }
