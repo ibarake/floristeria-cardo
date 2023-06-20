@@ -17,8 +17,8 @@
           {% if link.links != blank %}
             <div class="mega-menu">
               {% for mega_link in link.links %}
-                <div href="{{ mega_link.url }}" class="mega-menu-item subtitulo-3">
-                  <a class="mega-menu-text">
+                <div class="mega-menu-item">
+                  <a href="{{ mega_link.url }}" class="mega-menu-text subtitulo-3">
                     {{ mega_link.title }}
                   </a>
                 </div>
