@@ -208,6 +208,7 @@ svg{
     padding: 10px 20px;
     border-bottom: solid 1px #9f9f9f;
     width: fit-content;
+    text-decoration: none;
     color: #9F9F9F;
 }
 
