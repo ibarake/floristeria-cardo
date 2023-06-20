@@ -266,6 +266,10 @@ svg{
     fill: var(--main-white);
 }
 
+.drawer-items{
+    padding: 0;
+}
+
 @media only screen and (max-width: 768px) {
     .hamburguer-menu{
         display: block;
