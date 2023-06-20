@@ -247,7 +247,7 @@ header button.add-to-cart p.add-to-cart-text{
 
 .close-drawer{
     position: absolute;
-    background-color: var(--main-color);
+    background-color: var(--main-gray);
     width: fit-content;
     padding: 10px;
     border: none;
