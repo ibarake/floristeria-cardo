@@ -169,7 +169,7 @@ nav.navigation-menu ul li{
     width: fit-content;
     list-style-type: none;
 }
-nav ul li::marker{
+nav ul li{
     list-style-type: none;
 }
 
