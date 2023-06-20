@@ -2,7 +2,7 @@
 var hamburguerMenu = document.querySelector(".hamburguer-menu");
 var responsiveMenu = document.querySelector(".responsive-menu");
 var closeMenu = document.querySelector(".close-drawer");
-var dropdownMenu = document.querySelectorAll(".dropdown-open");
+var dropdownMenus = document.querySelectorAll(".dropdown-open");
 
 responsiveMenu.style.height = screen.height;
 
@@ -18,7 +18,7 @@ closeMenu.addEventListener("click", function () {
   responsiveMenu.style.display = "none";
 });
 
-dropdownMenu.forEach(function (dropdownMenu) {
+dropdownMenus.forEach(function (dropdownMenu) {
   dropdownMenu.addEventListener("click", function () {
     var parentLi = this.closest(".drawer-item");
     var childLi = parentLi.querySelector(".dropdown-mega-menu");
