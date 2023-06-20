@@ -1,4 +1,4 @@
-*{
+body {
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -169,7 +169,7 @@ nav.navigation-menu ul li{
     width: fit-content;
 }
 
-nav ul li a.menu-link{
+.menu-link{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -180,11 +180,11 @@ nav ul li a.menu-link{
     white-space: nowrap;
 }
 
-nav p.menu-link-title{
+.menu-link-title{
     width: fit-content;
 }
 
-header button.add-to-cart {
+.add-to-cart {
     display: flex;
     flex-direction: row;
     max-width: 120px;
@@ -219,7 +219,7 @@ svg{
     width: fit-content;
 }
 
-header button.add-to-cart p.add-to-cart-text{
+.add-to-cart-text{
     width: fit-content;
     padding: 0 5px;
     margin: 0;
