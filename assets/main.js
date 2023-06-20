@@ -9,7 +9,8 @@ responsiveMenu.style.height = screen.height;
 
 hamburguerMenu.addEventListener("click", function () {
   responsiveMenu.style.display = "flex";
-  responsiveMenu.style.opacity = 1;
+  responsiveMenu.style.right = "auto";
+  responsiveMenu.style.left = 0;
   responsiveMenu.style.width = screen.width * 0.8;
 });
 
