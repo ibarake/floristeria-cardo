@@ -162,7 +162,7 @@ nav ul{
     justify-content: center;
 }
 
-nav.navigation-menu ul li{
+nav ul li{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
