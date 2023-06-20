@@ -1,34 +1,19 @@
-/* DRAWER MENU ACTION JAVASCRIPT */
 var hamburguerMenu = document.querySelector(".hamburguer-menu");
 var responsiveMenu = document.querySelector(".responsive-menu");
 var closeMenu = document.querySelector(".close-drawer");
 var dropdownMenus = document.querySelectorAll(".dropdown-open");
-var drawerItems = document.querySelectorAll(".drawer-items");
 var activeDropdown = null;
 
-responsiveMenu.style.height = screen.height;
+responsiveMenu.style.height = screen.height + "px";
 
 hamburguerMenu.addEventListener("click", function () {
   responsiveMenu.style.display = "flex";
-  responsiveMenu.style.right = "auto";
-  responsiveMenu.style.left = 0;
-  responsiveMenu.style.width = screen.width * 0.8;
-  drawerItems.forEach(function (drawerItem) {
-    drawerItem.style.right = "auto";
-    drawerItem.style.left = 0;
-  });
+  responsiveMenu.classList.add("open");
 });
 
 closeMenu.addEventListener("click", function () {
-  responsiveMenu.style.width = 0;
-  responsiveMenu.style.opacity = 0;
-  responsiveMenu.style.right = "100%";
-  responsiveMenu.style.left = "auto";
-
-  drawerItems.forEach(function (drawerItem) {
-    drawerItem.style.left = "auto";
-    drawerItem.style.right = "100%";
-  });
+  responsiveMenu.style.display = "none";
+  responsiveMenu.classList.remove("open");
 
   if (activeDropdown) {
     activeDropdown.style.height = "0";

@@ -245,11 +245,11 @@ svg{
     display: flex;
     height: 100%;
     width: 0px;
-    position: absolute;
     background-color: var(--main-color);
     z-index: 1;
+    position: fixed;
     top: 0;
-    right: 100%;
+    left: -100%;
     -webkit-box-shadow: 10px 0px 25px 0px rgba(0,0,0,0.3);
     -moz-box-shadow: 10px 0px 25px 0px rgba(0,0,0,0.3);
     box-shadow: 10px 0px 25px 0px rgba(0,0,0,0.3);
@@ -257,6 +257,10 @@ svg{
     justify-content: flex-start;
     align-items: flex-start;
     padding-top: 30px;
+}
+
+.responsive-menu.open {
+    left: 0;
 }
 
 .close-drawer{
@@ -274,8 +278,8 @@ svg{
 }
 
 .drawer-items{
+    margin-top: 30px;
     margin-right: 10px;
-    right: 100%;
 }
 .drawer-item-container{
     display: flex;
