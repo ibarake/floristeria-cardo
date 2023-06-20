@@ -299,6 +299,7 @@ svg{
 @media only screen and (max-width: 768px) {
     .hamburguer-menu{
         display: block;
+        align-self: flex-start;
     }
     .navigation-menu{
         display: none;
@@ -306,11 +307,11 @@ svg{
 
     header{
         grid-template-columns: 1fr 2fr 1fr;
+        padding: 0px 0px;
     }
     header img.header-logo {
         align-self: center;
         justify-self: center;
-        padding: 5px;
     }
 }
 
