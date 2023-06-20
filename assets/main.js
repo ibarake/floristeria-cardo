@@ -11,7 +11,7 @@ hamburguerMenu.addEventListener("click", function () {
   responsiveMenu.style.opacity = 1;
   responsiveMenu.style.width = screen.width * 0.8;
 });
-dropdownMenu.addEventListener("click", function () {});
+
 closeMenu.addEventListener("click", function () {
   responsiveMenu.style.width = 0;
   responsiveMenu.style.opacity = 0;
