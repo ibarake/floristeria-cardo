@@ -167,9 +167,10 @@ nav.navigation-menu ul li{
     flex-direction: row;
     flex-wrap: nowrap;
     width: fit-content;
+    list-style-type: none;
 }
 nav ul li::marker{
-    display: none;
+    list-style-type: none;
 }
 
 .menu-link{
