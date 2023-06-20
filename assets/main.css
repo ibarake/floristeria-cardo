@@ -5,6 +5,13 @@
     width: 100%;
 }
 
+:root {
+    --main-color: #F7F0E2;
+    --main-white: #fff;
+    --main-gray: #f9f9f9;
+}
+
+
 /* TEXT PRESET STYLES*/
 
 .titulo-1{
@@ -166,7 +173,7 @@ nav ul li a.menu-link{
     align-items: center;
     flex-wrap: nowrap;
     margin: 0 15px;
-    color: #9F9F9F;
+    color: var(--main-gray);
     text-decoration: none;
     white-space: nowrap;
 }
@@ -196,7 +203,7 @@ svg{
     display: none;
     position: absolute;
     width: fit-content;
-    background-color: #fff;
+    background-color: var(--main-white);
     margin-top: 26px;
 }
 
@@ -206,7 +213,7 @@ svg{
 
 .mega-menu-item{
     padding: 5px 10px;
-    border-bottom: solid 1px #9f9f9f;
+    border-bottom: solid 1px var(--main-gray);
     width: fit-content;
 }
 
@@ -223,10 +230,11 @@ header button.add-to-cart p.add-to-cart-text{
 .responsive-menu{
     transition: all 1s ease-out;
     display: none;
+    opacity: 0;
     height: 100%;
     width: 0px;
     position: absolute;
-    background-color: red;
+    background-color: var(--main-color);
     z-index: 1;
     top: 0;
     left: 0;
