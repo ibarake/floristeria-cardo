@@ -2,7 +2,31 @@
   <button class="hamburguer-menu">
     {% render 'icon-hamburguer-menu' %}
   </button>
-  <nav class="responsive-menu"></nav>
+  <nav class="responsive-menu">
+    {% for link in section.settings.main-menu.link %}
+      <ul class="drawer-items">
+        <li class="drawer-item">
+          <a href="{{ link.url }}" class="menu-link">
+            {{ link.title }}
+            {% if link.links != blank %}
+              {% render 'icon-arrow-down' %}
+            {% endfor %}
+          </a>
+          {% if link.links != blank %}
+            <div class="dropdown-mega-menu">
+              {% for mega_link in link.links %}
+                <div class="mega-menu-item">
+                  <a href="{{ mega_link.url }}" class="mega-menu-text menu-link subtitulo-3">
+                    {{ mega_link.title }}
+                  </a>
+                </div>
+              {% endfor %}
+            </div>
+          {% endif %}
+        </li>
+      </ul>
+    {% endfor %}
+  </nav>
 
   <img
     src="{{ settings.logo.src | img_url }}"

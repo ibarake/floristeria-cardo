@@ -222,6 +222,9 @@ header button.add-to-cart p.add-to-cart-text{
 
 .responsive-menu{
     display: none;
+    position: absolute;
+    height:100%;
+    width: 80%;
 }
 
 @media only screen and (max-width: 768px) {
