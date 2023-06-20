@@ -324,6 +324,9 @@ svg{
         background-color: var(--main-white);
         justify-self: flex-end;
     }
+    .mega-menu-item{
+        border: none;
+    }
 }
 
 /* HERO BANNER STYLES */
