@@ -320,6 +320,7 @@ svg{
 
     .add-to-cart{
         background-color: var(--main-white);
+        justify-self: flex-end;
     }
 }
 
