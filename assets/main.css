@@ -338,6 +338,9 @@ drawer-content{
     .mega-menu-item{
         border: none;
     }
+    nav ul{
+        justify-content: flex-start;
+    }
 }
 
 /* HERO BANNER STYLES */
