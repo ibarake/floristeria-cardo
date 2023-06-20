@@ -303,6 +303,10 @@ svg{
     .navigation-menu{
         display: none;
     }
+
+    header{
+        grid-template-columns: 1fr 2fr 1fr;
+    }
 }
 
 /* HERO BANNER STYLES */
