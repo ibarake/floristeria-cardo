@@ -313,6 +313,14 @@ svg{
         align-self: center;
         justify-self: center;
     }
+
+    .add-to-cart-text{
+        display: none;
+    }
+
+    .add-to-cart{
+        background-color: var(--main-white);
+    }
 }
 
 /* HERO BANNER STYLES */
