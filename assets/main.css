@@ -142,7 +142,7 @@ header {
 
 header img.header-logo{
     align-self: center;
-    justify-self: end;
+    justify-self: center;
     max-height: 70px;
     width: auto;
     height: auto;
