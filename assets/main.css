@@ -231,7 +231,7 @@ header button.add-to-cart p.add-to-cart-text{
 
 .responsive-menu{
     transition: all 1s ease-out;
-    display: none;
+    display: none !important;
     opacity: 0;
     height: 100%;
     width: 0px;
