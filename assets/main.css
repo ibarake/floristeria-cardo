@@ -180,18 +180,6 @@ nav.navigation-menu ul li{
     white-space: nowrap;
 }
 
-.drawer-link{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    flex-wrap: nowrap;
-    margin: 0 15px;
-    color: var(--main-gray);
-    text-decoration: none;
-    white-space: nowrap;
-}
-
 .menu-link-title{
     width: fit-content;
 }
