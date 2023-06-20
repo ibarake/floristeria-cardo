@@ -275,6 +275,7 @@ svg{
 
 .drawer-items{
     margin-right: 10px;
+    right: 100%;
 }
 .drawer-item-container{
     display: flex;
