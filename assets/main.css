@@ -299,7 +299,7 @@ svg{
 @media only screen and (max-width: 768px) {
     .hamburguer-menu{
         display: block;
-        align-self: flex-start;
+        justify-self: flex-start;
     }
     .navigation-menu{
         display: none;
