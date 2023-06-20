@@ -9,7 +9,7 @@
     {% for link in section.settings.main-menu.links %}
       <ul class="drawer-items">
         <li class="drawer-item">
-          <a href="{{ link.url }}" class="menu-link">
+          <a href="{{ link.url }}" class="drawer-link">
             <span class="menu-link-title subtitulo-3">{{ link.title }}</span>
             {% if link.links != blank %}
               {% render 'icon-arrow-down' %}
