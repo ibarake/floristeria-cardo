@@ -250,6 +250,8 @@ header button.add-to-cart p.add-to-cart-text{
     top: 0;
     right: 0;
     background-color: var(--main-color);
+    width: fit-content;
+    padding: 10px;
 }
 
 .close-drawer svg{
