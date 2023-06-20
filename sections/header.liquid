@@ -3,6 +3,9 @@
     {% render 'icon-hamburguer-menu' %}
   </button>
   <nav class="responsive-menu">
+    <button class="close-drawer">
+      {% render 'icon-close' %}
+    </button>
     {% for link in section.settings.main-menu.links %}
       <ul class="drawer-items">
         <li class="drawer-item">
