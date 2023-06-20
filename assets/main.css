@@ -269,7 +269,12 @@ svg{
 }
 
 .drawer-items{
-    margin: 10px;
+    margin-right: 10px;
+}
+.drawer-item{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
 .dropdown-mega-menu{
