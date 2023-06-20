@@ -186,6 +186,7 @@ nav ul li{
 
 .menu-link-title{
     width: fit-content;
+    margin-right: 10px;
 }
 
 .add-to-cart {
@@ -268,6 +269,10 @@ svg{
 
 .drawer-items{
     margin: 10px;
+}
+
+.dropdown-mega-menu{
+    height: 0px;
 }
 
 @media only screen and (max-width: 768px) {
