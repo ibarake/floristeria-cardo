@@ -18,7 +18,7 @@ closeMenu.addEventListener("click", function () {
   responsiveMenu.style.display = "none";
 });
 
-dropdownMenus.forEach(function (dropdownMenu) {
+dropdownMenu.forEach(function (dropdownMenu) {
   dropdownMenu.addEventListener("click", function () {
     var parentLi = this.closest(".drawer-item");
     var childLi = parentLi.querySelector(".dropdown-mega-menu");
