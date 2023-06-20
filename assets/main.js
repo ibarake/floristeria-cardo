@@ -28,7 +28,7 @@ dropdownMenus.forEach(function (dropdownMenu) {
       activeDropdown.style.height = "0";
     }
 
-    if (childLi.style.height === "0px") {
+    if (childLi.style.height === "0px" || !childLi.style.height) {
       childLi.style.height = childLi.scrollHeight + "px";
       activeDropdown = childLi;
     } else {
