@@ -1,10 +1,133 @@
-*{
+body {
     margin: 0;
     padding: 0;
     overflow: hidden;
     width: 100%;
-    font-family: 'DM sans';
 }
+
+/* VARIABLES */
+
+:root {
+    --main-color: #F7F0E2;
+    --main-white: #fff;
+    --main-gray: #9f9f9f;
+    --main-dark-gray: #33363F;
+}
+
+/* TEXT PRESET STYLES*/
+
+.titulo-1{
+    font-family: 'NewYork';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 72px;
+}
+
+.titulo-2{
+    font-family: 'NewYork';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 66px;
+}
+
+.titulo-3{
+    font-family: 'NewYork';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+}
+
+.titulo-4{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 47px;
+}
+
+.titulo-5{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+}
+
+.subtitulo-1{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 31px;
+}
+
+.subtitulo-2{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.subtitulo-3{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.subtitulo-4{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.subtitulo-5{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.parrafo-1{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.parrafo-2{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.parrafo-3{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+}
+
+.parrafo-4{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+/* HEADER STYLES*/
 
 header {
     display: grid;
@@ -12,14 +135,13 @@ header {
     align-items: center;
     justify-content: center;
     width: 100%;
-    background-color: #fff;
+    background-color: var(--main-white);
     height: 85px;
-    padding: 5px 20px;
 }
 
 header img.header-logo{
     align-self: center;
-    justify-self: end;
+    justify-self: center;
     max-height: 70px;
     width: auto;
     height: auto;
@@ -44,31 +166,35 @@ nav.navigation-menu ul li{
     flex-direction: row;
     flex-wrap: nowrap;
     width: fit-content;
+    list-style-type: none;
+}
+nav ul li{
+    list-style-type: none;
 }
 
-nav ul li a.menu-link{
+.menu-link{
     display: flex;
     flex-direction: row;
     align-items: center;
     flex-wrap: nowrap;
-    font-size: 14px;
     margin: 0 15px;
-    color: #9F9F9F;
+    color: var(--main-gray);
     text-decoration: none;
     white-space: nowrap;
 }
 
-nav p.menu-link-title{
+.menu-link-title{
     width: fit-content;
+    margin-right: 10px;
 }
 
-header button.add-to-cart {
+.add-to-cart {
     display: flex;
     flex-direction: row;
     max-width: 120px;
     align-items: center;
     justify-content: center;
-    background-color: #F7F0E2;
+    background-color: var(--main-color);
     border: none;
     padding: 10px 15px;
     border-radius: 8px;
@@ -83,8 +209,8 @@ svg{
     display: none;
     position: absolute;
     width: fit-content;
-    background-color: #fff;
-    margin-top: 18px;
+    background-color: var(--main-white);
+    margin-top: 26px;
 }
 
 .has-mega-menu:hover .mega-menu {
@@ -92,14 +218,130 @@ svg{
 }
 
 .mega-menu-item{
-    padding: 10px 20px;
-    border-bottom: solid 1px #9f9f9f;
+    padding: 5px 10px;
+    border-bottom: solid 1px var(--main-gray);
     width: fit-content;
-    color: #9F9F9F
 }
 
-header button.add-to-cart p.add-to-cart-text{
+.add-to-cart-text{
     width: fit-content;
     padding: 0 5px;
     margin: 0;
 }
+
+.hamburguer-menu{
+    display: none;
+    background-color: var(--main-white);
+    border: none;
+}
+
+.hamburguer-menu svg{
+    fill: var(--main-dark-gray);
+}
+
+.responsive-menu{
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    height: 100%;
+    width: 0px;
+    background-color: var(--main-color);
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    -webkit-box-shadow: 10px 0px 25px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 10px 0px 25px 0px rgba(0,0,0,0.3);
+    box-shadow: 10px 0px 25px 0px rgba(0,0,0,0.3);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 30px;
+}
+
+.responsive-menu.open {
+    left: 0;
+}
+
+drawer-content{
+    top: 100px;
+    left: 0;
+    position: absolute;
+}
+
+.close-drawer{
+    position: absolute;
+    background-color: var(--main-gray);
+    width: fit-content;
+    padding: 10px;
+    border: none;
+    top: 0;
+    right: 0;
+}
+
+.close-drawer svg{
+    fill: var(--main-white);
+}
+
+.drawer-items{
+    margin-top: 0px;
+    margin-right: 10px;
+}
+.drawer-item-container{
+    display: flex;
+    flex-direction: column;
+}
+.drawer-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+}
+
+.dropdown-mega-menu{
+    height: 0px;
+    overflow-y: hidden;
+    transition: all 0.3s ease-out;
+}
+
+.dropdown-open{
+    display: flex;
+    align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .hamburguer-menu{
+        display: block;
+        justify-self: flex-start;
+    }
+    .navigation-menu{
+        display: none;
+    }
+
+    header{
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+    header img.header-logo {
+        align-self: center;
+        justify-self: center;
+    }
+
+    .add-to-cart-text{
+        display: none;
+    }
+
+    .add-to-cart{
+        background-color: var(--main-white);
+        justify-self: flex-end;
+    }
+    .mega-menu-item{
+        border: none;
+    }
+    nav ul{
+        justify-content: flex-start;
+    }
+}
+
+/* HERO BANNER STYLES */
+
+/* FOOTER STYLES */
