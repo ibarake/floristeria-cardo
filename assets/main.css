@@ -187,10 +187,8 @@ nav ul li{
 }
 
 .mega-menu-link {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    flex-wrap: nowrap;
+    width: 100%;
+    text-align: right;
     margin: 0 15px;
     color: var(--main-olive);
     text-decoration: none;
@@ -236,7 +234,6 @@ mega-menu{
 mega-menu-item{
     padding: 5px 5px;
     width: fit-content;
-    color: var(--main-olive);
 }
 
 .add-to-cart-text{
