@@ -233,7 +233,7 @@ mega-menu{
 
 mega-menu-item{
     padding: 5px 5px;
-    width: fit-content;
+    width: 100%;
 }
 
 .add-to-cart-text{
