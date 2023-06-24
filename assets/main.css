@@ -220,7 +220,6 @@ svg{
 mega-menu{
     display: none;
     position: absolute;
-    width: fit-content;
     background-color: var(--main-dark-color);
     margin-top: 26px;
     border-radius: 12px 0px 12px 12px;
