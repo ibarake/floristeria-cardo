@@ -223,7 +223,6 @@ mega-menu{
 
 mega-menu-item{
     padding: 5px 10px;
-    border-bottom: solid 1px var(--main-gray);
     width: fit-content;
 }
 
