@@ -233,6 +233,7 @@ mega-menu{
 
 mega-menu-item{
     display: block;
+    padding: 5px 5px;
     width: 100%;
     text-align: right;
 }
