@@ -205,7 +205,7 @@ svg{
     margin: 0;
 }
 
-.mega-menu{
+mega-menu{
     display: none;
     position: absolute;
     width: fit-content;
@@ -213,11 +213,11 @@ svg{
     margin-top: 26px;
 }
 
-.has-mega-menu:hover .mega-menu {
+.has-mega-menu:hover mega-menu {
     display: block;
 }
 
-.mega-menu-item{
+mega-menu-item{
     padding: 5px 10px;
     border-bottom: solid 1px var(--main-gray);
     width: fit-content;
@@ -334,7 +334,7 @@ drawer-content{
         background-color: var(--main-white);
         justify-self: flex-end;
     }
-    .mega-menu-item{
+    mega-menu-item{
         border: none;
     }
     nav ul{
