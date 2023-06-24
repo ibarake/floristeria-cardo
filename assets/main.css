@@ -9,9 +9,11 @@ body {
 
 :root {
     --main-color: #F7F0E2;
+    --main-dark-color: #FEFAF7;
     --main-white: #fff;
     --main-gray: #9f9f9f;
     --main-dark-gray: #33363F;
+    --main-linen: #EFE4CF;
 }
 
 /* TEXT PRESET STYLES*/
@@ -209,8 +211,10 @@ mega-menu{
     display: none;
     position: absolute;
     width: fit-content;
-    background-color: var(--main-white);
+    background-color: var(--main-dark-color);
     margin-top: 26px;
+    border-radius: 12px 0px 12px 12px;
+    border: 1px solid var(--main-linen);
 }
 
 .has-mega-menu:hover mega-menu {
