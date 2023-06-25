@@ -363,6 +363,12 @@ drawer-content{
     .menu-link{
         color: var(--main-olive);
     }
+    .hamburguer-menu svg{
+        fill: var(--main-olive);
+    }
+    .mega-menu-link {
+        color: var(--main-gray);
+    }
 }
 
 /* HERO BANNER STYLES */
