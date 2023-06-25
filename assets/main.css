@@ -255,7 +255,7 @@ mega-menu-item{
 }
 
 .dropdown-open svg path{
-    fill: var(--main-olive);
+    stroke: var(--main-olive);
 }
 
 .responsive-menu{
