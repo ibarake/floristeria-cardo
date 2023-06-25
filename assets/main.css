@@ -293,7 +293,7 @@ drawer-content{
 }
 
 .close-drawer svg{
-    width: 70%;
+    width: 60%;
     height: auto;
     fill: var(--main-olive);
 }
