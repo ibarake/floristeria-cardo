@@ -26,7 +26,7 @@ closeMenu.addEventListener("click", function () {
 dropdownMenus.forEach(function (dropdownMenu) {
   dropdownMenu.addEventListener("click", function () {
     var parentLi = this.closest(".drawer-item-container");
-    var childLi = parentLi.querySelector(".dropdown-mega-menu");
+    var childLi = parentLi.querySelector("dropdown-mega-menu");
 
     if (activeDropdown && activeDropdown !== childLi) {
       activeDropdown.style.height = "0";
