@@ -290,10 +290,11 @@ drawer-content{
     border-radius: 100%;
     top: 50px;
     left: 10px;
-    padding: 5px;
 }
 
 .close-drawer svg{
+    width: 70%;
+    height: auto;
     fill: var(--main-olive);
 }
 
