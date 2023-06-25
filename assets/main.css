@@ -259,7 +259,7 @@ mega-menu-item{
     display: flex;
     height: 100%;
     width: 0px;
-    background-color: var(--main-color);
+    background-color: var(--main-dark-color);
     z-index: 1;
     position: fixed;
     top: 0;
@@ -285,7 +285,7 @@ drawer-content{
 
 .close-drawer{
     position: absolute;
-    background-color: var(--main-dark-color);
+    background-color: var(--main-color);
     border: none;
     border-radius: 100%;
     top: 50px;
