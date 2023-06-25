@@ -322,6 +322,7 @@ drawer-content{
 }
 
 dropdown-mega-menu{
+    display: block;
     height: 0px;
     overflow-y: hidden;
     transition: all 0.3s ease-out;
