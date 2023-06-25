@@ -315,6 +315,7 @@ drawer-content{
     align-items: center;
     justify-content: flex-start;
     flex-wrap: nowrap;
+    color: var(--main-olive);
 }
 
 .dropdown-mega-menu{
