@@ -285,16 +285,17 @@ drawer-content{
 
 .close-drawer{
     position: absolute;
-    background-color: var(--main-gray);
+    background-color: var(--main-color);
     width: fit-content;
     padding: 10px;
     border: none;
+    border-radius: 100px;
     top: 50;
     left: 50;
 }
 
 .close-drawer svg{
-    fill: var(--main-white);
+    fill: var(--main-olive);
 }
 
 .drawer-items{
