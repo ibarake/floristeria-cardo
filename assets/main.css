@@ -286,15 +286,16 @@ drawer-content{
 .close-drawer{
     position: absolute;
     background-color: var(--main-dark-color);
-    width: fit-content;
     border: none;
     border-radius: 100%;
     top: 50px;
     left: 10px;
+    padding: 5px;
+    width: 30px;
 }
 
 .close-drawer svg{
-    width: 60%;
+    width: 100%;
     height: auto;
     fill: var(--main-olive);
 }
