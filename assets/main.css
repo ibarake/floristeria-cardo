@@ -251,7 +251,11 @@ mega-menu-item{
 }
 
 .hamburguer-menu svg{
-    fill: var(--main-olive);
+    fill: var(--main-dark-gray);
+}
+
+.dropdown-open svg{
+    fill: var(--mai);
 }
 
 .responsive-menu{
@@ -355,6 +359,7 @@ drawer-content{
     }
     mega-menu-item{
         border: none;
+        padding: 5px 0px;
     }
     nav ul{
         justify-content: flex-start;
