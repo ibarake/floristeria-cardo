@@ -301,6 +301,7 @@ drawer-content{
 }
 
 .drawer-items{
+    padding-left: 0;
     margin-top: 0px;
     margin-right: 10px;
 }
