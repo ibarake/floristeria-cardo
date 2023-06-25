@@ -23,15 +23,15 @@
               </span>
             </navigation-item>
             {% if link.links != blank %}
-              <div class="dropdown-mega-menu">
+              <dropdown-mega-menu>
                 {% for mega_link in link.links %}
-                  <div class="mega-menu-item">
+                  <mega-menu-item>
                     <a href="{{ mega_link.url }}" class="mega-menu-text mega-menu-link subtitulo-3">
                       {{ mega_link.title }}
                     </a>
-                  </div>
+                  </mega-menu-item>
                 {% endfor %}
-              </div>
+              </dropdown-mega-menu>
             {% endif %}
           </li>
         </ul>

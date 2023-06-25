@@ -321,7 +321,7 @@ drawer-content{
     flex-wrap: nowrap;
 }
 
-.dropdown-mega-menu{
+dropdown-mega-menu{
     height: 0px;
     overflow-y: hidden;
     transition: all 0.3s ease-out;
