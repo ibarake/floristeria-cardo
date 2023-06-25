@@ -289,8 +289,8 @@ drawer-content{
     width: fit-content;
     padding: 10px;
     border: none;
-    top: 0;
-    right: 0;
+    top: 50;
+    left: 50;
 }
 
 .close-drawer svg{
