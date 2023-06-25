@@ -285,7 +285,7 @@ drawer-content{
 
 .close-drawer{
     position: absolute;
-    background-color: var(--main-color);
+    background-color: var(--main-dark-color);
     width: fit-content;
     padding: 10px;
     border: none;
