@@ -254,7 +254,7 @@ mega-menu-item{
     fill: var(--main-dark-gray);
 }
 
-.dropdown-open svg{
+.dropdown-open svg path{
     fill: var(--main-olive);
 }
 
