@@ -286,6 +286,7 @@ drawer-content{
 .close-drawer{
     position: absolute;
     background-color: var(--main-dark-color);
+    width: fit-content;
     border: none;
     border-radius: 100%;
     top: 50px;
