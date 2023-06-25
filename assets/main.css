@@ -295,6 +295,8 @@ drawer-content{
 
 .close-drawer svg{
     fill: var(--main-olive);
+    width: 60%;
+    height: auto;
 }
 
 .drawer-items{
