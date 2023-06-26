@@ -7,14 +7,14 @@
     <h3 class="h3-title">
       {{ section.settings.contact-subtitle }}
     </h3>
-    {% form %}
+    {% form 'customer' %}
       <datos>
         <input
           placeholder="Tu correo"
           type="email"
           name="contact[email]">
-        <button id="button">
-          <input type="submit" value="Recibir informacion" />
+        <button>
+          <input type="submit" value="{{ section.settings.button-title }}" />
         </button>
       </datos>
     {% endform %}
@@ -33,6 +33,10 @@
         "type": "textarea",
         "id": "contact-subtitle",
         "label": "Pellentesque cras adipiscing tempus libero vel nullam mauris tellus. Aliquam ultrices tellus consequat amet"
+      }, {
+        "type": "text",
+        "id": "button-title",
+        "label": "Recibir informacion"
       }
     ]
   }
