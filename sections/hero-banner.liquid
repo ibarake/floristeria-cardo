@@ -8,13 +8,13 @@
     </p>
   </inline-half-container>
   <inline-half-container>
-    {% for hero-product in section.settings.hero-collection.products %}
-      <products-container class="overflow-auto">
+    <products-container class="overflow-auto">
+      {% for hero-product in section.settings.hero-collection.products %}
         <product-container>
           <img src="{{ hero-product.featured_image | img_url }}" alt="{{ hero-product.featured_image.alt }}">
         </product-container>
-      </products-container>
-    {% endfor %}
+      {% endfor %}
+    </products-container>
   </inline-half-container>
 </hero-banner>
 
