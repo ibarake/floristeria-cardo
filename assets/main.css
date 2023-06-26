@@ -387,7 +387,7 @@ inline-half-container{
 .overflow-auto{
     overflow-x: scroll;
 }
-product-container{
+products-container{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
