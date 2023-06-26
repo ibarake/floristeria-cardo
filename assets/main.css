@@ -387,6 +387,11 @@ inline-half-container{
 .overflow-auto{
     overflow-x: scroll;
 }
+product-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
 product-container img{
     width: 200px;
 }
