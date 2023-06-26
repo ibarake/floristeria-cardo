@@ -9,9 +9,11 @@
   </inline-half-container>
   <inline-half-container>
     {% for hero-product in section.settings.hero-collection.products %}
-      <image-container>
-        <img src="{{ hero-product.featured_image | img_url }}" alt="{{ hero-product.featured_image.alt }}">
-      </image-container>
+      <products-container class="overflow-auto">
+        <product-container>
+          <img src="{{ hero-product.featured_image | img_url }}" alt="{{ hero-product.featured_image.alt }}">
+        </product-container>
+      </products-container>
     {% endfor %}
   </inline-half-container>
 </hero-banner>

@@ -387,7 +387,7 @@ inline-half-container{
 .overflow-auto{
     overflow-x: scroll;
 }
-image-container img{
+product-container img{
     width: 200px;
 }
 
