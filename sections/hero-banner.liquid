@@ -3,15 +3,15 @@
     <h1 class="titulo-h1">
       {{ section.settings.hero-title }}
     </h1>
-    <p class="paragraph-p2">
-      Pellentesque cras adipiscing tempus libero vel nullam mauris tellus. Aliquam ultrices tellus consequat amet,
+    <p class="parrafo-2">
+      {{ section.settings.home_welcome_message }}
     </p>
   </inline-container>
   <inline-container>
     {% for hero-product in section.settings.hero-collection.products %}
-      <div>
+      <image-container>
         <img src="{{ hero-product.featured_image | img_url }}" alt="{{ hero-product.featured_image.alt }}">
-      </div>
+      </image-container>
     {% endfor %}
   </inline-container>
 </hero-banner>
@@ -29,6 +29,11 @@
         "type": "collection",
         "id": "hero-collection",
         "label": "Collection"
+      }, {
+        "type": "textarea",
+        "id": "home_welcome_message",
+        "label": "Welcome message",
+        "default": "Welcome to my shop!"
       }
     ]
   }
