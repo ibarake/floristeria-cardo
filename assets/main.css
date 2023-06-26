@@ -384,8 +384,11 @@ hero-banner{
 inline-half-container{
     width: 50%;
 }
-image-container{
-    width: 100px;
+.overflow-auto{
+    overflow-x: scroll;
+}
+image-container img{
+    width: 200px;
 }
 
 /* FOOTER STYLES */
