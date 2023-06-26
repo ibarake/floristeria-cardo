@@ -10,7 +10,7 @@
   <inline-container>
     {% for hero-product in section.settings.hero-collection.products %}
       <div>
-        <img src="{{ hero-product.featured_image | img_url }}" alt="">
+        <img src="{{ hero-product.featured_image | img_url }}" alt="{{ hero-product.featured_image.alt }}">
       </div>
     {% endfor %}
   </inline-container>
