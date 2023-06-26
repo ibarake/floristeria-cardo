@@ -7,7 +7,13 @@
       Pellentesque cras adipiscing tempus libero vel nullam mauris tellus. Aliquam ultrices tellus consequat amet,
     </p>
   </inline-container>
-  <inline-container></inline-container>
+  <inline-container>
+    {% for hero-product in section.settings.hero-collection.products %}
+      <div>
+        <img src="{{ hero-product.featured_image | img_url }}" alt="">
+      </div>
+    {% endfor %}
+  </inline-container>
 </hero-banner>
 
 {% schema %}
