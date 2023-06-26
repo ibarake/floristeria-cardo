@@ -765,7 +765,7 @@ img {
 @import url('https://fonts.cdnfonts.com/css/dm-sans');
 @import url('https://fonts.cdnfonts.com/css/newyork');
 
-.contacto{
+contacto{
     width: 1478px;
     height: 378px;
     left: 0px;
@@ -793,7 +793,7 @@ img {
     margin: 0; 
 }
 
-.cuadro{
+cuadro{
     width: 600px;
     height: 300px;
     left: 37px;
@@ -817,7 +817,7 @@ img {
     order: 1;
     flex-grow: 0;
 }
-.button{
+button{
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 500;
@@ -837,12 +837,12 @@ img {
     border-radius: 8px;    
 }
 
-.datos{
+datos{
 display: flex; 
 height: 2.5rem;   
 }
 
-.informacion{
+informacion{
 margin-right: 10rem;   
 }
 
