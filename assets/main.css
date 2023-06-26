@@ -389,7 +389,7 @@ header {
     align-items: center;
     justify-content: center;
     width: 100%;
-    background-color: #fff;
+    background-color: var(--main-white);
     height: 85px;
     padding: 5px 20px;
 }
@@ -460,7 +460,7 @@ svg{
     display: none;
     position: absolute;
     width: fit-content;
-    background-color: #fff;
+    background-color: var(--main-white);
     margin-top: 18px;
 }
 
@@ -482,7 +482,7 @@ header button.add-to-cart p.add-to-cart-text{
 }
 
 html {
-    background-color: #FAFAFA;
+    background-color: var(--main-white);
 }
 
 .arreglos-funebres {
@@ -532,12 +532,7 @@ html {
     display: flex;
     align-items: center;
     text-align: center;
-
-
-    color: #000000;
-
-
-
+    color:var(--main-dark-gray) ;
     flex: none;
     order: 1;
     flex-grow: 0;
@@ -563,19 +558,19 @@ html {
 .title-portfolio h2 {
     font-size: 5.5rem;
     margin: 7rem 0 0 0;
-    color: #333333;
+    color: var(--main-dark-gray);
 }
 
 .title-portfolio spam {
     margin: 0;
     font-size: 1.5rem;
     font-weight: 100;
-    color: #757575;
+    color: var(--main-gray);
     line-height: 1.5;
 }
 
 .title-portfolio .portfolio-information {
-    color: #757575;
+    color: var(--main-gray);
     font-size: 17px;
     font-weight: 100;
     line-height: 1.5;
@@ -638,7 +633,7 @@ img {
     font-size: 8px;
     line-height: 21px;
 
-    color: #E0B37F;
+    color: var(--main-color);
     text-transform: uppercase;
     background-color: var(--main-color);
     text-align: center;
@@ -709,7 +704,7 @@ img {
     line-height: 26px;
     display: flex;
     align-items: center;
-    color: #414141;
+    color: var(--main-dark-gray);
     flex: none;
     display: flex;
     flex-direction: row;
@@ -719,7 +714,7 @@ img {
     gap: 10px;
     width: 791px;
     height: 66px;
-    background: #FAFAFA;
+    background: var(--main-white);
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -737,7 +732,7 @@ img {
     font-size: 14px;
     line-height: 23px;
 
-    color: #000000;
+    color: var(--main-dark-gray);
     margin: 0 0 0 25px;
 
     flex: none;
@@ -805,7 +800,7 @@ img {
     line-height: 52px;
     display: flex;
     align-items: center;
-    color: #000000;    
+    color: var(--main-dark-gray);    
     flex: none;
     order: 0;
     flex-grow: 0;   
@@ -817,7 +812,7 @@ img {
     height: 300px;
     left: 37px;
     top: 30px;
-    background: #FFFFFF;
+    background: var(--main-white);
     border-radius: 12px;    
 }
 
@@ -852,7 +847,7 @@ font-size: 16px;
     left: 1096px;
     top: 247px;
     border: none;
-    background: #E0B37F;
+    background: var(--main-color);
     border-radius: 8px;    
 }
 
