@@ -430,6 +430,7 @@ nav ul li a.menu-link{
     flex-wrap: nowrap;
     font-size: 14px;
     margin: 0 15px;
+    color: var(--main-gray);
     text-decoration: none;
     white-space: nowrap;
 }
@@ -444,7 +445,7 @@ header button.add-to-cart {
     max-width: 120px;
     align-items: center;
     justify-content: center;
-    background-color: #F7F0E2;
+    background-color: var(--main-color);
     border: none;
     padding: 10px 15px;
     border-radius: 8px;
@@ -469,9 +470,9 @@ svg{
 
 .mega-menu-item{
     padding: 10px 20px;
-    border-bottom: solid 1px #9f9f9f;
+    border-bottom: solid 1px var(--main-gray);
     width: fit-content;
-    color: #9F9F9F
+    color: var(--main-gray);
 }
 
 header button.add-to-cart p.add-to-cart-text{
@@ -510,6 +511,7 @@ html {
     text-align: center;
     letter-spacing: 3px;
     text-transform: uppercase;
+    color: var(--main-gray);
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -623,7 +625,7 @@ img {
     order: 1;
     flex-grow: 0;
     text-decoration: none;
-    border-bottom: 1px solid #F7F0E2;
+    border-bottom: 1px solid var(--main-color);
 }
 
 .body-portfolio .content {
@@ -638,7 +640,7 @@ img {
 
     color: #E0B37F;
     text-transform: uppercase;
-    background-color: #F7F0E2;
+    background-color: var(--main-color);
     text-align: center;
     margin-left: 24px;
     margin-bottom: -10px;
@@ -677,7 +679,7 @@ img {
     line-height: 23px;
     letter-spacing: 4px;
     text-transform: uppercase;
-    color: #9F9F9F;
+    color:var(--main-gray);
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -693,7 +695,7 @@ img {
     line-height: 72px;
     display: flex;
     align-items: center;
-    color: #615420;
+    color: var(--main-olive);
     flex: none;
     order: 1;
     flex-grow: 0;
@@ -750,7 +752,7 @@ img {
     font-size: 12px;
     line-height: 16px;
 
-    color: #615420;
+    color: var(--main-olive);
     margin: 3px 0 0 25px;
 
     flex: none;
@@ -787,7 +789,7 @@ img {
     height: 378px;
     left: 0px;
     top: 0px;
-    background: #F7F0E2;
+    background: var(--main-color);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -829,7 +831,7 @@ img {
     font-weight: 500;
     font-size: 16px;
     line-height: 32px;
-    color: #9F9F9F;
+    color: var(--main-gray);
     flex: none;
     order: 1;
     flex-grow: 0;
@@ -867,7 +869,7 @@ input{
 padding: 3px 10px;
 border: 1px solid grey;    
 border-radius: 5px;
-background: #F7F0E2;
+background:var(--main-color);
 }
 
 
@@ -875,11 +877,11 @@ background: #F7F0E2;
 
 
 h6 {
-    color: #615420;
+    color: var(--main-olive);
 }
 
 .btb {
-    background-color: #615420;
+    background-color: var(--main-olive);
     border: none;
     color: aliceblue;
     font-weight: 700;
@@ -913,14 +915,14 @@ body {
 .t-1 {
     font-size: 50px;
     line-height: 50px;
-    color: #615420;
+    color: var(--main-olive);
     text-align: center;
     margin: 3rem 0 0 0;
     font-family: 'NEW TORK';
 }
 
 .i-1 {
-    color: #9F9F9F;
+    color: var(--main-gray);
     font-size: 14px;
     margin-bottom: 3rem;
 }
@@ -944,7 +946,7 @@ body {
 }
 
 .t-2 {
-    color: #615420;
+    color: var(--main-olive);
     font-size: 22px;
     margin: 25px 0 10px 0;
 }
@@ -954,6 +956,6 @@ body {
 }
 
 .t-3 {
-    color: #615420;
+    color: var(--main-olive);
     font-size: 18px;
 }
