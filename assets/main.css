@@ -384,5 +384,8 @@ hero-banner{
 inline-half-container{
     width: 50%;
 }
+image-container{
+    width: 100px;
+}
 
 /* FOOTER STYLES */
