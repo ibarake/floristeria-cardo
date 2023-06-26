@@ -833,7 +833,7 @@ cuadro{
     left: 1096px;
     top: 247px;
     border: none;
-    background: var(--main-color);
+    background: var(--main-dark-color);
     border-radius: 8px;    
 }
 
