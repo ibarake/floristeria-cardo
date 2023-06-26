@@ -817,7 +817,7 @@ cuadro{
     order: 1;
     flex-grow: 0;
 }
-button{
+#button{
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 500;
