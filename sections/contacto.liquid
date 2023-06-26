@@ -7,9 +7,17 @@
     <h3 class="h3-title">
       {{ section.settings.contact-subtitle }}
     </h3>
-    <datos><input placeholder="Tu correo">
-      <button class="button">Recibir informacion</button>
-    </datos>
+    {% form %}
+      <datos>
+        <input
+          placeholder="Tu correo"
+          type="email"
+          name="contact[email]">
+        <button>
+          <input type="submit" value="Recibir informacion" />
+        </button>
+      </datos>
+    {% endform %}
   </informacion>
 </contacto>
 
