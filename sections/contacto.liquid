@@ -1,7 +1,9 @@
-<section class="contacto">
+<contacto>
   <cuadro></cuadro>
   <informacion>
-    <p class="title-info">Contáctanos</p>
+    <h1 class="title-info">
+      {{ section.settings.contact-title }}
+    </h1>
     <h3 class="h3-title">
       Pellentesque cras adipiscing tempus libero vel nullam mauris tellus. Aliquam ultrices tellus consequat amet,
     </h3>
@@ -9,4 +11,17 @@
       <button class="button">Recibir informacion</button>
     </datos>
   </informacion>
-</section>
+</contacto>
+
+{% schema %}
+  {
+    "name": "contacto",
+    "settings": [
+      {
+        "type": "text",
+        "id": "contact-title",
+        "label": "Contactanos"
+      }
+    ]
+  }
+{% endschema %}
