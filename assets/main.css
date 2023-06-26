@@ -377,7 +377,10 @@ dropdown-mega-menu{
 }
 
 /* HERO BANNER STYLES */
-
+hero-banner{
+    display: flex;
+    flex-direction: row;
+}
 inline-half-container{
     width: 50%;
 }
