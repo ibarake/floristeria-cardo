@@ -408,6 +408,7 @@ preguntas {
     height: 65px;
     border: none;
     border-bottom: 1px solid var(--main-dark-gray);
+    cursor: pointer;
 }
 
 #subtitulo-preguntas {
