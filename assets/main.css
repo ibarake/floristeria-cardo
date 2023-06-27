@@ -463,96 +463,16 @@ height: 2.5rem;
 }
 
 input{
-padding: 3px 10px;
-border: 1px solid grey;    
+padding: 3px 15px;
+border: 1px solid var(--main-gray);    
 border-radius: 5px;
 background:var(--main-color);
 }
 
-
-/* footer*/
-
-
-h6 {
+.button-contacto {
+    width: 230px;
+    height: 45px;
+    border-radius: 5px;
+    background-color: var(--main-linen);
     color: var(--main-olive);
-}
-
-.btb {
-    background-color: var(--main-olive);
-    border: none;
-    color: aliceblue;
-    font-weight: 700;
-    padding: 5px 15px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
-
-
-/* tyc*/
-
-body {
-    margin: 0;
-}
-
-.terminos-condiciones {
-    display: flex;
-    flex-direction: column;
-    background-color: linen;
-    height: 1000px;
-    width: 100%;
-}
-
-.title-terms {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.t-1 {
-    font-size: 50px;
-    line-height: 50px;
-    color: var(--main-olive);
-    text-align: center;
-    margin: 3rem 0 0 0;
-    font-family: 'NEW TORK';
-}
-
-.i-1 {
-    color: var(--main-gray);
-    font-size: 14px;
-    margin-bottom: 3rem;
-}
-
-.cont-1 {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.cont-2 {
-    width: 700px;
-    height: 100vh;
-    background-color: aliceblue;
-    border-radius: 12px;
-    display: flex;
-    justify-content: center;
-}
-
-.cont-3 {
-    width: 600px;
-}
-
-.t-2 {
-    color: var(--main-olive);
-    font-size: 22px;
-    margin: 25px 0 10px 0;
-}
-
-.i-2 {
-    font-size: 14px;
-}
-
-.t-3 {
-    color: var(--main-olive);
-    font-size: 18px;
 }
