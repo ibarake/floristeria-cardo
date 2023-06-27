@@ -16,7 +16,9 @@
       "contacto": {
         "type": "contacto",
         "settings": {
-          "contact-title": ""
+          "contact-title": "Contáctanos",
+          "contact-subtitle": "Pellentesque cras adipiscing tempus libero vel nullam mauris tellus. Aliquam ultrices tellus consequat amet,",
+          "button-title": "Recibir Información"
         }
       },
       "footer": {
