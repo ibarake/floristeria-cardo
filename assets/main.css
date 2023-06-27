@@ -444,7 +444,7 @@ contacto{
 }
 
 informacion {
-    width: 40%;
+    width: 35%;
 }
 
 cuadro{
@@ -477,5 +477,6 @@ background:var(--main-color);
     border-radius: 5px;
     background-color: #E0B37F;
     color: var(--main-olive);
-    font-weight: 500;
+    border: none;
+    cursor: pointer;
 }
