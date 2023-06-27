@@ -392,8 +392,14 @@ products-container{
     flex-direction: row;
     flex-wrap: nowrap;
 }
-product-container img{
-    width: 200px;
+
+/* PRODUCT CARD STYLES */
+
+product-card img{
+    width: 300px;
+    height: 256px;
+    object-fit: cover;
+    object-position: center center;
 }
 
 /* FOOTER STYLES */
