@@ -1,57 +1,58 @@
 <link rel="stylesheet" href=".assets/main.css">
 <section class="preguntas-frecuentes">
-	<title>
-		<p class="f">
-			{{ section.settings.subtitle-preguntas }}
-		</p>
-		<h2 class="g">
-			{{ section.settings.title-preguntas }}
-		</h2>
-	</title>
-	<preguntas>
+  <title>
+    <p class="f">
+      {{ section.settings['subtitle-preguntas'] }}
+    </p>
+    <h2 class="g">
+      {{ section.settings['title-preguntas'] }}
+    </h2>
+  </title>
+  <preguntas>
     {% for block in section.blocks %}
       <select name="p1" id="cars">
-        <option value="{{ block.settings.heading-text }}"> {{ block.settings.heading-text }} </option>
+        <option value="{{ block.settings.heading-text }}">{{ block.settings['heading-text'] }}</option>
       </select>
     {% endfor %}
-	</preguntas>
+  </preguntas>
 </section>
 
-{% schema  %}
-	{
-		"name": "preguntasFrecuentes",
-		"settings": [
-			{
-				"type": "text",
-				"id": "title-preguntas",
-				"label": "Title section",
-				"default": "Sobre Cardó"
-			}, {
-				"type": "text",
-				"id": "subtitle-preguntas",
-				"label": "subtitle-preguntas",
-				"default": "preguntas frecuentes"
-			}
-		],
-    "max_blocks": 5,
-		"blocks": [
-			{
-				"name": "FAQ",
-				"type": "FAQ",  
-				"settings": [
-					{
-						"type": "text",
-          	"id": "heading-text",
-          	"label": "Heading text",
-          	"default": "Heading text"
-					}
-				]
-			}
-		],
-    "presets": [
-      {
-        "name": "Custom collection section Flores"
-      }
-    ]
-	}
+{% schema %}
+{
+	"name": "preguntasFrecuentes",
+	"settings": [
+		{
+			"type": "text",
+			"id": "title-preguntas",
+			"label": "Title section",
+			"default": "Sobre Cardó"
+		}, {
+			"type": "text",
+			"id": "subtitle-preguntas",
+			"label": "subtitle-preguntas",
+			"default": "preguntas frecuentes"
+		}
+	],
+	"blocks": [
+		{
+			"type": "FAQ",
+			"name": "FAQ",
+             "limit": 5,
+			"settings": [
+				{
+					"type": "text",
+         	"id": "faq-text",
+         	"label": "Heading text",
+         	"default": "Heading text"
+				}
+			]
+		}
+	],
+   "presets": [
+     {
+       "category": "custom-collection-banner",
+       "name": "Custom collection section Flores"
+     }
+   ]
+}
 {% endschema %}
