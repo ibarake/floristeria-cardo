@@ -394,6 +394,10 @@ products-container{
     flex-wrap: nowrap;
 }
 
+.hero-title{
+    color: var(--main-olive);
+}
+
 /* PRODUCT CARD STYLES */
 
 product-card{
