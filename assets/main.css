@@ -399,7 +399,7 @@ products-container{
 product-card{
     background-color: var(--main-white);
     border-radius: 8px;
-    padding: 16px;
+    margin: 16px;
 }
 
 product-card img{
