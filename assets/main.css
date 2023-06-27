@@ -380,6 +380,7 @@ dropdown-mega-menu{
 hero-banner{
     display: flex;
     flex-direction: row;
+    background-color: var(--main-linen);
 }
 inline-half-container{
     width: 50%;
