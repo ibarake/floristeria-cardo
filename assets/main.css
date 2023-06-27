@@ -396,6 +396,11 @@ products-container{
 
 /* PRODUCT CARD STYLES */
 
+product-card{
+    background-color: var(--main-white);
+    border-radius: 8px;
+}
+
 product-card img{
     width: 300px;
     height: 256px;
