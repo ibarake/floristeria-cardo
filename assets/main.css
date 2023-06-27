@@ -462,17 +462,20 @@ display: flex;
 height: 2.5rem;   
 }
 
-input{
-padding: 3px 55px;
+#correo{
+width: 345px;
+height: 40px;
 border: 1px solid var(--main-gray);    
 border-radius: 5px;
 background:var(--main-color);
 }
 
 .button-contacto {
-    padding: 3px 15px;
+    width: 200px;
+    height: 40px;
     margin: 0 3px;
     border-radius: 5px;
     background-color: #E0B37F;
     color: var(--main-olive);
+    font-weight: 500;
 }
