@@ -407,14 +407,11 @@ preguntas {
     width: 790px;
     height: 65px;
     border: none;
-    margin: 5px;
     border-bottom: 1px solid var(--main-dark-gray);
 }
 
-#option {
-    width: 790px;
-    height: 65px;
-    border-bottom: 1px solid var(--main-dark-gray);
+option {
+    text-align: center
 }
 
 /* Contacto*/
