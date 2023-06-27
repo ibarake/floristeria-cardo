@@ -463,7 +463,7 @@ height: 2.5rem;
 }
 
 input{
-padding: 3px 25px;
+padding: 3px 55px;
 border: 1px solid var(--main-gray);    
 border-radius: 5px;
 background:var(--main-color);
@@ -471,7 +471,8 @@ background:var(--main-color);
 
 .button-contacto {
     padding: 3px 15px;
+    margin: 0 3px;
     border-radius: 5px;
-    background-color: var(--main-olive);
+    background-color: #E0B37F;
     color: var(--main-olive);
 }
