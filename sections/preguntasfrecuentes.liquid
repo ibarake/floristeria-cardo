@@ -10,8 +10,8 @@
   </container>
   <preguntas>
     {% for block in section.blocks %}
-      <select name="p1" id="card">
-        <option class="subtitulo-2" value="{{ block.settings.faq-text }}">{{ block.settings['faq-text'] }}</option>
+      <select name="p1" id="card" class="subtitulo-2">
+        <option value="{{ block.settings.faq-text }}">{{ block.settings['faq-text'] }}</option>
       </select>
     {% endfor %}
   </preguntas>
