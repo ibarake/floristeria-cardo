@@ -392,6 +392,7 @@ products-container{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    padding: 0px 50px;
 }
 
 /* PRODUCT CARD STYLES */
