@@ -406,6 +406,8 @@ preguntas {
 #card {
     width: 790px;
     height: 65px;
+    border: none;
+    margin: 5px;
     border-bottom: 1px solid var(--main-dark-gray);
 }
 
