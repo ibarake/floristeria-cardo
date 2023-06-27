@@ -1,0 +1,7 @@
+<product-container>
+  <img src="{{ hero-product.featured_image | img_url }}" alt="{{ hero-product.featured_image.alt }}">
+  <p>{{ hero-product.collections[0].title }}</p>
+  <p>{{ hero-product.title }}</p>
+  <p>{{ hero-product.price }}</p>
+  <button class="card-add-to-cart">{{ atc-btn }}</button>
+</product-container>
