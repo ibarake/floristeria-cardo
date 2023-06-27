@@ -4,13 +4,13 @@
     <h5 class="titulo-5">
       {{ section.settings['subtitle-preguntas'] }}
     </h5>
-    <h1 class="titulo-1">
+    <h1 class="subtitulo-3">
       {{ section.settings['title-preguntas'] }}
     </h1>
   </container>
   <preguntas>
     {% for block in section.blocks %}
-      <select name="p1" id="cars">
+      <select name="p1" id="card">
         <option value="{{ block.settings.faq-text }}">{{ block.settings['faq-text'] }}</option>
       </select>
     {% endfor %}
