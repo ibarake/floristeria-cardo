@@ -25,6 +25,7 @@ body {
     font-weight: 400;
     font-size: 64px;
     line-height: 72px;
+    margin: 0;
 }
 
 .titulo-2{
@@ -443,7 +444,7 @@ contacto{
 }
 
 informacion {
-    width: 50%;
+    width: 45%;
 }
 
 cuadro{
