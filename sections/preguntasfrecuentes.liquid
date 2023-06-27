@@ -1,11 +1,13 @@
 <link rel="stylesheet" href=".assets/main.css">
 <section class="preguntas-frecuentes">
+  <container>
     <h5 class="titulo-5">
       {{ section.settings['subtitle-preguntas'] }}
     </h5>
     <h1 class="titulo-1">
       {{ section.settings['title-preguntas'] }}
     </h1>
+  </container>
   <preguntas>
     {% for block in section.blocks %}
       <select name="p1" id="cars">

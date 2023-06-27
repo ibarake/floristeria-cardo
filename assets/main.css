@@ -394,6 +394,13 @@ header {
     padding: 5px 20px;
 }
 
+container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-olive);
+}
+
 header img.header-logo{
     align-self: center;
     justify-self: end;
