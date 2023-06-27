@@ -396,6 +396,7 @@ products-container{
 
 .hero-title{
     color: var(--main-olive);
+    font-size: 72px;
 }
 
 /* PRODUCT CARD STYLES */
