@@ -410,6 +410,17 @@ preguntas {
     border-bottom: 1px solid var(--main-dark-gray);
 }
 
+#subtitulo-preguntas {
+    text-transform: uppercase;
+    color: var(--main-gray);
+    margin: 0
+}
+
+#titulo-preguntas {
+    color: var(--main-olive);
+    margin: 0;
+}
+
 /* Contacto*/
 
 @import url('https://fonts.cdnfonts.com/css/dm-sans');
