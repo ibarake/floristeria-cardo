@@ -392,7 +392,6 @@ products-container{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    padding: 0px 50px;
 }
 
 /* PRODUCT CARD STYLES */
@@ -400,6 +399,7 @@ products-container{
 product-card{
     background-color: var(--main-white);
     border-radius: 8px;
+    padding: 16px;
 }
 
 product-card img{
