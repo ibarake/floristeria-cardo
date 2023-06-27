@@ -400,6 +400,7 @@ product-card{
     background-color: var(--main-white);
     border-radius: 8px;
     margin: 16px;
+    overflow: hidden;
 }
 
 product-card img{
