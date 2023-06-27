@@ -7,6 +7,28 @@
         "settings": {
           "main-menu": "menu-principal"
         }
+      },
+      "sections2": {
+        "type": "sections2",
+        "settings": {
+        }
+      },
+      "contacto": {
+        "type": "contacto",
+        "settings": {
+          "contact-title": ""
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+        }
+      },
+      "tyc": {
+        "type": "tyc",
+        "settings": {
+          "terminos-title": ""
+        }
       }
     },
     "content_for_index": [
