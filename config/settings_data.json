@@ -29,6 +29,31 @@
         "settings": {
           "terminos-title": ""
         }
+      },
+      "preguntasfrecuentes": {
+        "type": "preguntasfrecuentes",
+        "blocks": {
+          "a1c22aac-878c-4500-a504-345808034813": {
+            "type": "FAQ",
+            "settings": {
+              "faq-text": "Heading text"
+            }
+          },
+          "ceeb6014-f583-41f2-b85a-8d58058552da": {
+            "type": "FAQ",
+            "settings": {
+              "faq-text": "Heading text"
+            }
+          }
+        },
+        "block_order": [
+          "a1c22aac-878c-4500-a504-345808034813",
+          "ceeb6014-f583-41f2-b85a-8d58058552da"
+        ],
+        "settings": {
+          "title-preguntas": "Sobre Cardó",
+          "subtitle-preguntas": "preguntas frecuentes"
+        }
       }
     },
     "content_for_index": [
