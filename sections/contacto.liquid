@@ -13,9 +13,7 @@
           placeholder="Tu correo"
           type="email"
           name="contact[email]">
-        <button>
-          {{ section.settings.button-title }}
-        </button>
+        <input type="button" value="{{ section.settings.button-title }}">
       </datos>
     {% endform %}
   </informacion>
@@ -32,7 +30,7 @@
       }, {
         "type": "textarea",
         "id": "contact-subtitle",
-        "label": "Pellentesque cras adipiscing tempus libero vel nullam mauris tellus. Aliquam ultrices tellus consequat amet"
+        "label": "Subtitle"
       }, {
         "type": "text",
         "id": "button-title",
