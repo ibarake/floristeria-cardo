@@ -654,38 +654,6 @@ img {
     flex-direction: column;
 }
 
-.f{
-    width: 314px;
-    height: 23px;
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 23px;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    color:var(--main-gray);
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-}
-
-.g{
-    width: 444px;
-    height: 72px;
-    font-family: 'NewYork';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 64px;
-    line-height: 72px;
-    display: flex;
-    align-items: center;
-    color: var(--main-olive);
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-}
-
 #cars{
     font-family: 'DM Sans';
     font-style: normal;
