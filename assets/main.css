@@ -421,6 +421,7 @@ products-container{
     top: -50px;
     right: -50px;
     z-index: 1;
+    transform: rotate(25deg);
 }
 
 .flor-2{
