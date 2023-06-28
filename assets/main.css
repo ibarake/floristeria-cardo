@@ -418,10 +418,10 @@ products-container{
 
 .flor-1{
     position: absolute;
-    top: -50px;
-    right: -50px;
+    top: -200px;
+    right: 0px;
     z-index: 1;
-    transform: rotate(-25deg);
+    transform: rotate(26deg);
 }
 
 .flor-2{
