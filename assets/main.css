@@ -397,6 +397,9 @@ inline-half-container.right{
 .overflow-auto{
     overflow-x: auto;
 }
+.overflow-auto::-webkit-scrollbar {
+    display: none;
+  }
 products-container{
     display: flex;
     flex-direction: row;
