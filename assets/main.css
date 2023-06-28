@@ -405,9 +405,6 @@ products-container{
 /* PRODUCT CARD STYLES */
 
 product-card{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     background-color: var(--main-white);
     border-radius: 8px;
     margin: 16px;
@@ -421,7 +418,9 @@ product-card img{
 }
 
 card-product-info{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     margin: 10px;
 }
 
