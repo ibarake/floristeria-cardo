@@ -7,11 +7,11 @@
       {{ section.settings.arreglos-title }}
     </h1>
   </container-arreglos>
-  <div>
+  <container-products>
     {% for product in section.settings.collection.products %}
         {% include 'product-card', hero-product: product, atc-btn: section.settings.button-text %}
     {% endfor %}
-  </div>
+  </container-products>
 </section>
 
 {% schema %}

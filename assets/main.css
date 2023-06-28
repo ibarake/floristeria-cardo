@@ -557,4 +557,8 @@ container-arreglos {
     margin: 0;
 }
 
+container-products {
+    display: flex;
+}
+
 /* FOOTER STYLES */
