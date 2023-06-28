@@ -439,11 +439,11 @@ card-footer{
 
 .card-add-to-cart svg{
     fill: var(--main-olive);
+    margin-right: 10px;
 }
 
 .atc-btn-text{
     color: var(--main-olive);
-    margin-left: 5px;
 }
 
 .collection-tag{
