@@ -422,6 +422,7 @@ card-product-info{
     flex-direction: column;
     justify-content: space-around;
     margin: 10px;
+    height: 100%;
 }
 
 card-footer{
