@@ -561,7 +561,7 @@ container-arreglos {
 
 container-products {
     display: flex;
-    align-items: baseline;
+    align-items: center;
 }
 
 /* FAQ STYLES */
