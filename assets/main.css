@@ -383,6 +383,21 @@ dropdown-mega-menu{
 
 /* SECTIONS2*/
 
+.arreglos-funebres {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+container-arreglos {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
 /* PREGUNTAS FRECUENTES */
 
 .preguntas-frecuentes {
