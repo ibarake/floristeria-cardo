@@ -142,6 +142,7 @@ header {
     width: 100%;
     background-color: var(--main-white);
     height: 85px;
+    z-index: 9999;
 }
 
 header img.header-logo{
