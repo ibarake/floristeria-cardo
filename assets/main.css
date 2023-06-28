@@ -415,6 +415,7 @@ products-container{
 
 .hero-title{
     color: var(--main-olive);
+    width: 60%;
 }
 
 .flor-1{
