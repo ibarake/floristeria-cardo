@@ -12,6 +12,14 @@
     <p class="parrafo-2">
       {{ section.settings.hero-subtitle }}
     </p>
+    <hero-buttons>
+      {% if section.settings.cta-1 != blank %}
+        <button class="cta-1">{{ section.settings.cta-1 }}</button>
+      {% endif %}
+      {% if section.settings.cta-2 != blank %}
+        <button class="cta-1">{{ section.settings.cta-2 }}</button>
+      {% endif %}
+    </hero-buttons>
   </inline-half-container>
   <inline-half-container class="right">
     <products-container class="overflow-auto">
@@ -27,24 +35,37 @@
     "name": "hero-banner",
     "settings": [
       {
-        "type": "text",
+        "type": "html",
         "id": "hero-title",
         "label": "Titulo principal H1",
         "default": "¿No sabes <br> cómo decirlo? <br> Dilo con Flores."
-      }, {
+      },
+      {
         "type": "collection",
         "id": "hero-collection",
         "label": "Collection"
-      }, {
+      },
+      {
         "type": "textarea",
         "id": "hero-subtitle",
         "label": "Hero subtitle",
         "default": "Pellentesque cras adipiscing tempus libero vel nullam mauris tellus. Aliquam ultrices tellus consequat amet,"
-      }, {
+      },
+      {
         "type": "text",
         "id": "add-to-cart-title",
         "label": "Titulo principal H1",
         "default": "Añadir al carrito"
+      }, {
+        "type": "text",
+        "id": "cta-1",
+        "label": "Titulo principal H1",
+        "default": "¿No sabes <br> cómo decirlo? <br> Dilo con Flores."
+      }, {
+        "type": "text",
+        "id": "cta-2",
+        "label": "Titulo principal H1",
+        "default": "¿No sabes <br> cómo decirlo? <br> Dilo con Flores."
       }
     ]
   }
