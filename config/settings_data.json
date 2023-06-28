@@ -45,7 +45,16 @@
           "collection": "arreglos-funebres",
           "button-text": "Añadir al carrito",
           "title-preguntas": "Sobre Cardó",
-          "subtitle-preguntas": "preguntas frecuentes"
+          "subtitle-preguntas": "preguntas frecuentes",
+          "subtitulo-fotos": "Ver todos"
+        }
+      },
+      "contacto": {
+        "type": "contacto",
+        "settings": {
+          "arreglos-title": "Lorem ipsum dolor sit amet",
+          "arreglos-subtitle": "Arreglos Funebres",
+          "collection": "cajas-decorativas"
         }
       }
     },
