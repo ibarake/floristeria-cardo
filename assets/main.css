@@ -431,6 +431,22 @@ products-container{
     left: 0;
 }
 
+.cta-1{
+    padding: 10px 30px 10px 30px;
+    background-color: var(--main-olive);
+    color: var(--main-white);
+    border-radius: 8px;
+    border: none;
+}
+
+.cta-1{
+    padding: 10px 30px 10px 30px;
+    background-color: var(--main-color);
+    color: var(--main-white);
+    border-radius: 8px;
+    border: none;
+}
+
 /* PRODUCT CARD STYLES */
 
 product-card{
