@@ -421,6 +421,11 @@ card-product-info{
     margin: 10px;
 }
 
+card-footer{
+    display: flex;
+    flex-direction: row;
+}
+
 .collection-tag{
     padding: 5px;
     text-transform: uppercase;
