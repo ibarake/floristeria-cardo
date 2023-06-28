@@ -477,7 +477,7 @@ card-product-info{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin: 10px;
+    margin: 10px 10px 0 10px;
     height: 100%;
 }
 
