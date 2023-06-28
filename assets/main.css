@@ -417,6 +417,10 @@ products-container{
     color: var(--main-olive);
 }
 
+.hero-subtitle{
+    color: var(--main-gray)
+}
+
 .flor-1{
     position: absolute;
     top: -200px;
