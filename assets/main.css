@@ -15,6 +15,7 @@ body {
     --main-dark-gray: #33363F;
     --main-linen: #EFE4CF;
     --main-olive: #615420;
+    --linen-3: #E0B37F;
 }
 
 /* TEXT PRESET STYLES*/
@@ -412,6 +413,13 @@ product-card img{
     height: 256px;
     object-fit: cover;
     object-position: center center;
+}
+
+.collection-tag{
+    padding: 5px;
+    text-transform: uppercase;
+    background-color: var(--main-color);
+    border-radius: 4px;
 }
 
 /* FOOTER STYLES */
