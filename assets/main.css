@@ -466,6 +466,7 @@ products-container{
     hero-banner{
         flex-direction: column;
         padding: 0;
+        text-align: center;
     }
 }
 
