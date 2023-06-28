@@ -21,11 +21,31 @@
       },
       "products-faq": {
         "type": "products-faq",
+        "blocks": {
+          "9b5b7a21-5d0b-4763-96a2-d16fff5b2b67": {
+            "type": "FAQ",
+            "settings": {
+              "faq-text": "Prueba 1"
+            }
+          },
+          "035c1490-ace0-4458-89e2-021d00ce7a17": {
+            "type": "FAQ",
+            "settings": {
+              "faq-text": "Prueba 2"
+            }
+          }
+        },
+        "block_order": [
+          "9b5b7a21-5d0b-4763-96a2-d16fff5b2b67",
+          "035c1490-ace0-4458-89e2-021d00ce7a17"
+        ],
         "settings": {
           "arreglos-title": "Lorem ipsum dolor sit amet",
           "arreglos-subtitle": "Arreglos Funebres",
           "collection": "arreglos-funebres",
-          "button-text": "Añadir al carrito"
+          "button-text": "Añadir al carrito",
+          "title-preguntas": "Sobre Cardó",
+          "subtitle-preguntas": "preguntas frecuentes"
         }
       }
     },
