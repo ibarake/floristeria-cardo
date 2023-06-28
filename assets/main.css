@@ -417,6 +417,7 @@ product-card img{
     height: 256px;
     object-fit: cover;
     object-position: center center;
+    border-radius: 8px 0px;
 }
 
 card-product-info{
