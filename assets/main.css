@@ -544,7 +544,6 @@ container-arreglos {
     width: 40%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
@@ -556,6 +555,7 @@ container-arreglos {
 
 #p-title {
     text-align: center;
+    margin: 0;
 }
 
 /* FOOTER STYLES */
