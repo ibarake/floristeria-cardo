@@ -455,6 +455,15 @@ products-container{
     border: none;
 }
 
+@media only screen and (max-width: 768px) {
+    inline-half-container.left{
+        width: 100%;
+    }
+    inline-half-container.right{
+        width: 100%;
+    }
+}
+
 /* PRODUCT CARD STYLES */
 
 product-card{
