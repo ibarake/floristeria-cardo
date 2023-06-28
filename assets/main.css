@@ -605,4 +605,11 @@ preguntas {
     margin: 0;
 }
 
+/* HERO BANNER STYLES */
+
+container-arreglos {
+    display: flex;
+    justify-content: center;
+}
+
 /* FOOTER STYLES */
