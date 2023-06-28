@@ -41,3 +41,23 @@ dropdownMenus.forEach(function (dropdownMenu) {
     }
   });
 });
+
+/* HERO BANNER */
+
+// Function to handle class changes based on window width
+function handleClassChange() {
+  var element = document.querySelector(".hero-title");
+  if (window.innerWidth < 768) {
+    element.classList.add("subtitulo-2");
+    element.classList.remove("titulo-1");
+  } else {
+    element.classList.add("titulo-1");
+    element.classList.remove("subtitulo-2");
+  }
+}
+
+// Initial class assignment on page load
+handleClassChange();
+
+// Event listener for window resize
+window.addEventListener("resize", handleClassChange);
