@@ -7,7 +7,7 @@
   </div>
   <inline-half-container class="left">
     <h1 class="titulo-1 hero-title">
-      {{ section.settings.hero-title }}
+      {{ section.settings.hero-title | replace: ' | ', '<br>' }}
     </h1>
     <p class="parrafo-2">
       {{ section.settings.hero-subtitle }}
@@ -38,7 +38,7 @@
         "type": "html",
         "id": "hero-title",
         "label": "Titulo principal H1",
-        "default": "¿No sabes\ncómo decirlo?\nDilo con Flores."
+        "default": "¿No sabes | cómo decirlo? | Dilo con Flores."
       },
       {
         "type": "collection",
