@@ -426,7 +426,7 @@ products-container{
 
 .flor-2{
     position: absolute;
-    top: 0;
+    top: -100px;
     left: 0;
 }
 
