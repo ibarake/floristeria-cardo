@@ -420,6 +420,8 @@ product-card img{
     text-transform: uppercase;
     background-color: var(--main-color);
     border-radius: 4px;
+    color: var(--linen-3);
+    width: fit-content;
 }
 
 /* FOOTER STYLES */
