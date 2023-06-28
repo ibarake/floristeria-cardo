@@ -440,6 +440,10 @@ products-container{
     left: 0;
 }
 
+.cta{
+    width: 50%;
+}
+
 .cta-1{
     padding: 10px 30px 10px 30px;
     background-color: var(--main-olive);
