@@ -1,83 +1,38 @@
-<link rel="stylesheet" href=".assets/main.css">
 <section class="arreglos-funebres">
-  <title>
-    <p class="title-info">ARREGLOS FUNEBRES</p>
-    <h2 class="h2-title">Lorem ipsum dolor sit amet</h2>
-  </title>
-  <body-portfolio>
-    <container-portfolio>
-      <box>
-        <background">
-          <img src="https://i.imgur.com/vw0ksef.png" title="dasda">
-        </background>
-        <information>
-          <p class="content">Arreglos Florales</p>
-          <p class="title">Cilindro en Flores Exoticas</p>
-        </div>
-        <price>
-          <p class="pri">$1.250.000</p>
-          <p class="carro">
-            <img
-              id="buy"
-              src="https://i.imgur.com/XR8lu2t.png"
-              title="source: imgur.com">Añadir al carrito
-          </p>
-        </price>
-      </div>
-      <box>
-        <background>
-          <img src="https://i.imgur.com/r729UPS.png" title="dasda">
-        </background>
-        <information>
-          <p class="content">Arreglos Florales</p>
-          <p class="title">Cilindro en Flores Exoticas</p>
-        </information>
-        <price>
-          <p class="pri">$1.250.000</p>
-          <p class="carro">
-            <img
-              id="buy"
-              src="https://i.imgur.com/XR8lu2t.png"
-              title="source: imgur.com">Añadir al carrito
-          </p>
-        </price>
-      </box>
-      <div class="box">
-        <div class="background">
-          <img src="https://i.imgur.com/jEyuKfL.png" title="dasda">
-        </div>
-        <div class="information">
-          <p class="content">Arreglos Florales</p>
-          <p class="title">Cilindro en Flores Exoticas</p>
-        </div>
-        <price class="price">
-          <p class="pri">$1.250.000</p>
-          <p class="carro">
-            <img
-              id="buy"
-              src="https://i.imgur.com/XR8lu2t.png"
-              title="source: imgur.com">Añadir al carrito
-          </p>
-        </price>
-      </div>
-      <box>
-        <background>
-          <img src="https://i.imgur.com/mMIv8cU.png" title="dasda">
-        </background>
-        <dinformation>
-          <p class="content">Arreglos Florales</p>
-          <p class="title">Cilindro en Flores Exoticas</p>
-        </dinformation>
-        <price>
-          <p class="pri">$1.250.000</p>
-          <p class="carro">
-            <img
-              id="buy"
-              src="https://i.imgur.com/XR8lu2t.png"
-              title="source: imgur.com">Añadir al carrito
-          </p>
-        </price>
-      </box>
-    </div>
-  </body-portfolio>
+  <container-arreglos>
+    <p class="subtitulo-3">
+      {{ section.settings.arreglos-subtitle }}
+    </p>
+    <h1 class="titulo-1">
+      {{ section.settings.arreglos-title }}
+    </h1>
+  </container-arreglos>
+  <div>
+    {% for hero-product in section.settings.hero-collection.products %}
+      {% include 'product-card', hero-product: hero-product, atc-btn: section.settings.add-to-cart-title %}
+    {% endfor %}
+  </div>
 </section>
+
+{% schema %}
+  {
+    "name": "arreglos-funebres",
+    "settings": [
+      {
+        "type": "text",
+        "id": "arreglos-title",
+        "label": "Titulo",
+        "default": "Lorem ipsum dolor sit amet"
+      }, {
+        "type": "text",
+        "id": "arreglos-subtitle",
+        "label": "Subtitulo",
+        "default": "Arreglos Funebres"
+      }, {
+        "type": "collection",
+        "id": "hero-collection",
+        "label": "Collection"
+      }
+    ]
+  }
+{% endschema %}
