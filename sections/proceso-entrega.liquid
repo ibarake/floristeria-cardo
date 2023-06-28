@@ -1,12 +1,16 @@
 <section class="proceso-entrega">
-    <div class="main-container">
+    <main-container>
         <h1 class="titulo-1">
             {{ section.settings.title-main }}
         </h1>
         <p class="parrafo-1">
             {{ section.settings.paragraph-main }}
         </p>
-    </div>
+        <buttons-container>
+            <button id="button-1"> {{ section.settings.button-1 }} </button>
+            <button id="button-1"> {{ section.settings.button-2 }} </button>
+        </buttons-container>
+    </main-container>
     <div></div>
 </section>
 
@@ -24,6 +28,16 @@
                 "id": "paragraph-main",
                 "label": "paragraph-main",
                 "default": "Pellentesque cras adipiscing tempus libero vel nullam mauris tellus. Aliquam ultrices tellus consequat amet,"
+            }, {
+                "type": "text",
+                "id": "button-1",
+                "label": "button-1",
+                "default": "Ver por Ocasion"
+            }, {
+                "type": "text",
+                "id": "button-2",
+                "label": "button-2",
+                "default": "Conttacto"
             }
         ]
     }
