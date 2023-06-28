@@ -11,6 +11,9 @@
     {% for product in section.settings.collection.products limit:4 %}
         {% include 'product-card', hero-product: product, atc-btn: section.settings.button-text %}
     {% endfor %}
+    <p class="subtitulo-2">
+      {{ section.settings.subtitulo-fotos }}{{% render 'icon-arrow-right' %}}
+    </p>
   </container-products>
 </section>
 <section class="preguntas-frecuentes">
@@ -64,7 +67,12 @@
 			"id": "subtitle-preguntas",
 			"label": "subtitle-preguntas",
 			"default": "preguntas frecuentes"
-		}
+		}, {
+      "type": "text",
+      "id": "subtitulo-fotos",
+      "label": "Ver Todos",
+      "default": "Ver todos"
+    }
 	],
 	"blocks": [
 		{
