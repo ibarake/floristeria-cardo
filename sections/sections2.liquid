@@ -8,9 +8,7 @@
     </h1>
   </container-arreglos>
   <div>
-    {% for hero-product in section.settings.hero-collection.products %}
-      {% include 'product-card', hero-product: hero-product, atc-btn: section.settings.add-to-cart-title %}
-    {% endfor %}
+
   </div>
 </section>
 
@@ -30,8 +28,8 @@
         "default": "Arreglos Funebres"
       }, {
         "type": "collection",
-        "id": "hero-collection",
-        "label": "Collection"
+        "id": "collection",
+        "label": "collection"
       }
     ]
   }
