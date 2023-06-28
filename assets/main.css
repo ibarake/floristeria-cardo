@@ -410,6 +410,14 @@ products-container{
     color: var(--main-olive);
 }
 
+.flor-1{
+    position: absolute;
+}
+
+.flor-2{
+    position: absolute;
+}
+
 /* PRODUCT CARD STYLES */
 
 product-card{
