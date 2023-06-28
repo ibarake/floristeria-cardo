@@ -13,6 +13,23 @@
     {% endfor %}
   </container-products>
 </section>
+<section class="preguntas-frecuentes">
+  <container>
+    <h5 class="subtitulo-3" id="subtitulo-preguntas">
+      {{ section.settings['subtitle-preguntas'] }}
+    </h5>
+    <h1 class="titulo-1" id="titulo-preguntas">
+      {{ section.settings['title-preguntas'] }}
+    </h1>
+  </container>
+  <preguntas>
+    {% for block in section.blocks %}
+      <select name="p1" id="card" class="subtitulo-2">
+        <option value="{{ block.settings.faq-text }}">{{ block.settings['faq-text'] }}</option>
+      </select>
+    {% endfor %}
+  </preguntas>
+</section>
 
 {% schema %}
   {
@@ -37,7 +54,38 @@
         "id": "button-text",
         "label": "Boton de texto",
         "default": "Añadir al carrito"
-      }
-    ]
+      }, {
+			"type": "text",
+			"id": "title-preguntas",
+			"label": "Title section",
+			"default": "Sobre Cardó"
+		}, {
+			"type": "text",
+			"id": "subtitle-preguntas",
+			"label": "subtitle-preguntas",
+			"default": "preguntas frecuentes"
+		}
+	],
+	"blocks": [
+		{
+			"type": "FAQ",
+			"name": "FAQ",
+            "limit": 5,
+			"settings": [
+				{
+					"type": "text",
+         	"id": "faq-text",
+         	"label": "Heading text",
+         	"default": "Heading text"
+				}
+			]
+		}
+	],
+   "presets": [
+     {
+       "category": "custom-collection-banner",
+       "name": "Custom collection section Flores"
+     }
+   ]
   }
 {% endschema %}
