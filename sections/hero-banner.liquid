@@ -6,12 +6,14 @@
     {% render 'flor-2' %}
   </div>
   <inline-half-container class="left">
-    <h1 class="titulo-1 hero-title">
-      {{ section.settings.hero-title }}
-    </h1>
-    <p class="parrafo-2 hero-subtitle">
-      {{ section.settings.hero-subtitle }}
-    </p>
+    <hero-title>
+      <h1 class="titulo-1 hero-title">
+        {{ section.settings.hero-title }}
+      </h1>
+      <p class="parrafo-2 hero-subtitle">
+        {{ section.settings.hero-subtitle }}
+      </p>
+    </hero-title>
     <hero-buttons>
       {% if section.settings.cta-1 != blank %}
         <button class="cta-1 subtitulo-2">{{ section.settings.cta-1 }}</button>
