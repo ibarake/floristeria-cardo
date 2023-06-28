@@ -408,6 +408,8 @@ product-card{
     background-color: var(--main-white);
     border-radius: 8px;
     margin: 16px;
+    display: flex;
+    flex-direction: column;
 }
 
 product-card img{
