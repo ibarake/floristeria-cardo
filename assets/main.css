@@ -465,6 +465,7 @@ products-container{
     }
     hero-banner{
         flex-direction: column;
+        padding: 0;
     }
 }
 
