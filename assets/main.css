@@ -383,7 +383,7 @@ dropdown-mega-menu{
 hero-banner{
     display: flex;
     flex-direction: row;
-    background-color: var(--main-linen);
+    background-color: var(--main-color);
     padding: 60px 0px 60px 40px;
 }
 inline-half-container.left{
