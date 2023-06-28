@@ -562,6 +562,7 @@ container-arreglos {
 container-products {
     display: flex;
     align-items: baseline;
+    margin-bottom: 1px solid var(--main-color);
 }
 
 /* FOOTER STYLES */
