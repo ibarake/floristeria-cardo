@@ -427,7 +427,7 @@ card-footer{
     flex-direction: row;
 }
 
-card-add-to-cart{
+.card-add-to-cart{
     display: flex;
     flex-direction: row;
 }
