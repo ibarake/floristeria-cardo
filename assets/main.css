@@ -387,6 +387,9 @@ hero-banner{
     background-color: var(--main-color);
     padding: 60px 0px 60px 40px;
 }
+inline-half-container{
+    z-index: 999;
+}
 inline-half-container.left{
     width: 40%;
 }
