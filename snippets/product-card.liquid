@@ -4,7 +4,7 @@
     src="{{ hero-product.featured_image | img_url }}"
     alt="{{ hero-product.featured_image.alt }}">
   <p class="parrafo-4 collection-tag">{{ hero-product.collections[0].title }}</p>
-  <p class="parrafo-1">{{ hero-product.title }}</p>
+  <p class="parrafo-1 card-product-title">{{ hero-product.title }}</p>
   <p class="price">{{ hero-product.price }}</p>
   <button class="card-add-to-cart">{{ atc-btn }}</button>
 </product-card>
