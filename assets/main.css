@@ -382,7 +382,7 @@ dropdown-mega-menu{
 
 hero-banner{
     display: grid;
-    grid-template-columns: 2fr 5fr;
+    grid-template-columns: 40% 60%;
     background-color: var(--main-linen);
     padding: 30px 0px 30px 30px;
 }
