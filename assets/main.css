@@ -437,6 +437,14 @@ card-footer{
     background-color: var(--main-white);
 }
 
+.card-add-to-cart svg{
+    fill: var(--main-olive);
+}
+
+.atc-btn-text{
+    color: var(--main-olive);
+}
+
 .collection-tag{
     padding: 5px;
     text-transform: uppercase;
