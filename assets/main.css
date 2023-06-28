@@ -426,7 +426,7 @@ card-footer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border-top: solid 1px var(--main-color);
+    border-top: solid 1.5px var(--main-color);
 }
 
 .card-add-to-cart{
