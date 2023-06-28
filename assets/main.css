@@ -415,6 +415,10 @@ product-card img{
     object-position: center center;
 }
 
+card-product-info{
+    padding: 10px;
+}
+
 .collection-tag{
     padding: 5px;
     text-transform: uppercase;
@@ -424,8 +428,5 @@ product-card img{
     width: fit-content;
 }
 
-.card-product-info{
-    padding: 10px;
-}
 
 /* FOOTER STYLES */
