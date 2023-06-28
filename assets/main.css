@@ -384,7 +384,7 @@ hero-banner{
     display: flex;
     flex-direction: row;
     background-color: var(--main-linen);
-    padding: 80px 0px 80px 40px;
+    padding: 60px 0px 60px 40px;
 }
 inline-half-container.left{
     width: 40%;
