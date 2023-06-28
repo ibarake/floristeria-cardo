@@ -427,6 +427,10 @@ card-footer{
     flex-direction: row;
 }
 
+card-add-to-cart{
+    display: flex;
+    flex-direction: row;
+}
 .collection-tag{
     padding: 5px;
     text-transform: uppercase;
