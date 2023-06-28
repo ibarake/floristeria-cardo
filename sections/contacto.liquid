@@ -1,0 +1,42 @@
+<contacto>
+  <cuadro></cuadro>
+  <informacion>
+    <h1 class="titulo-1">
+      {{ section.settings.contact-title }}
+    </h1>
+    <p class="parrafo-1" id="parrafo-contacto">
+      {{ section.settings.contact-subtitle }}
+    </p>
+    {% form 'customer' %}
+      <datos>
+        <input
+          id="correo"
+          placeholder="Tu correo"
+          type="email"
+          name="contact[email]">
+        <input class="button-contacto" type="submit" value="{{ section.settings.button-title }}">
+      </datos>
+    {% endform %}
+  </informacion>
+</contacto>
+
+{% schema %}
+  {
+    "name": "contacto",
+    "settings": [
+      {
+        "type": "text",
+        "id": "contact-title",
+        "label": "Contactanos"
+      }, {
+        "type": "textarea",
+        "id": "contact-subtitle",
+        "label": "Subtitle"
+      }, {
+        "type": "text",
+        "id": "button-title",
+        "label": "Recibir informacion"
+      }
+    ]
+  }
+{% endschema %}
