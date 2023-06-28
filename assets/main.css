@@ -415,6 +415,9 @@ product-card img{
     height: 256px;
     object-fit: cover;
     object-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 card-product-info{
@@ -426,7 +429,6 @@ card-footer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: space-between;
     border-top: solid 1.5px var(--main-color);
 }
 
