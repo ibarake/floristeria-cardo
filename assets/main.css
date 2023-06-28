@@ -397,7 +397,7 @@ inline-half-container.left{
     width: 40%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 inline-half-container.right{
