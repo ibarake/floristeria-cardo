@@ -548,13 +548,13 @@ container-arreglos {
     align-items: center;
 }
 
-.p-subtitle {
+#p-subtitle {
     letter-spacing: 5px;
     text-transform: uppercase;
     color: var(--main-gray);
 }
 
-.p-title {
+#p-title {
     text-align: center;
 }
 
