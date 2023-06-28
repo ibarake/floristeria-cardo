@@ -8,7 +8,12 @@
     <p class="parrafo-1 card-product-title">{{ hero-product.title }}</p>
     <card-footer>
       <p class="price">{{ hero-product.price }}</p>
-      <button class="card-add-to-cart">{{ atc-btn }}</button>
+      <button class="card-add-to-cart">
+        {% render 'icon-cart' %}
+        <p class="subtitulo-5">
+          {{ atc-btn }}
+        </p>
+      </button>
     </card-footer>
   </card-product-info>
 </product-card>
