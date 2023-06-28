@@ -1,4 +1,22 @@
-<contacto>
+<section class="arreglos-funebres">
+  <container-arreglos>
+    <p class="subtitulo-3" id="p-subtitle">
+      {{ section.settings.arreglos-subtitle }}
+    </p>
+    <h1 class="titulo-1" id="p-title">
+      {{ section.settings.arreglos-title }}
+    </h1>
+  </container-arreglos>
+  <container-products>
+    {% for product in section.settings.collection.products limit:4 %}
+        {% include 'product-card', hero-product: product, atc-btn: section.settings.button-text %}
+    {% endfor %}
+    <p class="subtitulo-2">
+      {{ section.settings['subtitulo-fotos'] }}
+    </p>
+  </container-products>
+</section>
+<contacto>    
   <cuadro></cuadro>
   <informacion>
     <h1 class="titulo-1">
