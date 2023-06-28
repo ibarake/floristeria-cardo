@@ -7,7 +7,7 @@
     <p class="parrafo-4 collection-tag">{{ hero-product.collections[0].title }}</p>
     <p class="parrafo-1 card-product-title">{{ hero-product.title }}</p>
     <card-footer>
-      <p class="price">{{ hero-product.price }}</p>
+      <p class="price parrafo-1">{{ hero-product.price | money_with_currency }}</p>
       <button class="card-add-to-cart">
         {% render 'icon-cart' %}
         <p class="subtitulo-5">
