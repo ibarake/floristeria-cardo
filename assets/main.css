@@ -426,6 +426,7 @@ card-product-info{
 card-footer{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .card-add-to-cart{
@@ -439,7 +440,7 @@ card-footer{
 .collection-tag{
     padding: 5px;
     text-transform: uppercase;
-    background-color: var(--main-color);
+    background-color: var(--main-white);
     border-radius: 4px;
     color: var(--linen-3);
     width: fit-content;
