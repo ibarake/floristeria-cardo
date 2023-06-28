@@ -52,9 +52,17 @@
       "contacto": {
         "type": "contacto",
         "settings": {
+          "contact-title": "",
+          "contact-subtitle": "",
+          "button-title": ""
+        }
+      },
+      "products-faq2": {
+        "type": "products-faq2",
+        "settings": {
           "arreglos-title": "Lorem ipsum dolor sit amet",
-          "arreglos-subtitle": "POR OCASIÓN",
-          "collection": "cajas-decorativas"
+          "arreglos-subtitle": "POR oCASIÓN",
+          "collection": "arreglos-funebres"
         }
       }
     },
