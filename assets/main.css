@@ -489,10 +489,12 @@ background:var(--main-color);
     background-color: var(--main-color);
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 main-container {
-    width: 50%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -517,6 +519,6 @@ buttons-container {
     height: 50px;
     background-color: var(--main-color);
     cursor: pointer;
-    border: var(--main-olive);
+    border: 1px solid var(--main-olive);
     border-radius: 5px;
 }
