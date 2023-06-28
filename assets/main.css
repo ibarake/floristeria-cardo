@@ -382,6 +382,15 @@ dropdown-mega-menu{
 
 /* HERO BANNER STYLES */
 
+hero-banner{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    background-color: var(--main-color);
+    padding: 60px 0px 60px 40px;
+}
+
 inline-half-container{
     z-index: 999;
 }
