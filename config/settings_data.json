@@ -1,6 +1,6 @@
 {
   "current": {
-    "logo": "shopify:\/\/shop_images\/Rectangle_1891.png",
+    "logo": "shopify://shop_images/Rectangle_1891.png",
     "sections": {
       "header": {
         "type": "header",
@@ -15,13 +15,11 @@
           "hero-collection": "arreglos-de-nacimiento",
           "hero-subtitle": "Pellentesque cras adipiscing tempus libero vel nullam mauris tellus. Aliquam ultrices tellus consequat amet,",
           "add-to-cart-title": "Añadir al carrito",
-          "cta-1": "¿No sabes <br> cómo decirlo? <br> Dilo con Flores.",
-          "cta-2": "¿No sabes <br> cómo decirlo? <br> Dilo con Flores."
+          "cta-1": "Ver por Ocasión",
+          "cta-2": "Contactanos"
         }
       }
     },
-    "content_for_index": [
-
-    ]
+    "content_for_index": []
   }
 }
