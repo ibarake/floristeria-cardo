@@ -412,10 +412,14 @@ products-container{
 
 .flor-1{
     position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .flor-2{
     position: absolute;
+    top: 0;
+    left: 0;
 }
 
 /* PRODUCT CARD STYLES */
