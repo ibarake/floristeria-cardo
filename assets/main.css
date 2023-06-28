@@ -11,6 +11,7 @@ body {
     --main-color: #F7F0E2;
     --main-dark-color: #FEFAF7;
     --main-white: #fff;
+    --main-black: #000;
     --main-gray: #9f9f9f;
     --main-dark-gray: #33363F;
     --main-linen: #EFE4CF;
@@ -430,6 +431,10 @@ card-footer{
 .card-add-to-cart{
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    border: none;
+    background-color: var(--main-color);
 }
 .collection-tag{
     padding: 5px;
