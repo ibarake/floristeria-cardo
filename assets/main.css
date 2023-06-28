@@ -386,11 +386,11 @@ hero-banner{
     background-color: var(--main-linen);
     padding: 30px 0px 30px 30px;
 }
-inline-half-container .left{
+inline-half-container.left{
     width: 40%;
 }
 
-inline-half-container .left{
+inline-half-container.left{
     width: 60%;
 }
 
