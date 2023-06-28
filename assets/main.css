@@ -381,6 +381,7 @@ dropdown-mega-menu{
 /* HERO BANNER STYLES */
 
 hero-banner{
+    position: relative;
     display: flex;
     flex-direction: row;
     background-color: var(--main-color);
