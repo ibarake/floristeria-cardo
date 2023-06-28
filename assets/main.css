@@ -416,8 +416,10 @@ product-card img{
 }
 
 card-product-info{
+    display: block;
     width: 100%;
     padding: 10px;
+    margin: 10px;
 }
 
 .collection-tag{
