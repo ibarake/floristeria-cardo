@@ -18,6 +18,15 @@
           "cta-1": "Ver por Ocasión",
           "cta-2": "Contactanos"
         }
+      },
+      "products-faq": {
+        "type": "products-faq",
+        "settings": {
+          "arreglos-title": "Lorem ipsum dolor sit amet",
+          "arreglos-subtitle": "Arreglos Funebres",
+          "collection": "arreglos-funebres",
+          "button-text": "Añadir al carrito"
+        }
       }
     },
     "content_for_index": [
