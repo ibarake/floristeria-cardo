@@ -536,6 +536,8 @@ card-footer{
     height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 container-arreglos {
@@ -544,6 +546,16 @@ container-arreglos {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.p-subtitle {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: var(--main-gray);
+}
+
+.p-title {
+    text-align: center;
 }
 
 /* FOOTER STYLES */
