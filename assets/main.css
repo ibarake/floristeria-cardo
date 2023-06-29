@@ -11,9 +11,12 @@ body {
 }
 
 /* VARIABLES */
-.page-width{
-width: 1080px;  
+.page-width{  
 align-self: center;
+width: 1478px;
+height: 378px;
+left: 0px;
+top: 0px;
 }
 
 :root {
