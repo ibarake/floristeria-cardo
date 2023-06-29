@@ -747,3 +747,10 @@ datos {
   border: none;
   cursor: pointer;
 }
+/* FOOTER STYLES */
+footer {
+  width: 100%;
+  
+  color: var(--main-color);
+
+}
