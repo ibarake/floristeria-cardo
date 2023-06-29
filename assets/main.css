@@ -544,6 +544,7 @@ hero-title {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  text-transform: uppercase;
 }
 
 /* PRODUCT CARD STYLES */
