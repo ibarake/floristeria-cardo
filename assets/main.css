@@ -106,12 +106,12 @@ body {
 }
 
 .subtitulo-6 {
-    font-family: "DM Sans";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 32px;
-  }
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+}
 
 .parrafo-1 {
   font-family: "DM Sans";
@@ -536,6 +536,14 @@ hero-title {
   .cta-1 {
     padding: 0;
   }
+}
+
+/* COLLECTION CARD STYLE */
+.collection-card-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 /* PRODUCT CARD STYLES */
