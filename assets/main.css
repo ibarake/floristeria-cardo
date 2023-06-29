@@ -754,6 +754,7 @@ footer {
   width: 100%;
   height: auto;
   min-height: 30%;
+  padding: 78px 296px 34px 232px;
   background-color: var(--main-white);
 }
 .info-marca{
