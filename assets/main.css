@@ -478,6 +478,8 @@ products-container{
     hero-banner{
         flex-direction: column;
         padding: 0;
+    }
+    hero-title{
         text-align: center;
     }
     .flor-1{
