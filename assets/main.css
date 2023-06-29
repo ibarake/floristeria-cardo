@@ -659,10 +659,14 @@ preguntas {
 .FAQ-title {
   width: 780px;
   height: 60px;
-  border: 1px solid black;
+  border-bottom: 1px solid;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 15px 0 15px;
+  font-family: "DM Sans";
+  font-weight: 500;
+  font-size: 20px;
 }
 
 .FAQ-subtitle {
