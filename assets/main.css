@@ -426,6 +426,12 @@ products-container{
     color: var(--main-olive);
 }
 
+hero-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
 .hero-subtitle{
     color: var(--main-gray)
 }
