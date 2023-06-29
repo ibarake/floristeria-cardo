@@ -5,6 +5,9 @@
   <div class="flor-2">
     {% render 'flor-2' %}
   </div>
+  <div class="flor-3">
+    {% render 'flor-3' %}
+  </div>
   <inline-half-container class="left">
     <hero-title>
       <h1 class="titulo-1 hero-title">
@@ -16,10 +19,10 @@
     </hero-title>
     <hero-buttons>
       {% if section.settings.cta-1 != blank %}
-        <button class="cta cta-1 subtitulo-3">{{ section.settings.cta-1 }}</button>
+        <button class="cta cta-1 subtitulo-1">{{ section.settings.cta-1 }}</button>
       {% endif %}
       {% if section.settings.cta-2 != blank %}
-        <button class="cta cta-2 subtitulo-3">{{ section.settings.cta-2 }}</button>
+        <button class="cta cta-2 subtitulo-1">{{ section.settings.cta-2 }}</button>
       {% endif %}
     </hero-buttons>
   </inline-half-container>
