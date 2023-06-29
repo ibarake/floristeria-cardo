@@ -750,7 +750,6 @@ datos {
 /* FOOTER STYLES */
 footer {
   width: 100%;
-  
-  color: var(--main-color);
+  background-color: var(--main-color);
 
 }
