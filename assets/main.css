@@ -749,7 +749,10 @@ datos {
 }
 /* FOOTER STYLES */
 footer {
+  display: flex;
+  align-items: center;
   width: 100%;
-  background-color: var(--main-color);
-
+  height: auto;
+  min-height: 465px;
+  background-color: var(--main-white);
 }
