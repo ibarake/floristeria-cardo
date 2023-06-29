@@ -57,6 +57,10 @@ function handleClassChange() {
     heroTitle.classList.add("titulo-3");
     heroTitle.classList.remove("titulo-1");
   } else {
+    productCardAdc.classList.add("subtitulo-5");
+    productCardAdc.classList.remove("parrafo-3");
+    productCardPrice.classList.add("parrafo-1");
+    productCardPrice.classList.remove("parrafo-4");
     heroTitle.classList.add("titulo-1");
     heroTitle.classList.remove("titulo-3");
   }
