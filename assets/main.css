@@ -13,6 +13,7 @@ body {
 /* VARIABLES */
 .page-width{
 width: 1080px;  
+align-self: center;
 }
 
 :root {
