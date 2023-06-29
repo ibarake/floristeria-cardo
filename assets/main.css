@@ -659,13 +659,13 @@ preguntas {
 .FAQ-title {
   width: 780px;
   height: 60px;
-  margin: 1px solid var(--main-black);
+  margin: 1px solid black;
 }
 
 .FAQ-subtitle {
   width: 780px;
   height: 60px;
-  margin: 1px solid var(--main-black);
+  margin: 1px solid black;
 }
 
 /* CONTACTO */
