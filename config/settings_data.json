@@ -5,7 +5,8 @@
       "header": {
         "type": "header",
         "settings": {
-          "main-menu": "menu-principal"
+          "main-menu": "menu-principal",
+          "atc-head-btn": "Carrito"
         }
       },
       "hero-banner": {
@@ -63,6 +64,27 @@
           "arreglos-title": "Lorem ipsum dolor sit amet",
           "arreglos-subtitle": "POR oCASIÓN",
           "collection": "arreglos-funebres"
+        }
+      },
+      "collection-list": {
+        "type": "collection-list",
+        "settings": {
+          "subtitle-text": "Categorias",
+          "title-text": "Encuentra el regalo ideal",
+          "p-text": "Pellentesque cras adipiscing tempus libero vel nullam mauris tellus. Aliquam ultrices tellus consequat amet,",
+          "cta-3": "Ver por Ocasión",
+          "collection_list": [
+            "arreglos-de-nacimiento",
+            "arreglos-funebres",
+            "bonos-condolencias",
+            "cajas-decorativas",
+            "condolencias",
+            "exoticos",
+            "madres",
+            "navidad-fin-de-ano",
+            "plantas-decorativas",
+            "rosas"
+          ]
         }
       }
     },
