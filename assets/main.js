@@ -46,13 +46,19 @@ dropdownMenus.forEach(function (dropdownMenu) {
 
 // Function to handle class changes based on window width
 function handleClassChange() {
-  var element = document.querySelector(".hero-title");
+  var heroTitle = document.querySelector(".hero-title");
+  var productCardPrice = document.querySelector(".price");
+  var productCardAdc = document.querySelector(".atc-btn-text");
   if (window.innerWidth < 768) {
-    element.classList.add("titulo-3");
-    element.classList.remove("titulo-1");
+    productCardAdc.classList.remove("subtitulo-5");
+    productCardAdc.classList.add("parrafo-3");
+    productCardPrice.classList.remove("parrafo-1");
+    productCardPrice.classList.add("parrafo-4");
+    heroTitle.classList.add("titulo-3");
+    heroTitle.classList.remove("titulo-1");
   } else {
-    element.classList.add("titulo-1");
-    element.classList.remove("titulo-3");
+    heroTitle.classList.add("titulo-1");
+    heroTitle.classList.remove("titulo-3");
   }
 }
 
