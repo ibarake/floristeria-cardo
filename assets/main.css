@@ -65,6 +65,14 @@ body {
   line-height: 31px;
 }
 
+.titulo-6 {
+  font-family: "NewYork";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 72px;
+}
+
 .subtitulo-1 {
   font-family: "DM Sans";
   font-style: normal;
@@ -470,7 +478,6 @@ hero-title {
   display: block;
   position: absolute;
   left: 14.67%;
-  right: -14.66%;
   top: -200px;
   bottom: -78.73%;
   transform: rotate(-98.47deg);
@@ -692,6 +699,19 @@ preguntas {
   height: 60px;
   margin: 1px solid black;
 }
+
+/* PRODUCTS-FAQ2 */
+#p-subtitle2 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--main-gray);
+}
+
+#p-title2 {
+  text-align: center;
+  margin: 0;
+}
+
 
 /* CONTACTO */
 @import url("https://fonts.cdnfonts.com/css/dm-sans");
