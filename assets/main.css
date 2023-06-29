@@ -702,6 +702,7 @@ preguntas {
 
 /* PRODUCTS-FAQ2 */
 #p-subtitle2 {
+  text-align: center;
   letter-spacing: 5px;
   text-transform: uppercase;
   color: var(--main-gray);
