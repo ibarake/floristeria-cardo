@@ -29,10 +29,10 @@
     {% for block in section.blocks %}
       <div class="FAQ-title">
         {{ block.settings.FAQ-title }}
+        {% render 'icon-arrow-down' %}
       </div>
       <div class="FAQ-text">
         {{ block.settings.FAQ-text }}
-        {% render 'icon-arrow-down' %}
       </div>
     {% endfor %}
   </preguntas>
