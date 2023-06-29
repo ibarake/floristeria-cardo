@@ -9,6 +9,11 @@
     </collection-subtext>
     <button class="cta cta-3 subtitulo-3">{{ section.settings['cta-3'] }}</button>
   </collection-title>
+  <collection-slider>
+    {% for collection in section.settings.collection_list %}
+      {% include 'collection-card' %}
+    {% endfor %}
+  </collection-slider>
 </collection-list>
 
 {% schema %}
