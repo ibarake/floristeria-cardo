@@ -105,6 +105,14 @@ body {
   line-height: 16px;
 }
 
+.subtitulo-6 {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+  }
+
 .parrafo-1 {
   font-family: "DM Sans";
   font-style: normal;
