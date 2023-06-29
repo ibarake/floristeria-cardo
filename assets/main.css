@@ -438,6 +438,12 @@ products-container{
     top: -100px;
     left: 0;
 }
+.flor-3{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
 .cta{
     width: 40%;
@@ -470,6 +476,9 @@ products-container{
         flex-direction: column;
         padding: 0;
         text-align: center;
+    }
+    .flor-3{
+        display: block;
     }
 }
 
