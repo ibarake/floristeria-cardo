@@ -510,7 +510,6 @@ product-card{
     margin: 16px;
     display: flex;
     flex-direction: column;
-    width: 30%;
 }
 
 product-card img{
