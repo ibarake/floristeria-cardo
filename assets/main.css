@@ -502,7 +502,7 @@ product-card{
 }
 
 product-card img{
-    width: 300px;
+    width: 256px;
     height: 256px;
     object-fit: cover;
     object-position: center center;
