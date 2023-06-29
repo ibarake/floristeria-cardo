@@ -477,8 +477,8 @@ hero-title {
 .flor-4 {
   display: block;
   position: absolute;
-  left: 14.67%;
-  top: -200px;
+  right: 0;
+  top: 0;
   bottom: -78.73%;
   transform: rotate(-98.47deg);
 }
@@ -728,6 +728,7 @@ contacto {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  position: relative;
 }
 
 #parrafo-contacto {
