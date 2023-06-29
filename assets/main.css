@@ -753,6 +753,7 @@ footer {
   align-items: center;
   width: 100%;
   height: auto;
-  min-height: 465px;
+  min-height: 30%;
+  padding: 78px 296px 34px 232px;
   background-color: var(--main-white);
 }
