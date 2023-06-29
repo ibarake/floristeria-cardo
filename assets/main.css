@@ -487,6 +487,7 @@ products-container{
     }
     .hero-title{
         font-size: 32px !important;
+        line-height: 36px !important;
     }
     .flor-1{
         display: none;
