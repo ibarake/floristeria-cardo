@@ -1,12 +1,31 @@
+<collection-list>
+  <collection-title>
+    <collection-text>
+      <h4>{{ section.settings.subtitle-text }}</h4>
+    </collection-text>
+    <collection-subtext>
+      
+    </collection-subtext>
+    <button></button>
+  </collection-title>
+</collection-list>
+
 {% schema %}
   {
     "name": "Section name",
-    "settings": []
+    "settings": [
+      {
+        "type":"text",
+        "id": "subtitle-text",
+        "label": "Subtitle text",
+        "default": "Categorias"
+      },
+      {
+        "type":"text",
+        "id": "title-text",
+        "label": "Title text",
+        "default": "Encuentra el regalo ideal"
+      }
+    ]
   }
 {% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
