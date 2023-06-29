@@ -539,6 +539,9 @@ hero-title {
 }
 
 /* COLLECTION CARD STYLE */
+collection-card img {
+  height: auto;
+}
 .collection-card-title {
   display: flex;
   flex-direction: row;
