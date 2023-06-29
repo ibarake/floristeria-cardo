@@ -27,9 +27,12 @@
   </container>
   <preguntas>
     {% for block in section.blocks %}
-      <select name="p1" id="card" class="subtitulo-2">
-        <option value="{{ block.settings.faq-text }}">{{ block.settings['faq-text'] }}</option>
-      </select>
+      <div class="FAQ-title">
+        {{ block.settings.FAQ-title }}
+      </div>
+      <div class="FAQ-text">
+        {{ block.settings.FAQ-text }}
+      </div>
     {% endfor %}
   </preguntas>
 </section>
@@ -78,14 +81,19 @@
 		{
 			"type": "FAQ",
 			"name": "FAQ",
-            "limit": 5,
+      "limit": 5,
 			"settings": [
-				{
-					"type": "text",
-         	"id": "faq-text",
-         	"label": "Heading text",
-         	"default": "Heading text"
-				}
+        {
+          "type": "text",
+          "id": "FAQ-title",
+          "label": "FAQ-title",
+          "default": "Example"
+        }, {
+          "type": "text",
+          "id": "FAQ-text",
+          "label": "FAQ-text",
+          "default": "Example"
+        }
 			]
 		}
 	],
