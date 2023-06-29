@@ -11,7 +11,7 @@
   </collection-title>
   <collection-slider>
     {% for collection in section.settings.collection_list %}
-      {% include 'collection-card' %}
+      {% include 'collection-card', collection: collection %}
     {% endfor %}
   </collection-slider>
 </collection-list>
