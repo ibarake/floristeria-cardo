@@ -477,6 +477,13 @@ hero-title {
   border: none;
 }
 
+.cta-3 {
+  background-color: var(--linen-3);
+  color: var(--main-olive);
+  border-radius: 8px;
+  border: none;
+}
+
 @media only screen and (max-width: 768px) {
   inline-half-container.left {
     width: 100%;
@@ -698,7 +705,7 @@ datos {
   height: 40px;
   margin: 0 3px;
   border-radius: 5px;
-  background-color: #e0b37f;
+  background-color: var(--linen-3);
   color: var(--main-olive);
   border: none;
   cursor: pointer;
