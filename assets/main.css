@@ -450,10 +450,10 @@ products-container{
 
 .cta{
     width: 40%;
+    padding: 10px 30px 10px 30px;
 }
 
 .cta-1{
-    padding: 10px 30px 10px 30px;
     background-color: var(--main-olive);
     color: var(--main-white);
     border-radius: 8px;
@@ -461,7 +461,6 @@ products-container{
 }
 
 .cta-2{
-    padding: 10px 30px 10px 30px;
     background-color: var(--main-color);
     color: var(--main-olive);
     border-radius: 8px;
@@ -490,6 +489,9 @@ products-container{
     }
     .flor-3{
         display: block;
+    }
+    .cta{
+        padding: 0;
     }
 }
 
