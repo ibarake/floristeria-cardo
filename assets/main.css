@@ -481,6 +481,11 @@ products-container{
     hero-title{
         text-align: center;
     }
+    hero-buttons{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
     .flor-1{
         display: none;
     }
