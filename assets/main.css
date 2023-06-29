@@ -1,7 +1,7 @@
 @font-face {
-        font-family: 'NewYork';
-        src: url('{{ "NewYork.woff2" | asset_url }}') format("woff2");
-      }
+              font-family: 'NewYork';
+              src: url('{{ "NewYork.woff2" | asset_url }}') format("woff2");
+            }
 
 body {
     margin: 0;
