@@ -659,7 +659,7 @@ preguntas {
 .FAQ-title {
   width: 780px;
   height: 60px;
-  border-bottom: 1px solid;
+  border-bottom: 1px solid var(--main-gray);
   display: flex;
   align-items: center;
   justify-content: space-between;
