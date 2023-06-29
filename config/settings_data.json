@@ -36,11 +36,19 @@
               "FAQ-title": "Example",
               "FAQ-text": "Example"
             }
+          },
+          "7e2ab6be-7f6d-45eb-b156-3b32811c43e5": {
+            "type": "FAQ",
+            "settings": {
+              "FAQ-title": "Example",
+              "FAQ-text": "Example"
+            }
           }
         },
         "block_order": [
           "9b5b7a21-5d0b-4763-96a2-d16fff5b2b67",
-          "035c1490-ace0-4458-89e2-021d00ce7a17"
+          "035c1490-ace0-4458-89e2-021d00ce7a17",
+          "7e2ab6be-7f6d-45eb-b156-3b32811c43e5"
         ],
         "settings": {
           "arreglos-title": "Lorem ipsum dolor sit amet",
