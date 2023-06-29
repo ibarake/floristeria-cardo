@@ -728,7 +728,7 @@ contacto {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  position: relative;
+  
 }
 
 #parrafo-contacto {
@@ -737,6 +737,7 @@ contacto {
 }
 
 informacion {
+  position: relative;
   width: 35%;
 }
 
