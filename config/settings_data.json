@@ -26,13 +26,15 @@
           "9b5b7a21-5d0b-4763-96a2-d16fff5b2b67": {
             "type": "FAQ",
             "settings": {
-              "faq-text": "Prueba 1"
+              "FAQ-title": "Example",
+              "FAQ-text": "Example"
             }
           },
           "035c1490-ace0-4458-89e2-021d00ce7a17": {
             "type": "FAQ",
             "settings": {
-              "faq-text": "Prueba 2"
+              "FAQ-title": "Example",
+              "FAQ-text": "Example"
             }
           }
         },
@@ -62,8 +64,8 @@
         "type": "products-faq2",
         "settings": {
           "arreglos-title": "Lorem ipsum dolor sit amet",
-          "arreglos-subtitle": "POR oCASIÓN",
-          "collection": "arreglos-funebres"
+          "arreglos-subtitle": "POR OCASIÓN",
+          "collection": "fruteros"
         }
       },
       "collection-list": {
