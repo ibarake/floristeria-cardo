@@ -539,6 +539,12 @@ hero-title {
 }
 
 /* COLLECTION LIST STYLES */
+collection-slider {
+  overflow: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 
 /* COLLECTION CARD STYLE */
 collection-card img {
