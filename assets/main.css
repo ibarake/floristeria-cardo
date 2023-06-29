@@ -757,3 +757,9 @@ footer {
   padding: 78px 296px 34px 232px;
   background-color: var(--main-white);
 }
+.info-marca{
+
+}
+item {
+  flex: 1;
+}
