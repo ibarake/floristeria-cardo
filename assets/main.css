@@ -656,6 +656,18 @@ preguntas {
   margin: 0;
 }
 
+.FAQ-title {
+  width: 780px;
+  height: 60px;
+  margin: 1px solid var(--main-black);
+}
+
+.FAQ-subtitle {
+  width: 780px;
+  height: 60px;
+  margin: 1px solid var(--main-black);
+}
+
 /* CONTACTO */
 @import url("https://fonts.cdnfonts.com/css/dm-sans");
 @import url("https://fonts.cdnfonts.com/css/newyork");
