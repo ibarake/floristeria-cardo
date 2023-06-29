@@ -419,6 +419,7 @@ products-container{
 
 .hero-title{
     color: var(--main-olive);
+    font-size: 24px;
 }
 
 .hero-subtitle{
