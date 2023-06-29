@@ -48,11 +48,11 @@ dropdownMenus.forEach(function (dropdownMenu) {
 function handleClassChange() {
   var element = document.querySelector(".hero-title");
   if (window.innerWidth < 768) {
-    element.classList.add("subtitulo-2");
+    element.classList.add("titulo-3");
     element.classList.remove("titulo-1");
   } else {
     element.classList.add("titulo-1");
-    element.classList.remove("subtitulo-2");
+    element.classList.remove("titulo-3");
   }
 }
 
