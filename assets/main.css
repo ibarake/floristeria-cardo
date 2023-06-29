@@ -419,7 +419,6 @@ products-container{
 
 .hero-title{
     color: var(--main-olive);
-    font-size: 32px !important;
 }
 
 .hero-subtitle{
@@ -485,6 +484,9 @@ products-container{
         display: flex;
         flex-direction: row;
         justify-content: center;
+    }
+    .hero-title{
+        font-size: 32px !important;
     }
     .flor-1{
         display: none;
