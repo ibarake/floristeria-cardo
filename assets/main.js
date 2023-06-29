@@ -3,6 +3,7 @@ var hamburguerMenu = document.querySelector(".hamburguer-menu");
 var responsiveMenu = document.querySelector(".responsive-menu");
 var closeMenu = document.querySelector(".close-drawer");
 var dropdownMenus = document.querySelectorAll(".dropdown-open");
+var dropdownMenusFAQ = document.querySelectorAll("#card");
 var activeDropdown = null;
 
 responsiveMenu.style.height = screen.height;
@@ -21,6 +22,25 @@ closeMenu.addEventListener("click", function () {
     activeDropdown.style.height = "0";
     activeDropdown = null;
   }
+});
+
+dropdownMenusFAQ.forEach(function (dropdownMenu) {
+  dropdownMenu.addEventListener("click", function () {
+    var parentLi = this.closest("#card");
+    var childLi = parentLi.querySelector("option");
+
+    if (activeDropdown && activeDropdown !== childLi) {
+      activeDropdown.style.height = "0";
+    }
+
+    if (childLi.style.height === "0px" || !childLi.style.height) {
+      childLi.style.height = childLi.scrollHeight + "px";
+      activeDropdown = childLi;
+    } else {
+      childLi.style.height = "0";
+      activeDropdown = null;
+    }
+  });
 });
 
 dropdownMenus.forEach(function (dropdownMenu) {
