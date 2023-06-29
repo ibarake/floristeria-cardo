@@ -467,10 +467,11 @@ hero-title {
 }
 
 .flor-4 {
+  display: block;
   position: absolute;
   left: 14.67%;
   right: -14.66%;
-  top: 78.7%;
+  top: -200px;
   bottom: -78.73%;
   transform: rotate(-98.47deg);
 }
