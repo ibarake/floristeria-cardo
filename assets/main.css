@@ -466,6 +466,16 @@ hero-title {
   left: 0;
 }
 
+.flor-4 {
+  position: absolute;
+  left: 14.67%;
+  right: -14.66%;
+  top: 78.7%;
+  bottom: -78.73%;
+  background: #D2D2D2;
+  transform: rotate(-98.47deg);
+}
+
 .cta {
   width: 40%;
   padding: 10px 30px 10px 30px;
