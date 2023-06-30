@@ -7,7 +7,7 @@
     <h5 class="titulo-5">{{ section.settings.titulo-menu }}</h5>
     <menu>
       <ul>
-        {% for linkmenu in section.settings.menu-footer.links %}
+        {% for link in section.settings.menu-footer.links %}
         <li>
           <a href="{{ link.url }}">{{ link.title }}</a>
         </li>
