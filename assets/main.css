@@ -793,3 +793,7 @@ footer .contacto h5.subtitulo-4 {
   align-items: center;
   color: var(--main-gray);
 }
+
+footer .contacto h5.subtitulo-4 svg{
+  margin-right: .5rem;
+}
