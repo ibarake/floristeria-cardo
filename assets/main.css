@@ -790,7 +790,7 @@ footer .subtitulo-3 {
 
 footer .contacto h5.subtitulo-4 {
   display: flex;
-  max-width: 85%;
+  max-width: 69%;
   align-items: center;
   color: var(--main-gray);
   white-space: break-spaces;
