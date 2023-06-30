@@ -549,6 +549,9 @@ collection-title {
   display: flex;
   flex-direction: row;
 }
+collection-scroll {
+  width: 100%;
+}
 collection-slider {
   overflow-x: auto;
   display: flex;
