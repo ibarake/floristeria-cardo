@@ -758,7 +758,7 @@ footer {
   padding: 6% 10% 6% 10%;
   background-color: var(--main-white);
 }
-footer .parrafo-1 {
+footer .parrafo-3 {
   color: var(--main-gray);
 }
 
@@ -770,7 +770,7 @@ footer .item-menu {
   padding: 0;
   margin: 0 5%;
 }
-footer .titulo-5 {
+footer .subtitulo-3 {
   color: var(--main-olive);
   margin: 0;
 }
