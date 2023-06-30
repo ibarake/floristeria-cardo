@@ -73,7 +73,8 @@
         "settings": {
           "arreglos-title": "Lorem ipsum dolor sit amet",
           "arreglos-subtitle": "POR OCASIÓN",
-          "collection": "fruteros"
+          "collection": "fruteros",
+          "subtitulo-fotos": "Ver todos"
         }
       },
       "collection-list": {
@@ -95,6 +96,14 @@
             "plantas-decorativas",
             "rosas"
           ]
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+          "descripcion-marca": "Descripción",
+          "titulo-menu": "Titulo",
+          "menu-footer": "site-map-footer"
         }
       }
     },
