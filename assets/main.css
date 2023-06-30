@@ -551,6 +551,8 @@ collection-title {
 }
 collection-scroll {
   width: 100%;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 collection-slider {
   overflow-x: auto;
