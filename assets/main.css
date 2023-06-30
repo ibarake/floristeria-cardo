@@ -788,7 +788,7 @@ footer .subtitulo-3 {
   color: var(--main-gray);
 }
 
-footer .contacto .subtitulo-4 {
+footer .contacto h5.subtitulo-4 {
   display: flex;
   align-items: center;
 }
