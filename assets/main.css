@@ -563,6 +563,14 @@ collection-item {
   width: 300px;
 }
 
+collection-item:first-child {
+  margin-left: 400px;
+}
+
+collection-item:last-child {
+  margin-right: 400px;
+}
+
 .collection-title {
   margin: 0;
 }
