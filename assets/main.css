@@ -752,7 +752,7 @@ datos {
 footer {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
   height: auto;
   min-height: 30%;
@@ -765,6 +765,7 @@ footer .parrafo-1{
 
 footer .titulo-5 {
   color: var(--main-olive);
+  margin: 0;
 }
 footer ul {
   list-style: none;
