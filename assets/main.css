@@ -802,7 +802,6 @@ footer .contacto h5.subtitulo-4 svg{
 
 footer form#contact_form {
   position: relative;
-    border: 1px solid;
     display: flex;
     width: 50%;
 }
