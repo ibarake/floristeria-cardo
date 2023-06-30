@@ -766,6 +766,13 @@ footer .parrafo-1{
 footer .titulo-5 {
   color: var(--main-olive);
 }
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
 item {
   flex: 1;
 }
