@@ -555,6 +555,8 @@ collection-slider {
   flex-direction: row;
   justify-content: center;
   gap: 32px;
+  margin-left: -130px;
+  magin-right: -130px;
 }
 
 collection-item {
