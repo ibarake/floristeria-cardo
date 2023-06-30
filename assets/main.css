@@ -809,6 +809,12 @@ footer form#contact_form {
 footer .email {
   height: 2.8rem;
   border: 1px solid var(--main-gray);
+  border-right: none;
   border-radius: 8px 0 0 8px;
   padding-left: 5%;
+}
+
+footer button.siguiente {
+  border: 1px solid var(--main-olive);
+  border-radius: 0 8px 8px 0;
 }
