@@ -565,6 +565,12 @@ collection-item {
   margin: 0;
 }
 
+.collection-subtitle {
+  text-transform: uppercase;
+  color: var(--main-gray);
+  margin: 0;
+}
+
 /* COLLECTION CARD STYLE */
 collection-card img {
   width: 256px;
@@ -577,11 +583,6 @@ collection-card img {
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
-}
-
-.collection-subtitle {
-  text-transform: uppercase;
-  color: var(--main-gray);
 }
 
 /* PRODUCT CARD STYLES */
