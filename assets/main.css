@@ -760,7 +760,7 @@ footer {
 }
 footer .parrafo-3 {
   color: var(--main-gray);
-  width: 67%;
+  width: 82%;
 }
 
 footer item {
@@ -806,9 +806,10 @@ footer .contacto h5.subtitulo-4 svg{
 }
 
 footer form#contact_form {
+  margin-top: 3%;
   position: relative;
-    display: flex;
-    width: 55%;
+  display: flex;
+  width: 55%;
 }
 
 footer .email {
