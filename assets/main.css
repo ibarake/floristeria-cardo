@@ -670,6 +670,11 @@ container-products {
     line-height: 15px;
   }
 
+  .subtitulo-6 {
+    font-size: 7px;
+    line-height: 1px;
+  }
+
   .titulo-1 {
     font-size: 22px;
     line-height: 25px;
