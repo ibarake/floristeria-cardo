@@ -801,12 +801,12 @@ footer .subtitulo-3 {
 
 footer .contacto h5.subtitulo-4 {
   display: flex;
-  max-width: 69%;
   color: var(--main-gray);
   white-space: break-spaces;
 }
 
 footer .contacto h5.subtitulo-4 svg{
+  margin-top: -1%;
   margin-right: .4rem;
 }
 
@@ -814,7 +814,7 @@ footer form#contact_form {
   margin-top: 3%;
   position: relative;
   display: flex;
-  width: 65%;
+  width: 90%;
 }
 
 footer .email {
