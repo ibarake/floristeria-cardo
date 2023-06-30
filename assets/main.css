@@ -565,6 +565,10 @@ collection-card img {
   text-transform: uppercase;
 }
 
+.collection-subtitle {
+  text-transform: uppercase;
+}
+
 /* PRODUCT CARD STYLES */
 
 product-card {
