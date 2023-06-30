@@ -546,6 +546,10 @@ collection-slider {
   justify-content: center;
 }
 
+collection-item {
+  width: 250px;
+}
+
 /* COLLECTION CARD STYLE */
 collection-card img {
   height: auto;
