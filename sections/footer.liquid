@@ -4,9 +4,9 @@
     <p class="parrafo-1">{{ section.settings.descripcion-marca }}</p>
   </item>
   <menu class="item-menu">
-    <h5 class="titulo-5">{{ section.settings.titulo-menu }}</h5>
+    <h5 class="titulo-5">{{ section.settings.titulo-menu-1 }}</h5>
       <ul>
-        {% for link in section.settings.menu-footer.links %}
+        {% for link in section.settings.menu-footer-1.links %}
         <li>
           <a href="{{ link.url }}" class="subtitulo-3">{{ link.title }}</a>
         </li>
@@ -14,9 +14,9 @@
       </ul>
   </menu>
   <menu class="item-menu">
-    <h5 class="titulo-5">{{ section.settings.titulo-menu }}</h5>
+    <h5 class="titulo-5">{{ section.settings.titulo-menu-2 }}</h5>
       <ul>
-        {% for link in section.settings.menu-footer.links %}
+        {% for link in section.settings.menu-footer-2.links %}
         <li>
           <a href="{{ link.url }}" class="subtitulo-3">{{ link.title }}</a>
         </li>
@@ -42,12 +42,22 @@
         "default": "Descripción"
       }, {
         "type": "text",
-        "id": "titulo-menu",
+        "id": "titulo-menu-1",
         "default": "Titulo",
         "label": "Título"
       }, {
         "type": "link_list",
-        "id": "menu-footer",
+        "id": "menu-footer-1",
+        "default": "footer",
+        "label": "Selecciona el menú"
+      }, {
+        "type": "text",
+        "id": "titulo-menu-2",
+        "default": "Titulo",
+        "label": "Título"
+      }, {
+        "type": "link_list",
+        "id": "menu-footer-2",
         "default": "footer",
         "label": "Selecciona el menú"
       }
