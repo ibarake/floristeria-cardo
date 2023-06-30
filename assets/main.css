@@ -760,11 +760,16 @@ footer {
 }
 footer .parrafo-3 {
   color: var(--main-gray);
+  width: 67%;
 }
 
 footer item {
   flex: 1;
   margin-right: 5%;
+}
+
+footer .info-marca {
+  margin-right: 0%;
 }
 
 footer .item-menu {
