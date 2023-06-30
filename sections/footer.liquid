@@ -14,7 +14,7 @@
       </ul>
   </menu>
   <menu class="item-menu">
-    <h5 class="subtitulo-3">{{ section.settings.titulo-menu-2 }}</h5>
+    <h3 class="subtitulo-3">{{ section.settings.titulo-menu-2 }}</h3>
       <ul>
         {% for link in section.settings.menu-footer-2.links %}
         <li>
@@ -24,14 +24,14 @@
       </ul>
   </menu>
   <item class="contact">
-    <h5 class="subtitulo-3">{{ section.settings.titulo-contacto }}</h5>
+    <h3 class="subtitulo-3">{{ section.settings.titulo-contacto }}</h3>
     <form>
       <input type="text">
       <label for=""></label>
       <button></button>
     </form>
     <ul>
-      <li class="correr">{% render 'icon-gmail' %} correo</li>
+      <li class="correo">{% render 'icon-gmail' %} <h5 class="subtitulo-5">correo</h5></li>
       <li class="telefono">{% render 'icon-phone' %}telefono</li>
       <li class="ubicacion">{% render 'icon-location' %}ubicacion</li>
     </ul>
