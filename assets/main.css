@@ -766,10 +766,12 @@ footer item {
   flex: 1;
   margin-right: 5%;
 }
+
 footer .item-menu {
   padding: 0;
   margin: 0 5%;
 }
+
 footer .subtitulo-3 {
   color: var(--main-olive);
   margin: 0;
