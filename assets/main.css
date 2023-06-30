@@ -809,5 +809,6 @@ footer form#contact_form {
 footer .email {
   height: 2.8rem;
   border: 1px solid var(--main-gray);
-  border-radius: 8px;
+  border-radius: 8px 0 0 8px;
+  padding-left: 5%;
 }
