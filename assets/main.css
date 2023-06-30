@@ -4,7 +4,7 @@
 }
 
 body {
-  margin: auto;
+  margin: 0;
   padding: 0;
   overflow-x: hidden;
   width: 100%;
@@ -15,6 +15,7 @@ body {
 .page-width {
   display: block;
   width: 1180px;
+  margin: auto;
 }
 
 :root {
