@@ -759,8 +759,12 @@ footer {
   padding: 6% 10% 6% 10%;
   background-color: var(--main-white);
 }
-.info-marca .parrafo-1{
+footer .parrafo-1{
   color: var(--neutrales-gris-3);
+}
+
+footer .titulo-5 {
+  color: var(--main-olive);
 }
 item {
   flex: 1;
