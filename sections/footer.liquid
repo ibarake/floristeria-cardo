@@ -4,16 +4,14 @@
     <p class="parrafo-3">{{ section.settings.descripcion-marca }}</p>
   </item>
   <menu class="item-menu">
-    {% for link in section.settings.menu-footer-1.links %}
-      {% if link.links != blank %}
-        <h5 class="subtitulo-3">{{ section.settings.titulo-menu-1 }}</h5>
-        <ul>
-          <li>
-            <a href="{{ link.url }}" class="subtitulo-3">{{ link.title }}</a>
-          </li>
-        </ul>
-        {% endif %}
-    {% endfor %}
+    <h5 class="subtitulo-3">{{ section.settings.titulo-menu-1 }}</h5>
+      <ul>
+        {% for link in section.settings.menu-footer-1.links %}
+        <li>
+          <a href="{{ link.url }}" class="subtitulo-3">{{ link.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
   </menu>
   <menu class="item-menu">
     <h5 class="subtitulo-3">{{ section.settings.titulo-menu-2 }}</h5>
