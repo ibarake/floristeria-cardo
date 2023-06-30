@@ -3,7 +3,7 @@
     <img src="{{ settings.logo.src | img_url }}"alt="{{ settings.logo.alt }}">
     <p class="parrafo-1">{{ section.settings.descripcion-marca }}</p>
   </item>
-  <item class="menu-marca">
+  <menu class="servicios">
     <h5 class="titulo-5">{{ section.settings.titulo-menu }}</h5>
       <ul>
         {% for link in section.settings.menu-footer.links %}
@@ -12,7 +12,17 @@
         </li>
         {% endfor %}
       </ul>
-  </item>
+  </menu>
+  <menu class="nosotros">
+    <h5 class="titulo-5">{{ section.settings.titulo-menu }}</h5>
+      <ul>
+        {% for link in section.settings.menu-footer.links %}
+        <li>
+          <a href="{{ link.url }}" class="subtitulo-3">{{ link.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+  </menu>
   <item class="contact">
     <form>
       <input type="text">
