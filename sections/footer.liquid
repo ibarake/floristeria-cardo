@@ -1,52 +1,71 @@
-<footer class="page-width">
-  <item class="info-marca">
-    <img src="{{ settings.logo.src | img_url }}"alt="{{ settings.logo.alt }}">
-    <p class="parrafo-3">{{ section.settings.descripcion-marca }}</p>
-  </item>
-  <menu class="item-menu">
-    <h3 class="subtitulo-3">{{ section.settings.titulo-menu-1 }}</h3>
+<footer-container class="page-width">
+  <footer class="container">
+    <item class="info-marca">
+      <img src="{{ settings.logo.src | img_url }}"alt="{{ settings.logo.alt }}">
+      <p class="parrafo-3">{{ section.settings.descripcion-marca }}</p>
+    </item>
+    <menu class="item-menu">
+      <h3 class="subtitulo-3">{{ section.settings.titulo-menu-1 }}</h3>
       <ul>
         {% for link in section.settings.menu-footer-1.links %}
-        <li>
-          <a href="{{ link.url }}" class="subtitulo-3">{{ link.title }}</a>
-        </li>
+          <li>
+            <a href="{{ link.url }}" class="subtitulo-3">{{ link.title }}</a>
+          </li>
         {% endfor %}
       </ul>
-  </menu>
-  <menu class="item-menu">
-    <h3 class="subtitulo-3">{{ section.settings.titulo-menu-2 }}</h3>
+    </menu>
+    <menu class="item-menu">
+      <h3 class="subtitulo-3">{{ section.settings.titulo-menu-2 }}</h3>
       <ul>
         {% for link in section.settings.menu-footer-2.links %}
-        <li>
-          <a href="{{ link.url }}" class="subtitulo-3">{{ link.title }}</a>
-        </li>
+          <li>
+            <a href="{{ link.url }}" class="subtitulo-3">{{ link.title }}</a>
+          </li>
         {% endfor %}
       </ul>
-  </menu>
-  <item class="contacto">
-    <h3 class="subtitulo-3">{{ section.settings.titulo-contacto }}</h3>
-    {% form 'customer' %}
-      <form>
-        <input class="email" type="email" name="contacto" placeholder="Tu e-mail" />
-        <button class="siguiente" type="submit">
-          {%  render 'icon-next-footer' %}
-        </button>
-      </form>
-    {% endform %}
-    <ul>
-      <li class="correo"><h5 class="subtitulo-4 "> {% render 'icon-gmail' %} {{ section.settings.correo-contacto }} </h5></li>
-      <li class="telefono"><h5 class="subtitulo-4 "> {% render 'icon-phone' %} {{ section.settings.telefono-contacto }} </h5></li>
-      <li class="ubicacion"><h5 class="subtitulo-4 "> {% render 'icon-location' %} {{ section.settings.direccion-contacto }} </h5></li>
-    </ul>
-  </item>
-</footer>
+    </menu>
+    <item class="contacto">
+      <h3 class="subtitulo-3">{{ section.settings.titulo-contacto }}</h3>
+      {% form 'customer' %}
+        <form>
+          <input
+            class="email"
+            type="email"
+            name="contacto"
+            placeholder="Tu e-mail" />
+          <button class="siguiente" type="submit">
+            {% render 'icon-next-footer' %}
+          </button>
+        </form>
+      {% endform %}
+      <ul>
+        <li class="correo">
+          <h5 class="subtitulo-4 ">
+            {% render 'icon-gmail' %} {{ section.settings.correo-contacto }}
+          </h5>
+        </li>
+        <li class="telefono">
+          <h5 class="subtitulo-4 ">
+            {% render 'icon-phone' %} {{ section.settings.telefono-contacto }}
+          </h5>
+        </li>
+        <li class="ubicacion">
+          <h5 class="subtitulo-4 ">
+            {% render 'icon-location' %} {{ section.settings.direccion-contacto }}
+          </h5>
+        </li>
+      </ul>
+    </item>
+  </footer>
+</footer-container>
+
 {% schema %}
   {
     "name": "Custom footer",
     "settings": [
       {
-      "type":"header",
-      "content":" ----------- Item descripción ----------- "
+        "type": "header",
+        "content": " ----------- Item descripción ----------- "
       },
       {
         "type": "textarea",
@@ -55,60 +74,51 @@
         "default": "Descripción"
       },
       {
-      "type":"header",
-      "content":" ----------- Items con menú ----------- "
+        "type": "header",
+        "content": " ----------- Items con menú ----------- "
       },
       {
         "type": "text",
         "id": "titulo-menu-1",
         "default": "Titulo",
         "label": "Título del primer item"
-      }, 
-      {
+      }, {
         "type": "link_list",
         "id": "menu-footer-1",
         "default": "footer",
         "label": "Menú del primer item "
-      }, 
-      {
+      }, {
         "type": "text",
         "id": "titulo-menu-2",
         "default": "Titulo",
         "label": "Título del segundo item "
-      }, 
-      {
+      }, {
         "type": "link_list",
         "id": "menu-footer-2",
         "default": "footer",
         "label": "Menú del segundo item"
-      },
-      {
-      "type":"header",
-      "content":" ----------- Item contáctanos ----------- "
-      },
-      {
+      }, {
+        "type": "header",
+        "content": " ----------- Item contáctanos ----------- "
+      }, {
         "type": "text",
         "id": "titulo-contacto",
         "default": "Contacto",
         "label": "Título"
-      },
-      {
+      }, {
         "type": "text",
         "id": "label-form",
         "default": "Tu e-mail",
         "label": "Label del formulario"
-      },
-      {
+      }, {
         "type": "text",
         "id": "correo-contacto",
         "label": "Correo"
-      },
-      {
+      }, {
         "type": "text",
         "id": "telefono-contacto",
         "label": "Telefono"
-      },
-      {
+      }, {
         "type": "text",
         "id": "direccion-contacto",
         "label": "Dirección"
@@ -116,4 +126,3 @@
     ]
   }
 {% endschema %}
-</footer>
