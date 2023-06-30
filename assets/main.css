@@ -558,6 +558,9 @@ collection-slider {
   margin-left: -130px;
   margin-right: -130px;
 }
+collection-slider::-webkit-scrollbar {
+  display: none;
+}
 
 collection-item {
   width: 300px;
