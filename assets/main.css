@@ -758,13 +758,13 @@ footer {
   padding: 6% 10% 6% 10%;
   background-color: var(--main-white);
 }
-footer .parrafo-1{
+footer .parrafo-1 {
   color: var(--main-gray);
 }
 
 footer item {
   flex: 1;
-
+  margin-right: 5%;
 }
 footer .titulo-5 {
   color: var(--main-olive);
