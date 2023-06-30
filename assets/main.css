@@ -648,6 +648,16 @@ container-products {
   align-items: center;
 }
 
+@media only screen and (max-width: 768px) {
+  .subtitulo-3 {
+    font-size: 16px;
+  }
+
+  .titulo-1 {
+    font-size: 32px;
+  }
+}
+
 /* FAQ STYLES */
 
 .preguntas-frecuentes {
