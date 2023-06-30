@@ -724,7 +724,7 @@ preguntas {
 contacto {
   width: 90%;
   height: 378px;
-  border-radius: 5px;
+  border-radius: 12px;
   background: var(--main-color);
   display: flex;
   justify-content: space-around;
@@ -735,7 +735,8 @@ contacto {
 .shopify-section {
   display: flex;
   justify-content: center;
-  
+  flex-direction: column;
+
 }
 
 .page-width{  
