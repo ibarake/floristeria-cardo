@@ -567,6 +567,7 @@ collection-card img {
 
 .collection-subtitle {
   text-transform: uppercase;
+  color: var(--main-gray);
 }
 
 /* PRODUCT CARD STYLES */
