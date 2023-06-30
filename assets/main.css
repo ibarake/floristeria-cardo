@@ -666,8 +666,8 @@ container-products {
 
 @media only screen and (max-width: 768px) {
   .subtitulo-3 {
-    font-size: 7px;
-    line-height: 1px;
+    font-size: 8px;
+    line-height: 15px;
   }
 
   .titulo-1 {
@@ -703,7 +703,12 @@ container-products {
 
   container-products {
     align-items: baseline;
-}
+  }
+
+  .FAQ-title {
+    width: 250px;
+    height: 40px;
+  }
 
 
 }
