@@ -787,3 +787,8 @@ footer .subtitulo-3 {
   text-decoration: none;
   color: var(--main-gray);
 }
+
+footer .subtitulo-4 {
+  display: flex;
+  align-items: center;
+}
