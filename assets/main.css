@@ -803,7 +803,7 @@ footer .contacto h5.subtitulo-4 svg{
 footer form#contact_form {
   position: relative;
     display: flex;
-    width: 50%;
+    width: 55%;
 }
 
 footer .email {
