@@ -696,6 +696,15 @@ container-products {
     margin-right: -7px;
   }
 
+  .parrafo-1 {
+    font-size: 10px;
+    line-height: 13px;
+  }
+
+  container-products {
+    align-items: baseline;
+}
+
 
 }
 
