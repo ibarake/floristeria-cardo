@@ -561,6 +561,10 @@ collection-item {
   width: 300px;
 }
 
+.collection-title {
+  margin: 0;
+}
+
 /* COLLECTION CARD STYLE */
 collection-card img {
   width: 256px;
