@@ -582,6 +582,11 @@ collection-item:last-child {
   text-transform: uppercase;
   color: var(--main-gray);
   margin: 0;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 4px;
 }
 
 /* COLLECTION CARD STYLE */
