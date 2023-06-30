@@ -766,16 +766,13 @@ footer item {
   flex: 1;
   margin-right: 5%;
 }
-footer .item-menu {
-  padding: 0;
-  margin: 0;
-}
+
 footer .titulo-5 {
   color: var(--main-olive);
   margin: 0;
 }
 
-footer ul {
+footer ul .item-menu {
   list-style: none;
   padding: 0;
   margin-top: 3%;
