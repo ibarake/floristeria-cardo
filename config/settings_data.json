@@ -107,10 +107,10 @@
           "titulo-menu-2": "Titulo",
           "menu-footer-2": "menu-principal",
           "titulo-contacto": "Contacto",
-          "label-form": "Tu e-mail",
-          "correo-contacto": "",
-          "telefono-contacto": "3014498732",
-          "direccion-contacto": ""
+          "label-form": "",
+          "correo-contacto": "Correo@gmail.com",
+          "telefono-contacto": "320-3949506",
+          "direccion-contacto": "Calle 98 # 18-21 Bogotá D.C. - Colombia"
         }
       }
     },
