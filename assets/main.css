@@ -597,7 +597,7 @@ collection-item:last-child {
 }
 
 /* COLLECTION CARD STYLE */
-collection-list {
+#shopify-section-collection-list {
   background-color: var(--main-dark-color);
 }
 collection-card img {
