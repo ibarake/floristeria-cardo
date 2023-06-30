@@ -576,6 +576,10 @@ collection-item:last-child {
 
 .collection-title {
   margin: 0;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 52px;
 }
 
 .collection-subtitle {
