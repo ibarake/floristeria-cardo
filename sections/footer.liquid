@@ -25,11 +25,16 @@
   </menu>
   <item class="contacto">
     <h3 class="subtitulo-3">{{ section.settings.titulo-contacto }}</h3>
-    <form>
-      <input type="text">
-      <label for=""></label>
-      <button></button>
-    </form>
+    {% form 'customer' %}
+      <div class="email">
+        <label for="email">Email</label>
+        <input type="email" name="contact[email]" />
+      </div>
+    
+      <div class="submit">
+        <input type="submit" value="Sign up" />
+      </div>
+    {% endform %}
     <ul>
       <li class="correo"><h5 class="subtitulo-4 "> {% render 'icon-gmail' %} {{ section.settings.correo-contacto }} </h5></li>
       <li class="telefono"><h5 class="subtitulo-4 "> {% render 'icon-phone' %} {{ section.settings.telefono-contacto }} </h5></li>
