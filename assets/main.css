@@ -544,7 +544,7 @@ collection-slider {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 15px;
+  gap: 32px;
 }
 
 collection-item {
