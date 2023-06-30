@@ -732,6 +732,12 @@ contacto {
   position: relative;
 }
 
+.shopify-section {
+  display: flex;
+  justify-content: center;
+  
+}
+
 .page-width{  
   align-self: center;
   }
