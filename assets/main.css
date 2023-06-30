@@ -553,8 +553,8 @@ collection-item {
 
 /* COLLECTION CARD STYLE */
 collection-card img {
-  width: 300px;
-  height: 350px;
+  width: 256px;
+  height: 300px;
   object-fit: cover;
 }
 .collection-card-title {
