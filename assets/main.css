@@ -554,6 +554,7 @@ collection-item {
 collection-card img {
   width: 300px;
   height: 350px;
+  object-fit: cover;
 }
 .collection-card-title {
   display: flex;
