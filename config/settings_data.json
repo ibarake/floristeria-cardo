@@ -105,7 +105,12 @@
           "titulo-menu-1": "Titulo",
           "menu-footer-1": "footer",
           "titulo-menu-2": "Titulo",
-          "menu-footer-2": "menu-principal"
+          "menu-footer-2": "menu-principal",
+          "titulo-contacto": "Contacto",
+          "label-form": "",
+          "correo-contacto": "Correo@gmail.com",
+          "telefono-contacto": "320-3949506",
+          "direccion-contacto": "Calle 98 # 18-21 Bogotá D.C. - Colombia"
         }
       }
     },
