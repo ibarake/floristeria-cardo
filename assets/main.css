@@ -553,7 +553,7 @@ collection-item {
 /* COLLECTION CARD STYLE */
 collection-card img {
   width: 300px;
-  height: auto;
+  height: 350px;
 }
 .collection-card-title {
   display: flex;
