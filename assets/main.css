@@ -761,7 +761,7 @@ footer {
   width: 100%;
   height: auto;
   min-height: 30%;
-  padding: 6% 8%;
+  padding: 6% 5%;
   background-color: var(--main-white);
 }
 footer .parrafo-3 {
@@ -802,7 +802,6 @@ footer .subtitulo-3 {
 footer .contacto h5.subtitulo-4 {
   display: flex;
   max-width: 69%;
-  align-items: center;
   color: var(--main-gray);
   white-space: break-spaces;
 }
