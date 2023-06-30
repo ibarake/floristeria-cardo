@@ -675,6 +675,11 @@ container-products {
     line-height: 25px;
   }
 
+  .titulo-6 {
+    font-size: 22px;
+    line-height: 25px;
+  }
+
   product-card img {
     width: 160px;
     height: 140px;
