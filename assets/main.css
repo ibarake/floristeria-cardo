@@ -722,7 +722,7 @@ preguntas {
 @import url("https://fonts.cdnfonts.com/css/newyork");
 
 contacto {
-  width: 100%;
+  width: 90%;
   height: 378px;
   border-radius: 5px;
   background: var(--main-color);
