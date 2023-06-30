@@ -22,6 +22,7 @@ body {
   --main-linen: #efe4cf;
   --main-olive: #615420;
   --linen-3: #e0b37f;
+  --neutrales-gris-3: #9F9F9F;
 }
 
 /* TEXT PRESET STYLES*/
@@ -757,8 +758,8 @@ footer {
   padding: 6% 10% 6% 10%;
   background-color: var(--main-white);
 }
-.info-marca{
-
+.info-marca .parrafo-1{
+  color: var(--neutrales-gris-3);
 }
 item {
   flex: 1;
