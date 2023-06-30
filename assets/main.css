@@ -22,7 +22,6 @@ body {
   --main-linen: #efe4cf;
   --main-olive: #615420;
   --linen-3: #e0b37f;
-  --neutrales-gris-3: #9F9F9F;
 }
 
 /* TEXT PRESET STYLES*/
@@ -760,9 +759,12 @@ footer {
   background-color: var(--main-white);
 }
 footer .parrafo-1{
-  color: var(--neutrales-gris-3);
+  color: var(--main-gray);
 }
 
+item {
+  flex: 1;
+}
 footer .titulo-5 {
   color: var(--main-olive);
   margin: 0;
@@ -773,6 +775,7 @@ footer ul {
   margin-top: 3%;
 }
 
-item {
-  flex: 1;
+footer .subtitulo-3 {
+  text-decoration: none;
+  color: var(--main-gray);
 }
