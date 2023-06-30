@@ -557,6 +557,7 @@ collection-slider {
   gap: 32px;
   margin-left: -130px;
   margin-right: -130px;
+  margin-top: 50px;
 }
 collection-slider::-webkit-scrollbar {
   display: none;
