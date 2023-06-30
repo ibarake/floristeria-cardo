@@ -5,11 +5,15 @@
       {{ section.settings.descripcion-marca }}
     </p>
   </item>
-  <item class=menu">
-    <h5></h5>
+  <item>
+    <h5>{{ section.settings.titulo-menu }}</h5>
     <menu>
       <ul>
-        <li></li>
+        {% for link in section.settings.menu-footer.links %}
+          <li>
+            <a href="{{ link.url }}">{{ link.title }}</a>
+          </li>
+        {% endfor %}
       </ul>
     </menu>
   </item>
@@ -30,6 +34,16 @@
         "id": "descripcion-marca",
         "label": "Escriba aquí la descripción de la marca",
         "default": " "
+      }, {
+        "type": "text",
+        "id": "titulo-menu",
+        "default": "Titulo",
+        "label": "Título"
+      }, {
+        "type": "link_list",
+        "id": "menu-footer",
+        "default": "footer",
+        "label": "t:sections.footer.blocks.link_list.settings.menu.label"
       }
     ]
   }
