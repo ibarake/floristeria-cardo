@@ -29,11 +29,9 @@
       <form class="email">
         <input type="email" name="contacto" placeholder="Tu e-mail" />
         <button>
-                <input type="submit" value="Sign up" />
+                <input type="submit" value="{%  render 'icon-arrow-right' %}" />
           </button>
       </form>
-    
-      
     {% endform %}
     <ul>
       <li class="correo"><h5 class="subtitulo-4 "> {% render 'icon-gmail' %} {{ section.settings.correo-contacto }} </h5></li>
