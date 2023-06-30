@@ -13,6 +13,7 @@ body {
 /* VARIABLES */
 
 .page-width {
+  display: block;
   width: 1180px;
 }
 
