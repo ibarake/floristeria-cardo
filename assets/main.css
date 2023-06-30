@@ -799,3 +799,10 @@ footer .contacto h5.subtitulo-4 {
 footer .contacto h5.subtitulo-4 svg{
   margin-right: .4rem;
 }
+
+footer form#contact_form {
+  position: relative;
+    border: 1px solid;
+    display: flex;
+    width: 50%;
+}
