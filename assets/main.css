@@ -806,3 +806,9 @@ footer form#contact_form {
     display: flex;
     width: 50%;
 }
+
+footer .email {
+  height: 2.8rem;
+  border: 1px solid var(--main-gray);
+  border-radius: 8px;
+}
