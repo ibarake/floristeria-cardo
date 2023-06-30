@@ -1,19 +1,13 @@
 <footer>
   <item class="info-marca">
     <img src="{{ settings.logo.src | img_url }}"alt="{{ settings.logo.alt }}">
-    <p class="parrafo-1">
-      {{ section.settings.descripcion-marca }}
-    </p>
+    <p class="parrafo-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias amet earum assumenda facere, dolorum repellat? Amet perspiciatis animi natus velit, aliquam labore tenetur corporis rerum ex architecto fugiat, iste doloribus?</p>
   </item>
-  <item>
-    <h5>{{ section.settings.titulo-menu }}</h5>
+  <item class=menu">
+    <h5></h5>
     <menu>
       <ul>
-        {% for link in section.settings.menu-footer.links %}
-          <li>
-            <a href="{{ link.url }}">{{ link.title }}</a>
-          </li>
-        {% endfor %}
+        <li></li>
       </ul>
     </menu>
   </item>
@@ -24,6 +18,7 @@
       <button></button>
     </form>
   </item>
+<<<<<<< HEAD
 </footer>
 {% schema %}
   {
@@ -48,3 +43,6 @@
     ]
   }
 {% endschema %}
+=======
+</footer>
+>>>>>>> 8ee251a30068bdbd2d51c8b8bf53df1c7b93dc98
