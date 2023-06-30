@@ -105,7 +105,12 @@
           "titulo-menu-1": "Titulo",
           "menu-footer-1": "footer",
           "titulo-menu-2": "Titulo",
-          "menu-footer-2": "menu-principal"
+          "menu-footer-2": "menu-principal",
+          "titulo-contacto": "Contacto",
+          "label-form": "Tu e-mail",
+          "correo-contacto": "",
+          "telefono-contacto": "3014498732",
+          "direccion-contacto": ""
         }
       }
     },
