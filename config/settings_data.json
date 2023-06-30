@@ -73,7 +73,8 @@
         "settings": {
           "arreglos-title": "Lorem ipsum dolor sit amet",
           "arreglos-subtitle": "POR OCASIÓN",
-          "collection": "fruteros"
+          "collection": "fruteros",
+          "subtitulo-fotos": "Ver todos"
         }
       },
       "collection-list": {
@@ -95,6 +96,14 @@
             "plantas-decorativas",
             "rosas"
           ]
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+          "descripcion-marca": "A través del tiempo ha desarrollado el gusto por los arreglos con diseño y estilo propio. Cada arreglo elaborado está basado en el sentimiento que el cliente quiere manifestar y desea expresar. El toque único de distinción y estilo que caracteriza a Floristería Cardo o se ha convertido en la mejor carta de presentación de nuestros arreglos",
+          "titulo-menu": "Titulo",
+          "menu-footer": "site-map-footer"
         }
       }
     },
