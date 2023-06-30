@@ -31,9 +31,9 @@
       <button></button>
     </form>
     <ul>
-      <li class="correo"><h5 class="subtitulo-4 "> {% render 'icon-gmail' %} correo</h5></li>
-      <li class="telefono"><h5 class="subtitulo-4 "> {% render 'icon-phone' %}telefono</h5></li>
-      <li class="ubicacion"><h5 class="subtitulo-4 "> {% render 'icon-location' %}ubicacion </h5></li>
+      <li class="correo"><h5 class="subtitulo-4 "> {% render 'icon-gmail' %} {{ section.settings.correo-contacto }} </h5></li>
+      <li class="telefono"><h5 class="subtitulo-4 "> {% render 'icon-phone' %} {{ section.settings.telefono-contacto }} </h5></li>
+      <li class="ubicacion"><h5 class="subtitulo-4 "> {% render 'icon-location' %} {{ section.settings.direccion-contacto }} </h5></li>
     </ul>
   </item>
 </footer>
@@ -94,6 +94,21 @@
         "id": "label-form",
         "default": "Tu e-mail",
         "label": "Label del formulario"
+      },
+      {
+        "type": "text",
+        "id": "correo-contacto",
+        "label": "Correo"
+      },
+      {
+        "type": "text",
+        "id": "telefono-contacto",
+        "label": "Telefono"
+      },
+      {
+        "type": "text",
+        "id": "direccion-contacto",
+        "label": "Dirección"
       }
     ]
   }
