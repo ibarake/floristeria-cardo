@@ -791,4 +791,5 @@ footer .subtitulo-3 {
 footer .contacto h5.subtitulo-4 {
   display: flex;
   align-items: center;
+  color: var(--main-gray);
 }
