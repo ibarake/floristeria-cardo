@@ -28,11 +28,12 @@
     {% form 'customer' %}
       <form class="email">
         <input type="email" name="contacto" placeholder="Tu e-mail" />
+        <button>
+                <input type="submit" value="Sign up" />
+          </button>
       </form>
     
-      <div class="submit">
-        <input type="submit" value="Sign up" />
-      </div>
+      
     {% endform %}
     <ul>
       <li class="correo"><h5 class="subtitulo-4 "> {% render 'icon-gmail' %} {{ section.settings.correo-contacto }} </h5></li>
