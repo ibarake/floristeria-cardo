@@ -26,9 +26,9 @@
   <item class="contacto">
     <h3 class="subtitulo-3">{{ section.settings.titulo-contacto }}</h3>
     {% form 'customer' %}
-      <form class="email">
-        <input type="email" name="contacto" placeholder="Tu e-mail" />
-        <button type="submit">
+      <form>
+        <input class="email" type="email" name="contacto" placeholder="Tu e-mail" />
+        <button class="siguiente" type="submit">
           {%  render 'icon-arrow-right-dropdown' %}
         </button>
       </form>
