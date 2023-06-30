@@ -482,6 +482,12 @@ hero-title {
   top: 0;
 }
 
+.flor-5 {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
 .cta {
   width: 40%;
   padding: 10px 30px 10px 30px;
