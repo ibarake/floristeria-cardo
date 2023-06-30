@@ -592,6 +592,9 @@ collection-item:last-child {
   line-height: normal;
   letter-spacing: 4px;
 }
+.collection-subscription {
+  color: var(--main-gray);
+}
 
 /* COLLECTION CARD STYLE */
 collection-card img {
