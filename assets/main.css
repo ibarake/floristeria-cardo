@@ -674,6 +674,11 @@ container-products {
     font-size: 22px;
     line-height: 25px;
   }
+
+  product-card img {
+    width: 160px;
+    height: 140px;
+  }
 }
 
 /* FAQ STYLES */
