@@ -12,6 +12,12 @@ body {
 
 /* VARIABLES */
 
+.page-width {
+  display: block;
+  width: 1080px;
+  margin: auto;
+}
+
 :root {
   --main-color: #f7f0e2;
   --main-dark-color: #fefaf7;
