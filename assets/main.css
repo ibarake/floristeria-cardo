@@ -671,6 +671,24 @@ container-products {
     width: 160px;
     height: 140px;
   }
+
+  .parrafo-4 {
+    font-weight: 800;
+    font-size: 8px;
+    line-height: 10px;
+
+  }
+
+  .parrafo-3 {
+    font-size: 8px;
+    line-height: 9px;
+  }
+
+  .card-add-to-cart svg {
+    margin-right: -7px;
+  }
+
+
 }
 
 /* FAQ STYLES */
