@@ -785,3 +785,8 @@ datos {
   border: none;
   cursor: pointer;
 }
+
+.products-faq2 {
+  display: flex;
+  justify-content: center;
+}
