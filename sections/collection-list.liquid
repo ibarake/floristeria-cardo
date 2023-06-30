@@ -10,13 +10,13 @@
     <button class="cta cta-3 subtitulo-3">{{ section.settings['cta-3'] }}</button>
   </collection-title>
   <collection-scroll>
-  <collection-slider>
-    {% for collection in section.settings.collection_list %}
-      <collection-item>
-        {% include 'collection-card', collection: collection %}
-      </collection-item>
-    {% endfor %}
-  </collection-slider>
+    <collection-slider>
+      {% for collection in section.settings.collection_list %}
+        <collection-item>
+          {% include 'collection-card', collection: collection %}
+        </collection-item>
+      {% endfor %}
+    </collection-slider>
   </collection-scroll>
 </collection-list>
 
