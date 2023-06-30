@@ -820,4 +820,5 @@ footer button.siguiente {
   border: 1px solid var(--main-olive);
   border-radius: 0 8px 8px 0;
   background-color: var(--main-olive);
+  font-size: 14px;
 }
