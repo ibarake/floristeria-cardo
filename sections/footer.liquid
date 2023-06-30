@@ -26,10 +26,9 @@
   <item class="contacto">
     <h3 class="subtitulo-3">{{ section.settings.titulo-contacto }}</h3>
     {% form 'customer' %}
-      <div class="email">
-        <label for="email">Email</label>
-        <input type="email" name="contact[email]" />
-      </div>
+      <form class="email">
+        <input type="email" name="contacto" placeholder="Tu e-mail" />
+      </form>
     
       <div class="submit">
         <input type="submit" value="Sign up" />
