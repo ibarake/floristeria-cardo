@@ -545,6 +545,10 @@ hero-title {
 }
 
 /* COLLECTION LIST STYLES */
+collection-title {
+  display: flex;
+  flex-direction: row;
+}
 collection-slider {
   overflow-x: auto;
   display: flex;
