@@ -13,7 +13,7 @@
         {% include 'product-card', hero-product: product, atc-btn: section.settings.button-text, classes: "product-4-img" %}
       </products-4-item>
     {% endfor %}
-    <p class="subtitulo-2 s2">
+    <p class="subtitulo-2 {% if section.settings.style-s == 'style 1' %} s2{% endif %} {% if section.settings.style-s == 'style 2' %} s2-1 {% endif %}">
       {{ section.settings['subtitulo-fotos'] }}
       {% render 'icon-arrow-right' %}
     </p>
@@ -46,7 +46,7 @@
     },
       {
       "type": "select",
-      "id": "style",
+      "id": "style-s",
       "label": "Style",
       "options": [
         {
