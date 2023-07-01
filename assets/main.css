@@ -872,15 +872,18 @@ footer-copyright p {
   .item-menu-1,
   .item-menu-2, 
   p.parrafo-3,
-  footer form#contact_form {
-    display: none;
-  }
+  footer form#contact_form,
   footer #footer-contacto {
     display: none;
   }
+
   footer .item-mobile {
     display: flex;
     padding: 0;
     margin: 0;
+  }
+
+  footer .info-marca {
+    margin-bottom: 3%;
   }
 }
