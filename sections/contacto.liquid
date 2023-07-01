@@ -1,11 +1,13 @@
-<contacto>
-<contacto class="page-width">
+<contacto class="page-width-contacto">
   <div class="flor-4">
     {% render 'flor-4' %}
   </div>
+  <flor class="mobile">
+    {% render 'flor-contacto-mobile' %}
+  </flor>
   <cuadro></cuadro>
   <informacion>
-    <h1 class="titulo-7 t7">
+    <h1 class="titulo-7">
       {{ section.settings.contact-title }}
     </h1>
     <p class="parrafo-5 p5" id="parrafo-contacto">
@@ -18,7 +20,10 @@
           placeholder="Tu correo"
           type="email"
           name="contact[email]">
-        <input class="button-contacto" type="submit" value="{{ section.settings.button-title }}">
+        <input
+          class="button-contacto subtitulo-3"
+          type="submit"
+          value="{{ section.settings.button-title }}">
       </datos>
     {% endform %}
   </informacion>
