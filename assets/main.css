@@ -863,7 +863,8 @@ products-4-item {
 
 @media only screen and (max-width: 768px) {
   .s3 {
-    font-size: 8px;
+    letter-spacing: 4px;
+    font-size: 14px;
     line-height: 15px;
   }
 
@@ -873,7 +874,7 @@ products-4-item {
   }
 
   .t1 {
-    font-size: 22px;
+    font-size: 32px;
     line-height: 25px;
   }
 
