@@ -600,6 +600,7 @@ hero-title {
 
 /* COLLECTION LIST STYLES */
 collection-list {
+  position: relative;
   padding: 96px 0;
 }
 collection-title {
