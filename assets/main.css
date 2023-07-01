@@ -829,6 +829,7 @@ container-4products {
   display: flex;
   align-items: center;
   position: relative;
+  gap: 20px;
 }
 .product-4 product-card img {
   width: 250px !important;
