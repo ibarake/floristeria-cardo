@@ -743,8 +743,6 @@ product-card {
 }
 
 product-card img {
-  width: 290px;
-  height: 256px;
   object-fit: cover;
   object-position: center center;
   border-radius: 8px 8px 0 0;
@@ -828,7 +826,7 @@ container-4products {
 }
 .product-4 product-card img {
   width: 240px !important;
-  height: auto;
+  height: 285px;
 }
 products-4-item {
   width: 25%;
