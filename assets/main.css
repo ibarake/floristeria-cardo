@@ -847,7 +847,11 @@ footer-copyright p{
   color: var(--main-gray);
   margin-left: 40%;
 }
+
 @media only screen and (max-width: 768px) {
+  .page-width{
+    width: auto;
+  }
   footer {
     flex-direction: column;
   }
@@ -858,6 +862,7 @@ footer-copyright p{
 
   footer .item-menu {
     text-align: center;
+    margin: 0;
   }
 
   footer h3.subtitulo-3 {
