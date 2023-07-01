@@ -830,9 +830,8 @@ container-products {
   align-items: center;
 }
 
-.4-product product-card img {
-  width: 190px !important;
-  height: 156px !important;
+.4-product product-card {
+  width: 100%;
 }
 
 @media only screen and (max-width: 768px) {
