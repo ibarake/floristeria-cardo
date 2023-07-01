@@ -1070,6 +1070,8 @@ datos {
   .button-contacto {
     width: 100%;
     height: 19%;
+    background-color: var(--main-olive);
+    color: var(--main-white);
   }
 }
 
