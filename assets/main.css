@@ -849,6 +849,10 @@ footer-copyright {
   text-decoration: none;
 }
 
+footer-copyright a {
+  text-decoration: none;
+}
+
 footer-copyright p {
   color: var(--main-gray);
   margin-left: 40%;
