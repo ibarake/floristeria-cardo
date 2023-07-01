@@ -1028,10 +1028,7 @@ datos {
   font-weight: bold;
 }
 contacto flor.mobile{
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
+  display: none;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1079,6 +1076,13 @@ contacto flor.mobile{
     background-color: var(--main-olive);
     color: var(--main-white);
     font-weight: 500;
+  }
+  
+  contacto flor.mobile{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
   }
 }
 
