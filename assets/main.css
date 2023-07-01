@@ -743,11 +743,6 @@ product-card {
 }
 
 product-card img {
-  width: 156px;
-  height: 190px;
-}
-
-product-card img {
   width: 290px;
   height: 256px;
   object-fit: cover;
