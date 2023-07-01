@@ -858,7 +858,7 @@ footer-copyright p {
   margin-left: 40%;
 }
 
-footer social-mobile {
+footer-container social-mobile {
   display: none;
 }
 
@@ -892,7 +892,7 @@ footer social-mobile {
     margin-bottom: 3%;
   }
 
-  footer social-mobile {
+  footer-container social-mobile {
     align-items: center;
     justify-content: center;
     display: flex;
