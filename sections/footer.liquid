@@ -61,12 +61,9 @@
   <footer-copyright>
     <p class="parrafo-2">© Copyright 2023 Floristería Cardó.</p>
     <links-social>
-      <a href="{{ section.settings.link-facebook }}">
-        {% render 'icon-facebook' %}
-      </a>
-      <a href="{{ section.settings.link-messenger }}">{% render 'icon-messenger' %}</a>
-      <a href="{{ section.settings.link-instagram }}">{% render 'icon-instagram' %}</a>
-      <h1>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</h1>
+      <icono-facebook>{% render 'icon-facebook' %}</icono-facebook>
+      <icono-messenger>{% render 'icon-messenger' %}</icono-messenger>
+      <icono-instagram>{% render 'icon-instagram' %}</icono-instagram>
     </links-social>
   </footer-copyright>
 </footer-container>
@@ -111,7 +108,7 @@
         "label": "Menú del segundo item"
       }, {
         "type": "header",
-        "content": " ----------- Item contactanos ----------- "
+        "content": " ----------- Links contactanos ----------- "
       }, {
         "type": "text",
         "id": "titulo-contacto",
@@ -136,17 +133,17 @@
         "label": "Dirección"
       }, {
         "type": "header",
-        "content": " ----------- Links contáctanos ----------- "
+        "content": " ----------- Item contáctanos ----------- "
       }, {
-        "type": "url",
+        "type": "text",
         "id": "link-facebook",
         "label": "Facebook"
       }, {
-        "type": "url",
+        "type": "text",
         "id": "link-messenger",
         "label": "Messenger"
       }, {
-        "type": "url",
+        "type": "text",
         "id": "link-instagram",
         "label": "Instagram"
       }
