@@ -99,3 +99,11 @@ handleClassChange();
 
 // Event listener for window resize
 window.addEventListener("resize", handleClassChange);
+
+/* COLLECTION LIST JAVASCRIPT */
+
+var collectionLists = document.querySelector('collection-slider');
+
+collectionLists.forEach((CollectionList) => {
+  collectionLists.style.width = screen.width;
+})
