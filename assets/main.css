@@ -908,4 +908,7 @@ footer-container social-mobile {
     justify-content: center;
     margin-left: 7%;
   }
+  menu-mobile a {
+    text-decoration: underline;
+  }
 }
