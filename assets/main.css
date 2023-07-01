@@ -976,7 +976,7 @@ contacto {
 }
 .page-width-contacto {
   display: flex;
-  width: 1080px;
+  width: 90%;
   margin: auto;
 }
 #parrafo-contacto {
