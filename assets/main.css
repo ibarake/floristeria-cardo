@@ -633,6 +633,7 @@ collection-item:last-child {
 @media only screen and (max-width: 768px) {
   collection-title {
     flex-direction: column;
+    padding: 0px 20px;
   }
   collection-item:first-child {
     margin-left: 20px;
