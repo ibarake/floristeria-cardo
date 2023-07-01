@@ -110,7 +110,10 @@
           "label-form": "",
           "correo-contacto": "Correo@gmail.com",
           "telefono-contacto": "320-3949506",
-          "direccion-contacto": "Calle 98 # 18-21 Bogotá D.C. - Colombia"
+          "direccion-contacto": "Calle 98 # 18-21 Bogotá D.C. - Colombia",
+          "link-facebook": "ssss",
+          "link-messenger": "",
+          "link-instagram": ""
         }
       }
     },
