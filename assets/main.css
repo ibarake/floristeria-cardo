@@ -706,6 +706,10 @@ collection-card img {
   color: var(--main-gray);
 }
 
+collection-card svg {
+  fill: var(--main-gray);
+}
+
 @media only screen and (max-width: 768px) {
   collection-card img {
     width: 156px;
