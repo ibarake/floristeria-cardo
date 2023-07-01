@@ -849,7 +849,7 @@ footer-copyright {
   text-decoration: none;
 }
 
-footer-copyright social-mobile a{
+footer-copyright, social-mobile a{
   text-decoration: none;
 }
 
