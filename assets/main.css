@@ -546,7 +546,7 @@ hero-title {
 
 /* COLLECTION LIST STYLES */
 collection-list {
-  padding: 0 80px;
+  padding: 80px 0;
 }
 collection-title {
   display: flex;
