@@ -830,10 +830,6 @@ container-4products {
   position: relative;
   gap: 20px;
 }
-product-card img.product-4-img {
-  width: 240px;
-  height: 206px;
-}
 products-4-item {
   width: 25%;
 }
