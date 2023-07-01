@@ -3,7 +3,8 @@
   src: url('{{ "NewYork.woff2" | asset_url }}') format("woff2");
 }
 
-body {
+body,
+html {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -16,6 +17,16 @@ body {
   display: block;
   width: 1080px;
   margin: auto;
+}
+
+.absolute {
+  position: absolute;
+}
+
+@media only screen and (max-width: 768px) {
+  .page-width {
+    width: 100%;
+  }
 }
 
 :root {
@@ -71,6 +82,22 @@ body {
   line-height: 31px;
 }
 
+.titulo-6 {
+  font-family: "NewYork";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 72px;
+}
+
+.titulo-7 {
+  font-family: "NewYork";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 41px;
+}
+
 .subtitulo-1 {
   font-family: "DM Sans";
   font-style: normal;
@@ -112,12 +139,12 @@ body {
 }
 
 .subtitulo-6 {
-    font-family: "DM Sans";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 32px;
-  }
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+}
 
 .parrafo-1 {
   font-family: "DM Sans";
@@ -149,6 +176,14 @@ body {
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
+}
+
+.parrafo-5 {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
 }
 
 /* HEADER STYLES*/
@@ -475,13 +510,16 @@ hero-title {
 .flor-4 {
   display: block;
   position: absolute;
-  left: 14.67%;
-  right: -14.66%;
-  top: -200px;
-  bottom: -78.73%;
-  transform: rotate(-98.47deg);
+  right: 0;
+  top: 0;
 }
 
+.flor-5 {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
 .cta {
   width: 40%;
   padding: 10px 30px 10px 30px;
@@ -506,6 +544,16 @@ hero-title {
   color: var(--main-olive);
   border-radius: 8px;
   border: none;
+  padding: 10px 30px 10px 30px;
+}
+.cta-3-responsive {
+  display: none;
+  background-color: var(--linen-3);
+  color: var(--main-olive);
+  border-radius: 8px;
+  border: none;
+  padding: 10px 30px 10px 30px;
+  width: 100%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -540,8 +588,147 @@ hero-title {
   .flor-3 {
     display: block;
   }
+  .flor-4 {
+    display: none;
+  }
   .cta-1 {
     padding: 0;
+  }
+  .cta-3 {
+    display: none;
+  }
+  .cta-3-responsive {
+    display: block;
+  }
+}
+
+/* COLLECTION LIST STYLES */
+collection-list {
+  position: relative;
+  padding: 96px 0;
+}
+collection-title {
+  display: flex;
+  flex-direction: row;
+}
+collection-button {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+}
+collection-slider {
+  overflow-x: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 32px;
+  margin-left: -200px;
+  margin-right: -200px;
+  margin-top: 50px;
+}
+collection-slider::-webkit-scrollbar {
+  display: none;
+}
+
+collection-item {
+  width: 300px;
+}
+
+collection-item:first-child {
+  margin-left: 2100px;
+}
+
+collection-item:last-child {
+  margin-right: 250px;
+}
+
+.collection-title {
+  margin: 0;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 52px;
+}
+
+.collection-subtitle {
+  text-transform: uppercase;
+  color: var(--main-gray);
+  margin: 0;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 4px;
+}
+.collection-description {
+  color: var(--main-gray);
+}
+
+.collection-flor {
+  left: 0;
+}
+
+.collection-flor-2 {
+  top: 50px;
+  right: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  collection-title {
+    flex-direction: column;
+    padding: 0px 20px;
+  }
+  collection-item:first-child {
+    margin-left: 20px;
+  }
+  collection-item:last-child {
+    margin-right: 20px;
+  }
+  collection-list {
+    padding: 35px 0px;
+    width: 100%;
+  }
+  collection-slider {
+    width: calc(100% + 20px);
+    margin-right: 0px;
+    margin-left: 0px;
+    justify-content: flex-start;
+  }
+}
+
+/* COLLECTION CARD STYLE */
+#shopify-section-collection-list {
+  position: relative;
+  background-color: var(--main-dark-color);
+}
+collection-card img {
+  width: 256px;
+  height: 300px;
+  object-fit: cover;
+}
+.collection-card-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: var(--main-gray);
+}
+
+collection-card svg {
+  fill: var(--main-gray);
+}
+
+@media only screen and (max-width: 768px) {
+  collection-card img {
+    width: 156px;
+    height: 200px;
+  }
+
+  collection-item:last-child {
+    margin-right: 20px;
   }
 }
 
@@ -553,6 +740,11 @@ product-card {
   margin: 16px;
   display: flex;
   flex-direction: column;
+}
+
+product-card img {
+  width: 156px;
+  height: 190px;
 }
 
 product-card img {
@@ -639,6 +831,61 @@ container-products {
   align-items: center;
 }
 
+@media only screen and (max-width: 768px) {
+  .s3 {
+    font-size: 8px;
+    line-height: 15px;
+  }
+
+  .s6 {
+    font-size: 7px;
+    line-height: 1px;
+  }
+
+  .t1 {
+    font-size: 22px;
+    line-height: 25px;
+  }
+
+  .t6 {
+    font-size: 22px;
+    line-height: 25px;
+  }
+
+  .p4 {
+    font-weight: 800;
+    font-size: 8px;
+    line-height: 10px;
+  }
+
+  .p3 {
+    font-size: 8px;
+    line-height: 9px;
+  }
+
+  .card-add-to-cart svg {
+    margin-right: -7px;
+  }
+
+  .p1 {
+    font-size: 10px;
+    line-height: 13px;
+  }
+
+  container-products {
+    align-items: baseline;
+  }
+
+  .FAQ-title {
+    width: 250px;
+    height: 40px;
+  }
+
+  .preguntas-frecuentes {
+    flex-direction: column;
+  }
+}
+
 /* FAQ STYLES */
 
 .preguntas-frecuentes {
@@ -699,17 +946,43 @@ preguntas {
   margin: 1px solid black;
 }
 
+/* PRODUCTS-FAQ2 */
+#p-subtitle2 {
+  text-align: center;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--main-gray);
+  margin: 0;
+}
+
+#p-title2 {
+  text-align: center;
+  margin: 0;
+}
+
 /* CONTACTO */
 @import url("https://fonts.cdnfonts.com/css/dm-sans");
 @import url("https://fonts.cdnfonts.com/css/newyork");
 
 contacto {
-  width: 100%;
+  width: 90%;
   height: 378px;
+  border-radius: 12px;
   background: var(--main-color);
   display: flex;
   justify-content: space-around;
   align-items: center;
+  position: relative;
+}
+
+.shopify-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.page-width {
+  align-self: center;
 }
 
 #parrafo-contacto {
@@ -718,7 +991,7 @@ contacto {
 }
 
 informacion {
-  width: 35%;
+  width: 42%;
 }
 
 cuadro {
@@ -753,6 +1026,7 @@ datos {
   border: none;
   cursor: pointer;
 }
+
 /* FOOTER STYLES */
 footer {
   display: flex;
@@ -911,4 +1185,11 @@ footer-container social-mobile {
   menu-mobile a {
     text-decoration: underline !important;
   }
+}
+
+.products-faq2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }

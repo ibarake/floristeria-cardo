@@ -3,7 +3,8 @@
     class="collection-card-image"
     src="{{ collection.featured_image | img_url }}"
     alt="{{ collection.featured_image.alt }}">
-  <p class="subtitulo-2 collection-card-title">
+  <p class="subtitulo-3 collection-card-title">
     {{ collection.title }}
+    {% render 'icon-arrow-right-2' %}
   </p>
 </collection-card>

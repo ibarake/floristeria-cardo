@@ -1,19 +1,32 @@
-<collection-list>
+  <flor class="absolute collection-flor-2">
+    {% render 'flor-collection-list-2' %}
+  </flor>
+  <flor class="absolute collection-flor">
+    {% render 'flor-collection-list' %}
+  </flor>
+<collection-list class="page-width">
   <collection-title>
     <collection-text>
-      <h4>{{ section.settings['subtitle-text'] }}</h4>
-      <h2>{{ section.settings['title-text'] }}</h2>
+      <h4 class="subtitulo-2 collection-subtitle">{{ section.settings['subtitle-text'] }}</h4>
+      <h2 class="titulo-2 collection-title">{{ section.settings['title-text'] }}</h2>
     </collection-text>
     <collection-subtext>
-      <p class="parrafo-1">{{ section.settings['p-text'] }}</p>
+      <p class="parrafo-1 collection-description"><br>{{ section.settings['p-text'] }}</p>
     </collection-subtext>
-    <button class="cta cta-3 subtitulo-3">{{ section.settings['cta-3'] }}</button>
+    <collection-button>
+      <button class="cta-3 subtitulo-3">{{ section.settings['cta-3'] }}</button>
+    </collection-button>
   </collection-title>
-  <collection-slider>
-    {% for collection in section.settings.collection_list %}
-      {% include 'collection-card', collection: collection %}
-    {% endfor %}
-  </collection-slider>
+  <collection-scroll>
+    <collection-slider>
+      {% for collection in section.settings.collection_list %}
+        <collection-item>
+          {% include 'collection-card', collection: collection %}
+        </collection-item>
+      {% endfor %}
+    </collection-slider>
+  </collection-scroll>
+  <button class="cta-3-responsive subtitulo-3">{{ section.settings['cta-3'] }}</button>
 </collection-list>
 
 {% schema %}
