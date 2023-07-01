@@ -22,7 +22,9 @@
   </head>
   <body>
     {% section 'header' %}
+    {% comment %}
     {{ content_for_layout }}
+    {% endcomment %}
     {% section 'footer' %}
   </body>
   <script src="{{ 'main.js' | asset_url }}"></script>
