@@ -837,7 +837,7 @@ footer button.siguiente {
   font-size: 14px;
 }
 
-footer footer-copyright{
+footer-copyright{
   display: flex;
   justify-content: space-between;
   align-items: center;
