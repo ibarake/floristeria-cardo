@@ -692,6 +692,7 @@ collection-item:last-child {
 
 /* COLLECTION CARD STYLE */
 #shopify-section-collection-list {
+  position: relative;
   background-color: var(--main-dark-color);
 }
 collection-card img {
