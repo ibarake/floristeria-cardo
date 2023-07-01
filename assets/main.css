@@ -1038,6 +1038,7 @@ datos {
   contacto {
     justify-content: left;
     padding: 3%;
+    width: 86%;
   }
 
   contacto .titulo-7 {
