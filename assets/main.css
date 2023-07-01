@@ -784,6 +784,7 @@ footer .item-menu-1,
   margin: 0 5% 0 0;
 }
 .item-mobile {
+  display: none;
   padding: 0;
   margin: 0 5% 0 0;
 }
