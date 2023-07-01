@@ -552,6 +552,9 @@ collection-title {
   display: flex;
   flex-direction: row;
 }
+collection-button {
+  width: 40%;
+}
 collection-slider {
   overflow-x: auto;
   display: flex;
