@@ -831,7 +831,7 @@ container-products {
 }
 
 .4-product product-card {
-  width: 100%;
+  width: 100% !important;
 }
 
 @media only screen and (max-width: 768px) {
