@@ -630,6 +630,9 @@ collection-item:last-child {
 }
 
 @media only screen and (max-width: 768px) {
+  collection-title {
+    flex-direction: column;
+  }
 }
 
 /* COLLECTION CARD STYLE */
