@@ -444,6 +444,10 @@ hero-banner {
   padding: 60px 0px 60px 40px;
 }
 
+product-card img.hero {
+  width: 290px;
+  height: 256px;
+}
 inline-half-container {
   z-index: 999;
 }
@@ -743,13 +747,6 @@ product-card {
 }
 
 product-card img {
-  width: 156px;
-  height: 190px;
-}
-
-product-card img {
-  width: 290px;
-  height: 256px;
   object-fit: cover;
   object-position: center center;
   border-radius: 8px 8px 0 0;
@@ -799,8 +796,7 @@ card-footer {
 
 /* PRODUCTS FAQ STYLES */
 
-.arreglos-funebres {
-  width: 100%;
+.product-4 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -808,9 +804,11 @@ card-footer {
 }
 
 container-arreglos {
-  width: 40%;
+  width: 50%;
+  padding: 20px 25% 20px 25%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   margin: 5rem 0 1rem 0;
 }
@@ -826,9 +824,41 @@ container-arreglos {
   margin: 0;
 }
 
-container-products {
+container-4products {
   display: flex;
   align-items: center;
+  position: relative;
+  gap: 20px;
+}
+product-card img.product-4-img {
+  width: 240px;
+  height: 206px;
+}
+products-4-item {
+  width: 25%;
+}
+
+.s2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  right: -175px;
+  color: var(--main-olive);
+}
+
+.s2-1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  right: 0px;
+  top: -50px;
+  color: var(--main-olive);
+}
+
+.s2 svg {
+  fill: var(--main-olive);
 }
 
 @media only screen and (max-width: 768px) {
@@ -1115,7 +1145,7 @@ footer .info-marca {
   margin-right: 0%;
 }
 
-footer .item-menu-1, 
+footer .item-menu-1,
 .item-menu-2 {
   padding: 0;
   margin: 0 5% 0 0;
@@ -1150,7 +1180,7 @@ footer .contacto h5.subtitulo-4 {
 
 footer .contacto h5.subtitulo-4 svg {
   margin-top: -1%;
-  margin-right: .4rem;
+  margin-right: 0.4rem;
 }
 
 footer form#contact_form {
@@ -1186,7 +1216,8 @@ footer-copyright {
   text-decoration: none;
 }
 
-footer-copyright a, social-mobile a {
+footer-copyright a,
+social-mobile a {
   text-decoration: none;
 }
 
@@ -1200,8 +1231,7 @@ footer-container social-mobile {
 }
 
 @media only screen and (max-width: 768px) {
-
-  .page-width{
+  .page-width {
     width: auto;
   }
 
@@ -1213,7 +1243,7 @@ footer-container social-mobile {
 
   footer h3.subtitulo-3,
   .item-menu-1,
-  .item-menu-2, 
+  .item-menu-2,
   p.parrafo-3,
   footer form#contact_form,
   footer #footer-contacto,
@@ -1236,7 +1266,8 @@ footer-container social-mobile {
   footer-copyright p {
     margin-left: 0;
   }
-  footer-copyright a, social-mobile a {
+  footer-copyright a,
+  social-mobile a {
     margin-right: 3%;
   }
   footer-container social-mobile {

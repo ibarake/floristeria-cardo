@@ -1,0 +1,87 @@
+<section class="4-product page-width">
+  <container-arreglos>
+    <p class="subtitulo-3 s3" id="p-subtitle">
+      {{ section.settings.arreglos-subtitle }}
+    </p>
+    <h1 class="titulo-1 t1" id="p-title">
+      {{ section.settings.arreglos-title }}
+    </h1>
+  </container-arreglos>
+  <container-4products>
+    {% for product in section.settings.collection limit:4 %}
+      <products-4-item>
+        {% include 'product-card', hero-product: product, atc-btn: section.settings.button-text, classes: "product-4-img" %}
+      </products-4-item>
+    {% endfor %}
+    <p class="subtitulo-2 {% if section.settings.style-s == 'style 1' %} s2{% endif %} {% if section.settings.style-s == 'style 2' %} s2-1 {% endif %}">
+      {{ section.settings['subtitulo-fotos'] }}
+      {% render 'icon-arrow-right' %}
+    </p>
+  </container-4products>
+</section>
+
+{% schema %}
+  {
+    "name": "products-4",
+    "settings": [
+      {
+        "type": "text",
+        "id": "arreglos-title",
+        "label": "Titulo",
+        "default": "Lorem ipsum dolor sit amet"
+      }, {
+        "type": "text",
+        "id": "arreglos-subtitle",
+        "label": "Subtitulo",
+        "default": "Arreglos Funebres"
+      }, {
+        "type": "product_list",
+        "id": "collection",
+        "label": "collection",
+        "limit": 4
+      }, {
+        "type": "text",
+        "id": "button-text",
+        "label": "Boton de texto",
+        "default": "Añadir al carrito"
+      }, {
+			"type": "text",
+			"id": "title-preguntas",
+			"label": "Title section",
+			"default": "Sobre Cardó"
+		}, {
+			"type": "text",
+			"id": "subtitle-preguntas",
+			"label": "subtitle-preguntas",
+			"default": "preguntas frecuentes"
+		}, {
+      "type": "text",
+      "id": "subtitulo-fotos",
+      "label": "Ver Todos",
+      "default": "Ver todos"
+    },
+      {
+      "type": "select",
+      "id": "style-s",
+      "label": "Style",
+      "options": [
+        {
+          "value": "style 1",
+          "label": "style 1"
+        },
+        {
+          "value": "style 2",
+          "label": "style 2"
+        }
+      ],
+      "default": "style 1"
+    }
+    ],
+  "presets": [
+    {
+      "name": "product-4"
+    }
+  ]
+  }
+{% endschema %}
+

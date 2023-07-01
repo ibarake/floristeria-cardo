@@ -68,15 +68,6 @@
           "button-title": "Recibir Información"
         }
       },
-      "products-faq2": {
-        "type": "products-faq2",
-        "settings": {
-          "arreglos-title": "Lorem ipsum dolor sit amet",
-          "arreglos-subtitle": "POR OCASIÓN",
-          "collection": "fruteros",
-          "subtitulo-fotos": "Ver todos"
-        }
-      },
       "collection-list": {
         "type": "collection-list",
         "settings": {
@@ -115,6 +106,24 @@
           "url-facebook": "shopify:\/\/pages\/contacto",
           "url-messenger": "shopify:\/\/pages\/gdpr-compliance",
           "url-instagram": "shopify:\/\/pages\/lista-de-deseos"
+        }
+      },
+      "products-4": {
+        "type": "products-4",
+        "settings": {
+          "arreglos-title": "Lorem ipsum dolor sit amet",
+          "arreglos-subtitle": "Arreglos Funebres",
+          "collection": [
+            "arreglo-floral-inspiracion",
+            "arreglo-armonia",
+            "arreglo-nacimiento",
+            "copia-de-arreglo-inspiracion"
+          ],
+          "button-text": "Añadir al carrito",
+          "title-preguntas": "Sobre Cardó",
+          "subtitle-preguntas": "preguntas frecuentes",
+          "subtitulo-fotos": "Ver todos",
+          "style-s": "style 1"
         }
       }
     },
