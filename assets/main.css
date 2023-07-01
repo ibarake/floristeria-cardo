@@ -635,7 +635,7 @@ collection-item:last-child {
     flex-direction: column;
   }
   collection-item:first-child {
-    margin-left: 1800px;
+    margin-left: 20px;
   }
   collection-list {
     padding: 35px 20px;
