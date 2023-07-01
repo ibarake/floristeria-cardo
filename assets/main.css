@@ -868,8 +868,11 @@ footer-copyright p{
   }
 
   footer h3.subtitulo-3,
-.item-menu-2,
-form#contact_form {
+.item-menu-2 {
     display: none;
   }
+
+form#contact_form {
+  display: none;
+}
 }
