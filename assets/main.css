@@ -638,6 +638,7 @@ collection-item:last-child {
   }
   collection-list {
     padding: 35px 20px;
+    width: 100%;
   }
 }
 
