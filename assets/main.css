@@ -909,6 +909,6 @@ footer-container social-mobile {
     margin-left: 7%;
   }
   menu-mobile a {
-    text-decoration: underline;
+    text-decoration: underline !important;
   }
 }
