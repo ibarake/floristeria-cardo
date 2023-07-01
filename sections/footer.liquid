@@ -39,21 +39,27 @@
         </form>
       {% endform %}
       <ul>
-        <li class="correo">
-          <h5 class="subtitulo-4 ">
-            {% render 'icon-gmail' %} {{ section.settings.correo-contacto }}
-          </h5>
-        </li>
-        <li class="telefono">
-          <h5 class="subtitulo-4 ">
-            {% render 'icon-phone' %} {{ section.settings.telefono-contacto }}
-          </h5>
-        </li>
-        <li class="ubicacion">
-          <h5 class="subtitulo-4 ">
-            {% render 'icon-location' %} {{ section.settings.direccion-contacto }}
-          </h5>
-        </li>
+        {% if section.settings.correo-contacto != blank %}
+          <li class="correo">
+            <h5 class="subtitulo-4 ">
+              {% render 'icon-gmail' %} {{ section.settings.correo-contacto }}
+            </h5>
+          </li>
+        {% endif %}
+        {% if section.settings.telefono-contacto != blank %}
+          <li class="telefono">
+            <h5 class="subtitulo-4 ">
+              {% render 'icon-phone' %} {{ section.settings.telefono-contacto }}
+            </h5>
+          </li>
+        {% endif %}
+        {% if section.settings.direccion-contacto != blank %}
+          <li class="ubicacion">
+            <h5 class="subtitulo-4 ">
+              {% render 'icon-location' %} {{ section.settings.direccion-contacto }}
+            </h5>
+          </li>
+        {% endif %}
       </ul>
     </item>
   </footer>
