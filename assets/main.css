@@ -779,7 +779,10 @@ footer .info-marca {
 }
 
 footer .item-menu-1, 
-.item-menu-2, 
+.item-menu-2 {
+  padding: 0;
+  margin: 0 5% 0 0;
+}
 .item-mobile {
   padding: 0;
   margin: 0 5% 0 0;
@@ -808,7 +811,7 @@ footer .contacto h5.subtitulo-4 {
   margin: 1rem 0 0 0;
 }
 
-footer .contacto h5.subtitulo-4 svg{
+footer .contacto h5.subtitulo-4 svg {
   margin-top: -1%;
   margin-right: .4rem;
 }
@@ -839,13 +842,13 @@ footer button.siguiente {
   font-size: 14px;
 }
 
-footer-copyright{
+footer-copyright {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-footer-copyright p{
+footer-copyright p {
   color: var(--main-gray);
   margin-left: 40%;
 }
