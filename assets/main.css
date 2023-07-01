@@ -444,6 +444,10 @@ hero-banner {
   padding: 60px 0px 60px 40px;
 }
 
+product-card img.hero {
+  width: 290px;
+  height: 256px;
+}
 inline-half-container {
   z-index: 999;
 }
