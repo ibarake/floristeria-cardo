@@ -839,6 +839,11 @@ products-4-item {
 .s2 {
   position: absolute;
   right: -150px;
+  color: var(--main-olive);
+}
+
+.s2 svg {
+  fill: var(--main-olive);
 }
 
 @media only screen and (max-width: 768px) {
