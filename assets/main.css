@@ -998,16 +998,18 @@ contacto {
   height: 378px;
   border-radius: 12px;
   background: var(--main-color);
-  justify-content: space-around;
   align-items: center;
   position: relative;
 }
 
 .page-width-contacto {
   display: flex;
-  width: 95%;
+  width: 90%;
   height: 67%;
   margin: auto;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 60px;
 }
 contacto h1 {
   margin-bottom: 4%;
@@ -1024,12 +1026,11 @@ informacion {
 }
 
 cuadro {
-  width: 50%;
+  width: 40%;
   height: 85%;
-  left: 37px;
-  top: 30px;
   background: var(--main-white);
   border-radius: 12px;
+  margin-left: 37px;
 }
 
 datos {
@@ -1057,12 +1058,11 @@ datos {
   cursor: pointer;
   font-weight: bold;
 }
-contacto flor.mobile{
+contacto flor.mobile {
   display: none;
 }
 
 @media only screen and (max-width: 768px) {
-
   .page-width-contacto {
     width: 84%;
     height: 49%;
@@ -1115,7 +1115,7 @@ contacto flor.mobile{
     right: 27px;
     top: 17px;
   }
-  contacto flor.mobile svg{
+  contacto flor.mobile svg {
     transform: scale(1.5);
   }
 }
