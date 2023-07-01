@@ -836,3 +836,9 @@ footer button.siguiente {
   background-color: var(--main-olive);
   font-size: 14px;
 }
+
+footer footer-copyright{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
