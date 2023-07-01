@@ -858,6 +858,14 @@ products-4-item {
 }
 
 @media only screen and (max-width: 768px) {
+  .s2 {
+    top: -30px;
+    right: 50%;
+  }
+  .s2-1 {
+    top: -30px;
+    right: 50%;
+  }
   container-4products {
     width: 100%;
     overflow-x: auto;
