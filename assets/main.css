@@ -843,6 +843,10 @@ footer-copyright{
   align-items: center;
 }
 
+footer hr footer-copyright p  {
+  color: var(--main-gray);
+}
+
 footer-copyright p{
   margin-left: 40%;
 }
