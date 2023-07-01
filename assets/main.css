@@ -984,6 +984,7 @@ contacto h1 {
 }
 
 #parrafo-contacto {
+  width: 94%;
   color: var(--main-gray);
   margin: 0 0 2rem 0;
 }
@@ -1012,6 +1013,7 @@ datos {
   border: 1px solid var(--main-gray);
   border-radius: 5px;
   background: var(--main-color);
+  padding: 1rem;
 }
 
 .button-contacto {
@@ -1023,6 +1025,8 @@ datos {
   color: var(--main-olive);
   border: none;
   cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 /* FOOTER STYLES */
