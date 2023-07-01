@@ -834,6 +834,10 @@ container-4products {
 .4-product product-card {
   width: 100% !important;
 }
+.4-product product-card img {
+  width: 100%;
+  height: auto;
+}
 products-4-item {
   width: 25%;
 }
