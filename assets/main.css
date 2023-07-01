@@ -1090,13 +1090,19 @@ contacto flor.mobile {
     width: 95%;
   }
 
-  #correo,
-  .button-contacto {
+  #correo {
     width: 100%;
     margin-bottom: 1.5%;
     font-size: 18px;
     border-radius: 11px;
     padding: 15px 5px;
+  }
+  .button-contacto {
+    width: 100%;
+    margin-bottom: 1.5%;
+    font-size: 18px;
+    border-radius: 11px;
+    padding: 5px 5px;
   }
 
   #parrafo-contacto {
