@@ -4,7 +4,7 @@
       <img src="{{ settings.logo.src | img_url }}"alt="{{ settings.logo.alt }}">
       <p class="parrafo-3">{{ section.settings.descripcion-marca }}</p>
     </item>
-    <menu class="item-menu">
+    <menu class="item-menu-1">
       <h3 class="subtitulo-3">{{ section.settings.titulo-menu-1 }}</h3>
       <ul>
         {% for link in section.settings.menu-footer-1.links %}
@@ -14,7 +14,7 @@
         {% endfor %}
       </ul>
     </menu>
-    <menu class="item-menu">
+    <menu class="item-menu-2">
       <h3 class="subtitulo-3">{{ section.settings.titulo-menu-2 }}</h3>
       <ul>
         {% for link in section.settings.menu-footer-2.links %}

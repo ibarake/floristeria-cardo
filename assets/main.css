@@ -778,7 +778,7 @@ footer .info-marca {
   margin-right: 0%;
 }
 
-footer .item-menu {
+footer .item-menu-1, .item-menu-2  {
   padding: 0;
   margin: 0 5% 0 0;
 }
@@ -854,6 +854,7 @@ footer-copyright p{
   }
   footer {
     flex-direction: column;
+    align-items: center;
   }
 
   p.parrafo-3 {
