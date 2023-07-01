@@ -845,6 +845,7 @@ footer-copyright{
 
 footer, hr, footer-copyright, p  {
   color: var(--main-gray);
+  border-color: var(--main-gray);
 }
 
 footer-copyright p{
