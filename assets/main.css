@@ -839,6 +839,10 @@ footer button.siguiente {
 
 footer footer-copyright{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+}
+
+footer-copyright p{
+  margin-left: 40%;
 }
