@@ -975,16 +975,6 @@ contacto {
   position: relative;
 }
 
-.shopify-section {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.page-width {
-  align-self: center;
-}
-
 #parrafo-contacto {
   color: var(--main-gray);
   margin: 0 0 3rem 0;
@@ -1052,7 +1042,7 @@ footer .info-marca {
   margin-right: 0%;
 }
 
-footer .item-menu-1, 
+footer .item-menu-1,
 .item-menu-2 {
   padding: 0;
   margin: 0 5% 0 0;
@@ -1087,7 +1077,7 @@ footer .contacto h5.subtitulo-4 {
 
 footer .contacto h5.subtitulo-4 svg {
   margin-top: -1%;
-  margin-right: .4rem;
+  margin-right: 0.4rem;
 }
 
 footer form#contact_form {
@@ -1123,7 +1113,8 @@ footer-copyright {
   text-decoration: none;
 }
 
-footer-copyright a, social-mobile a {
+footer-copyright a,
+social-mobile a {
   text-decoration: none;
 }
 
@@ -1137,8 +1128,7 @@ footer-container social-mobile {
 }
 
 @media only screen and (max-width: 768px) {
-
-  .page-width{
+  .page-width {
     width: auto;
   }
 
@@ -1150,7 +1140,7 @@ footer-container social-mobile {
 
   footer h3.subtitulo-3,
   .item-menu-1,
-  .item-menu-2, 
+  .item-menu-2,
   p.parrafo-3,
   footer form#contact_form,
   footer #footer-contacto,
@@ -1173,7 +1163,8 @@ footer-container social-mobile {
   footer-copyright p {
     margin-left: 0;
   }
-  footer-copyright a, social-mobile a {
+  footer-copyright a,
+  social-mobile a {
     margin-right: 3%;
   }
   footer-container social-mobile {
