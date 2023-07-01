@@ -1027,6 +1027,12 @@ datos {
   cursor: pointer;
   font-weight: bold;
 }
+contacto flor.mobile{
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
 
 @media only screen and (max-width: 768px) {
 
@@ -1058,7 +1064,7 @@ datos {
   #correo,
   .button-contacto {
     width: 100%;
-    height: 19%;
+    height: 20%;
     margin-bottom: 1%;
     font-size: 18px;
     border-radius: 11px;
