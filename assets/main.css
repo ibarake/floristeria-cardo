@@ -851,4 +851,16 @@ footer-copyright p{
   footer {
     flex-direction: column;
   }
+
+  p.parrafo-3 {
+    display: none;
+  }
+
+  footer .item-menu {
+    text-align: center;
+  }
+
+  footer h3.subtitulo-3 {
+    display: none;
+  }
 }
