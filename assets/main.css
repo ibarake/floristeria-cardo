@@ -847,3 +847,8 @@ footer-copyright p{
   color: var(--main-gray);
   margin-left: 40%;
 }
+@media only screen and (max-width: 768px) {
+  footer {
+    flex-direction: column;
+  }
+}
