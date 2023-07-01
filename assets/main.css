@@ -505,7 +505,6 @@ hero-title {
   color: var(--main-olive);
   border-radius: 8px;
   border: none;
-  width: fit-content;
 }
 
 @media only screen and (max-width: 768px) {
