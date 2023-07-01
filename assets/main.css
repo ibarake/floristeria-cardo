@@ -1032,7 +1032,8 @@ datos {
 @media only screen and (max-width: 768px) {
 
   .page-width-contacto {
-    width: 86%;
+    width: 95%;
+    height: 55%;
   }
   contacto cuadro {
     display: none;
@@ -1044,7 +1045,12 @@ datos {
   }
 
   contacto .titulo-7 {
-    font-size: 45px;
+    font-size: 60px;
+  }
+
+  datos {
+    display: block;
+    height: auto;
   }
 }
 
