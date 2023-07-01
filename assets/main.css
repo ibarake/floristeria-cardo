@@ -862,6 +862,9 @@ products-4-item {
 }
 
 @media only screen and (max-width: 768px) {
+  container-arreglos {
+    padding: 0;
+  }
   .s3 {
     letter-spacing: 4px;
     font-size: 14px;
