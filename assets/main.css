@@ -785,7 +785,7 @@ footer .item-menu-1,
 }
 
 footer .item-mobile {
-  display: none;
+  display: flex;
 }
 
 footer h3.subtitulo-3 {
