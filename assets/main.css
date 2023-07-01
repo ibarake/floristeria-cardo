@@ -1031,6 +1031,9 @@ datos {
 
 @media only screen and (max-width: 768px) {
 
+  .page-width-contacto {
+    width: 86%;
+  }
   contacto cuadro {
     display: none;
   }
@@ -1038,7 +1041,6 @@ datos {
   contacto {
     justify-content: left;
     padding: 3%;
-    width: 86%;
   }
 
   contacto .titulo-7 {
