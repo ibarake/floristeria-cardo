@@ -858,6 +858,10 @@ footer-copyright p {
   margin-left: 40%;
 }
 
+footer social-mobile {
+  display: none;
+}
+
 @media only screen and (max-width: 768px) {
   .page-width{
     width: auto;
@@ -886,6 +890,12 @@ footer-copyright p {
 
   footer .info-marca {
     margin-bottom: 3%;
+  }
+
+  footer social-mobile {
+    align-items: center;
+    justify-content: center;
+    display: flex;
   }
 
 }
