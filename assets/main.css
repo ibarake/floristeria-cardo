@@ -545,6 +545,9 @@ hero-title {
 }
 
 /* COLLECTION LIST STYLES */
+collection-list {
+  padding: 0 80px;
+}
 collection-title {
   display: flex;
   flex-direction: row;
