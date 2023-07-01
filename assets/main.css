@@ -18,6 +18,12 @@ body {
   margin: auto;
 }
 
+@media only screen and (max-width: 768px) {
+  .page-width {
+    width: 100%;
+  }
+}
+
 :root {
   --main-color: #f7f0e2;
   --main-dark-color: #fefaf7;
@@ -621,6 +627,9 @@ collection-item:last-child {
 }
 .collection-description {
   color: var(--main-gray);
+}
+
+@media only screen and (max-width: 768px) {
 }
 
 /* COLLECTION CARD STYLE */
