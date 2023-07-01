@@ -19,6 +19,10 @@ html {
   margin: auto;
 }
 
+.absolute {
+  position: absolute;
+}
+
 @media only screen and (max-width: 768px) {
   .page-width {
     width: 100%;
