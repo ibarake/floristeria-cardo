@@ -1055,10 +1055,12 @@ datos {
     width: 95%;
   }
 
-  #correo {
+  #correo .button-contacto {
     width: 100%;
     height: 19%;
     margin-bottom: 1%;
+    font-size: 18px;
+    border-radius: 11px;
   }
 
   #parrafo-contacto {
@@ -1067,12 +1069,9 @@ datos {
   }
 
   .button-contacto {
-    width: 100%;
-    height: 19%;
     background-color: var(--main-olive);
     color: var(--main-white);
     font-weight: 500;
-    font-size: 18px;
   }
 }
 
