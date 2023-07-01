@@ -830,12 +830,8 @@ container-4products {
   align-items: center;
   position: relative;
 }
-
-.4-product product-card {
-  width: 100% !important;
-}
-.4-product product-card img {
-  width: 100%;
+.product-4 product-card img {
+  width: 250px !important;
   height: auto;
 }
 products-4-item {
