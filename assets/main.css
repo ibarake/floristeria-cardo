@@ -856,11 +856,14 @@ products-4-item {
 .s2 svg {
   fill: var(--main-olive);
 }
-.s{
+.s {
   display: none;
 }
 
 @media only screen and (max-width: 768px) {
+  .s {
+    display: block;
+  }
   .s2 {
     top: -30px;
     right: 30%;
@@ -872,7 +875,6 @@ products-4-item {
   container-4products {
     width: 100%;
     overflow-x: auto;
-    overflow-y: 
     display: flex;
     justify-content: space-between;
     margin: 50px 0;
