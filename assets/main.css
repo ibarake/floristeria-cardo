@@ -663,8 +663,11 @@ collection-item:last-child {
 }
 
 .collection-flor {
-  position: absolute;
   left: 0;
+}
+
+.collection-flor {
+  right: 0;
 }
 
 @media only screen and (max-width: 768px) {
