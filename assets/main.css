@@ -865,6 +865,7 @@ products-4-item {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
   }
   .s2 {
     position: relative;
