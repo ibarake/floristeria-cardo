@@ -863,9 +863,11 @@ footer-container social-mobile {
 }
 
 @media only screen and (max-width: 768px) {
+
   .page-width{
     width: auto;
   }
+
   footer {
     flex-direction: column;
     align-items: center;
@@ -893,9 +895,9 @@ footer-container social-mobile {
   }
 
   footer-container social-mobile {
+    display: flex;
     align-items: center;
     justify-content: center;
-    display: flex;
+    margin-left: 7%;
   }
-
 }
