@@ -507,6 +507,14 @@ hero-title {
   border: none;
   padding: 10px 30px 10px 30px;
 }
+.cta-3-responsive {
+  background-color: var(--linen-3);
+  color: var(--main-olive);
+  border-radius: 8px;
+  border: none;
+  padding: 10px 30px 10px 30px;
+  width: 100%;
+}
 
 @media only screen and (max-width: 768px) {
   inline-half-container.left {
