@@ -78,6 +78,22 @@ html {
   line-height: 31px;
 }
 
+.titulo-6 {
+  font-family: "NewYork";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 72px;
+}
+
+.titulo-7 {
+  font-family: "NewYork";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 41px;
+}
+
 .subtitulo-1 {
   font-family: "DM Sans";
   font-style: normal;
@@ -156,6 +172,14 @@ html {
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
+}
+
+.parrafo-5 {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
 }
 
 /* HEADER STYLES*/
@@ -480,14 +504,18 @@ hero-title {
 }
 
 .flor-4 {
+  display: block;
   position: absolute;
-  left: 14.67%;
-  right: -14.66%;
-  top: 78.7%;
-  bottom: -78.73%;
-  transform: rotate(-98.47deg);
+  right: 0;
+  top: 0;
 }
 
+.flor-5 {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
 .cta {
   width: 40%;
   padding: 10px 30px 10px 30px;
@@ -555,6 +583,9 @@ hero-title {
   }
   .flor-3 {
     display: block;
+  }
+  .flor-4 {
+    display: none;
   }
   .cta-1 {
     padding: 0;
@@ -775,6 +806,69 @@ container-products {
   align-items: center;
 }
 
+@media only screen and (max-width: 768px) {
+  .subtitulo-3 {
+    font-size: 8px;
+    line-height: 15px;
+  }
+
+  .subtitulo-6 {
+    font-size: 7px;
+    line-height: 1px;
+  }
+
+  .titulo-1 {
+    font-size: 22px;
+    line-height: 25px;
+  }
+
+  .titulo-6 {
+    font-size: 22px;
+    line-height: 25px;
+  }
+
+  product-card img {
+    width: 160px;
+    height: 140px;
+  }
+
+  .parrafo-4 {
+    font-weight: 800;
+    font-size: 8px;
+    line-height: 10px;
+
+  }
+
+  .parrafo-3 {
+    font-size: 8px;
+    line-height: 9px;
+  }
+
+  .card-add-to-cart svg {
+    margin-right: -7px;
+  }
+
+  .parrafo-1 {
+    font-size: 10px;
+    line-height: 13px;
+  }
+
+  container-products {
+    align-items: baseline;
+  }
+
+  .FAQ-title {
+    width: 250px;
+    height: 40px;
+  }
+
+  .preguntas-frecuentes {
+    flex-direction: column;
+}
+
+
+}
+
 /* FAQ STYLES */
 
 .preguntas-frecuentes {
@@ -835,18 +929,46 @@ preguntas {
   margin: 1px solid black;
 }
 
+/* PRODUCTS-FAQ2 */
+#p-subtitle2 {
+  text-align: center;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: var(--main-gray);
+  margin: 0;
+}
+
+#p-title2 {
+  text-align: center;
+  margin: 0;
+}
+
+
 /* CONTACTO */
 @import url("https://fonts.cdnfonts.com/css/dm-sans");
 @import url("https://fonts.cdnfonts.com/css/newyork");
 
 contacto {
-  width: 100%;
+  width: 90%;
   height: 378px;
+  border-radius: 12px;
   background: var(--main-color);
   display: flex;
   justify-content: space-around;
   align-items: center;
+  position: relative;
 }
+
+.shopify-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.page-width{  
+  align-self: center;
+  }
 
 #parrafo-contacto {
   color: var(--main-gray);
@@ -854,7 +976,8 @@ contacto {
 }
 
 informacion {
-  width: 35%;
+  
+  width: 42%;
 }
 
 cuadro {
@@ -888,4 +1011,11 @@ datos {
   color: var(--main-olive);
   border: none;
   cursor: pointer;
+}
+
+.products-faq2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
