@@ -862,17 +862,15 @@ products-4-item {
 
 @media only screen and (max-width: 768px) {
   .s {
-    display: block;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
   .s2 {
     position: relative;
-    top: -30px;
-    right: 30%;
   }
   .s2-1 {
     position: relative;
-    top: -30px;
-    right: 30%;
   }
   container-4products {
     width: 100%;
