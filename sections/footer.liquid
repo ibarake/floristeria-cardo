@@ -24,6 +24,15 @@
         {% endfor %}
       </ul>
     </menu>
+    <menu class="item-mobile">
+      <ul>
+        {% for link in section.settings.menu-mobile.links %}
+          <li>
+            <a href="{{ link.url }}" class="subtitulo-3">{{ link.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </menu>
     <item class="contacto">
       <h3 class="subtitulo-3">{{ section.settings.titulo-contacto }}</h3>
       {% form 'customer' %}
@@ -125,10 +134,13 @@
         "default": "footer",
         "label": "Menú del segundo item"
       }, {
+        "type": "header",
+        "content": " ----------- Menu mobile ----------- "
+      }, {
         "type": "link_list",
         "id": "menu-mobile",
         "default": "footer",
-        "label": "Menú del segundo item"
+        "label": "Menú para celular"
       }, {
         "type": "header",
         "content": " ----------- Item contáctanos ----------- "
