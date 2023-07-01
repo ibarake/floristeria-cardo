@@ -828,14 +828,11 @@ container-arreglos {
 container-products {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .4-product product-card {
   width: 100% !important;
-}
-
-.4-product {
-  position: relative;
 }
 
 .s2 {
