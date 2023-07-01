@@ -583,7 +583,7 @@ collection-item:first-child {
 }
 
 collection-item:last-child {
-  margin-right: 100px;
+  margin-right: 200px;
 }
 
 .collection-title {
