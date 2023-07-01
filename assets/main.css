@@ -873,7 +873,8 @@ footer-copyright p {
   .item-menu-2, 
   p.parrafo-3,
   footer form#contact_form,
-  footer #footer-contacto {
+  footer #footer-contacto,
+  links-social {
     display: none;
   }
 
@@ -886,4 +887,5 @@ footer-copyright p {
   footer .info-marca {
     margin-bottom: 3%;
   }
+
 }
