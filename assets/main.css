@@ -638,6 +638,9 @@ collection-item:last-child {
   collection-item:first-child {
     margin-left: 20px;
   }
+  collection-item:last-child {
+    margin-left: 20px;
+  }
   collection-list {
     padding: 35px 0px;
     width: 100%;
