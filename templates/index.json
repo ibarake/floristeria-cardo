@@ -49,11 +49,43 @@
         "subtitulo-fotos": "Ver todos",
         "style-s": "style 1"
       }
+    },
+    "c2d637ea-0301-46b4-814f-646ba281c446": {
+      "type": "products-faq",
+      "settings": {
+        "arreglos-title": "Lorem ipsum dolor sit amet",
+        "arreglos-subtitle": "Arreglos Funebres",
+        "collection": "",
+        "button-text": "Añadir al carrito",
+        "title-preguntas": "Sobre Cardó",
+        "subtitle-preguntas": "preguntas frecuentes",
+        "subtitulo-fotos": "Ver todos"
+      }
+    },
+    "fd75cee5-6a97-4125-afc1-be233caf03fe": {
+      "type": "products-4",
+      "settings": {
+        "arreglos-title": "Lorem ipsum dolor sit amet",
+        "arreglos-subtitle": "Arreglos Funebres",
+        "collection": [
+          "arreglo-armonia-de-orquideas-1",
+          "arreglo-armonia",
+          "arreglo-floral-inspiracion",
+          "arreglo-inspiracion"
+        ],
+        "button-text": "Añadir al carrito",
+        "title-preguntas": "Sobre Cardó",
+        "subtitle-preguntas": "preguntas frecuentes",
+        "subtitulo-fotos": "Ver todos",
+        "style-s": "style 2"
+      }
     }
   },
   "order": [
     "7208b537-5179-4c35-a9f0-5b7e2ed3aa1f",
     "37db2c69-b11d-4881-b7e3-83e27a003a12",
-    "main"
+    "main",
+    "c2d637ea-0301-46b4-814f-646ba281c446",
+    "fd75cee5-6a97-4125-afc1-be233caf03fe"
   ]
 }
