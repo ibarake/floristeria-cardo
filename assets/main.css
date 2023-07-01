@@ -90,14 +90,6 @@ html {
   line-height: 72px;
 }
 
-.titulo-7 {
-  font-family: "NewYork";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 64px;
-  line-height: 41px;
-}
-
 .subtitulo-1 {
   font-family: "DM Sans";
   font-style: normal;
@@ -976,14 +968,16 @@ contacto {
 .page-width-contacto {
   display: flex;
   width: 95%;
+  height: 72%;
   margin: auto;
 }
-contacto h1{
+contacto h1 {
   margin-bottom: 4%;
 }
+
 #parrafo-contacto {
   color: var(--main-gray);
-  margin: 0 0 3rem 0;
+  margin: 0 0 2rem 0;
 }
 
 informacion {
