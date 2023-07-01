@@ -24,7 +24,7 @@
         {% endfor %}
       </ul>
     </menu>
-    <menu class="item-mobile">
+    <menu-mobile class="item-mobile">
       <ul>
         {% for link in section.settings.menu-mobile.links %}
           <li>
@@ -32,7 +32,7 @@
           </li>
         {% endfor %}
       </ul>
-    </menu>
+    </menu-mobile>
     <item class="contacto">
       <h3 class="subtitulo-3">{{ section.settings.titulo-contacto }}</h3>
       {% form 'customer' %}
@@ -51,21 +51,30 @@
         {% if section.settings.correo-contacto != blank %}
           <li class="correo">
             <h5 class="subtitulo-4 ">
-              {% render 'icon-gmail' %} {{ section.settings.correo-contacto }}
+              {% render 'icon-gmail' %}
+              <p>
+                {{ section.settings.correo-contacto }}
+              </p>
             </h5>
           </li>
         {% endif %}
         {% if section.settings.telefono-contacto != blank %}
           <li class="telefono">
             <h5 class="subtitulo-4 ">
-              {% render 'icon-phone' %} {{ section.settings.telefono-contacto }}
+              {% render 'icon-phone' %}
+              <p>
+                {{ section.settings.telefono-contacto }}
+              </p>
             </h5>
           </li>
         {% endif %}
         {% if section.settings.direccion-contacto != blank %}
           <li class="ubicacion">
             <h5 class="subtitulo-4 ">
-              {% render 'icon-location' %} {{ section.settings.direccion-contacto }}
+              {% render 'icon-location' %}
+              <p>
+                {{ section.settings.direccion-contacto }}
+              </p>
             </h5>
           </li>
         {% endif %}
