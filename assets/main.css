@@ -633,6 +633,9 @@ collection-item:last-child {
   collection-title {
     flex-direction: column;
   }
+  collection-item:first-child {
+    margin-left: 1800px;
+  }
 }
 
 /* COLLECTION CARD STYLE */
