@@ -505,6 +505,7 @@ hero-title {
   color: var(--main-olive);
   border-radius: 8px;
   border: none;
+  padding: 10px 30px 10px 30px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -554,6 +555,10 @@ collection-title {
 }
 collection-button {
   width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: flex-end;
 }
 collection-slider {
   overflow-x: auto;
