@@ -670,6 +670,10 @@ collection-card img {
     width: 156px;
     height: 200px;
   }
+
+  collection-item:last-child {
+    margin-right: 20px;
+  }
 }
 
 /* PRODUCT CARD STYLES */
