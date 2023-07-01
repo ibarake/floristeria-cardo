@@ -8,7 +8,7 @@
     </h1>
   </container-arreglos>
   <container-4products>
-    {% for product in section.settings.collection.products limit:4 %}
+    {% for product in section.settings.collection limit:4 %}
       <products-4-item>
         {% include 'product-card', hero-product: product, atc-btn: section.settings.button-text, classes: "product-4-img" %}
       </products-4-item>
@@ -35,7 +35,7 @@
         "label": "Subtitulo",
         "default": "Arreglos Funebres"
       }, {
-        "type": "collection",
+        "type": "product_list",
         "id": "collection",
         "label": "collection"
       }, {
