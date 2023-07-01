@@ -893,7 +893,9 @@ footer-container social-mobile {
   footer .info-marca {
     margin-bottom: 3%;
   }
-
+  footer-copyright a, social-mobile a {
+    margin-right: 3%;
+  }
   footer-container social-mobile {
     display: flex;
     align-items: center;
