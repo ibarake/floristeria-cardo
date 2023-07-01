@@ -1026,7 +1026,6 @@ datos {
   border: none;
   cursor: pointer;
   font-weight: bold;
-  font-size: 16px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1072,6 +1071,7 @@ datos {
     height: 19%;
     background-color: var(--main-olive);
     color: var(--main-white);
+    font-weight: 500;
   }
 }
 
