@@ -649,6 +649,13 @@ collection-card img {
   text-transform: uppercase;
 }
 
+@media only screen and (max-width: 768px) {
+  collection-card img {
+    width: 156px;
+    height: 200px;
+  }
+}
+
 /* PRODUCT CARD STYLES */
 
 product-card {
