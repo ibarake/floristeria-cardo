@@ -105,5 +105,5 @@ window.addEventListener("resize", handleClassChange);
 var collectionLists = document.querySelector('collection-slider');
 
 collectionLists.forEach((CollectionList) => {
-  collectionLists.style.width = screen.width;
+  collectionLists.style.width = screen.width + 20;
 })
