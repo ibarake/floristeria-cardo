@@ -743,6 +743,11 @@ product-card {
 }
 
 product-card img {
+  width: 156px;
+  height: 190px;
+}
+
+product-card img {
   width: 290px;
   height: 256px;
   object-fit: cover;
@@ -845,11 +850,6 @@ container-products {
   .t6 {
     font-size: 22px;
     line-height: 25px;
-  }
-
-  product-card img {
-    width: 160px;
-    height: 140px;
   }
 
   .p4 {
