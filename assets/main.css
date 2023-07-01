@@ -1055,7 +1055,8 @@ datos {
     width: 95%;
   }
 
-  #correo .button-contacto {
+  #correo,
+  .button-contacto {
     width: 100%;
     height: 19%;
     margin-bottom: 1%;
