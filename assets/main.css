@@ -1034,15 +1034,12 @@ datos {
   .page-width-contacto {
     width: 84%;
     height: 49%;
+    justify-content: left;
+    padding: 3%;
   }
 
   contacto cuadro {
     display: none;
-  }
-
-  contacto {
-    justify-content: left;
-    padding: 3%;
   }
 
   contacto .titulo-7 {
@@ -1060,6 +1057,12 @@ datos {
 
   #correo {
     width: 100%;
+    height: 19%;
+    margin-bottom: 1%;
+  }
+
+  #parrafo-contacto {
+    margin: 0 0 1rem 0;
   }
 }
 
