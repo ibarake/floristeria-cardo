@@ -871,6 +871,7 @@ products-4-item {
     overflow-x: auto;
     display: flex;
     justify-content: space-between;
+    margin: 0 50px;
   }
   container-4products product-card {
     width: 50%;
