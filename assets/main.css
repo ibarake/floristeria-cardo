@@ -870,7 +870,9 @@ footer-copyright p {
   footer form#contact_form {
     display: none;
   }
-
+  footer #footer-contacto {
+    display: none;
+  }
   footer .item-mobile {
     display: flex;
     padding: 0;
