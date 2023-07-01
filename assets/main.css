@@ -864,11 +864,9 @@ footer-copyright p{
   }
 
 footer h3.subtitulo-3,
-.item-menu-2, p.parrafo-3 {
+.item-menu-2, 
+p.parrafo-3,
+footer form#contact_form {
     display: none;
   }
-
-footer form#contact_form {
-  display: none;
-}
 }
