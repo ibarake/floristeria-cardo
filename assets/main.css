@@ -858,17 +858,13 @@ footer-copyright p{
     text-align: center;
   }
 
-  p.parrafo-3 {
-    display: none;
-  }
-
   footer .item-menu {
     text-align: center;
     margin: 0;
   }
 
-  footer h3.subtitulo-3,
-.item-menu-2 {
+footer h3.subtitulo-3,
+.item-menu-2, p.parrafo-3 {
     display: none;
   }
 
