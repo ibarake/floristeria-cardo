@@ -866,7 +866,7 @@ footer-copyright p{
     margin: 0;
   }
 
-  footer h3.subtitulo-3 {
+  footer h3.subtitulo-3, .item-menu-2 {
     display: none;
   }
 }
