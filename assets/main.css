@@ -834,6 +834,9 @@ container-4products {
 .4-product product-card {
   width: 100% !important;
 }
+products-4-item {
+  width: 25%;
+}
 
 .s2 {
   position: absolute;
