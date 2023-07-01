@@ -508,6 +508,7 @@ hero-title {
   padding: 10px 30px 10px 30px;
 }
 .cta-3-responsive {
+  display: hidden;
   background-color: var(--linen-3);
   color: var(--main-olive);
   border-radius: 8px;
@@ -550,6 +551,9 @@ hero-title {
   }
   .cta-1 {
     padding: 0;
+  }
+  .cta-3 {
+    display: block;
   }
 }
 
