@@ -1029,6 +1029,22 @@ datos {
   font-size: 16px;
 }
 
+@media only screen and (max-width: 768px) {
+
+  contacto cuadro {
+    display: none;
+  }
+
+  contacto {
+    justify-content: left;
+    padding: 3%;
+  }
+
+  contacto .titulo-7 {
+    font-size: 45px;
+  }
+}
+
 /* FOOTER STYLES */
 footer {
   display: flex;
