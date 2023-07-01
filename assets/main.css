@@ -1038,6 +1038,7 @@ contacto flor.mobile{
     height: 49%;
     justify-content: left;
     padding: 3%;
+    overflow: hidden;
   }
 
   contacto cuadro {
@@ -1077,12 +1078,15 @@ contacto flor.mobile{
     color: var(--main-white);
     font-weight: 500;
   }
-  
-  contacto flor.mobile{
+
+  contacto flor.mobile {
     display: block;
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 29px;
+    top: 17px;
+  }
+  contacto flor.mobile svg{
+    transform: scale(1.5);
   }
 }
 
