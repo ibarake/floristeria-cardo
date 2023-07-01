@@ -834,6 +834,14 @@ container-products {
   width: 100% !important;
 }
 
+.4-product {
+  position: relative;
+}
+
+.s2 {
+  position: absolute;
+}
+
 @media only screen and (max-width: 768px) {
   .s3 {
     font-size: 8px;
