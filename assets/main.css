@@ -827,22 +827,22 @@ container-products {
 }
 
 @media only screen and (max-width: 768px) {
-  .subtitulo-3 {
+  .s3 {
     font-size: 8px;
     line-height: 15px;
   }
 
-  .subtitulo-6 {
+  .s6 {
     font-size: 7px;
     line-height: 1px;
   }
 
-  .titulo-1 {
+  .t1 {
     font-size: 22px;
     line-height: 25px;
   }
 
-  .titulo-6 {
+  .t6 {
     font-size: 22px;
     line-height: 25px;
   }
@@ -852,13 +852,13 @@ container-products {
     height: 140px;
   }
 
-  .parrafo-4 {
+  .p4 {
     font-weight: 800;
     font-size: 8px;
     line-height: 10px;
   }
 
-  .parrafo-3 {
+  .p3 {
     font-size: 8px;
     line-height: 9px;
   }
@@ -867,7 +867,7 @@ container-products {
     margin-right: -7px;
   }
 
-  .parrafo-1 {
+  .p1 {
     font-size: 10px;
     line-height: 13px;
   }
