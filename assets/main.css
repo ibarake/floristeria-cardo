@@ -1093,10 +1093,10 @@ contacto flor.mobile {
   #correo,
   .button-contacto {
     width: 100%;
-    height: 20%;
     margin-bottom: 1.5%;
     font-size: 18px;
     border-radius: 11px;
+    padding: 15px 5px;
   }
 
   #parrafo-contacto {
