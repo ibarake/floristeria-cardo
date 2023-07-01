@@ -115,6 +115,14 @@
         "subtitulo-fotos": "Ver todos",
         "style-s": "style 2"
       }
+    },
+    "ec7ee139-7af0-40a7-b9d3-a60e0edf94c7": {
+      "type": "contacto",
+      "settings": {
+        "contact-title": "Contáctanos",
+        "contact-subtitle": "Pellentesque cras adipiscing tempus libero vel nullam mauris tellus. Aliquam ultrices tellus consequat amet,",
+        "button-title": "Recibir información"
+      }
     }
   },
   "order": [
@@ -122,6 +130,7 @@
     "37db2c69-b11d-4881-b7e3-83e27a003a12",
     "main",
     "c2d637ea-0301-46b4-814f-646ba281c446",
-    "fd75cee5-6a97-4125-afc1-be233caf03fe"
+    "fd75cee5-6a97-4125-afc1-be233caf03fe",
+    "ec7ee139-7af0-40a7-b9d3-a60e0edf94c7"
   ]
 }
