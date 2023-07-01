@@ -641,6 +641,9 @@ collection-item:last-child {
     padding: 35px 20px;
     width: 100%;
   }
+  collection-slider {
+    width: 100%;
+  }
 }
 
 /* COLLECTION CARD STYLE */
