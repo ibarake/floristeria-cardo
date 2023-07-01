@@ -66,9 +66,16 @@
           {% render 'icon-facebook' %}
         </a>
       {% endif %}
-
-      <a href="{{ section.settings.url-messenger }}">{% render 'icon-messenger' %}</a>
-      <a href="{{ section.settings.url-instagram }}">{% render 'icon-instagram' %}</a>
+      {% if section.settings.url-messenger != blank %}
+        <a href="{{ section.settings.url-messenger }}">
+          {% render 'icon-messenger' %}
+        </a>
+      {% endif %}
+      {% if section.settings.url-instagram != blank %}
+        <a href="{{ section.settings.url-instagram }}">
+          {% render 'icon-instagram' %}
+        </a>
+      {% endif %}
     </links-social>
   </footer-copyright>
 </footer-container>
