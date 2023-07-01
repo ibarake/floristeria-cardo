@@ -1065,7 +1065,7 @@ contacto flor.mobile {
 @media only screen and (max-width: 768px) {
   .page-width-contacto {
     width: 84%;
-    height: 49%;
+    height: auto;
     justify-content: left;
     padding: 3%;
     overflow: hidden;
@@ -1076,6 +1076,7 @@ contacto flor.mobile {
   }
 
   contacto .titulo-7 {
+    position: relative;
     font-size: 56px;
     margin-bottom: 1rem;
     z-index: 2;
