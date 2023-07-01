@@ -553,6 +553,9 @@ hero-title {
     padding: 0;
   }
   .cta-3 {
+    display: none;
+  }
+  .cta-3-responsive {
     display: block;
   }
 }
