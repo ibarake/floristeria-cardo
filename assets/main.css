@@ -974,18 +974,9 @@ contacto {
   align-items: center;
   position: relative;
 }
-
-.shopify-section {
+.page-width-contacto {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
 }
-
-.page-width {
-  align-self: center;
-}
-
 #parrafo-contacto {
   color: var(--main-gray);
   margin: 0 0 3rem 0;
