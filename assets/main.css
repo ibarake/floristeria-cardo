@@ -579,11 +579,11 @@ collection-item {
 }
 
 collection-item:first-child {
-  margin-left: 1500px;
+  margin-left: 2500px;
 }
 
 collection-item:last-child {
-  margin-right: 200px;
+  margin-right: 500px;
 }
 
 .collection-title {
