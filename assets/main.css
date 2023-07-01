@@ -858,6 +858,9 @@ products-4-item {
 }
 
 @media only screen and (max-width: 768px) {
+  products-4-item {
+    width: 50%;
+  }
   container-arreglos {
     padding: 0;
     margin: 0;
