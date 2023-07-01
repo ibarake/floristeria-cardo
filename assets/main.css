@@ -972,10 +972,14 @@ contacto {
   align-items: center;
   position: relative;
 }
+
 .page-width-contacto {
   display: flex;
   width: 95%;
   margin: auto;
+}
+contacto h1{
+  margin-bottom: 4%;
 }
 #parrafo-contacto {
   color: var(--main-gray);
