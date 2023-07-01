@@ -644,8 +644,9 @@ collection-item:last-child {
   }
   collection-slider {
     width: calc(100% + 20px);
-    margin-right: -120px;
-    margin-left: -120px;
+    margin-right: 0px;
+    margin-left: 0px;
+    justify-content: flex-start;
   }
 }
 
