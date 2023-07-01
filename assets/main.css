@@ -867,7 +867,7 @@ footer-copyright p{
     margin: 0;
   }
 
-  footer h3.subtitulo-3, .item-menu-2, #contact_form{
+  footer h3.subtitulo-3, .item-menu-2, #contact_form {
     display: none;
   }
 }
