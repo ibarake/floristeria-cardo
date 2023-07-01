@@ -636,8 +636,8 @@ collection-item:last-child {
   collection-item:first-child {
     margin-left: 1800px;
   }
-  collection-slider {
-    margin-top: 20px;
+  collection-list {
+    padding: 25px 0;
   }
 }
 
