@@ -872,7 +872,7 @@ footer-copyright p{
     display: none;
   }
 
-form#contact_form {
+footer form#contact_form {
   display: none;
 }
 }
