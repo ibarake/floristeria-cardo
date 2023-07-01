@@ -965,18 +965,16 @@ preguntas {
 @import url("https://fonts.cdnfonts.com/css/newyork");
 
 contacto {
-  width: 90%;
   height: 378px;
   border-radius: 12px;
   background: var(--main-color);
-  display: flex;
   justify-content: space-around;
   align-items: center;
   position: relative;
 }
 .page-width-contacto {
   display: flex;
-  width: 90%;
+  width: 95%;
   margin: auto;
 }
 #parrafo-contacto {
@@ -989,8 +987,8 @@ informacion {
 }
 
 cuadro {
-  width: 600px;
-  height: 300px;
+  width: 50%;
+  height: 85%;
   left: 37px;
   top: 30px;
   background: var(--main-white);
