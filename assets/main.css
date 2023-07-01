@@ -879,6 +879,8 @@ products-4-item {
     font-size: 32px;
     line-height: 25px;
     text-align: center;
+    width: 80%;
+    margin: 0 20%;
   }
 
   .t6 {
