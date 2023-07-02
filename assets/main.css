@@ -561,9 +561,8 @@ hero-title {
 }
 
 @media only screen and (max-width: 768px) {
-  product-card img.hero {
+  .hero-banner product-card-info {
     width: 100%;
-    height: 256px;
   }
   inline-half-container.left {
     width: 100%;
