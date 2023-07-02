@@ -8,7 +8,7 @@
       <h3 class="subtitulo-3">{{ section.settings.titulo-menu-1 }}</h3>
       <ul>
         {% for link in section.settings.menu-footer-1.links %}
-          <li>
+          <li class="grow">
             <a href="{{ link.url }}" class="subtitulo-3">{{ link.title }}</a>
           </li>
         {% endfor %}
@@ -18,7 +18,7 @@
       <h3 class="subtitulo-3">{{ section.settings.titulo-menu-2 }}</h3>
       <ul>
         {% for link in section.settings.menu-footer-2.links %}
-          <li>
+          <li class="grow">
             <a href="{{ link.url }}" class="subtitulo-3">{{ link.title }}</a>
           </li>
         {% endfor %}
@@ -27,7 +27,7 @@
     <menu-mobile class="item-mobile">
       <ul>
         {% for link in section.settings.menu-mobile.links %}
-          <li>
+          <li class="grow">
             <a href="{{ link.url }}" class="subtitulo-3">{{ link.title }}</a>
           </li>
         {% endfor %}
@@ -74,17 +74,17 @@
   </footer>
   <social-mobile>
     {% if section.settings.url-facebook != blank %}
-      <a href="{{ section.settings.url-facebook }}">
+      <a class="grow" href="{{ section.settings.url-facebook }}">
         {% render 'icon-facebook' %}
       </a>
     {% endif %}
     {% if section.settings.url-messenger != blank %}
-      <a href="{{ section.settings.url-messenger }}">
+      <a class="grow" href="{{ section.settings.url-messenger }}">
         {% render 'icon-messenger' %}
       </a>
     {% endif %}
     {% if section.settings.url-instagram != blank %}
-      <a href="{{ section.settings.url-instagram }}">
+      <a class="grow" href="{{ section.settings.url-instagram }}">
         {% render 'icon-instagram' %}
       </a>
     {% endif %}
