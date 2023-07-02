@@ -112,8 +112,8 @@ let isDragging = false;
 const mouseDownHandler = function (e) {
     const target = e.target;
 
-    // Disable dragging images, except for the product-card images
-    if (!target.closest('.product-card') || target.tagName.toLowerCase() === 'img') {
+    // Disable dragging images
+    if (target.tagName.toLowerCase() === 'img') {
         e.preventDefault();
         return;
     }
