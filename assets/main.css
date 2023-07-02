@@ -1163,7 +1163,7 @@ answer {
   height: 0px;
   transition: height 750ms ease-in-out;
   overflow: hidden;
-  padding: 15px 0;
+  padding: 15px 0 10px 0;
 }
 
 @media only screen and (max-width: 768px) {
