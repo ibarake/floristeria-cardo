@@ -1042,6 +1042,9 @@ preguntas {
   width: 100%;
   height: 60px;
   margin-top: 15px;
+}
+
+.FAQ-text {
   color: var(--main-gray);
 }
 
