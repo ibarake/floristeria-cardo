@@ -976,6 +976,16 @@ products-4-item {
   width: auto;
 }
 
+.4-product {
+  position: relative;
+}
+
+.flor-6 {
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+}
+
 @media only screen and (max-width: 768px) {
   container-4products .card-width {
     width: 180px;
