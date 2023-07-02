@@ -184,7 +184,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function toggleSlide(element) {
-  var isHidden = getComputedStyle(element).display === 'none';
+  var isHidden = getComputedStyle(element).height === '0px';
   
   if (isHidden) {
     element.style.height = 'auto';
