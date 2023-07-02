@@ -179,38 +179,46 @@ document.addEventListener('DOMContentLoaded', function() {
   faqTitles.forEach(function(title) {
     title.addEventListener('click', function() {
       var answer = this.nextElementSibling;
-      var svgElement = this.querySelector('svg');
 
-      // Toggle the clicked answer and rotate the SVG element
-      toggleSlide(answer, this);
+      // Toggle the clicked answer
+      toggleSlide(answer);
 
       // Close the previously open answer if exists
       if (openAnswer && openAnswer !== answer) {
-        toggleSlide(openAnswer, openTitle);
+        toggleSlide(openAnswer);
       }
 
-      // Update the currently open answer and FAQ title
-      openAnswer = (openAnswer === answer) ? null : answer;
-      openTitle = (openTitle === this) ? null : this;
-
       // Rotate the SVG element of the currently clicked FAQ title
-      svgElement.style.transform = openAnswer ? 'rotate(90deg)' : 'rotate(0deg)';
+      rotateSvg(this);
+
+      // Update the currently open answer and FAQ title
+      openAnswer = (answer.style.height === '0px') ? answer : null;
+      openTitle = (answer.style.height === '0px') ? this : null;
     });
   });
 });
 
-function toggleSlide(element, title) {
+function toggleSlide(element) {
   var isHidden = getComputedStyle(element).height === '0px';
   
   if (isHidden) {
     element.style.height = 'auto';
     element.style.marginTop = '15px';
     element.style.marginBottom = '10px';
-    title.querySelector('svg').style.transform = 'rotate(90deg)';
   } else {
     element.style.height = '0px';
     element.style.marginTop = '0px';
     element.style.marginBottom = '0px';
-    title.querySelector('svg').style.transform = 'rotate(0deg)';
   }
+}
+
+function rotateSvg(title) {
+  var svgElement = title.querySelector('svg');
+  var rotation = svgElement.style.transform.replace(/[^\d.-]/g, '');
+
+  // Toggle the rotation angle between 90 and 0 degrees
+  rotation = (rotation === '0') ? '90' : '0';
+
+  // Apply the rotation transformation to the SVG element
+  svgElement.style.transform = `rotate(${rotation}deg)`;
 }
