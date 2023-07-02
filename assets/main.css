@@ -607,6 +607,7 @@ hero-title {
   border-radius: 8px;
   border: none;
   padding: 10px 30px 10px 30px;
+  text-decoration: none;
 }
 .cta-3:hover {
   background-color: var(--main-olive);
