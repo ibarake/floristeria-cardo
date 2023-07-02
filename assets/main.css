@@ -289,7 +289,7 @@ mega-menu {
   display: block;
 }
 
-.has-mega-menu:hover mega-menu sgv {
+.has-mega-menu:hover mega-menu svg {
   transform: scaleX(-1);
 }
 
