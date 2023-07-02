@@ -1029,6 +1029,7 @@ preguntas {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  color: var(--main-gray);
 }
 .faq-container {
   width: 100%;
