@@ -171,33 +171,36 @@ elements.forEach((element) => {
 });
 
 /* FAQ DROPDOWN ANIMATION */
-
 document.addEventListener('DOMContentLoaded', function() {
   var faqTitles = document.querySelectorAll('.FAQ-title');
   var openAnswer = null; // Keeps track of the currently open answer
+  var openTitle = null; // Keeps track of the currently open FAQ title
 
   faqTitles.forEach(function(title) {
     title.addEventListener('click', function() {
       var answer = this.nextElementSibling;
-      toggleSlide(answer);
 
       // Close the previously open answer if exists
       if (openAnswer && openAnswer !== answer) {
         toggleSlide(openAnswer);
-        var prevSvgElement = openAnswer.previousElementSibling.querySelector('svg');
+        var prevSvgElement = openTitle.querySelector('svg');
         prevSvgElement.style.transform = 'rotate(0deg)';
       }
 
-      // Update the currently open answer
-      openAnswer = (openAnswer === answer) ? null : answer;
+      // Toggle the clicked answer
+      toggleSlide(answer);
 
-      // Rotate the SVG element
+      // Toggle the rotation of the clicked FAQ title
       var svgElement = this.querySelector('svg');
-      svgElement.style.transform = (openAnswer) ? 'rotate(90deg)' : 'rotate(0deg)';
+      var rotation = (answer.style.height === '0px') ? 90 : 0;
+      svgElement.style.transform = `rotate(${rotation}deg)`;
+
+      // Update the currently open answer and FAQ title
+      openAnswer = (answer.style.height === '0px') ? answer : null;
+      openTitle = (answer.style.height === '0px') ? this : null;
     });
   });
 });
-
 
 function toggleSlide(element) {
   var isHidden = getComputedStyle(element).height === '0px';
@@ -212,22 +215,6 @@ function toggleSlide(element) {
     element.style.marginBottom = '0px';
   }
 }
-
-const faqTitles = document.querySelectorAll('.FAQ-title');
-
-faqTitles.forEach((title) => {
-  let rotation = 0; // Keeps track of the rotation angle
-
-  title.addEventListener('click', () => {
-    const svgElement = title.querySelector('svg');
-
-    // Toggle the rotation angle between 90 and 0 degrees
-    rotation = (rotation === 0) ? 90 : 0;
-
-    // Apply the rotation transformation to the SVG element
-    svgElement.style.transform = `rotate(${rotation}deg)`;
-  });
-});
 
 
 
