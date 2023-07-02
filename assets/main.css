@@ -12,7 +12,9 @@ html {
 }
 
 /* VARIABLES */
-
+.full-width {
+  width: 100%;
+}
 .page-width {
   display: block;
   width: 1080px;
