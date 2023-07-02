@@ -179,14 +179,7 @@ document.addEventListener('DOMContentLoaded', function() {
   faqTitles.forEach(function(title) {
     title.addEventListener('click', function() {
       var answer = this.nextElementSibling;
-
-      // Close the previously open answer if exists
-      if (openAnswer && openAnswer !== answer) {
-        toggleSlide(openAnswer);
-        var prevSvgElement = openTitle.querySelector('svg');
-        prevSvgElement.style.transform = 'rotate(0deg)';
-      }
-
+      
       // Toggle the clicked answer
       toggleSlide(answer);
 
@@ -194,6 +187,13 @@ document.addEventListener('DOMContentLoaded', function() {
       var svgElement = this.querySelector('svg');
       var rotation = (answer.style.height === '0px') ? 90 : 0;
       svgElement.style.transform = `rotate(${rotation}deg)`;
+
+      // Close the previously open answer if exists
+      if (openAnswer && openAnswer !== answer) {
+        toggleSlide(openAnswer);
+        var prevSvgElement = openTitle.querySelector('svg');
+        prevSvgElement.style.transform = 'rotate(0deg)';
+      }
 
       // Update the currently open answer and FAQ title
       openAnswer = (answer.style.height === '0px') ? answer : null;
@@ -215,6 +215,3 @@ function toggleSlide(element) {
     element.style.marginBottom = '0px';
   }
 }
-
-
-
