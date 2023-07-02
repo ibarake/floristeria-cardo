@@ -588,6 +588,8 @@ hero-title {
 .cta-3:hover {
   background-color: var(--main-olive);
   color: var(--main-linen);
+  transform: scale(1.05);
+  transition: transform 100ms ease-in;
 }
 .cta-3-responsive {
   display: none;
