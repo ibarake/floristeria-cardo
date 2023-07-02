@@ -215,10 +215,3 @@ function toggleSlide(element) {
     element.style.marginBottom = '0px';
   }
 }
-
-faqTitles.forEach((title) => {
-  title.addEventListener('click', () => {
-    const svgElement = title.querySelector('svg');
-    svgElement.style.transform = 'rotate(90deg)';
-  });
-});
