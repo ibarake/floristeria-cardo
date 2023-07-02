@@ -298,7 +298,7 @@ mega-menu {
 .has-mega-menu:hover path {
   transform-origin: 50% 50%;
   transform: scaleY(-1);
-  transition: all 0.1 ease-in-out;
+  transition: all 0.1 ease-out;
   stroke: var(--main-olive);
   stroke-width: 1.5;
   stroke-linecap: round;
@@ -797,6 +797,11 @@ product-card {
   margin: 16px;
   display: flex;
   flex-direction: column;
+}
+
+product-card:hover {
+  transform: scale(1.05);
+  transition: all 100ms ease-out;
 }
 
 product-card img {
