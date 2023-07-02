@@ -2,7 +2,6 @@
 var hamburguerMenu = document.querySelector(".hamburguer-menu");
 var responsiveMenu = document.querySelector(".responsive-menu");
 var closeMenu = document.querySelector(".close-drawer");
-var MenuArrowDesktop = document.querySelectorAll(".menu-link");
 var dropdownMenus = document.querySelectorAll(".dropdown-open");
 var dropdownMenusFAQ = document.querySelectorAll("#card");
 var activeDropdown = null;
