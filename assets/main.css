@@ -1045,6 +1045,7 @@ preguntas {
 }
 
 .FAQ-text {
+  width: 100%;
   color: var(--main-gray);
 }
 
