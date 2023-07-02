@@ -289,7 +289,7 @@ mega-menu {
   display: block;
 }
 
-.has-mega-menu:hover mega-menu svg {
+.has-mega-menu:hover svg {
   transform: rotate(180deg);
 }
 
