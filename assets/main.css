@@ -714,6 +714,7 @@ collection-slider::-webkit-scrollbar {
 
 .collection-item {
   width: 300px;
+  text-decoration: none;
 }
 
 .collection-item:first-child {
