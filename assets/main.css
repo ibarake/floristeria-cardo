@@ -1027,17 +1027,17 @@ preguntas {
 }
 
 .FAQ-title {
-  width: 65%;
-  height: 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 15px 0 15px;
   font-family: "DM Sans";
   font-weight: 500;
   font-size: 20px;
 }
 .faq-container {
+  width: 65%;
+  height: 60px;
+  padding: 0 15px 0 15px;
   border-bottom: 1px solid var(--main-gray);
 }
 
