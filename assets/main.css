@@ -856,12 +856,18 @@ products-4-item {
 .s2 svg {
   fill: var(--main-olive);
 }
-.s {
+.s-r {
   display: none;
+}
+.s-d {
+  display: block;
 }
 
 @media only screen and (max-width: 768px) {
-  .s {
+  .s-d {
+    display: none;
+  }
+  .s-r {
     display: flex;
     flex-direction: row;
     align-items: center;
