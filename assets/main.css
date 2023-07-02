@@ -1101,7 +1101,9 @@ products-4-item {
 
 /* FAQ STYLES */
 pf {
+  display: block;
   width: 100%;
+  padding: 50px 0;
 }
 .preguntas-frecuentes {
   display: flex;
