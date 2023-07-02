@@ -837,6 +837,7 @@ container-4products {
   position: relative;
   gap: 20px;
 }
+
 products-4-item {
   width: 25%;
 }
@@ -900,6 +901,11 @@ products-4-item {
     justify-content: space-between;
     margin: 10px 0;
   }
+
+  container-4products::-webkit-scrollbar {
+    display: none;
+  }
+
   container-4products product-card {
     width: 50%;
   }
