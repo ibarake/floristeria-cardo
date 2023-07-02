@@ -838,7 +838,9 @@ card-footer {
   border: none;
   background-color: var(--main-white);
 }
-
+.card-add-to-cart:hover {
+  background-color: var(--main-linen);
+}
 .card-add-to-cart svg {
   fill: var(--main-olive);
   margin-right: 10px;
