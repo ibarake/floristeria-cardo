@@ -49,6 +49,9 @@
         "title-preguntas": "Sobre Cardó",
         "subtitle-preguntas": "preguntas frecuentes",
         "subtitulo-fotos": "Ver todos",
+        "flor": true,
+        "color": true,
+        "border": true,
         "style-s": "style 1"
       }
     },
@@ -115,6 +118,9 @@
         "title-preguntas": "Sobre Cardó",
         "subtitle-preguntas": "preguntas frecuentes",
         "subtitulo-fotos": "Ver todos",
+        "flor": false,
+        "color": false,
+        "border": false,
         "style-s": "style 2"
       }
     },
