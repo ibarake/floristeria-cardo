@@ -840,6 +840,7 @@ card-footer {
 }
 .card-add-to-cart:hover {
   background-color: var(--main-linen);
+  cursor: pointer;
 }
 .card-add-to-cart svg {
   fill: var(--main-olive);
