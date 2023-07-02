@@ -764,7 +764,7 @@ card-product-info {
 }
 
 .card-width {
-  width: 100%;
+  width: auto;
 }
 
 card-footer {
