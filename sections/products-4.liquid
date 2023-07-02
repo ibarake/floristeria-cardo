@@ -4,7 +4,7 @@
     {% render 'Flor-6' %}
   </flor>
 {% endif %}
-<product4 class="page-width">
+<product4 class="page-width" {% if section.settings.border == true %}style="border: 1px solid var(--main-linen);"{% endif %}>
   <container-arreglos>
     <p class="subtitulo-3 s3" id="p-subtitle">
       {{ section.settings.arreglos-subtitle }}
