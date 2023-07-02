@@ -1100,7 +1100,9 @@ products-4-item {
 }
 
 /* FAQ STYLES */
-
+pf {
+  width: 100%;
+}
 .preguntas-frecuentes {
   display: flex;
   justify-content: space-around;
