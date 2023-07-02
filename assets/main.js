@@ -183,6 +183,8 @@ document.addEventListener('DOMContentLoaded', function() {
       // Close the previously open answer if exists
       if (openAnswer && openAnswer !== answer) {
         toggleSlide(openAnswer);
+        var prevSvgElement = openAnswer.previousElementSibling.querySelector('svg');
+        prevSvgElement.style.transform = 'rotate(0deg)';
       }
 
       // Update the currently open answer
