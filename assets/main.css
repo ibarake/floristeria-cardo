@@ -301,6 +301,7 @@ mega-menu-item {
   padding: 0 5px;
   margin: 0;
   color: var(--main-olive);
+  font-size: 16px;
 }
 
 .hamburguer-menu {
