@@ -1,7 +1,9 @@
-<section class="product4 page-width">
+{% if section.settings.flor == true %}
   <flor class="flor-6">
     {% render 'Flor-6' %}
   </flor>
+  {% endif %}
+<section class="product4 page-width">
   <container-arreglos>
     <p class="subtitulo-3 s3" id="p-subtitle">
       {{ section.settings.arreglos-subtitle }}
