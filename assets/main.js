@@ -184,8 +184,6 @@ document.addEventListener('DOMContentLoaded', function() {
       var svgElement = this.querySelector('svg');
       toggleSlide(answer, svgElement);
 
-      // Toggle the rotation of the clicked FAQ title
-
       // Close the previously open answer if exists
       if (openAnswer && openAnswer !== answer) {
         toggleSlide(openAnswer);
