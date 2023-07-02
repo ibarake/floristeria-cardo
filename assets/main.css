@@ -476,7 +476,7 @@ products-container {
 
 .hero-title {
   color: var(--main-olive);
-  margin: 0;
+  margin: 20px 0;
 }
 
 hero-title {
