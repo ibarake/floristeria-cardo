@@ -49,13 +49,16 @@ dropdownMenus.forEach(function (dropdownMenu) {
     var childLi = parentLi.querySelector("dropdown-mega-menu");
 
     if (activeDropdown && activeDropdown !== childLi) {
+      dropdownMenu.style.transform = "scaleY(1)";
       activeDropdown.style.height = "0";
     }
 
     if (childLi.style.height === "0px" || !childLi.style.height) {
+      dropdownMenu.style.transform = "scaleY(-1)";
       childLi.style.height = childLi.scrollHeight + "px";
       activeDropdown = childLi;
     } else {
+      dropdownMenu.style.transform = "scaleY(1)";
       childLi.style.height = "0";
       activeDropdown = null;
     }
