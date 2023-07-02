@@ -1151,6 +1151,7 @@ preguntas {
 answer {
   height: 0px;
   transition: height 0.75s ease-in-out;
+  overflow: hidden;
 }
 
 @media only screen and (max-width: 768px) {
