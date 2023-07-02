@@ -1162,6 +1162,7 @@ answer {
   .faq-container {
     width: 80%;
     margin: 15px auto;
+    border: none;
   }
   .faq-title {
     width: 100%;
