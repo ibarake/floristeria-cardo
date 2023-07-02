@@ -291,6 +291,8 @@ mega-menu {
 
 .has-mega-menu:hover svg {
   transform: rotate(180deg);
+}
+.has-mega-menu:hover svg path {
   fill: var(--main-olive);
 }
 
