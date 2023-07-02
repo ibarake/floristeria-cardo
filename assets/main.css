@@ -989,7 +989,7 @@ products-4-item {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 50px 0;
+  margin: 50px auto;
 }
 
 container {
