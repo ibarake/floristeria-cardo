@@ -193,4 +193,13 @@ function toggleSlide(element) {
   }
 }
 
+const faqTitles = document.querySelectorAll('.FAQ-title');
+
+faqTitles.forEach((title) => {
+  title.addEventListener('click', () => {
+    const svgElement = title.querySelector('svg');
+    svgElement.style.transform = 'rotate(90deg)';
+  });
+});
+
 
