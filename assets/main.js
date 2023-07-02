@@ -179,7 +179,8 @@ document.addEventListener('DOMContentLoaded', function() {
   faqTitles.forEach(function(title) {
     title.addEventListener('click', function() {
       var answer = this.nextElementSibling;
-      
+      var svgElement = this.querySelector('svg');
+
       // Toggle the clicked answer and rotate the SVG element
       toggleSlide(answer, this);
 
@@ -191,6 +192,9 @@ document.addEventListener('DOMContentLoaded', function() {
       // Update the currently open answer and FAQ title
       openAnswer = (openAnswer === answer) ? null : answer;
       openTitle = (openTitle === this) ? null : this;
+
+      // Rotate the SVG element of the currently clicked FAQ title
+      svgElement.style.transform = openAnswer ? 'rotate(90deg)' : 'rotate(0deg)';
     });
   });
 });
