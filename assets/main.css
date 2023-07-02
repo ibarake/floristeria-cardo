@@ -289,9 +289,9 @@ mega-menu {
   display: block;
 }
 
-.has-mega-menu:hover svg {
+.has-mega-menu:hover svg path {
   transform: rotate(180deg);
-  color: var(--main-olive);
+  stroke: var(--main-olive);
 }
 
 .has-mega-menu:hover .menu-link-title {
