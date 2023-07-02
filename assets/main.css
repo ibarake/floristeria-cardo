@@ -1029,7 +1029,6 @@ preguntas {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: var(--main-gray);
 }
 .faq-container {
   width: 100%;
@@ -1043,6 +1042,7 @@ preguntas {
   width: 100%;
   height: 60px;
   margin-top: 15px;
+  color: var(--main-gray);
 }
 
 preguntas {
