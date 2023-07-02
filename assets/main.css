@@ -573,7 +573,10 @@ hero-title {
   width: 40%;
   padding: 10px 30px 10px 30px;
 }
-
+.cta-link {
+  color: inherit;
+  text-decoration: none;
+}
 .cta:hover {
   transform: scale(1.05);
   transition: transform 100ms ease-in;
