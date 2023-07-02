@@ -308,6 +308,9 @@ mega-menu {
 .has-mega-menu:hover .menu-link-title {
   color: var(--main-olive);
 }
+.menu-link-title:hover {
+  color: var(--main-olive);
+}
 
 mega-menu-item {
   display: block;
