@@ -1008,6 +1008,10 @@ products-4-item {
   container-4products .card-width {
     width: 180px;
   }
+  .flor-6 {
+    transform-origin: 100% 50%;
+    transform: scale(0.7);
+  }
   .s-d {
     display: none;
   }
