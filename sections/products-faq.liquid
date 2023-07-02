@@ -9,13 +9,13 @@
   </container>
   <preguntas>
     {% for block in section.blocks %}
-      <div class="FAQ-title">
+      <faq class="FAQ-title">
         {{ block.settings.FAQ-title }}
         {% render 'icon-arrow-right-dropdown' %}
-      </div>
-      <div class="FAQ-text">
+      </faq>
+      <answer class="FAQ-text">
         {{ block.settings.FAQ-text }}
-      </div>
+      </answer>
     {% endfor %}
   </preguntas>
 </section>
