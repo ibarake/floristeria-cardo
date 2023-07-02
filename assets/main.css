@@ -273,6 +273,7 @@ nav ul li {
 .add-to-cart:hover {
   background-color: var(--main-olive);
   color: var(--main-color);
+  cursor: pointer;
 }
 .add-to-cart:hover p {
   color: var(--main-color);
