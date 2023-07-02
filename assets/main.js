@@ -181,12 +181,10 @@ document.addEventListener('DOMContentLoaded', function() {
       var answer = this.nextElementSibling;
       
       // Toggle the clicked answer
-      toggleSlide(answer);
+      var svgElement = this.querySelector('svg');
+      toggleSlide(answer, svgElement);
 
       // Toggle the rotation of the clicked FAQ title
-      var svgElement = this.querySelector('svg');
-      var rotation = (answer.style.height === '0px') ? 90 : 0;
-      svgElement.style.transform = `rotate(${rotation}deg)`;
 
       // Close the previously open answer if exists
       if (openAnswer && openAnswer !== answer) {
@@ -202,16 +200,19 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-function toggleSlide(element) {
+function toggleSlide(element, svg) {
   var isHidden = getComputedStyle(element).height === '0px';
   
   if (isHidden) {
     element.style.height = 'auto';
     element.style.marginTop = '15px';
     element.style.marginBottom = '10px';
+    svg.style.transform = `rotate(90deg)`;
+
   } else {
     element.style.height = '0px';
     element.style.marginTop = '0px';
     element.style.marginBottom = '0px';
+    svg.style.transform = `rotate(0deg)`;
   }
 }
