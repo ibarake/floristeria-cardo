@@ -1116,6 +1116,7 @@ pf {
   display: block;
   width: 100%;
   padding: 50px 0;
+  z-index: 10;
 }
 .preguntas-frecuentes {
   display: flex;
