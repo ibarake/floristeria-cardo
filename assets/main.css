@@ -1105,7 +1105,7 @@ products-4-item {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 50px auto;
+  padding: 50px auto;
 }
 
 container {
