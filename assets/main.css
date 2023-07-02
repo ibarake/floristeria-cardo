@@ -554,6 +554,11 @@ hero-title {
   padding: 10px 30px 10px 30px;
 }
 
+.cta:hover {
+  transform: scale(1.05);
+  transition: transform 100ms ease-in;
+}
+
 .cta-1 {
   background-color: var(--main-olive);
   color: var(--main-white);
@@ -564,8 +569,6 @@ hero-title {
 .cta-1:hover {
   color: var(--main-olive);
   background-color: var(--linen-3);
-  transform: scale(1.05);
-  transition: transform 100ms ease-in;
 }
 
 .cta-2 {
