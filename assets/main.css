@@ -23,6 +23,11 @@ html {
   position: absolute;
 }
 
+.grow:hover {
+  transform: scale(1.05);
+  transition: transform 100ms ease-out;
+}
+
 @media only screen and (max-width: 768px) {
   .page-width {
     width: 100%;
