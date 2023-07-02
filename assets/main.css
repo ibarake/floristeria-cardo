@@ -563,7 +563,7 @@ hero-title {
 
 .cta-1:hover {
   color: var(--main-olive);
-  background-color: var(--main-dark-color);
+  background-color: var(--linen-3);
 }
 
 .cta-2 {
