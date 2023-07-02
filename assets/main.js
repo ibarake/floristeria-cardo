@@ -180,37 +180,33 @@ document.addEventListener('DOMContentLoaded', function() {
     title.addEventListener('click', function() {
       var answer = this.nextElementSibling;
       
-      // Toggle the clicked answer
-      var svgElement = this.querySelector('svg');
-      toggleSlide(answer, svgElement);
+      // Toggle the clicked answer and rotate the SVG element
+      toggleSlide(answer, this);
 
       // Close the previously open answer if exists
       if (openAnswer && openAnswer !== answer) {
-        toggleSlide(openAnswer);
-        var prevSvgElement = openTitle.querySelector('svg');
-        prevSvgElement.style.transform = 'rotate(0deg)';
+        toggleSlide(openAnswer, openTitle);
       }
 
       // Update the currently open answer and FAQ title
-      openAnswer = (answer.style.height === '0px') ? answer : null;
-      openTitle = (answer.style.height === '0px') ? this : null;
+      openAnswer = (openAnswer === answer) ? null : answer;
+      openTitle = (openTitle === this) ? null : this;
     });
   });
 });
 
-function toggleSlide(element, svg) {
+function toggleSlide(element, title) {
   var isHidden = getComputedStyle(element).height === '0px';
   
   if (isHidden) {
     element.style.height = 'auto';
     element.style.marginTop = '15px';
     element.style.marginBottom = '10px';
-    svg.style.transform = `rotate(90deg)`;
-
+    title.querySelector('svg').style.transform = 'rotate(90deg)';
   } else {
     element.style.height = '0px';
     element.style.marginTop = '0px';
     element.style.marginBottom = '0px';
-    svg.style.transform = `rotate(0deg)`;
+    title.querySelector('svg').style.transform = 'rotate(0deg)';
   }
 }
