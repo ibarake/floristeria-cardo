@@ -561,7 +561,7 @@ hero-title {
 }
 
 @media only screen and (max-width: 768px) {
-  .hero-banner product-card-info {
+  .hero-banner .card-width {
     width: 100% !important;
   }
   inline-half-container.left {
@@ -868,7 +868,7 @@ products-4-item {
 }
 
 @media only screen and (max-width: 768px) {
-  section.4-product card-product-info {
+  section.4-product .card-width {
     width: 180px;
   }
   .s-d {
