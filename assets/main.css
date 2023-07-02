@@ -278,6 +278,10 @@ nav ul li {
   color: var(--main-color);
 }
 
+.add-to-cart:hover path {
+  stroke: var(--main-color);
+}
+
 svg {
   width: fit-content;
   margin: 0;
