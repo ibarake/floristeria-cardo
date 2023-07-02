@@ -107,7 +107,6 @@ window.addEventListener("resize", handleClassChange);
 /* HORIZONTAL SCROLLING DRAG JS */
 const elements = document.querySelectorAll('.drag-scroll');
 let positions = [];
-let isDraggingImage = false;
 
 const mouseDownHandler = function (e) {
     const target = e.target;
@@ -115,7 +114,6 @@ const mouseDownHandler = function (e) {
     // Disable dragging images
     if (target.tagName.toLowerCase() === 'img') {
         e.preventDefault();
-        isDraggingImage = true;
         return;
     }
 
@@ -138,10 +136,6 @@ const mouseDownHandler = function (e) {
 };
 
 const mouseMoveHandler = function (e) {
-    if (isDraggingImage) {
-        return;
-    }
-
     positions.forEach((pos, index) => {
         const dx = e.clientX - pos.x;
         const dy = e.clientY - pos.y;
@@ -154,10 +148,10 @@ const mouseMoveHandler = function (e) {
 const mouseUpHandler = function () {
     document.removeEventListener('mousemove', mouseMoveHandler);
     document.removeEventListener('mouseup', mouseUpHandler);
-    isDraggingImage = false;
 };
 
 elements.forEach((element) => {
     element.addEventListener('mousedown', mouseDownHandler);
     element.style.cursor = 'grab';
 });
+
