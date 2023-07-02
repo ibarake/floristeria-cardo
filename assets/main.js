@@ -123,11 +123,12 @@ const mouseDownHandler = function (e) {
         e.preventDefault();
     }
 
-    const elementIndex = Array.from(elements).indexOf(target);
+    const element = target.closest('.drag-scroll');
+    const elementIndex = Array.from(elements).indexOf(element);
 
     positions[elementIndex] = {
-        left: elements[elementIndex].scrollLeft,
-        top: elements[elementIndex].scrollTop,
+        left: element.scrollLeft,
+        top: element.scrollTop,
         x: e.clientX,
         y: e.clientY,
     };
