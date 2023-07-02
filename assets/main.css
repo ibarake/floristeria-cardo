@@ -758,6 +758,7 @@ card-product-info {
   justify-content: space-around;
   margin: 10px 10px 0 10px;
   height: 100%;
+  width: 180px;
 }
 
 card-footer {
