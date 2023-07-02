@@ -274,6 +274,9 @@ nav ul li {
   background-color: var(--main-olive);
   color: var(--main-color);
 }
+.add-to-cart:hover p {
+  color: var(--main-color);
+}
 
 svg {
   width: fit-content;
