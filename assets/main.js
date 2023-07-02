@@ -110,47 +110,48 @@ const elements = document.querySelectorAll('.drag-scroll');
 let positions = [];
 
 const mouseDownHandler = function (e) {
-  const index = Array.from(elements).indexOf(e.currentTarget);
-  if (positions[index]) return;
+    const target = e.target;
 
-  positions[index] = {
-    left: elements[index].scrollLeft,
-    top: elements[index].scrollTop,
-    x: e.clientX,
-    y: e.clientY,
-  };
+    // Disable dragging images
+    if (target.tagName.toLowerCase() === 'img') {
+        e.preventDefault();
+        return;
+    }
 
-  document.addEventListener('mousemove', mouseMoveHandler);
-  document.addEventListener('mouseup', mouseUpHandler);
+    // Disable selecting text
+    if (!['a', 'button'].includes(target.tagName.toLowerCase())) {
+        e.preventDefault();
+    }
+
+    const elementIndex = Array.from(elements).indexOf(target);
+
+    positions[elementIndex] = {
+        left: elements[elementIndex].scrollLeft,
+        top: elements[elementIndex].scrollTop,
+        x: e.clientX,
+        y: e.clientY,
+    };
+
+    document.addEventListener('mousemove', mouseMoveHandler);
+    document.addEventListener('mouseup', mouseUpHandler);
 };
 
 const mouseMoveHandler = function (e) {
-  Array.from(elements).forEach((element, index) => {
-    if (!positions[index]) return;
+    positions.forEach((pos, index) => {
+        const dx = e.clientX - pos.x;
+        const dy = e.clientY - pos.y;
 
-    const dx = e.clientX - positions[index].x;
-    const dy = e.clientY - positions[index].y;
-
-    element.scrollTop = positions[index].top - dy;
-    element.scrollLeft = positions[index].left - dx;
-  });
+        elements[index].scrollTop = pos.top - dy;
+        elements[index].scrollLeft = pos.left - dx;
+    });
 };
 
 const mouseUpHandler = function () {
-  document.removeEventListener('mousemove', mouseMoveHandler);
-  document.removeEventListener('mouseup', mouseUpHandler);
-
-  positions = positions.map(() => null);
+    document.removeEventListener('mousemove', mouseMoveHandler);
+    document.removeEventListener('mouseup', mouseUpHandler);
 };
 
-Array.from(elements).forEach((element) => {
-  element.addEventListener('mousedown', mouseDownHandler);
-  element.addEventListener('mousedown', function (e) {
-    e.currentTarget.style.cursor = 'grabbing';
-    e.currentTarget.style.userSelect = 'none';
-  });
-  element.addEventListener('mouseup', function (e) {
-    e.currentTarget.style.cursor = 'grab';
-    e.currentTarget.style.removeProperty('user-select');
-  });
+elements.forEach((element) => {
+    element.addEventListener('mousedown', mouseDownHandler);
+    element.style.cursor = 'grab';
 });
