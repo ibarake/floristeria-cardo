@@ -802,6 +802,9 @@ product-card {
 product-card:hover {
   transform: scale(1.05);
   transition: all 100ms ease-out;
+  -webkit-box-shadow: 0px 0px 36px -10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 36px -10px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 36px -10px rgba(0, 0, 0, 0.75);
 }
 
 product-card img {
