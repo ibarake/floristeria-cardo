@@ -565,7 +565,7 @@ hero-title {
   color: var(--main-olive);
   background-color: var(--linen-3);
   transform: scale(1.05);
-  transition: transform 500ms ease-in;
+  transition: transform 200ms ease-in;
 }
 
 .cta-2 {
