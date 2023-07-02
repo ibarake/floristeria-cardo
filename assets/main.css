@@ -1036,6 +1036,7 @@ preguntas {
   height: 60px;
   padding: 0 15px 0 15px;
   border-bottom: 1px solid var(--main-gray);
+  margin: 15px;
 }
 
 .FAQ-subtitle {
