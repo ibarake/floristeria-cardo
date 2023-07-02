@@ -586,6 +586,9 @@ hero-title {
     font-size: 32px !important;
     line-height: 36px !important;
   }
+  .hero-subtitle {
+    margin: 0 20%;
+  }
   .flor-1 {
     display: none;
   }
