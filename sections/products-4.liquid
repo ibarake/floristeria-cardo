@@ -8,8 +8,10 @@
     </h1>
   </container-arreglos>
   <p class="s-r subtitulo-2 {% if section.settings.style-s == 'style 1' %} s2{% endif %} {% if section.settings.style-s == 'style 2' %} s2-1 {% endif %}">
+      <a href="#">
       {{ section.settings['subtitulo-fotos'] }}
       {% render 'icon-arrow-right' %}
+      </a>
     </p>
   <container-4products>
     {% for product in section.settings.collection limit:4 %}
