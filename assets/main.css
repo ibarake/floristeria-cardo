@@ -1390,6 +1390,10 @@ footer button.siguiente {
   font-size: 14px;
 }
 
+.siguiente:hover {
+  background-color: var(--main-color);
+}
+
 footer-copyright {
   display: flex;
   justify-content: space-between;
