@@ -1157,6 +1157,9 @@ preguntas {
     width: 80%;
     margin: 15px auto;
   }
+  .faq-title {
+    width: 100%;
+  }
 }
 
 /* PRODUCTS-FAQ2 */
