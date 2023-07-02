@@ -296,6 +296,7 @@ mega-menu {
 }
 
 .has-mega-menu:hover path {
+  transform-origin: 50% 50%;
   transform: rotate(180deg);
   stroke: var(--main-olive);
   stroke-width: 1.5;
