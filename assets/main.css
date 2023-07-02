@@ -1392,6 +1392,11 @@ footer button.siguiente {
 
 .siguiente:hover {
   background-color: var(--main-color);
+  border: 1px solid var(--main-color);
+}
+
+.siguiente:hover stroke {
+  stroke: var(--main-olive);
 }
 
 footer-copyright {
