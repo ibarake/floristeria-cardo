@@ -187,9 +187,9 @@ function toggleSlide(element) {
   var isHidden = getComputedStyle(element).display === 'none';
   
   if (isHidden) {
-    element.style.display = 'block';
+    element.style.height = 'auto';
   } else {
-    element.style.display = 'none';
+    element.style.height = '0px';
   }
 }
 
