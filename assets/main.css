@@ -270,6 +270,11 @@ nav ul li {
   border-radius: 8px;
 }
 
+.add-to-cart:hover {
+  background-color: var(--main-olive);
+  color: var(--main-color);
+}
+
 svg {
   width: fit-content;
   margin: 0;
@@ -441,6 +446,7 @@ dropdown-mega-menu {
     background-color: var(--main-white);
     justify-self: flex-end;
   }
+
   mega-menu-item {
     border: none;
     padding: 5px 0px;
