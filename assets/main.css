@@ -719,7 +719,7 @@ collection-slider::-webkit-scrollbar {
 }
 
 .collection-item:hover img {
-  transition: transform 1s ease-in-out;
+  transition: transform 50ms ease-in-out;
   transform: scale(1.05);
 }
 
