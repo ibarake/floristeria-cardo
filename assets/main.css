@@ -864,6 +864,9 @@ products-4-item {
 }
 
 @media only screen and (max-width: 768px) {
+  .4-product card-product-info {
+    width: 180px;
+  }
   .s-d {
     display: none;
   }
