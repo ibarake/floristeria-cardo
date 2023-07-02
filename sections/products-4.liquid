@@ -3,6 +3,13 @@
   <flor class="flor-6">
     {% render 'Flor-6' %}
   </flor>
+  {% else %}
+  <flor class="flor-7">
+    {% render "Flor-7" %}
+  </flor>
+  <flor class="flor-8">
+    {% render "Flor-8" %}
+  </flor>
 {% endif %}
 <product4 class="page-width" {% if section.settings.border == true %}style="border-bottom: 1px solid var(--main-linen);"{% endif %}>
   <container-arreglos>
