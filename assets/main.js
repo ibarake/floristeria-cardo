@@ -179,39 +179,46 @@ document.addEventListener('DOMContentLoaded', function() {
   faqTitles.forEach(function(title) {
     title.addEventListener('click', function() {
       var answer = this.nextElementSibling;
-      var svgElement = this.querySelector('svg');
 
-      // Toggle the clicked answer and rotate the SVG element
-      toggleSlide(answer, this, openAnswer);
+      if (openAnswer === answer) {
+        // Clicking on the same FAQ title again, close the answer and rotate the SVG back
+        toggleSlide(answer);
+        rotateSvg(this, '0deg');
+        openAnswer = null;
+        openTitle = null;
+      } else {
+        // Clicking on a different FAQ title
+        if (openAnswer) {
+          // Close the previously open answer and rotate its SVG back
+          toggleSlide(openAnswer);
+          rotateSvg(openTitle, '0deg');
+        }
 
-      // Close the previously open answer if exists
-      if (openAnswer && openAnswer !== answer) {
-        toggleSlide(openAnswer, openTitle);
+        // Open the clicked answer and rotate its SVG
+        toggleSlide(answer);
+        rotateSvg(this, '90deg');
+        openAnswer = answer;
+        openTitle = this;
       }
-
-      // Update the currently open answer and FAQ title
-      openAnswer = (openAnswer === answer) ? null : answer;
-      openTitle = (openTitle === this) ? null : this;
-
-      // Rotate the SVG element of the currently clicked FAQ title
-      svgElement.style.transform = openAnswer ? 'rotate(90deg)' : 'rotate(0deg)';
     });
   });
 });
 
-function toggleSlide(element, title, answer) {
+function toggleSlide(element) {
   var isHidden = getComputedStyle(element).height === '0px';
-  
+
   if (isHidden) {
     element.style.height = 'auto';
     element.style.marginTop = '15px';
     element.style.marginBottom = '10px';
-    title.querySelector('svg').style.transform = 'rotate(90deg)';
-    answer.querySelector('svg').style.transform = 'rotate(0deg)';
   } else {
     element.style.height = '0px';
     element.style.marginTop = '0px';
     element.style.marginBottom = '0px';
-    title.querySelector('svg').style.transform = 'rotate(0deg)';
   }
+}
+
+function rotateSvg(title, rotation) {
+  var svgElement = title.querySelector('svg');
+  svgElement.style.transform = `rotate(${rotation})`;
 }
