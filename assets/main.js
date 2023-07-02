@@ -112,14 +112,16 @@ let isDragging = false;
 const mouseDownHandler = function (e) {
     const target = e.target;
 
-    // Disable dragging images, except for the product-card images
-    if (!target.closest('.product-card') || target.tagName.toLowerCase() === 'img') {
+    // Disable dragging images
+    if (target.tagName.toLowerCase() === 'img') {
         e.preventDefault();
         return;
     }
 
-    // Disable all other actions within the div
-    e.preventDefault();
+    // Disable selecting text
+    if (!['a', 'button'].includes(target.tagName.toLowerCase())) {
+        e.preventDefault();
+    }
 
     const element = target.closest('.drag-scroll');
     const elementIndex = Array.from(elements).indexOf(element);
@@ -139,27 +141,25 @@ const mouseDownHandler = function (e) {
 };
 
 const mouseMoveHandler = function (e) {
-    if (!isDragging) return;
+    if (!isDragging) {
+        return;
+    }
 
-    const dx = e.clientX - positions[elementIndex].x;
-    const dy = e.clientY - positions[elementIndex].y;
+    positions.forEach((pos, index) => {
+        const dx = e.clientX - pos.x;
+        const dy = e.clientY - pos.y;
 
-    // Prevent all other actions within the div while dragging
-    e.preventDefault();
-
-    // Rest of the code remains the same
+        elements[index].scrollTop = pos.top - dy;
+        elements[index].scrollLeft = pos.left - dx;
+    });
 };
 
 const mouseUpHandler = function () {
-    if (!isDragging) return;
-
     document.removeEventListener('mousemove', mouseMoveHandler);
     document.removeEventListener('mouseup', mouseUpHandler);
 
-    // Reset the dragging flag
+    // Reset the dragging flag to false
     isDragging = false;
-
-    // Rest of the code remains the same
 };
 
 elements.forEach((element) => {
