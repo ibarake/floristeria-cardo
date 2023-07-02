@@ -583,6 +583,8 @@ hero-title {
   padding: 10px 30px 10px 30px;
 }
 .cta-3:hover {
+  background-color: var(--main-olive);
+  color: var(--main-linen);
 }
 .cta-3-responsive {
   display: none;
