@@ -105,44 +105,52 @@ window.addEventListener("resize", handleClassChange);
 
 
 /* HORIZONTAL SCROLLING DRAG JS */
-const ele = document.querySelectorAll('drag-scroll');
+const elements = document.querySelectorAll('.drag-scroll');
 
-let pos = { top: 0, left: 0, x: 0, y: 0 };
+let positions = [];
 
 const mouseDownHandler = function (e) {
-    pos = {
-        // The current scroll
-        left: ele.scrollLeft,
-        top: ele.scrollTop,
-        // Get the current mouse position
-        x: e.clientX,
-        y: e.clientY,
-    };
+  const index = Array.from(elements).indexOf(e.currentTarget);
+  if (positions[index]) return;
 
-    document.addEventListener('mousemove', mouseMoveHandler);
-    document.addEventListener('mouseup', mouseUpHandler);
+  positions[index] = {
+    left: elements[index].scrollLeft,
+    top: elements[index].scrollTop,
+    x: e.clientX,
+    y: e.clientY,
+  };
+
+  document.addEventListener('mousemove', mouseMoveHandler);
+  document.addEventListener('mouseup', mouseUpHandler);
 };
 
 const mouseMoveHandler = function (e) {
-    // How far the mouse has been moved
-    const dx = e.clientX - pos.x;
-    const dy = e.clientY - pos.y;
+  Array.from(elements).forEach((element, index) => {
+    if (!positions[index]) return;
 
-    // Scroll the element
-    ele.scrollTop = pos.top - dy;
-    ele.scrollLeft = pos.left - dx;
-};
+    const dx = e.clientX - positions[index].x;
+    const dy = e.clientY - positions[index].y;
 
-const mouseDownHandler = function(e) {
-    // Change the cursor and prevent user from selecting the text
-    ele.style.cursor = 'grabbing';
-    ele.style.userSelect = 'none';
+    element.scrollTop = positions[index].top - dy;
+    element.scrollLeft = positions[index].left - dx;
+  });
 };
 
 const mouseUpHandler = function () {
-    document.removeEventListener('mousemove', mouseMoveHandler);
-    document.removeEventListener('mouseup', mouseUpHandler);
+  document.removeEventListener('mousemove', mouseMoveHandler);
+  document.removeEventListener('mouseup', mouseUpHandler);
 
-    ele.style.cursor = 'grab';
-    ele.style.removeProperty('user-select');
+  positions = positions.map(() => null);
 };
+
+Array.from(elements).forEach((element) => {
+  element.addEventListener('mousedown', mouseDownHandler);
+  element.addEventListener('mousedown', function (e) {
+    e.currentTarget.style.cursor = 'grabbing';
+    e.currentTarget.style.userSelect = 'none';
+  });
+  element.addEventListener('mouseup', function (e) {
+    e.currentTarget.style.cursor = 'grab';
+    e.currentTarget.style.removeProperty('user-select');
+  });
+});
