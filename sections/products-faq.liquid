@@ -10,12 +10,14 @@
   <preguntas>
     {% for block in section.blocks %}
       <faq class="FAQ-title">
+        <question>
         {{ block.settings.FAQ-title }}
         {% render 'icon-arrow-right-dropdown' %}
-      </faq>
+        </question>
       <answer class="FAQ-text">
         {{ block.settings.FAQ-text }}
       </answer>
+      </faq>
     {% endfor %}
   </preguntas>
 </section>
