@@ -1,41 +1,65 @@
 /* DRAWER MENU ACTION JAVASCRIPT */
-var dropdownMenus = document.querySelectorAll(".dropdown-open");
-var activeDropdown = null;
+document.addEventListener("DOMContentLoaded", function () {
+  var hamburguerMenu = document.querySelector(".hamburguer-menu");
+  var responsiveMenu = document.querySelector(".responsive-menu");
+  var closeMenu = document.querySelector(".close-drawer");
+  var dropdownMenus = document.querySelectorAll(".dropdown-open");
+  var activeDropdown = null;
 
-dropdownMenus.forEach(function (dropdownMenu) {
-  dropdownMenu.addEventListener("click", function () {
-    var dropdownContent = this.nextElementSibling;
+  responsiveMenu.style.height = screen.height + "px";
 
-    if (activeDropdown && activeDropdown !== dropdownContent) {
-      toggleDropdown(activeDropdown);
-    }
-
-    toggleDropdown(dropdownContent);
-    toggleIcon(this);
-    activeDropdown = dropdownContent;
+  hamburguerMenu.addEventListener("click", function () {
+    responsiveMenu.style.right = "auto";
+    responsiveMenu.style.left = 0;
+    responsiveMenu.style.width = screen.width * 0.8 + "px";
   });
+
+  closeMenu.addEventListener("click", function () {
+    responsiveMenu.style.right = "110%";
+    responsiveMenu.style.left = "auto";
+
+    if (activeDropdown) {
+      toggleDropdown(activeDropdown);
+      toggleIcon(activeDropdown.previousElementSibling);
+    }
+  });
+
+  dropdownMenus.forEach(function (dropdownMenu) {
+    dropdownMenu.addEventListener("click", function () {
+      var dropdownContent = this.nextElementSibling;
+
+      if (activeDropdown && activeDropdown !== dropdownContent) {
+        toggleDropdown(activeDropdown);
+        toggleIcon(activeDropdown.previousElementSibling);
+      }
+
+      toggleDropdown(dropdownContent);
+      toggleIcon(this);
+      activeDropdown = dropdownContent;
+    });
+  });
+
+  function toggleDropdown(element) {
+    var isHidden = getComputedStyle(element).height === "0px";
+
+    if (isHidden) {
+      element.style.height = "auto";
+    } else {
+      element.style.height = "0px";
+    }
+  }
+
+  function toggleIcon(element) {
+    var svgElement = element.querySelector("svg");
+    var rotation = getComputedStyle(svgElement).transform;
+
+    if (rotation === "none") {
+      svgElement.style.transform = "rotate(90deg)";
+    } else {
+      svgElement.style.transform = "none";
+    }
+  }
 });
-
-function toggleDropdown(element) {
-  var isHidden = getComputedStyle(element).height === "0px";
-
-  if (isHidden) {
-    element.style.height = "auto";
-  } else {
-    element.style.height = "0px";
-  }
-}
-
-function toggleIcon(element) {
-  var svgElement = element.querySelector("svg");
-  var rotation = getComputedStyle(svgElement).transform;
-
-  if (rotation === "none") {
-    svgElement.style.transform = "rotate(90deg)";
-  } else {
-    svgElement.style.transform = "none";
-  }
-}
 
 
 /* HERO BANNER */
