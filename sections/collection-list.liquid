@@ -20,9 +20,9 @@
   <collection-scroll>
     <collection-slider>
       {% for collection in section.settings.collection_list %}
-        <collection-item>
+        <a class="collection-item" href="{{ collection.url }}">
           {% include 'collection-card', collection: collection %}
-        </collection-item>
+        </a>
       {% endfor %}
     </collection-slider>
   </collection-scroll>
