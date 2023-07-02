@@ -717,6 +717,11 @@ collection-slider::-webkit-scrollbar {
   text-decoration: none;
 }
 
+.collection-item:hover img {
+  transition: transform 1s ease-in-out;
+  transform: scale(1.05);
+}
+
 .collection-item:first-child {
   margin-left: 2100px;
 }
