@@ -169,3 +169,28 @@ elements.forEach((element) => {
     });
     element.style.cursor = 'grab';
 });
+
+/* FAQ DROPDOWN ANIMATION */
+
+document.addEventListener('DOMContentLoaded', function() {
+  var faqTitles = document.querySelectorAll('.FAQ-title');
+  
+  faqTitles.forEach(function(title) {
+    title.addEventListener('click', function() {
+      var answer = this.nextElementSibling;
+      toggleSlide(answer);
+    });
+  });
+});
+
+function toggleSlide(element) {
+  var isHidden = getComputedStyle(element).display === 'none';
+  
+  if (isHidden) {
+    element.style.display = 'block';
+  } else {
+    element.style.display = 'none';
+  }
+}
+
+
