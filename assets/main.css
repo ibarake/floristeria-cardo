@@ -290,7 +290,7 @@ mega-menu {
 }
 
 .has-mega-menu:hover mega-menu svg {
-  transform: scaleY(-1);
+  transform: rotate(180deg);
 }
 
 mega-menu-item {
