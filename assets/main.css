@@ -44,6 +44,7 @@ html {
   --main-linen: #efe4cf;
   --main-olive: #615420;
   --linen-3: #e0b37f;
+  --bg-linen: #fafafa;
 }
 
 /* TEXT PRESET STYLES*/
@@ -985,6 +986,14 @@ products-4-item {
   position: absolute;
   bottom: -300px;
   right: 0;
+}
+
+.bg-linen {
+  background-color: var(--bg-linen);
+}
+
+.bg-dark {
+  background-color: var(--main-dark-color);
 }
 
 @media only screen and (max-width: 768px) {
