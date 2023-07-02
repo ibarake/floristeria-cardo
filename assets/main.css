@@ -1128,8 +1128,7 @@ preguntas {
 }
 .faq-container {
   width: 100%;
-  height: 60px;
-  padding: 0 15px 0 15px;
+  padding: 0 15px 5px 15px;
   border-bottom: 1px solid var(--main-gray);
   margin: 15px;
 }
