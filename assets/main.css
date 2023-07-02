@@ -1148,6 +1148,10 @@ preguntas {
   width: 65%;
 }
 
+answer {
+  display: none;
+}
+
 @media only screen and (max-width: 768px) {
   preguntas {
     width: 100%;
