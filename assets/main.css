@@ -284,6 +284,12 @@ mega-menu {
   border-radius: 12px 0px 12px 12px;
   border: 1px solid var(--main-linen);
 }
+mega-menu path {
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: var(--main-gray);
+}
 
 .has-mega-menu:hover mega-menu {
   display: block;
