@@ -201,11 +201,8 @@ faqTitles.forEach((title) => {
   title.addEventListener('click', () => {
     const svgElement = title.querySelector('svg');
 
-    // Increment or decrement the rotation angle by 90 degrees
-    rotation += 90;
-    if (rotation >= 360) {
-      rotation = 0;
-    }
+    // Toggle the rotation angle between 90 and 0 degrees
+    rotation = (rotation === 0) ? 90 : 0;
 
     // Apply the rotation transformation to the SVG element
     svgElement.style.transform = `rotate(${rotation}deg)`;
