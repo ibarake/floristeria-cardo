@@ -871,7 +871,7 @@ products-4-item {
 }
 
 @media only screen and (max-width: 768px) {
-  section.4-product .card-width {
+  container-4products .card-width {
     width: 180px;
   }
   .s-d {
