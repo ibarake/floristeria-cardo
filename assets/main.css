@@ -700,6 +700,7 @@ collection-button {
 }
 collection-slider {
   overflow-x: auto;
+  overflow-y: visible;
   display: flex;
   flex-direction: row;
   justify-content: center;
