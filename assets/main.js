@@ -196,10 +196,21 @@ function toggleSlide(element) {
 const faqTitles = document.querySelectorAll('.FAQ-title');
 
 faqTitles.forEach((title) => {
+  let rotation = 0; // Keeps track of the rotation angle
+
   title.addEventListener('click', () => {
     const svgElement = title.querySelector('svg');
-    svgElement.style.transform = 'rotate(90deg)';
+
+    // Increment or decrement the rotation angle by 90 degrees
+    rotation += 90;
+    if (rotation >= 360) {
+      rotation = 0;
+    }
+
+    // Apply the rotation transformation to the SVG element
+    svgElement.style.transform = `rotate(${rotation}deg)`;
   });
 });
+
 
 
