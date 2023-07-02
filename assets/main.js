@@ -188,8 +188,12 @@ function toggleSlide(element) {
   
   if (isHidden) {
     element.style.height = 'auto';
+    element.style.marginTop = '15px';
+    element.style.marginBottom = '10px';
   } else {
     element.style.height = '0px';
+    element.style.marginTop = '0px';
+    element.style.marginBottom = '0px';
   }
 }
 
