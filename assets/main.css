@@ -291,6 +291,11 @@ mega-menu {
 
 .has-mega-menu:hover svg {
   transform: rotate(180deg);
+  fill: var(--main-olive);
+}
+
+.has-mega-menu:hover .menu-link-title {
+  color: var(--main-olive);
 }
 
 mega-menu-item {
