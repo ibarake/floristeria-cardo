@@ -9,8 +9,8 @@
   </container>
   <preguntas>
     {% for block in section.blocks %}
-      <faq class="FAQ-title">
-        <question>
+      <faq class="faq-container">
+        <question class="FAQ-title">
         {{ block.settings.FAQ-title }}
         {% render 'icon-arrow-right-dropdown' %}
         </question>
