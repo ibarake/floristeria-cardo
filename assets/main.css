@@ -289,6 +289,10 @@ mega-menu {
   display: block;
 }
 
+.has-mega-menu:hover mega-menu sgv {
+  transform: scaleX(-1);
+}
+
 mega-menu-item {
   display: block;
   padding: 5px 5px;
