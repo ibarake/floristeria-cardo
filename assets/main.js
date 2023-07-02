@@ -24,25 +24,6 @@ closeMenu.addEventListener("click", function () {
   }
 });
 
-dropdownMenusFAQ.forEach(function (dropdownMenu) {
-  dropdownMenu.addEventListener("click", function () {
-    var parentLi = this.closest("#card");
-    var childLi = parentLi.querySelector("option");
-
-    if (activeDropdown && activeDropdown !== childLi) {
-      activeDropdown.style.height = "0";
-    }
-
-    if (childLi.style.height === "0px" || !childLi.style.height) {
-      childLi.style.height = childLi.scrollHeight + "px";
-      activeDropdown = childLi;
-    } else {
-      childLi.style.height = "0";
-      activeDropdown = null;
-    }
-  });
-});
-
 dropdownMenus.forEach(function (dropdownMenu) {
   dropdownMenu.addEventListener("click", function () {
     var parentLi = this.closest(".drawer-item-container");
