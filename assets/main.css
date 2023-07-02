@@ -489,6 +489,7 @@ inline-half-container.right {
 
 .overflow-auto {
   overflow-x: auto;
+  cursor: grab;
 }
 .overflow-auto::-webkit-scrollbar {
   display: none;
