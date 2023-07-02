@@ -1161,7 +1161,7 @@ preguntas {
 answer {
   display: block;
   height: 0px;
-  transition: height 750ms ease-in-out;
+  transition: all 750ms ease-in-out;
   overflow: hidden;
 }
 
