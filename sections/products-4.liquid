@@ -1,9 +1,10 @@
+<section class="product4">
 {% if section.settings.flor == true %}
   <flor class="flor-6">
     {% render 'Flor-6' %}
   </flor>
 {% endif %}
-<section class="product4 page-width {% if section.settings.color %}bg-linen{% endif %}">
+<product4 class="page-width {% if section.settings.color %}bg-linen{% endif %}">
   <container-arreglos>
     <p class="subtitulo-3 s3" id="p-subtitle">
       {{ section.settings.arreglos-subtitle }}
@@ -29,6 +30,7 @@
       </a>
     </p>
   </container-4products>
+</product4>
 </section>
 
 {% schema %}
