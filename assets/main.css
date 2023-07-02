@@ -1029,7 +1029,6 @@ preguntas {
 .FAQ-title {
   width: 780px;
   height: 60px;
-  border-bottom: 1px solid var(--main-gray);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1037,6 +1036,9 @@ preguntas {
   font-family: "DM Sans";
   font-weight: 500;
   font-size: 20px;
+}
+faq-container {
+  border-bottom: 1px solid var(--main-gray);
 }
 
 .FAQ-subtitle {
