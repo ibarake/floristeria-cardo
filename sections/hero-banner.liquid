@@ -19,10 +19,10 @@
     </hero-title>
     <hero-buttons>
       {% if section.settings.cta-1 != blank %}
-        <button class="cta cta-1 subtitulo-3">{{ section.settings.cta-1 }}</button>
+        <button class="cta cta-1 subtitulo-3"><a href="{{ section.settings.link-1 }}">{{ section.settings.cta-1 }}</a></button>
       {% endif %}
       {% if section.settings.cta-2 != blank %}
-        <button class="cta cta-2 subtitulo-3">{{ section.settings.cta-2 }}</button>
+        <button class="cta cta-2 subtitulo-3"><a href="{{ section.settings.link-1 }}">{{ section.settings.cta-2 }}</a></button>
       {% endif %}
     </hero-buttons>
   </inline-half-container>
