@@ -837,6 +837,8 @@ card-footer {
   align-items: center;
   border: none;
   background-color: var(--main-white);
+  height: 80%;
+  border-radius: 8px;
 }
 .card-add-to-cart:hover {
   background-color: var(--main-linen);
