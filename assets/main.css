@@ -1218,7 +1218,9 @@ answer {
 /* CONTACTO */
 @import url("https://fonts.cdnfonts.com/css/dm-sans");
 @import url("https://fonts.cdnfonts.com/css/newyork");
-
+.contacto {
+  padding: 50px 0;
+}
 contacto {
   height: 378px;
   border-radius: 12px;
