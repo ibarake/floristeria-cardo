@@ -623,8 +623,10 @@ hero-title {
   border-radius: 8px;
   border: none;
   padding: 10px 30px 10px 30px;
-  width: 100%;
+  width: 80%;
+  margin: auto;
   text-decoration: none;
+  text-align: center;
 }
 
 @media only screen and (max-width: 768px) {
