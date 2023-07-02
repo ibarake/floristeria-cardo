@@ -8,7 +8,9 @@
         "hero-subtitle": "Pellentesque cras adipiscing tempus libero vel nullam mauris tellus. Aliquam ultrices tellus consequat amet,",
         "add-to-cart-title": "Añadir al carrito",
         "cta-1": "Ver por Ocasión",
-        "cta-2": "Contactanos"
+        "link-1": "",
+        "cta-2": "Contactanos",
+        "link-2": ""
       }
     },
     "37db2c69-b11d-4881-b7e3-83e27a003a12": {
@@ -56,29 +58,29 @@
         "03dfe1aa-083f-40fe-a192-457676af774f": {
           "type": "FAQ",
           "settings": {
-            "FAQ-title": "Example",
-            "FAQ-text": "Example"
+            "FAQ-title": "Is there any warranty exclusions?",
+            "FAQ-text": "Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa."
           }
         },
         "6051fd48-e4f9-4550-b727-04b2413acd6d": {
           "type": "FAQ",
           "settings": {
-            "FAQ-title": "Example",
-            "FAQ-text": "Example"
+            "FAQ-title": "Is there any warranty exclusions?",
+            "FAQ-text": "Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa."
           }
         },
         "983a6bd6-6300-4100-81f1-975c20d9c221": {
           "type": "FAQ",
           "settings": {
-            "FAQ-title": "Example",
-            "FAQ-text": "Example"
+            "FAQ-title": "Is there any warranty exclusions?",
+            "FAQ-text": "Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa."
           }
         },
         "9b54aeaa-1948-491a-88f5-bfb9a7984cf8": {
           "type": "FAQ",
           "settings": {
-            "FAQ-title": "Example",
-            "FAQ-text": "Example"
+            "FAQ-title": "Is there any warranty exclusions?",
+            "FAQ-text": "Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa."
           }
         }
       },
