@@ -3,7 +3,7 @@
     {% render 'Flor-6' %}
   </flor>
 {% endif %}
-<section class="product4 page-width">
+<section class="product4 page-width {% if section.settings.color %}bg-linen{% endif %}">
   <container-arreglos>
     <p class="subtitulo-3 s3" id="p-subtitle">
       {{ section.settings.arreglos-subtitle }}
