@@ -171,6 +171,7 @@ elements.forEach((element) => {
 });
 
 /* FAQ DROPDOWN ANIMATION */
+
 document.addEventListener('DOMContentLoaded', function() {
   var faqTitles = document.querySelectorAll('.FAQ-title');
   var openAnswer = null; // Keeps track of the currently open answer
@@ -196,3 +197,37 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
+
+function toggleSlide(element) {
+  var isHidden = getComputedStyle(element).height === '0px';
+  
+  if (isHidden) {
+    element.style.height = 'auto';
+    element.style.marginTop = '15px';
+    element.style.marginBottom = '10px';
+  } else {
+    element.style.height = '0px';
+    element.style.marginTop = '0px';
+    element.style.marginBottom = '0px';
+  }
+}
+
+const faqTitles = document.querySelectorAll('.FAQ-title');
+
+faqTitles.forEach((title) => {
+  let rotation = 0; // Keeps track of the rotation angle
+
+  title.addEventListener('click', () => {
+    const svgElement = title.querySelector('svg');
+
+    // Toggle the rotation angle between 90 and 0 degrees
+    rotation = (rotation === 0) ? 90 : 0;
+
+    // Apply the rotation transformation to the SVG element
+    svgElement.style.transform = `rotate(${rotation}deg)`;
+  });
+});
+
+
+
