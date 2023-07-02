@@ -932,9 +932,11 @@ products-4-item {
 }
 .s-r {
   display: none;
+  width: auto;
 }
 .s-d {
   display: block;
+  width: auto;
 }
 
 @media only screen and (max-width: 768px) {
