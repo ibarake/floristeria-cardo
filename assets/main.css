@@ -1146,6 +1146,7 @@ contacto flor.mobile {
     position: relative;
     font-size: 32px;
     margin-bottom: 1rem;
+    margin-top: 10px;
     z-index: 2;
   }
 
