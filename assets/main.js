@@ -32,6 +32,7 @@ dropdownMenus.forEach(function (dropdownMenu) {
     if (activeDropdown && activeDropdown !== childLi) {
       dropdownMenu.style.transform = "scaleY(1)";
       activeDropdown.style.height = "0";
+      activeDropdown.querySelector('svg').style.transform = "scaleY(1)";
     }
 
     if (childLi.style.height === "0px" || !childLi.style.height) {
