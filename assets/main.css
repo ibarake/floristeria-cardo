@@ -1024,6 +1024,15 @@ products-4-item {
     transform-origin: 100% 50%;
     transform: scale(0.7);
   }
+  .flor-7 {
+    transform-origin: 50% 100%;
+    transform: scale(0.7);
+  }
+  .flor-8 {
+    transform-origin: 100% 50%;
+    transform: scale(0.7);
+  }
+
   .s-d {
     display: none;
   }
