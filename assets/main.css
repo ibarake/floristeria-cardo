@@ -1002,6 +1002,12 @@ products-4-item {
   top: 30%;
 }
 
+.flor-8 {
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+
 .bg-linen {
   background-color: var(--bg-linen);
 }
