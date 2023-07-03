@@ -1027,6 +1027,7 @@ products-4-item {
   .flor-7 {
     transform-origin: 0 100%;
     transform: scale(0.7);
+    top: 0;
   }
   .flor-8 {
     display: none;
