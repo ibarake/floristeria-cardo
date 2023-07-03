@@ -990,6 +990,10 @@ products-4-item {
   padding: 50px 0;
 }
 
+product4 {
+  z-index: 10;
+}
+
 .flor-6 {
   position: absolute;
   bottom: -300px;
