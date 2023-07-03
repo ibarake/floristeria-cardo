@@ -1065,6 +1065,7 @@ product4 {
     display: flex;
     justify-content: space-between;
     margin: 10px 0;
+    z-index: 9999;
   }
 
   container-4products::-webkit-scrollbar {
