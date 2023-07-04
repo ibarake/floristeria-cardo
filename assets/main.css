@@ -1575,7 +1575,7 @@ footer-container social-mobile {
     text-decoration: underline !important;
   }
 
-  footer .contacto {
+  item.contacto {
     padding: 0;
     background-color: #615420;
   }
