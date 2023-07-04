@@ -218,7 +218,7 @@ header {
   justify-content: center;
   width: 100%;
   background-color: var(--main-white);
-  height: 85px;
+  max-height: 85px;
   z-index: 9999;
 }
 
