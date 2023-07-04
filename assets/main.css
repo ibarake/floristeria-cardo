@@ -1184,6 +1184,7 @@ footer-copyright {
   justify-content: space-between;
   align-items: center;
   text-decoration: none;
+  margin-bottom: 1%;
 }
 
 footer-copyright a, social-mobile a {
@@ -1211,12 +1212,10 @@ footer-container social-mobile {
     text-align: center;
   }
 
-  footer h3.subtitulo-3,
+  footer item.contacto,
   .item-menu-1,
   .item-menu-2, 
   p.parrafo-3,
-  footer form#contact_form,
-  footer #footer-contacto,
   links-social {
     display: none;
   }
