@@ -1456,6 +1456,10 @@ footer .subtitulo-3 {
   color: var(--main-gray);
 }
 
+footer item.contacto {
+  padding: 0;
+}
+
 footer .contacto h5.subtitulo-4 {
   display: flex;
   color: var(--main-gray);
@@ -1573,11 +1577,6 @@ footer-container social-mobile {
 
   menu-mobile a {
     text-decoration: underline !important;
-  }
-
-  item.contacto {
-    padding: 0;
-    background-color: #615420;
   }
 }
 
