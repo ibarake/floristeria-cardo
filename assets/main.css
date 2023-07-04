@@ -462,9 +462,6 @@ dropdown-mega-menu {
     display: none;
   }
 
-  header {
-    grid-template-columns: 1fr 2fr 1fr;
-  }
   header img.header-logo {
     align-self: center;
     justify-self: center;
