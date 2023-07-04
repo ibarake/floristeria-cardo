@@ -508,6 +508,7 @@ product-card img.hero {
   min-width: 290px;
   min-height: 256px;
 }
+
 inline-half-container {
   z-index: 999;
 }
@@ -847,6 +848,7 @@ product-card {
   display: flex;
   flex-direction: column;
   z-index: 9999;
+  width: fit-content;
 }
 
 product-card:hover {
