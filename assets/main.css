@@ -505,8 +505,8 @@ hero-banner {
 }
 
 product-card img.hero {
-  width: 290px;
-  height: 256px;
+  min-width: 290px;
+  min-height: 256px;
 }
 inline-half-container {
   z-index: 999;
@@ -809,8 +809,8 @@ collection-slider::-webkit-scrollbar {
   background-color: var(--main-dark-color);
 }
 collection-card img {
-  min-width: 256px;
-  min-height: 300px;
+  width: 256px;
+  height: 300px;
   object-fit: cover;
 }
 
