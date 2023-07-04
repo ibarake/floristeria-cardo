@@ -1653,7 +1653,12 @@ right-sobre {
   color: var(--main-gray);
 }
 
-container-flor {
+container-flor1-2 {
   position: absolute;
   right: 0;
+}
+
+container-flor2-3 {
+  position: absolute;
+  left: 0;
 }
