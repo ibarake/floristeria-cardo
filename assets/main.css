@@ -452,6 +452,9 @@ dropdown-mega-menu {
 }
 
 @media only screen and (max-width: 768px) {
+  header {
+    grid-template-columns: 1fr 2fr 1fr;
+  }
   .hamburguer-menu {
     display: block;
     justify-self: flex-start;
