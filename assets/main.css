@@ -1489,7 +1489,9 @@ footer .email {
   padding-left: 5%;
   box-sizing: content-box;
 }
-
+footer .email:hover {
+  border: 1px solid var(--main-linen);
+}
 footer button.siguiente {
   width: 3rem;
   border: 1px solid var(--main-olive);
