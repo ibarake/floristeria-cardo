@@ -1656,6 +1656,7 @@ right-sobre {
 container-flor1-2 {
   position: absolute;
   right: 0;
+  margin-top: -25px;
 }
 
 container-flor2-3 {
