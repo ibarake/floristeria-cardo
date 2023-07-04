@@ -1645,5 +1645,9 @@ right-sobre {
 }
 
 #tt {
+  margin: 15px 0 0 0;
+}
+
+#pp {
   margin: 0;
 }
