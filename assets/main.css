@@ -1643,3 +1643,7 @@ right-sobre {
   text-align: left;
   color: olive;
 }
+
+#tt {
+  margin: 0;
+}
