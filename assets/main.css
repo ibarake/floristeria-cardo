@@ -848,7 +848,6 @@ product-card {
   display: flex;
   flex-direction: column;
   z-index: 9999;
-  width: fit-content;
 }
 
 product-card:hover {
