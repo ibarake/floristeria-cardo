@@ -1,14 +1,14 @@
 <footer-container class="page-width">
   <footer class="container">
     <item class="info-marca">
-      <img src="{{ settings.logo.src | img_url }}"alt="{{ settings.logo.alt }}">
+      <a href="/"><img src="{{ settings.logo.src | img_url }}"alt="{{ settings.logo.alt }}"></a>
       <p class="parrafo-3">{{ section.settings.descripcion-marca }}</p>
     </item>
     <menu class="item-menu-1">
       <h3 class="subtitulo-3">{{ section.settings.titulo-menu-1 }}</h3>
       <ul>
         {% for link in section.settings.menu-footer-1.links %}
-          <li>
+          <li class="grow">
             <a href="{{ link.url }}" class="subtitulo-3">{{ link.title }}</a>
           </li>
         {% endfor %}
@@ -18,7 +18,7 @@
       <h3 class="subtitulo-3">{{ section.settings.titulo-menu-2 }}</h3>
       <ul>
         {% for link in section.settings.menu-footer-2.links %}
-          <li>
+          <li class="grow">
             <a href="{{ link.url }}" class="subtitulo-3">{{ link.title }}</a>
           </li>
         {% endfor %}
@@ -27,7 +27,7 @@
     <menu-mobile class="item-mobile">
       <ul>
         {% for link in section.settings.menu-mobile.links %}
-          <li>
+          <li class="grow">
             <a href="{{ link.url }}" class="subtitulo-3">{{ link.title }}</a>
           </li>
         {% endfor %}
@@ -42,28 +42,28 @@
             type="email"
             name="contacto"
             placeholder="{{ section.settings.label-form }}" />
-          <button class="siguiente" type="submit">
+          <button class="grow siguiente" type="submit">
             {% render 'icon-next-footer' %}
           </button>
         </form>
       {% endform %}
       <ul id="footer-contacto">
         {% if section.settings.correo-contacto != blank %}
-          <li class="correo">
+          <li class="grow correo">
             <h5 class="subtitulo-4 ">
               {% render 'icon-gmail' %} {{ section.settings.correo-contacto }}
             </h5>
           </li>
         {% endif %}
         {% if section.settings.telefono-contacto != blank %}
-          <li class="telefono">
+          <li class="grow telefono">
             <h5 class="subtitulo-4 ">
               {% render 'icon-phone' %} {{ section.settings.telefono-contacto }}
             </h5>
           </li>
         {% endif %}
         {% if section.settings.direccion-contacto != blank %}
-          <li class="ubicacion">
+          <li class="grow ubicacion">
             <h5 class="subtitulo-4 ">
               {% render 'icon-location' %} {{ section.settings.direccion-contacto }}
             </h5>
@@ -74,17 +74,17 @@
   </footer>
   <social-mobile>
     {% if section.settings.url-facebook != blank %}
-      <a href="{{ section.settings.url-facebook }}">
+      <a class="grow" href="{{ section.settings.url-facebook }}">
         {% render 'icon-facebook' %}
       </a>
     {% endif %}
     {% if section.settings.url-messenger != blank %}
-      <a href="{{ section.settings.url-messenger }}">
+      <a class="grow" href="{{ section.settings.url-messenger }}">
         {% render 'icon-messenger' %}
       </a>
     {% endif %}
     {% if section.settings.url-instagram != blank %}
-      <a href="{{ section.settings.url-instagram }}">
+      <a class="grow" href="{{ section.settings.url-instagram }}">
         {% render 'icon-instagram' %}
       </a>
     {% endif %}

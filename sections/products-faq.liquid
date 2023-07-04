@@ -1,22 +1,5 @@
-<section class="arreglos-funebres">
-  <container-arreglos>
-    <p class="subtitulo-3 s3" id="p-subtitle">
-      {{ section.settings.arreglos-subtitle }}
-    </p>
-    <h1 class="titulo-1 t1" id="p-title">
-      {{ section.settings.arreglos-title }}
-    </h1>
-  </container-arreglos>
-  <container-products>
-    {% for product in section.settings.collection.products limit:4 %}
-        {% include 'product-card', hero-product: product, atc-btn: section.settings.button-text %}
-    {% endfor %}
-    <p class="subtitulo-2 s2">
-      {{ section.settings['subtitulo-fotos'] }}
-    </p>
-  </container-products>
-</section>
-<section class="preguntas-frecuentes">
+<pf class="bg-linen">
+<section class="preguntas-frecuentes page-width">
   <container>
     <h5 class="subtitulo-3 s3" id="subtitulo-preguntas">
       {{ section.settings['subtitle-preguntas'] }}
@@ -27,16 +10,19 @@
   </container>
   <preguntas>
     {% for block in section.blocks %}
-      <div class="FAQ-title">
+      <faq class="faq-container">
+        <question class="FAQ-title subtitulo-3">
         {{ block.settings.FAQ-title }}
         {% render 'icon-arrow-right-dropdown' %}
-      </div>
-      <div class="FAQ-text">
+        </question>
+      <answer class="FAQ-text parrafo-2">
         {{ block.settings.FAQ-text }}
-      </div>
+      </answer>
+      </faq>
     {% endfor %}
   </preguntas>
 </section>
+</pf>
 
 {% schema %}
   {
@@ -100,8 +86,7 @@
 	],
    "presets": [
      {
-       "category": "custom-collection-banner",
-       "name": "Custom collection section Flores"
+       "name": "faq"
      }
    ]
   }

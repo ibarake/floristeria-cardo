@@ -1,3 +1,4 @@
+<section class="contacto full-width bg-dark relative">
 <contacto class="page-width-contacto">
   <div class="flor-4">
     {% render 'flor-4' %}
@@ -21,14 +22,14 @@
           type="email"
           name="contact[email]">
         <input
-          class="button-contacto subtitulo-3"
+          class="button-contacto cta subtitulo-3"
           type="submit"
           value="{{ section.settings.button-title }}">
       </datos>
     {% endform %}
   </informacion>
 </contacto>
-
+</section>
 {% schema %}
   {
     "name": "contacto",
@@ -46,6 +47,10 @@
         "id": "button-title",
         "label": "Recibir informacion"
       }
+    ],
+    "presets": [{
+      "name": "contact"
+    }
     ]
   }
 {% endschema %}

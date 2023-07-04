@@ -19,17 +19,17 @@
     </hero-title>
     <hero-buttons>
       {% if section.settings.cta-1 != blank %}
-        <button class="cta cta-1 subtitulo-3">{{ section.settings.cta-1 }}</button>
+        <a class="cta-link cta cta-1 subtitulo-3" href="{{ section.settings.link-1 }}">{{ section.settings.cta-1 }}</a>
       {% endif %}
       {% if section.settings.cta-2 != blank %}
-        <button class="cta cta-2 subtitulo-3">{{ section.settings.cta-2 }}</button>
+        <a class="cta-link cta cta-2 subtitulo-3" href="{{ section.settings.link-1 }}">{{ section.settings.cta-2 }}</a>
       {% endif %}
     </hero-buttons>
   </inline-half-container>
   <inline-half-container class="right">
-    <products-container class="overflow-auto">
+    <products-container class="overflow-auto drag-scroll">
       {% for hero-product in section.settings.hero-collection.products %}
-        {% include 'product-card', hero-product: hero-product, atc-btn: section.settings.add-to-cart-title %}
+        {% include 'product-card', hero-product: hero-product, atc-btn: section.settings.add-to-cart-title, classes: "hero" %}
       {% endfor %}
     </products-container>
   </inline-half-container>
@@ -66,12 +66,28 @@
         "id": "cta-1",
         "label": "Titulo de boton con fondo",
         "default": "Ver por Ocasión"
-      }, {
+      }, 
+      {
+        "type": "url",
+        "id": "link-1",
+        "label": "link boton sin fondo"
+      },
+      {
         "type": "text",
         "id": "cta-2",
         "label": "Titulo boton sin fondo",
         "default": "Contactanos"
+      },
+      {
+        "type": "url",
+        "id": "link-2",
+        "label": "link boton sin fondo"
       }
-    ]
+    ],
+    "presets": [
+    {
+      "name": "hero-banner"
+    }
+  ]
   }
 {% endschema %}
