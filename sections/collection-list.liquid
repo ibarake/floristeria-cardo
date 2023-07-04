@@ -1,4 +1,4 @@
-<section class="full-width bg-dark">
+<section class="full-width bg-dark relative">
   <flor class="absolute collection-flor-2">
     {% render 'flor-collection-list-2' %}
   </flor>
@@ -18,7 +18,6 @@
       <a class="cta-3 subtitulo-3">{{ section.settings['cta-3'] }}</a>
     </collection-button>
   </collection-title>
-  <collection-scroll>
     <collection-slider class="drag-scroll">
       {% for collection in section.settings.collection_list %}
         <a class="collection-item" href="{{ collection.url }}">
@@ -26,7 +25,6 @@
         </a>
       {% endfor %}
     </collection-slider>
-  </collection-scroll>
   <a class="cta-3-responsive subtitulo-3">{{ section.settings['cta-3'] }}</a>
 </collection-list>
 </section>
