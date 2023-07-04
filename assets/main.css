@@ -1569,6 +1569,10 @@ footer-container social-mobile {
   menu-mobile a {
     text-decoration: underline !important;
   }
+  item.contacto {
+    padding: 0;
+    background-color: #615420;
+  }
 }
 
 .products-faq2 {
