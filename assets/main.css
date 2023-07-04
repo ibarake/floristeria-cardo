@@ -505,10 +505,8 @@ hero-banner {
 }
 
 product-card img.hero {
-  min-width: 88px;
-  min-height: 100px;
-  max-width: 290px;
-  max-height: 256px;
+  width: 290px;
+  height: 256px;
 }
 
 inline-half-container {
