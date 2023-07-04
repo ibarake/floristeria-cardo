@@ -809,8 +809,8 @@ collection-slider::-webkit-scrollbar {
   background-color: var(--main-dark-color);
 }
 collection-card img {
-  width: 256px;
-  height: 300px;
+  min-width: 256px;
+  min-height: 300px;
   object-fit: cover;
 }
 
