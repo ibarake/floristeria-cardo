@@ -1,9 +1,9 @@
 <section class="sobre-cardo">
     <main-container>
-        <h1 class="title-1">
+        <h1 class="titulo-1" id="title-1">
             {{ section.settings.title }}
         </h1>
-        <p class="parrafo-1">
+        <p class="parrafo-1" id="parrafo-1">
             {{ section.settings.subtitle }}
             prueba
         </p>
@@ -13,15 +13,15 @@
             {{ section.settings.image | image_url: }}
         </left-sobre>
         <right-sobre>
-            <h3>
+            <h3 class="titulo-3">
                 {{ section.settings.title-information }}
             </h3>
-            <p>
+            <p class="parrafo-1">
                 {{ section.setting.information-text }}
             </p>
         </right-sobre>
     </information-container>
-    {% section Contacto %}
+    {% section contacto %}
 </section>
 
 {% schema  %}
