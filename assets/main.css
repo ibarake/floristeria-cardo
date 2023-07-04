@@ -1654,8 +1654,6 @@ right-sobre {
 }
 
 container-flor {
-  width: 385.524861202626px;
-  height: 596.2240297900657px;
-  top: 496.582763671875px;
-  left: 1335.5703125px;
+  position: absolute;
+  right: 0;
 }
