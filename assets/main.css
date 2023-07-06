@@ -1594,3 +1594,16 @@ footer-container social-mobile {
   font-weight: 400;
   line-height: 72px;
 }
+
+.fecha-politics{
+  display: flex;
+  width: 542px;
+  flex-direction: column; 
+  color: var(--neutrales-gris-3, #9F9F9F);
+  text-align: center;
+  font-size: 16px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

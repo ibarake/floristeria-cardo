@@ -1,9 +1,10 @@
 <h1 class="title-politics">
   {{ page.title }}
 </h1>
+<p class="fecha-politics">
+  {{ page.published_at | date: '%m/ %d/ %Y' }}
+</p>
 
-
-{{ page.published_at | date: '%m/ %d/ %Y' }}
 {{ page.content }}
 {{ section.settings.menu }}
 
