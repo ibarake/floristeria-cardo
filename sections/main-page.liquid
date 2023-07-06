@@ -37,8 +37,8 @@
     <left-sobre>
         <img
         class="collection-card-image"
-        src="{{ page.image | img_url }}"
-        alt="{{ page.image.alt }}">
+        src="{{ section.settings.image. | img_url }}"
+        alt="{{ section.settings.image.alt }}">
     </left-sobre>
     <right-sobre>
       <h3 class="titulo-3" id="titulo-3">
@@ -77,6 +77,10 @@
         "type": "textarea",
         "id": "information-text",
         "label": "Informacion"
+      },
+      {
+        "type": "image_picker",
+        "id": "image"
       }
     ]
   }
