@@ -38,19 +38,18 @@
     <left-sobre>
         <img
         class="collection-card-image"
-        src="{{ collection.image | img_url }}"
-        alt="{{ collection.image.alt }}">
+        src="{{ page.image | img_url }}"
+        alt="{{ page.image.alt }}">
     </left-sobre>
     <right-sobre>
       <h3 class="titulo-3" id="titulo-3">
-        {{ section.settings.title-information }}
+        {{ page.title }}
       </h3>
       <p class="parrafo-1" id="parrafo-2">
-        {{ section.settings.information-text }}
+        {{ page.content }}
       </p>
     </right-sobre>
   </information-container>
-  {% include 'contacto' %}
 </section>
 
 {% schema %}
@@ -79,10 +78,9 @@
         "type": "textarea",
         "id": "information-text",
         "label": "Informacion"
-      }, {
-        "type": "collection",
-        "id": "collection",
-        "label": "collection"
+      },
+      {
+        "type": ""
       }
     ]
   }
