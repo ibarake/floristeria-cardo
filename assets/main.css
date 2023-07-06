@@ -1607,3 +1607,21 @@ footer-container social-mobile {
   font-weight: 400;
   line-height: normal;
 }
+
+.title2-politics{
+  color: var(--oliva-oscuro, #615420);
+  font-size: 36px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.title3-politics{
+  color: var(--oliva-oscuro, #615420);
+  font-size: 36px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
