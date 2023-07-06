@@ -1,7 +1,9 @@
 <h1>Collection Main</h1>
-{% for product in collection.products %}
-  {% include 'product-card', hero-product: product, atc-btn: section.settings.add-to-cart-title, classes: "" %}
-{% endfor %}
+<product-grid>
+  {% for product in collection.products %}
+    {% include 'product-card', hero-product: product, atc-btn: section.settings.add-to-cart-title, classes: "" %}
+  {% endfor %}
+</product-grid>
 {% schema %}
   {
     "name": "Collection Main",
