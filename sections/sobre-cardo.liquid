@@ -1,71 +1,82 @@
 <section class="sobre-cardo">
-    <container-flor1-2>
-        {% render 'Flor1-2' %}
-    </container-flor1-2>
-    <container-flor2-3>
-        {% render 'Flor2-3' %}
-    </container-flor2-3>
-    <main-container>
-        <h1 class="titulo-1" id="title-1">
-            {{ section.settings.title }}
-        </h1>
-        <p class="parrafo-1" id="parrafo-1">
-            {{ section.settings.subtitle }}
-            prueba
-        </p>
-        <info-container>
-            <gmail>
-                <h5 class="titulo-5" id="tt">Email</h5>
-                <p class="parrafo-1" id="pp">Correo@gmail.com</p>
-            </gmail>
-            <phone>
-                <h5 class="titulo-5" id="tt">Teléfono</h5>
-                <p class="parrafo-1" id="pp">3227060520</p>
-            </phone>
-            <address>
-                <h5 class="titulo-5" id="tt">Dirección</h5>
-                <p class="parrafo-1" id="pp">Correo@gmail.com</p>
-            </address>
-        </info-container>
-    </main-container>
-    <information-container>
-        <left-sobre>
-        </left-sobre>
-        <right-sobre>
-            <h3 class="titulo-3" id="titulo-3">
-                {{ section.settings.title-information }}
-            </h3>
-            <p class="parrafo-1" id="parrafo-1">
-                {{ section.settings.information-text }}
-            </p>
-        </right-sobre>
-    </information-container>
+  <container-flor1-2>
+    {% render 'Flor1-2' %}
+  </container-flor1-2>
+  <container-flor2-3>
+    {% render 'Flor2-3' %}
+  </container-flor2-3>
+  <main-container>
+    <h1 class="titulo-1" id="title-1">
+      {{ section.settings.title }}
+    </h1>
+    <p class="parrafo-1" id="parrafo-1">
+      {{ section.settings.subtitle }}
+      prueba
+    </p>
+    <info-container>
+      <gmail>
+        <h5 class="titulo-5" id="tt">Email</h5>
+        <p class="parrafo-1" id="pp">Correo@gmail.com</p>
+      </gmail>
+      <phone>
+        <h5 class="titulo-5" id="tt">Teléfono</h5>
+        <p class="parrafo-1" id="pp">3227060520</p>
+      </phone>
+      <address>
+        <h5 class="titulo-5" id="tt">Dirección</h5>
+        <p class="parrafo-1" id="pp">Correo@gmail.com</p>
+      </address>
+    </info-container>
+  </main-container>
+  <information-container>
+    <left-sobre>
+        <img
+        class="collection-card-image"
+        src="{{ collection.featured_image | img_url }}"
+        alt="{{ collection.featured_image.alt }}">
+    </left-sobre>
+    <right-sobre>
+      <h3 class="titulo-3" id="titulo-3">
+        {{ section.settings.title-information }}
+      </h3>
+      <p class="parrafo-1" id="parrafo-1">
+        {{ section.settings.information-text }}
+      </p>
+    </right-sobre>
+  </information-container>
 </section>
 
-{% schema  %}
-    {
-        "name": "sobre-cardo",
-        "settings": [
-            {
-                "type": "text",
-                "id": "title",
-                "label": "Titulo",
-                "default": "Lorem ipsum dolor sit amet"
-            }, {
-                "type": "textarea",
-                "id": "subtitle",
-                "label": "subtitle",
-                "default": "Pellentesque cras adipiscing tempus libero vel nullam mauris tellus. Aliquam ultrices tellus consequat amet,"
-            }, {
-                "type": "text",
-                "id": "title-information",
-                "label": "Titulo Informacion",
-                "default": "Sobre Cardó"
-            }, {
-                "type": "textarea",
-                "id": "information-text",
-                "label": "Informacion"
-            }
-        ]
-    }
+{% schema %}
+  {
+    "name": "sobre-cardo",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Titulo",
+        "default": "Lorem ipsum dolor sit amet"
+      },
+      {
+        "type": "textarea",
+        "id": "subtitle",
+        "label": "subtitle",
+        "default": "Pellentesque cras adipiscing tempus libero vel nullam mauris tellus. Aliquam ultrices tellus consequat amet,"
+      },
+      {
+        "type": "text",
+        "id": "title-information",
+        "label": "Titulo Informacion",
+        "default": "Sobre Cardó"
+      },
+      {
+        "type": "textarea",
+        "id": "information-text",
+        "label": "Informacion"
+      }, {
+        "type": "collection",
+        "id": "collection",
+        "label": "collection"
+      }
+    ]
+  }
 {% endschema %}
