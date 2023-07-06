@@ -1,14 +1,26 @@
 {
-    "sections": {
-      "main": {
-        "type": "main-page",
-        "settings": {
-          "padding_top": 28,
-          "padding_bottom": 28
-        }
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "title": "Lorem ipsum dolor sit amet",
+        "subtitle": "Pellentesque cras adipiscing tempus libero vel nullam mauris tellus. Aliquam ultrices tellus consequat amet,",
+        "title-information": "Sobre Cardó",
+        "information-text": "",
+        "collection": ""
       }
     },
-    "order": [
-      "main"
-    ]
+    "ab468724-9c43-46f4-88d0-5e4aaa13eb36": {
+      "type": "contacto",
+      "settings": {
+        "contact-title": "",
+        "contact-subtitle": "",
+        "button-title": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "ab468724-9c43-46f4-88d0-5e4aaa13eb36"
+  ]
 }
