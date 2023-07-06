@@ -1,7 +1,17 @@
 <h1>Collection Main</h1>
+{% for product in collection.products %}
+  {% include 'product-card', hero-product: product, atc-btn: section.settings.add-to-cart-title, classes: "" %}
+{% endfor %}
 {% schema %}
   {
-    "name": "Collection Main"
-
+    "name": "Collection Main",
+    "settings": [
+      {
+        "type": "text",
+        "id": "add-to-cart-title",
+        "label": "Titulo principal H1",
+        "default": "Añadir al carrito"
+      }
+    ]
   }
 {% endschema %}
