@@ -1585,6 +1585,7 @@ footer-container social-mobile {
 #title-politics{
   color: var(--oliva-oscuro, #615420);
   text-align: center;
+  margin: auto;
 }
 
 .fecha-politics{
