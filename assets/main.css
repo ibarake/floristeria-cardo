@@ -1583,3 +1583,15 @@ product-grid{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
+
+#sort-by{
+  display: flex;
+  width: 245px;
+  height: 54px;
+  padding: 10px 16px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  border: 1px solid var(--lino-2, #EFE4CF);
+  background: var(--lino, #F7F0E2);
+}
