@@ -1628,11 +1628,14 @@ cont-2{
   width: 50%;
   background-color: var(--main-white);
   margin-bottom: 3rem;
+  color: var(--neutrales-gris-2, #6B6B6B);
+  font-size: 20px;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
-#subcont-2{
-  color: var(--neutrales-gris-2, #6B6B6B);
-}
 
 cont-3{
   display: flex;
