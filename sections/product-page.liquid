@@ -10,13 +10,9 @@
       <precio></precio>
       <parrafo></parrafo>
       <botones>
-
-        <cantidad><input
-            type="text"
-            name="quantity"
-            min="1"
-            value="1"></cantidad>
-
+        {% form 'product' %}
+          <input type="submit" value="Add to cart">
+        {% endform %}
       </botones>
     </informacion-producto>
   </producto>
