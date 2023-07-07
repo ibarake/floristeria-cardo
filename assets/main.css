@@ -1625,3 +1625,7 @@ footer-container social-mobile {
   font-weight: 500;
   line-height: normal;
 }
+
+.main-politics{
+  background-color: var(--main-dark-color);
+}
