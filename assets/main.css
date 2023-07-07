@@ -1704,11 +1704,20 @@ address {
   display: flex;
 }
 
+/* POLITICAS DE ENVIO STYLES */
+
+.buttons-container {
+  display: flex;
+}
+
 .ver-por-ocasion {
   width: 220px;
   height: 50px;
   background-color: var(--main-olive);
   border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--main-white);
 }
 
 .contacto-button {
@@ -1716,4 +1725,7 @@ address {
   height: 50px;
   border: 1px solid var(--main-olive);
   border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--main-olive);
 }
