@@ -1708,11 +1708,13 @@ address {
 
 buttons-container {
   display: flex;
+  width: 35%;
+  justify-content: space-evenly;
 }
 
 .ver-por-ocasion {
   width: 220px;
-  height: 50px;
+  height: 40px;
   background-color: var(--main-olive);
   border-radius: 5px;
   text-align: center;
@@ -1722,7 +1724,7 @@ buttons-container {
 
 .contact-button {
   width: 220px;
-  height: 50px;
+  height: 40px;
   border: 1px solid var(--main-olive);
   border-radius: 5px;
   text-align: center;
