@@ -5,21 +5,13 @@
       "settings": {
         "title": "Lorem ipsum dolor sit amet",
         "subtitle": "Pellentesque cras adipiscing tempus libero vel nullam mauris tellus. Aliquam ultrices tellus consequat amet,",
-        "image": "shopify:\/\/shop_images\/DSCF6327_d1d5f480-9973-4178-b035-956cb7931887.jpg",
+        "image": "shopify:\/\/shop_images\/WhatsAppImage2023-04-12at10.47.58AM.jpg",
         "label-correo": "Correo",
         "correo": "prueba@gmail.com",
         "label-numero": "Número",
         "numero": 3203949606,
         "label-direccion": "Dirección",
         "direccion": "Calle 98 # 18-21 Bogotá D.C. - Colombia"
-      }
-    },
-    "ab468724-9c43-46f4-88d0-5e4aaa13eb36": {
-      "type": "contacto",
-      "settings": {
-        "contact-title": "Contáctanos",
-        "contact-subtitle": "Pellentesque cras adipiscing tempus libero vel nullam mauris tellus. Aliquam ultrices tellus consequat amet,",
-        "button-title": "Recibir Información"
       }
     },
     "6bc7c31e-c082-4666-a549-5e866ea10ff3": {
@@ -69,11 +61,19 @@
         "subtitle-preguntas": "preguntas frecuentes",
         "subtitulo-fotos": "Ver todos"
       }
+    },
+    "ab468724-9c43-46f4-88d0-5e4aaa13eb36": {
+      "type": "contacto",
+      "settings": {
+        "contact-title": "Contáctanos",
+        "contact-subtitle": "Pellentesque cras adipiscing tempus libero vel nullam mauris tellus. Aliquam ultrices tellus consequat amet,",
+        "button-title": "Recibir Información"
+      }
     }
   },
   "order": [
     "main",
-    "ab468724-9c43-46f4-88d0-5e4aaa13eb36",
-    "6bc7c31e-c082-4666-a549-5e866ea10ff3"
+    "6bc7c31e-c082-4666-a549-5e866ea10ff3",
+    "ab468724-9c43-46f4-88d0-5e4aaa13eb36"
   ]
 }
