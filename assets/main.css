@@ -1629,3 +1629,8 @@ footer-container social-mobile {
 .main-politics{
   background-color: var(--main-dark-color);
 }
+
+cont-1{
+  border-radius: 12px;
+  background: var(--neutrales-blanco, #FFF);
+}
