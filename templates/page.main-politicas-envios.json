@@ -5,7 +5,9 @@
       "settings": {
         "title": "Lorem ipsum dolor sit amet",
         "subtitle": "Pellentesque cras adipiscing tempus libero vel nullam mauris tellus. Aliquam ultrices tellus consequat amet,",
-        "image": "shopify:\/\/shop_images\/WhatsAppImage2023-05-05at2.12.13PM.jpg"
+        "image": "shopify:\/\/shop_images\/WhatsAppImage2023-05-05at2.12.13PM.jpg",
+        "ver-por-ocasion": "Ver por Ocasion",
+        "contacto-button": "Contacto"
       }
     },
     "6bc7c31e-c082-4666-a549-5e866ea10ff3": {
