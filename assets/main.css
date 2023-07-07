@@ -1721,6 +1721,7 @@ buttons-container {
   text-align: center;
   text-decoration: none;
   color: var(--main-white);
+  padding-top: 10px;
 }
 
 .contact-button {
@@ -1731,4 +1732,5 @@ buttons-container {
   text-align: center;
   text-decoration: none;
   color: var(--main-olive);
+  padding-top: 10px;
 }
