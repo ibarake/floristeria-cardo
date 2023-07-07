@@ -1584,7 +1584,7 @@ footer-container social-mobile {
 
 .main-politics{
   background-color: var(--main-dark-color) ;
-  margin: 3rem 0;
+  
 }
 
 #title-politics{
@@ -1611,6 +1611,7 @@ footer-container social-mobile {
 cont-info{
   display: flex;
   justify-content: space-evenly;
+  margin: 3rem 0;
 
 }
 
