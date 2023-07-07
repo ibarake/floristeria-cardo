@@ -1685,3 +1685,20 @@ container-flor3-1 {
   position: absolute;
   left: 0;
 }
+
+cont-icon {
+  margin: 0px 15px;
+  padding-top: 25px;
+}
+
+gmail {
+  display: flex;
+}
+
+phone {
+  display: flex;
+}
+
+address {
+  display: flex;
+}
