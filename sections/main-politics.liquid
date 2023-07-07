@@ -6,9 +6,11 @@
     <p class="fecha-politics">
       {{ page.published_at | date: '%m/ %d/ %Y' }}
     </p>
-    <cont-1>
+    <div class="content-politics">
       {{ page.content }}
-    </cont-1>
+    </div>
+
+
     {{ section.settings.menu.title }}
     {% for link in section.settings.menu.links %}
       {{ link.title | link_to: link.url }}

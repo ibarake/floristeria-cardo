@@ -1610,29 +1610,11 @@ footer-container social-mobile {
   line-height: normal;
 }
 
-.title2-politics{
-  color: var(--oliva-oscuro, #615420);
-  font-size: 36px;
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
-
-.title3-politics{
-  color: var(--oliva-oscuro, #615420);
-  font-size: 36px;
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-}
-
 .main-politics{
   background-color: var(--main-dark-color);
 }
 
-cont-1{
+.content-politics{
   border-radius: 12px;
   background-color: var(--neutrales-blanco, #FFF);
   align-self: auto;
