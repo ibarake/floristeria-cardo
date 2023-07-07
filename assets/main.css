@@ -1633,7 +1633,12 @@ footer-container social-mobile {
 }
 
 cont-2{
-  border-radius: 12px;
-  background: var(--neutrales-blanco, #FFF);
-  align-self: auto;
+background: var(--neutrales-blanco, #FFF);
+width: 980px;
+height: 974px;
+padding: 40px 60px;
+flex-direction: column;
+align-items: flex-start;
+gap: 10px;
+flex-shrink: 0;
 }
