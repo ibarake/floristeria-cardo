@@ -1611,13 +1611,14 @@ footer-container social-mobile {
 cont-info{
   display: flex;
   justify-content: space-evenly;
-  margin: 5rem 0 5rem 0;
+  
 
 }
 
 cont-2{
   width: 50%;
   background-color: var(--main-white);
+  margin: 3rem 0;
 }
 
 cont-3{
