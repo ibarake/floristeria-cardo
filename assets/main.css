@@ -1582,6 +1582,10 @@ footer-container social-mobile {
 
 /* MAIN-POLITICS */
 
+.main-politics{
+  background-color: var(--main-dark-color) ;
+}
+
 #title-politics{
   width: 30%;
   color: var(--oliva-oscuro, #615420);
@@ -1611,6 +1615,7 @@ cont-info{
 
 cont-2{
   width: 50%;
+  background-color: var(--main-white);
 }
 
 cont-3{
