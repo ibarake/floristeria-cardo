@@ -1633,7 +1633,7 @@ footer-container social-mobile {
 }
 
 cont-2{
-background: var(--neutrales-blanco, #FFF);
+background-color: var(--neutrales-blanco, #FFF);
 width: 980px;
 height: 974px;
 padding: 40px 60px;
