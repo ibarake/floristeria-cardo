@@ -14,16 +14,28 @@
     </p>
     <info-container>
       <gmail>
-        <h5 class="titulo-5" id="tt">Email</h5>
-        <p class="parrafo-1" id="pp">Correo@gmail.com</p>
+        <h5 class="titulo-5" id="tt">
+          {{ section.settings.label-correo }}
+        </h5>
+        <p class="parrafo-1" id="pp">
+          {{ section.settings.label-correo }}
+        </p>
       </gmail>
       <phone>
-        <h5 class="titulo-5" id="tt">Teléfono</h5>
-        <p class="parrafo-1" id="pp">3227060520</p>
+        <h5 class="titulo-5" id="tt">
+          {{ section.settings.label-telefono }}
+        </h5>
+        <p class="parrafo-1" id="pp">
+          {{ section.settings.label-telefono }}
+        </p>
       </phone>
       <address>
-        <h5 class="titulo-5" id="tt">Dirección</h5>
-        <p class="parrafo-1" id="pp">Correo@gmail.com</p>
+        <h5 class="titulo-5" id="tt">
+          {{ section.settings.label-direccion }}
+        </h5>
+        <p class="parrafo-1" id="pp">
+          {{ section.settings.direccion }}
+        </p>
       </address>
     </info-container>
   </main-container>
@@ -71,6 +83,42 @@
         "type": "image_picker",
         "label": "image",
         "id": "image"
+      },
+      {
+        "type": "text",
+        "id": "label-correo",
+        "label": "Label Correo",
+        "default": "Correo"
+      },
+      {
+        "type": "text",
+        "id": "correo",
+        "label": "Correo",
+        "default": "Correo@gmail.com"
+      },
+      {
+        "type": "text",
+        "id": "label-numero",
+        "label": "Label Numero",
+        "default": "Numero"
+      },
+      {
+        "type": "number",
+        "id": "numero",
+        "label": "Numero",
+        "default": "3227060520"
+      },
+      {
+        "type": "text",
+        "id": "label-direccion",
+        "label": "Label Direccion",
+        "default": "Direccion"
+      },
+      {
+        "type": "text",
+        "id": "direccion",
+        "label": "Direccion",
+        "default": "Calle 98 # 18-21 Bogotá D.C. - Colombia"
       }
     ]
   }
