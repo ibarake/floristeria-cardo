@@ -12,7 +12,7 @@
   </p>
 </cont-1>
 
-
+{{ section.settings.menu.title }}
 {% for link in section.settings.menu.links %}
   {{ link.title | link_to: link.url }}
 {% endfor %}
