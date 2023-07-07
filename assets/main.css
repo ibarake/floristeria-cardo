@@ -168,6 +168,14 @@ p {
   line-height: 32px;
 }
 
+.subtitulo-7 {
+  font-family: "DM Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 .parrafo-1 {
   font-family: "DM Sans";
   font-style: normal;
@@ -1620,6 +1628,10 @@ cont-2{
   width: 50%;
   background-color: var(--main-white);
   margin-bottom: 3rem;
+}
+
+#subcont-2{
+  color: var(--neutrales-gris-2, #6B6B6B);
 }
 
 cont-3{
