@@ -1583,6 +1583,7 @@ footer-container social-mobile {
 /* MAIN-POLITICS */
 
 #title-politics{
+  width: 30%;
   color: var(--oliva-oscuro, #615420);
   text-align: center;
   margin: auto;
