@@ -1595,6 +1595,11 @@ main-container {
   background-color: #F7F0E2;
 }
 
+.information-image {
+  width: 622px;
+  height: 611px;
+}
+
 #title-1 {
   width: 30%;
   text-align: center;
