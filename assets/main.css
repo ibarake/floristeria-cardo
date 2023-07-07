@@ -1720,7 +1720,7 @@ address {
   color: var(--main-white);
 }
 
-.contacto-button {
+.contact-button {
   width: 220px;
   height: 50px;
   border: 1px solid var(--main-olive);
