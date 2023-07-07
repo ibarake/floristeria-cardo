@@ -14,7 +14,9 @@
     </p>
     <info-container>
       <gmail>
-        {% render 'gmail' %}
+        <cont-icon>    
+          {% render 'correo' %}
+        </cont-icon>
         <h5 class="titulo-5" id="tt">
           {{ section.settings.label-correo }}
         </h5>
@@ -23,7 +25,9 @@
         </p>
       </gmail>
       <phone>
-        {% render 'telefono' %}
+        <cont-icon>    
+          {% render 'telefono' %}
+        </cont-icon>
         <h5 class="titulo-5" id="tt">
           {{ section.settings.label-numero }}
         </h5>
@@ -32,7 +36,9 @@
         </p>
       </phone>
       <address>
-        {% render 'direccion' %}
+        <cont-icon>    
+          {% render 'direccion' %}
+        </cont-icon>
         <h5 class="titulo-5" id="tt">
           {{ section.settings.label-direccion }}
         </h5>
