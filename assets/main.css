@@ -1611,6 +1611,7 @@ footer-container social-mobile {
 cont-info{
   display: flex;
   justify-content: space-evenly;
+  margin-top: 3rem;
   
 
 }
@@ -1618,7 +1619,7 @@ cont-info{
 cont-2{
   width: 50%;
   background-color: var(--main-white);
-  margin: 3rem 0;
+  margin-bottom: 3rem;
 }
 
 cont-3{
