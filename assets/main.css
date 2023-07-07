@@ -1715,7 +1715,7 @@ buttons-container {
 
 .ver-por-ocasion {
   width: 220px;
-  height: 30px;
+  height: 40px;
   background-color: var(--main-olive);
   border-radius: 5px;
   text-align: center;
@@ -1725,7 +1725,7 @@ buttons-container {
 
 .contact-button {
   width: 220px;
-  height: 30px;
+  height: 40px;
   border: 1px solid var(--main-olive);
   border-radius: 5px;
   text-align: center;
