@@ -6,13 +6,13 @@
     <p class="fecha-politics">
       {{ page.published_at | date: '%m/ %d/ %Y' }}
     </p>
-    <cont-1>
+    <cont-2>
       <h2 class="title2-politics"></h2>
       {{ page.content }}
       <h2 class="title3-politics"></h2>
       <p class="i-2">Sed finibus rutrum tortor hendrerit rutrum. Duis vehicula purus eget interdum condimentum. Nulla facilisi. Phasellus vel massa nibh. Aliquam eget suscipit magna, at venenatis mi. Nulla at euismod velit, id volutpat lacus. Nullam ante enim, sagittis id dignissim a, tempus vel nunc. Nulla facilisi. Phasellus a eros tellus.
       </p>
-    </cont-1>
+    </cont-2>
     {{ section.settings.menu.title }}
     {% for link in section.settings.menu.links %}
       {{ link.title | link_to: link.url }}
