@@ -7,17 +7,19 @@
       {{ page.published_at | date: '%m/ %d/ %Y' }}
     </p>
   </cont-1>
-  <cont-2>
-    <p>
-      {{ page.content }}
-    </p>
-  </cont-2>
-  <cont-3>
-    {{ section.settings.menu.title }}
-    {% for link in section.settings.menu.links %}
-      {{ link.title | link_to: link.url }}
-    {% endfor %}
-  </cont-3>
+  <cont-info>
+    <cont-2>
+      <p>
+        {{ page.content }}
+      </p>
+    </cont-2>
+    <cont-3>
+      {{ section.settings.menu.title }}
+      {% for link in section.settings.menu.links %}
+        {{ link.title | link_to: link.url }}
+      {% endfor %}
+    </cont-3>
+  </cont-info>
 </section>
 
 {% schema %}
