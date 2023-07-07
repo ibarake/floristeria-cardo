@@ -5,7 +5,16 @@
     <filter-top>
       <order-vertical></order-vertical>
       <order-horizontal></order-horizontal>
-      <sort-by></sort-by>
+      <sort-by>
+        <select id="sort-by">
+        {% assign sort_by = collection.sort_by | default: collection.default_sort_by %}
+        {% for option in collection.sort_options %}
+        <option value="{{ option.value }}" {% if option.value == sort_by %}selected="selected"{% endif %}>
+            {{ option.name }}
+        </option>
+        {% endfor %}
+        </select>
+      </sort-by>
     </filter-top>
     <product-grid>
       {% for product in collection.products %}
