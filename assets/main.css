@@ -1603,13 +1603,9 @@ footer-container social-mobile {
   line-height: normal;
 }
 
-.main-politics{
-  background-color: var(--main-dark-color);
-}
-
-.content-politics{
-  border-radius: 12px;
-  background-color: var(--neutrales-blanco, #FFF);
-  align-self: auto;
+cont-info{
+  display: flex;
+  justify-content: space-between;
   
 }
+
