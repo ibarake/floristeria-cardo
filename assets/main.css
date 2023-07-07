@@ -1635,4 +1635,5 @@ footer-container social-mobile {
 cont-1{
   border-radius: 12px;
   background: var(--neutrales-blanco, #FFF);
+  align-self: auto;
 }
