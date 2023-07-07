@@ -1596,8 +1596,9 @@ main-container {
 }
 
 .information-image {
-  width: 622px;
-  height: 611px;
+  width: 580px;
+  height: 570px;
+  border-radius: 8px;
 }
 
 #title-1 {
