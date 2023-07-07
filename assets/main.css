@@ -1599,6 +1599,7 @@ footer-container social-mobile {
 .fecha-politics{
   display: flex;
   width: 542px;
+  margin: auto;
   flex-direction: column; 
   color: var(--neutrales-gris-3, #9F9F9F);
   text-align: center;
