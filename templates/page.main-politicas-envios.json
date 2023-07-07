@@ -21,10 +21,59 @@
         "contact-subtitle": "Pellentesque cras adipiscing tempus libero vel nullam mauris tellus. Aliquam ultrices tellus consequat amet,",
         "button-title": "Recibir Información"
       }
+    },
+    "6bc7c31e-c082-4666-a549-5e866ea10ff3": {
+      "type": "products-faq",
+      "blocks": {
+        "a2a46735-1107-4568-a288-1725097a2497": {
+          "type": "FAQ",
+          "settings": {
+            "FAQ-title": "Example",
+            "FAQ-text": "Example"
+          }
+        },
+        "6dca9e0d-d864-49c3-b227-69863d2bced4": {
+          "type": "FAQ",
+          "settings": {
+            "FAQ-title": "Example",
+            "FAQ-text": "Example"
+          }
+        },
+        "28266eab-65c2-4286-81c0-ace7e248a349": {
+          "type": "FAQ",
+          "settings": {
+            "FAQ-title": "Example",
+            "FAQ-text": "Example"
+          }
+        },
+        "e945dbe0-4640-4549-9464-fa6e1cb1af51": {
+          "type": "FAQ",
+          "settings": {
+            "FAQ-title": "Example",
+            "FAQ-text": "Example"
+          }
+        }
+      },
+      "block_order": [
+        "a2a46735-1107-4568-a288-1725097a2497",
+        "6dca9e0d-d864-49c3-b227-69863d2bced4",
+        "28266eab-65c2-4286-81c0-ace7e248a349",
+        "e945dbe0-4640-4549-9464-fa6e1cb1af51"
+      ],
+      "settings": {
+        "arreglos-title": "Lorem ipsum dolor sit amet",
+        "arreglos-subtitle": "Arreglos Funebres",
+        "collection": "",
+        "button-text": "Añadir al carrito",
+        "title-preguntas": "Sobre Cardó",
+        "subtitle-preguntas": "preguntas frecuentes",
+        "subtitulo-fotos": "Ver todos"
+      }
     }
   },
   "order": [
     "main",
-    "ab468724-9c43-46f4-88d0-5e4aaa13eb36"
+    "ab468724-9c43-46f4-88d0-5e4aaa13eb36",
+    "6bc7c31e-c082-4666-a549-5e866ea10ff3"
   ]
 }
