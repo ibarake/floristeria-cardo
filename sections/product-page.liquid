@@ -1,12 +1,24 @@
-{% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
-{% endschema %}
-<h1> Product page</h1>
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
+<section class="product-page">
+  <producto>
+    <carrusel>
+      <img>
+    </carrusel>
+    <img>
+    <informacion-producto>
+      <titulo-corto></titulo-corto>
+      <titulo-producto></titulo-producto>
+      <precio></precio>
+      <parrafo></parrafo>
+      <botones>
+        {% form 'product' %}
+          <cantidad><input
+              type="text"
+              name="quantity"
+              min="1"
+              value="1"></cantidad>
+        {% endform %}
+      </botones>
+    </informacion-producto>
+  </producto>
+  <combo></combo>
+</section>
