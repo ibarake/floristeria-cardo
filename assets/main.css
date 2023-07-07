@@ -1703,3 +1703,17 @@ phone {
 address {
   display: flex;
 }
+
+.ver-por-ocasion {
+  width: 220px;
+  height: 50px;
+  background-color: var(--main-olive);
+  border-radius: 5px;
+}
+
+.contacto-button {
+  width: 220px;
+  height: 50px;
+  border: 1px solid var(--main-olive);
+  border-radius: 5px;
+}
