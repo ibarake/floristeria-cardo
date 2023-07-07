@@ -1,23 +1,24 @@
 <section class="main-politics">
-  <main-politics class="page-width">
-    <h1 class="title-politics">
+  <cont-1>
+    <h1 class="titulo-1" id="title-politics">
       {{ page.title }}
     </h1>
     <p class="fecha-politics">
       {{ page.published_at | date: '%m/ %d/ %Y' }}
     </p>
-    <div class="content-politics">
+  </cont-1>
+  <cont-2>
+    <p>
       {{ page.content }}
-    </div>
-
-
+    </p>
+  </cont-2>
+  <cont-3>
     {{ section.settings.menu.title }}
     {% for link in section.settings.menu.links %}
       {{ link.title | link_to: link.url }}
     {% endfor %}
-  </main-politics>
+  </cont-3>
 </section>
-
 
 {% schema %}
   {
