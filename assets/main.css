@@ -1631,6 +1631,9 @@ product-page product-description.parrafo-2 {
   width: 66%;
   color: var(--main-gray);
 }
+product-page product-description p {
+  margin: 0;
+}
 
 product-page product-title, product-price {
   color: var(--main-olive);
