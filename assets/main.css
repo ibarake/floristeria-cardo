@@ -1615,3 +1615,7 @@ product-page product-information {
   flex-direction: column;
   width: 50%;
 }
+product-page product-description.parrafo-3 {
+  white-space: break-spaces;
+  width: 65%;
+}
