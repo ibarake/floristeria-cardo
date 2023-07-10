@@ -1600,6 +1600,7 @@ section.product-page product-page.container {
 }
 
 product-page prouct-img {
+  display: flex;
   width: 50%;
 }
 
