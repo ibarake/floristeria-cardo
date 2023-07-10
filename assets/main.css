@@ -1631,3 +1631,6 @@ product-title, product-price, product-description {
 product-description {
   margin-top: 2.1%;
 }
+shipping, information {
+  border: 1px solid;
+}
