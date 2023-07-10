@@ -1628,7 +1628,7 @@ product-page product-information {
 
 product-page product-description.parrafo-2 {
   white-space: break-spaces;
-  width: 66%;
+  width: 80%;
   color: var(--main-gray);
 }
 product-page product-description p {
