@@ -1579,6 +1579,7 @@ footer-container social-mobile {
     text-decoration: underline !important;
   }
 }
+
 .products-faq2 {
   display: flex;
   justify-content: center;
@@ -1591,46 +1592,59 @@ section.product-page {
   height: 50em;
   background-color: var(--main-color);
 }
+
 section.product-page product-page.container {
   position: relative;
   display: flex;
   padding-top: 4.8%;
 }
+
 product-page prouct-img {
   width: 50%;
 }
+
 section.product-page .subtitulo-3 {
   color: var(--main-gray);
   margin-bottom: -.8%;
 }
+
 section.product-page .flor-2 {
   top: -5%;
 }
+
 section.product-page .flor-1 {
   top: -4%;
   transform: rotate(0deg);
   z-index: 0;
 }
+
 product-page product-information {
   display: flex;
   flex-direction: column;
   width: 50%;
 }
+
 product-page product-description.parrafo-3 {
   white-space: break-spaces;
   width: 65%;
   color: var(--main-gray);
 }
+
 product-page product-title, product-price {
   color: var(--main-olive);
 }
+
 product-page product-information 
-product-title, product-price, product-description {
+product-title product-price product-description {
   margin-bottom: 0.5%;
 } 
+
 product-description {
   margin-top: 2.1%;
 }
-shipping, information {
-  border: 1px solid;
+
+product-page shipping information {
+  border-top: 1px solid var(--main-linen);
+  padding: 2% 0px 2% 1%;
+  width: 75%;
 }
