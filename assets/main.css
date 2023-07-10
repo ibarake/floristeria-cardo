@@ -1641,11 +1641,11 @@ product-page product-title, product-price {
 
 product-page product-information 
 product-title, product-price, product-description {
-  margin-bottom: 0.5%;
+  margin-bottom: 2.5%;
 }  
 
-product-description {
-  margin-top: 2.1%;
+product-page product-description {
+  margin-top: -4%;
 }
 
 .extra-product {
