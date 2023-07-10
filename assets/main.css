@@ -1621,6 +1621,9 @@ product-page product-description.parrafo-3 {
   width: 65%;
   color: var(--main-gray);
 }
+product-page product-title, product-price {
+  color: var(--main-olive);
+}
 product-page product-information 
 product-title, product-price, product-description {
   margin-bottom: 0.5%;
