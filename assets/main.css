@@ -1621,3 +1621,7 @@ product-page product-description.parrafo-3 {
   width: 65%;
   color: var(--main-gray);
 }
+product-page product-information 
+product-title, product-price, product-description {
+  background-color: green;
+} 
