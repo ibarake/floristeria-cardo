@@ -1582,7 +1582,7 @@ footer-container social-mobile {
 /* PRODUCT PAGE STYLES */
 .product-page {
   width: 100%;
-  height: auto;
+  height: 50em;
   background-color: var(--main-color);
 }
 .products-faq2 {
