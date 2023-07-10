@@ -1660,7 +1660,12 @@ product-page .extra-product .subtitulo-2 {
 }
 
 product-page carrusel{
-  width: 10%;
+  width: 16%;
   height: 100%;
-  background-color: var(--main-olive);
+  background-color: var(--main-white);
+  margin-right: 2%;
+}
+product-page img {
+  background-color: white;
+  width: 78%;
 }
