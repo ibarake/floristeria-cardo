@@ -1623,5 +1623,5 @@ product-page product-description.parrafo-3 {
 }
 product-page product-information 
 product-title, product-price, product-description {
-  background-color: green;
+  margin-bottom: 0.5%;
 } 
