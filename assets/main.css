@@ -1585,7 +1585,7 @@ footer-container social-mobile {
   height: 50em;
   background-color: var(--main-color);
 }
-.product-page .product.container {
+.product-page .container {
   position: relative;
 }
 .product-page .flor-2 {
