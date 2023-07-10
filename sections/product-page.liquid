@@ -8,9 +8,7 @@
   <product class="container">
     <prouct-img></prouct-img>
     <product-information>
-      {% for product in collections['sale-potions'].products %}
-        {{- product.title | link_to: product.url }}
-      {% endfor %}
+      {{ product.collections }}
     </product-information>
   </product>
 </section>
