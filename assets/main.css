@@ -1635,7 +1635,7 @@ product-page product-title, product-price {
 }
 
 product-page product-information 
-product-title product-price product-description {
+product-title, product-price, product-description {
   margin-bottom: 0.5%;
   background-color: green;
 } 
