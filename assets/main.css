@@ -1585,7 +1585,7 @@ footer-container social-mobile {
   height: 50em;
   background-color: var(--main-color);
 }
-.product-page .container {
+.product-page product.container {
   position: relative;
 }
 .product-page .subtitulo-3 {
