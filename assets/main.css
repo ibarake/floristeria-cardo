@@ -1588,6 +1588,9 @@ footer-container social-mobile {
 .product-page .container {
   position: relative;
 }
+.product-page .subtitulo-3 {
+  color: var(--main-gray);
+}
 .product-page .flor-2 {
   top: -5%;
 }
