@@ -1650,7 +1650,7 @@ product-description {
   padding: 2% 0px 2% 1%;
   width: 75%;
 }
-product-page extra-product svg {
+product-page .extra-product svg {
   transform: scale(.8);
 }
 
