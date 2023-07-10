@@ -23,20 +23,34 @@
       <product-description class="parrafo-2">
         {{ product.description }}
       </product-description>
-      <shipping class="extra-product">
-        {% render 'icon-transport' %}
-        <p class="subtitulo-2">Envío gratis</p>
-      </shipping>
-      <information class="extra-product">
-        {% render 'icon-information' %}
-        <p class="subtitulo-2">Information extra</p>
-      </information>
+      {% if section.settings.envio != blank %}
+        <shipping class="extra-product">
+          {% render 'icon-transport' %}
+          <p class="subtitulo-2">{{ section.settings.envio }}</p>
+        </shipping>
+      {% endif %}
+      {% if section.settings.info-extra != blank %}
+        <information class="extra-product">
+          {% render 'icon-information' %}
+          <p class="subtitulo-2">{{ section.settings.info-extra }}</p>
+        </information>
+      {% endif %}
     </product-information>
   </product-page>
 </section>
 {% schema %}
   {
     "name": "Página del producto",
-    "settings": []
+    "settings": [
+      {
+        "type": "text",
+        "id": "envio",
+        "label": "Contenido del item envíos "
+      }, {
+        "type": "text",
+        "id": "info-extra",
+        "label": "Contenido del item informacion extra "
+      }
+    ]
   }
 {% endschema %}
