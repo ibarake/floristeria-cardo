@@ -1650,3 +1650,7 @@ product-description {
   padding: 2% 0px 2% 1%;
   width: 75%;
 }
+
+product-page product-information shipping,information svg{
+  transform: scale(.8);
+}
