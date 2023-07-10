@@ -1579,7 +1579,11 @@ footer-container social-mobile {
     text-decoration: underline !important;
   }
 }
-
+/* PRODUCT PAGE STYLES */
+.product-page {
+  width: 100%;
+  background-color: var(--main-color);
+}
 .products-faq2 {
   display: flex;
   justify-content: center;
