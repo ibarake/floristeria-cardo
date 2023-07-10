@@ -1637,14 +1637,13 @@ product-page product-title, product-price {
 product-page product-information 
 product-title, product-price, product-description {
   margin-bottom: 0.5%;
-  background-color: green;
 }  
 
 product-description {
   margin-top: 2.1%;
 }
 
-product-page shipping,information {
+.extra-product {
   border-top: 1px solid var(--main-linen);
   padding: 2% 0px 2% 1%;
   width: 75%;
