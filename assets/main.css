@@ -1593,6 +1593,10 @@ section.product-page {
 }
 section.product-page product-page.container {
   position: relative;
+  display: flex;
+}
+product-page prouct-img {
+  width: 50%;
 }
 section.product-page .subtitulo-3 {
   color: var(--main-gray);
@@ -1609,4 +1613,5 @@ section.product-page .flor-1 {
 product-page product-information {
   display: flex;
   flex-direction: column;
+  width: 50%;
 }
