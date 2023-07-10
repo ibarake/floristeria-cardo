@@ -1591,7 +1591,7 @@ section.product-page {
   height: 50em;
   background-color: var(--main-color);
 }
-section.product-page product.container {
+section.product-page product-page.container {
   position: relative;
 }
 section.product-page .subtitulo-3 {
