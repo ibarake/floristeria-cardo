@@ -7,6 +7,10 @@
   </div>
   <product class="container">
     <prouct-img></prouct-img>
-    <product-information></product-information>
+    <product-information>
+      {% for collection in collections %}
+        {{- collection.title | link_to: collection.url }}
+      {% endfor %}
+    </product-information>
   </product>
 </section>
