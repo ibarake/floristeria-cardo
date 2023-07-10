@@ -1658,3 +1658,7 @@ product-page .extra-product .subtitulo-2 {
   font-size: 18px;
 }
 
+product-page carrusel{
+  width: 10%;
+  background-color: var(--main-olive);
+}
