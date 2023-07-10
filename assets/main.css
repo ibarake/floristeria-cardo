@@ -1596,6 +1596,7 @@ section.product-page product-page.container {
 }
 section.product-page .subtitulo-3 {
   color: var(--main-gray);
+  margin-bottom: -.8%;
 }
 section.product-page .flor-2 {
   top: -5%;
