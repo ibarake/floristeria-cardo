@@ -5,7 +5,7 @@
       "header": {
         "type": "header",
         "settings": {
-          "main-menu": "menu-principal",
+          "main-menu": "main-menu",
           "atc-head-btn": "Carrito"
         }
       },
@@ -124,6 +124,11 @@
           "subtitle-preguntas": "preguntas frecuentes",
           "subtitulo-fotos": "Ver todos",
           "style-s": "style 1"
+        }
+      },
+      "product-page": {
+        "type": "product-page",
+        "settings": {
         }
       }
     },
