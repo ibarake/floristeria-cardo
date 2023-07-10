@@ -1598,7 +1598,6 @@ section.product-page {
 section.product-page product-page.container {
   position: relative;
   display: flex;
-  padding-top: 4.8%;
 }
 
 product-page prouct-img {
