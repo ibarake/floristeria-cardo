@@ -1643,7 +1643,7 @@ product-description {
   margin-top: 2.1%;
 }
 
-extra-product {
+.extra-product {
   display: flex;
   align-items: center;
   border-top: 1px solid var(--main-linen);
