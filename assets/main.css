@@ -1588,6 +1588,10 @@ footer-container social-mobile {
 .product-page .flor-2 {
   top: -5%;
 }
+.product-page .flor-1 {
+  top: -7%;
+  transform: rotate(0deg);
+}
 .products-faq2 {
   display: flex;
   justify-content: center;
