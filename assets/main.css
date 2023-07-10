@@ -1643,14 +1643,17 @@ product-description {
   margin-top: 2.1%;
 }
 
-.extra-product {
+extra-product {
   display: flex;
   align-items: center;
   border-top: 1px solid var(--main-linen);
   padding: 2% 0px 2% 1%;
   width: 75%;
 }
-
-product-page svg {
+product-page extra-product svg {
   transform: scale(.8);
 }
+
+product-page extra-product .subtitulo-2{
+  margin-left: 1.4%;
+} 
