@@ -1651,6 +1651,6 @@ product-description {
   width: 75%;
 }
 
-product-page shipping,information svg {
+product-page shipping information svg {
   transform: scale(.8);
 }
