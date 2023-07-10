@@ -8,8 +8,13 @@
   <product class="container">
     <prouct-img></prouct-img>
     <product-information>
-      <collection-title class="subtitulo-3 titulo-coleccion">Arreglos florales</collection-title>
-      {{ product.collections }}
+      <collection-title class="subtitulo-3">Arreglos florales
+        {% comment %} {{ product.collections }} {% endcomment %}
+      </collection-title>
+      <product-title class="titulo-3">Rosas para mamá
+        {% comment %} {{ product.title }} {% endcomment %}
+      </product-title>
+
     </product-information>
   </product>
 </section>
