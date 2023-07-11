@@ -1723,7 +1723,7 @@ address {
     line-height: 15px;
   }
 
-  infor-container {
+  info-container {
     display: block;
   }
 
@@ -1732,6 +1732,14 @@ address {
     border-left: 0;
     padding: 0;
     margin: 0;
+  }
+
+  container-flor1-2 {
+    top: -50rem;
+  }
+
+  container-flor2-3 {
+    top: -50rem;
   }
 }
 
