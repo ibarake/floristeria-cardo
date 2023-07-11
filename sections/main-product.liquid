@@ -38,14 +38,13 @@
             min="1"
             value="1">
         </quantity>
-
-        <input type="submit" value="Add to cart">
-        {{ form | payment_button }}
-
+        <add-to-car>
+          <input type="submit" value="Agregar al carrito">
+        </add-to-car>
+        <payment>
+          {{ form | payment_button }}
+        </payment>
       {% endform %}
-
-
-
       {% if section.settings.envio != blank %}
         <shipping class="extra-product">
           {% render 'icon-transport' %}
