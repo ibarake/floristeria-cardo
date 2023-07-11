@@ -1638,10 +1638,12 @@ cont-2{
 }
 
 
-subtitulo-politics{
+#subtitulo-politics{
   display: flex;
   flex-direction: column;
   color: var(--neutrales-gris-1, #414141);
+  font-weight: 400;
+  line-height: 3rem;
 }
 
 @media (max-width: 768px) {
