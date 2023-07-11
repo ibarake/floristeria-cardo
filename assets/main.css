@@ -1687,3 +1687,7 @@ product-page .product-form {
   width: 90%;
   justify-content: space-around;
 }
+
+product-page .shopify-payment-button__button--unbranded {
+  background-color: var(--main-olive);
+}
