@@ -23,7 +23,7 @@
       <product-description class="parrafo-2">
         {{ product.description }}
       </product-description>
-      {% form 'product', product %}
+      {% form 'product', product, class: "product-form", novalidate: 'novalidate' %}
         <input
           type="text"
           name="quantity"
