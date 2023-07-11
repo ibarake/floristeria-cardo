@@ -1638,20 +1638,16 @@ cont-2{
 }
 
 
-cont-3{
+subtitulo-politics{
   display: flex;
   flex-direction: column;
   color: var(--neutrales-gris-1, #414141);
-  font-size: 24px;
-  font-family: DM Sans;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 3rem;
 }
 
 @media (max-width: 768px) {
   #title-politics {
     width: 100%;
+    font-size: 28px;
   }
 
   .fecha-politics {
