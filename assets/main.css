@@ -61,6 +61,7 @@ p {
   --main-olive: #615420;
   --linen-3: #e0b37f;
   --bg-linen: #fafafa;
+  --dark-gray:#414141;
 }
 
 /* TEXT PRESET STYLES*/
@@ -1645,6 +1646,10 @@ cont-2{
   flex-direction: column;
   color: var(--neutrales-gris-1, #414141);
   line-height: 3rem;
+}
+
+#subtitulo-politics a{
+  color: var(--dark-gray);
 }
 
 @media (max-width: 768px) {
