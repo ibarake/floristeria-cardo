@@ -1681,3 +1681,9 @@ product-page .atc-product{
 product-page .add-to-cart-text {
   font-size: 17px;
 }
+
+product-page .product-form {
+  display: flex;
+  width: 90%;
+  justify-content: space-around;
+}
