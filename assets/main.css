@@ -1678,3 +1678,6 @@ product-page .atc-product{
   padding: 10px;
   max-width: 25%;
 }
+product-page .add-to-cart-text {
+  font-size: 17px;
+}
