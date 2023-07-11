@@ -23,6 +23,17 @@
       <product-description class="parrafo-2">
         {{ product.description }}
       </product-description>
+      {% form 'product', product %}
+        <input
+          type="text"
+          name="quantity"
+          min="1"
+          value="1">
+        <input type="submit" value="Add to cart">
+        {{ form | payment_button }}
+      {% endform %}
+      <quantity></quantity>
+
       {% if section.settings.envio != blank %}
         <shipping class="extra-product">
           {% render 'icon-transport' %}
