@@ -1823,3 +1823,19 @@ buttons-container {
   color: var(--main-olive);
   padding-top: 10px;
 }
+
+@media only screen and (max-width: 768px) {
+  buttons-container {
+    width: 100%;
+  }
+
+  .contact-button {
+    width: 170px;
+    height: 35px;
+  }
+
+  .ver-por-ocasion {
+    width: 170px;
+    height: 35px;
+  }
+}
