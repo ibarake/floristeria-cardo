@@ -1786,7 +1786,11 @@ address {
   .information-image {
     width: 280px;
     height: 280px;
-}
+  }
+
+  main-container {
+    height: 420px;
+  }
 }
 
 /* POLITICAS DE ENVIO STYLES */
