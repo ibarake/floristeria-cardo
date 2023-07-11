@@ -1675,4 +1675,5 @@ product-page img {
 }
 product-page .atc-product{
   border: 1px solid var(--main-olive);
+  padding: 0;
 }
