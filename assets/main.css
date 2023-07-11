@@ -1766,7 +1766,6 @@ address {
 
   information-container {
     flex-direction: column-reverse;
-    align-items: flex-start;
   }
 
   #titulo-3 {
@@ -1779,6 +1778,7 @@ address {
 
   right-sobre {
     width: 100%;
+    margin: 0;
     margin-bottom: 3rem;
   }
 
