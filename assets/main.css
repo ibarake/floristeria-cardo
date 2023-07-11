@@ -1649,21 +1649,19 @@ cont-3{
   line-height: 3rem;
 }
 
-@media only screen and (max-width: 768px) {
-  cont-2 {
-    width: 84%;
-    height: auto;
-    justify-content: left;
-    padding: 3%;
-    overflow: hidden;
+@media (max-width: 480px) {
+  #title-politics {
+    font-size: 20px;
   }
-#title-politics{
-    position: relative;
-    font-size: 32px;
-    margin-bottom: 1rem;
-    margin-top: 10px;
-    z-index: 2;
-  
+
+  .fecha-politics {
+    font-size: 14px;
+  }
+
+  cont-3 {
+    font-size: 20px; 
+    line-height: 2.5rem; 
+  }
 }
 
-}
+
