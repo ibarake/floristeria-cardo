@@ -1735,9 +1735,12 @@ address {
     align-items: center;
     border-bottom: 1px solid var(--main-gray);
     border-top: 1px solid var(--main-gray);
-    padding: 30px 0 30px 0;
-    margin: 30px 0 30px 0;
+    padding-bottom: 30px;
   }
+
+  gmail {
+    padding-bottom: 30px;
+}
 
   container-flor1-2 {
     top: -50rem;
@@ -1749,6 +1752,7 @@ address {
 
   .titulo-5 {
     font-size: 16px;
+    line-height: 0;
   }
 
   #pp {
