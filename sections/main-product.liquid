@@ -31,17 +31,20 @@
             </option>
           {% endfor %}
         </select>
-        <input
-          type="text"
-          name="quantity"
-          min="1"
-          value="1">
+        <quantity>
+          <input
+            type="text"
+            name="quantity"
+            min="1"
+            value="1">
+        </quantity>
+
         <input type="submit" value="Add to cart">
         {{ form | payment_button }}
 
       {% endform %}
 
-      <quantity></quantity>
+
 
       {% if section.settings.envio != blank %}
         <shipping class="extra-product">
