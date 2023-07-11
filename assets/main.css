@@ -1741,6 +1741,19 @@ address {
   container-flor2-3 {
     top: -50rem;
   }
+
+  .titulo-5 {
+    font-size: 16px;
+  }
+
+  #pp {
+    width: 100%;
+  }
+
+  svg {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 /* POLITICAS DE ENVIO STYLES */
