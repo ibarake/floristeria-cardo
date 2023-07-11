@@ -1690,10 +1690,10 @@ product-page .product-form {
 
 product-page .shopify-payment-button__button--unbranded {
   background-color: var(--main-olive);
+  transition: all 500ms ease-in-out;
 }
 product-page .shopify-payment-button__button--unbranded:hover:not([disabled]) {
-  background-color: var(--main-color);
   color: var(--main-olive);
-  border: 2px solid var(--main-olive);
+  background-color:  var(--linen-3);
   font-weight: bold;
 }
