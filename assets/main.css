@@ -1691,3 +1691,6 @@ product-page .product-form {
 product-page .shopify-payment-button__button--unbranded {
   background-color: var(--main-olive);
 }
+product-page .shopify-payment-button__button--unbranded:hover:not([disabled]) {
+  background-color: var(--main-color);
+}
