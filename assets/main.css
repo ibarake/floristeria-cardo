@@ -1649,6 +1649,21 @@ cont-3{
   line-height: 3rem;
 }
 
+@media (max-width: 768px) {
+  #title-politics {
+    width: 100%;
+  }
+
+  .fecha-politics {
+    width: 100%;
+    max-width: 542px;
+  }
+
+  cont-2 {
+    width: 100%;
+  }
+}
+
 @media (max-width: 480px) {
   #title-politics {
     font-size: 20px;
@@ -1659,8 +1674,8 @@ cont-3{
   }
 
   cont-3 {
-    font-size: 20px; 
-    line-height: 2.5rem; 
+    font-size: 20px;
+    line-height: 2.5rem;
   }
 }
 
