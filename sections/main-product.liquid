@@ -24,13 +24,13 @@
         {{ product.description }}
       </product-description>
       {% form 'product', product, class: "product-form", novalidate: 'novalidate' %}
-        <input name="id" type="hidden">
+        <select name="id">
           {% for variant in product.variants %}
             <option value="{{ variant.id }}"{% if variant == product.selected_or_first_available_variant %}selected="selected"{% endif %}>
               {{ variant.title }} - {{ variant.price | money }}
             </option>
           {% endfor %}
-        </input>
+        </select>
         <input
           type="text"
           name="quantity"
