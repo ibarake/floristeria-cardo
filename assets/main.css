@@ -1676,7 +1676,7 @@ product-page img {
 product-page .atc-product{
   border: 1px solid var(--main-olive);
   padding: 10px;
-  max-width: 33%;
+  max-width: 100%;
 }
 product-page .add-to-cart-text {
   font-size: 17px;
