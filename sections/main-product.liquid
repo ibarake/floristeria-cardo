@@ -39,7 +39,10 @@
             value="1">
         </quantity>
         <add-to-car>
-          <input type="submit" value="Agregar al carrito">
+          <button>
+            {% render 'icon-cart' %}
+            <p>Agregar al carrito</p>
+          </button>
         </add-to-car>
         <payment>
           {{ form | payment_button }}
