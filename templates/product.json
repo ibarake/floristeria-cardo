@@ -3,6 +3,8 @@
     "product-page": {
       "type": "product-page",
       "settings": {
+        "envio": "Envío gratis",
+        "info-extra": "Información extra"
       }
     }
   },
