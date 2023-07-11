@@ -1779,7 +1779,13 @@ address {
 
   right-sobre {
     width: 100%;
+    margin-bottom: 3rem;
   }
+
+  .information-image {
+    width: 280px;
+    height: 280px;
+}
 }
 
 /* POLITICAS DE ENVIO STYLES */
