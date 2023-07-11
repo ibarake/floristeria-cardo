@@ -1673,3 +1673,6 @@ product-page img {
   background-color: white;
   width: 78%;
 }
+product-page .atc-product{
+  border: 1px solid var(--main-olive);
+}
