@@ -1579,6 +1579,12 @@ footer-container social-mobile {
   align-items: center;
 }
 /* COLLECTION MAIN */
+
+#collection-main {
+  display: grid;
+  grid-template-columns: 2fr 3fr; 
+}
+
 product-grid{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -1595,3 +1601,4 @@ product-grid{
   border: 1px solid var(--lino-2, #EFE4CF);
   background: var(--lino, #F7F0E2);
 }
+
