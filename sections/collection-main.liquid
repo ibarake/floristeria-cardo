@@ -4,16 +4,6 @@
     <form class="filter-form">
       {%- for filter in collection.filters -%}
         <details class="filter-group">
-          <summary class="filter-group-summary">
-            <div>
-              <span>{{ filter.label }}</span>
-
-              {%- if filter.active_values.size > 0 -%}
-                <span>({{ filter.active_values.size }})</span>
-              {%- endif -%}
-            </div>
-          </summary>
-
           <div class="filter-group-display">
             <div class="filter-group-display__header">
               <span class="filter-group-display__header-selected">{{ filter.active_values.size }} selected</span>
