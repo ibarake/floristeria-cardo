@@ -1580,6 +1580,20 @@ footer-container social-mobile {
 }
 /* COLLECTION MAIN */
 
+topbar{
+  grid-area: topbar;
+  display: grid;
+  grid-template-columns: 1fr 3fr; 
+}
+
+aside{
+  grid-area: aside;
+}
+
+content{
+  grid-area: content;
+}
+
 #collection-main {
   display: grid;
   grid-template-columns: 1fr 3fr; 
