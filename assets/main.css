@@ -1583,6 +1583,8 @@ footer-container social-mobile {
 #collection-main {
   display: grid;
   grid-template-columns: 1fr 3fr; 
+  grid-template-areas: "topbar topbar"
+  "aside content";
 }
 
 product-grid{
