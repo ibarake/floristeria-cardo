@@ -1,5 +1,8 @@
 <h1>Collection Main</h1>
 <section id="collection-main" class="page-width">
+  <topbar>
+    <h3 class="titulo-3">{{ section.settings['total-p'] }}({{ collection.products_count }})</h3>
+  </topbar>
   <aside>
     <form class="filter-form">
       {%- for filter in collection.filters -%}
@@ -159,6 +162,12 @@
       "id": "add-to-cart-title",
       "label": "Titulo principal H1",
       "default": "Añadir al carrito"
+    },
+    {
+      "type": "text",
+      "id": "total-p",
+      "label": "Total productos titulo H3",
+      "default": "Todos los Arreglos"
     }
   ]
 }
