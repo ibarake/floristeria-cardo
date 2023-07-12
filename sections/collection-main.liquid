@@ -5,14 +5,6 @@
       {%- for filter in collection.filters -%}
         <filters class="filter-group">
           <div class="filter-group-display">
-            <div class="filter-group-display__header">
-              <span class="filter-group-display__header-selected">{{ filter.active_values.size }} selected</span>
-
-              {%- if filter.active_values.size > 0 -%}
-                <a href="{{ filter.url_to_remove }}" class="filter-group-display__header-reset">Reset</a>
-              {%- endif -%}
-            </div>
-
             {%- case filter.type -%}
               {%- when 'boolean', 'list' -%}
                 <ul class="filter-group-display__list">
