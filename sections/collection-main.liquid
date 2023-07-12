@@ -3,7 +3,7 @@
   <aside>
     <form class="filter-form">
       {%- for filter in collection.filters -%}
-        <details class="filter-group">
+        <filters class="filter-group">
           <div class="filter-group-display">
             <div class="filter-group-display__header">
               <span class="filter-group-display__header-selected">{{ filter.active_values.size }} selected</span>
@@ -81,7 +81,7 @@
                 </div>
             {%- endcase -%}
           </div>
-        </details>
+        </filters>
       {%- endfor -%}
 
       <div class="active-filters">
