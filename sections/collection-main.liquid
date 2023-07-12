@@ -47,6 +47,7 @@
             <div class="filter-group-display__price-range">
               <div class="filter-group-display__price-range-from">
                 <span>{{ cart.currency.symbol }}</span>
+                <label for="Filter-{{ filter.min_value.param_name }}">From</label>
 
                 <input name="{{ filter.min_value.param_name }}"
                   id="Filter-{{ filter.min_value.param_name }}"
@@ -59,10 +60,10 @@
                   max="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
                 >
 
-                <label for="Filter-{{ filter.min_value.param_name }}">From</label>
               </div>
               <div class="filter-group-display__price-range-to">
                 <span>{{ cart.currency.symbol }}</span>
+                <label for="Filter-{{ filter.max_value.param_name }}">To</label>
 
                 <input name="{{ filter.max_value.param_name }}"
                   id="Filter-{{ filter.max_value.param_name }}"
@@ -75,7 +76,6 @@
                   max="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
                 >
 
-                <label for="Filter-{{ filter.max_value.param_name }}">To</label>
               </div>
             </div>
 
