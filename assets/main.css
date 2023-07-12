@@ -1584,6 +1584,7 @@ topbar{
   grid-area: topbar;
   display: grid;
   grid-template-columns: 1fr 3fr; 
+  align-items: center;
 }
 
 topbar .titulo-3{
