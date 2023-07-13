@@ -1848,7 +1848,6 @@ group {
   cursor: pointer;
   text-decoration: none;
   border-radius: 5px;
-  text-transform: uppercase;
   color: var(--main-black);
 }
 
