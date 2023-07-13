@@ -1831,6 +1831,7 @@ group {
 
 #title-proc {
   color: var(--main-olive);
+  margin-top: 0;
 }
 
 #numbers {
