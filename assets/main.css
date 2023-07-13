@@ -1837,6 +1837,15 @@ group {
   margin-left: 1rem;
 }
 
+.button-proc {
+  width: 350px;
+  height: 50px;
+  text-align: center;
+  background-color: var(--main-linen);
+  border: none;
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 768px) {
   buttons-container {
     width: 100%;
