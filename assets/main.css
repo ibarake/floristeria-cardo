@@ -1840,7 +1840,7 @@ group {
 
 .button-proc {
   display: flex;
-  text-align: center;
+  justify-content: center;
   width: 240px;
   padding: 10px 0;
   background-color: var(--main-linen);
