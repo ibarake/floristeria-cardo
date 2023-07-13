@@ -35,8 +35,11 @@
         alt="{{ section.settings.image.alt }}">
     </left-sobre>
     <right-sobre>
-      <p class="parrafo-1" id="parrafo-2">
-        {{ page.content }}
+      <h3 class="titulo-3" id="">
+        {{ section.settings.title-poceso }}
+      </h3>
+      <p class="subtitulo-2" id="">
+        {{ section.settings.subtitle-proceso }}
       </p>
     </right-sobre>
   </information-container>
@@ -72,6 +75,18 @@
         "type": "text",
         "id": "contacto-button",
         "label": "contacto button"
+      },
+      {
+        "type": "text",
+        "id": "title-proceso",
+        "label": "Titulo",
+        "default": "Proceso de Entrega"
+      },
+      {
+        "type": "textarea",
+        "id": "subtitle-proceso",
+        "label": "Subtitulo",
+        "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque rutrum fermentum. "
       }
     ]
   }
