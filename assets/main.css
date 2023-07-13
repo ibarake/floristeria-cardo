@@ -1833,6 +1833,10 @@ group {
   color: var(--main-olive);
 }
 
+#number {
+  margin-left: 3rem;
+}
+
 @media only screen and (max-width: 768px) {
   buttons-container {
     width: 100%;
