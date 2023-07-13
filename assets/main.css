@@ -1842,12 +1842,13 @@ group {
   display: block;
   width: 350px;
   height: 50px;
-  text-align: center;
   background-color: var(--main-linen);
   border: none;
   cursor: pointer;
   text-decoration: none;
   border-radius: 5px;
+  text-transform: uppercase;
+  color: var(--main-black);
 }
 
 @media only screen and (max-width: 768px) {
