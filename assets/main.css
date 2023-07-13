@@ -1849,12 +1849,23 @@ group {
   cursor: pointer;
   text-decoration: none;
   border-radius: 5px;
-  color: var(--main-black);
+  color: var(--main-olive);
+}
+
+.proc-image {
+  width: 480px;
+  height: 580px;
+  border-radius: 8px;
 }
 
 @media only screen and (max-width: 768px) {
   buttons-container {
     width: 100%;
+  }
+
+  .proc-image {
+    width: 280px;
+    height: 380px;
   }
 
   .contact-button {
