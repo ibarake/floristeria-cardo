@@ -1842,8 +1842,8 @@ group {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 240px;
-  padding: 10px 0;
+  width: 305px;
+  padding: 5px 0;
   background-color: var(--main-linen);
   border: none;
   cursor: pointer;
