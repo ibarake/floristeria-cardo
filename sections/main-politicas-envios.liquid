@@ -44,6 +44,18 @@
       <p class="subtitulo-1">
         {{ section.settings.spam-proceso }}
       </p>
+      <group>
+        {% render 'num-1' %}
+        {{ section.settings.sub-1 }}
+      </group>
+      <group>
+        {% render 'num-2' %}
+        {{ section.settings.sub-2 }}
+      </group>
+      <group>
+        {% render 'num-3' %}
+        {{ section.settings.sub-3 }}
+      </group>
     </right-sobre>
   </information-container>
 </section>
@@ -96,6 +108,24 @@
         "id": "spam-proceso",
         "label": "Subtitulo 2",
         "default": "Lorem Ipsum"
+      },
+      {
+        "type": "textarea",
+        "id": "sub-1",
+        "label": "Subtitulo 3",
+        "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque rutrum fermentum. "
+      },
+      {
+        "type": "textarea",
+        "id": "sub-2",
+        "label": "Subtitulo 4",
+        "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque rutrum fermentum. "
+      },
+      {
+        "type": "textarea",
+        "id": "sub-3",
+        "label": "Subtitulo 5",
+        "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque rutrum fermentum. "
       }
     ]
   }
