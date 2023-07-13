@@ -1839,7 +1839,7 @@ group {
 }
 
 .button-proc {
-  display: block;
+  display: flex;
   text-align: center;
   width: 240px;
   padding: 10px 0;
