@@ -1824,6 +1824,10 @@ buttons-container {
   padding-top: 10px;
 }
 
+group {
+  display: flex;
+}
+
 @media only screen and (max-width: 768px) {
   buttons-container {
     width: 100%;
