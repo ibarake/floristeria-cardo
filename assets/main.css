@@ -1839,12 +1839,11 @@ group {
 }
 
 .button-proc {
-  display: flex;
+  display: block;
   text-align: center;
-  justify-content: center;
-  align-items: center;
-  width: 350px;
-  height: 50px;
+  padding-top: 10px;
+  width: 240px;
+  height: 30px;
   background-color: var(--main-linen);
   border: none;
   cursor: pointer;
