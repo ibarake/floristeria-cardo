@@ -1829,6 +1829,10 @@ group {
   align-items: center;
 }
 
+#title-proc {
+  color: var(--main-olive);
+}
+
 @media only screen and (max-width: 768px) {
   buttons-container {
     width: 100%;
