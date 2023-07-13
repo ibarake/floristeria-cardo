@@ -1850,6 +1850,7 @@ group {
   text-decoration: none;
   border-radius: 5px;
   color: var(--main-olive);
+  margin-top: 1rem;
 }
 
 .proc-image {
