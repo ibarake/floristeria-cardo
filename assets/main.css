@@ -1841,7 +1841,6 @@ group {
 .button-proc {
   display: block;
   text-align: center;
-  padding: 10px 0;
   width: 240px;
   background-color: var(--main-linen);
   border: none;
