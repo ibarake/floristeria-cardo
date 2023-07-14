@@ -1633,6 +1633,7 @@ filter input[type=checkbox]:checked ~ label {
 
 filter {
   height: 56px;
+  padding: auto;
 }
 
 .filter-group {
