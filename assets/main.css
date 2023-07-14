@@ -1639,6 +1639,5 @@ filter label {
   width: 100%;
   display: flex;
   flex-direction: column;
-  height: 500px;
 }
 
