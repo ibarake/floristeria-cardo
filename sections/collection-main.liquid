@@ -55,23 +55,25 @@
           <div class="filter-group-display">
             {%- case filter.type -%}
               {%- when 'boolean', 'list' -%}
-                {%- for filter_value in filter.values -%}
-                  <input
-                    type="checkbox"
-                    name="{{ filter_value.param_name }}"
-                    value="{{ filter_value.value }}"
-                    id="Filter-{{ filter.param_name }}-{{ forloop.index }}"
-                    {% if filter_value.active -%}
-                      checked
-                    {%- endif %}
-                    {% if filter_value.count == 0 and filter_value.active == false -%}
-                      disabled
-                    {%- endif %}
-                  >
-                  <label for="Filter-{{ filter.param_name }}-{{ forloop.index }}">
-                    {{- filter_value.label -}}
-                  </label>
-                {%- endfor -%}
+                <filter>
+                  {%- for filter_value in filter.values -%}
+                    <input
+                      type="checkbox"
+                      name="{{ filter_value.param_name }}"
+                      value="{{ filter_value.value }}"
+                      id="Filter-{{ filter.param_name }}-{{ forloop.index }}"
+                      {% if filter_value.active -%}
+                        checked
+                      {%- endif %}
+                      {% if filter_value.count == 0 and filter_value.active == false -%}
+                        disabled
+                      {%- endif %}
+                    >
+                    <label for="Filter-{{ filter.param_name }}-{{ forloop.index }}">
+                      {{- filter_value.label -}}
+                    </label>
+                  {%- endfor -%}
+                </filter>
 
                 <div class="filter-group-display__submit">
                   <input type="submit" value="Apply">
