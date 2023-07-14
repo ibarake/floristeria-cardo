@@ -1739,11 +1739,12 @@ address {
 }
 
   container-flor1-2 {
-    visibility: hidden;
+    margin-top: -17rem;
+    margin-left: -10rem;
   }
 
   container-flor2-3 {
-    margin-top: 0;
+    visibility: hidden;
   }
 
   .titulo-5 {
