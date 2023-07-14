@@ -3,8 +3,10 @@
   <topbar>
     <h3 class="titulo-3">{{ section.settings['total-p'] }}({{ collection.products_count }})</h3>
     <filter-top>
-      <order-vertical></order-vertical>
-      <order-horizontal></order-horizontal>
+      <order-by>
+        <order-vertical></order-vertical>
+        <order-horizontal></order-horizontal>
+      </order-by>
       <sort-by>
         <select id="sort-by">
           {% assign sort_by = collection.sort_by | default: collection.default_sort_by %}
