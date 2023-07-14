@@ -136,7 +136,7 @@
 
         checkboxes.forEach(function(checkbox) {
           checkbox.addEventListener('change', function() {
-            this.closest('form').submit();
+            this.parent('form').submit();
           });
         });
       });
