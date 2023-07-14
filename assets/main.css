@@ -1696,13 +1696,7 @@ product-page .shopify-payment-button__button--unbranded {
   background-color: var(--main-olive);
   transition: background-color 100ms ease-in-out; 
 }
-product-page .shopify-payment-button__button{
-  font-family: "DM Sans";
-  font-style: normal;
-  font-weight: 500;
-    font-size: 17px;
-  line-height: 26px;
-}
+
 product-page .shopify-payment-button__button--unbranded:hover:not([disabled]) {
   color: var(--main-olive);
   background-color:  var(--linen-3);
