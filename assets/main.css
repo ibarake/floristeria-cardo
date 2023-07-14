@@ -1623,3 +1623,7 @@ product-grid{
   background: var(--lino, #F7F0E2);
 }
 
+.filter-group-display__list-item input[type=checkbox]:checked ~ label {
+  background-color: #50bcf2;
+}
+
