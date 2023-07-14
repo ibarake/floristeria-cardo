@@ -107,10 +107,6 @@
                   min="0"
                   max="{{ filter.range_max | money_without_currency | replace: ',', '' }}"
                 >
-
-                <div class="filter-group-display__submit">
-                  <input type="submit" value="Apply">
-                </div>
             {%- endcase -%}
           </div>
         </filters>
@@ -139,7 +135,6 @@
       </div>
     </form>
     <script>
-
       document.addEventListener('DOMContentLoaded', function() {
         var checkboxes = document.querySelectorAll('.filter-form input[type="checkbox"]');
 
