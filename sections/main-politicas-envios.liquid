@@ -1,0 +1,171 @@
+<section class="sobre-cardo">
+  <container-flor1-2>
+    {% render 'Flor1-2' %}
+  </container-flor1-2>
+  <container-flor2-3>
+    {% render 'Flor2-3' %}
+  </container-flor2-3>
+  <main-container>
+    <h1 class="titulo-1" id="title-1">
+      {{ section.settings.title }}
+    </h1>
+    <p class="parrafo-1" id="parrafo-1">
+      {{ section.settings.subtitle }}
+    </p>
+    <buttons-container>
+      <a href="{{ section.settings.button_link-2 }}" class="ver-por-ocasion subtitulo-3">
+        {{ section.settings.ver-por-ocasion }}
+      </a>
+      <a href="{{ section.settings.button_link-3 }}" class="contact-button subtitulo-3">
+        {{ section.settings.contacto-button }}
+      </a>
+    </buttons-container>
+  </main-container>
+  <in-container>
+    <container-flor1-1>
+        {% render 'Flor1-1' %}
+    </container-flor1-1>
+    <container-flor3-1>
+        {% render 'Flor3-1' %}
+    </container-flor3-1>
+    <left-sobre>
+        <img
+        id="desktop-image"
+        class="proc-image"
+        src="{{ section.settings.image | img_url }}"
+        alt="{{ section.settings.image.alt }}">
+    </left-sobre>
+    <right-sobre>
+      <h3 class="titulo-3" id="title-proc">
+        {{ section.settings.title-proceso }}
+      </h3>
+      <p class="parrafo-1">
+        {{ section.settings.subtitle-proceso }}
+      </p>
+      <left-sobre>
+        <img
+        id="responsive-image"
+        class="proc-image"
+        src="{{ section.settings.image | img_url }}"
+        alt="{{ section.settings.image.alt }}">
+    </left-sobre>
+      <p class="subtitulo-1">
+        {{ section.settings.spam-proceso }}
+      </p>
+      <group>
+        {% render 'num-1' %}
+        <p class="parrafo-1" id="numbers">
+          {{ section.settings.sub-1 }}
+        </p>
+      </group>
+      <group>
+        {% render 'num-2' %}
+        <p class="parrafo-1" id="numbers">
+          {{ section.settings.sub-2 }}
+        </p>
+      </group>
+      <group>
+        {% render 'num-3' %}
+        <p class="parrafo-1" id="numbers">
+          {{ section.settings.sub-3 }}
+        </p>
+      </group>
+      <a href="{{ section.settings.button_link }}" class="button-proc subtitulo-3">
+        {{ section.settings.button-proc }}
+        {% render 'icon-arrow-right' %}
+      </a>
+    </right-sobre>
+  </in-container>
+</section>
+
+{% schema %}
+  {
+    "name": "main-politicas-envios",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Titulo",
+        "default": "Lorem ipsum dolor sit amet"
+      },
+      {
+        "type": "textarea",
+        "id": "subtitle",
+        "label": "subtitle",
+        "default": "Pellentesque cras adipiscing tempus libero vel nullam mauris tellus. Aliquam ultrices tellus consequat amet,"
+      }, 
+      {
+        "type": "image_picker",
+        "label": "image",
+        "id": "image"
+      },
+      {
+        "type": "text",
+        "id": "ver-por-ocasion",
+        "label": "ver por ocasion"
+      },
+      {
+        "type": "text",
+        "id": "contacto-button",
+        "label": "contacto button"
+      },
+      {
+        "type": "text",
+        "id": "title-proceso",
+        "label": "Titulo",
+        "default": "Proceso de Entrega"
+      },
+      {
+        "type": "textarea",
+        "id": "subtitle-proceso",
+        "label": "Subtitulo",
+        "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque rutrum fermentum. "
+      },
+      {
+        "type": "text",
+        "id": "spam-proceso",
+        "label": "Subtitulo 2",
+        "default": "Lorem Ipsum"
+      },
+      {
+        "type": "textarea",
+        "id": "sub-1",
+        "label": "Subtitulo 3",
+        "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque rutrum fermentum. "
+      },
+      {
+        "type": "textarea",
+        "id": "sub-2",
+        "label": "Subtitulo 4",
+        "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque rutrum fermentum. "
+      },
+      {
+        "type": "textarea",
+        "id": "sub-3",
+        "label": "Subtitulo 5",
+        "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque rutrum fermentum. "
+      },
+      {
+        "type": "text",
+        "id": "button-proc",
+        "label": "Boton comprar",
+        "default": "Comprar"
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": "Button link"
+      },
+      {
+        "type": "url",
+        "id": "button_link-2",
+        "label": "Button link" 
+      },
+      {
+        "type": "url",
+        "id": "button_link-3",
+        "label": "Button link"
+      }
+    ]
+  }
+{% endschema %}
