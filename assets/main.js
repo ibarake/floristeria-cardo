@@ -204,16 +204,3 @@ function rotateSvg(title, rotation) {
   svgElement.style.transform = `rotate(${rotation})`;
 }
 
-/* FORM FILTER AUTO SUBMIT ON CHANGE */
-
-document.addEventListener('DOMContentLoaded', function() {
-  var form = document.querySelector('.filter-form');
-  var inputs = form.querySelectorAll('input');
-
-  inputs.forEach(function(input) {
-    input.addEventListener('change', function() {
-      form.submit();
-    });
-  });
-});
-
