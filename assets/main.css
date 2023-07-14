@@ -1905,4 +1905,8 @@ in-container {
   container-flor3-1 {
     visibility: hidden;
   }
+
+  .proc-image {
+    display: none;
+  }
 }
