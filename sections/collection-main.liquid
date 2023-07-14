@@ -74,10 +74,6 @@
                     </label>
                   </filter>
                 {%- endfor -%}
-
-                <div class="filter-group-display__submit">
-                  <input type="submit" value="Apply">
-                </div>
               {%- when 'price_range' -%}
                 <span>{{ cart.currency.symbol }}</span>
                 <label for="Filter-{{ filter.min_value.param_name }}">From</label>
