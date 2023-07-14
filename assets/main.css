@@ -1631,8 +1631,7 @@ filter input[type=checkbox]:checked ~ label {
   border: solid 1px #50bcf2;
 }
 
-filter {
-  height: 56px;
+filter label {
   padding: 16px 40px;
 }
 
