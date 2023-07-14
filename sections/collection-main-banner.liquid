@@ -1,7 +1,24 @@
-<h1>Collection Main Banner</h1>
+<section>
+  <main-container>
+    <h1 class="titulo-1" id="title-1">
+      {{ section.settings.title }}
+    </h1>
+    <p class="parrafo-1" id="parrafo-1">
+      {{ section.settings.subtitle }}
+    </p>
+    <buttons-container>
+      <a href="http://" class="ver-por-ocasion subtitulo-3">
+        {{ section.settings['ver-por-ocasion'] }}
+      </a>
+      <a href="http://" class="contact-button subtitulo-3">
+        {{ section.settings['contacto-button'] }}
+      </a>
+    </buttons-container>
+  </main-container>
+</section>
 {% schema %}
-  {
-    "name": "Collection Main Banner"
+{
+  "name": "Collection Main Banner"
 
-  }
+}
 {% endschema %}
