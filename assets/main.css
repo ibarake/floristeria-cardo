@@ -1739,14 +1739,13 @@ address {
 }
 
   container-flor1-2 {
-    margin-top: -17rem;
-    margin-left: -10rem;
-  }
-
-  container-flor2-3 {
     margin-top: -23rem;
     margin-right: 3rem;
     rotate: 148deg;
+  }
+
+  container-flor2-3 {
+    visibility: hidden;
   }
 
   .titulo-5 {
