@@ -1906,7 +1906,11 @@ in-container {
     visibility: hidden;
   }
 
-  .proc-image {
+  #desktop-image {
     display: none;
+  }
+
+  #responsive-image {
+    display: block;
   }
 }
