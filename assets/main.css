@@ -1891,4 +1891,8 @@ in-container {
     flex-direction: column-reverse;
     margin: 5rem 0;
   }
+
+  .button-proc {
+    width: 275px;
+  }
 }
