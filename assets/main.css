@@ -1864,6 +1864,10 @@ in-container {
   height: 800px;
 }
 
+#responsive-image {
+  display: none;
+}
+
 @media only screen and (max-width: 768px) {
   buttons-container {
     width: 100%;
