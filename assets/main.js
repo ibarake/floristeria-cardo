@@ -205,13 +205,3 @@ function rotateSvg(title, rotation) {
 }
 
 /* FORM FILTER AUTO SUBMIT ON CHANGE */
-
-document.addEventListener('DOMContentLoaded', function() {
-  var checkboxes = document.querySelectorAll('.filter-form input[type="checkbox"]');
-  
-  checkboxes.forEach(function(checkbox) {
-    checkbox.addEventListener('change', function() {
-      this.closest('form').submit();
-    });
-  });
-});

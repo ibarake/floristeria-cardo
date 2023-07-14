@@ -138,6 +138,18 @@
         {%- endfor -%}
       </div>
     </form>
+    <script>
+
+      document.addEventListener('DOMContentLoaded', function() {
+        var checkboxes = document.querySelectorAll('.filter-form input[type="checkbox"]');
+
+        checkboxes.forEach(function(checkbox) {
+          checkbox.addEventListener('change', function() {
+            this.closest('form').submit();
+          });
+        });
+      });
+    </script>
   </aside>
   <content>
     <product-grid>
