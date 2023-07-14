@@ -1655,9 +1655,11 @@ product-page product-description {
   padding: 2% 0px 2% 1%;
   width: 75%;
 }
+
 product-page .extra-product svg {
   transform: scale(.8);
 }
+
 product-page .extra-product .subtitulo-2 {
   margin-left: 1.6%;
   font-size: 18px;
@@ -1669,16 +1671,19 @@ product-page carrusel{
   background-color: var(--main-white);
   margin-right: 2%;
 }
+
 product-page img {
   background-color: white;
   width: 78%;
 }
+
 product-page .atc-product{
   border: 1px solid var(--main-olive);
   padding: 10px;
   max-width: 100%;
   height: 2.7rem;
 }
+
 product-page .add-to-cart-text {
   font-size: 17px;
 }
@@ -1689,16 +1694,7 @@ product-page .product-form {
   justify-content: space-around;
 }
 
-product-page .shopify-payment-button__button--unbranded {
-  display: flex;
-  align-items: center;
-  height: 2.8rem;
-  background-color: var(--main-olive);
-  transition: background-color 100ms ease-in-out; 
-}
-product-page .shopify-payment-button__button{
-  font-size: 10px;
-}
+
 product-page .shopify-payment-button__button--unbranded:hover:not([disabled]) {
   color: var(--main-olive);
   background-color:  var(--linen-3);
