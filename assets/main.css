@@ -1623,6 +1623,10 @@ product-grid{
   background: var(--lino, #F7F0E2);
 }
 
+filter input[type=checkbox i] {
+  display: none;
+}
+
 filter input[type=checkbox]:checked ~ label {
   border: solid 1px #50bcf2;
 }
