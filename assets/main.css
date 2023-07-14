@@ -1766,7 +1766,6 @@ address {
 
   information-container {
     flex-direction: column-reverse;
-    margin: 5rem 0;
   }
 
   #titulo-3 {
@@ -1860,6 +1859,14 @@ group {
   border-radius: 8px;
 }
 
+in-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 800px;
+}
+
 @media only screen and (max-width: 768px) {
   buttons-container {
     width: 100%;
@@ -1878,5 +1885,10 @@ group {
   .ver-por-ocasion {
     width: 170px;
     height: 35px;
+  }
+
+  in-container {
+    flex-direction: column-reverse;
+    margin: 5rem 0;
   }
 }
