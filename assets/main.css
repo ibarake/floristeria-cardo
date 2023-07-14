@@ -1694,7 +1694,6 @@ product-page .product-form {
   justify-content: space-around;
 }
 
-
 product-page .shopify-payment-button__button--unbranded:hover:not([disabled]) {
   color: var(--main-olive);
   background-color:  var(--linen-3);
