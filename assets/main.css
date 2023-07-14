@@ -1690,9 +1690,11 @@ product-page .product-form {
 }
 
 product-page .shopify-payment-button__button--unbranded {
+  display: flex;
+  align-items: center;
+  height: 2.8rem;
   background-color: var(--main-olive);
   transition: background-color 100ms ease-in-out;
-  height: 2.8rem;
 }
 product-page .shopify-payment-button__button--unbranded:hover:not([disabled]) {
   color: var(--main-olive);
