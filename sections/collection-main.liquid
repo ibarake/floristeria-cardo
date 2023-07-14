@@ -55,8 +55,8 @@
           <div class="filter-group-display">
             {%- case filter.type -%}
               {%- when 'boolean', 'list' -%}
-                <filter>
-                  {%- for filter_value in filter.values -%}
+                {%- for filter_value in filter.values -%}
+                  <filter>
                     <input
                       type="checkbox"
                       name="{{ filter_value.param_name }}"
@@ -72,8 +72,8 @@
                     <label for="Filter-{{ filter.param_name }}-{{ forloop.index }}">
                       {{- filter_value.label -}}
                     </label>
-                  {%- endfor -%}
-                </filter>
+                  </filter>
+                {%- endfor -%}
 
                 <div class="filter-group-display__submit">
                   <input type="submit" value="Apply">
