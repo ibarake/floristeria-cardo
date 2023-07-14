@@ -75,14 +75,21 @@
       {%- endfor -%}
     </form>
     <script>
-            document.addEventListener('DOMContentLoaded', function() {
+      document.addEventListener('DOMContentLoaded', function() {
         var checkboxes = document.querySelectorAll('.filter-form input[type="checkbox"]');
+        var filterButton = document.querySelector('.filter-button');
+        var productGrid = document.querySelector('product-grid');
 
         checkboxes.forEach(function(checkbox) {
           checkbox.addEventListener('change', function() {
             this.closest('form').submit();
           });
         });
+
+        // Hide filter button if no products are visible after filtering
+        if (productGrid && productGrid.children.length === 0) {
+          filterButton.style.display = 'none';
+        }
       });
     </script>
   </aside>
