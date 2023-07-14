@@ -1694,9 +1694,8 @@ product-page .shopify-payment-button__button--unbranded {
   align-items: center;
   height: 2.8rem;
   background-color: var(--main-olive);
-  transition: background-color 100ms ease-in-out; 
+  transition: background-color 100ms ease-in-out;
 }
-
 product-page .shopify-payment-button__button--unbranded:hover:not([disabled]) {
   color: var(--main-olive);
   background-color:  var(--linen-3);
