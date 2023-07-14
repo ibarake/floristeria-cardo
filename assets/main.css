@@ -1766,6 +1766,7 @@ address {
 
   information-container {
     flex-direction: column-reverse;
+    margin: 5rem 0;
   }
 
   #titulo-3 {
