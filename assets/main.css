@@ -1755,11 +1755,6 @@ address {
     width: 100%;
   }
 
-  svg {
-    width: 30px;
-    height: 30px;
-  }
-
   gmail {
     align-items: center;
   }
