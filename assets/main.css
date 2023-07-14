@@ -1739,7 +1739,7 @@ address {
 }
 
   container-flor1-2 {
-    margin-top: 0;
+    visibility: hidden;
   }
 
   container-flor2-3 {
