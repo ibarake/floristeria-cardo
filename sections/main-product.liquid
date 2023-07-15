@@ -1,54 +1,55 @@
 <section class="main-product">
-  <div class="flor-2">
-    {% render 'Flor-2' %}
-  </div>
-  <div class="flor-1">
-    {% render 'Flor-1' %}
-  </div>
-  <product-page>
-  </product-page>
-  <product-information>
-    <p class="subtitulo-3" id="pr-subtitle">
-      {{ product.collections[0].title }}
-    </p>
-    <h3 class="titulo-3" id="pr-title">
-      {{ product.title }}
-    </h3>
-    <h4 class="titulo-4" id="pr-price">
-      {{ product.price | money }}
-    </h4>
-    <p class="subtitulo-6" id="pr-description">
-      {{ product.description }}
-    </p>
-    <container-buttons>
-      {% form 'product', product, class: "product-form", novalidate: 'novalidate' %}
-        <select name="id" style="display: none;">
-          {% for variant in product.variants %}
-            <option value="{{ variant.id }}"{% if variant == product.selected_or_first_available_variant %}selected="selected"{% endif %}>
-              {{ variant.title }} - {{ variant.price | money }}
-            </option>
-          {% endfor %}
-        </select>
-        <quantity>
-          <input type="button" value="-" class="button-minus" data-field="quantity">
-          <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
-          <input type="button" value="+" class="button-plus" data-field="quantity">
-        </quantity>
-        <add-to-car>
-          <button class="atc-product add-t-cart">
-            {% render 'icon-cart' %}
-            <p class="add-to-cart-text subtitulo-2">
-              <b> {{ section.settings.button-title }} </b>
-            </p>
-          </button>
-        </add-to-car>
-        <payment class="subtitulo-2 payment-1">
-          {{ form | payment_button }}
-        </payment>
-      {% endform %}
-    </container-buttons>
-  </product-information>
-
+  <main-pr-container>
+    <div class="flor-2">
+      {% render 'Flor-2' %}
+    </div>
+    <div class="flor-1">
+      {% render 'Flor-1' %}
+    </div>
+    <product-page>
+    </product-page>
+    <product-information>
+      <p class="subtitulo-3" id="pr-subtitle">
+        {{ product.collections[0].title }}
+      </p>
+      <h3 class="titulo-3" id="pr-title">
+        {{ product.title }}
+      </h3>
+      <h4 class="titulo-4" id="pr-price">
+        {{ product.price | money }}
+      </h4>
+      <p class="subtitulo-6" id="pr-description">
+        {{ product.description }}
+      </p>
+      <container-buttons>
+        {% form 'product', product, class: "product-form", novalidate: 'novalidate' %}
+          <select name="id" style="display: none;">
+            {% for variant in product.variants %}
+              <option value="{{ variant.id }}"{% if variant == product.selected_or_first_available_variant %}selected="selected"{% endif %}>
+                {{ variant.title }} - {{ variant.price | money }}
+              </option>
+            {% endfor %}
+          </select>
+          <quantity>
+            <input type="button" value="-" class="button-minus" data-field="quantity">
+            <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
+            <input type="button" value="+" class="button-plus" data-field="quantity">
+          </quantity>
+          <add-to-car>
+            <button class="atc-product add-t-cart">
+              {% render 'icon-cart' %}
+              <p class="add-to-cart-text subtitulo-2">
+                <b> {{ section.settings.button-title }} </b>
+              </p>
+            </button>
+          </add-to-car>
+          <payment class="subtitulo-2 payment-1">
+            {{ form | payment_button }}
+          </payment>
+        {% endform %}
+      </container-buttons>
+    </product-information>
+  </main-pr-container>
 </section>
 
 {% schema %}

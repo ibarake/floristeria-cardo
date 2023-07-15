@@ -2019,6 +2019,11 @@ in-container {
 /* PRODUCT PAGE STYLES */
 
 .main-product {
+  display: flex;
+  flex-direction: column;
+}
+
+main-pr-container {
   max-width: 100%;
   height: 150%;
   background-color: var(--main-color);
