@@ -2143,7 +2143,7 @@ product-page .shopify-payment-button__button--unbranded:hover:not([disabled]) {
   justify-content: center;
   align-items: center;
   border-radius: 8px;
-  background-color: var(--main-dark-color);
+  background-color: var(--main-linen);
   color: var(--main-olive);
   border: none;
   width: 196px;
