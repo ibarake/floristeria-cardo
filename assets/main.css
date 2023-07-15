@@ -2147,12 +2147,12 @@ product-page .shopify-payment-button__button--unbranded:hover:not([disabled]) {
   background-color: var(--main-linen);
   color: var(--main-olive);
   border: none;
-  max-width: 100%;
+  width: 30%;
   height: 2.7rem;
 }
 
 .button-plus {
-  max-width: 100%;
+  width: 3rem;
   height: 2.7rem;
   border-left: 1px solid var(--main-color);
   border-bottom: none;
@@ -2164,7 +2164,7 @@ product-page .shopify-payment-button__button--unbranded:hover:not([disabled]) {
 }
 
 .button-minus {
-  max-width: 100%;
+  width: 3rem;
   height: 2.7rem;
   border-right: 1px solid var(--main-color);
   border-bottom: none;
