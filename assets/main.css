@@ -2130,3 +2130,8 @@ product-page .shopify-payment-button__button--unbranded:hover:not([disabled]) {
   background-color:  var(--linen-3);
   font-weight: bold;
 }
+
+.payment-1 button {
+  background-color: var(--main-olive);
+  height: ;
+}
