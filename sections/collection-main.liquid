@@ -1,0 +1,116 @@
+<h1>Collection Main</h1>
+<section id="collection-main" class="page-width">
+  <topbar>
+    <h3 class="titulo-3">{{ section.settings['total-p'] }} ({{ collection.products_count }})</h3>
+    <filter-top>
+      <order-by>
+        <order-vertical></order-vertical>
+        <order-horizontal></order-horizontal>
+      </order-by>
+      <sort-by>
+        <select id="sort-by">
+          {% assign sort_by = collection.sort_by | default: collection.default_sort_by %}
+          {% for option in collection.sort_options %}
+            <option
+              value="{{ option.value }}"
+              {% if option.value == sort_by %}
+                selected="selected"
+              {% endif %}
+            >
+              {{ option.name }}
+            </option>
+          {% endfor %}
+        </select>
+        <script>
+          Shopify.queryParams = {};
+
+          // Preserve existing query parameters
+          if (location.search.length) {
+              var params = location.search.substr(1).split('&');
+
+              for (var i = 0; i < params.length; i++) {
+              var keyValue = params[i].split('=');
+
+              if (keyValue.length) {
+                  Shopify.queryParams[decodeURIComponent(keyValue[0])] = decodeURIComponent(keyValue[1]);
+              }
+              }
+          }
+
+          // Update sort_by query parameter on select change
+          document.querySelector('#sort-by').addEventListener('change', function(e) {
+              var value = e.target.value;
+
+              Shopify.queryParams.sort_by = value;
+              location.search = new URLSearchParams(Shopify.queryParams).toString();
+          });
+        </script>
+      </sort-by>
+    </filter-top>
+  </topbar>
+  <aside>
+    <form class="filter-form">
+      {%- for filter in collection.filters -%}
+        <p class="subtitulo-2">{{ filter.label }}</p>
+        <filters class="filter-group">
+          {%- for filter_value in filter.values -%}
+            <filter>
+              <input
+                type="checkbox"
+                name="{{ filter_value.param_name }}"
+                value="{{ filter_value.value }}"
+                id="Filter-{{ filter.param_name }}-{{ forloop.index }}"
+                {% if filter_value.active -%}
+                  checked
+                {%- endif %}
+                {% if filter_value.count == 0 and filter_value.active == false -%}
+                  disabled
+                {%- endif %}
+              >
+              <label for="Filter-{{ filter.param_name }}-{{ forloop.index }}">
+                {{- filter_value.label -}}
+              </label>
+            </filter>
+          {%- endfor -%}
+        </filters>
+      {%- endfor -%}
+    </form>
+    <script>
+            document.addEventListener('DOMContentLoaded', function() {
+        var checkboxes = document.querySelectorAll('.filter-form input[type="checkbox"]');
+
+        checkboxes.forEach(function(checkbox) {
+          checkbox.addEventListener('change', function() {
+            this.closest('form').submit();
+          });
+        });
+      });
+    </script>
+  </aside>
+  <content>
+    <product-grid>
+      {% for product in collection.products %}
+        {% include 'product-card', hero-product: product, atc-btn: section.settings['add-to-cart-title'], classes: '' %}
+      {% endfor %}
+    </product-grid>
+  </content>
+</section>
+{% schema %}
+{
+  "name": "Collection Main",
+  "settings": [
+    {
+      "type": "text",
+      "id": "add-to-cart-title",
+      "label": "Titulo principal H1",
+      "default": "Añadir al carrito"
+    },
+    {
+      "type": "text",
+      "id": "total-p",
+      "label": "Total productos titulo H3",
+      "default": "Todos los Arreglos"
+    }
+  ]
+}
+{% endschema %}

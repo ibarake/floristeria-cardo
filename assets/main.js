@@ -203,3 +203,5 @@ function rotateSvg(title, rotation) {
   var svgElement = title.querySelector('svg');
   svgElement.style.transform = `rotate(${rotation})`;
 }
+
+/* FORM FILTER AUTO SUBMIT ON CHANGE */
