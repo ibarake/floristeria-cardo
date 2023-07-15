@@ -2058,8 +2058,8 @@ product-information {
 }
 
 container-buttons {
+  width: 100%;
   display: flex;
-  justify-content: space-around;
 }
 
 .payment-1 button {
@@ -2067,7 +2067,7 @@ container-buttons {
   align-items: center;
   border: 1px solid var(--main-olive);
   background-color: var(--main-olive);
-  max-width: 100%;
+  max-width: 85%;
   height: 2.7rem;
 }
 
