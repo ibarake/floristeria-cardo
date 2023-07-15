@@ -125,11 +125,6 @@
           "subtitulo-fotos": "Ver todos",
           "style-s": "style 1"
         }
-      },
-      "product-page": {
-        "type": "product-page",
-        "settings": {
-        }
       }
     },
     "content_for_index": [
