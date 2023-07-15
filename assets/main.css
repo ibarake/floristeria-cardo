@@ -1650,5 +1650,29 @@ filter label {
   width: 100%;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
+
+.filter-group > filter {
+  flex-basis: 100%;
+}
+
+@media (min-width: 768px) {
+  .filter-group > filter {
+    flex-basis: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .filter-group > filter {
+    flex-basis: 33.33%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .filter-group > filter {
+    flex-basis: 25%;
+  }
+}
+
 
