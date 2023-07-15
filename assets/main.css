@@ -2048,7 +2048,7 @@ product-information {
 }
 
 #pr-price {
-  margin: 0;
+  margin: 0 0 2rem 0;
   color: var(--main-olive);
 }
 
