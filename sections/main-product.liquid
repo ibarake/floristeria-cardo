@@ -65,12 +65,6 @@
       {% for product in section.settings.collection limit:4 %}
           {% include 'product-card', hero-product: product, atc-btn: section.settings.button-text, classes: "product-4-img" %}
       {% endfor %}
-      <p class="cta subtitulo-2 s-d {% if section.settings.style-s == 'style 1' %} s2{% endif %} {% if section.settings.style-s == 'style 2' %} s2-1 {% endif %}">
-        <a class="view-all-4" href="#">
-        {{ section.settings['subtitulo-fotos'] }}
-        {% render 'icon-arrow-right' %}
-        </a>
-      </p>
     </container-4products>
   {% render 'eg-frequently-bought-together' %}
 </section>
