@@ -85,13 +85,21 @@
             "FAQ-title": "Is there any warranty exclusions?",
             "FAQ-text": "Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa."
           }
+        },
+        "f8002893-50fd-4db1-b929-3ed71cd8fe2b": {
+          "type": "FAQ",
+          "settings": {
+            "FAQ-title": "Example",
+            "FAQ-text": "Example"
+          }
         }
       },
       "block_order": [
         "03dfe1aa-083f-40fe-a192-457676af774f",
         "6051fd48-e4f9-4550-b727-04b2413acd6d",
         "983a6bd6-6300-4100-81f1-975c20d9c221",
-        "9b54aeaa-1948-491a-88f5-bfb9a7984cf8"
+        "9b54aeaa-1948-491a-88f5-bfb9a7984cf8",
+        "f8002893-50fd-4db1-b929-3ed71cd8fe2b"
       ],
       "settings": {
         "arreglos-title": "Lorem ipsum dolor sit amet",

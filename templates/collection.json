@@ -1,0 +1,18 @@
+{
+  "sections": {
+    "banner": {
+      "type": "collection-main-banner",
+      "settings": {
+      }
+    },
+    "product-grid": {
+      "type": "collection-main",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "product-grid"
+  ]
+}
