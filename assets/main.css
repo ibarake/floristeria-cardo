@@ -1640,7 +1640,6 @@ filter input[type=checkbox] + label {
 
 filter label {
   display: block;
-  height: 56px;
 }
 
 .filter-group {
