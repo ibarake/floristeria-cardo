@@ -2043,7 +2043,7 @@ product-information {
 }
 
 #pr-title {
-  margin: 0;
+  margin: 1rem 0;
   color: var(--main-olive);
 }
 
