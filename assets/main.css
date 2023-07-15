@@ -2255,4 +2255,5 @@ form {
 secondary-container {
   display: flex;
   align-items: center;
+  margin-left: 3.5rem;
 }
