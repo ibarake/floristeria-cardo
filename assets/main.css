@@ -2034,7 +2034,7 @@ product-page {
 }
 
 product-information {
-  width: 35%;
+  width: 45%;
 }
 
 #pr-subtitle {
@@ -2060,4 +2060,62 @@ product-information {
 container-buttons {
   display: flex;
   justify-content: space-around;
+}
+
+.payment-1 button {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--main-olive);
+  background-color: var(--main-olive);
+  max-width: 100%;
+  height: 2.7rem;
+}
+
+.quantity-field {
+  text-align: center;
+  border: 1px solid var(--main-linen);
+  background-color: var(--main-linen);
+  color: var(--main-olive);
+  border: none;
+  max-width: 15%;
+  height: 2.7rem;
+}
+
+.button-plus {
+  width: 3rem;
+  height: 2.7rem;
+  border-left: 1px solid var(--main-color);
+  border-bottom: none;
+  border-top: none;
+  border-right: none;
+  background-color: var(--main-linen);
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.button-minus {
+  width: 3rem;
+  height: 2.7rem;
+  border-right: 1px solid var(--main-color);
+  border-bottom: none;
+  border-top: none;
+  border-left: none;
+  background-color: var(--main-linen);
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+quantity {
+  display: flex;
+  align-items: baseline;
+}
+
+container-title {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+#ww {
+  color: var(--main-olive);
 }
