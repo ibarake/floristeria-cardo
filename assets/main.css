@@ -2152,6 +2152,8 @@ product-page .shopify-payment-button__button--unbranded:hover:not([disabled]) {
 .button-plus {
   width: 30px;
   height: 42px;
+  border: none;
+  background-color: var(--main-linen);
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
 }
@@ -2159,6 +2161,8 @@ product-page .shopify-payment-button__button--unbranded:hover:not([disabled]) {
 .button-minus {
   width: 30px;
   height: 42px;
+  border: none;
+  background-color: var(--main-linen);
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
 }
