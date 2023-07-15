@@ -8,7 +8,11 @@
   <product-page class="container">
     <prouct-img>
       <carrusel></carrusel>
-      {{ product.featured_image }}
+      <img>
+      {% for image in product.images %}
+        {{ image[0] }}
+      {% endfor %}
+      </img>
     </prouct-img>
     <product-information>
       <collection-title class="subtitulo-3">
