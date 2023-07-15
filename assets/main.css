@@ -1628,13 +1628,13 @@ filter input[type=checkbox i] {
   display: none;
 }
 
-filter input[type=checkbox] {
-  border: 1px solid var(--gray-light);
+filter input[type=checkbox] + label {
+  border: solid 1px var(--gray-light);
   padding: 16px 40px;
 }
 
 .filter-form input[type=checkbox]:checked + label {
-  border: solid 1px #50bcf2;
+  border: solid 1px var(--main-olive);
 }
 
 filter label {
