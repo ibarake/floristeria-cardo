@@ -928,6 +928,14 @@ card-footer {
   width: fit-content;
 }
 
+.price{
+  color: var(--main-black);
+}
+
+.card-product-title{
+  color: var(--main-black);
+}
+
 /* PRODUCTS FAQ STYLES */
 
 .product-4 {
