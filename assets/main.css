@@ -2150,7 +2150,7 @@ product-page .shopify-payment-button__button--unbranded:hover:not([disabled]) {
   height: 42px;
 }
 
-.quantity {
+quantity {
   display: flex;
   align-items: baseline;
 }
