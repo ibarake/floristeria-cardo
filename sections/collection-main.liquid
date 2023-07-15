@@ -51,7 +51,7 @@
   <aside>
     <form class="filter-form">
       {%- for filter in collection.filters -%}
-        <h6 class="subtitulos-2">{{ filter.label }}</h6>
+        <p class="subtitulos-2">{{ filter.label }}</p>
         <filters class="filter-group">
           {%- for filter_value in filter.values -%}
             <filter>
