@@ -2191,10 +2191,6 @@ input::-webkit-inner-spin-button {
   resize: vertical;
 }
 
-.button-plus {
-  left: -13px;
-}
-
 input[type="number"] {
   -moz-appearance: textfield;
   -webkit-appearance: none;
