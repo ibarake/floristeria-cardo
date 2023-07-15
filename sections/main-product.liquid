@@ -64,10 +64,11 @@
   {% render 'eg-frequently-bought-together' %}
 </section>
 <container-4products>
-  {% for product in section.settings.collection limit:4 %}
+  {% for product in section.settings.collection %}
       {% include 'product-card', hero-product: product, atc-btn: section.settings.button-text, classes: "product-4-img" %}
   {% endfor %}
 </container-4products>
+
 {% schema %}
   {
     "name": "Página del producto",
@@ -88,8 +89,7 @@
       }, {
         "type": "product_list",
         "id": "collection",
-        "label": "collection",
-        "limit": 4
+        "label": "collection"
       }, {
         "type": "text",
         "id": "button-text",
