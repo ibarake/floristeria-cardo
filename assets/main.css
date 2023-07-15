@@ -2020,6 +2020,6 @@ in-container {
 
 .main-product {
   max-width: 100%;
-  max-height: 100vh;
-  background-color: var(--main-color);
+  height: 70vh;
+  background-color: var(--main-linen);
 }
