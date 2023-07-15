@@ -2152,4 +2152,5 @@ product-page .shopify-payment-button__button--unbranded:hover:not([disabled]) {
 
 .quantity {
   display: flex;
+  align-items: baseline;
 }
