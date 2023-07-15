@@ -2037,22 +2037,22 @@ product-information {
   width: 35%;
 }
 
-#p-subtitle {
+#pr-subtitle {
   margin: 0;
   color: var(--main-gray);
 }
 
-#p-title {
+#pr-title {
   margin: 0;
   color: var(--main-olive);
 }
 
-#p-price {
+#pr-price {
   margin: 0;
   color: var(--main-olive);
 }
 
-#p-description {
+#pr-description {
   margin: 0;
   color: var(--main-gray);
 }
