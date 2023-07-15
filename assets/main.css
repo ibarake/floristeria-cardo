@@ -2146,7 +2146,7 @@ product-page .shopify-payment-button__button--unbranded:hover:not([disabled]) {
   background-color: var(--main-linen);
   color: var(--main-olive);
   border: none;
-  max-width: 30%;
+  max-width: 15%;
   height: 2.7rem;
 }
 
