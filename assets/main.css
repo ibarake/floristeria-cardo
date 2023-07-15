@@ -2130,12 +2130,12 @@ in-container {
 .main-product {
   display: flex;
   flex-direction: column;
-}
-
-main-pr-container {
   max-width: 100%;
   height: 150%;
   background-color: var(--main-color);
+}
+
+main-pr-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
