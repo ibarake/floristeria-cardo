@@ -2138,7 +2138,7 @@ product-page .shopify-payment-button__button--unbranded:hover:not([disabled]) {
   height: 5vh;
 }
 
-input {
+.quantity-field {
   display: flex;
   justify-content: center;
   align-items: center;
