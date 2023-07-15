@@ -63,11 +63,11 @@
     </product-information>
   {% render 'eg-frequently-bought-together' %}
 </section>
-<4products>
+<container-4products>
   {% for product in section.settings.collection %}
       {% include 'product-card', hero-product: product, atc-btn: section.settings.button-text, classes: "product-4-img" %}
   {% endfor %}
-</4products>
+</container-4products>
 
 {% schema %}
   {

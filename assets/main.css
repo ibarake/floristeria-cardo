@@ -2178,11 +2178,3 @@ quantity {
   display: flex;
   align-items: baseline;
 }
-
-4products {
-  display: flex;
-  position: relative;
-  gap: 20px;
-  justify-content: center;
-  align-items: baseline;
-}
