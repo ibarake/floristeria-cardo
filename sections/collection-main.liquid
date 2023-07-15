@@ -51,6 +51,7 @@
   <aside>
     <form class="filter-form">
       {%- for filter in collection.filters -%}
+        <h6 class="">{{ filter.label }}</h6>
         <filters class="filter-group">
           {%- for filter_value in filter.values -%}
             <filter>
