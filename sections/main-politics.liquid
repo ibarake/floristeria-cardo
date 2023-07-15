@@ -1,0 +1,40 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<section class="main-politics">
+  <cont-1>
+    <h1 class="titulo-1" id="title-politics">
+      {{ page.title }}
+    </h1>
+    <p class="fecha-politics subtitulo-3">
+      {{ page.published_at | date: '%m/ %d/ %Y' }}
+    </p>
+  </cont-1>
+  <cont-info>
+    <cont-2 class="subtitulo-7">
+      <p>
+        {{ page.content }}
+      </p>
+    </cont-2>
+    <cont-3 class="subtitulo-1" id="subtitulo-politics">
+      {{ section.settings.menu.title }}
+      {% for link in section.settings.menu.links %}
+        {{ link.title | link_to: link.url }}
+      {% endfor %}
+    </cont-3>
+  </cont-info>
+</section>
+
+{% schema %}
+  {
+    "name": "main politics",
+    "settings": [
+      {
+        "type": "link_list",
+        "id": "menu",
+        "label": "Menu"
+      }
+
+    ]
+  }
+{% endschema %}
