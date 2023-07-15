@@ -33,7 +33,7 @@
   <inline-half-container class="right">
     <products-container class="overflow-auto drag-scroll">
       {% for hero-product in section.settings['hero-collection'].products %}
-        <a class="collection-item" href="{{ collection.url }}">
+        <a class="product-item" href="{{ hero-product.url }}">
           {% include 'product-card',
             hero-product: hero-product,
             atc-btn: section.settings['add-to-cart-title'],
