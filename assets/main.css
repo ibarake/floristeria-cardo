@@ -1630,7 +1630,6 @@ filter input[type=checkbox i] {
 
 filter input[type=checkbox] + label {
   border: solid 1px var(--gray-light);
-  padding: 16px 40px;
   margin: 10px;
 }
 
