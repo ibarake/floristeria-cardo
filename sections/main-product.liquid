@@ -61,13 +61,13 @@
         </information>
       {% endif %}
     </product-information>
-    <container-4products>
-      {% for product in section.settings.collection limit:4 %}
-          {% include 'product-card', hero-product: product, atc-btn: section.settings.button-text, classes: "product-4-img" %}
-      {% endfor %}
-    </container-4products>
   {% render 'eg-frequently-bought-together' %}
 </section>
+<container-4products>
+  {% for product in section.settings.collection limit:4 %}
+      {% include 'product-card', hero-product: product, atc-btn: section.settings.button-text, classes: "product-4-img" %}
+  {% endfor %}
+</container-4products>
 {% schema %}
   {
     "name": "Página del producto",
