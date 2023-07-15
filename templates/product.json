@@ -1,0 +1,22 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "settings": {
+        "envio": "Envío gratis",
+        "info-extra": "Información extra",
+        "button-title": "Agregar al carrito",
+        "collection": [
+          "copia-de-caja-de-rosas-decorativa-1",
+          "corazon-dulce",
+          "corazon-de-mama",
+          "canastilla-exotica"
+        ],
+        "button-text": "Añadir al carrito"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
