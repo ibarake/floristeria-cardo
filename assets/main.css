@@ -1640,6 +1640,7 @@ filter input[type=checkbox] + label {
 
 filter label {
   display: block;
+  padding: 16px 40px;
 }
 
 .filter-group {
