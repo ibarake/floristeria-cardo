@@ -2149,9 +2149,18 @@ product-page .shopify-payment-button__button--unbranded:hover:not([disabled]) {
   height: 42px;
 }
 
-.quantity-f {
+.button-plus {
   width: 30px;
   height: 42px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.button-minus {
+  width: 30px;
+  height: 42px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
 }
 
 quantity {
