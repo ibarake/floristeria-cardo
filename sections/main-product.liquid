@@ -64,6 +64,11 @@
   {% render 'eg-frequently-bought-together' %}
 </section>
 <container-4products>
+  <container-title>
+    <h4 class="titulo-4">
+      {{ section.settings.title }}
+    </h4>
+  </container-title>
   {% for product in section.settings.collection limit:4 %}
       {% include 'product-card', hero-product: product, atc-btn: section.settings.button-text, classes: "product-4-img" %}
   {% endfor %}
@@ -106,6 +111,11 @@
       "id": "subtitulo-fotos",
       "label": "Ver Todos",
       "default": "Ver todos"
+    }, {
+      "type": "text",
+      "id": "title",
+      "label": "titulo section",
+      "default": "Otros Clientes también compraron"
     }
     ]
   }
