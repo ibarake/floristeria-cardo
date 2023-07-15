@@ -1,10 +1,18 @@
 {
   "sections": {
     "main": {
-        "type": "main-product",
+      "type": "main-product",
       "settings": {
         "envio": "Envío gratis",
-        "info-extra": "Información extra"
+        "info-extra": "Información extra",
+        "button-title": "Agregar al carrito",
+        "collection": [
+          "arreglo-armonia",
+          "arreglo-armonia-de-orquideas-1",
+          "arreglo-condolencias-orquieas",
+          "arreglo-condolencias-en-orquideas"
+        ],
+        "button-text": "Añadir al carrito"
       }
     }
   },
