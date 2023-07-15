@@ -61,6 +61,7 @@ p {
   --main-olive: #615420;
   --linen-3: #e0b37f;
   --bg-linen: #fafafa;
+  --gray-light: #EBEBEB;
 }
 
 /* TEXT PRESET STYLES*/
@@ -1625,6 +1626,10 @@ product-grid{
 
 filter input[type=checkbox i] {
   display: none;
+}
+
+filter input[type=checkbox] {
+  border: 1px solid var(--gray-light);
 }
 
 .filter-form input[type=checkbox]:checked + label {
