@@ -2023,7 +2023,8 @@ in-container {
   height: 100%;
   background-color: var(--main-color);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
 }
 
 product-page {
@@ -2033,5 +2034,5 @@ product-page {
 }
 
 product-information {
-  width: 50%;
+  width: 35%;
 }
