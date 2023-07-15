@@ -2067,8 +2067,10 @@ container-buttons {
   align-items: center;
   border: 1px solid var(--main-olive);
   background-color: var(--main-olive);
-  max-width: 85%;
-  height: 2.7rem;
+  width: 85%;
+  height: 3rem;
+  border-radius: 8px;
+  margin: 0;
 }
 
 .quantity-field {
@@ -2077,7 +2079,7 @@ container-buttons {
   background-color: var(--main-linen);
   color: var(--main-olive);
   border: none;
-  max-width: 15%;
+  width: 15%;
   height: 2.7rem;
 }
 
@@ -2129,4 +2131,5 @@ container-title {
   border: 1px solid var(--main-olive);
   padding: 10px 15px;
   border-radius: 8px;
+  cursor: pointer;
 }
