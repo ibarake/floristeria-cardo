@@ -2036,3 +2036,28 @@ product-page {
 product-information {
   width: 35%;
 }
+
+#p-subtitle {
+  margin: 0;
+  color: var(--main-gray);
+}
+
+#p-title {
+  margin: 0;
+  color: var(--main-olive);
+}
+
+#p-price {
+  margin: 0;
+  color: var(--main-olive);
+}
+
+#p-description {
+  margin: 0;
+  color: var(--main-gray);
+}
+
+container-buttons {
+  display: flex;
+  justify-content: space-around;
+}
