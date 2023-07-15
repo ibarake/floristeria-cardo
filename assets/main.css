@@ -2257,4 +2257,9 @@ secondary-container {
   align-items: center;
   margin-left: 4rem;
   border-bottom: 1px solid var(--main-linen);
+  width: 90%;
+}
+
+#t-plus {
+  margin-left: 1rem;
 }
