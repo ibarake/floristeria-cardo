@@ -1,4 +1,4 @@
-<section class="product-page">
+<section class="main-product">
   <div class="flor-2">
     {% render 'Flor-2' %}
   </div>
@@ -6,65 +6,9 @@
     {% render 'Flor-1' %}
   </div>
   <product-page class="container">
-    <prouct-img>
-      <carrusel></carrusel>
-      <img>
-    </prouct-img>
-    <product-information>
-      <collection-title class="subtitulo-3">
-        {{ product.collections[0].title }}
-      </collection-title>
-      <product-title class="titulo-3">
-        {{ product.title }}
-      </product-title>
-      <product-price class="titulo-4">
-        {{ product.price | money }}
-      </product-price>
-      <product-description class="parrafo-2">
-        {{ product.description }}
-      </product-description>
-      {% form 'product', product, class: "product-form", novalidate: 'novalidate' %}
-        <select name="id" style="display: none;">
-          {% for variant in product.variants %}
-            <option value="{{ variant.id }}"{% if variant == product.selected_or_first_available_variant %}selected="selected"{% endif %}>
-              {{ variant.title }} - {{ variant.price | money }}
-            </option>
-          {% endfor %}
-        </select>
-        <quantity>
-          <input type="button" value="-" class="button-minus" data-field="quantity">
-          <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
-          <input type="button" value="+" class="button-plus" data-field="quantity">
-        </quantity>
-        <add-to-car>
-          <button class="atc-product add-to-cart">
-            {% render 'icon-cart' %}
-            <p class="add-to-cart-text subtitulo-2">
-              <b> {{ section.settings.button-title }} </b>
-            </p>
-          </button>
-        </add-to-car>
-        <payment class="subtitulo-2 payment-1">
-          {{ form | payment_button }}
-        </payment>
-      {% endform %}
-      {% if section.settings.envio != blank %}
-        <shipping class="extra-product">
-          {% render 'icon-transport' %}
-          <p class="subtitulo-2">{{ section.settings.envio }}</p>
-        </shipping>
-      {% endif %}
-      {% if section.settings.info-extra != blank %}
-        <information class="extra-product">
-          {% render 'icon-information' %}
-          <p class="subtitulo-2">{{ section.settings.info-extra }}</p>
-        </information>
-      {% endif %}
-    </product-information>
-  {% render 'eg-frequently-bought-together' %}
+  </product-page>
+
 </section>
-                                                                              
-{% render 'eg-frequently-bought-together' %}
 
 {% schema %}
   {
