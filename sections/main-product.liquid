@@ -52,7 +52,9 @@
   </main-pr-container>
   <secondary-container>
     {% render 'button-plus' %}
-    <h2>Agregar a tu combo</h2>
+    <h4 class="titulo-4">
+      {{ section.settings.agregar-combo }}
+    </h4>
   </secondary-container>
 </section>
 
@@ -92,6 +94,11 @@
       "id": "title",
       "label": "titulo section",
       "default": "Otros Clientes también compraron"
+    }, {
+      "type": "text",
+      "id": "agregar-combo",
+      "label": "Agregar a tu Combo",
+      "default": "Agregar a tu combo"
     }
     ]
   }
