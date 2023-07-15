@@ -2142,11 +2142,15 @@ product-page .shopify-payment-button__button--unbranded:hover:not([disabled]) {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 8px;
   background-color: var(--main-linen);
   color: var(--main-olive);
   border: none;
   width: 110px;
+  height: 42px;
+}
+
+.quantity-f {
+  width: 30px;
   height: 42px;
 }
 
