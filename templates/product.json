@@ -1,0 +1,14 @@
+{
+  "sections": {
+    "main": {
+        "type": "main-product",
+      "settings": {
+        "envio": "Envío gratis",
+        "info-extra": "Información extra"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
