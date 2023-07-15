@@ -2184,3 +2184,7 @@ container-title {
   justify-content: center;
   margin-top: 3rem;
 }
+
+#ww {
+  color: var(--main-olive);
+}
