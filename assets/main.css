@@ -2161,7 +2161,6 @@ input::-webkit-inner-spin-button {
 
 .input-group {
   clear: both;
-  margin: 15px 0;
   position: relative;
 }
 
@@ -2189,7 +2188,6 @@ input::-webkit-inner-spin-button {
   width: 62px;
   display: inline-block;
   font-size: 13px;
-  margin: 0 0 5px;
   resize: vertical;
 }
 
