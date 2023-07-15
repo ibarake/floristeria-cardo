@@ -520,6 +520,9 @@ product-card img.hero {
   width: 290px;
   height: 256px;
 }
+a.product-item{
+  text-decoration: none;
+}
 
 inline-half-container {
   z-index: 999;
