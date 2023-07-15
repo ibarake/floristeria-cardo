@@ -1639,7 +1639,9 @@ filter input[type=checkbox] + label {
 }
 
 filter label {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 16px 40px;
 }
 
