@@ -2256,5 +2256,5 @@ secondary-container {
   display: flex;
   align-items: center;
   margin-left: 4rem;
-  border-bottom: 1px solid var(--main-dark-color);
+  border-bottom: 1px solid var(--main-linen);
 }
