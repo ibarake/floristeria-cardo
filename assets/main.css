@@ -2141,9 +2141,7 @@ product-page .shopify-payment-button__button--unbranded:hover:not([disabled]) {
 }
 
 .quantity-field {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   border: 1px solid var(--main-linen);
   background-color: var(--main-linen);
   color: var(--main-olive);
