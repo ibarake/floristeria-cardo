@@ -2132,6 +2132,8 @@ product-page .shopify-payment-button__button--unbranded:hover:not([disabled]) {
 }
 
 .payment-1 button {
+  display: flex;
+  align-items: center;
   background-color: var(--main-olive);
-  height: ;
+  height: 5vh;
 }
