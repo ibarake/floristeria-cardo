@@ -2133,3 +2133,7 @@ container-title {
   border-radius: 8px;
   cursor: pointer;
 }
+
+form {
+  display: flex;
+}
