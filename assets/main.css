@@ -2257,7 +2257,7 @@ form {
 
 /* CART STYLES */
 
-cart-items{
+cart-item{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
