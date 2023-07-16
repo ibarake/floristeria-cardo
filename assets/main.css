@@ -2278,3 +2278,7 @@ secondary-container {
 .cc {
   display: flex;
 }
+
+.product-url {
+  text-decoration: none;
+}
