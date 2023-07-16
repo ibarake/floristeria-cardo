@@ -1,17 +1,8 @@
 {
   "sections": {
     "main": {
-      "type": "main-page",
+      "type": "main-cart",
       "settings": {
-        "title": "Lorem ipsum dolor sit amet",
-        "subtitle": "Pellentesque cras adipiscing tempus libero vel nullam mauris tellus. Aliquam ultrices tellus consequat amet,",
-        "image": "shopify:\/\/shop_images\/DSCF6327_d1d5f480-9973-4178-b035-956cb7931887.jpg",
-        "label-correo": "Correo",
-        "correo": "prueba@gmail.com",
-        "label-numero": "Número",
-        "numero": 3203949606,
-        "label-direccion": "Dirección",
-        "direccion": "Calle 98 # 18-21 Bogotá D.C. - Colombia"
       }
     }
   },
