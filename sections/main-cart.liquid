@@ -5,8 +5,11 @@
     <image>
       <img src="{{ item.image | img_url }}"
     </image>
+    <item-info>
     <p class="parrafo-4 collection-tag">{{ item.product.collections[0].title }}</p>
     <h2>{{ item.product.title }}</h2>
+    <cart-note>{% render 'cart-note' %} {{ section.settings.cart-note }}</cart-note>
+    </item-info>
       <quantity>
         <input type="button" value="-" class="button-minus" data-field="quantity">
         <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
@@ -20,7 +23,14 @@
 {% schema %}
 {
   "name": "main cart",
-  "settings": []
+  "settings": [
+    {
+      "type": "text",
+      "id": "envio",
+      "label": "Contenido del item envíos ",
+      "default": "Agregar mensaje personalizado"
+    }
+  ]
 }
 {% endschema %}
 
