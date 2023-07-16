@@ -60,12 +60,12 @@
   {%- if recommendations.products_count > 0 -%}
     <h2>You may also like</h2>
     <ul>
-      {%- for product in recommendations.products -%}
+      {%- for product-1 in recommendations.products -%}
       <li class="product">
-        <a href="{{ product.url }}">
-          <img class="product__img" src="{{ product.featured_image | img_url: '300x300' }}" alt="{{ product.featured_image.alt }}" />
-          <p class="product__title">{{ product.title }}</p>
-          <p class="product__price">{{ product.price | money}}</p>
+        <a href="{{ product-1.url }}">
+          <img class="product__img" src="{{ product-1.featured_image | img_url: '300x300' }}" alt="{{ product.featured_image.alt }}" />
+          <p class="product__title">{{ product.-1title }}</p>
+          <p class="product__price">{{ product-1.price | money}}</p>
         </a>
       </li>
       {%- endfor -%}
