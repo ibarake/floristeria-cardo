@@ -1,18 +1,21 @@
 <h1>Mi carrito</h1>
+{% form 'cart', cart %}
 {% for item in cart.items %}
   <cart-item>
+    <image>
+      <img src="{{ item.image | img_url }}"
+    </image>
     <p class="parrafo-4 collection-tag">{{ item.product.collections[0].title }}</p>
     <h2>{{ item.product.title }}</h2>
-    {% form 'product', item.product, class: 'product-form', novalidate: 'novalidate' %}
       <quantity>
         <input type="button" value="-" class="button-minus" data-field="quantity">
         <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
         <input type="button" value="+" class="button-plus" data-field="quantity">
       </quantity>
-    {% endform %}
+    <a href="{{ item.url_to_remove }}">{% render 'delete-cart' %}</a>
   </cart-item>
 {% endfor %}
-
+{% endform %}
 {% schema %}
 {
   "name": "main cart",
