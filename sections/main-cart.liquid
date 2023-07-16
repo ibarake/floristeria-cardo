@@ -3,7 +3,11 @@
   <cart-item>
     <p class="parrafo-4 collection-tag">{{ item.product.collections[0].title }}</p>
     <h2>{{ item.product.title }}</h2>
-    <
+    <quantity>
+      <input type="button" value="-" class="button-minus" data-field="quantity">
+      <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
+      <input type="button" value="+" class="button-plus" data-field="quantity">
+    </quantity>
   </cart-item>
 {% endfor %}
 
