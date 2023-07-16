@@ -1,5 +1,6 @@
 <h1>Mi carrito</h1>
 {% form 'cart', cart %}
+  <cart-items>
 {% for item in cart.items %}
   <cart-item>
     <image>
@@ -19,6 +20,7 @@
     <a href="{{ item.url_to_remove }}">{% render 'delete-cart' %}</a>
   </cart-item>
 {% endfor %}
+  </cart-items>
 {% endform %}
 {% schema %}
 {
