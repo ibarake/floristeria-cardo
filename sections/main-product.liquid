@@ -62,7 +62,7 @@
   >
     {%- if recommendations.performed? and recommendations.products_count > 0 -%}
     {% if recommendations.intent == 'related' %}
-      <h2>You may also like</h2>
+      <h2>Otros clientes tambien compraron</h2>
     {% elsif recommendations.intent == 'complementary' %}
       <h2>Pair it with</h2>
     {% endif %}
