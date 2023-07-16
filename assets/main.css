@@ -233,7 +233,7 @@ header {
   z-index: 9999;
 }
 
-header img.header-logo {
+.header-logo {
   align-self: center;
   justify-self: center;
   max-height: 70px;
@@ -474,7 +474,7 @@ dropdown-mega-menu {
     display: none;
   }
 
-  header img.header-logo {
+  .header-logo {
     align-self: center;
     justify-self: center;
   }
