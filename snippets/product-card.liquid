@@ -11,12 +11,17 @@
     </product-card-title>
     <card-footer>
       <p class="price parrafo-1">{{ hero-product.price | money_with_currency }}</p>
-      <button class="card-add-to-cart">
-        {% render 'icon-cart' %}
-        <p class="subtitulo-5 atc-btn-text">
-          {{ atc-btn }}
-        </p>
-      </button>
+      <form action="/cart/add" method="post" id="product-form- {{ product.id }}">
+        <input type="hidden" name="id" value="{{ product.variants.first.id }}">
+        <div>
+          <button type="submit" name="add" class="card-add-to-cart">
+            {% render 'icon-cart' %}
+            <p class="subtitulo-5 atc-btn-text">
+              {{ atc-btn }}
+            </p>
+          </button>
+        </div>
+      </form>
     </card-footer>
   </card-product-info>
 </product-card>
