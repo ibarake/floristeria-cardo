@@ -2288,6 +2288,6 @@ secondary-container {
   list-style: none;
 }
 
-.product__tile {
+.product__title {
   color: var(--main-black);
 }
