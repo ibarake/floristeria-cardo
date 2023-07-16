@@ -2288,6 +2288,10 @@ secondary-container {
   list-style: none;
 }
 
-.product__title {
+#product__title {
+  color: var(--main-black);
+}
+
+#product__price {
   color: var(--main-black);
 }
