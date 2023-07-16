@@ -62,9 +62,13 @@
   >
     {%- if recommendations.performed? and recommendations.products_count > 0 -%}
     {% if recommendations.intent == 'related' %}
-      <h2>Otros clientes tambien compraron</h2>
+      <h3 class="titulo-3">
+        {{ section.settings.recommended-products }}
+      </h3>
     {% elsif recommendations.intent == 'complementary' %}
-      <h2>Pair it with</h2>
+      <h2>
+        {{ section.settings.complementary-products }}
+      </h2>
     {% endif %}
     <div class="c">
     <ul class="cc">
@@ -129,6 +133,16 @@
       "id": "agregar-combo",
       "label": "Agregar a tu Combo",
       "default": "Agregar a tu combo"
+    }, {
+      "type": "text",
+      "id": "recommended-products",
+      "label": "Productos recomendados",
+      "default": "Otros Clientes también compraron"
+    }, {
+      "type": "text",
+      "id": "complementary-products",
+      "label": "Productos complementarios",
+      "default": "Agrega a tu combo"
     }
     ]
   }
