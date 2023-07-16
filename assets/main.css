@@ -524,6 +524,9 @@ a.product-item{
   text-decoration: none;
 }
 
+.atc-btn-form{
+  margin: 0;
+}
 inline-half-container {
   z-index: 999;
 }
