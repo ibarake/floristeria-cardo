@@ -2287,3 +2287,7 @@ secondary-container {
 .product {
   list-style: none;
 }
+
+.product__tile {
+  color: var(--main-black);
+}
