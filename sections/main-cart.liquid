@@ -12,6 +12,7 @@
         <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
         <input type="button" value="+" class="button-plus" data-field="quantity">
       </quantity>
+    <p class="price">{{ item.product.price }}</p>
     <a href="{{ item.url_to_remove }}">{% render 'delete-cart' %}</a>
   </cart-item>
 {% endfor %}
