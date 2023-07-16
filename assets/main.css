@@ -2277,8 +2277,13 @@ secondary-container {
 
 .cc {
   display: flex;
+  list-style: none;
 }
 
 .product-url {
   text-decoration: none;
+}
+
+.product {
+  list-style: none;
 }
