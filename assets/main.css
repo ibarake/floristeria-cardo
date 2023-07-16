@@ -2267,4 +2267,9 @@ secondary-container {
 
 .product-recommendations {
   display: flex;
+  flex-direction: column;
+}
+
+.c {
+  display: flex;
 }
