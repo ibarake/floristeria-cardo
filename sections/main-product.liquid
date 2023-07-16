@@ -60,13 +60,13 @@
   class="product-recommendations"
   data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit=4&intent=related"
   >
-  <div class="c">
     {%- if recommendations.performed? and recommendations.products_count > 0 -%}
     {% if recommendations.intent == 'related' %}
       <h2>You may also like</h2>
     {% elsif recommendations.intent == 'complementary' %}
       <h2>Pair it with</h2>
     {% endif %}
+    <div class="c">
     <ul>
       {%- for product in recommendations.products -%}
         <li class="product">
@@ -83,7 +83,7 @@
         </li>
       {%- endfor -%}
     </ul>
-  {%- endif -%}
+    {%- endif -%}
   </div>
 </div>
 </section>
