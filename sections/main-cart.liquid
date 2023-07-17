@@ -5,14 +5,14 @@
       {% for item in cart.items %}
         <cart-item>
           <image>
-            <img src="{{ item.image | img_url }}">
+            <img src="{{ item.image | img_url:  "100px" }}">
           </image>
           <item-info>
             <p class="parrafo-4 collection-tag">{{ item.product.collections[0].title }}</p>
             <h2>{{ item.product.title }}</h2>
             <cart-note>
-              {%- render 'cart-note' %}
-              {{ section.settings['cart-note'] -}}
+              {% render 'cart-note' %}
+              {{ section.settings['cart-note'] }}
             </cart-note>
           </item-info>
           <quantity>
