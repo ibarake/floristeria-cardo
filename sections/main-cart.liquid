@@ -33,6 +33,10 @@
     {% endfor %}
     </summary-cart-item>
   </summary>
+  <cart-total>
+    <span>Subtotal</span>
+    <span>{{ item.product.item | money_with_currency }}</span>
+  </cart-total>
 </cart-info>
 
 </section>
