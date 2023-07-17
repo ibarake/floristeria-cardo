@@ -29,12 +29,12 @@
   <cart-info>
     <summary>
       <p>Resumen</p>
-      <summary-cart-item>
-        {% for item in cart.items %}
+      {% for item in cart.items %}
+        <summary-cart-item>
           <span>{{ item.product.title }}</span>
           <span>{{ item.product.price | money_with_currency }}</span>
-        {% endfor %}
-      </summary-cart-item>
+        </summary-cart-item>
+      {% endfor %}
     </summary>
     <cart-total>
       <span>Subtotal</span>
