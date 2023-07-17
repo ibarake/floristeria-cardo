@@ -2266,3 +2266,12 @@ cart-item {
   grid-template-columns: 4fr 2fr;
 }
 
+.cart-item-image {
+  width: 200px;
+  height: 200px;
+}
+
+.cart-item-image img {
+  object-fit: cover;
+}
+
