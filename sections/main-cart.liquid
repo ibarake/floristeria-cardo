@@ -1,7 +1,7 @@
 <section class="cart">
 <h1>Mi carrito</h1>
-{% form 'cart', cart %}
   <cart-items>
+{% form 'cart', cart %}
 {% for item in cart.items %}
   <cart-item>
     <image>
@@ -21,8 +21,20 @@
     <a href="{{ item.url_to_remove }}">{% render 'delete-cart' %}</a>
   </cart-item>
 {% endfor %}
-  </cart-items>
 {% endform %}
+  </cart-items>
+<cart-info>
+  <summary>
+    <p>Resumen</p>
+    <summary-cart-item>
+    {% for item in cart.items %}
+      <span>{{ item.product.title }}</span>
+      <span>{{ item.product.price | money_with_currency }}</span>
+    {% endfor %}
+    </summary-cart-item>
+  </summary>
+</cart-info>
+
 </section>
 {% schema %}
 {
