@@ -2251,10 +2251,6 @@ container-title {
   cursor: pointer;
 }
 
-form {
-  display: flex;
-}
-
 /* CART STYLES */
 
 cart-item {
