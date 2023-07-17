@@ -2137,7 +2137,6 @@ main-pr-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 3rem 0;
   height: 100%;
   background-color: var(--main-color);
 }
