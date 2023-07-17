@@ -1,44 +1,46 @@
 <h1>Mi carrito</h1>
 <section class="cart page-width">
   <cart-items>
-{% form 'cart', cart %}
-{% for item in cart.items %}
-  <cart-item>
-    <image>
-      <img src="{{ item.image | img_url }}"
-    </image>
-    <item-info>
-    <p class="parrafo-4 collection-tag">{{ item.product.collections[0].title }}</p>
-    <h2>{{ item.product.title }}</h2>
-    <cart-note>{% render 'cart-note' %} {{ section.settings.cart-note }}</cart-note>
-    </item-info>
-      <quantity>
-        <input type="button" value="-" class="button-minus" data-field="quantity">
-        <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
-        <input type="button" value="+" class="button-plus" data-field="quantity">
-      </quantity>
-    <p class="price">{{ item.product.price | money_with_currency }}</p>
-    <a href="{{ item.url_to_remove }}">{% render 'delete-cart' %}</a>
-  </cart-item>
-{% endfor %}
-{% endform %}
+    {% form 'cart', cart %}
+      {% for item in cart.items %}
+        <cart-item>
+          <image>
+            <img src="{{ item.image | img_url }}">
+          </image>
+          <item-info>
+            <p class="parrafo-4 collection-tag">{{ item.product.collections[0].title }}</p>
+            <h2>{{ item.product.title }}</h2>
+            <cart-note>
+              {%- render 'cart-note' %}
+              {{ section.settings['cart-note'] -}}
+            </cart-note>
+          </item-info>
+          <quantity>
+            <input type="button" value="-" class="button-minus" data-field="quantity">
+            <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
+            <input type="button" value="+" class="button-plus" data-field="quantity">
+          </quantity>
+          <p class="price">{{ item.product.price | money_with_currency }}</p>
+          <a href="{{ item.url_to_remove }}">{% render 'delete-cart' %}</a>
+        </cart-item>
+      {% endfor %}
+    {% endform %}
   </cart-items>
-<cart-info>
-  <summary>
-    <p>Resumen</p>
-    <summary-cart-item>
-    {% for item in cart.items %}
-      <span>{{ item.product.title }}</span>
-      <span>{{ item.product.price | money_with_currency }}</span>
-    {% endfor %}
-    </summary-cart-item>
-  </summary>
-  <cart-total>
-    <span>Subtotal</span>
-    <span>{{ item.product.item | money_with_currency }}</span>
-  </cart-total>
-</cart-info>
-
+  <cart-info>
+    <summary>
+      <p>Resumen</p>
+      <summary-cart-item>
+        {% for item in cart.items %}
+          <span>{{ item.product.title }}</span>
+          <span>{{ item.product.price | money_with_currency }}</span>
+        {% endfor %}
+      </summary-cart-item>
+    </summary>
+    <cart-total>
+      <span>Subtotal</span>
+      <span>{{ item.product.item | money_with_currency }}</span>
+    </cart-total>
+  </cart-info>
 </section>
 {% schema %}
 {
