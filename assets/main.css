@@ -2269,9 +2269,6 @@ cart-item {
 .cart-item-image {
   width: 200px;
   height: 200px;
-  object-fit: cover;
 }
 
-.cart-item-image img {
-}
 
