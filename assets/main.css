@@ -2257,9 +2257,15 @@ form {
 
 /* CART STYLES */
 
-cart-item{
+cart-item {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
 }
+
+.cart{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
