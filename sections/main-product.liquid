@@ -73,18 +73,13 @@
     <div class="c">
       <ul class="cc">
         {%- for product in recommendations.products -%}
-          <li class="product">
-            <a href="{{ product.url }}" class="product-url">
-              <img
-                class="product__img"
-                src="{{ product.featured_image | image_url: width: 300, height: 300 }}"
-                alt="{{ product.featured_image.alt }}"
-              />
-
-              <p class="product__title subtitulo-3" id="product__title">{{ product.title }}</p>
-              <p class="product__price subtitulo-3" id="product__price">{{ product.price | money}}</p>
-            </a>
-          </li>
+          <a class="product-item" href="{{ product.url }}">
+          {% include 'product-card',
+            hero-product: product,
+            atc-btn: section.settings['add-to-cart-title'],
+            classes: ''
+          %}
+        </a>
         {%- endfor -%}
       </ul>
       {%- endif -%}
