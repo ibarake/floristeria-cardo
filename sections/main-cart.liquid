@@ -4,8 +4,8 @@
     {% form 'cart', cart %}
       {% for item in cart.items %}
         <cart-item>
-          <image>
-            <img src="{{ item.image | img_url }}" width="200px" heigth="auto">
+          <image class="cart-item-image">
+            <img src="{{ item.image | img_url }}">
           </image>
           <item-info>
             <p class="parrafo-4 collection-tag">{{ item.product.collections[0].title }}</p>
