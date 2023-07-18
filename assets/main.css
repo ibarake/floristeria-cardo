@@ -2349,3 +2349,7 @@ title-add-combo {
 #add-combo-title {
   padding-left: 1rem;
 }
+
+#title-recommended {
+  color: var(--main-olive);
+}

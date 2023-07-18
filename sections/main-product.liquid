@@ -79,7 +79,7 @@
   >
     {%- if recommendations.performed? and recommendations.products_count > 0 -%}
     {% if recommendations.intent == 'related' %}
-      <h3 class="titulo-3">
+      <h3 class="titulo-3" id="title-recommended">
         {{ section.settings.recommended-products }}
       </h3>
     {% elsif recommendations.intent == 'complementary' %}
