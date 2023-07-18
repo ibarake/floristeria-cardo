@@ -7,7 +7,7 @@
       {% render 'Flor-1' %}
     </div>
     <product-page>
-      <img src="{{ product.featured_image | img_url: product.url }}" alt="{{ product.featured_image.alt }}" />
+      <img src="{{ product.featured_image | img_url: product.featured_image.url }}" alt="{{ product.featured_image.alt }}" />
     </product-page>
     <product-information>
       <p class="subtitulo-3" id="pr-subtitle">
@@ -20,7 +20,7 @@
         {{ product.price | money }}
       </h5>
       <product-page id="responsive-image">
-        <img id="responsive-image-2" src="{{ product.featured_image | img_url: '600x600' }}" alt="{{ product.featured_image.alt }}" />
+        <img id="responsive-image-2" src="{{ product.featured_image | img_url: product.featured_image.url }}" alt="{{ product.featured_image.alt }}" />
       </product-page>
       <p class="subtitulo-6" id="pr-description">
         {{ product.description }}
