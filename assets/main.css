@@ -2149,6 +2149,7 @@ product-page {
 
 product-information {
   width: 35%;
+  margin: 5rem 0;
 }
 
 #pr-subtitle {
@@ -2300,9 +2301,14 @@ secondary-container {
 
 shipping {
   display: flex;
+  border-top: 1px solid var(--main-linen);
   border-bottom: 1px solid var(--main-linen);
+  align-items: center;
+  padding: 1rem 0px;
 }
 
 information {
   display: flex;
+  align-items: center;
+  padding: 1rem 0px;
 }
