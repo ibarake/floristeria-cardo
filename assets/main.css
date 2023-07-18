@@ -2358,3 +2358,36 @@ title-add-combo {
 #title-recommended {
   color: var(--main-olive);
 }
+
+@media only screen and (max-width: 768px) {
+  main-pr-container {
+    flex-direction: column-reverse;
+  }
+
+  add-combo {
+    display: none;
+  }
+
+  product-information {
+    width: 90%;
+    margin-left: 1rem;
+  }
+
+  form {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .add-t-cart {
+    margin: 1.5rem 0;
+  }
+
+  .quantity-field {
+    width: 25%;
+  }
+
+  .payment-1 button {
+    padding: 0;
+  }
+}
