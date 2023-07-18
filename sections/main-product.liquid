@@ -72,37 +72,6 @@
         {{ section.settings.agregar-combo }}
       </p>
     </title-add-combo>
-    <div
-  class="product-recommendations"
-  data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit=4&intent=related"
-  >
-    {%- if recommendations.performed? and recommendations.products_count > 0 -%}
-    {% if recommendations.intent == 'complementary' %}
-      <h2>
-        {{ section.settings.complementary-products }}
-      </h2>
-    {% endif %}
-    <div class="c">
-      <ul class="cc">
-        {%- for product in recommendations.products -%}
-          <a class="product-item" href="{{ product.url }}">
-          {% include 'product-card',
-            hero-product: product,
-            atc-btn: section.settings['add-to-cart-title'],
-            classes: ''
-          %}
-        </a>
-        {%- endfor -%}
-        <p class="cta subtitulo-2 s-d {% if section.settings.style-s == 'style 1' %} s2{% endif %} {% if section.settings.style-s == 'style 2' %} s2-1 {% endif %}">
-          <a class="view-all-4" href="#" id="view-all-4">
-          {{ section.settings['subtitulo-fotos'] }}
-          {% render 'icon-arrow-right' %}
-          </a>
-        </p>
-      </ul>
-      {%- endif -%}
-    </div>
-  </div>
   </add-combo>
   <div
   class="product-recommendations"
