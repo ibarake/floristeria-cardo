@@ -7,6 +7,7 @@
       {% render 'Flor-1' %}
     </div>
     <product-page>
+      <img src="{{ product.featured_image | img_url: '600x600' }}" alt="{{ product.featured_image.alt }}" />
     </product-page>
     <product-information>
       <p class="subtitulo-3" id="pr-subtitle">
