@@ -2286,7 +2286,12 @@ secondary-container {
 
 .cc {
   display: flex;
+  align-items: center;
   list-style: none;
+}
+
+#view-all {
+  color: var(--main-olive);
 }
 
 .product-url {
