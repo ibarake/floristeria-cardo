@@ -2415,4 +2415,8 @@ title-add-combo {
   product-page {
     display: none;
   }
+
+  #title-recommended {
+    text-align: center;
+  }
 }
