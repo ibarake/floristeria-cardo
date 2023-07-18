@@ -2170,6 +2170,7 @@ product-information {
 #pr-description {
   margin: 0;
   color: var(--main-gray);
+  line-height: 20px;
 }
 
 container-buttons {
@@ -2400,6 +2401,10 @@ title-add-combo {
   .cc {
     flex-direction: column;
     padding: 0;
+  }
+
+  #pr-description {
+    display: none;
   }
 
   #responsive-image {
