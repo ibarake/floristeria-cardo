@@ -2249,6 +2249,7 @@ container-title {
   padding: 10px 15px;
   border-radius: 8px;
   cursor: pointer;
+  height: 2.7rem;
 }
 
 form {
