@@ -2394,4 +2394,8 @@ title-add-combo {
   .cc {
     flex-direction: column;
   }
+
+  #pr-description {
+    display: none;
+  }
 }
