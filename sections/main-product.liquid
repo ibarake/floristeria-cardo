@@ -53,13 +53,13 @@
         {% if section.settings.envio != blank %}
           <shipping class="extra-product">
             {% render 'icon-transport' %}
-            <p class="subtitulo-2">{{ section.settings.envio }}</p>
+            <p class="subtitulo-2" id="ss">{{ section.settings.envio }}</p>
           </shipping>
         {% endif %}
         {% if section.settings.info-extra != blank %}
           <information class="extra-product">
             {% render 'icon-information' %}
-            <p class="subtitulo-2">{{ section.settings.info-extra }}</p>
+            <p class="subtitulo-2" id="ss">{{ section.settings.info-extra }}</p>
           </information>
         {% endif %}
       </container-spam>

@@ -2328,3 +2328,7 @@ information {
   color: var(--main-olive);
   font-size: 14px;
 }
+
+#ss {
+  padding-left: 20px;
+}
