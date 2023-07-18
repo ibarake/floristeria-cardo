@@ -1716,10 +1716,10 @@ filter label {
 }
 
 #title-politics{
-  width: 30%;
+  width: 542px;
   color: var(--main-olive);
   text-align: center;
-  margin: auto;
+  margin: 4rem 0 0 0;
 }
 
 .fecha-politics{
@@ -1735,6 +1735,12 @@ cont-info{
   display: flex;
   justify-content: space-evenly;
   margin-top: 3rem
+}
+
+cont-1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 cont-2{
