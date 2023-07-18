@@ -2399,6 +2399,7 @@ title-add-combo {
 
   .cc {
     flex-direction: column;
+    padding: 0;
   }
 
   #responsive-image {
