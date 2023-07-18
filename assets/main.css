@@ -2268,6 +2268,11 @@ cart-item {
   width: 100%;
 }
 
+cart-info{
+  border-radius: 12px;
+  background: var(--main-color);
+}
+
 .cart{
   display: grid;
   grid-template-columns: 4fr 2fr;
