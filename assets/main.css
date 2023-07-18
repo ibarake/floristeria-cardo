@@ -2332,3 +2332,8 @@ information {
 #ss {
   padding-left: 20px;
 }
+
+add-combo {
+  display: flex;
+  align-items: center;
+}
