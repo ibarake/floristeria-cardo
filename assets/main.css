@@ -2171,6 +2171,7 @@ product-information {
   margin: 0;
   color: var(--main-gray);
   line-height: 20px;
+  margin-bottom: 1rem;
 }
 
 container-buttons {
