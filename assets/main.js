@@ -175,39 +175,40 @@ function rotateSvg(title, rotation) {
 
 function incrementValue(e) {
   e.preventDefault();
-  var fieldName = $(e.target).data('field');
-  var parent = $(e.target).closest('div');
-  var currentVal = parseInt(parent.find('input[name=' + fieldName + ']').val(), 10);
+  var fieldName = e.target.dataset.field;
+  var parent = e.target.closest('div');
+  var currentVal = parseInt(parent.querySelector('input[name="' + fieldName + '"]').value, 10);
 
   if (!isNaN(currentVal)) {
-    parent.find('input[name=' + fieldName + ']').val(currentVal + 1);
+    parent.querySelector('input[name="' + fieldName + '"]').value = currentVal + 1;
   } else {
-    parent.find('input[name=' + fieldName + ']').val(0);
+    parent.querySelector('input[name="' + fieldName + '"]').value = 0;
   }
 }
-
-
 
 function decrementValue(e) {
   e.preventDefault();
-  var fieldName = $(e.target).data('field');
-  var parent = $(e.target).closest('div');
-  var currentVal = parseInt(parent.find('input[name=' + fieldName + ']').val(), 10);
+  var fieldName = e.target.dataset.field;
+  var parent = e.target.closest('div');
+  var currentVal = parseInt(parent.querySelector('input[name="' + fieldName + '"]').value, 10);
 
   if (!isNaN(currentVal) && currentVal > 0) {
-    parent.find('input[name=' + fieldName + ']').val(currentVal - 1);
+    parent.querySelector('input[name="' + fieldName + '"]').value = currentVal - 1;
   } else {
-    parent.find('input[name=' + fieldName + ']').val(0);
+    parent.querySelector('input[name="' + fieldName + '"]').value = 0;
   }
 }
 
-$('.input-group').on('click', '.button-plus', function(e) {
-  incrementValue(e);
+document.querySelectorAll('.input-group').forEach(function (group) {
+  group.querySelector('.button-plus').addEventListener('click', function (e) {
+    incrementValue(e);
+  });
+
+  group.querySelector('.button-minus').addEventListener('click', function (e) {
+    decrementValue(e);
+  });
 });
 
-$('.input-group').on('click', '.button-minus', function(e) {
-  decrementValue(e);
-});
 
 // Prueba productos recomendados
 
