@@ -2262,7 +2262,7 @@ container-title {
 
 #title-cart{
   color: var(--main-black);
-  
+  font-size: 32px;
 }
 
 cart-item {
@@ -2270,10 +2270,9 @@ cart-item {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  width: 100%;
+  width: 94%;
   gap: 15px;
 }
-
 
 cart-info{
   border-radius: 12px;
@@ -2285,9 +2284,9 @@ cart-info{
   grid-template-columns: 4fr 2fr;
 }
 
-.cart-item-image {
+/*.cart-item-image {
   width: 200px;
   height: 200px;
-}
+}/*
 
 
