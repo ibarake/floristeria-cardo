@@ -2337,6 +2337,5 @@ add-combo {
   display: flex;
   align-items: center;
   background-color: var(--main-color);
-  margin-left: 3rem;
-  border-bottom: 1px solid var(--main-dark-color);
+  padding-left: 6rem;
 }
