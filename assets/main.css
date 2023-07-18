@@ -2188,7 +2188,7 @@ container-buttons {
   width: 100%;
   font-size: 14px;
   margin: 0;
-  padding: 0 20px;
+  padding: 0 40px;
 }
 
 .quantity-field {
@@ -2252,7 +2252,7 @@ container-title {
   border-radius: 8px;
   cursor: pointer;
   height: 2rem;
-  margin: 0 3rem;
+  margin: 0 1.5rem;
 }
 
 form {
