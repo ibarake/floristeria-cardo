@@ -199,7 +199,7 @@ function decrementValue(e) {
   }
 }
 
-document.querySelectorAll('quantity').forEach(function (quantity) {
+document.querySelectorAll('.quantity').forEach(function (quantity) {
   quantity.querySelector('.button-plus').addEventListener('click', function (e) {
     incrementValue(e);
   });
