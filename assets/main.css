@@ -1751,6 +1751,7 @@ cont-2{
   flex-direction: column;
   color: var(--dark-gray);
   line-height: 3rem;
+  width: 282px;
 }
 
 #subtitulo-politics a{
