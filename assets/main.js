@@ -182,7 +182,7 @@ function incrementValue(e) {
   if (!isNaN(currentVal)) {
     parent.querySelector('.quantity-field').value = currentVal + 1;
   } else {
-    parent.querySelector('.quantity-field').value = 0;
+    parent.querySelector('.quantity-field').value = 1;
   }
 }
 
@@ -192,10 +192,10 @@ function decrementValue(e) {
   var parent = e.target.parentElement;
   var currentVal = parseInt(parent.querySelector('.quantity-field').value, 10);
 
-  if (!isNaN(currentVal) && currentVal > 0) {
+  if (!isNaN(currentVal) && currentVal > 1) {
     parent.querySelector('.quantity-field').value = currentVal - 1;
   } else {
-    parent.querySelector('.quantity-field').value = 0;
+    parent.querySelector('.quantity-field').value = 1;
   }
 }
 
@@ -208,9 +208,6 @@ document.querySelectorAll('quantity').forEach(function (quantity) {
     decrementValue(e);
   });
 });
-
-
-
 
 // Prueba productos recomendados
 
