@@ -72,11 +72,11 @@
         {{ section.settings.agregar-combo }}
       </p>
     </title-add-combo>
+    <div
+  class="product-recommendations"
+  data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit=4&intent=related"
+  >
     {%- if recommendations.performed? and recommendations.products_count > 0 -%}
-    {% if recommendations.intent == 'related' %}
-      <h3 class="titulo-3" id="title-recommended">
-        {{ section.settings.recommended-products }}
-      </h3>
     {% if recommendations.intent == 'complementary' %}
       <h2>
         {{ section.settings.complementary-products }}
@@ -101,6 +101,8 @@
         </p>
       </ul>
       {%- endif -%}
+    </div>
+  </div>
   </add-combo>
   <div
   class="product-recommendations"
@@ -111,7 +113,7 @@
       <h3 class="titulo-3" id="title-recommended">
         {{ section.settings.recommended-products }}
       </h3>
-    {% if recommendations.intent == 'complementary' %}
+    {% elsif recommendations.intent == 'complementary' %}
       <h2>
         {{ section.settings.complementary-products }}
       </h2>
