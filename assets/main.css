@@ -2297,3 +2297,12 @@ secondary-container {
 #product__price {
   color: var(--main-black);
 }
+
+shipping {
+  display: flex;
+  border-bottom: 1px solid var(--main-linen);
+}
+
+information {
+  display: flex;
+}
