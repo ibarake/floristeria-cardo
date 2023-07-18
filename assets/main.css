@@ -2260,13 +2260,20 @@ container-title {
 
 /* CART STYLES */
 
+#title-cart{
+  color: var(--main-black);
+  
+}
+
 cart-item {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   width: 100%;
+  gap: 15px;
 }
+
 
 cart-info{
   border-radius: 12px;
