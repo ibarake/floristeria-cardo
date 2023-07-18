@@ -73,6 +73,10 @@
       </p>
     </title-add-combo>
     {%- if recommendations.performed? and recommendations.products_count > 0 -%}
+    {% if recommendations.intent == 'related' %}
+      <h3 class="titulo-3" id="title-recommended">
+        {{ section.settings.recommended-products }}
+      </h3>
     {% if recommendations.intent == 'complementary' %}
       <h2>
         {{ section.settings.complementary-products }}
