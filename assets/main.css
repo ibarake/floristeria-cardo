@@ -2345,3 +2345,7 @@ title-add-combo {
   align-items: center;
   border-bottom: 1px solid var(--main-linen);
 }
+
+#add--combo-title {
+  padding-left: 1rem;
+}
