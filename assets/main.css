@@ -1727,7 +1727,7 @@ filter label {
   width: 542px;
   margin: auto;
   flex-direction: column; 
-  color: var(--neutrales-gris-3);
+  color: var(--main-olive);
   text-align: center;
 }
 
