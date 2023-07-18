@@ -35,8 +35,9 @@
             {% endfor %}
           </select>
           <quantity>
-            <input type="text" name="quantity" min="1" value="1">
-
+            <input type="button" value="-" class="button-minus" data-field="quantity">
+            <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
+            <input type="button" value="+" class="button-plus" data-field="quantity">
           </quantity>
           <add-to-car>
             <button class="atc-product add-t-cart">
