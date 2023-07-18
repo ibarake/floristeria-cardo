@@ -2250,6 +2250,7 @@ container-title {
   border-radius: 8px;
   cursor: pointer;
   height: 2.7rem;
+  margin: 0 3rem;
 }
 
 form {
