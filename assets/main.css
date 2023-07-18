@@ -2339,3 +2339,8 @@ add-combo {
   background-color: var(--main-color);
   padding-left: 6.5rem;
 }
+
+title-add-combo {
+  width: 80%;
+  border-bottom: 1px solid var(--main-dark-color);
+}
