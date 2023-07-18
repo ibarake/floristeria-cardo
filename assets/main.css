@@ -2390,4 +2390,8 @@ title-add-combo {
   .payment-1 button {
     padding: 0;
   }
+
+  .cc {
+    flex-direction: column;
+  }
 }
