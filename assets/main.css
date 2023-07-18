@@ -2158,7 +2158,7 @@ product-information {
 }
 
 #pr-title {
-  margin: 1rem 0;
+  margin-top: 1rem;
   color: var(--main-olive);
 }
 
