@@ -176,38 +176,40 @@ function rotateSvg(title, rotation) {
 function incrementValue(e) {
   e.preventDefault();
   var fieldName = e.target.dataset.field;
-  var parent = e.target.closest('div');
-  var currentVal = parseInt(parent.querySelector('input[name="' + fieldName + '"]').value, 10);
+  var parent = e.target.parentElement;
+  var currentVal = parseInt(parent.querySelector('.quantity-field').value, 10);
 
   if (!isNaN(currentVal)) {
-    parent.querySelector('input[name="' + fieldName + '"]').value = currentVal + 1;
+    parent.querySelector('.quantity-field').value = currentVal + 1;
   } else {
-    parent.querySelector('input[name="' + fieldName + '"]').value = 0;
+    parent.querySelector('.quantity-field').value = 0;
   }
 }
 
 function decrementValue(e) {
   e.preventDefault();
   var fieldName = e.target.dataset.field;
-  var parent = e.target.closest('div');
-  var currentVal = parseInt(parent.querySelector('input[name="' + fieldName + '"]').value, 10);
+  var parent = e.target.parentElement;
+  var currentVal = parseInt(parent.querySelector('.quantity-field').value, 10);
 
   if (!isNaN(currentVal) && currentVal > 0) {
-    parent.querySelector('input[name="' + fieldName + '"]').value = currentVal - 1;
+    parent.querySelector('.quantity-field').value = currentVal - 1;
   } else {
-    parent.querySelector('input[name="' + fieldName + '"]').value = 0;
+    parent.querySelector('.quantity-field').value = 0;
   }
 }
 
-document.querySelectorAll('.input-group').forEach(function (group) {
-  group.querySelector('.button-plus').addEventListener('click', function (e) {
+document.querySelectorAll('quantity').forEach(function (quantity) {
+  quantity.querySelector('.button-plus').addEventListener('click', function (e) {
     incrementValue(e);
   });
 
-  group.querySelector('.button-minus').addEventListener('click', function (e) {
+  quantity.querySelector('.button-minus').addEventListener('click', function (e) {
     decrementValue(e);
   });
 });
+
+
 
 
 // Prueba productos recomendados
