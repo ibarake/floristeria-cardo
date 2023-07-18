@@ -2175,6 +2175,7 @@ product-information {
 container-buttons {
   width: 100%;
   display: flex;
+  margin-bottom: 1rem;
 }
 
 .payment-1 button {
