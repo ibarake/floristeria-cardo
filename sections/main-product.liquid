@@ -82,7 +82,7 @@
       <h3 class="titulo-3" id="title-recommended">
         {{ section.settings.recommended-products }}
       </h3>
-    {% elsif recommendations.intent == 'complementary' %}
+    {% if recommendations.intent == 'complementary' %}
       <h2>
         {{ section.settings.complementary-products }}
       </h2>
