@@ -19,6 +19,9 @@
       <h5 class="titulo-5" id="pr-price">
         {{ product.price | money }}
       </h5>
+      <product-page id="responsive-image">
+        <img src="{{ product.featured_image | img_url: '600x600' }}" alt="{{ product.featured_image.alt }}" />
+      </product-page>
       <p class="subtitulo-6" id="pr-description">
         {{ product.description }}
       </p>
