@@ -2402,4 +2402,8 @@ title-add-combo {
   #responsive-image {
     display: block;
   }
+
+  product-page {
+    display: none;
+  }
 }
