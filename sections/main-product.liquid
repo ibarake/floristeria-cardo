@@ -23,7 +23,7 @@
         <img id="responsive-image-2" src="{{ product.featured_image | img_url: product.featured_image.url }}" alt="{{ product.featured_image.alt }}" />
       </product-page>
       <p class="subtitulo-6" id="pr-description">
-        {{ product.description }}
+        {{ product.description | strip_html }}
       </p>
       <container-buttons>
         {% form 'product', product, class: "product-form", novalidate: 'novalidate' %}
