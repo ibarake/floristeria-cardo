@@ -1640,7 +1640,7 @@ product-grid{
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-#sort-by{
+sort-by{
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
