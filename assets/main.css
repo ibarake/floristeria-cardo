@@ -2289,6 +2289,14 @@ cart-info{
   height: 200px;
 }*/
 
+met-pagos{
+  width: 500px;
+  height: 121px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: var(--lino, #F7F0E2);
+}
+
 #pagos{
   color: var(--main-black);
   font-size: 20px;
