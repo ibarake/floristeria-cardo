@@ -1645,6 +1645,7 @@ sort-by {
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
+  gap: 5px;
 }
 
 #sort-by{
