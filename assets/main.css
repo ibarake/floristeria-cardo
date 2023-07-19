@@ -2365,6 +2365,10 @@ title-add-combo {
   display: none;
 }
 
+#description-product {
+  display: none;
+}
+
 @media only screen and (max-width: 768px) {
   main-pr-container {
     flex-direction: column-reverse;
