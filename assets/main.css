@@ -1659,6 +1659,7 @@ sort-by {
   border-radius: 8px;
   border: 1px solid var(--lino-2, #EFE4CF);
   background: var(--lino, #F7F0E2);
+  margin-left: 15px;
 }
 
 filter input[type=checkbox i] {
