@@ -52,6 +52,15 @@
           </payment>
         {% endform %}
       </container-buttons>
+      <faq class="faq-container-2">
+        <question class="FAQ-title subtitulo-3">
+          {{ block.settings['FAQ-title'] }}
+          {% render 'icon-arrow-right-dropdown' %}
+        </question>
+        <answer class="FAQ-text parrafo-2">
+          {{ block.settings['FAQ-text'] }}
+        </answer>
+      </faq>
       <container-spam>
         {% if section.settings.envio != blank %}
           <shipping class="extra-product">
