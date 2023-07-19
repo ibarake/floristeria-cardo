@@ -4,8 +4,12 @@
     <h3 class="titulo-3">{{ section.settings['total-p'] }} ({{ collection.products_count }})</h3>
     <filter-top>
       <order-by>
-        <order-vertical></order-vertical>
-        <order-horizontal></order-horizontal>
+        <order-vertical>
+          {% render 'square-cards-icon' %}
+        </order-vertical>
+        <order-horizontal>
+          {% render 'horizontal-cards-icon' %}
+        </order-horizontal>
       </order-by>
       <sort-by>
         {% render 'filter-icon' %}
