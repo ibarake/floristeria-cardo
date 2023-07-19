@@ -54,11 +54,11 @@
       </container-buttons>
       <faq class="faq-container">
         <question class="FAQ-title subtitulo-3">
-          {{ product.description | strip_html }}
+          <h2>description</h2>
           {% render 'icon-arrow-right-dropdown' %}
         </question>
         <answer class="FAQ-text parrafo-2">
-          {{ block.settings['FAQ-text'] }}
+          {{ product.description | strip_html }}
         </answer>
       </faq>
       <container-spam>
