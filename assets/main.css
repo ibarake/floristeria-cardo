@@ -1669,7 +1669,7 @@ filter input[type=checkbox] + label {
 }
 
 .filter-form input[type=checkbox]:checked + label {
-  border: solid 1px var(--main-olive);
+  border: solid 1px var(--linen-3);
 }
 
 filter label {
