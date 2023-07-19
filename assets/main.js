@@ -200,3 +200,7 @@ const productRecommendationsSection = document.querySelector('.product-recommend
 const observer = new IntersectionObserver(handleIntersection, {rootMargin: '0px 0px 200px 0px'});
 
 observer.observe(productRecommendationsSection);
+
+
+/* COLLECTION PAGE VERTICAL OR HORIZONTAL GRID AND PRODUCT CARD */
+

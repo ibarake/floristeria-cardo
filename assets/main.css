@@ -888,6 +888,12 @@ product-card img {
   border-radius: 8px 8px 0 0;
 }
 
+hor-product-card img {
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 8px 8px 0 0;
+}
+
 card-product-info {
   display: flex;
   flex-direction: column;
