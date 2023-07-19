@@ -7,7 +7,7 @@
       {% render 'icon-close' %}
     </button>
     <drawer-content class="absolute">
-      {% for link in section.settings.main-menu.links %}
+      {% for link in section.settings['main-menu'].links %}
         <ul class="drawer-items">
           <li class="drawer-item-container">
             <navigation-item class="drawer-item">
@@ -38,15 +38,17 @@
       {% endfor %}
     </drawer-content>
   </nav>
-
-  <img
-    src="{{ settings.logo.src | img_url }}"
-    alt="{{ settings.logo.alt }}"
-    class="header-logo" />
+  <a href="/" class="header-logo">
+    <img
+      src="{{ settings.logo.src | img_url }}"
+      alt="{{ settings.logo.alt }}"
+      class="header-logo"
+    >
+  </a>
 
   <nav class="navigation-menu">
     <ul class="menu-items">
-      {% for link in section.settings.main-menu.links %}
+      {% for link in section.settings['main-menu'].links %}
         <li class="grow menu-item {% if link.links != blank %}has-mega-menu{% endif %}">
           <a href="{{ link.url }}" class="menu-link">
             <span class="menu-link-title subtitulo-3">{{ link.title }}</span>
@@ -70,27 +72,26 @@
     </ul>
   </nav>
 
-  <button class="grow add-to-cart">
+  <a href="/cart" class="grow add-to-cart">
     {% render 'icon-cart' %}
-    <p class="add-to-cart-text subtitulo-2">{{ section.settings.atc-head-btn }}</p>
-  </button>
+    <p class="add-to-cart-text subtitulo-2">{{ section.settings['atc-head-btn'] }}</p>
+  </a>
 </header>
 
-
 {% schema %}
-  {
-    "name": "header",
-    "settings": [
-      {
-        "type": "link_list",
-        "id": "main-menu",
-        "label": "Menu principal del encabezado"
-      }, {
-        "type": "text",
-        "id": "atc-head-btn",
-        "label": "Texto add to cart button",
-        "default": "Carrito"
-      }
-    ]
-  }
+{
+  "name": "header",
+  "settings": [
+    {
+      "type": "link_list",
+      "id": "main-menu",
+      "label": "Menu principal del encabezado"
+    }, {
+      "type": "text",
+      "id": "atc-head-btn",
+      "label": "Texto add to cart button",
+      "default": "Carrito"
+    }
+  ]
+}
 {% endschema %}

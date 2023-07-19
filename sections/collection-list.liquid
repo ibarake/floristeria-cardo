@@ -5,19 +5,22 @@
   <flor class="absolute collection-flor">
     {% render 'flor-collection-list' %}
   </flor>
-<collection-list class="page-width">
-  <collection-title>
-    <collection-text>
-      <h4 class="subtitulo-2 collection-subtitle">{{ section.settings['subtitle-text'] }}</h4>
-      <h2 class="titulo-2 collection-title">{{ section.settings['title-text'] }}</h2>
-    </collection-text>
-    <collection-subtext>
-      <p class="parrafo-1 collection-description"><br>{{ section.settings['p-text'] }}</p>
-    </collection-subtext>
-    <collection-button>
-      <a class="cta-3 subtitulo-3">{{ section.settings['cta-3'] }}</a>
-    </collection-button>
-  </collection-title>
+  <collection-list class="page-width">
+    <collection-title>
+      <collection-text>
+        <h4 class="subtitulo-2 collection-subtitle">{{ section.settings['subtitle-text'] }}</h4>
+        <h2 class="titulo-2 collection-title">{{ section.settings['title-text'] }}</h2>
+      </collection-text>
+      <collection-subtext>
+        <p class="parrafo-1 collection-description">
+          <br>
+          {{ section.settings['p-text'] }}
+        </p>
+      </collection-subtext>
+      <collection-button>
+        <a class="cta-3 subtitulo-3" href="{{ section.settings.link }}">{{ section.settings['cta-3'] }}</a>
+      </collection-button>
+    </collection-title>
     <collection-slider class="drag-scroll">
       {% for collection in section.settings.collection_list %}
         <a class="collection-item" href="{{ collection.url }}">
@@ -25,48 +28,53 @@
         </a>
       {% endfor %}
     </collection-slider>
-  <a class="cta-3-responsive subtitulo-3">{{ section.settings['cta-3'] }}</a>
-</collection-list>
+    <a class="cta-3-responsive subtitulo-3">{{ section.settings['cta-3'] }}</a>
+  </collection-list>
 </section>
 
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": [
-      {
-        "type":"text",
-        "id": "subtitle-text",
-        "label": "Subtitle text",
-        "default": "Categorias"
-      },
-      {
-        "type":"text",
-        "id": "title-text",
-        "label": "Title text",
-        "default": "Encuentra el regalo ideal"
-      },
-      {
-        "type":"text",
-        "id": "p-text",
-        "label": "paragraph text",
-        "default": "Pellentesque cras adipiscing tempus libero vel nullam mauris tellus. Aliquam ultrices tellus consequat amet,"
-      },
-      {
-        "type": "text",
-        "id": "cta-3",
-        "label": "Titulo boton",
-        "default": "Ver por Ocasión"
-      },
-      {
-        "type": "collection_list",
-        "id": "collection_list",
-        "label": "Collections"
-      }
-    ],
-    "presets": [
+{
+  "name": "Section name",
+  "settings": [
     {
-      "name": "collection-list"
+      "type":"text",
+      "id": "subtitle-text",
+      "label": "Subtitle text",
+      "default": "Categorias"
+    },
+    {
+      "type":"text",
+      "id": "title-text",
+      "label": "Title text",
+      "default": "Encuentra el regalo ideal"
+    },
+    {
+      "type":"text",
+      "id": "p-text",
+      "label": "paragraph text",
+      "default": "Pellentesque cras adipiscing tempus libero vel nullam mauris tellus. Aliquam ultrices tellus consequat amet,"
+    },
+    {
+      "type": "text",
+      "id": "cta-3",
+      "label": "Titulo boton",
+      "default": "Ver por Ocasión"
+    },
+    {
+      "type": "collection_list",
+      "id": "collection_list",
+      "label": "Collections"
+    },
+    {
+      "type": "url",
+      "id": "link",
+      "label": "Link del boton"
     }
-  ]
+  ],
+  "presets": [
+  {
+    "name": "collection-list"
   }
+]
+}
 {% endschema %}

@@ -1,43 +1,54 @@
 <section class="product4 {% if section.settings.color %}bg-linen{% else %}bg-dark{% endif %}">
-{% if section.settings.flor == true %}
-  <flor class="flor-6">
-    {% render 'Flor-6' %}
-  </flor>
+  {% if section.settings.flor == true %}
+    <flor class="flor-6">
+      {% render 'Flor-6' %}
+    </flor>
   {% else %}
-  <flor class="flor-7">
-    {% render "Flor-7" %}
-  </flor>
-  <flor class="flor-8">
-    {% render "Flor-8" %}
-  </flor>
-{% endif %}
-<product4 class="page-width" {% if section.settings.border == true %}style="border-bottom: 1px solid var(--main-linen);"{% endif %}>
-  <container-arreglos>
-    <p class="subtitulo-3 s3" id="p-subtitle">
-      {{ section.settings.arreglos-subtitle }}
-    </p>
-    <h1 class="titulo-1 t1" id="p-title">
-      {{ section.settings.arreglos-title }}
-    </h1>
-  </container-arreglos>
-  <p class="cta s-r subtitulo-2 {% if section.settings.style-s == 'style 1' %} s2{% endif %} {% if section.settings.style-s == 'style 2' %} s2-1 {% endif %}">
+    <flor class="flor-7">
+      {% render 'Flor-7' %}
+    </flor>
+    <flor class="flor-8">
+      {% render 'Flor-8' %}
+    </flor>
+  {% endif %}
+  <product4
+    class="page-width"
+    {% if section.settings.border == true %}
+      style="border-bottom: 1px solid var(--main-linen);"
+    {% endif %}
+  >
+    <container-arreglos>
+      <p class="subtitulo-3 s3" id="p-subtitle">
+        {{ section.settings['arreglos-subtitle'] }}
+      </p>
+      <h1 class="titulo-1 t1" id="p-title">
+        {{ section.settings['arreglos-title'] }}
+      </h1>
+    </container-arreglos>
+    <p class="cta s-r subtitulo-2 {% if section.settings.style-s == 'style 1' %} s2{% endif %} {% if section.settings.style-s == 'style 2' %} s2-1 {% endif %}">
       <a class="view-all-4" href="#">
-      {{ section.settings['subtitulo-fotos'] }}
-      {% render 'icon-arrow-right' %}
+        {{ section.settings['subtitulo-fotos'] }}
+        {% render 'icon-arrow-right' %}
       </a>
     </p>
-  <container-4products>
-    {% for product in section.settings.collection limit:4 %}
-        {% include 'product-card', hero-product: product, atc-btn: section.settings.button-text, classes: "product-4-img" %}
-    {% endfor %}
-    <p class="cta subtitulo-2 s-d {% if section.settings.style-s == 'style 1' %} s2{% endif %} {% if section.settings.style-s == 'style 2' %} s2-1 {% endif %}">
-      <a class="view-all-4" href="#">
-      {{ section.settings['subtitulo-fotos'] }}
-      {% render 'icon-arrow-right' %}
-      </a>
-    </p>
-  </container-4products>
-</product4>
+    <container-4products>
+      {% for product in section.settings.collection limit: 4 %}
+        <a class="product-item" href="{{ product.url }}">
+          {% include 'product-card',
+            hero-product: product,
+            atc-btn: section.settings['button-text'],
+            classes: 'product-4-img'
+          %}
+        </a>
+      {% endfor %}
+      <p class="cta subtitulo-2 s-d {% if section.settings.style-s == 'style 1' %} s2{% endif %} {% if section.settings.style-s == 'style 2' %} s2-1 {% endif %}">
+        <a class="view-all-4" href="{{ section.settings.link }}">
+          {{ section.settings['subtitulo-fotos'] }}
+          {% render 'icon-arrow-right' %}
+        </a>
+      </p>
+    </container-4products>
+  </product4>
 </section>
 
 {% schema %}
@@ -112,6 +123,11 @@
         }
       ],
       "default": "style 1"
+    },
+      {
+      "type": "url",
+      "id": "link",
+      "label": "Link del boton"
     }
     ],
   "presets": [
@@ -121,4 +137,3 @@
   ]
   }
 {% endschema %}
-
