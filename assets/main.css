@@ -868,6 +868,20 @@ product-card:hover {
   transition: all 100ms ease-out;
 }
 
+hor-product-card {
+  background-color: var(--main-white);
+  border-radius: 8px;
+  margin: 16px;
+  display: flex;
+  flex-direction: row;
+  z-index: 9999;
+}
+
+hor-product-card:hover {
+  transform: scale(1.05);
+  transition: all 100ms ease-out;
+}
+
 product-card img {
   object-fit: cover;
   object-position: center center;
