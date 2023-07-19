@@ -2296,11 +2296,14 @@ summary{
   width: 100%;
   background-color: var(--main-color);
   display: flex;
-  justify-content: center;
   flex-direction: column;
   height: 53%;
   border-radius: 12px;
   margin-bottom: 10px;
+}
+
+summary-cart-item{
+  display: flex;
 }
 
 container-resumen{
