@@ -2320,6 +2320,11 @@ met-pagos{
   border-radius: 12px;
   background-color: var(--main-color);
   margin-bottom: 10px;
+  flex-direction: column;
+}
+
+container-met-pagos{
+  display: flex;
 }
 
 #pagos{
