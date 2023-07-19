@@ -2434,5 +2434,6 @@ title-add-combo {
 
   #description-product {
     display: block;
+    border-top: 1px solid var(--main-linen);
   }
 }

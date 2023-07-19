@@ -54,7 +54,9 @@
       </container-buttons>
       <faq class="faq-container" id="description-product">
         <question class="FAQ-title subtitulo-3">
-          <h2>description</h2>
+          <h2>
+            {{ section.settings.description-title }}
+          </h2>
           {% render 'icon-arrow-right-dropdown' %}
         </question>
         <answer class="FAQ-text parrafo-2">
@@ -178,6 +180,11 @@
       "id": "add-to-cart-title",
       "label": "Titulo Boton",
       "default": "Añadir al carrito"
+    }, {
+      "type": "text",
+      "id": "description-title",
+      "label": "titulo descipcion",
+      "default": "Descricción"
     }
     ]
   }
