@@ -2310,7 +2310,7 @@ met-pagos{
   line-height: normal;
 }
 
-.button-cart{
+button-cart{
   display: flex;
   width: 500px;
   height: 60px;
