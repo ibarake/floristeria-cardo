@@ -2290,8 +2290,11 @@ cart-info{
 }
 
 summary{
-  
-  
+  width: 30%;
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: space-evenly;
+
 }
 
 container-resumen{
