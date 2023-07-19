@@ -171,44 +171,6 @@ function rotateSvg(title, rotation) {
   svgElement.style.transform = `rotate(${rotation})`;
 }
 
-/* INCREMENT PRODCUTS */
-
-function incrementValue(e) {
-  e.preventDefault();
-  var fieldName = e.target.dataset.field;
-  var parent = e.target.parentElement;
-  var currentVal = parseInt(parent.querySelector('.quantity-field').value, 10);
-
-  if (!isNaN(currentVal)) {
-    parent.querySelector('.quantity-field').value = currentVal + 1;
-  } else {
-    parent.querySelector('.quantity-field').value = 1;
-  }
-}
-
-function decrementValue(e) {
-  e.preventDefault();
-  var fieldName = e.target.dataset.field;
-  var parent = e.target.parentElement;
-  var currentVal = parseInt(parent.querySelector('.quantity-field').value, 10);
-
-  if (!isNaN(currentVal) && currentVal > 1) {
-    parent.querySelector('.quantity-field').value = currentVal - 1;
-  } else {
-    parent.querySelector('.quantity-field').value = 1;
-  }
-}
-
-document.querySelectorAll('.quantity').forEach(function (quantity) {
-  quantity.querySelector('.button-plus').addEventListener('click', function (e) {
-    incrementValue(e);
-  });
-
-  quantity.querySelector('.button-minus').addEventListener('click', function (e) {
-    decrementValue(e);
-  });
-});
-
 // Prueba productos recomendados
 
 const handleIntersection = (entries, observer) => {
