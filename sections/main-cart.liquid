@@ -39,12 +39,11 @@
           <span class="subtitulo-2">{{ item.product.price | money_with_currency }}</span>
         </summary-cart-item>
       {% endfor %}
-    </summary>
-    <cart-total>
+      <cart-total>
       <span>Subtotal</span>
       <span>{{ item.product.item | money_with_currency }}</span>
     </cart-total>
-  </cart-info>
+    </summary>
   <button-cart name="Comprar">Realizar Compra</button-cart>
 </container-resumen>
 </section>
