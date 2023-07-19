@@ -2287,6 +2287,11 @@ cart-info{
 /*.cart-item-image {
   width: 200px;
   height: 200px;
-}/*
+}*/
 
+#pagos{
+  color: var(--main-black);
+  font-size: 20px;
+  line-height: normal;
+}
 
