@@ -2259,6 +2259,9 @@ container-title {
 }
 
 /* CART STYLES */
+container-cart-item{
+  margin-left: 5rem;
+}
 
 #title-cart{
   color: var(--main-black);
@@ -2302,7 +2305,10 @@ summary{
 
 container-resumen{
   width: 30%;
+  margin-right: 5rem;
+  margin-top: 1.5rem;
 }
+
 
 /*.cart-item-image {
   width: 200px;
@@ -2329,4 +2335,6 @@ button-cart{
   align-items: center;
   border-radius: 8px;
   background: var(--main-olive);
+  font-family: Poppins;
+  color: var(--main-white);
 }
