@@ -2283,6 +2283,7 @@ cart-info{
 }
 
 .cart{
+  width: 100%;
   display: flex;
   justify-content:space-around;
   background-color: var(--main-dark-color);
