@@ -2306,6 +2306,11 @@ summary-cart-item{
   display: flex;
 }
 
+#subtotal-cart{
+text-transform: uppercase;
+color: var(--main-gray);
+}
+
 container-resumen{
   width: 30%;
   margin-right: 5rem;
