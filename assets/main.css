@@ -2147,6 +2147,11 @@ product-page {
   background-color: var(--main-white);
 }
 
+product-page #image-product {
+  width: 600px;
+  height: 800px;
+}
+
 product-information {
   width: 35%;
   margin: 5rem 0 1rem 0;
