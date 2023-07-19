@@ -2309,9 +2309,7 @@ container-resumen{
 }*/
 
 met-pagos{
-  width: 500px;
-  height: 121px;
-  flex-shrink: 0;
+  display: flex; 
   border-radius: 12px;
   background: var(--main-olive);
 }
