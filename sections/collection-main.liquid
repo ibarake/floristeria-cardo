@@ -105,6 +105,25 @@
     </product-grid>
   </content>
 </section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var orderVerticalBtn = document.getElementById('order-vertical-btn');
+    var orderHorizontalBtn = document.getElementById('order-horizontal-btn');
+    var productGrid = document.querySelector('product-grid');
+
+    orderVerticalBtn.addEventListener('click', function() {
+      productGrid.classList.add('order-vertical');
+      productGrid.classList.remove('order-horizontal');
+    });
+
+    orderHorizontalBtn.addEventListener('click', function() {
+      productGrid.classList.add('order-horizontal');
+      productGrid.classList.remove('order-vertical');
+    });
+  });
+</script>
+
 {% schema %}
 {
   "name": "Collection Main",
