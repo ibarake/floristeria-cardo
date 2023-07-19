@@ -6,7 +6,16 @@
     <title>Floristeria Cardo</title>
     {{ content_for_header }}
     <link rel="stylesheet" href="{{ 'main.css' | asset_url }}">
-    <link rel="stylesheet" href="{{ 'fonts.css.liquid' | asset_url }}">
+    <style>
+      @font-face {
+        font-family: 'NewYork';
+        src: url('{{ "NewYork-PERSONAL-USE.woff" | asset_url }}'), url('{{ "NewYork-PERSONAL-USE.woff" | asset_url }}');
+      }
+      @font-face {
+        font-family: 'DM sans';
+        src: url('{{ "FontsFree-Net-SFProText-Semibold.woff" | asset_url }}'), url('{{ "FontsFree-Net-SFProText-Semibold.woff" | asset_url }}');
+      }
+    </style>
   </head>
   <body>
     {% section 'header' %}
