@@ -1702,7 +1702,10 @@ filter label {
   width: calc(33.33% - 5px);
 }
 
-
+filter-top{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
 
 /* MAIN-POLITICS */
 
