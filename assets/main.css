@@ -1643,7 +1643,8 @@ product-grid{
 sort-by {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;  
+  flex-wrap: nowrap;
+  align-items: center;
 }
 
 #sort-by{
