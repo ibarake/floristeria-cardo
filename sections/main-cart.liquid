@@ -27,6 +27,25 @@
   {% endform %}
 </container-cart-item>
 <container-resumen>
+  <met-pagos>
+  <p class="subtitulo-2" id="pagos">Metodos de Pagos</p>
+  </met-pagos>
+  <cart-info>
+    <summary>
+      <p>Resumen</p>
+      {% for item in cart.items %}
+        <summary-cart-item>
+          <span>{{ item.product.title }}</span>
+          <span>{{ item.product.price | money_with_currency }}</span>
+        </summary-cart-item>
+      {% endfor %}
+    </summary>
+    <cart-total>
+      <span>Subtotal</span>
+      <span>{{ item.product.item | money_with_currency }}</span>
+    </cart-total>
+  </cart-info>
+  <button-cart name="Comprar">Realizar Compra</button-cart>
 </container-resumen>
 </section>
 {% schema %}
