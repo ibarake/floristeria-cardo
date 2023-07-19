@@ -1643,6 +1643,7 @@ product-grid{
 #sort-by{
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   width: 245px;
   height: 54px;
   padding: 10px 16px;
