@@ -205,6 +205,16 @@ function decrementValue(e) {
   }
 }
 
+document.querySelectorAll('.quantity').forEach(function (quantity) {
+  quantity.querySelector('.button-plus').addEventListener('click', function (e) {
+    incrementValue(e);
+  });
+
+  quantity.querySelector('.button-minus').addEventListener('click', function (e) {
+    decrementValue(e);
+  });
+});
+
 </script>
 
 {% schema %}
