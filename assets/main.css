@@ -1673,7 +1673,7 @@ filter label {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 16px 40px;
+  padding: 15px;
 }
 
 .filter-group {
