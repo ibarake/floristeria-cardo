@@ -2283,8 +2283,9 @@ cart-info{
 }
 
 .cart{
-  display: grid;
+  display: flex;
   grid-template-columns: 4fr 2fr;
+  justify-content:space-around;
 }
 
 summary{
@@ -2294,6 +2295,10 @@ summary{
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+
+container-resumen{
+  width: 30%;
 }
 
 /*.cart-item-image {
