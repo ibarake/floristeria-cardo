@@ -2311,7 +2311,7 @@ container-resumen{
 met-pagos{
   display: flex; 
   border-radius: 12px;
-  background: var(--main-olive);
+  background-color: var(--main-color);
 }
 
 #pagos{
