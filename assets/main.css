@@ -2306,7 +2306,7 @@ met-pagos{
   height: 121px;
   flex-shrink: 0;
   border-radius: 12px;
-  background: var(--lino, #F7F0E2);
+  background: var(--main-olive);
 }
 
 #pagos{
