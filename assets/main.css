@@ -2431,4 +2431,8 @@ title-add-combo {
   #title-recommended {
     text-align: center;
   }
+
+  #description-product {
+    display: block;
+  }
 }
