@@ -7,6 +7,7 @@
       {% render 'Flor-1' %}
     </div>
     <product-page>
+      <img id="image-product" src="{{ product.featured_image | img_url: product.featured_image.url }}" alt="{{ product.featured_image.alt }}" />
     </product-page>
     <product-information>
       <p class="subtitulo-3" id="pr-subtitle">
@@ -15,11 +16,14 @@
       <h3 class="titulo-3" id="pr-title">
         {{ product.title }}
       </h3>
-      <h4 class="titulo-4" id="pr-price">
+      <h5 class="titulo-5" id="pr-price">
         {{ product.price | money }}
-      </h4>
+      </h5>
+      <product-page id="responsive-image">
+        <img id="responsive-image-2" src="{{ product.featured_image | img_url: product.featured_image.url }}" alt="{{ product.featured_image.alt }}" />
+      </product-page>
       <p class="subtitulo-6" id="pr-description">
-        {{ product.description }}
+        {{ product.description | strip_html }}
       </p>
       <container-buttons>
         {% form 'product', product, class: "product-form", novalidate: 'novalidate' %}
@@ -38,7 +42,7 @@
           <add-to-car>
             <button class="atc-product add-t-cart">
               {% render 'icon-cart' %}
-              <p class="add-to-cart-text subtitulo-2">
+              <p class="add-t-cart-text subtitulo-2">
                 <b> {{ section.settings.button-title }} </b>
               </p>
             </button>
@@ -48,9 +52,162 @@
           </payment>
         {% endform %}
       </container-buttons>
+      <faq class="faq-container" id="description-product">
+        <question class="FAQ-title subtitulo-3">
+          <h3 class="subtitulo-3">
+            {{ section.settings.description-title }}
+          </h3>
+          {% render 'icon-arrow-right-dropdown' %}
+        </question>
+        <answer class="FAQ-text parrafo-2">
+          {{ product.description | strip_html }}
+        </answer>
+      </faq>
+      <container-spam>
+        {% if section.settings.envio != blank %}
+          <shipping class="extra-product">
+            {% render 'icon-transport' %}
+            <p class="subtitulo-2" id="ss">{{ section.settings.envio }}</p>
+          </shipping>
+        {% endif %}
+        {% if section.settings.info-extra != blank %}
+          <information class="extra-product">
+            {% render 'icon-information' %}
+            <p class="subtitulo-2" id="ss">{{ section.settings.info-extra }}</p>
+          </information>
+        {% endif %}
+      </container-spam>
     </product-information>
   </main-pr-container>
+  <add-combo>
+    <title-add-combo>
+      {% render 'button-plus' %}
+      <p class="subtitulo-1" id="add-combo-title">
+        {{ section.settings.agregar-combo }}
+      </p>
+    </title-add-combo>
+  </add-combo>
+  <div
+  class="product-recommendations"
+  data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit=4&intent=related"
+  >
+    {%- if recommendations.performed? and recommendations.products_count > 0 -%}
+    {% if recommendations.intent == 'related' %}
+      <h3 class="titulo-3" id="title-recommended">
+        {{ section.settings.recommended-products }}
+      </h3>
+    {% elsif recommendations.intent == 'complementary' %}
+      <h2>
+        {{ section.settings.complementary-products }}
+      </h2>
+    {% endif %}
+    <div class="c">
+      <ul class="cc">
+        {%- for product in recommendations.products -%}
+          <a class="product-item" href="{{ product.url }}">
+          {% include 'product-card',
+            hero-product: product,
+            atc-btn: section.settings['add-to-cart-title'],
+            classes: ''
+          %}
+        </a>
+        {%- endfor -%}
+        <p class="cta subtitulo-2 s-d {% if section.settings.style-s == 'style 1' %} s2{% endif %} {% if section.settings.style-s == 'style 2' %} s2-1 {% endif %}">
+          <a class="view-all-4" href="#" id="view-all-4">
+          {{ section.settings['subtitulo-fotos'] }}
+          {% render 'icon-arrow-right' %}
+          </a>
+        </p>
+      </ul>
+      {%- endif -%}
+    </div>
+  </div>
 </section>
+
+<script>
+  
+  /* FAQ DROPDOWN ANIMATION */
+document.addEventListener('DOMContentLoaded', function() {
+  var faqTitles = document.querySelectorAll('.FAQ-title');
+  var openAnswer = null; // Keeps track of the currently open answer
+  var openTitle = null; // Keeps track of the currently open FAQ title
+
+  faqTitles.forEach(function(title) {
+    title.addEventListener('click', function() {
+      var answer = this.nextElementSibling;
+
+      if (openAnswer === answer) {
+        // Clicking on the same FAQ title again, close the answer and rotate the SVG back
+        toggleSlide(answer);
+        rotateSvg(this, '0deg');
+        openAnswer = null;
+        openTitle = null;
+      } else {
+        // Clicking on a different FAQ title
+        if (openAnswer) {
+          // Close the previously open answer and rotate its SVG back
+          toggleSlide(openAnswer);
+          rotateSvg(openTitle, '0deg');
+        }
+
+        // Open the clicked answer and rotate its SVG
+        toggleSlide(answer);
+        rotateSvg(this, '90deg');
+        openAnswer = answer;
+        openTitle = this;
+      }
+    });
+  });
+});
+
+function toggleSlide(element) {
+  var isHidden = getComputedStyle(element).height === '0px';
+
+  if (isHidden) {
+    element.style.height = 'auto';
+    element.style.marginTop = '15px';
+    element.style.marginBottom = '10px';
+  } else {
+    element.style.height = '0px';
+    element.style.marginTop = '0px';
+    element.style.marginBottom = '0px';
+  }
+}
+
+function rotateSvg(title, rotation) {
+  var svgElement = title.querySelector('svg');
+  svgElement.style.transform = `rotate(${rotation})`;
+}
+
+const handleIntersection = (entries, observer) => {
+  if (!entries[0].isIntersecting) return;
+
+  observer.unobserve(productRecommendationsSection);
+
+  const url = productRecommendationsSection.dataset.url;
+
+  fetch(url)
+    .then(response => response.text())
+    .then(text => {
+      const html = document.createElement('div');
+      html.innerHTML = text;
+      const recommendations = html.querySelector('.product-recommendations');
+
+      if (recommendations && recommendations.innerHTML.trim().length) {
+        productRecommendationsSection.innerHTML = recommendations.innerHTML;
+      }
+    })
+    .catch(e => {
+      console.error(e);
+    });
+};
+
+const productRecommendationsSection = document.querySelector('.product-recommendations');
+const observer = new IntersectionObserver(handleIntersection, {rootMargin: '0px 0px 200px 0px'});
+
+observer.observe(productRecommendationsSection);
+
+</script>
 
 {% schema %}
   {
@@ -88,6 +245,31 @@
       "id": "title",
       "label": "titulo section",
       "default": "Otros Clientes también compraron"
+    }, {
+      "type": "text",
+      "id": "agregar-combo",
+      "label": "Agregar a tu Combo",
+      "default": "Agregar a tu combo"
+    }, {
+      "type": "text",
+      "id": "recommended-products",
+      "label": "Productos recomendados",
+      "default": "Otros Clientes también compraron"
+    }, {
+      "type": "text",
+      "id": "complementary-products",
+      "label": "Productos complementarios",
+      "default": "Agrega a tu combo"
+    }, {
+      "type": "text",
+      "id": "add-to-cart-title",
+      "label": "Titulo Boton",
+      "default": "Añadir al carrito"
+    }, {
+      "type": "text",
+      "id": "description-title",
+      "label": "titulo descipcion",
+      "default": "Descripción"
     }
     ]
   }

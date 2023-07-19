@@ -171,40 +171,32 @@ function rotateSvg(title, rotation) {
   svgElement.style.transform = `rotate(${rotation})`;
 }
 
-/* INCREMENT PRODCUTS */
+// Prueba productos recomendados
 
-function incrementValue(e) {
-  e.preventDefault();
-  var fieldName = $(e.target).data('field');
-  var parent = $(e.target).closest('div');
-  var currentVal = parseInt(parent.find('input[name=' + fieldName + ']').val(), 10);
+const handleIntersection = (entries, observer) => {
+  if (!entries[0].isIntersecting) return;
 
-  if (!isNaN(currentVal)) {
-    parent.find('input[name=' + fieldName + ']').val(currentVal + 1);
-  } else {
-    parent.find('input[name=' + fieldName + ']').val(0);
-  }
-}
+  observer.unobserve(productRecommendationsSection);
 
+  const url = productRecommendationsSection.dataset.url;
 
+  fetch(url)
+    .then(response => response.text())
+    .then(text => {
+      const html = document.createElement('div');
+      html.innerHTML = text;
+      const recommendations = html.querySelector('.product-recommendations');
 
-function decrementValue(e) {
-  e.preventDefault();
-  var fieldName = $(e.target).data('field');
-  var parent = $(e.target).closest('div');
-  var currentVal = parseInt(parent.find('input[name=' + fieldName + ']').val(), 10);
+      if (recommendations && recommendations.innerHTML.trim().length) {
+        productRecommendationsSection.innerHTML = recommendations.innerHTML;
+      }
+    })
+    .catch(e => {
+      console.error(e);
+    });
+};
 
-  if (!isNaN(currentVal) && currentVal > 0) {
-    parent.find('input[name=' + fieldName + ']').val(currentVal - 1);
-  } else {
-    parent.find('input[name=' + fieldName + ']').val(0);
-  }
-}
+const productRecommendationsSection = document.querySelector('.product-recommendations');
+const observer = new IntersectionObserver(handleIntersection, {rootMargin: '0px 0px 200px 0px'});
 
-$('.input-group').on('click', '.button-plus', function(e) {
-  incrementValue(e);
-});
-
-$('.input-group').on('click', '.button-minus', function(e) {
-  decrementValue(e);
-});
+observer.observe(productRecommendationsSection);
