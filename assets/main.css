@@ -1676,10 +1676,22 @@ filter label {
 }
 
 .filter-group {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(1fr, 2fr));
-  grid-gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
+
+.filter-element {
+  flex: 1 1 auto;
+  width: calc(50% - 5px);
+}
+
+.filter-element:nth-child(3n),
+.filter-element:nth-child(4n),
+.filter-element:nth-child(5n) {
+  width: calc(33.33% - 5px);
+}
+
 
 
 /* MAIN-POLITICS */
