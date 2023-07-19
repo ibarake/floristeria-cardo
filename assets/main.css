@@ -2149,7 +2149,6 @@ product-page {
 
 product-page #image-product {
   width: 600px;
-  height: 800px;
 }
 
 product-information {
@@ -2349,6 +2348,7 @@ add-combo {
   background-color: var(--main-color);
   padding-left: 6.5rem;
   height: 10rem;
+  padding-top: 2rem;
 }
 
 title-add-combo {
