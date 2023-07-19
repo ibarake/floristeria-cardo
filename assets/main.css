@@ -2290,12 +2290,8 @@ cart-info{
 }
 
 summary{
-  color: var(--system-grey-900, #212121);
-  font-family: DM Sans;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
+  
+  
 }
 
 container-resumen{
