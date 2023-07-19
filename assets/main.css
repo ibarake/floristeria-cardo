@@ -1663,7 +1663,6 @@ filter input[type=checkbox] + label {
 }
 
 .filter-form input[type=checkbox]:checked + label {
-  height: 100%;
   border: solid 1px var(--linen-3);
 }
 
