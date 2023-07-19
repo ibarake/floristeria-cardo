@@ -8,10 +8,8 @@
         <order-horizontal></order-horizontal>
       </order-by>
       <sort-by>
-        <span>
-          {% render 'filter-icon' %}
-          <p class="subtitulo-2">Ordenar por</p>
-        </span>
+        {% render 'filter-icon' %}
+        <p class="subtitulo-2">Ordenar por</p>
         <span>
           <select id="sort-by">
             {% assign sort_by = collection.sort_by | default: collection.default_sort_by %}
