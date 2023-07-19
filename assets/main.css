@@ -2297,6 +2297,7 @@ summary{
   flex-direction: column;
   height: 53%;
   border-radius: 12px;
+  margin-bottom: 10px;
 }
 
 container-resumen{
@@ -2312,6 +2313,7 @@ met-pagos{
   display: flex; 
   border-radius: 12px;
   background-color: var(--main-color);
+  margin-bottom: 10px;
 }
 
 #pagos{
