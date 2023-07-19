@@ -54,7 +54,7 @@
         <p class="subtitulo-2">{{ filter.label }}</p>
         <filters class="filter-group">
           {%- for filter_value in filter.values -%}
-            <filter>
+            <filter class="filter-element">
               <input
                 type="checkbox"
                 name="{{ filter_value.param_name }}"
