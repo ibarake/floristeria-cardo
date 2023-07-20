@@ -8,7 +8,15 @@
     <product-card-title>
       <p class="parrafo-4 collection-tag">{{ hero-product.collections[0].title }}</p>
       <p class="parrafo-1 card-product-title">{{ hero-product.title }}</p>
-      <p class="parrafo-2">{{ hero-product.description | strip_html }}</p>
+      <p class="parrafo-2">
+        {% assign words = hero-product.description | split: ' ' %}
+        {% if words.size > 200 %}
+          {% assign string = words | slice: 0, 200 %}
+          {% assign string = string | append: '...' %}
+        {% endif %}
+
+        {{ string }}
+      </p>
     </product-card-title>
     <card-footer>
       <p class="price parrafo-1">{{ hero-product.price | money_with_currency }}</p>
