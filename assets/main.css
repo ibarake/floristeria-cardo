@@ -2452,6 +2452,6 @@ buttons-ba-container {
   display: flex;
   width: 35%;
   margin-top: 2rem;
-  margin-left: -17px;
+  margin-left: -25px;
   justify-content: space-evenly;
 }
