@@ -954,11 +954,11 @@ card-footer {
   color: var(--main-black);
 }
 
-vertical{
+.vertical{
   display: flex;
 }
 
-horizontal{
+.horizontal{
   display: none;
 }
 
