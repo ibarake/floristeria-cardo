@@ -2447,12 +2447,13 @@ main-ba-container {
 #parrafo-ba-1 {
   color: var(--main-gray);
   margin-left: -10px;
+  width: 40%;
 }
 
 buttons-ba-container {
   display: flex;
   width: 35%;
   margin-top: 2rem;
-  margin-left: -10px;
+  margin-left: -17px;
   justify-content: space-evenly;
 }
