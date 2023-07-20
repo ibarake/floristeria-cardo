@@ -95,11 +95,15 @@
   <content>
     <product-grid>
       {% for product in collection.products %}
-        {% include 'product-card', hero-product: product, atc-btn: section.settings['add-to-cart-title'], classes: '' %}
+        {% include 'product-card',
+          hero-product: product,
+          atc-btn: section.settings['add-to-cart-title'],
+          classes: 'vertical'
+        %}
         {% include 'hor-product-card',
           hero-product: product,
           atc-btn: section.settings['add-to-cart-title'],
-          classes: ''
+          classes: 'horizontal'
         %}
       {% endfor %}
     </product-grid>
