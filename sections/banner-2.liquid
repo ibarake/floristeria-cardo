@@ -13,14 +13,6 @@
         {{ section.settings.contacto-button }}
       </a>
     </buttons-ba-container>
-    {% for hero-product in section.settings['hero-collection'].products %}
-      <a class="product-item" href="{{ hero-product.url }}">
-        {% include 'product-card',
-          hero-product: hero-product,
-          classes: 'hero'
-        %}
-      </a>
-    {% endfor %}
 </main-ba-container>
 
 {% schema %}
