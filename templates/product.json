@@ -1,5 +1,14 @@
 {
   "sections": {
+    "74f5068a-9cbc-4c4d-976f-154387f1fb4c": {
+      "type": "banner-2",
+      "settings": {
+        "title": "Lorem ipsum dolor sit amet",
+        "subtitle": "Pellentesque cras adipiscing tempus libero vel nullam mauris tellus. Aliquam ultrices tellus consequat amet,",
+        "ver-por-ocasion": "",
+        "contacto-button": ""
+      }
+    },
     "main": {
       "type": "main-product",
       "settings": {
@@ -12,11 +21,19 @@
           "corazon-de-mama",
           "canastilla-exotica"
         ],
-        "button-text": "Añadir al carrito"
+        "button-text": "Añadir al carrito",
+        "subtitulo-fotos": "Ver todos",
+        "title": "Otros Clientes también compraron",
+        "agregar-combo": "Agregar a tu combo",
+        "recommended-products": "Otros Clientes también compraron",
+        "complementary-products": "Agrega a tu combo",
+        "add-to-cart-title": "Añadir al carrito",
+        "description-title": "Descripción"
       }
     }
   },
   "order": [
+    "74f5068a-9cbc-4c4d-976f-154387f1fb4c",
     "main"
   ]
 }
