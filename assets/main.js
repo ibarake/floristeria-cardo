@@ -204,3 +204,19 @@ observer.observe(productRecommendationsSection);
 
 /* COLLECTION PAGE VERTICAL OR HORIZONTAL GRID AND PRODUCT CARD */
 
+// TRUNCATE WORDS
+
+document.addEventListener('DOMContentLoaded', function() {
+    var contentElements = document.querySelectorAll('.truncate-32');
+
+    for (var i = 0; i < contentElements.length; i++) {
+      var content = contentElements[i].textContent;
+      var words = content.split(' ');
+
+      if (words.length > 32) {
+        var truncatedContent = words.slice(0, 32).join(' ') + '...';
+        contentElements[i].textContent = truncatedContent;
+      }
+    }
+  });
+
