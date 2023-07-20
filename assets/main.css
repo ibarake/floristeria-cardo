@@ -873,6 +873,7 @@ hor-product-card {
   margin: 16px;
   flex-direction: row;
   z-index: 9999;
+  width: 100%;
 }
 
 hor-product-card:hover {
