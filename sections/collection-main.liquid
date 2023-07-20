@@ -122,6 +122,9 @@
       productVerticalCards.forEach((pvc) => {
         pvc.style.display = "flex";
       })
+      productHorizontalCards.forEach((pvc) => {
+        pvc.style.display = "flex";
+      })
       productGrid.style.gridTemplateColumns = "1fr 1fr 1fr";
     });
 
@@ -130,6 +133,9 @@
       productGrid.classList.remove('order-vertical');
 
       productVerticalCards.forEach((pvc) => {
+        pvc.style.display = "flex";
+      })
+      productHorizontalCards.forEach((pvc) => {
         pvc.style.display = "flex";
       })
       productGrid.style.gridTemplateColumns = "1fr";
