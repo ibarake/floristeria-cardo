@@ -1,0 +1,63 @@
+<h1>Mi carrito</h1>
+<section class="cart page-width">
+  <cart-items>
+    {% form 'cart', cart %}
+      {% for item in cart.items %}
+        <cart-item>
+          <image class="cart-item-image">
+            <img src="{{ item.image | img_url }}">
+          </image>
+          <item-info>
+            <p class="parrafo-4 collection-tag">{{ item.product.collections[0].title }}</p>
+            <h2>{{ item.product.title }}</h2>
+            <cart-note>
+              {% render 'cart-note' %}
+              {{ section.settings['cart-note'] }}
+            </cart-note>
+          </item-info>
+          <quantity>
+            <input type="button" value="-" class="button-minus" data-field="quantity">
+            <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
+            <input type="button" value="+" class="button-plus" data-field="quantity">
+          </quantity>
+          <p class="price">{{ item.product.price | money_with_currency }}</p>
+          <a href="{{ item.url_to_remove }}">{% render 'delete-cart' %}</a>
+        </cart-item>
+      {% endfor %}
+    {% endform %}
+  </cart-items>
+  <cart-info>
+    <summary>
+      <p>Resumen</p>
+      {% for item in cart.items %}
+        <summary-cart-item>
+          <span>{{ item.product.title }}</span>
+          <span>{{ item.product.price | money_with_currency }}</span>
+        </summary-cart-item>
+      {% endfor %}
+    </summary>
+    <cart-total>
+      <span>Subtotal</span>
+      <span>{{ item.product.item | money_with_currency }}</span>
+    </cart-total>
+  </cart-info>
+</section>
+{% schema %}
+{
+  "name": "main cart",
+  "settings": [
+    {
+      "type": "text",
+      "id": "cart-note",
+      "label": "Contenido del item envíos ",
+      "default": "Agregar mensaje personalizado"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
