@@ -119,11 +119,11 @@
     var productVerticalCards = document.querySelectorAll('vertical');
 
     orderVerticalBtn.addEventListener('click', function() {
-      productVerticalCards.forEach((pvc) => {
-        pvc.style.display = "flex";
+      productVerticalCards.forEach((pc) => {
+        pc.style.display = "flex";
       })
-      productHorizontalCards.forEach((pvc) => {
-        pvc.style.display = "none";
+      productHorizontalCards.forEach((pc) => {
+        pc.style.display = "none";
       })
       productGrid.style.gridTemplateColumns = "1fr 1fr 1fr";
     });
@@ -132,11 +132,11 @@
       productGrid.classList.add('order-horizontal');
       productGrid.classList.remove('order-vertical');
 
-      productVerticalCards.forEach((pvc) => {
-        pvc.style.display = "none";
+      productVerticalCards.forEach((pc) => {
+        pc.style.display = "none";
       })
-      productHorizontalCards.forEach((pvc) => {
-        pvc.style.display = "flex";
+      productHorizontalCards.forEach((pc) => {
+        pc.style.display = "flex";
       })
       productGrid.style.gridTemplateColumns = "1fr";
     });
