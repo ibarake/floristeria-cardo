@@ -2436,3 +2436,23 @@ main-ba-container {
   background-color: #F7F0E2;
   padding-left: 5rem;
 }
+
+#title-ba-1 {
+  width: 30%;
+  /* text-align: center; */
+  margin: 0;
+  color: var(--main-olive);
+}
+
+#parrafo-ba-1 {
+  color: var(--main-gray);
+  margin-left: -10px;
+}
+
+buttons-ba-container {
+  display: flex;
+  width: 35%;
+  margin-top: 2rem;
+  margin-left: -10px;
+  justify-content: space-evenly;
+}
