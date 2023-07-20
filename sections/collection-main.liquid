@@ -119,13 +119,20 @@
     var productVerticalCards = document.querySelectorAll('vertical');
 
     orderVerticalBtn.addEventListener('click', function() {
-      productGrid.classList.add('order-vertical');
-      productGrid.classList.remove('order-horizontal');
+      productVerticalCards.forEach((pvc) => {
+        pvc.style.display = "flex";
+      })
+      productGrid.style.gridTemplateColumns = "1fr 1fr 1fr";
     });
 
     orderHorizontalBtn.addEventListener('click', function() {
       productGrid.classList.add('order-horizontal');
       productGrid.classList.remove('order-vertical');
+
+      productVerticalCards.forEach((pvc) => {
+        pvc.style.display = "flex";
+      })
+      productGrid.style.gridTemplateColumns = "1fr";
     });
   });
 </script>
