@@ -2439,14 +2439,12 @@ main-ba-container {
 
 #title-ba-1 {
   width: 30%;
-  /* text-align: center; */
   margin: 0;
   color: var(--main-olive);
 }
 
 #parrafo-ba-1 {
   color: var(--main-gray);
-  margin-left: -10px;
   width: 40%;
 }
 
