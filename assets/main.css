@@ -891,6 +891,8 @@ hor-product-card img {
   object-fit: cover;
   object-position: center center;
   border-radius: 8px 8px 0 0;
+    width: 222px;
+  height: 100%;
 }
 
 card-product-info {
