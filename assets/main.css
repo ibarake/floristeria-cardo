@@ -858,7 +858,6 @@ product-card {
   background-color: var(--main-white);
   border-radius: 8px;
   margin: 16px;
-  display: flex;
   flex-direction: column;
   z-index: 9999;
 }
@@ -872,7 +871,6 @@ hor-product-card {
   background-color: var(--main-white);
   border-radius: 8px;
   margin: 16px;
-  display: flex;
   flex-direction: row;
   z-index: 9999;
 }
