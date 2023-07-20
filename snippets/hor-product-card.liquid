@@ -8,7 +8,7 @@
     <product-card-title>
       <p class="parrafo-4 collection-tag">{{ hero-product.collections[0].title }}</p>
       <p class="parrafo-1 card-product-title">{{ hero-product.title }}</p>
-      <p class="parrafo-2 truncate-32">{{ hero-product.description }}</p>
+      <p class="parrafo-2 truncate-32">{{ hero-product.description | strip_html }}</p>
     </product-card-title>
     <card-footer>
       <p class="price parrafo-1">{{ hero-product.price | money_with_currency }}</p>
