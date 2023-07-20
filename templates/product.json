@@ -5,8 +5,8 @@
       "settings": {
         "title": "Lorem ipsum dolor sit amet",
         "subtitle": "Pellentesque cras adipiscing tempus libero vel nullam mauris tellus. Aliquam ultrices tellus consequat amet,",
-        "ver-por-ocasion": "",
-        "contacto-button": ""
+        "button_link-2": "Ver por ocasion",
+        "button_link-3": "Contactanos"
       }
     },
     "main": {
