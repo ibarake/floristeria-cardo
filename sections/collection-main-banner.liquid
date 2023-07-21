@@ -45,18 +45,6 @@
                 <p class="parrafo-4 collection-tag">{{ tag['col-title'] }}</p>
                 <p class="parrafo-1 card-product-title">{{ tag.title }}</p>
               </product-card-title>
-              <card-footer>
-                <p class="price parrafo-1">{{ tag.price | money_with_currency }}</p>
-                <form action="/cart/add" method="post" id="product-form-{{ tag.id }}" class="atc-btn-form">
-                  <input type="hidden" name="id" value="{{ tag.variants.first.id }}">
-                  <button type="submit" name="add" class="card-add-to-cart">
-                    {% render 'icon-cart' %}
-                    <p class="subtitulo-5 atc-btn-text">
-                      {{ atc-btn }}
-                    </p>
-                  </button>
-                </form>
-              </card-footer>
             </card-product-info>
           </product-card>
         </a>
