@@ -151,8 +151,12 @@
       })
       orderVerticalBtn.style.backgroundColor = "transparent";
         orderHorizontalBtn.style.backgroundColor = "var(--main-color)";
-        horPath.style.fill = "var(--linen-3)";
-        verPath.style.fill = "var(--main-linen)";
+        horPath.forEach((hp) => {
+                hp.style.fill = "var(--linen-3)";
+      })
+      verPath.forEach((vp) => {
+        vp.style.fill = "var(--main-linen)";
+      })
       productGrid.style.gridTemplateColumns = "1fr";
     });
   });
