@@ -978,6 +978,14 @@ card-footer {
   fill: var(--linen-3);
 }
 
+#order-horizontal-btn {
+  border: none;
+  background-color: var(--main-color);
+  padding: 5px;
+  border-radius: 8px;
+}
+
+
 /* PRODUCTS FAQ STYLES */
 
 .product-4 {
