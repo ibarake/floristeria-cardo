@@ -121,9 +121,13 @@
     orderVerticalBtn.addEventListener('click', function() {
       productVerticalCards.forEach((pc) => {
         pc.style.display = "flex";
+        orderVerticalBtn.style.backgroundColor = "var(--main-color)";
+        orderHorizontalBtn.style.backgroundColor = "transparent";
       })
       productHorizontalCards.forEach((pc) => {
         pc.style.display = "none";
+        orderVerticalBtn.style.backgroundColor = "transparent";
+        orderHorizontalBtn.style.backgroundColor = "var(--main-color)";
       })
       productGrid.style.gridTemplateColumns = "1fr 1fr 1fr";
     });
