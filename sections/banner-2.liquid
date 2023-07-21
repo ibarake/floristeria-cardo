@@ -13,6 +13,14 @@
         {{ section.settings.contacto-button }}
       </a>
     </buttons-ba-container>
+    {% for hero-product in section.settings['collection'].products %}
+      <a class="product-item" href="{{ hero-product.url }}">
+        {% include 'product-card',
+          hero-product: hero-product,
+          classes: 'hero'
+        %}
+      </a>
+    {% endfor %}
 </main-ba-container>
 
 {% schema %}
@@ -40,6 +48,11 @@
         "type": "text",
         "id": "button_link-5",
         "label": "contacto button"
+      },
+      {
+        "type": "collection",
+        "id": "collection",
+        "label": "collection"
       }
     ],
     "presets": [{
