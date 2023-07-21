@@ -969,6 +969,7 @@ card-footer {
 
 #order-vertical-btn {
   border: none;
+  background-color: var(--main-color);
 }
 
 /* PRODUCTS FAQ STYLES */
