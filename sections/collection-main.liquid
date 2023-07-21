@@ -123,18 +123,15 @@
     orderVerticalBtn.addEventListener('click', function() {
       productVerticalCards.forEach((pc) => {
         pc.style.display = "flex";
-        orderVerticalBtn.style.backgroundColor = "var(--main-color)";
-        orderHorizontalBtn.style.backgroundColor = "transparent";
-        horPath.style.fill = "var(--main-linen)";
-        verPath.style.fill = "var(--linen-3)";
       })
       productHorizontalCards.forEach((pc) => {
         pc.style.display = "none";
-        orderVerticalBtn.style.backgroundColor = "transparent";
-        orderHorizontalBtn.style.backgroundColor = "var(--main-color)";
-        horPath.style.fill = "var(--linen-3)";
-        verPath.style.fill = "var(--main-linen)";
+
       })
+      orderVerticalBtn.style.backgroundColor = "var(--main-color)";
+        orderHorizontalBtn.style.backgroundColor = "transparent";
+        horPath.style.fill = "var(--main-linen)";
+        verPath.style.fill = "var(--linen-3)";
       productGrid.style.gridTemplateColumns = "1fr 1fr 1fr";
     });
 
@@ -148,6 +145,10 @@
       productHorizontalCards.forEach((pc) => {
         pc.style.display = "flex";
       })
+      orderVerticalBtn.style.backgroundColor = "transparent";
+        orderHorizontalBtn.style.backgroundColor = "var(--main-color)";
+        horPath.style.fill = "var(--linen-3)";
+        verPath.style.fill = "var(--main-linen)";
       productGrid.style.gridTemplateColumns = "1fr";
     });
   });
