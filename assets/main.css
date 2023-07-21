@@ -985,6 +985,9 @@ card-footer {
   border-radius: 8px;
 }
 
+#order-horizontal-btn path{
+  fill: var(--main-linen);
+}
 
 /* PRODUCTS FAQ STYLES */
 
