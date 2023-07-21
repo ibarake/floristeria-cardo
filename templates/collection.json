@@ -15,21 +15,24 @@
           "type": "tags",
           "settings": {
             "title": "Example",
-            "col-title": "Example"
+            "col-title": "Example",
+            "image_with_text_image": "shopify:\/\/shop_images\/1.jpg"
           }
         },
         "2edfcdc3-9e56-44e8-9314-e91eebe53274": {
           "type": "tags",
           "settings": {
             "title": "Example",
-            "col-title": "Example"
+            "col-title": "Example",
+            "image_with_text_image": "shopify:\/\/shop_images\/1.jpg"
           }
         },
         "3ae94e70-200f-4588-aaf9-39b50f3826ad": {
           "type": "tags",
           "settings": {
             "title": "Example",
-            "col-title": "Example"
+            "col-title": "Example",
+            "image_with_text_image": "shopify:\/\/shop_images\/1.jpg"
           }
         }
       },
