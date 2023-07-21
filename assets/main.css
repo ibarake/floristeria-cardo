@@ -2297,7 +2297,6 @@ summary{
   background-color: var(--main-color);
   display: flex;
   flex-direction: column;
-  height: 53%;
   border-radius: 12px;
   margin-bottom: 10px;
 }
