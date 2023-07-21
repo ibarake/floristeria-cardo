@@ -207,6 +207,8 @@ observer.observe(productRecommendationsSection);
 // TRUNCATE WORDS
 
 document.addEventListener('DOMContentLoaded', function() {
+    var orderVertical = document.querySelectorAll('#order-vertical-btn');
+    var orderHorizontal = document.querySelectorAll('#order-horizontal-btn');
     var contentElements = document.querySelectorAll('.truncate-32');
 
     for (var i = 0; i < contentElements.length; i++) {
