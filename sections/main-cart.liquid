@@ -50,7 +50,7 @@
       {% for item in cart.items %}
         <summary-cart-item>
           <span class="parrafo-1">{{ item.product.title }}</span>
-          <span class="subtitulo-2">{{ item.product.price | money_with_currency }}</span>
+          <span class="subtitulo-2" id="precio-cart">{{ item.product.price | money_with_currency }}</span>
         </summary-cart-item>
       {% endfor %}
       <cart-total>

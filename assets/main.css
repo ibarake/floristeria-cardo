@@ -2306,6 +2306,10 @@ summary-cart-item{
   display: flex;
 }
 
+#precio-cart{
+  width: 41%;
+}
+
 #subtotal-cart{
 text-transform: uppercase;
 color: var(--main-gray);
