@@ -967,6 +967,10 @@ card-footer {
   display: none;
 }
 
+#order-vertical-btn {
+  border: none;
+}
+
 /* PRODUCTS FAQ STYLES */
 
 .product-4 {
