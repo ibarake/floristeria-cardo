@@ -114,8 +114,8 @@
   document.addEventListener('DOMContentLoaded', function() {
     var orderVerticalBtn = document.getElementById('order-vertical-btn');
     var orderHorizontalBtn = document.getElementById('order-horizontal-btn');
-    var horPath = document.querySelector('#order-horizontal-btn path');
-    var verPath = document.querySelector('#order-vertical-btn path');
+    var horPath = document.querySelectorAll('#order-horizontal-btn path');
+    var verPath = document.querySelectorAll('#order-vertical-btn path');
     var productGrid = document.querySelector('product-grid');
     var productHorizontalCards = document.querySelectorAll('.horizontal');
     var productVerticalCards = document.querySelectorAll('.vertical');
@@ -130,8 +130,12 @@
       })
       orderVerticalBtn.style.backgroundColor = "var(--main-color)";
         orderHorizontalBtn.style.backgroundColor = "transparent";
-        horPath.style.fill = "var(--main-linen)";
-        verPath.style.fill = "var(--linen-3)";
+      horPath.forEach((hp) => {
+                hp.style.fill = "var(--main-linen)";
+      })
+      verPath.forEach((vp) => {
+        vp.style.fill = "var(--linen-3)";
+      })
       productGrid.style.gridTemplateColumns = "1fr 1fr 1fr";
     });
 
