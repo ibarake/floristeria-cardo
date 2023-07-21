@@ -1,24 +1,103 @@
-<section>
-  <main-container>
-    <h1 class="titulo-1" id="title-1">
-      {{ section.settings.title }}
-    </h1>
-    <p class="parrafo-1" id="parrafo-1">
-      {{ section.settings.subtitle }}
-    </p>
-    <buttons-container>
-      <a href="http://" class="ver-por-ocasion subtitulo-3">
-        {{ section.settings['ver-por-ocasion'] }}
-      </a>
-      <a href="http://" class="contact-button subtitulo-3">
-        {{ section.settings['contacto-button'] }}
-      </a>
-    </buttons-container>
-  </main-container>
-</section>
+<hero-banner>
+  <div class="flor-1">
+    {% render 'flor-1' %}
+  </div>
+  <div class="flor-2">
+    {% render 'flor-2' %}
+  </div>
+  <div class="flor-3">
+    {% render 'flor-3' %}
+  </div>
+  <inline-half-container class="left">
+    <hero-title>
+      <h1 class="titulo-1 hero-title">
+        {{ section.settings['hero-title'] }}
+      </h1>
+      <p class="parrafo-2 hero-subtitle">
+        {{ section.settings['hero-subtitle'] }}
+      </p>
+    </hero-title>
+    <hero-buttons>
+      {% if section.settings['cta-1'] != blank %}
+        <a class="cta-link cta cta-1 subtitulo-3" href="{{ section.settings.link-1 }}">
+          {{- section.settings['cta-1'] -}}
+        </a>
+      {% endif %}
+      {% if section.settings['cta-2'] != blank %}
+        <a class="cta-link cta cta-2 subtitulo-3" href="{{ section.settings.link-2 }}">
+          {{- section.settings['cta-2'] -}}
+        </a>
+      {% endif %}
+    </hero-buttons>
+  </inline-half-container>
+  <inline-half-container class="right">
+    <products-container class="overflow-auto drag-scroll">
+      {% for hero-product in section.settings['hero-collection'].products %}
+        <a class="product-item" href="{{ hero-product.url }}">
+          {% include 'product-card',
+            hero-product: hero-product,
+            atc-btn: section.settings['add-to-cart-title'],
+            classes: 'hero'
+          %}
+        </a>
+      {% endfor %}
+    </products-container>
+  </inline-half-container>
+</hero-banner>
+
 {% schema %}
 {
-  "name": "Collection Main Banner"
-
+  "name": "main-collection-banner",
+  "settings": [
+    {
+      "type": "html",
+      "id": "hero-title",
+      "label": "Titulo principal H1",
+      "default": "¿No sabes cómo decirlo? <br> Dilo con Flores."
+    },
+    {
+      "type": "collection",
+      "id": "hero-collection",
+      "label": "Collection"
+    },
+    {
+      "type": "textarea",
+      "id": "hero-subtitle",
+      "label": "Hero subtitle",
+      "default": "Pellentesque cras adipiscing tempus libero vel nullam mauris tellus. Aliquam ultrices tellus consequat amet,"
+    },
+    {
+      "type": "text",
+      "id": "add-to-cart-title",
+      "label": "Titulo principal H1",
+      "default": "Añadir al carrito"
+    }, {
+      "type": "text",
+      "id": "cta-1",
+      "label": "Titulo de boton con fondo",
+      "default": "Ver por Ocasión"
+    },
+    {
+      "type": "url",
+      "id": "link-1",
+      "label": "link boton sin fondo"
+    },
+    {
+      "type": "text",
+      "id": "cta-2",
+      "label": "Titulo boton sin fondo",
+      "default": "Contactanos"
+    },
+    {
+      "type": "url",
+      "id": "link-2",
+      "label": "link boton sin fondo"
+    }
+  ],
+  "presets": [
+  {
+    "name": "main-collection-banner"
+  }
+]
 }
 {% endschema %}
