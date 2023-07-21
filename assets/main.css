@@ -974,6 +974,10 @@ card-footer {
   border-radius: 8px;
 }
 
+#order-vertical-btn path{
+  fill: var(--linen-3);
+}
+
 /* PRODUCTS FAQ STYLES */
 
 .product-4 {
