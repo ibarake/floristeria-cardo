@@ -980,7 +980,7 @@ card-footer {
 
 #order-horizontal-btn {
   border: none;
-  background-color: var(--main-color);
+  background-color: transparent;
   padding: 5px;
   border-radius: 8px;
 }
