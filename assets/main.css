@@ -1772,10 +1772,10 @@ filter-top{
 }
 
 #title-politics{
-  width: 30%;
-  color: var(--oliva-oscuro);
+  width: 542px;
+  color: var(--main-olive);
   text-align: center;
-  margin: auto;
+  margin: 4rem 0 0 0;
 }
 
 .fecha-politics{
@@ -1783,7 +1783,7 @@ filter-top{
   width: 542px;
   margin: auto;
   flex-direction: column; 
-  color: var(--neutrales-gris-3);
+  color: var(--main-olive);
   text-align: center;
 }
 
@@ -1791,6 +1791,12 @@ cont-info{
   display: flex;
   justify-content: space-evenly;
   margin-top: 3rem
+}
+
+cont-1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 cont-2{
@@ -1807,6 +1813,7 @@ cont-2{
   flex-direction: column;
   color: var(--dark-gray);
   line-height: 3rem;
+  width: 282px;
 }
 
 #subtitulo-politics a{
@@ -2308,22 +2315,151 @@ container-title {
 }
 
 /* CART STYLES */
+container-cart-item{
+  margin-left: 5rem;
+}
+
+#title-cart{
+  color: var(--main-black);
+  font-size: 32px;
+}
 
 cart-item {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  width: 100%;
+  width: 94%;
+  gap: 15px;
+}
+
+cart-info{
+  display: contents;
+  min-height: 50%;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: var(--main-color);
+  flex-direction: column;
 }
 
 .cart{
-  display: grid;
-  grid-template-columns: 4fr 2fr;
+  width: 100%;
+  display: flex;
+  justify-content:space-around;
+  background-color: var(--main-dark-color);
 }
 
-.cart-item-image {
+summary{
+  width: 100%;
+  background-color: var(--main-color);
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+summary-cart-item{
+  display: flex;
+}
+
+#precio-cart{
+  font-size: 15px;
+  margin-left: 3rem;
+}
+
+#subtotal-cart{
+text-transform: uppercase;
+color: var(--main-gray);
+}
+
+container-resumen{
+  width: 30%;
+  margin-right: 5rem;
+  margin-top: 7.5rem;
+}
+
+
+/*.cart-item-image {
   width: 200px;
   height: 200px;
+}*/
+
+met-pagos{
+  display: flex; 
+  border-radius: 12px;
+  background-color: var(--main-color);
+  margin-bottom: 10px;
+  flex-direction: column;
 }
 
+container-met-pagos{
+  display: flex;
+}
+
+#pagos{
+  color: var(--main-black);
+  font-size: 20px;
+  line-height: normal;
+}
+
+button-cart{
+  display: flex;
+  padding: 10px 0;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: var(--main-olive);
+  font-family: Poppins;
+  color: var(--main-white);
+}
+
+item-info {
+  min-width: 50%;
+}
+
+#form-cart {
+  margin-left: 4rem;
+}
+
+cart-note {
+  display: flex;
+}
+
+#df {
+  min-width: 60%;
+}
+
+@media (max-width: 768px) {
+  .container-cart-item {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  #title-cart{
+    font-size: 24px;
+  }
+
+  .cart {
+    flex-direction: column;
+  }
+
+  .container-resumen {
+    width: 100%;
+    margin: 1rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .container-cart-item {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  cart-info {
+    width: 100%;
+  }
+
+  .container-met-pagos {
+    flex-direction: column;
+  }
+}
