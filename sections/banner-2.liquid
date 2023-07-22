@@ -16,7 +16,9 @@
     <con-wf>
       {% for hero-product in section.settings['collection'].products %}
         <a class="product-item" href="{{ hero-product.url }}">
-          {% include 'product-card' %}
+          {% include 'product-card',
+            classes: 'hero'
+          %}
         </a>
       {% endfor %}
     </con-wf>
