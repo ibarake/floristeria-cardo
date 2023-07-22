@@ -2455,3 +2455,7 @@ buttons-ba-container {
   margin-left: -25px;
   justify-content: space-evenly;
 }
+
+con-wf {
+  display: flex;
+}
