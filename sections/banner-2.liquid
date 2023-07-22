@@ -13,15 +13,17 @@
         {{ section.settings.contacto-button }}
       </a>
     </buttons-ba-container>
-    {% for hero-product in section.settings['collection'].products %}
-      <a class="product-item" href="{{ hero-product.url }}">
-        {% include 'product-card',
-          hero-product: hero-product,
-          atc-btn: section.settings['add-to-cart-title'],
-          classes: 'hero'
-        %}
-      </a>
-    {% endfor %}
+    <con-wf>
+      {% for hero-product in section.settings['collection'].products %}
+        <a class="product-item" href="{{ hero-product.url }}">
+          {% include 'product-card',
+            hero-product: hero-product,
+            atc-btn: section.settings['add-to-cart-title'],
+            classes: 'hero'
+          %}
+        </a>
+      {% endfor %}
+    </con-wf>
 </main-ba-container>
 
 {% schema %}
