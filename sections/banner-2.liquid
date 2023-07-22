@@ -6,7 +6,6 @@
     <p class="parrafo-1" id="parrafo-ba-1">
       {{ section.settings.subtitle }}
     </p>
-  </con-t>
     <buttons-ba-container>
       <a href="{{ section.settings.button_link-4 }}" class="ver-por-ocasion subtitulo-3">
         {{ section.settings.ver-por-ocasion }}
@@ -15,6 +14,7 @@
         {{ section.settings.contacto-button }}
       </a>
     </buttons-ba-container>
+  </con-t>
     <con-wf>
       {% for hero-product in section.settings['collection'].products %}
         <a class="product-item" href="{{ hero-product.url }}">
