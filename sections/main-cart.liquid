@@ -1,7 +1,7 @@
 <section class="cart page-width">
 <container-cart-item>
   <h1 class="titulo-4" id="title-cart">Mi carrito</h1>
-  {% form 'cart', cart id="form-cart" %}
+  {% form 'cart', cart %}
     {% for item in cart.items %}
       <cart-item>
         <image class="cart-item-image">
