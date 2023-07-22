@@ -1388,7 +1388,7 @@ datos {
 
 #correo {
   width: 345px;
-  height: 40px;
+  height: auto;
   border: 1px solid var(--main-gray);
   border-radius: 5px;
   background: var(--main-color);
