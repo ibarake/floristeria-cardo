@@ -2368,6 +2368,10 @@ cart-note {
   display: flex;
 }
 
+#df {
+  min-width: 57%;
+}
+
 @media (max-width: 768px) {
   .container-cart-item {
     margin-left: 2rem;
