@@ -8,7 +8,7 @@
         "hero-subtitle": "Pellentesque cras adipiscing tempus libero vel nullam mauris tellus. Aliquam ultrices tellus consequat amet,",
         "add-to-cart-title": "Añadir al carrito",
         "cta-1": "Ver por Ocasión",
-        "link-1": "shopify:\/\/collections\/arreglos-de-nacimiento",
+        "link-1": "shopify:\/\/collections\/all",
         "cta-2": "Contactanos",
         "link-2": "shopify:\/\/pages\/contacto"
       }
@@ -32,7 +32,7 @@
           "exoticos",
           "arreglos-florales"
         ],
-        "link": ""
+        "link": "shopify:\/\/collections\/all"
       }
     },
     "main": {
@@ -54,7 +54,7 @@
         "color": true,
         "border": true,
         "style-s": "style 1",
-        "link": ""
+        "link": "shopify:\/\/collections\/all"
       }
     },
     "c2d637ea-0301-46b4-814f-646ba281c446": {
@@ -132,7 +132,7 @@
         "color": false,
         "border": false,
         "style-s": "style 2",
-        "link": ""
+        "link": "shopify:\/\/collections\/all"
       }
     },
     "ec7ee139-7af0-40a7-b9d3-a60e0edf94c7": {
