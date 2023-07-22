@@ -2356,6 +2356,10 @@ button-cart{
   color: var(--main-white);
 }
 
+item-info {
+  min-width: 70%;
+}
+
 @media (max-width: 768px) {
   .container-cart-item {
     margin-left: 2rem;
