@@ -2360,6 +2360,14 @@ item-info {
   min-width: 70%;
 }
 
+#form-cart {
+  margin-left: 4rem;
+}
+
+cart-note {
+  display: flex;
+}
+
 @media (max-width: 768px) {
   .container-cart-item {
     margin-left: 2rem;
