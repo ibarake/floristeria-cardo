@@ -14,6 +14,11 @@
         "type": "image_picker",
         "id": "logo",
         "label": "Image"
+      },
+      {
+        "type": "image_picker",
+        "id": "favicon",
+        "label": "Fav Icon"
       }
     ]
   }

@@ -8,9 +8,9 @@
         "hero-subtitle": "Pellentesque cras adipiscing tempus libero vel nullam mauris tellus. Aliquam ultrices tellus consequat amet,",
         "add-to-cart-title": "Añadir al carrito",
         "cta-1": "Ver por Ocasión",
-        "link-1": "",
+        "link-1": "shopify:\/\/collections\/all",
         "cta-2": "Contactanos",
-        "link-2": ""
+        "link-2": "shopify:\/\/pages\/contacto"
       }
     },
     "37db2c69-b11d-4881-b7e3-83e27a003a12": {
@@ -31,7 +31,8 @@
           "coronas-flores",
           "exoticos",
           "arreglos-florales"
-        ]
+        ],
+        "link": "shopify:\/\/collections\/all"
       }
     },
     "main": {
@@ -52,7 +53,8 @@
         "flor": true,
         "color": true,
         "border": true,
-        "style-s": "style 1"
+        "style-s": "style 1",
+        "link": "shopify:\/\/collections\/all"
       }
     },
     "c2d637ea-0301-46b4-814f-646ba281c446": {
@@ -129,7 +131,8 @@
         "flor": false,
         "color": false,
         "border": false,
-        "style-s": "style 2"
+        "style-s": "style 2",
+        "link": "shopify:\/\/collections\/all"
       }
     },
     "ec7ee139-7af0-40a7-b9d3-a60e0edf94c7": {

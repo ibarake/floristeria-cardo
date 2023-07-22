@@ -1,56 +1,58 @@
 <section class="contacto full-width bg-dark relative">
-<contacto class="page-width-contacto">
-  <div class="flor-4">
-    {% render 'flor-4' %}
-  </div>
-  <flor class="mobile">
-    {% render 'flor-contacto-mobile' %}
-  </flor>
-  <cuadro></cuadro>
-  <informacion>
-    <h1 class="titulo-7">
-      {{ section.settings.contact-title }}
-    </h1>
-    <p class="parrafo-5 p5" id="parrafo-contacto">
-      {{ section.settings.contact-subtitle }}
-    </p>
-    {% form 'customer' %}
-      <datos>
-        <input
-          id="correo"
-          placeholder="Tu correo"
-          type="email"
-          name="contact[email]">
-        <input
-          class="button-contacto cta subtitulo-3"
-          type="submit"
-          value="{{ section.settings.button-title }}">
-      </datos>
-    {% endform %}
-  </informacion>
-</contacto>
+  <contacto class="page-width-contacto">
+    <div class="flor-4">
+      {% render 'Flor-4' %}
+    </div>
+    <flor class="mobile">
+      {% render 'flor-contacto-mobile' %}
+    </flor>
+    <cuadro></cuadro>
+    <informacion>
+      <h1 class="titulo-7">
+        {{ section.settings['contact-title'] }}
+      </h1>
+      <p class="parrafo-5 p5" id="parrafo-contacto">
+        {{ section.settings['contact-subtitle'] }}
+      </p>
+      {% form 'customer' %}
+        <datos>
+          <input
+            id="correo"
+            placeholder="Tu correo"
+            type="email"
+            name="contact[email]"
+          >
+          <input
+            class="button-contacto cta subtitulo-3"
+            type="submit"
+            value="{{ section.settings.button-title }}"
+          >
+        </datos>
+      {% endform %}
+    </informacion>
+  </contacto>
 </section>
 {% schema %}
-  {
-    "name": "contacto",
-    "settings": [
-      {
-        "type": "text",
-        "id": "contact-title",
-        "label": "Contactanos"
-      }, {
-        "type": "textarea",
-        "id": "contact-subtitle",
-        "label": "Subtitle"
-      }, {
-        "type": "text",
-        "id": "button-title",
-        "label": "Recibir informacion"
-      }
-    ],
-    "presets": [{
-      "name": "contact"
+{
+  "name": "contacto",
+  "settings": [
+    {
+      "type": "text",
+      "id": "contact-title",
+      "label": "Contactanos"
+    }, {
+      "type": "textarea",
+      "id": "contact-subtitle",
+      "label": "Subtitle"
+    }, {
+      "type": "text",
+      "id": "button-title",
+      "label": "Recibir informacion"
     }
-    ]
+  ],
+  "presets": [{
+    "name": "contact"
   }
+  ]
+}
 {% endschema %}
