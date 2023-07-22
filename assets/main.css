@@ -512,8 +512,8 @@ hero-banner {
 }
 
 product-card img.hero {
-  width: 290px;
-  height: 256px;
+  width: 290px !important;
+  height: 256px !important;
 }
 a.product-item{
   text-decoration: none;
