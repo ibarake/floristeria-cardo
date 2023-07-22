@@ -2278,11 +2278,13 @@ cart-item {
 }
 
 cart-info{
-  width: 500px;
-  height: 300px;
+  display: flex;
+  min-height: 50%;
   flex-shrink: 0;
   border-radius: 12px;
   background: var(--main-color);
+  flex-direction: column;
+  justify-content: center;
 }
 
 .cart{
