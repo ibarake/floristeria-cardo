@@ -1354,7 +1354,6 @@ contacto {
 .page-width-contacto {
   display: flex;
   width: 90%;
-  height: 67%;
   margin: auto;
   flex-direction: row;
   justify-content: flex-start;
