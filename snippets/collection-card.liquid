@@ -1,8 +1,8 @@
 <collection-card>
   <img
     class="collection-card-image"
-    src="{{ collection.featured_image | img_url }}"
-    alt="{{ collection.featured_image.alt }}"
+    src="{{ collection.product[0].featured_image | img_url }}"
+    alt="{{ collection.product[0].featured_image.alt }}"
     width="256px"
     heigth="300px"
   >
