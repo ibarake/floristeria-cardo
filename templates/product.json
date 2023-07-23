@@ -21,9 +21,20 @@
         "add-to-cart-title": "Añadir al carrito",
         "description-title": "Descripción"
       }
+    },
+    "9fe1eb62-8282-478c-8692-fc72da4dd3be": {
+      "type": "banner-2",
+      "settings": {
+        "title": "Lorem ipsum dolor sit amet",
+        "subtitle": "Pellentesque cras adipiscing tempus libero vel nullam mauris tellus. Aliquam ultrices tellus consequat amet,",
+        "button_link-4": "",
+        "button_link-5": "",
+        "collection": "arreglos-funebres"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "9fe1eb62-8282-478c-8692-fc72da4dd3be"
   ]
 }
