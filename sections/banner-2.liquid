@@ -16,13 +16,11 @@
     </buttons-ba-container>
   </con-t>
     <con-wf>
-      <collection-slider class="drag-scroll">
       {% for collection in section.settings.collection_list %}
         <a class="collection-item" href="{{ collection.url }}">
           {% include 'collection-card', collection: collection %}
         </a>
       {% endfor %}
-    </collection-slider>
     </con-wf>
 </main-ba-container>
 
