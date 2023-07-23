@@ -1,13 +1,10 @@
-<product-card>
+<collection-card>
   <img
-    class="product-card-image {{ classes }}"
+    class="collection-card-image"
     src="{{ collection.featured_image | img_url }}"
-    alt="{{ collection.featured_image.alt }}"
-  >
-  <card-product-info class="card-width">
-    <product-card-title>
-      <p class="parrafo-4 collection-tag">{{ collection.collections[0].title }}</p>
-      <p class="parrafo-1 card-product-title">{{ collection.title }}</p>
-    </product-card-title>
-  </card-product-info>
-</product-card>
+    alt="{{ collection.featured_image.alt }}">
+  <p class="subtitulo-3 collection-card-title">
+    {{ collection.title }}
+    {% render 'icon-arrow-right-2' %}
+  </p>
+</collection-card>
