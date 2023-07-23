@@ -2,7 +2,10 @@
   <img
     class="collection-card-image"
     src="{{ collection.featured_image | img_url }}"
-    alt="{{ collection.featured_image.alt }}">
+    alt="{{ collection.featured_image.alt }}"
+    width="256px"
+    heigth="300px"
+  >
   <p class="subtitulo-3 collection-card-title">
     {{ collection.title }}
     {% render 'icon-arrow-right-2' %}
