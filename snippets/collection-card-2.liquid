@@ -4,7 +4,10 @@
     src="{{ collection.featured_image | img_url }}"
     alt="{{ collection.featured_image.alt }}">
     <card-product-info class="card-width">
-        {{ collection.title }}
-        {% render 'icon-arrow-right-2' %}
+        <product-card-title>
+            <p class="parrafo-4 collection-tag">{{ collection.collections[0].title }}</p>
+            <p class="parrafo-1 card-product-title">{{ collection.title }}</p>
+            {% render 'icon-arrow-right-2' %}
+          </product-card-title>
     </card-product-info>
 </product-card>
