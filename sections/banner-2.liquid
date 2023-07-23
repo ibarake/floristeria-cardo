@@ -16,16 +16,13 @@
     </buttons-ba-container>
   </con-t>
     <con-wf>
-      {% for hero-product in section.settings['collection'].products %}
-        <a class="product-item" href="{{ hero-product.url }}">
-          {% include 'product-card',
-            hero-product: hero-product,
-            atc-btn: section.settings['add-to-cart-title'],
-            limit: 2,
-            classes: 'hero'
-          %}
+      <collection-slider class="drag-scroll">
+      {% for collection in section.settings.collection_list %}
+        <a class="collection-item" href="{{ collection.url }}">
+          {% include 'collection-card', collection: collection %}
         </a>
       {% endfor %}
+    </collection-slider>
     </con-wf>
 </main-ba-container>
 
