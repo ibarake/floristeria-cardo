@@ -15,13 +15,13 @@
       </a>
     </buttons-ba-container>
   </con-t>
-  <cont-wf>
+  <collection-slider class="drag-scroll">
     {% for collection in section.settings.collection_list %}
       <a class="collection-item" href="{{ collection.url }}">
         {% include 'collection-card', collection: collection %}
       </a>
     {% endfor %}
-  </cont-wf>
+</collection-slider>
 </main-ba-container>
 
 {% schema %}
