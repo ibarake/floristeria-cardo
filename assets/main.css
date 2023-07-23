@@ -2460,3 +2460,15 @@ buttons-ba-container {
 con-wf {
   display: flex;
 }
+
+collection-slider-2 {
+  overflow-x: auto;
+  overflow-y: visible;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 32px;
+  margin-left: -330px;
+  margin-right: 200px;
+  margin-top: 50px;
+}
