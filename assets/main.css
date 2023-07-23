@@ -826,6 +826,7 @@ collection-card img {
   width: 256px;
   height: 300px;
   object-fit: cover;
+  object-position: 50% 50%;
 }
 
 .collection-card-title {
