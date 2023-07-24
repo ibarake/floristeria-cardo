@@ -26,33 +26,27 @@ closeMenu.addEventListener("click", function () {
   enableScroll();
 });
 
-var activeDropdownButton = null; // Reference to the previously active dropdown menu button
-
 dropdownMenus.forEach(function (dropdownMenu) {
   dropdownMenu.addEventListener("click", function () {
     var parentLi = this.closest(".drawer-item-container");
-    var childLi = parentLi.querySelector(".dropdown-mega-menu"); // Add a dot before "dropdown-mega-menu"
+    var childLi = parentLi.querySelector("dropdown-mega-menu");
 
     if (activeDropdown && activeDropdown !== childLi) {
-      // Reset the transform of the previous dropdown button
-      activeDropdownButton.style.transform = "scaleY(1)";
+      dropdownMenu.style.transform = "scaleY(1)";
       activeDropdown.style.height = "0";
     }
 
     if (childLi.style.height === "0px" || !childLi.style.height) {
-      this.style.transform = "scaleY(-1)"; // Change "dropdownMenu" to "this"
+      dropdownMenu.style.transform = "scaleY(-1)";
       childLi.style.height = childLi.scrollHeight + "px";
       activeDropdown = childLi;
-      activeDropdownButton = this; // Store a reference to the active dropdown menu button
     } else {
-      this.style.transform = "scaleY(1)"; // Change "dropdownMenu" to "this"
+      dropdownMenu.style.transform = "scaleY(1)";
       childLi.style.height = "0";
       activeDropdown = null;
-      activeDropdownButton = null; // Reset the reference to the previously active dropdown menu button
     }
   });
 });
-
 
 function disableScroll() {
     // Get the current page scroll position
