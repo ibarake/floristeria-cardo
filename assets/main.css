@@ -2366,6 +2366,9 @@ summary-1{
 
 summary-cart-item{
   display: flex;
+}
+
+cart-total{
   padding-left: 15px;
 }
 
