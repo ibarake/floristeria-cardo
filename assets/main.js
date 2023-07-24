@@ -12,6 +12,7 @@ hamburguerMenu.addEventListener("click", function () {
   responsiveMenu.style.right = "auto";
   responsiveMenu.style.left = 0;
   responsiveMenu.style.width = screen.width * 0.8;
+  disableScroll();
 });
 
 closeMenu.addEventListener("click", function () {
@@ -22,6 +23,7 @@ closeMenu.addEventListener("click", function () {
     activeDropdown.style.height = "0";
     activeDropdown = null;
   }
+  enableScroll();
 });
 
 dropdownMenus.forEach(function (dropdownMenu) {
@@ -45,6 +47,21 @@ dropdownMenus.forEach(function (dropdownMenu) {
     }
   });
 });
+
+function disableScroll() {
+    // Get the current page scroll position
+    scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+
+        // if any scroll is attempted, set this to the previous value
+        window.onscroll = function() {
+            window.scrollTo(scrollLeft, scrollTop);
+        };
+}
+
+function enableScroll() {
+    window.onscroll = function() {};
+}
 
 /* HERO BANNER */
 
