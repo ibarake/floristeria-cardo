@@ -2351,12 +2351,17 @@ cart-info{
 
 summary{
   width: 100%;
+  min-height: 50%;
   background-color: var(--main-color);
   display: flex;
   flex-direction: column;
   border-radius: 12px;
   margin-bottom: 10px;
   
+}
+
+summary-1{
+  padding-left: 15px;
 }
 
 summary-cart-item{
