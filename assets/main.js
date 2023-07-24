@@ -26,18 +26,19 @@ closeMenu.addEventListener("click", function () {
   enableScroll();
 });
 
-var activeDropdownMenu = null;
-
 dropdownMenus.forEach(function (dropdownMenu) {
   dropdownMenu.addEventListener("click", function () {
     var parentLi = this.closest(".drawer-item-container");
     var childLi = parentLi.querySelector("dropdown-mega-menu");
 
+    // Check if a different dropdown is already active
     if (activeDropdown && activeDropdown !== childLi) {
-      dropdownMenu.style.transform = "scaleY(1)";
+      var activeDropdownMenu = activeDropdown.previousElementSibling;
+      activeDropdownMenu.style.transform = "scaleY(1)";
       activeDropdown.style.height = "0";
     }
 
+    // Toggle the clicked dropdown
     if (childLi.style.height === "0px" || !childLi.style.height) {
       dropdownMenu.style.transform = "scaleY(-1)";
       childLi.style.height = childLi.scrollHeight + "px";
@@ -47,7 +48,6 @@ dropdownMenus.forEach(function (dropdownMenu) {
       childLi.style.height = "0";
       activeDropdown = null;
     }
-    activeDropdownMenu = this.querySelector("")
   });
 });
 
