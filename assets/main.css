@@ -2366,6 +2366,7 @@ summary-1{
 
 summary-cart-item{
   display: flex;
+  padding-left: 15px;
 }
 
 #precio-cart{
