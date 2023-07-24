@@ -388,8 +388,8 @@ mega-menu-item {
   height: 100%;
   width: 80%;
   background-color: var(--main-dark-color);
-  z-index: 99999;
   position: fixed;
+  z-index: 99999;
   top: 0;
   left: -100%;
   -webkit-box-shadow: 10px 0px 25px 0px rgba(0, 0, 0, 0.3);
