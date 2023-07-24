@@ -2407,6 +2407,7 @@ met-pagos{
 
 container-met-pagos{
   display: flex;
+  justify-content: space-around;
 }
 
 #pagos{
@@ -2439,7 +2440,7 @@ cart-note {
 }
 
 #df {
-  min-width: 55%;
+  min-width: 63%;
 }
 
 @media (max-width: 768px) {
