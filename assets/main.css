@@ -524,7 +524,7 @@ a.product-item{
   margin: 0;
 }
 inline-half-container {
-  z-index: 999;
+  z-index: 10;
 }
 inline-half-container.left {
   width: 40%;
