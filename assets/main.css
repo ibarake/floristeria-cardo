@@ -1770,7 +1770,7 @@ filter-top{
   #collection-main aside{
     display: none;
   }
-  top-bar{
+  topbar{
     grid-template-columns: 1fr;
   }
 }
