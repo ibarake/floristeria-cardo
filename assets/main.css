@@ -1773,6 +1773,9 @@ filter-top{
   topbar{
     grid-template-columns: 1fr;
   }
+  sort-by{
+    display: none;
+  }
 }
 
 /* MAIN-POLITICS */
