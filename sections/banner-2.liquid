@@ -16,12 +16,12 @@
     </buttons-ba-container>
   </con-t>
   <collection-slider-2 class="drag-scroll">
-    {% for collection in section.settings.collection_list %}
-      <a class="collection-item" href="{{ collection.url }}">
-        {% include 'collection-card-2', collection: collection %}
-      </a>
+    {% for block in section.blocks %}
+      <card-ff>
+        
+      </card-ff> 
     {% endfor %}
-</collection-slider-2>
+  </collection-slider-2>
 </main-ba-container>
 
 {% schema %}
@@ -68,6 +68,32 @@
         "label": "Button link"
       }
     ],
+    "blocks": [
+	  {
+      "type": "Collection-card",
+      "name": "Collection-card",
+      "limit": 5,
+		  "settings": [
+        {
+          "type": "text",
+          "id": "COL-title",
+          "label": "COL-title",
+          "default": "Example"
+        },
+        {
+          "type": "text",
+          "id": "COL-subtitle",
+          "label": "COL-subtitle",
+          "default": "Example"
+        },
+        {
+          "type": "image_picker",
+          "id": "COL-image",
+          "label": "Imagen"
+        }
+		  ]
+	  }
+  ],
     "presets": [{
       "name": "banner-2"
     }
