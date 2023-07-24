@@ -1770,6 +1770,9 @@ filter-top{
   #collection-main aside{
     display: none;
   }
+  top-bar{
+    grid-template-columns: 1fr;
+  }
 }
 
 /* MAIN-POLITICS */
