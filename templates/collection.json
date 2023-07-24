@@ -2,12 +2,62 @@
   "sections": {
     "banner": {
       "type": "collection-main-banner",
+      "blocks": {
+        "da7e0cc7-9f90-4f0a-b7a5-2ec3b1235038": {
+          "type": "tags",
+          "settings": {
+            "title": "Example",
+            "col-title": "Example",
+            "image_with_text_image": "shopify:\/\/shop_images\/2.png"
+          }
+        },
+        "5a5050cb-df6e-4244-99f5-98d4505c20a8": {
+          "type": "tags",
+          "settings": {
+            "title": "Example",
+            "col-title": "Example",
+            "image_with_text_image": "shopify:\/\/shop_images\/3.png"
+          }
+        },
+        "2edfcdc3-9e56-44e8-9314-e91eebe53274": {
+          "type": "tags",
+          "settings": {
+            "title": "Example",
+            "col-title": "Example",
+            "image_with_text_image": "shopify:\/\/shop_images\/4.png"
+          }
+        },
+        "3ae94e70-200f-4588-aaf9-39b50f3826ad": {
+          "type": "tags",
+          "settings": {
+            "title": "Example",
+            "col-title": "Example",
+            "image_with_text_image": "shopify:\/\/shop_images\/5_34ad73b8-0d6f-43f4-b15c-000fe95bf224.png"
+          }
+        }
+      },
+      "block_order": [
+        "da7e0cc7-9f90-4f0a-b7a5-2ec3b1235038",
+        "5a5050cb-df6e-4244-99f5-98d4505c20a8",
+        "2edfcdc3-9e56-44e8-9314-e91eebe53274",
+        "3ae94e70-200f-4588-aaf9-39b50f3826ad"
+      ],
       "settings": {
+        "hero-title": "¿No sabes cómo decirlo? <br> Dilo con Flores.",
+        "hero-collection": "",
+        "hero-subtitle": "Pellentesque cras adipiscing tempus libero vel nullam mauris tellus. Aliquam ultrices tellus consequat amet,",
+        "add-to-cart-title": "Añadir al carrito",
+        "cta-1": "Ver por Ocasión",
+        "link-1": "",
+        "cta-2": "Contactanos",
+        "link-2": ""
       }
     },
     "product-grid": {
       "type": "collection-main",
       "settings": {
+        "add-to-cart-title": "Añadir al carrito",
+        "total-p": "Todos los Arreglos"
       }
     }
   },

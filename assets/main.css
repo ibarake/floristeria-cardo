@@ -1,8 +1,3 @@
-@font-face {
-  font-family: "NewYork";
-  src: url('{{ "NewYork.woff2" | asset_url }}') format("woff2");
-}
-
 body,
 html {
   margin: 0;
@@ -517,8 +512,8 @@ hero-banner {
 }
 
 product-card img.hero {
-  width: 290px;
-  height: 256px;
+  width: 290px !important;
+  height: 256px !important;
 }
 a.product-item{
   text-decoration: none;
@@ -863,7 +858,6 @@ product-card {
   background-color: var(--main-white);
   border-radius: 8px;
   margin: 16px;
-  display: flex;
   flex-direction: column;
   z-index: 9999;
 }
@@ -873,10 +867,36 @@ product-card:hover {
   transition: all 100ms ease-out;
 }
 
+hor-product-card {
+  background-color: var(--main-white);
+  border-radius: 8px;
+  margin: 16px;
+  flex-direction: row;
+  z-index: 9999;
+  width: 100%;
+}
+
+hor-product-card:hover {
+  transform: scale(1.05);
+  transition: all 100ms ease-out;
+}
+
 product-card img {
   object-fit: cover;
   object-position: center center;
   border-radius: 8px 8px 0 0;
+}
+
+hor-product-card img {
+  object-fit: cover;
+  object-position: center center;
+  border-radius: 8px 8px 0 0;
+  width: 222px;
+  height: 100%;
+}
+
+hor-product-card .card-width{
+  width: 70%;
 }
 
 card-product-info {
@@ -937,6 +957,36 @@ card-footer {
 
 .card-product-title{
   color: var(--main-black);
+}
+
+.vertical{
+  display: flex;
+}
+
+.horizontal{
+  display: none;
+}
+
+#order-vertical-btn {
+  border: none;
+  background-color: var(--main-color);
+  padding: 5px;
+  border-radius: 8px;
+}
+
+#order-vertical-btn path{
+  fill: var(--linen-3);
+}
+
+#order-horizontal-btn {
+  border: none;
+  background-color: transparent;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+#order-horizontal-btn path{
+  fill: var(--main-linen);
 }
 
 /* PRODUCTS FAQ STYLES */
@@ -1289,7 +1339,7 @@ answer {
 
 /* CONTACTO */
 @import url("https://fonts.cdnfonts.com/css/dm-sans");
-@import url("https://fonts.cdnfonts.com/css/newyork");
+@import url("https://fonts.cdnfonts.com/css/NewYork");
 .contacto {
   padding: 0 0 100px 0;
 }
@@ -1304,7 +1354,6 @@ contacto {
 .page-width-contacto {
   display: flex;
   width: 90%;
-  height: 67%;
   margin: auto;
   flex-direction: row;
   justify-content: flex-start;
@@ -1339,7 +1388,7 @@ datos {
 
 #correo {
   width: 345px;
-  height: 40px;
+  height: auto;
   border: 1px solid var(--main-gray);
   border-radius: 5px;
   background: var(--main-color);
@@ -1645,8 +1694,19 @@ product-grid{
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+sort-by {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 5px;
+}
+
 #sort-by{
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   width: 245px;
   height: 54px;
   padding: 10px 16px;
@@ -1655,6 +1715,7 @@ product-grid{
   border-radius: 8px;
   border: 1px solid var(--lino-2, #EFE4CF);
   background: var(--lino, #F7F0E2);
+  margin-left: 15px;
 }
 
 filter input[type=checkbox i] {
@@ -1664,11 +1725,11 @@ filter input[type=checkbox i] {
 filter input[type=checkbox] + label {
   display: block;
   border: solid 1px var(--gray-light);
-  margin: 10px;
+  border-radius: 8px;
 }
 
 .filter-form input[type=checkbox]:checked + label {
-  border: solid 1px var(--main-olive);
+  border: solid 1px var(--linen-3);
 }
 
 filter label {
@@ -1676,38 +1737,33 @@ filter label {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 16px 40px;
+  padding: 15px;
 }
 
 .filter-group {
-  width: 100%;
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
+  gap: 5px;
 }
 
-.filter-group > filter {
-  flex-basis: 100%;
+.filter-element {
+  flex: 1 1 auto;
+  width: calc(50% - 5px);
 }
 
-@media (min-width: 768px) {
-  .filter-group > filter {
-    flex-basis: 50%;
-  }
+.filter-element:nth-child(3n),
+.filter-element:nth-child(4n),
+.filter-element:nth-child(5n) {
+  width: calc(33.33% - 5px);
 }
 
-@media (min-width: 992px) {
-  .filter-group > filter {
-    flex-basis: 33.33%;
-  }
+filter-top{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  justify-items: space-between;
+  align-items: center;
+  width: 100%;
 }
-
-@media (min-width: 1200px) {
-  .filter-group > filter {
-    flex-basis: 25%;
-  }
-}
-
 
 /* MAIN-POLITICS */
 
