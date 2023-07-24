@@ -2358,10 +2358,10 @@ summary{
   border-radius: 12px;
   margin-bottom: 10px;
   justify-content: space-around;
+  padding: 15px;
 }
 
 summary-1{
-  padding-left: 15px;
 }
 
 summary-cart-item{
@@ -2396,6 +2396,7 @@ container-resumen{
 }*/
 
 met-pagos{
+  width: 100%;
   display: flex; 
   border-radius: 12px;
   background-color: var(--main-color);
