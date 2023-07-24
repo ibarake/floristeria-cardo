@@ -2344,6 +2344,7 @@ cart-info{
 
 .cart{
   width: 100%;
+  min-height: 660px;
   display: flex;
   justify-content:space-around;
   background-color: var(--main-dark-color);
@@ -2433,7 +2434,7 @@ cart-note {
 }
 
 #df {
-  min-width: 63%;
+  min-width: 60%;
 }
 
 @media (max-width: 768px) {
