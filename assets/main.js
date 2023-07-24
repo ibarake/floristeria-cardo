@@ -26,6 +26,8 @@ closeMenu.addEventListener("click", function () {
   enableScroll();
 });
 
+var activeDropdownMenu = null;
+
 dropdownMenus.forEach(function (dropdownMenu) {
   dropdownMenu.addEventListener("click", function () {
     var parentLi = this.closest(".drawer-item-container");
@@ -45,6 +47,7 @@ dropdownMenus.forEach(function (dropdownMenu) {
       childLi.style.height = "0";
       activeDropdown = null;
     }
+    activeDropdownMenu = this.querySelector("")
   });
 });
 
