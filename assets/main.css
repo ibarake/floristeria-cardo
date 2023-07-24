@@ -388,7 +388,7 @@ mega-menu-item {
   height: 100%;
   width: 80%;
   background-color: var(--main-dark-color);
-  z-index: 9999;
+  z-index: 99999;
   position: fixed;
   top: 0;
   left: -100%;
