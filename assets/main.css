@@ -2300,6 +2300,7 @@ summary{
   flex-direction: column;
   border-radius: 12px;
   margin-bottom: 10px;
+  
 }
 
 summary-cart-item{
@@ -2334,6 +2335,7 @@ met-pagos{
   background-color: var(--main-color);
   margin-bottom: 10px;
   flex-direction: column;
+  padding: 15px;
 }
 
 container-met-pagos{

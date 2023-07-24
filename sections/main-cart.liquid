@@ -46,6 +46,7 @@
   </met-pagos>
   <cart-info>
     <summary>
+      <summary-1>
       <p class="subtitulo-2">Resumen</p>
       {% for item in cart.items %}
         <summary-cart-item>
@@ -53,6 +54,7 @@
           <span class="subtitulo-2" id="precio-cart">{{ item.product.price | money_with_currency }}</span>
         </summary-cart-item>
       {% endfor %}
+      </summary-1>
       <cart-total>
       <span class="subtitulo-2" id="subtotal-cart">Subtotal</span>
       <span>{{ item.product.item | money_with_currency }}</span>
