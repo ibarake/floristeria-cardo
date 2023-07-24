@@ -57,7 +57,7 @@
       </summary-1>
       <cart-total>
       <span class="subtitulo-2" id="subtotal-cart">Subtotal</span>
-      <span>{{ item.product.item | money_with_currency }}</span>
+      <span>{{ cart.line_items.final_price | money_with_currency }}</span>
     </cart-total>
     </summary>
   <button-cart name="Comprar" class="subtitulo-2">Realizar Compra</button-cart>
