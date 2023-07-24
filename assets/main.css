@@ -2375,6 +2375,7 @@ cart-total{
 #precio-cart{
   font-size: 15px;
   margin-left: 3rem;
+  font-weight: bolder;
 }
 
 #subtotal-cart{
