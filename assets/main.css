@@ -2455,6 +2455,7 @@ buttons-ba-container {
   margin-top: 2rem;
   margin-left: -25px;
   justify-content: space-evenly;
+  width: 115%;
 }
 
 con-wf {
