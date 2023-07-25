@@ -2482,7 +2482,14 @@ image-picker {
   display: flex;
   border-top-right-radius: 8px;
   border-top-left-radius: 8px;
-  height: 250px;
+  height: 220px;
   width: 300px;
   background-color: var(--main-dark-gray);
+}
+
+#COL-subtitle {
+  text-transform: uppercase;
+  color: var(--main-linen);
+  padding: 20px 121px;
+  background-color: var(--main-dark-color);
 }
