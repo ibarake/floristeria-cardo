@@ -2489,11 +2489,14 @@ image-picker {
 COL-titles {
   display: flex;
   flex-direction: column;
+  width: 30%;
 }
 
 #COL-subtitle {
   text-transform: uppercase;
   color: var(--main-linen);
-  padding: 20px 100px;
-  background-color: var(--main-dark-color);
+  padding: 13px 40px;
+  border-radius: 5px;
+  background-color: orange;
+  margin-left: 1rem;
 }
