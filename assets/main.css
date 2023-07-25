@@ -2484,7 +2484,6 @@ image-picker {
   border-top-left-radius: 8px;
   height: 220px;
   width: 300px;
-  background-color: var(--main-dark-gray);
 }
 
 COL-titles {
@@ -2495,6 +2494,6 @@ COL-titles {
 #COL-subtitle {
   text-transform: uppercase;
   color: var(--main-linen);
-  padding: 20px 121px;
+  padding: 20px 100px;
   background-color: var(--main-dark-color);
 }
