@@ -2539,6 +2539,14 @@ COL-titles {
     margin-top: 1.5rem;
   }
 
+  #asd {
+    display: none;
+  }
+
+  #asb {
+    display: block;
+  }
+
   image-picker {
     height: 135px;
     width: 200px;
