@@ -2462,7 +2462,6 @@ con-wf {
 }
 
 collection-slider-2 {
-  overflow-x: auto;
   overflow-y: visible;
   display: flex;
   flex-direction: row;
@@ -2476,4 +2475,14 @@ card-ff {
   width: 300px;
   height: 300px;
   background-color: var(--main-white);
+  border-radius: 8px;
+}
+
+image-picker {
+  display: flex;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  height: 250px;
+  width: 300px;
+  background-color: var(--main-dark-gray);
 }

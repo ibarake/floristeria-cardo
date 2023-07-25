@@ -18,7 +18,9 @@
   <collection-slider-2 class="drag-scroll">
     {% for block in section.blocks %}
       <card-ff>
-        
+        <image-pick>
+          {{ block.settings.COL_image }}
+        </image-pick>
       </card-ff> 
     {% endfor %}
   </collection-slider-2>
