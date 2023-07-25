@@ -862,7 +862,6 @@ product-card {
   margin: 16px;
   flex-direction: column;
   z-index: 20;
-  background-size: cover;
 }
 
 product-card:hover {
