@@ -1161,12 +1161,10 @@ product4 {
     display: none;
   }
 
-  container-4products product-card {
-    width: 50%;
-  }
   container-arreglos {
     padding: 0;
     margin: 0;
+    width: 100%;
     z-index: 10;
   }
   .s3 {
