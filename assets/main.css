@@ -1796,7 +1796,7 @@ filter-drawer{
     display: block;
   }
   filter-drawer{
-    display: absolute;
+    display: fixed;
     z-index: 9999;
     background-color: var(--main-white);
   }
