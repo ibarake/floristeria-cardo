@@ -1796,7 +1796,7 @@ filter-drawer{
     display: block;
   }
   filter-drawer{
-    display: block;
+    display: absolute;
   }
   #filter-drawer-btn{
     display: block;
