@@ -19,11 +19,14 @@
     {% for block in section.blocks %}
       <card-ff>
         <image-picker>
-          {{ block.settings.COL_image }}
+          {{ block.settings['COL_image'] }}
         </image-picker>
         <COL-titles>
           <p class="subtitulo-5" id="COL-subtitle">
             {{ block.settings['COL-subtitle'] }}
+          </p>
+          <p class="subtitulo-6" id="COL-title">
+            {{ block.settings['COL-title'] }}
           </p>
         </COL-titles>
       </card-ff> 
