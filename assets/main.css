@@ -1772,6 +1772,10 @@ filter-drawer{
   display: none;
 }
 
+filter-drawer-btn{
+  display: none;
+}
+
 @media only screen and (max-width: 768px) {
   #collection-main aside{
     display: none;
@@ -1788,7 +1792,9 @@ filter-drawer{
   filter-drawer{
     display: block;
   }
-  
+  filter-drawer-btn{
+  display: block;
+  }
 }
 
 /* MAIN-POLITICS */
