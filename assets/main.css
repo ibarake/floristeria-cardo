@@ -2494,9 +2494,9 @@ COL-titles {
 
 #COL-subtitle {
   text-transform: uppercase;
-  color: var(--main-linen);
+  color: var(--linen-3linen);
   padding: 5px 10px;
   border-radius: 5px;
-  background-color: orange;
+  background-color: var(--main-color);
   margin-left: 1rem;
 }
