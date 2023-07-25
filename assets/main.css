@@ -1847,14 +1847,12 @@ container-flor1-2 {
   position: absolute;
   right: 0;
   margin-top: -25px;
-  z-index: 999;
 }
 
 container-flor2-3 {
   position: absolute;
   left: 0;
   margin-top: -85px;
-  z-index: 999;
 }
 
 container-flor1-1 {
@@ -2433,6 +2431,7 @@ con-t {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  z-index: 9999;
 }
 
 main-ba-container {
@@ -2472,6 +2471,7 @@ collection-slider-2 {
   align-items: center;
   gap: 32px;
   padding-left: 5rem;
+  z-index: 1;
 }
 
 card-ff {
