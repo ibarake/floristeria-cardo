@@ -1768,6 +1768,10 @@ filter-btn{
   display: none;
 }
 
+filter-drawer{
+  display: none;
+}
+
 @media only screen and (max-width: 768px) {
   #collection-main aside{
     display: none;
@@ -1781,6 +1785,10 @@ filter-btn{
   filter-btn{
     display: block;
   }
+  filter-drawer{
+    display: block;
+  }
+  
 }
 
 /* MAIN-POLITICS */
