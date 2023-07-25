@@ -92,7 +92,7 @@
     </form>
     <script>
             document.addEventListener('DOMContentLoaded', function() {
-        var checkboxes = document.querySelectorAll('.filter-form input[type="checkbox"]');
+        var checkboxes = document.querySelectorAll('aside .filter-form input[type="checkbox"]');
 
         checkboxes.forEach(function(checkbox) {
           checkbox.addEventListener('change', function() {
@@ -140,6 +140,9 @@
           {%- endfor -%}
         </filters>
       {%- endfor -%}
+      <div class="filter-group-display__submit">
+        <input type="submit" value="Apply">
+      </div>
     </form>
     <sort-by>
       {% render 'filter-icon' %}
