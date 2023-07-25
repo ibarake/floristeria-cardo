@@ -2514,9 +2514,10 @@ COL-titles {
 }
 
 @media only screen and (max-width: 768px) {
-  mian-ba-container {
+  main-ba-container {
     flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
 
   buttons-ba-container {
