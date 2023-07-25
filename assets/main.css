@@ -2488,8 +2488,10 @@ image-picker {
 
 COL-titles {
   display: flex;
-  flex-direction: column;
   width: 30%;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 1rem;
 }
 
 #COL-subtitle {
@@ -2498,5 +2500,9 @@ COL-titles {
   padding: 5px 10px;
   border-radius: 5px;
   background-color: var(--main-color);
-  margin-left: 1rem;
+  margin: 0;
+}
+
+#COL-title {
+  margin: 0;
 }
