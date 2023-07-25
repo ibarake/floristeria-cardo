@@ -1,16 +1,11 @@
 <product-card class="vertical">
-  <image
+  <img
     class="product-card-image {{ classes }}"
-    style="background-image: url({{ hero-product.featured_image | img_url }})"
+    src="{{ hero-product.featured_image | img_url }}"
     alt="{{ hero-product.featured_image.alt }}"
-    ><img
-      class="product-card-image {{ classes }}"
-      src="{{ hero-product.featured_image | img_url }}"
-      alt="{{ hero-product.featured_image.alt }}"
-      width="auto"
-      height="auto"
-      style="opacity: 0;"
-  ></image>
+    width="auto"
+    height="auto"
+  >
   <card-product-info class="card-width">
     <product-card-title>
       <p class="parrafo-4 collection-tag">{{ hero-product.collections[0].title }}</p>
