@@ -2487,6 +2487,11 @@ image-picker {
   background-color: var(--main-dark-gray);
 }
 
+COL-titles {
+  display: flex;
+  flex-direction: column;
+}
+
 #COL-subtitle {
   text-transform: uppercase;
   color: var(--main-linen);
