@@ -2419,6 +2419,7 @@ button-cart{
   background: var(--main-olive);
   font-family: Poppins;
   color: var(--main-white);
+  width: 107%;
 }
 
 item-info {
