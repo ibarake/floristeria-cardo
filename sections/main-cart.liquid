@@ -56,10 +56,18 @@
     <met-pagos>
       <p class="subtitulo-2" id="pagos">Metodos de Pagos</p>
       <container-met-pagos>
-        {% render 'cart-vs' %}
-        {% render 'cart-mc' %}
-        {% render 'cart-mp' %}
-        {% render 'cart-pu' %}
+        <metodo>
+          {% render 'cart-vs' %}
+        </metodo>
+        <metodo>
+          {% render 'cart-mc' %}
+        </metodo>
+        <metodo>
+          {% render 'cart-mp' %}
+        </metodo>
+        <metodo>
+          {% render 'cart-pu' %}
+        </metodo>
       </container-met-pagos>
     </met-pagos>
     <cart-info>
