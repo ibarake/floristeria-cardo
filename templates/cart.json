@@ -3,10 +3,35 @@
     "main": {
       "type": "main-cart",
       "settings": {
+        "cart-note": "Agregar mensaje personalizado",
+        "agregar-combo": "Agregar a tu combo"
+      }
+    },
+    "2ba8f1e0-85dc-4632-8dd5-f05831cbdee5": {
+      "type": "products-4",
+      "settings": {
+        "arreglos-title": "Lorem ipsum dolor sit amet",
+        "arreglos-subtitle": "Arreglos Funebres",
+        "collection": [
+          "arreglo-armonia",
+          "arreglo-armonia-de-orquideas-1",
+          "arreglo-condolencias-orquieas",
+          "arreglo-condolencias-en-orquideas"
+        ],
+        "button-text": "Añadir al carrito",
+        "title-preguntas": "Sobre Cardó",
+        "subtitle-preguntas": "preguntas frecuentes",
+        "subtitulo-fotos": "Ver todos",
+        "flor": true,
+        "color": true,
+        "border": true,
+        "style-s": "style 1",
+        "link": ""
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "2ba8f1e0-85dc-4632-8dd5-f05831cbdee5"
   ]
 }
