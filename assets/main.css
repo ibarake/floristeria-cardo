@@ -2484,6 +2484,7 @@ cart-item-responsive{
   cart-item-responsive img{
     width: 120px;
     height: 120px;
+    object-fit: cover;
   }
   cart-item{
     display:none;
