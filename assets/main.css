@@ -2358,6 +2358,11 @@ container-title {
   display: none;
 }
 
+.extra-product {
+  display: flex;
+  border-bottom: 1px solid var(--main-dark-color);
+}
+
 @media only screen and (max-width: 768px) {
   main-pr-container {
     flex-direction: column-reverse;
