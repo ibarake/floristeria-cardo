@@ -2476,6 +2476,16 @@ shipping {
     padding: 1rem 20px;
     width: 86%;
   }
+
+  .flor11-2 {
+    position: absolute;
+    right: 0;
+    top: 88px;
+  }
+  
+  .flor22-3 {
+    display: none;
+  }
 }
 
 /* CART STYLES */
