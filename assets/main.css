@@ -2361,6 +2361,11 @@ container-title {
 .extra-product {
   display: flex;
   border-bottom: 1px solid var(--main-dark-color);
+  padding: 1rem 0;
+}
+
+#ss {
+  padding-left: 1rem;
 }
 
 @media only screen and (max-width: 768px) {
