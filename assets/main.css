@@ -2354,6 +2354,10 @@ container-title {
   cursor: pointer;
 }
 
+#description-product {
+  display: none;
+}
+
 /* CART STYLES */
 container-cart-item{
   margin-left: 5rem;
