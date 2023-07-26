@@ -2370,8 +2370,12 @@ container-title {
 
 .extra-product {
   display: flex;
-  border-bottom: 1px solid var(--main-dark-color);
   padding: 1rem 0;
+}
+
+shipping {
+  border-top: 1px solid var(--linen-3);
+  border-bottom: 1px soled var(--linen-3);
 }
 
 #ss {
