@@ -2519,6 +2519,9 @@ cart-item-responsive{
     width: 100%;
     margin: 1rem 0;
   }
+  add-combo{
+    display:none;
+  }
 }
 
 @media (max-width: 480px) {
