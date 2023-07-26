@@ -1,0 +1,118 @@
+<main-ba-container>
+  <container-flor1-2 id="asd">
+    {% render 'Flor1-2' %}
+  </container-flor1-2>
+  <container-flor2-3 class="asb">
+    {% render 'Flor2-3' %}
+  </container-flor2-3>
+  <con-t>
+    <h1 class="titulo-1" id="title-ba-1">
+      {{ section.settings.title }}
+    </h1>
+    <p class="parrafo-1" id="parrafo-ba-1">
+      {{ section.settings.subtitle }}
+    </p>
+    <buttons-ba-container>
+      <a href="{{ section.settings.button_link-4 }}" class="ver-por-ocasion subtitulo-3">
+        {{ section.settings.button_lin4 }}
+      </a>
+      <a href="{{ section.settings.button_link-5 }}" class="contact-button subtitulo-3">
+        {{ section.settings.button_lin5 }}
+      </a>
+    </buttons-ba-container>
+  </con-t>
+  <collection-slider-2 class="drag-scroll">
+    {% for block in section.blocks %}
+      <card-ff>
+        <image-picker>
+          {{ block.settings['COL_image'] }}
+        </image-picker>
+        <COL-titles>
+          <p class="subtitulo-5" id="COL-subtitle">
+            {{ block.settings['COL-subtitle'] }}
+          </p>
+          <p class="subtitulo-6" id="COL-title">
+            {{ block.settings['COL-title'] }} {% render 'icon-arrow-right' %}
+          </p>
+        </COL-titles>
+      </card-ff> 
+    {% endfor %}
+  </collection-slider-2>
+</main-ba-container>
+
+{% schema %}
+  {
+    "name": "Banner 2",
+      "settings": [
+        {
+        "type": "text",
+        "id": "title",
+        "label": "Titulo",
+        "default": "Lorem ipsum dolor sit amet"
+      },
+      {
+        "type": "textarea",
+        "id": "subtitle",
+        "label": "subtitle",
+        "default": "Pellentesque cras adipiscing tempus libero vel nullam mauris tellus. Aliquam ultrices tellus consequat amet,"
+      },
+      {
+        "type": "text",
+        "id": "button_lin4",
+        "label": "ver por ocasion",
+        "default": "Ver Por Ocasion"
+      },
+      {
+        "type": "text",
+        "id": "button_lin5",
+        "label": "contacto button",
+        "default": "Contactanos"
+      },
+      {
+        "type": "collection_list",
+        "id": "collection_list",
+        "label": "collection"
+      },
+      {
+        "type": "url",
+        "id": "button-link-4",
+        "label": "Button link" 
+      },
+      {
+        "type": "url",
+        "id": "button-link-5",
+        "label": "Button link"
+      }
+    ],
+    "blocks": [
+	  {
+      "type": "Collection-card",
+      "name": "Collection-card",
+      "limit": 5,
+		  "settings": [
+        {
+          "type": "text",
+          "id": "COL-title",
+          "label": "COL-title",
+          "default": "Example"
+        },
+        {
+          "type": "text",
+          "id": "COL-subtitle",
+          "label": "COL-subtitle",
+          "default": "Example"
+        },
+        {
+          "type": "image_picker",
+          "id": "COL-image",
+          "label": "Imagen"
+        }
+		  ]
+	  }
+  ],
+    "presets": [{
+      "name": "banner-2"
+    }
+    ]
+  }
+{% endschema %}
