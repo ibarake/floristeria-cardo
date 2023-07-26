@@ -2265,6 +2265,12 @@ product-information {
   top: 88px;
 }
 
+.flor22-3 {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
 #pr-subtitle {
   margin: 0;
   color: var(--main-gray);
