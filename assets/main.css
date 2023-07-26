@@ -2493,7 +2493,9 @@ cart-item-responsive{
     display: flex;
     flex-direction: row;
   }
-  
+  cart-item-responsive .subtitulo-1{
+    font-size: 16px;
+  }
   container-cart-item {
     margin-left: 2rem;
     margin-right: 2rem;
