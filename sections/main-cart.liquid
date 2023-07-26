@@ -23,6 +23,26 @@
         <p class="price">{{ item.product.price | money_with_currency }}</p>
         <a href="{{ item.url_to_remove }}">{% render 'delete-cart' %}</a>
       </cart-item>
+      <cart-item-responsive>
+        <image class="cart-item-image">
+          <img src="{{ item.image | img_url }}">
+        </image>
+        <item-info>
+          <p class="parrafo-4 collection-tag">{{ item.product.collections[0].title }}</p>
+          <h2 class="subtitulo-1">{{ item.product.title }}</h2>
+          <cart-note class="subtitulo-5">
+            {% render 'cart-note' %}
+            {{ section.settings['cart-note'] }}
+          </cart-note>
+        </item-info>
+        <quantity>
+          <input type="button" value="-" class="button-minus" data-field="quantity">
+          <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
+          <input type="button" value="+" class="button-plus" data-field="quantity">
+        </quantity>
+        <p class="price">{{ item.product.price | money_with_currency }}</p>
+        <a href="{{ item.url_to_remove }}">{% render 'delete-cart' %}</a>
+      </cart-item-responsive>
     {% endfor %}
   {% endform %}
   <add-combo>
