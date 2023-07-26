@@ -1,13 +1,22 @@
-<h1>Collection Main</h1>
 <section id="collection-main" class="page-width">
   <topbar>
-    <h3 class="titulo-3">{{ section.settings['total-p'] }} ({{ collection.products_count }})</h3>
+    <h3 class="product-count titulo-3">{{ section.settings['total-p'] }} ({{ collection.products_count }})</h3>
     <filter-top>
       <order-by>
-        <order-vertical></order-vertical>
-        <order-horizontal></order-horizontal>
+        <order-vertical>
+          <button id="order-vertical-btn">
+            {% render 'square-cards-icon' %}
+          </button>
+        </order-vertical>
+        <order-horizontal>
+          <button id="order-horizontal-btn">
+            {% render 'horizontal-cards-icon' %}
+          </button>
+        </order-horizontal>
       </order-by>
       <sort-by>
+        {% render 'filter-icon' %}
+        <p class="subtitulo-2">Ordenar por</p>
         <select id="sort-by">
           {% assign sort_by = collection.sort_by | default: collection.default_sort_by %}
           {% for option in collection.sort_options %}
@@ -46,6 +55,12 @@
           });
         </script>
       </sort-by>
+      <button>
+        <span>
+          {% render 'filter-icon' %}
+        </span>
+        <span> Filtros </span>
+      </button>
     </filter-top>
   </topbar>
   <aside>
@@ -54,7 +69,7 @@
         <p class="subtitulo-2">{{ filter.label }}</p>
         <filters class="filter-group">
           {%- for filter_value in filter.values -%}
-            <filter>
+            <filter class="filter-element">
               <input
                 type="checkbox"
                 name="{{ filter_value.param_name }}"
@@ -91,10 +106,68 @@
     <product-grid>
       {% for product in collection.products %}
         {% include 'product-card', hero-product: product, atc-btn: section.settings['add-to-cart-title'], classes: '' %}
+        {% include 'hor-product-card',
+          hero-product: product,
+          atc-btn: section.settings['add-to-cart-title'],
+          classes: ''
+        %}
       {% endfor %}
     </product-grid>
   </content>
 </section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var orderVerticalBtn = document.getElementById('order-vertical-btn');
+    var orderHorizontalBtn = document.getElementById('order-horizontal-btn');
+    var horPath = document.querySelectorAll('#order-horizontal-btn path');
+    var verPath = document.querySelectorAll('#order-vertical-btn path');
+    var productGrid = document.querySelector('product-grid');
+    var productHorizontalCards = document.querySelectorAll('.horizontal');
+    var productVerticalCards = document.querySelectorAll('.vertical');
+
+    orderVerticalBtn.addEventListener('click', function() {
+      productVerticalCards.forEach((pc) => {
+        pc.style.display = "flex";
+      })
+      productHorizontalCards.forEach((pc) => {
+        pc.style.display = "none";
+
+      })
+      orderVerticalBtn.style.backgroundColor = "var(--main-color)";
+        orderHorizontalBtn.style.backgroundColor = "transparent";
+      horPath.forEach((hp) => {
+                hp.style.fill = "var(--main-linen)";
+      })
+      verPath.forEach((vp) => {
+        vp.style.fill = "var(--linen-3)";
+      })
+      productGrid.style.gridTemplateColumns = "1fr 1fr 1fr";
+    });
+
+    orderHorizontalBtn.addEventListener('click', function() {
+      productGrid.classList.add('order-horizontal');
+      productGrid.classList.remove('order-vertical');
+
+      productVerticalCards.forEach((pc) => {
+        pc.style.display = "none";
+      })
+      productHorizontalCards.forEach((pc) => {
+        pc.style.display = "flex";
+      })
+      orderVerticalBtn.style.backgroundColor = "transparent";
+      orderHorizontalBtn.style.backgroundColor = "var(--main-color)";
+      horPath.forEach((hp) => {
+        hp.style.fill = "var(--linen-3)";
+      })
+      verPath.forEach((vp) => {
+        vp.style.fill = "var(--main-linen)";
+      })
+      productGrid.style.gridTemplateColumns = "1fr";
+    });
+  });
+</script>
+
 {% schema %}
 {
   "name": "Collection Main",

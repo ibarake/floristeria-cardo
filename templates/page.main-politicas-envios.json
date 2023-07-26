@@ -13,7 +13,11 @@
         "spam-proceso": "Lorem Ipsum",
         "sub-1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque rutrum fermentum.",
         "sub-2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque rutrum fermentum.",
-        "sub-3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque rutrum fermentum."
+        "sub-3": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque rutrum fermentum.",
+        "button-proc": "Comprar",
+        "button_link": "shopify:\/\/collections\/all",
+        "button_link-2": "shopify:\/\/pages\/contacto",
+        "button_link-3": "shopify:\/\/collections\/all"
       }
     },
     "6bc7c31e-c082-4666-a549-5e866ea10ff3": {

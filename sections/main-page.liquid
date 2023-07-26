@@ -14,58 +14,61 @@
     </p>
     <info-container>
       <gmail>
-        <cont-icon>    
+        <cont-icon>
           {% render 'gmail' %}
         </cont-icon>
         <cont-infor>
           <h5 class="titulo-5" id="tt">
-            {{ section.settings.label-correo }}
-            </h5>
-            <p class="parrafo-1" id="pp">
-              {{ section.settings.correo }}
-            </p>
+            {{ section.settings['label-correo'] }}
+          </h5>
+          <p class="parrafo-1" id="pp">
+            {{ section.settings.correo }}
+          </p>
         </cont-infor>
       </gmail>
       <phone>
-        <cont-icon>    
+        <cont-icon>
           {% render 'telefono' %}
         </cont-icon>
         <cont-infor>
           <h5 class="titulo-5" id="tt">
-            {{ section.settings.label-numero }}
-            </h5>
-            <p class="parrafo-1" id="pp">
-              {{ section.settings.numero }}
-            </p>
+            {{ section.settings['label-numero'] }}
+          </h5>
+          <p class="parrafo-1" id="pp">
+            {{ section.settings.numero }}
+          </p>
         </cont-infor>
       </phone>
       <address>
-        <cont-icon>    
+        <cont-icon>
           {% render 'direccion' %}
         </cont-icon>
         <cont-infor>
           <h5 class="titulo-5" id="tt">
-            {{ section.settings.label-direccion }}
-            </h5>
-            <p class="parrafo-1" id="pp">
-              {{ section.settings.direccion }}
-            </p>
+            {{ section.settings['label-direccion'] }}
+          </h5>
+          <p class="parrafo-1" id="pp">
+            {{ section.settings.direccion }}
+          </p>
         </cont-infor>
       </address>
     </info-container>
   </main-container>
   <information-container>
     <container-flor1-1>
-        {% render 'Flor1-1' %}
+      {% render 'Flor1-1' %}
     </container-flor1-1>
     <container-flor3-1>
-        {% render 'Flor3-1' %}
+      {% render 'Flor3-1' %}
     </container-flor3-1>
     <left-sobre>
-        <img
+      <img
         class="information-image"
         src="{{ section.settings.image | img_url }}"
-        alt="{{ section.settings.image.alt }}">
+        alt="{{ section.settings.image.alt }}"
+        width="auto"
+        height="auto"
+      >
     </left-sobre>
     <right-sobre>
       <h3 class="titulo-3" id="titulo-3">
@@ -79,56 +82,56 @@
 </section>
 
 {% schema %}
-  {
-    "name": "sobre-cardo",
-    "settings": [
-      {
-        "type": "text",
-        "id": "title",
-        "label": "Titulo",
-        "default": "Lorem ipsum dolor sit amet"
-      },
-      {
-        "type": "textarea",
-        "id": "subtitle",
-        "label": "subtitle",
-        "default": "Pellentesque cras adipiscing tempus libero vel nullam mauris tellus. Aliquam ultrices tellus consequat amet,"
-      },
-      {
-        "type": "image_picker",
-        "label": "image",
-        "id": "image"
-      },
-      {
-        "type": "text",
-        "id": "label-correo",
-        "label": "Label Correo"
-      },
-      {
-        "type": "text",
-        "id": "correo",
-        "label": "Correo"
-      },
-      {
-        "type": "text",
-        "id": "label-numero",
-        "label": "Label Numero"
-      },
-      {
-        "type": "number",
-        "id": "numero",
-        "label": "Numero"
-      },
-      {
-        "type": "text",
-        "id": "label-direccion",
-        "label": "Label Direccion"
-      },
-      {
-        "type": "text",
-        "id": "direccion",
-        "label": "Direccion"
-      }
-    ]
-  }
+{
+  "name": "sobre-cardo",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Titulo",
+      "default": "Lorem ipsum dolor sit amet"
+    },
+    {
+      "type": "textarea",
+      "id": "subtitle",
+      "label": "subtitle",
+      "default": "Pellentesque cras adipiscing tempus libero vel nullam mauris tellus. Aliquam ultrices tellus consequat amet,"
+    },
+    {
+      "type": "image_picker",
+      "label": "image",
+      "id": "image"
+    },
+    {
+      "type": "text",
+      "id": "label-correo",
+      "label": "Label Correo"
+    },
+    {
+      "type": "text",
+      "id": "correo",
+      "label": "Correo"
+    },
+    {
+      "type": "text",
+      "id": "label-numero",
+      "label": "Label Numero"
+    },
+    {
+      "type": "number",
+      "id": "numero",
+      "label": "Numero"
+    },
+    {
+      "type": "text",
+      "id": "label-direccion",
+      "label": "Label Direccion"
+    },
+    {
+      "type": "text",
+      "id": "direccion",
+      "label": "Direccion"
+    }
+  ]
+}
 {% endschema %}

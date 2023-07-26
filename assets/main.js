@@ -12,6 +12,7 @@ hamburguerMenu.addEventListener("click", function () {
   responsiveMenu.style.right = "auto";
   responsiveMenu.style.left = 0;
   responsiveMenu.style.width = screen.width * 0.8;
+  disableScroll();
 });
 
 closeMenu.addEventListener("click", function () {
@@ -22,6 +23,7 @@ closeMenu.addEventListener("click", function () {
     activeDropdown.style.height = "0";
     activeDropdown = null;
   }
+  enableScroll();
 });
 
 dropdownMenus.forEach(function (dropdownMenu) {
@@ -29,11 +31,14 @@ dropdownMenus.forEach(function (dropdownMenu) {
     var parentLi = this.closest(".drawer-item-container");
     var childLi = parentLi.querySelector("dropdown-mega-menu");
 
+    // Check if a different dropdown is already active
     if (activeDropdown && activeDropdown !== childLi) {
-      dropdownMenu.style.transform = "scaleY(1)";
+      var activeDropdownMenu = activeDropdown.previousElementSibling;
+      activeDropdownMenu.style.transform = "scaleY(1)";
       activeDropdown.style.height = "0";
     }
 
+    // Toggle the clicked dropdown
     if (childLi.style.height === "0px" || !childLi.style.height) {
       dropdownMenu.style.transform = "scaleY(-1)";
       childLi.style.height = childLi.scrollHeight + "px";
@@ -45,6 +50,21 @@ dropdownMenus.forEach(function (dropdownMenu) {
     }
   });
 });
+
+function disableScroll() {
+    // Get the current page scroll position
+    scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+
+        // if any scroll is attempted, set this to the previous value
+        window.onscroll = function() {
+            window.scrollTo(scrollLeft, scrollTop);
+        };
+}
+
+function enableScroll() {
+    window.onscroll = function() {};
+}
 
 /* HERO BANNER */
 
@@ -200,3 +220,24 @@ const productRecommendationsSection = document.querySelector('.product-recommend
 const observer = new IntersectionObserver(handleIntersection, {rootMargin: '0px 0px 200px 0px'});
 
 observer.observe(productRecommendationsSection);
+
+
+/* COLLECTION PAGE VERTICAL OR HORIZONTAL GRID AND PRODUCT CARD */
+
+// TRUNCATE WORDS
+
+document.addEventListener('DOMContentLoaded', function() {
+    
+    var contentElements = document.querySelectorAll('.truncate-32');
+
+      for (var i = 0; i < contentElements.length; i++) {
+      var content = contentElements[i].textContent;
+      var words = content.split(' ');
+
+      if (words.length > 32) {
+        var truncatedContent = words.slice(0, 32).join(' ') + '...';
+        contentElements[i].textContent = truncatedContent;
+      }
+    }
+  });
+
