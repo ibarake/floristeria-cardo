@@ -7,16 +7,16 @@
         "agregar-combo": "Agregar a tu combo"
       }
     },
-    "1e4cd3a7-1b3e-4c36-ba15-ed201895a344": {
+    "2ba8f1e0-85dc-4632-8dd5-f05831cbdee5": {
       "type": "products-4",
       "settings": {
         "arreglos-title": "Lorem ipsum dolor sit amet",
         "arreglos-subtitle": "Arreglos Funebres",
         "collection": [
+          "arreglo-armonia",
           "arreglo-armonia-de-orquideas-1",
           "arreglo-condolencias-orquieas",
-          "arreglo-condolencias-en-orquideas",
-          "arreglo-de-condolencia-para-urna-cenizaria"
+          "arreglo-condolencias-en-orquideas"
         ],
         "button-text": "Añadir al carrito",
         "title-preguntas": "Sobre Cardó",
@@ -26,12 +26,12 @@
         "color": true,
         "border": true,
         "style-s": "style 1",
-        "link": "shopify:\/\/collections\/all"
+        "link": ""
       }
     }
   },
   "order": [
     "main",
-    "1e4cd3a7-1b3e-4c36-ba15-ed201895a344"
+    "2ba8f1e0-85dc-4632-8dd5-f05831cbdee5"
   ]
 }

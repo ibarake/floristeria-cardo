@@ -2384,6 +2384,7 @@ cart-info{
 
 .cart{
   width: 100%;
+  min-height: 660px;
   display: flex;
   justify-content:space-around;
   background-color: var(--main-dark-color);
@@ -2391,11 +2392,14 @@ cart-info{
 
 summary{
   width: 100%;
+  min-height: 50%;
   background-color: var(--main-color);
   display: flex;
   flex-direction: column;
   border-radius: 12px;
   margin-bottom: 10px;
+  justify-content: space-around;
+  padding: 15px;
 }
 
 summary-cart-item{
@@ -2405,6 +2409,7 @@ summary-cart-item{
 #precio-cart{
   font-size: 15px;
   margin-left: 3rem;
+  font-weight: bolder;
 }
 
 #subtotal-cart{
@@ -2425,15 +2430,18 @@ container-resumen{
 }*/
 
 met-pagos{
+  width: 100%;
   display: flex; 
   border-radius: 12px;
   background-color: var(--main-color);
   margin-bottom: 10px;
   flex-direction: column;
+  padding: 15px;
 }
 
 container-met-pagos{
   display: flex;
+  justify-content: space-around;
 }
 
 #pagos{
@@ -2451,6 +2459,7 @@ button-cart{
   background: var(--main-olive);
   font-family: Poppins;
   color: var(--main-white);
+  width: 107%;
 }
 
 item-info {
