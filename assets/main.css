@@ -1218,7 +1218,7 @@ product4 {
   }
 
   .FAQ-title {
-    width: 250px;
+    width: 100%;
     height: 40px;
   }
 
@@ -1768,7 +1768,21 @@ filter-btn{
   display: none;
 }
 
+filter-drawer{
+  display: none;
+}
+
+#filter-drawer-btn{
+  display: none;
+}
+
 @media only screen and (max-width: 768px) {
+  #collection-main {
+    grid-template-columns: 1fr; 
+    grid-template-areas: "topbar"
+    "content";
+  }
+  
   #collection-main aside{
     display: none;
   }
@@ -1779,6 +1793,14 @@ filter-btn{
     display: none;
   }
   filter-btn{
+    display: block;
+  }
+  filter-drawer{
+    display: fixed;
+    z-index: 9999;
+    background-color: var(--main-white);
+  }
+  #filter-drawer-btn{
     display: block;
   }
 }
