@@ -2477,11 +2477,18 @@ cart-note {
 #df {
   min-width: 60%;
 }
-
+cart-item-responsive{
+  display: none;
+}
 @media (max-width: 768px) {
   cart-item{
+    display:none;
+  }
+  cart-item-responsive{
+    display: flex;
     flex-direction: column;
   }
+  
   .container-cart-item {
     margin-left: 2rem;
     margin-right: 2rem;
