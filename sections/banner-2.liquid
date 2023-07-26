@@ -23,21 +23,21 @@
     </con-t>
   <collection-slider-2 class="drag-scroll">
     {% for block in section.blocks %}
-      <a href=" {{ section.settings.link4 }} ">
       <card-ff>
-        <image-picker>
-          {{ block.settings['COL_image'] }}
-        </image-picker>
-        <COL-titles>
-          <p class="subtitulo-5" id="COL-subtitle">
-            {{ block.settings['COL-subtitle'] }}
-          </p>
-          <p class="subtitulo-6" id="COL-title">
-            {{ block.settings['COL-title'] }} {% render 'icon-arrow-right' %}
-          </p>
-        </COL-titles>
+        <a href=" {{ section.settings.link4 }} ">
+          <image-picker>
+            {{ block.settings['COL_image'] }}
+          </image-picker>
+          <COL-titles>
+            <p class="subtitulo-5" id="COL-subtitle">
+              {{ block.settings['COL-subtitle'] }}
+            </p>
+            <p class="subtitulo-6" id="COL-title">
+              {{ block.settings['COL-title'] }} {% render 'icon-arrow-right' %}
+            </p>
+          </COL-titles>
+        </a>
       </card-ff> 
-      </a>
     {% endfor %}
   </collection-slider-2>
 </main-ba-container>
