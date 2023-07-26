@@ -2407,6 +2407,10 @@ shipping {
     flex-direction: column-reverse;
   }
 
+  #atc {
+    padding: 0;
+  }
+
   add-combo {
     display: none;
   }
