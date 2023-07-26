@@ -2288,7 +2288,7 @@ container-buttons {
   border: 1px solid var(--main-olive);
   background-color: var(--main-olive);
   width: 85%;
-  height: 3rem;
+  height: 2.7rem;
   border-radius: 8px;
   margin: 0;
 }
@@ -2352,6 +2352,7 @@ container-title {
   padding: 10px 15px;
   border-radius: 8px;
   cursor: pointer;
+  height: 2.7rem;
 }
 
 #description-product {
