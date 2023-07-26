@@ -2486,7 +2486,7 @@ cart-item-responsive{
   }
   cart-item-responsive{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
   }
   
   .container-cart-item {
