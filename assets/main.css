@@ -2494,10 +2494,11 @@ cart-item-responsive{
     flex-direction: row;
   }
   
-  .container-cart-item {
+  container-cart-item {
     margin-left: 2rem;
     margin-right: 2rem;
   }
+  
 
   #title-cart{
     font-size: 24px;
