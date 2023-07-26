@@ -2251,6 +2251,7 @@ product-page {
   width: 500px;
   height: 500px;
   background-color: var(--main-white);
+  z-index: 1;
 }
 
 product-information {
