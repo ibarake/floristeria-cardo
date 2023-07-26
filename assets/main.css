@@ -2255,7 +2255,8 @@ product-page {
 }
 
 #fgh {
-  text-decoration: none ;
+  text-decoration: none;
+  color: var(--main-black);
 }
 
 product-information {
