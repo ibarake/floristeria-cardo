@@ -2256,6 +2256,13 @@ product-page {
 product-information {
   width: 45%;
   margin-top: 3rem;
+  z-index: 9999;
+}
+
+.flor11-2 {
+  position: absolute;
+  right: 0;
+  top: 88px;
 }
 
 #pr-subtitle {
