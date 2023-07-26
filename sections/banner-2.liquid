@@ -5,22 +5,24 @@
   <container-flor2-3 class="asb">
     {% render 'Flor2-3' %}
   </container-flor2-3>
-  <con-t>
-    <h1 class="titulo-1" id="title-ba-1">
-      {{ section.settings.title }}
-    </h1>
-    <p class="parrafo-1" id="parrafo-ba-1">
-      {{ section.settings.subtitle }}
-    </p>
-    <buttons-ba-container>
-      <a href="{{ section.settings.button_link-4 }}" class="ver-por-ocasion subtitulo-3">
-        {{ section.settings.button_lin4 }}
-      </a>
-      <a href="{{ section.settings.button_link-5 }}" class="contact-button subtitulo-3">
-        {{ section.settings.button_lin5 }}
-      </a>
-    </buttons-ba-container>
-  </con-t>
+  <a href=" {{ section.settings.link4 }} ">
+    <con-t>
+      <h1 class="titulo-1" id="title-ba-1">
+        {{ section.settings.title }}
+      </h1>
+      <p class="parrafo-1" id="parrafo-ba-1">
+        {{ section.settings.subtitle }}
+      </p>
+      <buttons-ba-container>
+        <a href="{{ section.settings.button_link-4 }}" class="ver-por-ocasion subtitulo-3">
+          {{ section.settings.button_lin4 }}
+        </a>
+        <a href="{{ section.settings.button_link-5 }}" class="contact-button subtitulo-3">
+          {{ section.settings.button_lin5 }}
+        </a>
+      </buttons-ba-container>
+    </con-t>
+  </a>
   <collection-slider-2 class="drag-scroll">
     {% for block in section.blocks %}
       <card-ff>
@@ -82,6 +84,11 @@
         "type": "url",
         "id": "button-link-5",
         "label": "Button link"
+      },
+      {
+        "type": "url",
+        "id": "link4",
+        "label": "link product"
       }
     ],
     "blocks": [
