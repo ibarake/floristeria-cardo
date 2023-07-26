@@ -5,7 +5,6 @@
   <container-flor2-3 class="asb">
     {% render 'Flor2-3' %}
   </container-flor2-3>
-  <a href=" {{ section.settings.link4 }} ">
     <con-t>
       <h1 class="titulo-1" id="title-ba-1">
         {{ section.settings.title }}
@@ -22,9 +21,9 @@
         </a>
       </buttons-ba-container>
     </con-t>
-  </a>
   <collection-slider-2 class="drag-scroll">
     {% for block in section.blocks %}
+      <a href=" {{ section.settings.link4 }} ">
       <card-ff>
         <image-picker>
           {{ block.settings['COL_image'] }}
@@ -38,6 +37,7 @@
           </p>
         </COL-titles>
       </card-ff> 
+      </a>
     {% endfor %}
   </collection-slider-2>
 </main-ba-container>
