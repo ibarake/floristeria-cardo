@@ -2254,6 +2254,10 @@ product-page {
   z-index: 1;
 }
 
+#fgh {
+  text-decoration: none ;
+}
+
 product-information {
   width: 45%;
   margin-top: 3rem;
