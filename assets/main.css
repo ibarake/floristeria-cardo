@@ -2481,6 +2481,10 @@ cart-item-responsive{
   display: none;
 }
 @media (max-width: 768px) {
+  cart-item-responsive img{
+    width: 120px;
+    height: 120px;
+  }
   cart-item{
     display:none;
   }
