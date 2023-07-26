@@ -13,7 +13,7 @@ h4,
 h5,
 h6,
 p {
-  z-index: 9999;
+  z-index: 10;
 }
 
 /* VARIABLES */
@@ -225,7 +225,7 @@ header {
   width: 100%;
   background-color: var(--main-white);
   min-height: 85px;
-  z-index: 9999;
+  z-index: 10;
 }
 
 .header-logo {
@@ -386,10 +386,10 @@ mega-menu-item {
   transition: all 0.5s ease-in-out;
   display: flex;
   height: 100%;
-  width: 0px;
+  width: 80%;
   background-color: var(--main-dark-color);
-  z-index: 1;
   position: fixed;
+  z-index: 99999;
   top: 0;
   left: -100%;
   -webkit-box-shadow: 10px 0px 25px 0px rgba(0, 0, 0, 0.3);
@@ -420,6 +420,7 @@ drawer-content {
   left: 10px;
   padding: 5px;
   width: 30px;
+  z-index: 100;
 }
 
 .close-drawer svg {
@@ -523,7 +524,7 @@ a.product-item{
   margin: 0;
 }
 inline-half-container {
-  z-index: 999;
+  z-index: 9;
 }
 inline-half-container.left {
   width: 40%;
@@ -826,6 +827,7 @@ collection-card img {
   width: 256px;
   height: 300px;
   object-fit: cover;
+  object-position: 50% 50%;
 }
 
 .collection-card-title {
@@ -859,7 +861,7 @@ product-card {
   border-radius: 8px;
   margin: 16px;
   flex-direction: column;
-  z-index: 9999;
+  z-index: 20;
 }
 
 product-card:hover {
@@ -872,7 +874,7 @@ hor-product-card {
   border-radius: 8px;
   margin: 16px;
   flex-direction: row;
-  z-index: 9999;
+  z-index: 20;
   width: 100%;
 }
 
@@ -1152,16 +1154,13 @@ product4 {
     display: flex;
     justify-content: space-between;
     margin: 10px 0;
-    z-index: 9999;
+    z-index: 10;
   }
 
   container-4products::-webkit-scrollbar {
     display: none;
   }
 
-  container-4products product-card {
-    width: 50%;
-  }
   container-arreglos {
     padding: 0;
     margin: 0;
@@ -1219,7 +1218,7 @@ product4 {
   }
 
   .FAQ-title {
-    width: 250px;
+    width: 100%;
     height: 40px;
   }
 
@@ -1763,6 +1762,47 @@ filter-top{
   justify-items: space-between;
   align-items: center;
   width: 100%;
+}
+
+filter-btn{
+  display: none;
+}
+
+filter-drawer{
+  display: none;
+}
+
+#filter-drawer-btn{
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  #collection-main {
+    grid-template-columns: 1fr; 
+    grid-template-areas: "topbar"
+    "content";
+  }
+  
+  #collection-main aside{
+    display: none;
+  }
+  topbar{
+    grid-template-columns: 1fr;
+  }
+  sort-by{
+    display: none;
+  }
+  filter-btn{
+    display: block;
+  }
+  filter-drawer{
+    display: fixed;
+    z-index: 9999;
+    background-color: var(--main-white);
+  }
+  #filter-drawer-btn{
+    display: block;
+  }
 }
 
 /* MAIN-POLITICS */
@@ -2470,5 +2510,141 @@ cart-note {
 
   .container-met-pagos {
     flex-direction: column;
+  }
+}
+
+/* BANNER 2 STYLES */
+
+con-t {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 9999;
+}
+
+main-ba-container {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  background-color: #F7F0E2;
+  padding-left: 5rem;
+}
+
+#title-ba-1 {
+  margin: 0;
+  color: var(--main-olive);
+}
+
+#parrafo-ba-1 {
+  color: var(--main-gray);
+}
+
+buttons-ba-container {
+  display: flex;
+  margin-top: 2rem;
+  margin-left: -25px;
+  justify-content: space-evenly;
+  width: 115%;
+}
+
+con-wf {
+  display: flex;
+}
+
+collection-slider-2 {
+  overflow-y: visible;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  padding-left: 5rem;
+  z-index: 1;
+}
+
+card-ff {
+  width: 300px;
+  height: 300px;
+  background-color: var(--main-white);
+  border-radius: 8px;
+}
+
+image-picker {
+  display: flex;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  height: 220px;
+  width: 300px;
+}
+
+COL-titles {
+  display: flex;
+  width: 30%;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+#COL-subtitle {
+  text-transform: uppercase;
+  color: var(--linen-3);
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: var(--main-color);
+  margin: 0;
+}
+
+#COL-title {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  main-ba-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  buttons-ba-container {
+    display: none;
+  }
+
+  #title-ba-1 {
+    text-align: center;
+    width: 50%;
+  }
+
+  #parrafo-ba-1 {
+    text-align: center;
+    width: 70%;
+    margin-left: -30px;
+  }
+
+  con-t {
+    margin-top: 1.5rem;
+  }
+
+  #asd {
+    display: none;
+  }
+
+  image-picker {
+    height: 135px;
+    width: 200px;
+  }
+
+  card-ff {
+    width: 200px;
+    height: 200px;
+    background-color: var(--main-white);
+    border-radius: 8px;
+  }
+
+  collection-slider-2 {
+    padding-left: 40rem;
+    padding-top: 2rem;
   }
 }
