@@ -22,72 +22,6 @@
         "description-title": "Descripción"
       }
     },
-    "9fe1eb62-8282-478c-8692-fc72da4dd3be": {
-      "type": "banner-2",
-      "blocks": {
-        "13610bc0-6439-4a31-9393-037ebed515c0": {
-          "type": "Collection-card",
-          "settings": {
-            "COL-title": "Example",
-            "COL-subtitle": "Example",
-            "COL-image": "shopify:\/\/shop_images\/1.jpg"
-          }
-        },
-        "7ef08d0d-7869-4857-bfce-ab1191e097b6": {
-          "type": "Collection-card",
-          "settings": {
-            "COL-title": "Example",
-            "COL-subtitle": "Example",
-            "COL-image": "shopify:\/\/shop_images\/WhatsAppImage2023-05-05at2.12.13PM.jpg"
-          }
-        },
-        "3d4b0af5-c3d0-4db8-afaa-3f886ce81286": {
-          "type": "Collection-card",
-          "settings": {
-            "COL-title": "Example",
-            "COL-subtitle": "Example"
-          }
-        },
-        "7dff5097-f357-43b2-9a4f-e264f9c2de37": {
-          "type": "Collection-card",
-          "settings": {
-            "COL-title": "Example",
-            "COL-subtitle": "Example"
-          }
-        },
-        "d1c50e01-e584-4ec5-81a9-c26283887457": {
-          "type": "Collection-card",
-          "settings": {
-            "COL-title": "Example",
-            "COL-subtitle": "Example"
-          }
-        }
-      },
-      "block_order": [
-        "13610bc0-6439-4a31-9393-037ebed515c0",
-        "7ef08d0d-7869-4857-bfce-ab1191e097b6",
-        "3d4b0af5-c3d0-4db8-afaa-3f886ce81286",
-        "7dff5097-f357-43b2-9a4f-e264f9c2de37",
-        "d1c50e01-e584-4ec5-81a9-c26283887457"
-      ],
-      "settings": {
-        "title": "Lorem ipsum dolor sit amet",
-        "subtitle": "Pellentesque cras adipiscing tempus libero vel nullam mauris tellus. Aliquam ultrices tellus consequat amet,",
-        "button_lin4": "Ver Por Ocasion",
-        "button_lin5": "Contactanos",
-        "collection_list": [
-          "arreglos-de-nacimiento",
-          "arreglos-funebres-bogota",
-          "arreglos-funebres",
-          "bonos-condolencias",
-          "cajas-decorativas",
-          "arreglos-florales",
-          "condolencias"
-        ],
-        "button-link-4": "",
-        "button-link-5": ""
-      }
-    },
     "f051176a-70b2-41bf-9e21-4df9d03629b0": {
       "type": "products-4",
       "settings": {
@@ -113,7 +47,6 @@
   },
   "order": [
     "main",
-    "9fe1eb62-8282-478c-8692-fc72da4dd3be",
     "f051176a-70b2-41bf-9e21-4df9d03629b0"
   ]
 }
