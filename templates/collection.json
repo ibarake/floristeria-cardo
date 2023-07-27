@@ -7,35 +7,40 @@
           "type": "Collection-card",
           "settings": {
             "COL-title": "Example",
-            "COL-subtitle": "Example"
+            "COL-subtitle": "Example",
+            "COL-image": "shopify:\/\/shop_images\/5_9f79c9bb-dfaf-43a3-84f5-74274a20c1e6.png"
           }
         },
         "917be7cb-507c-4780-a185-1bf83c6d97aa": {
           "type": "Collection-card",
           "settings": {
             "COL-title": "Example",
-            "COL-subtitle": "Example"
+            "COL-subtitle": "Example",
+            "COL-image": "shopify:\/\/shop_images\/2.png"
           }
         },
         "78f05ce4-dbe8-4b28-8bae-fcac698f6ffe": {
           "type": "Collection-card",
           "settings": {
             "COL-title": "Example",
-            "COL-subtitle": "Example"
+            "COL-subtitle": "Example",
+            "COL-image": "shopify:\/\/shop_images\/3.png"
           }
         },
         "97a78c01-567a-4413-a2e8-e0115b413794": {
           "type": "Collection-card",
           "settings": {
             "COL-title": "Example",
-            "COL-subtitle": "Example"
+            "COL-subtitle": "Example",
+            "COL-image": "shopify:\/\/shop_images\/4.png"
           }
         },
         "87a05e50-b484-438b-94ee-b8042dd91abf": {
           "type": "Collection-card",
           "settings": {
             "COL-title": "Example",
-            "COL-subtitle": "Example"
+            "COL-subtitle": "Example",
+            "COL-image": "shopify:\/\/shop_images\/1.jpg"
           }
         }
       },
