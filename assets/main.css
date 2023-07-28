@@ -2244,7 +2244,7 @@ main-pr-container {
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  padding-top: 3rem;
+  padding: 3rem 0;
 }
 
 product-page {
