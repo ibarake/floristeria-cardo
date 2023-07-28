@@ -952,6 +952,7 @@ card-footer {
   border-radius: 4px;
   color: var(--linen-3);
   width: fit-content;
+  margin: 0;
 }
 
 .price{
