@@ -241,3 +241,57 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
+
+// PRODUCT PAGE QUANTITY SELLECT
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Get all the quantity fields on the page
+    var quantityFields = document.querySelectorAll('.quantity-field');
+
+    // Loop over each quantity field
+    quantityFields.forEach(function(quantityField) {
+        // Hide the default HTML number input field spinners
+        quantityField.style.webkitAppearance = 'none';
+        quantityField.style.mozAppearance = 'textfield';
+
+        // Get the associated buttons
+        var minusButton = quantityField.previousElementSibling;
+        var plusButton = quantityField.nextElementSibling;
+
+        // Set up event listeners for the buttons
+        minusButton.addEventListener('mousedown', changeQuantity);
+        minusButton.addEventListener('mouseup', resetColor);
+        plusButton.addEventListener('mousedown', changeQuantity);
+        plusButton.addEventListener('mouseup', resetColor);
+    });
+
+    function changeQuantity(event) {
+        // Make the button darker when clicked
+        event.target.style.backgroundColor = '#888';
+
+        // Get the associated quantity field
+        var quantityField = event.target.classList.contains('button-minus') ?
+            event.target.nextElementSibling : event.target.previousElementSibling;
+
+        // Get the current quantity
+        var currentQuantity = parseInt(quantityField.value, 10);
+
+        // If it's not a number, default the quantity to 0
+        if (isNaN(currentQuantity)) {
+            currentQuantity = 0;
+        }
+
+        // Increment or decrement the quantity
+        if (event.target.classList.contains('button-plus')) {
+            quantityField.value = currentQuantity + 1;
+        } else if (event.target.classList.contains('button-minus') && currentQuantity > 0) {
+            quantityField.value = currentQuantity - 1;
+        }
+    }
+
+    function resetColor(event) {
+        // Restore the button color after click
+        event.target.style.backgroundColor = '';
+    }
+});
+
