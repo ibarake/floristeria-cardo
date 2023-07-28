@@ -2415,6 +2415,21 @@ shipping {
   padding-left: 1rem;
 }
 
+add-combo {
+  margin-left: 4rem;
+  background-color: var(--main-color);
+  border-bottom: 1px solid var(--main-linen);
+}
+
+title-add-combo {
+  display: flex;
+  align-items: center;
+}
+
+#add-combo-title {
+  padding-left: 1rem;
+}
+
 @media only screen and (max-width: 768px) {
   main-pr-container {
     flex-direction: column-reverse;
