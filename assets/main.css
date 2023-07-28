@@ -1692,7 +1692,7 @@ content{
   grid-template-areas: "topbar topbar"
   "aside content";
   column-gap: 50px;
-  margin-top: 70px;
+  margin-top: 50px;
 }
 
 product-grid{
