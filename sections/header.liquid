@@ -39,6 +39,7 @@
     </drawer-content>
   </nav>
   <a href="/" class="header-logo">
+    {{ settings.logo | img_tag: settings.logo.alt, 'header-logo', '100x56' }}
     <img
       src="{{ settings.logo.src | img_url }}"
       alt="{{ settings.logo.alt }}"
