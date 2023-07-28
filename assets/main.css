@@ -2541,7 +2541,7 @@ summary{
   flex-direction: column;
   border-radius: 12px;
   margin-bottom: 10px;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 15px;
 }
 
