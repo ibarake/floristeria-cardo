@@ -7,7 +7,7 @@
       {% render 'Flor-1' %}
     </div>
     <product-page>
-      <img id="image-product" src="{{ product.featured_image | img_url: product.featured_image.url }}" alt="{{ product.featured_image.alt }}" />
+      {{ product.featured_image | img_tag: product.featured_image.alt, 'image-product', '535x533' }}
     </product-page>
     <product-information>
       <p class="subtitulo-3" id="pr-subtitle">
@@ -20,16 +20,25 @@
         {{ product.price | money }}
       </h5>
       <product-page id="responsive-image">
-        <img id="responsive-image-2" src="{{ product.featured_image | img_url: product.featured_image.url }}" alt="{{ product.featured_image.alt }}" />
+        <img
+          id="responsive-image-2"
+          src="{{ product.featured_image | img_url: product.featured_image.url }}"
+          alt="{{ product.featured_image.alt }}"
+        >
       </product-page>
       <p class="subtitulo-6" id="pr-description">
         {{ product.description | strip_html }}
       </p>
       <container-buttons>
-        {% form 'product', product, class: "product-form", novalidate: 'novalidate', id: "pr-form-wd" %}
+        {% form 'product', product, class: 'product-form', novalidate: 'novalidate', id: 'pr-form-wd' %}
           <select name="id" style="display: none;">
             {% for variant in product.variants %}
-              <option value="{{ variant.id }}"{% if variant == product.selected_or_first_available_variant %}selected="selected"{% endif %}>
+              <option
+                value="{{ variant.id }}"
+                {% if variant == product.selected_or_first_available_variant %}
+                  selected="selected"
+                {% endif %}
+              >
                 {{ variant.title }} - {{ variant.price | money }}
               </option>
             {% endfor %}
@@ -43,7 +52,7 @@
             <button class="atc-product add-t-cart">
               {% render 'icon-cart' %}
               <p class="add-t-cart-text subtitulo-2">
-                <b> {{ section.settings.button-title }} </b>
+                <b> {{ section.settings['button-title'] }} </b>
               </p>
             </button>
           </add-to-car>
@@ -55,7 +64,7 @@
       <faq class="faq-container" id="description-product">
         <question class="FAQ-title subtitulo-3">
           <h3 class="subtitulo-3">
-            {{ section.settings.description-title }}
+            {{ section.settings['description-title'] }}
           </h3>
           {% render 'icon-arrow-right-dropdown' %}
         </question>
@@ -70,10 +79,10 @@
             <p class="subtitulo-2" id="ss">{{ section.settings.envio }}</p>
           </shipping>
         {% endif %}
-        {% if section.settings.info-extra != blank %}
+        {% if section.settings['info-extra'] != blank %}
           <information class="extra-product">
             {% render 'icon-information' %}
-            <p class="subtitulo-2" id="ss">{{ section.settings.info-extra }}</p>
+            <p class="subtitulo-2" id="ss">{{ section.settings['info-extra'] }}</p>
           </information>
         {% endif %}
       </container-spam>
@@ -83,13 +92,14 @@
     <title-add-combo>
       {% render 'button-plus' %}
       <p class="subtitulo-1" id="add-combo-title">
-        {{ section.settings.agregar-combo }}
+        {{ section.settings['agregar-combo'] }}
       </p>
     </title-add-combo>
   </add-combo>
 </section>
 
 <script>
+  
   
   /* FAQ DROPDOWN ANIMATION */
 document.addEventListener('DOMContentLoaded', function() {
@@ -172,70 +182,71 @@ const observer = new IntersectionObserver(handleIntersection, {rootMargin: '0px 
 
 observer.observe(productRecommendationsSection);
 
+
 </script>
 
 {% schema %}
-  {
-    "name": "Página del producto",
-    "settings": [
-      {
-        "type": "text",
-        "id": "envio",
-        "label": "Contenido del item envíos "
-      }, {
-        "type": "text",
-        "id": "info-extra",
-        "label": "Contenido del item informacion extra "
-      }, {
-        "type": "text",
-        "id": "button-title",
-        "label": "Titulo boton",
-        "default": "Agregar al carrito"
-      }, {
-        "type": "product_list",
-        "id": "collection",
-        "label": "collection"
-      }, {
-        "type": "text",
-        "id": "button-text",
-        "label": "Boton de texto",
-        "default": "Añadir al carrito"
-      }, {
+{
+  "name": "Página del producto",
+  "settings": [
+    {
       "type": "text",
-      "id": "subtitulo-fotos",
-      "label": "Ver Todos",
-      "default": "Ver todos"
+      "id": "envio",
+      "label": "Contenido del item envíos "
     }, {
       "type": "text",
-      "id": "title",
-      "label": "titulo section",
-      "default": "Otros Clientes también compraron"
+      "id": "info-extra",
+      "label": "Contenido del item informacion extra "
     }, {
       "type": "text",
-      "id": "agregar-combo",
-      "label": "Agregar a tu Combo",
-      "default": "Agregar a tu combo"
+      "id": "button-title",
+      "label": "Titulo boton",
+      "default": "Agregar al carrito"
+    }, {
+      "type": "product_list",
+      "id": "collection",
+      "label": "collection"
     }, {
       "type": "text",
-      "id": "recommended-products",
-      "label": "Productos recomendados",
-      "default": "Otros Clientes también compraron"
-    }, {
-      "type": "text",
-      "id": "complementary-products",
-      "label": "Productos complementarios",
-      "default": "Agrega a tu combo"
-    }, {
-      "type": "text",
-      "id": "add-to-cart-title",
-      "label": "Titulo Boton",
+      "id": "button-text",
+      "label": "Boton de texto",
       "default": "Añadir al carrito"
     }, {
-      "type": "text",
-      "id": "description-title",
-      "label": "titulo descipcion",
-      "default": "Descripción"
-    }
-    ]
+    "type": "text",
+    "id": "subtitulo-fotos",
+    "label": "Ver Todos",
+    "default": "Ver todos"
+  }, {
+    "type": "text",
+    "id": "title",
+    "label": "titulo section",
+    "default": "Otros Clientes también compraron"
+  }, {
+    "type": "text",
+    "id": "agregar-combo",
+    "label": "Agregar a tu Combo",
+    "default": "Agregar a tu combo"
+  }, {
+    "type": "text",
+    "id": "recommended-products",
+    "label": "Productos recomendados",
+    "default": "Otros Clientes también compraron"
+  }, {
+    "type": "text",
+    "id": "complementary-products",
+    "label": "Productos complementarios",
+    "default": "Agrega a tu combo"
+  }, {
+    "type": "text",
+    "id": "add-to-cart-title",
+    "label": "Titulo Boton",
+    "default": "Añadir al carrito"
+  }, {
+    "type": "text",
+    "id": "description-title",
+    "label": "titulo descipcion",
+    "default": "Descripción"
   }
+  ]
+}
 {% endschema %}
