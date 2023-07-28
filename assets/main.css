@@ -961,6 +961,7 @@ card-footer {
 
 .card-product-title{
   color: var(--main-black);
+  margin: 8px 0px;
 }
 
 .vertical{
