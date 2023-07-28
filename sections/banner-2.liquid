@@ -23,22 +23,24 @@
   </con-t>
   <collection-slider-2 class="drag-scroll">
     {% for block in section.blocks %}
-      <card-ff>
-        <a href=" {{ section.settings.link4 }} " id="fgh">
-          <image-picker>
-            {{ block.settings['COL-image'] | img_tag: block.settings['COL-image'].alt, 'col-card-image', '300x256' }}
-          </image-picker>
-          <COL-titles>
-            <p class="subtitulo-5" id="COL-subtitle">
-              {{ block.settings['COL-subtitle'] }}
-            </p>
-            <p class="subtitulo-6" id="COL-title">
-              {{ block.settings['COL-title'] }}
-              {% render 'icon-arrow-right' %}
-            </p>
-          </COL-titles>
-        </a>
-      </card-ff>
+      <a href="{{ block.settings }}">
+        <card-ff>
+          <a href=" {{ section.settings.link4 }} " id="fgh">
+            <image-picker>
+              {{ block.settings['COL-image'] | img_tag: block.settings['COL-image'].alt, 'col-card-image', '300x256' }}
+            </image-picker>
+            <COL-titles>
+              <p class="subtitulo-5" id="COL-subtitle">
+                {{ block.settings['COL-subtitle'] }}
+              </p>
+              <p class="subtitulo-6" id="COL-title">
+                {{ block.settings['COL-title'] }}
+                {% render 'icon-arrow-right' %}
+              </p>
+            </COL-titles>
+          </a>
+        </card-ff>
+      </a>
     {% endfor %}
   </collection-slider-2>
 </main-ba-container>
@@ -114,6 +116,11 @@
         "type": "image_picker",
         "id": "COL-image",
         "label": "Imagen"
+      },
+      {
+        "type": "url",
+        "id": "tag-url",
+        "label": "card url"
       }
   ]
  }
