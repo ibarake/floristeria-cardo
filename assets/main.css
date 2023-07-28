@@ -2259,6 +2259,12 @@ product-page {
   color: var(--main-black);
 }
 
+.image-product{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 product-information {
   width: 45%;
   margin-top: 3rem;
