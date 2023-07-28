@@ -1687,14 +1687,16 @@ content{
 
 #collection-main {
   display: grid;
-  grid-template-columns: 2fr 4fr; 
+  grid-template-columns: 25% 75%; 
   grid-template-areas: "topbar topbar"
   "aside content";
+  gap: 50px;
 }
 
 product-grid{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
 }
 
 sort-by {
