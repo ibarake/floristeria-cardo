@@ -245,11 +245,14 @@ document.addEventListener('DOMContentLoaded', function() {
 // PRODUCT PAGE QUANTITY SELLECT
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Get all the quantity fields on the page
-    var quantityFields = document.querySelectorAll('.quantity-field');
+    // Get all the cart items on the page
+    var cartItems = document.querySelectorAll('cart-item, cart-item-responsive');
 
-    // Loop over each quantity field
-    quantityFields.forEach(function(quantityField) {
+    // Loop over each cart item
+    cartItems.forEach(function(cartItem) {
+        // Get the quantity field inside this cart item
+        var quantityField = cartItem.querySelector('.quantity-field');
+        
         // Hide the default HTML number input field spinners
         quantityField.style.webkitAppearance = 'none';
         quantityField.style.mozAppearance = 'textfield';
@@ -294,4 +297,3 @@ document.addEventListener('DOMContentLoaded', function() {
         event.target.style.backgroundColor = '';
     }
 });
-
