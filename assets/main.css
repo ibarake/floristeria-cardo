@@ -2809,6 +2809,7 @@ COL-titles {
     height: 200px;
     background-color: var(--main-white);
     border-radius: 8px;
+    overflow: hidden;
   }
 
   collection-slider-2 {
