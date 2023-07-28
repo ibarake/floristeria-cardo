@@ -1,7 +1,7 @@
 <section class="cart page-width">
   <container-cart-item>
     <h1 class="titulo-4" id="title-cart">Mi carrito</h1>
-    {% if cart.items == 0 %}
+    {% if cart.item_count == 0 %}
       <p class="titulo-5">No hay Arreglos en su carrito.</p>
     {% else %}
       {% form 'cart', cart %}
