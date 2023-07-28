@@ -83,13 +83,13 @@
           {% for item in cart.items %}
             <summary-cart-item>
               <span id="df" class="parrafo-3">{{ item.product.title }}</span>
-              <span class="subtitulo-2" id="precio-cart">{{ item.product.price | money_with_currency }}</span>
+              <span class="parrafo-2">{{ item.product.price | money_with_currency }}</span>
             </summary-cart-item>
           {% endfor %}
         </summary-1>
         <cart-total>
           <span class="subtitulo-2" id="subtotal-cart">Subtotal</span>
-          <span class="subtitulo-1" id="precio-cart">{{ cart.total_price | money_with_currency }}</span>
+          <span class="parrafo-1" id="precio-cart">{{ cart.total_price | money_with_currency }}</span>
         </cart-total>
       </summary>
     </cart-info>
