@@ -1034,6 +1034,7 @@ container-4products {
   display: flex;
   align-items: flex-start;
   position: relative;
+  gap: 20px;
 }
 
 products-4-item {
