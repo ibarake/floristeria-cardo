@@ -105,7 +105,7 @@
   <content>
     <product-grid>
       {% for product in collection.products %}
-        <a class="product-item" href="{{ hero-product.url }}">
+        <a class="product-item" href="{{ product.url }}">
           {% include 'product-card',
             hero-product: product,
             atc-btn: section.settings['add-to-cart-title'],
