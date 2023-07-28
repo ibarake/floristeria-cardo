@@ -2532,7 +2532,7 @@ cart-info{
   width: 100%;
   min-height: 660px;
   display: flex;
-  justify-content:space-around;
+  justify-content: space-around;
   align-items: flex-start;
   background-color: var(--main-dark-color);
 }
