@@ -2805,6 +2805,10 @@ COL-titles {
     border-radius: 8px 8px 0px 0px;
   }
 
+  image-picker img{
+    border-radius: 8px 8px 0px 0px;
+  }
+
   card-ff {
     width: 200px;
     height: 200px;
