@@ -25,18 +25,20 @@
     {% for block in section.blocks %}
       <a href="{{ block.settings.tag-url }}">
         <card-ff>
-          <image-picker>
-            {{ block.settings['COL-image'] | img_tag: block.settings['COL-image'].alt, 'col-card-image', '300x256' }}
-          </image-picker>
-          <COL-titles>
-            <p class="subtitulo-5" id="COL-subtitle">
-              {{ block.settings['COL-subtitle'] }}
-            </p>
-            <p class="subtitulo-6" id="COL-title">
-              {{ block.settings['COL-title'] }}
-              {% render 'icon-arrow-right' %}
-            </p>
-          </COL-titles>
+          <a href=" {{ block.settings.tag-url }} " id="fgh">
+            <image-picker>
+              {{ block.settings['COL-image'] | img_tag: block.settings['COL-image'].alt, 'col-card-image', '300x256' }}
+            </image-picker>
+            <COL-titles>
+              <p class="subtitulo-5" id="COL-subtitle">
+                {{ block.settings['COL-subtitle'] }}
+              </p>
+              <p class="subtitulo-6" id="COL-title">
+                {{ block.settings['COL-title'] }}
+                {% render 'icon-arrow-right' %}
+              </p>
+            </COL-titles>
+          </a>
         </card-ff>
       </a>
     {% endfor %}
