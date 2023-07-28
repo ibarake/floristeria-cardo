@@ -548,6 +548,7 @@ products-container {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  gap: 20px;
 }
 
 .hero-title {
