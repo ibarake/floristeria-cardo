@@ -859,7 +859,6 @@ collection-card svg {
 product-card {
   background-color: var(--main-white);
   border-radius: 8px;
-  margin: 16px;
   flex-direction: column;
   z-index: 20;
 }
