@@ -8,7 +8,7 @@
         {% for item in cart.items %}
           <cart-item>
             <image class="cart-item-image">
-              <img src="{{ item.image | img_url }}">
+              {{ item.image | img_tag: 'cart-image-tag', '129x129' }}
             </image>
             <item-info>
               <p class="parrafo-4 collection-tag">{{ item.product.collections[0].title }}</p>
@@ -66,11 +66,13 @@
         <metodo>
           {% render 'cart-mc' %}
         </metodo>
-        <metodo>
-          {% render 'cart-mp' %}
-        </metodo>
+
         <metodo>
           {% render 'cart-pu' %}
+        </metodo>
+
+        <metodo>
+          {% render 'cart-mp' %}
         </metodo>
       </container-met-pagos>
     </met-pagos>
@@ -81,13 +83,13 @@
           {% for item in cart.items %}
             <summary-cart-item>
               <span id="df" class="parrafo-3">{{ item.product.title }}</span>
-              <span class="subtitulo-2" id="precio-cart">{{ item.product.price | money_with_currency }}</span>
+              <span class="parrafo-2">{{ item.product.price | money_with_currency }}</span>
             </summary-cart-item>
           {% endfor %}
         </summary-1>
         <cart-total>
           <span class="subtitulo-2" id="subtotal-cart">Subtotal</span>
-          <span>{{ cart.line_items.final_price | money_with_currency }}</span>
+          <span class="parrafo-1">{{ cart.total_price | money_with_currency }}</span>
         </cart-total>
       </summary>
     </cart-info>

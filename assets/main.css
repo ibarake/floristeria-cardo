@@ -2552,6 +2552,15 @@ summary{
 
 summary-cart-item{
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+cart-total{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
 }
 
 #precio-cart{
