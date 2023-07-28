@@ -243,3 +243,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 // PRODUCT PAGE QUANTITY SELLECT
+
+document.addEventListener('DOMContentLoaded', function() {
+
+  var quantitySelector = document.querySelectorAll('quantity');
+
+  quantitySelector.forEach((qs) => {  
+  var plusBtn = qs.querySelector('.button-plus');
+  var minusBtn = qs.querySelector('.button-minus');
+  })
+  
+    
+  });
