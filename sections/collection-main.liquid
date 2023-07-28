@@ -105,12 +105,18 @@
   <content>
     <product-grid>
       {% for product in collection.products %}
-        {% include 'product-card', hero-product: product, atc-btn: section.settings['add-to-cart-title'], classes: '' %}
-        {% include 'hor-product-card',
-          hero-product: product,
-          atc-btn: section.settings['add-to-cart-title'],
-          classes: ''
-        %}
+        <a class="product-item" href="{{ hero-product.url }}">
+          {% include 'product-card',
+            hero-product: product,
+            atc-btn: section.settings['add-to-cart-title'],
+            classes: ''
+          %}
+          {% include 'hor-product-card',
+            hero-product: product,
+            atc-btn: section.settings['add-to-cart-title'],
+            classes: ''
+          %}
+        </a>
       {% endfor %}
     </product-grid>
   </content>
