@@ -2416,7 +2416,6 @@ shipping {
 }
 
 add-combo {
-  margin-left: 4rem;
   background-color: var(--main-color);
   border-bottom: 1px solid var(--main-linen);
 }
@@ -2424,6 +2423,7 @@ add-combo {
 title-add-combo {
   display: flex;
   align-items: center;
+  margin-left: 4.5rem;
 }
 
 #add-combo-title {
