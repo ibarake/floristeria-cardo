@@ -2767,6 +2767,7 @@ COL-titles {
   width: 100%;
   height: auto;
   object-fit: cover;
+  overflow: hidden;
 }
 
 @media only screen and (max-width: 768px) {
@@ -2803,7 +2804,6 @@ COL-titles {
     height: 135px;
     width: 200px;
     border-radius: 8px 8px 0px 0px;
-    overflow: hidden;
   }
 
   card-ff {
