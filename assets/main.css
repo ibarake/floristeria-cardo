@@ -2805,8 +2805,8 @@ COL-titles {
     border-radius: 8px 8px 0px 0px;
   }
 
-  image-picker img{
-    border-radius: 8px 8px 0px 0px;
+  image-picker .col-card-image{
+    border-radius: 8px;
   }
 
   card-ff {
