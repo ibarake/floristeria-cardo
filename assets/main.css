@@ -2803,10 +2803,7 @@ COL-titles {
     height: 135px;
     width: 200px;
     border-radius: 8px 8px 0px 0px;
-  }
-
-  image-picker .col-card-image{
-    border-radius: 8px;
+    overflow: hidden;
   }
 
   card-ff {
