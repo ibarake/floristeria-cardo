@@ -1071,6 +1071,7 @@ products-4-item {
 .s-d {
   display: block;
   width: auto;
+  align-self: center;
 }
 
 .product4 {
