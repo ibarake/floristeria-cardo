@@ -8,7 +8,7 @@
         {% for item in cart.items %}
           <cart-item>
             <image class="cart-item-image">
-              <img src="{{ item.image | img_url }}">
+              {{ item.image | img_tag: 'cart-image-tag', '129x129' }}
             </image>
             <item-info>
               <p class="parrafo-4 collection-tag">{{ item.product.collections[0].title }}</p>
