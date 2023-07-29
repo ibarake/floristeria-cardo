@@ -44,9 +44,9 @@
             {% endfor %}
           </select>
           <quantity>
-            <input type="button" value="-" class="button-minus" data-field="quantity">
-            <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
-            <input type="button" value="+" class="button-plus" data-field="quantity">
+            <input type="button" value="-" class="button-minus" data-field="quantity" id="minus">
+            <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field" id="input">
+            <input type="button" value="+" class="button-plus" data-field="quantity" id="plus">
           </quantity>
           <add-to-car id="atc">
             <button class="atc-product add-t-cart">
@@ -181,6 +181,22 @@ const productRecommendationsSection = document.querySelector('.product-recommend
 const observer = new IntersectionObserver(handleIntersection, {rootMargin: '0px 0px 200px 0px'});
 
 observer.observe(productRecommendationsSection);
+
+const minusButton = document.getElementById('minus');
+const plusButton = document.getElementById('plus');
+const inputField = document.getElementById('input');
+
+minusButton.addEventListener('click', event => {
+  event.preventDefault();
+  const currentValue = Number(inputField.value) || 0;
+  inputField.value = currentValue - 1;
+});
+
+plusButton.addEventListener('click', event => {
+  event.preventDefault();
+  const currentValue = Number(inputField.value) || 0;
+  inputField.value = currentValue + 1;
+});
 
 
 </script>
