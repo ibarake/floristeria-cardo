@@ -60,20 +60,6 @@
                 </div>
               {% endfor %}
             </div>
-    
-            <footer class="cart-drawer-footer">
-              {% if cart.total_discounts > 0 %}
-                <div class="cart-drawer-footer-row">
-                  <h3>Discounts</h3>
-                  <span>{{ cart.total_discounts | money }}</span>
-                </div>
-              {% endif %}
-              <div class="cart-drawer-footer-row">
-                <h3>Subtotal</h3>
-                <span>{{ cart.total_price | money }}</span>
-              </div>
-              <button type="submit" name="checkout" class="cart-drawer-button">Checkout</button>
-            </footer>
           {% endif %}
         {% endform %}
     
