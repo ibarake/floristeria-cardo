@@ -286,10 +286,10 @@ pqBtn.forEach((button) => {
 
 const filterDisplayBtn = document.querySelectorAll('.filter-drawer-btn');
 
-filterDisplayBtn.forEach((button) => {
-  const drawer = button.parentElement.parentElement.parentElement.parentElemet.querySelector('filter-drawer');
+filterDisplayBtn.forEach((fbutton) => {
+  const drawer = fbutton.parentElement.parentElement.parentElement.parentElemet.querySelector('filter-drawer');
   console.log(drawer)
-  button.addEventListener('click', () => {
+  fbutton.addEventListener('click', () => {
     if (drawer.style.bottom === '0px') {
         drawer.style.bottom = '-1000px';
     } else {
