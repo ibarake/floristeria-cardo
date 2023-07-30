@@ -93,8 +93,8 @@ function handleClassChange() {
       productCardPrice.classList.add("parrafo-1");
       productCardPrice.classList.remove("parrafo-4");
     });
-    heroTitle.classList.add("titulo-1");
-    heroTitle.classList.remove("titulo-3");
+    heroTitle?.classList.add("titulo-1");
+    heroTitle?.classList.remove("titulo-3");
   }
 }
 
