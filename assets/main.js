@@ -254,6 +254,16 @@ document.addEventListener('DOMContentLoaded', function() {
   qBtn.addEventListener('click', () =>{    
     const rootItem = qs.parentElement;
     const key = qs.getAttribute('data-item-key');
+    const currentQuantity = qs.querySelector('.quantity-field')
+    
+    fetch('/cart/update.js', {
+      method:'post',
+      headers: {
+        Accept: 'application/json',
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({[key]: })
+    })
   })
     
   })
