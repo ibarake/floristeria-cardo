@@ -122,6 +122,12 @@
   </content>
 </section>
 <filter-drawer>
+  <top-drawer>
+    <span> {% render 'filter-icon' %} Filtros </span>
+    <span>
+      {% render 'close-drawer' %}
+    </span>
+  </top-drawer>
   <form class="filter-form">
     {%- for filter in collection.filters -%}
       <p class="subtitulo-2">{{ filter.label }}</p>
