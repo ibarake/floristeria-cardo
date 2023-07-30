@@ -34,7 +34,7 @@
             <p class="price">{{ item.product.price | money_with_currency }}</p>
             <a href="{{ item.url_to_remove }}">{% render 'delete-cart' %}</a>
           </cart-item>
-          <cart-item-responsive>
+          <cart-item-responsive data-item-key="{{ item.key }}">
             <img src="{{ item.image | img_url }}">
             <item-info>
               <p class="parrafo-4 collection-tag">{{ item.product.collections[0].title }}</p>
