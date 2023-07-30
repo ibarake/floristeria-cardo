@@ -266,8 +266,8 @@ const pqBtn = document.querySelectorAll('.pq-button');
 pqBtn.forEach((button) => {
       const quantity = button.parentElement.querySelector('.quantity-field');
 
-      console.log(quantity)
       const currentQuantity = Number(quantity.value);
+      console.log(currentQuantity)
       const isUp = button.classList.contains(
         "button-plus"
       );
