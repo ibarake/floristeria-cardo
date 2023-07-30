@@ -255,6 +255,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const rootItem = qs.parentElement;
     const key = qs.getAttribute('data-item-key');
     const currentQuantity = qs.querySelector('.quantity-field').value;
+            const isUp = button.classList.contains(
+          "cart-drawer-quantity-selector-plus"
+        );
+        const newQuantity = isUp ? currentQuantity + 1 : currentQuantity - 1;
+
     
     fetch('/cart/update.js', {
       method:'post',
