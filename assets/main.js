@@ -264,6 +264,7 @@ addCartDrawerListeners();
 const pqBtn = document.querySelectorAll('.pq-button');
 
 pqBtn.forEach((button) => {
+      console.log('hello')
       const quantity = button.parentElement.querySelector('.quantity-field');
       const currentQuantity = Number(quantity.value);
       const isUp = button.classList.contains(
