@@ -265,7 +265,8 @@ document.addEventListener('DOMContentLoaded', function() {
   quantitySelector.forEach((qs) => {  
   const qBtn = qs.querySelector('.qButton');
 
-  qBtn.addEventListener('click', async () =>{    
+  qBtn.addEventListener('click', async () =>{ 
+    console.log(qBtn)
     const rootItem = qs.parentElement;
     const key = qs.getAttribute('data-item-key');
     const currentQuantity = Number(qs.querySelector('.quantity-field').value);
