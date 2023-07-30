@@ -2669,6 +2669,7 @@ cart-footer{
     position: fixed;
     bottom: 0;
     background-color: var(--main-white);
+    z-index: 99;
   }
   container-resumen{
     display: none;
