@@ -2485,7 +2485,7 @@ title-add-combo {
     display: none;
   }
 
-  #responsive-image {
+  .responsive-image {
     display: block;
     width: 310px;
     height: 360px;
