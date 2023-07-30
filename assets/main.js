@@ -250,8 +250,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
   quantitySelector.forEach((qs) => {  
   const qBtn = qs.querySelector('.qButton');
-  const rootItem = qs.parentElement;
-  const key = qs.getAttribute('data-item-key')
+
+  qBtn.addEventListener('click', () =>{    
+    const rootItem = qs.parentElement;
+    const key = qs.getAttribute('data-item-key');
+  })
     
   })
   
