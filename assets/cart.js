@@ -20,8 +20,8 @@ function addCartDrawerListeners() {
     qBtn.addEventListener('click', async () =>{ 
       console.log(qBtn)
       const rootItem = qBtn.parentElement.parentElement;
-      const key = qs.getAttribute('data-item-key');
-      const currentQuantity = Number(qs.querySelector('.quantity-field').value);
+      const key = rootItem.getAttribute('data-item-key');
+      const currentQuantity = Number(qBtn.parentElement.querySelector('.quantity-field').value);
       const isUp = qBtn.classList.contains(
         "button-plus"
       );
