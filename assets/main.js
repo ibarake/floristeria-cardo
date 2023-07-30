@@ -257,9 +257,6 @@ async function updateCartDrawer() {
   addCartDrawerListeners();
 }
 
-
-document.addEventListener('DOMContentLoaded', async () => {
-
   const qBtns = document.querySelectorAll('.qButton');
 
     console.log(qBtns)
@@ -291,5 +288,4 @@ document.addEventListener('DOMContentLoaded', async () => {
     })
   })
   
-    
-  });
+  
