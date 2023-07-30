@@ -260,12 +260,12 @@ async function updateCartDrawer() {
 
 document.addEventListener('DOMContentLoaded', async () => {
 
-  var quantitySelector = document.querySelectorAll('quantity');
+  const qBtns = document.querySelectorAll('.qButton');
 
-  quantitySelector.forEach((qs) => {  
-  const qBtns = qs.querySelectorAll('.qButton');
-
+    console.log(qBtns)
+  
   qBtns.forEach((qBtn) => {
+    console.log(qBtn)
     qBtn.addEventListener('click', async () =>{ 
       console.log(qBtn)
       const rootItem = qs.parentElement;
@@ -289,7 +289,6 @@ document.addEventListener('DOMContentLoaded', async () => {
   
       updateCartDrawer();
     })
-  })
   })
   
     
