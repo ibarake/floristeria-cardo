@@ -1812,6 +1812,32 @@ filter-drawer{
     bottom: -1000px;
     transition: all 300ms ease-out;
   }
+
+  filter-group-display__erase{
+    width: 174px;
+    height: 40px;
+    padding: 10px 80px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    text-align: center;
+    color: var(--main-olive);
+  }
+
+  filter-group-display__submit{
+    width: 171px;
+    height: 40px;
+    padding: 10px 80px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: var(--main-olive);
+  }
+
+
   .filter-drawer-btn{
     display: block;
   }
