@@ -124,7 +124,7 @@
 <filter-drawer>
   <top-drawer>
     <span> {% render 'filter-icon' %} Filtros </span>
-    <span class="close-drawer">
+    <span class="close-filter-drawer">
       {% render 'close-drawer' %}
     </span>
   </top-drawer>
@@ -213,6 +213,7 @@
     // FILTER DRAWER COLLECTION
 
   const filterDisplayBtn = document.querySelectorAll('.filter-drawer-btn');
+  const closeFilterDrawerBtn = document.querySelectorAll('.close-filter-drawer')
 
   filterDisplayBtn.forEach((fbutton) => {
     const drawer = fbutton.parentElement.parentElement.parentElement.parentElement.querySelector('filter-drawer');
