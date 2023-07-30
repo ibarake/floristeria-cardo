@@ -68,41 +68,6 @@ function enableScroll() {
 
 /* HERO BANNER */
 
-// Function to handle class changes based on window width
-function handleClassChange() {
-  var heroTitle = document.querySelector(".hero-title");
-  var productCardPrices = document.querySelectorAll(".price");
-  var productCardAdcs = document.querySelectorAll(".atc-btn-text");
-  if (window.innerWidth < 768) {
-    productCardAdcs.forEach((productCardAdc) => {
-      productCardAdc.classList.remove("subtitulo-5");
-      productCardAdc.classList.add("parrafo-3");
-    });
-    productCardPrices.forEach((productCardPrice) => {
-      productCardPrice.classList.remove("parrafo-1");
-      productCardPrice.classList.add("parrafo-4");
-    });
-    heroTitle.classList.add("titulo-3");
-    heroTitle.classList.remove("titulo-1");
-  } else {
-    productCardAdcs.forEach((productCardAdc) => {
-      productCardAdc.classList.add("subtitulo-5");
-      productCardAdc.classList.remove("parrafo-3");
-    });
-    productCardPrices.forEach((productCardPrice) => {
-      productCardPrice.classList.add("parrafo-1");
-      productCardPrice.classList.remove("parrafo-4");
-    });
-    heroTitle.classList.add("titulo-1");
-    heroTitle.classList.remove("titulo-3");
-  }
-}
-
-// Initial class assignment on page load
-handleClassChange();
-
-// Event listener for window resize
-window.addEventListener("resize", handleClassChange);
 
 
 /* HORIZONTAL SCROLLING DRAG JS */
