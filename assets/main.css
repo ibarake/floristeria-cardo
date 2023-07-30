@@ -2665,12 +2665,17 @@ cart-footer{
 }
 @media (max-width: 768px) {
   cart-footer{
-    display: block;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
     position: fixed;
     bottom: 0;
     background-color: var(--main-white);
     z-index: 99;
     width: 100%;
+    
   }
   container-resumen{
     display: none;
