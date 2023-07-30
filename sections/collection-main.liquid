@@ -217,7 +217,7 @@
   filterDisplayBtn.forEach((fbutton) => {
     const drawer = fbutton.parentElement.parentElement.parentElement.parentElement.querySelector('filter-drawer');
     const close = drawer.querySelector('.close-filter.drawer');
-    close.addEventListener('click', () =>{
+    close.addEventListener('click', () => {
       if (drawer.style.bottom === '0px') {
           drawer.style.bottom = '-1000px';
       } else {
