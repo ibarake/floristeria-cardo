@@ -30,9 +30,10 @@
         {{ product.description | strip_html }}
       </p>
       <container-buttons>
-        {% form 'product', product, class: 'product-form', novalidate: 'novalidate', id: 'pr-form-wd' %}
+        {% form 'cart', cart, class: 'cart-drawer-form' %}
+
             <div class="cart-drawer-items">
-              {% for item in product.items %}
+              {% for item in cart.items %}
                 <div class="cart-drawer-item" data-line-item-key="{{ item.key }}">
                   <div class="cart-drawer-item-image">
                     <img src="{{ item.image | img_url: '200x' }}" alt="{{ item.title }}">
