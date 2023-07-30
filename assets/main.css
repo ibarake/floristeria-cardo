@@ -1808,6 +1808,7 @@ filter-drawer{
     width: 100%;
     z-index: 9999;
     background-color: var(--main-white);
+    bottom: -1000px;
   }
   #filter-drawer-btn{
     display: block;
