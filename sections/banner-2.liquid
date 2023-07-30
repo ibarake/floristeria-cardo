@@ -24,11 +24,6 @@
     </buttons-ba-container>
   </con-t>
   <collection-slider-2 class="drag-scroll">
-  <div class="multiple-items">
-    <div>your content</div>
-    <div>your content</div>
-    <div>your content</div>
-  </div>
     {% for block in section.blocks %}
       <card-ff>
         <a href=" {{ block.settings.tag-url }} " id="fgh">
@@ -48,6 +43,12 @@
       </card-ff>
     {% endfor %}
   </collection-slider-2>
+
+  <div class="multiple-items">
+    <div>your content</div>
+    <div>your content</div>
+    <div>your content</div>
+  </div>
 </main-ba-container>
 
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
