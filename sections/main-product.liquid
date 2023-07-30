@@ -30,13 +30,25 @@
         {{ product.description | strip_html }}
       </p>
       <container-buttons>
-        {% form 'cart', cart, class: 'cart-drawer-form' %}
-                        <div class="cart-drawer-quantity-selector">
-                          <button class="cart-drawer-quantity-selector-minus" type="button">-
-                          </button>
-                          <input type="text" readonly value="1">
-                          <button class="cart-drawer-quantity-selector-plus" type="button">+</button>
-                        </div>
+        {% form 'product', product, class: 'product-form', novalidate: 'novalidate', id: 'pr-form-wd' %}
+          <select name="id" style="display: none;">
+            {% for variant in product.variants %}
+              <option
+                value="{{ variant.id }}"
+                {% if variant == product.selected_or_first_available_variant %}
+                  selected="selected"
+                {% endif %}
+              >
+                {{ variant.title }} - {{ variant.price | money }}
+              </option>
+            {% endfor %}
+          </select>
+          <quantity>
+            <button class="cart-drawer-quantity-selector-minus" type="button">-</button>
+            <input type="text" readonly value="{{ item.quantity }}">
+            <button class="cart-drawer-quantity-selector-plus" type="button">+</button>
+          </quantity>
+
         {% endform %}
       </container-buttons>
       <faq class="faq-container" id="description-product">
