@@ -29,11 +29,7 @@
       {% render 'Flor3-1' %}
     </container-flor3-1>
     <left-sobre>
-      {{
-        section.settings.image
-        | img_url
-        | img_tag: section.settings.image.alt, 'desktop-image proc-image', '622x611'
-      }}
+      {{ section.settings.image | img_tag: section.settings.image.alt, 'desktop-image proc-image', '622x611' }}
     </left-sobre>
     <right-sobre>
       <h3 class="titulo-3" id="title-proc">
@@ -43,11 +39,7 @@
         {{ section.settings['subtitle-proceso'] }}
       </p>
       <left-sobre>
-        {{
-          section.settings.image
-          | img_url
-          | img_tag: section.settings.image.alt, 'responsive-image proc-image', '358x284'
-        }}
+        {{ section.settings.image | img_tag: section.settings.image.alt, 'responsive-image proc-image', '358x284' }}
       </left-sobre>
       <p class="subtitulo-1">
         {{ section.settings['spam-proceso'] }}
