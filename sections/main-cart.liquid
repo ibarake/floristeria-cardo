@@ -33,8 +33,8 @@
                 <input type="button" value="+" class="qButton button-plus" data-field="quantity">
               </quantity>
               <p class="price">{{ item.product.price | money_with_currency }}</p>
-              <a href="{{ item.url_to_remove }}">{% render 'delete-cart' %}</a>
             </responsive-container>
+            <a href="{{ item.url_to_remove }}">{% render 'delete-cart' %}</a>
           </cart-item>
           <cart-item-responsive data-item-key="{{ item.key }}">
             {{ item.image | img_tag: item.image.alt, '', '124x124' }}
@@ -116,7 +116,7 @@
   <cart-footer>
     <span class="ft-subtotal">
       <p class="subtitulo-5">Subtotal</p>
-      <p class="price">{{ cart.total_price | money_with_currency }}</p>
+      <p class="price parrafo-1">{{ cart.total_price | money_with_currency }}</p>
     </span>
     <span class="button-comprar-responsive">
       <button-cart name="Comprar" class="subtitulo-2">Realizar Compra</button-cart>
