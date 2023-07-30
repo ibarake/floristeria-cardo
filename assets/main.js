@@ -287,6 +287,7 @@ pqBtn.forEach((button) => {
 const filterDisplayBtn = document.querySelectorAll('.filter-drawer-btn');
 
 filterDisplayBtn.forEach((fbutton) => {
+  console.log('hello');
   const drawer = fbutton.parentElement.parentElement.parentElement.parentElemet.querySelector('filter-drawer');
   console.log(drawer)
   fbutton.addEventListener('click', () => {
