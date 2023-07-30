@@ -231,6 +231,7 @@ function addCartDrawerListeners() {
   qBtns.forEach((qBtn) => {
     qBtn.addEventListener('click', async () =>{ 
       const rootItem = qBtn.parentElement.parentElement;
+      console.log(rootItem);
       const key = rootItem.getAttribute('data-item-key');
       const currentQuantity = Number(qBtn.parentElement.querySelector('.quantity-field').value);
       const isUp = qBtn.classList.contains(
