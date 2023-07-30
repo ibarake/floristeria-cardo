@@ -154,54 +154,73 @@
 </filter-drawer>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    var orderVerticalBtn = document.getElementById('order-vertical-btn');
-    var orderHorizontalBtn = document.getElementById('order-horizontal-btn');
-    var horPath = document.querySelectorAll('#order-horizontal-btn path');
-    var verPath = document.querySelectorAll('#order-vertical-btn path');
-    var productGrid = document.querySelector('product-grid');
-    var productHorizontalCards = document.querySelectorAll('.horizontal');
-    var productVerticalCards = document.querySelectorAll('.vertical');
+    document.addEventListener('DOMContentLoaded', function() {
+      var orderVerticalBtn = document.getElementById('order-vertical-btn');
+      var orderHorizontalBtn = document.getElementById('order-horizontal-btn');
+      var horPath = document.querySelectorAll('#order-horizontal-btn path');
+      var verPath = document.querySelectorAll('#order-vertical-btn path');
+      var productGrid = document.querySelector('product-grid');
+      var productHorizontalCards = document.querySelectorAll('.horizontal');
+      var productVerticalCards = document.querySelectorAll('.vertical');
 
-    orderVerticalBtn.addEventListener('click', function() {
-      productVerticalCards.forEach((pc) => {
-        pc.style.display = "flex";
-      })
-      productHorizontalCards.forEach((pc) => {
-        pc.style.display = "none";
+      orderVerticalBtn.addEventListener('click', function() {
+        productVerticalCards.forEach((pc) => {
+          pc.style.display = "flex";
+        })
+        productHorizontalCards.forEach((pc) => {
+          pc.style.display = "none";
 
-      })
-      orderVerticalBtn.style.backgroundColor = "var(--main-color)";
-        orderHorizontalBtn.style.backgroundColor = "transparent";
-      horPath.forEach((hp) => {
-                hp.style.fill = "var(--main-linen)";
-      })
-      verPath.forEach((vp) => {
-        vp.style.fill = "var(--linen-3)";
-      })
-      productGrid.style.gridTemplateColumns = "1fr 1fr 1fr";
+        })
+        orderVerticalBtn.style.backgroundColor = "var(--main-color)";
+          orderHorizontalBtn.style.backgroundColor = "transparent";
+        horPath.forEach((hp) => {
+                  hp.style.fill = "var(--main-linen)";
+        })
+        verPath.forEach((vp) => {
+          vp.style.fill = "var(--linen-3)";
+        })
+        productGrid.style.gridTemplateColumns = "1fr 1fr 1fr";
+      });
+
+      orderHorizontalBtn.addEventListener('click', function() {
+        productGrid.classList.add('order-horizontal');
+        productGrid.classList.remove('order-vertical');
+
+        productVerticalCards.forEach((pc) => {
+          pc.style.display = "none";
+        })
+        productHorizontalCards.forEach((pc) => {
+          pc.style.display = "flex";
+        })
+        orderVerticalBtn.style.backgroundColor = "transparent";
+        orderHorizontalBtn.style.backgroundColor = "var(--main-color)";
+        horPath.forEach((hp) => {
+          hp.style.fill = "var(--linen-3)";
+        })
+        verPath.forEach((vp) => {
+          vp.style.fill = "var(--main-linen)";
+        })
+        productGrid.style.gridTemplateColumns = "1fr";
+      });
     });
 
-    orderHorizontalBtn.addEventListener('click', function() {
-      productGrid.classList.add('order-horizontal');
-      productGrid.classList.remove('order-vertical');
+    // FILTER DRAWER COLLECTION
 
-      productVerticalCards.forEach((pc) => {
-        pc.style.display = "none";
-      })
-      productHorizontalCards.forEach((pc) => {
-        pc.style.display = "flex";
-      })
-      orderVerticalBtn.style.backgroundColor = "transparent";
-      orderHorizontalBtn.style.backgroundColor = "var(--main-color)";
-      horPath.forEach((hp) => {
-        hp.style.fill = "var(--linen-3)";
-      })
-      verPath.forEach((vp) => {
-        vp.style.fill = "var(--main-linen)";
-      })
-      productGrid.style.gridTemplateColumns = "1fr";
-    });
+  const filterDisplayBtn = document.querySelectorAll('.filter-drawer-btn');
+
+  filterDisplayBtn.forEach((fbutton) => {
+    console.log('hello');
+    const drawer = fbutton.parentElement.parentElement.parentElement.parentElemet.querySelector('filter-drawer');
+    console.log(drawer)
+    fbutton.addEventListener('click', () => {
+      if (drawer.style.bottom === '0px') {
+          drawer.style.bottom = '-1000px';
+      } else {
+          drawer.style.bottom = '0px';
+      }
+  });
+
+
   });
 </script>
 
