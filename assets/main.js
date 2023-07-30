@@ -256,7 +256,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const key = qs.getAttribute('data-item-key');
     const currentQuantity = qs.querySelector('.quantity-field').value;
     const isUp = button.classList.contains(
-      "cart-drawer-quantity-selector-plus"
+      "button-plus"
     );
     const newQuantity = isUp ? currentQuantity + 1 : currentQuantity - 1;
 
@@ -267,7 +267,7 @@ document.addEventListener('DOMContentLoaded', function() {
         Accept: 'application/json',
         "Content-Type": "application/json"
       },
-      body: JSON.stringify({[key]: })
+      body: JSON.stringify({[key]: newQuantity})
     })
   })
     
