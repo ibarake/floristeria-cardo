@@ -249,8 +249,10 @@ document.addEventListener('DOMContentLoaded', function() {
   var quantitySelector = document.querySelectorAll('quantity');
 
   quantitySelector.forEach((qs) => {  
-  var plusBtn = qs.querySelector('.button-plus');
-  var minusBtn = qs.querySelector('.button-minus');
+  const qBtn = qs.querySelector('.qButton');
+  const rootItem = qs.parentElement;
+  const key = qs.getAttribute('data-item-key')
+    
   })
   
     
