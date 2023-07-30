@@ -2632,14 +2632,13 @@ container-met-pagos{
 
 button-cart{
   display: flex;
-  padding: 10px 0;
+  padding: 10px 10px;
   justify-content: center;
   align-items: center;
   border-radius: 8px;
   background: var(--main-olive);
   font-family: Poppins;
   color: var(--main-white);
-  width: 107%;
 }
 
 item-info {
