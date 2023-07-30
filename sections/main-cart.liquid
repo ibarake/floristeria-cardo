@@ -113,6 +113,15 @@
     </cart-info>
     <button-cart name="Comprar" class="subtitulo-2">Realizar Compra</button-cart>
   </container-resumen>
+  <cart-footer>
+    <span class="ft-subtotal">
+      <p class="subtitulo-5">Subtotal</p>
+      <p class="price">{{ cart.total_price }}</p>
+    </span>
+    <span class="button-comprar-responsive">
+      <button-cart name="Comprar" class="subtitulo-2">Realizar Compra</button-cart>
+    </span>
+  </cart-footer>
 </section>
 {% schema %}
 {
