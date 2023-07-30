@@ -20,7 +20,15 @@
             </item-info>
             <quantity>
               <input type="button" value="-" class="button-minus" data-field="quantity">
-              <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field" readonly>
+              <input
+                type="number"
+                step="1"
+                max=""
+                value="{{ item.quantity }}"
+                name="quantity"
+                class="quantity-field"
+                readonly
+              >
               <input type="button" value="+" class="button-plus" data-field="quantity">
             </quantity>
             <p class="price">{{ item.product.price | money_with_currency }}</p>
