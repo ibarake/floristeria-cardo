@@ -17,7 +17,6 @@
                 {% render 'cart-note' %}
                 {{ section.settings['cart-note'] }}
               </cart-note>
-              <p class="price">{{ item.product.price | money_with_currency }}</p>
             </item-info>
             <responsive-container>
               <quantity>
@@ -34,6 +33,7 @@
                 <input type="button" value="+" class="qButton button-plus" data-field="quantity">
               </quantity>
             </responsive-container>
+            <p class="price">{{ item.product.price | money_with_currency }}</p>
 
             <a href="{{ item.url_to_remove }}">{% render 'delete-cart' %}</a>
           </cart-item>
