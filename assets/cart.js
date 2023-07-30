@@ -1,4 +1,5 @@
 // PRODUCT PAGE QUANTITY SELLECT
+console.log("hello")
 async function updateCartDrawer() {
   const res = await fetch("/?section_id=main-cart");
   const text = await res.text();
