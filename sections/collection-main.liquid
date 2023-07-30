@@ -124,9 +124,9 @@
 <filter-drawer>
   <top-drawer>
     <span> {% render 'filter-icon' %} Filtros </span>
-    <span class="close-filter-drawer">
+    <button class="close-filter-drawer">
       {% render 'close-drawer' %}
-    </span>
+    </button>
   </top-drawer>
   <form class="filter-form">
     {%- for filter in collection.filters -%}
