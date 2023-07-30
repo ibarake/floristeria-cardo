@@ -282,21 +282,4 @@ pqBtn.forEach((button) => {
     })
 });
 
-// FILTER DRAWER COLLECTION
 
-const filterDisplayBtn = document.querySelectorAll('.filter-drawer-btn');
-
-filterDisplayBtn.forEach((fbutton) => {
-  console.log('hello');
-  const drawer = fbutton.parentElement.parentElement.parentElement.parentElemet.querySelector('filter-drawer');
-  console.log(drawer)
-  fbutton.addEventListener('click', () => {
-    if (drawer.style.bottom === '0px') {
-        drawer.style.bottom = '-1000px';
-    } else {
-        drawer.style.bottom = '0px';
-    }
-});
-
-  
-});
