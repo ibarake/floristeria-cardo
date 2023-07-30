@@ -210,7 +210,7 @@
 
   filterDisplayBtn.forEach((fbutton) => {
     console.log('hello');
-    const drawer = fbutton.parentElement.parentElement.parentElement.parentElemet.querySelector('filter-drawer');
+    const drawer = fbutton.parentElement.parentElement.parentElement.parentElement.querySelector('filter-drawer');
     console.log(drawer)
     fbutton.addEventListener('click', () => {
       if (drawer.style.bottom === '0px') {
