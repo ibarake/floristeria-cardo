@@ -1855,6 +1855,7 @@ filter-drawer{
     border-radius: 8px;
     border: 1px solid var(--main-linen);
     background: var(--main-color);
+    color: var(--main-olive);
   }
   product-grid{
     grid-template-columns: 47% 47%;
