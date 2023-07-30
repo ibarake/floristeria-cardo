@@ -284,7 +284,9 @@ pqBtn.forEach((button) => {
 
 // FILTER DRAWER COLLECTION
 
-const filterDisplayBtn = document.querySelectorAll('#filter-drawer-btn');
+const filterDisplayBtn = document.querySelectorAll('.filter-drawer-btn');
+
+
 
 filterDisplayBtn.forEach((button) => {
   const drawer = button.parentElement.parentElement.parentElement.parentElemet.querySelector('filter-drawer');
