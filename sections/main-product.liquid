@@ -48,11 +48,10 @@
                         </h3>
                         <span>{{ item.variant.title }}</span>
                         <div class="cart-drawer-quantity-selector">
-                          <button class="cart-drawer-quantity-selector-minus" type="button">
-                            {% render 'minus.svg' %}
+                          <button class="cart-drawer-quantity-selector-minus" type="button">-
                           </button>
                           <input type="text" readonly value="{{ item.quantity }}">
-                          <button class="cart-drawer-quantity-selector-plus" type="button">{% render 'plus.svg' %}</button>
+                          <button class="cart-drawer-quantity-selector-plus" type="button">+</button>
                         </div>
                       </div>
                       <div class="cart-drawer-item-main-flex-right">
