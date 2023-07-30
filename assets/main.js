@@ -261,13 +261,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const newQuantity = isUp ? currentQuantity + 1 : currentQuantity - 1;
 
     
-    fetch('/cart/update.js', {
+    const res = await fetch('/cart/update.js', {
       method:'post',
       headers: {
         Accept: 'application/json',
         "Content-Type": "application/json"
       },
-      body: JSON.stringify({[key]: newQuantity})
+      body: JSON.stringify({updates: {[key]: newQuantity}})
     })
   })
     
