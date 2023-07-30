@@ -1813,7 +1813,7 @@ filter-drawer{
     transition: all 300ms ease-out;
   }
 
-  Borrar filtros{
+  filter-group-display__erase{
     width: 174px;
     height: 40px;
     padding: 10px 80px;
@@ -1825,7 +1825,7 @@ filter-drawer{
     color: var(--main-olive);
   }
 
-  Aplicar filtros{
+  filter-group-display__submit{
     width: 171px;
     height: 40px;
     padding: 10px 80px;
