@@ -34,7 +34,7 @@
               <p class="price">{{ item.product.price | money_with_currency }}</p>
               <quantity>
                 <input type="button" value="-" class="qButton button-minus" data-field="quantity">
-                <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
+                <input type="number" step="1" max="" value="{{ item.quantity }}" name="quantity" class="quantity-field">
                 <input type="button" value="+" class="qButton button-plus" data-field="quantity">
               </quantity>
               <cart-note class="subtitulo-5">
