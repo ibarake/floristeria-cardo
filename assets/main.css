@@ -2661,12 +2661,10 @@ cart-item-responsive{
   display: none;
 }
 @media (max-width: 768px) {
-  met-pagos{
+  container-resumen{
     display: none;
   }
-  summary{
-    display:none;
-  }
+
   cart-item-responsive img{
     width: 120px;
     height: 120px;
