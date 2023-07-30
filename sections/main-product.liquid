@@ -44,10 +44,11 @@
             {% endfor %}
           </select>
           <quantity>
-            <button id="minus">−</button>
-            <input type="number" value="0" id="input"/>
-            <button id="plus">+</button>
+            <button class="cart-drawer-quantity-selector-minus" type="button">-</button>
+            <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
+            <button class="cart-drawer-quantity-selector-plus" type="button">+</button>
           </quantity>
+
         {% endform %}
       </container-buttons>
       <faq class="faq-container" id="description-product">
