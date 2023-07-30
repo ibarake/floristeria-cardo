@@ -244,6 +244,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // PRODUCT PAGE QUANTITY SELLECT
 
+async function updateCartDrawer() {
+  const res = await fetch("/?section_id=main-cart");
+  const text = await res.text();
+  const html = document.createElement("div");
+  html.innerHTML = text;
+
+  const newBox = html.querySelector(".cart-drawer").innerHTML;
+
+  document.querySelector(".cart-drawer").innerHTML = newBox;
+
+  addCartDrawerListeners();
+}
+
+
 document.addEventListener('DOMContentLoaded', function() {
 
   var quantitySelector = document.querySelectorAll('quantity');
