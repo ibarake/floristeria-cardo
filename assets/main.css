@@ -2660,7 +2660,16 @@ cart-note {
 cart-item-responsive{
   display: none;
 }
+cart-footer{
+  display: none;
+}
 @media (max-width: 768px) {
+  cart-footer{
+    display: block;
+    position: fixed;
+    bottom: 0;
+    background-color: var(--main-white);
+  }
   container-resumen{
     display: none;
   }
