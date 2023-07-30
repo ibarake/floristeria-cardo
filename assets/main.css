@@ -1785,16 +1785,17 @@ filter-drawer{
 
 @media only screen and (max-width: 768px) {
   #collection-main {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 100%; 
     grid-template-areas: "topbar"
     "content";
+    width: 100%;
   }
   
   #collection-main aside{
     display: none;
   }
   topbar{
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
   }
   sort-by{
     display: none;
@@ -1815,7 +1816,7 @@ filter-drawer{
     display: block;
   }
   product-grid{
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 50% 50%;
   }
 }
 
