@@ -1720,8 +1720,8 @@ sort-by {
   align-items: center;
   gap: 10px;
   border-radius: 8px;
-  border: 1px solid var(--lino-2, #EFE4CF);
-  background: var(--lino, #F7F0E2);
+  border: 1px solid var(--main-linen);
+  background: var(--main-color);
   margin-left: 15px;
 }
 
@@ -1845,17 +1845,16 @@ filter-drawer{
 
   .filter-drawer-btn{
     display: block;
-    color: var(--oliva-oscuro, #615420);
-    font-family: DM Sans;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 32px;
-    width: 107px;
     display: flex;
+    width: 111px;
+    height: 32px;
+    padding: 4px 10px;
+    justify-content: center;
     align-items: center;
     gap: 8px;
-    border: 1px solid var(--neutrales-gris-5, #EBEBEB);
+    border-radius: 8px;
+    border: 1px solid var(--main-linen);
+    background: var(--main-color);
   }
   product-grid{
     grid-template-columns: 47% 47%;
