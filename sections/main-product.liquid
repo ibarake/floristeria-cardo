@@ -30,15 +30,36 @@
         {{ product.description | strip_html }}
       </p>
       <container-buttons>
-                        <div class="cart-drawer-quantity-selector">
-                          <button class="cart-drawer-quantity-selector-minus" type="button">
-                            -
-                          </button>
-                          <input type="text" readonly value="1">
-                          <button class="cart-drawer-quantity-selector-plus" type="button">+</button>
-                        </div>
-    
-    
+        {% form 'product', product, class: 'product-form', novalidate: 'novalidate', id: 'pr-form-wd' %}
+          <select name="id" style="display: none;">
+            {% for variant in product.variants %}
+              <option
+                value="{{ variant.id }}"
+                {% if variant == product.selected_or_first_available_variant %}
+                  selected="selected"
+                {% endif %}
+              >
+                {{ variant.title }} - {{ variant.price | money }}
+              </option>
+            {% endfor %}
+          </select>
+          <quantity>
+            <button type="button" value="-" class="cart-drawer-quantity-selector-minus" data-field="quantity">
+            <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
+            <button type="button" value="+" class="cart-drawer-quantity-selector-plus" data-field="quantity">
+          </quantity>
+          <add-to-car id="atc">
+            <button class="atc-product add-t-cart">
+              {% render 'icon-cart' %}
+              <p class="add-t-cart-text subtitulo-2">
+                <b> {{ section.settings['button-title'] }} </b>
+              </p>
+            </button>
+          </add-to-car>
+          <payment class="subtitulo-2 payment-1">
+            {{ form | payment_button }}
+          </payment>
+        {% endform %}
       </container-buttons>
       <faq class="faq-container" id="description-product">
         <question class="FAQ-title subtitulo-3">
