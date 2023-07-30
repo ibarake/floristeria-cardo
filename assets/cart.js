@@ -14,14 +14,12 @@ async function updateCartDrawer() {
 function addCartDrawerListeners() {
 
   const qBtns = document.querySelectorAll('.qButton');
-
-    console.log(qBtns)
   
   qBtns.forEach((qBtn) => {
     console.log(qBtn)
     qBtn.addEventListener('click', async () =>{ 
       console.log(qBtn)
-      const rootItem = qs.parentElement;
+      const rootItem = qBtn.parentElement.parentElement;
       const key = qs.getAttribute('data-item-key');
       const currentQuantity = Number(qs.querySelector('.quantity-field').value);
       const isUp = qBtn.classList.contains(
