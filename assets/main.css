@@ -1803,7 +1803,9 @@ filter-drawer{
     display: block;
   }
   filter-drawer{
-    display: fixed;
+    display: block;
+    position: fixed;
+    width: 100%;
     z-index: 9999;
     background-color: var(--main-white);
   }
