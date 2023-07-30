@@ -254,7 +254,7 @@ document.addEventListener('DOMContentLoaded', function() {
   qBtn.addEventListener('click', async () =>{    
     const rootItem = qs.parentElement;
     const key = qs.getAttribute('data-item-key');
-    const currentQuantity = Number(qs.parentElement.querySelector('.quantity-field').value);
+    const currentQuantity = Number(qs.querySelector('.quantity-field').value);
     const isUp = button.classList.contains(
       "button-plus"
     );
