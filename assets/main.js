@@ -269,7 +269,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const rootItem = qs.parentElement;
     const key = qs.getAttribute('data-item-key');
     const currentQuantity = Number(qs.querySelector('.quantity-field').value);
-    const isUp = button.classList.contains(
+    const isUp = qBtn.classList.contains(
       "button-plus"
     );
     const newQuantity = isUp ? currentQuantity + 1 : currentQuantity - 1;
