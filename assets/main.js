@@ -284,6 +284,8 @@ document.addEventListener('DOMContentLoaded', function() {
       body: JSON.stringify({updates: {[key]: newQuantity}})
     })
     const json = await res.json();
+
+    updateCartDrawer();
   })
     
   })
