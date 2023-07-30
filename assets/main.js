@@ -280,7 +280,7 @@ pqBtn.forEach((button) => {
             quantity.value = newQuantity;
         }
     })
-})
+});
 
 // FILTER DRAWER COLLECTION
 
@@ -299,4 +299,4 @@ filterDisplayBtn.forEach((fbutton) => {
 });
 
   
-})
+});
