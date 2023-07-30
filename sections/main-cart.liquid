@@ -56,10 +56,10 @@
                 >
                 <input type="button" value="+" class="qButton button-plus" data-field="quantity">
               </quantity>
-              <cart-note class="subtitulo-5">
+              <button class="cart-note subtitulo-5">
                 {% render 'cart-note' %}
                 {{ section.settings['cart-note'] }}
-              </cart-note>
+              </button>
             </item-info>
             <a href="{{ item.url_to_remove }}">{% render 'delete-cart' %}</a>
           </cart-item-responsive>
