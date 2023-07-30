@@ -2670,6 +2670,7 @@ cart-footer{
     bottom: 0;
     background-color: var(--main-white);
     z-index: 99;
+    width: 100%;
   }
   container-resumen{
     display: none;
