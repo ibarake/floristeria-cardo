@@ -266,29 +266,29 @@ document.addEventListener('DOMContentLoaded', function() {
   const qBtns = qs.querySelectorAll('.qButton');
 
   qBtns.forEach((qBtn) => {
-  qBtn.addEventListener('click', async () =>{ 
-    console.log(qBtn)
-    const rootItem = qs.parentElement;
-    const key = qs.getAttribute('data-item-key');
-    const currentQuantity = Number(qs.querySelector('.quantity-field').value);
-    const isUp = qBtn.classList.contains(
-      "button-plus"
-    );
-    const newQuantity = isUp ? currentQuantity + 1 : currentQuantity - 1;
-
-    
-    const res = await fetch('/cart/update.js', {
-      method:'post',
-      headers: {
-        Accept: 'application/json',
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({updates: {[key]: newQuantity}})
+    qBtn.addEventListener('click', async () =>{ 
+      console.log(qBtn)
+      const rootItem = qs.parentElement;
+      const key = qs.getAttribute('data-item-key');
+      const currentQuantity = Number(qs.querySelector('.quantity-field').value);
+      const isUp = qBtn.classList.contains(
+        "button-plus"
+      );
+      const newQuantity = isUp ? currentQuantity + 1 : currentQuantity - 1;
+  
+      
+      const res = await fetch('/cart/update.js', {
+        method:'post',
+        headers: {
+          Accept: 'application/json',
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({updates: {[key]: newQuantity}})
+      })
+      const json = await res.json();
+  
+      updateCartDrawer();
     })
-    const json = await res.json();
-
-    updateCartDrawer();
-  })
   })
   })
   
