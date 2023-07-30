@@ -2554,7 +2554,6 @@ cart-info{
 
 .cart{
   width: 100%;
-  min-height: 660px;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
