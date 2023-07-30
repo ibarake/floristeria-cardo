@@ -1814,6 +1814,9 @@ filter-drawer{
   #filter-drawer-btn{
     display: block;
   }
+  product-grid{
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 /* MAIN-POLITICS */

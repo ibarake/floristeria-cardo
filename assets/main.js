@@ -281,3 +281,7 @@ pqBtn.forEach((button) => {
         }
     })
 })
+
+// FILTER DRAWER COLLECTION
+
+const filterDisplayBtn = document.querySelector('#filter-drawer-btn');
