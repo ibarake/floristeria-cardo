@@ -269,11 +269,14 @@ pqBtn.forEach((button) => {
       const quantity = button.parentElement.querySelector('.quantity-field');
 
       const currentQuantity = Number(quantity.value);
+      if(currentQuantity > 0){
+        
       const isUp = button.classList.contains(
         "button-plus"
       );
       const newQuantity = isUp ? currentQuantity + 1 : currentQuantity - 1;
 
       quantity.value = newQuantity;
+      }
     })
 })
