@@ -1809,6 +1809,7 @@ filter-drawer{
     z-index: 9999;
     background-color: var(--main-white);
     bottom: -1000px;
+    transition: all 300ms ease-out;
   }
   #filter-drawer-btn{
     display: block;
