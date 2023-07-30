@@ -45,7 +45,7 @@
           </select>
           <quantity>
             <input type="button" value="-" class="pq-button button-minus" data-field="quantity">
-            <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
+            <input readonly type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
             <input type="button" value="+" class="pq-button button-plus" data-field="quantity">
           </quantity>
           <add-to-car id="atc">
@@ -99,6 +99,7 @@
 </section>
 
 <script>
+  
   
   
   
@@ -182,6 +183,7 @@ const productRecommendationsSection = document.querySelector('.product-recommend
 const observer = new IntersectionObserver(handleIntersection, {rootMargin: '0px 0px 200px 0px'});
 
 observer.observe(productRecommendationsSection);
+
 
 
 
