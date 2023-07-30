@@ -262,10 +262,10 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   var quantitySelector = document.querySelectorAll('quantity');
 
-  quantitySelector.forEach( async (qs) => {  
+  quantitySelector.forEach((qs) => {  
   const qBtns = qs.querySelectorAll('.qButton');
 
-  qBtns.forEach( async (qBtn) => {
+  qBtns.forEach((qBtn) => {
     qBtn.addEventListener('click', async () =>{ 
       console.log(qBtn)
       const rootItem = qs.parentElement;
