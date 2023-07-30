@@ -264,14 +264,16 @@ addCartDrawerListeners();
 const pqBtn = document.querySelectorAll('.pq-button');
 
 pqBtn.forEach((button) => {
+    button.addEventListener('click', () => {
+      
       const quantity = button.parentElement.querySelector('.quantity-field');
 
       const currentQuantity = Number(quantity.value);
-      console.log(currentQuantity)
       const isUp = button.classList.contains(
         "button-plus"
       );
       const newQuantity = isUp ? currentQuantity + 1 : currentQuantity - 1;
 
       quantity.value = newQuantity;
+    })
 })
