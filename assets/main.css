@@ -1840,6 +1840,16 @@ filter-drawer{
 
   .filter-drawer-btn{
     display: block;
+    color: var(--oliva-oscuro, #615420);
+    font-family: DM Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+    width: 107px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
   }
   product-grid{
     grid-template-columns: 47% 47%;
