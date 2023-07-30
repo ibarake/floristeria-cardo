@@ -10,15 +10,16 @@
             <image class="cart-item-image">
               {{ item.image | img_tag: 'cart-image-tag', '129x129' }}
             </image>
+            <item-info>
+              <p class="parrafo-4 collection-tag">{{ item.product.collections[0].title }}</p>
+              <h2 class="subtitulo-1">{{ item.product.title }}</h2>
+              <cart-note class="subtitulo-5">
+                {% render 'cart-note' %}
+                {{ section.settings['cart-note'] }}
+              </cart-note>
+              <p class="price">{{ item.product.price | money_with_currency }}</p>
+            </item-info>
             <responsive-container>
-              <item-info>
-                <p class="parrafo-4 collection-tag">{{ item.product.collections[0].title }}</p>
-                <h2 class="subtitulo-1">{{ item.product.title }}</h2>
-                <cart-note class="subtitulo-5">
-                  {% render 'cart-note' %}
-                  {{ section.settings['cart-note'] }}
-                </cart-note>
-              </item-info>
               <quantity>
                 <input type="button" value="-" class="qButton button-minus" data-field="quantity">
                 <input
@@ -32,8 +33,8 @@
                 >
                 <input type="button" value="+" class="qButton button-plus" data-field="quantity">
               </quantity>
-              <p class="price">{{ item.product.price | money_with_currency }}</p>
             </responsive-container>
+
             <a href="{{ item.url_to_remove }}">{% render 'delete-cart' %}</a>
           </cart-item>
           <cart-item-responsive data-item-key="{{ item.key }}">
