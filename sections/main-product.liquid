@@ -30,37 +30,35 @@
         {{ product.description | strip_html }}
       </p>
       <container-buttons>
-        {% form 'cart', cart, class: 'cart-drawer-form' %}
-            <div class="cart-drawer-items">
-              {% for item in cart.items %}
-                <div class="cart-drawer-item" data-line-item-key="{{ item.key }}">
-                  <div class="cart-drawer-item-image">
-                    <img src="{{ item.image | img_url: '200x' }}" alt="{{ item.title }}">
-                  </div>
-                  <div class="cart-drawer-item-main">
-                    <div class="cart-drawer-item-main-flex">
-                      <div class="cart-drawer-item-main-flex-left">
-                        <h3>
-                          <a href="{{ item.url }}">{{ item.product.title }}</a>
-                        </h3>
-                        <span>{{ item.variant.title }}</span>
-                        <div class="cart-drawer-quantity-selector">
-                          <button class="cart-drawer-quantity-selector-minus" type="button">
-                            {% render 'minus.svg' %}
-                          </button>
-                          <input type="text" readonly value="{{ item.quantity }}">
-                          <button class="cart-drawer-quantity-selector-plus" type="button">{% render 'plus.svg' %}</button>
-                        </div>
-                      </div>
-                      <div class="cart-drawer-item-main-flex-right">
-                        <span>{{ item.final_line_price | money }}</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              {% endfor %}
-            </div>
-          {% endif %}
+        {% form 'product', product, class: 'product-form', novalidate: 'novalidate', id: 'pr-form-wd' %}
+          <select name="id" style="display: none;">
+            {% for variant in product.variants %}
+              <option
+                value="{{ variant.id }}"
+                {% if variant == product.selected_or_first_available_variant %}
+                  selected="selected"
+                {% endif %}
+              >
+                {{ variant.title }} - {{ variant.price | money }}
+              </option>
+            {% endfor %}
+          </select>
+          <quantity>
+            <input type="button" value="-" class="button-minus" data-field="quantity">
+            <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
+            <input type="button" value="+" class="button-plus" data-field="quantity">
+          </quantity>
+          <add-to-car id="atc">
+            <button class="atc-product add-t-cart">
+              {% render 'icon-cart' %}
+              <p class="add-t-cart-text subtitulo-2">
+                <b> {{ section.settings['button-title'] }} </b>
+              </p>
+            </button>
+          </add-to-car>
+          <payment class="subtitulo-2 payment-1">
+            {{ form | payment_button }}
+          </payment>
         {% endform %}
     
       </container-buttons>
