@@ -269,7 +269,7 @@ pqBtn.forEach((button) => {
       const quantity = button.parentElement.querySelector('.quantity-field');
 
       const currentQuantity = Number(quantity.value);
-      if(currentQuantity > 0){
+      if(currentQuantity > 1){
         
       const isUp = button.classList.contains(
         "button-plus"
