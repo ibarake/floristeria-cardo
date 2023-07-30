@@ -19,7 +19,7 @@
               </cart-note>
             </item-info>
             <quantity>
-              <input type="button" value="-" class="button-minus" data-field="quantity">
+              <input type="button" value="-" class="qButton button-minus" data-field="quantity">
               <input
                 type="number"
                 step="1"
@@ -29,7 +29,7 @@
                 class="quantity-field"
                 readonly
               >
-              <input type="button" value="+" class="button-plus" data-field="quantity">
+              <input type="button" value="+" class="qButton button-plus" data-field="quantity">
             </quantity>
             <p class="price">{{ item.product.price | money_with_currency }}</p>
             <a href="{{ item.url_to_remove }}">{% render 'delete-cart' %}</a>
