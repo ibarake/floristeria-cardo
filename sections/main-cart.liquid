@@ -6,7 +6,7 @@
     {% else %}
       {% form 'cart', cart %}
         {% for item in cart.items %}
-          <cart-item>
+          <cart-item data-item-key="{{ item.key }}">
             <image class="cart-item-image">
               {{ item.image | img_tag: 'cart-image-tag', '129x129' }}
             </image>
