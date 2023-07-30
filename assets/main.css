@@ -1751,6 +1751,11 @@ filter label {
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
+    font-family: NewYork;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .filter-element {
