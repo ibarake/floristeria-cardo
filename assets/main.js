@@ -258,3 +258,18 @@ function addCartDrawerListeners() {
 }
 
 addCartDrawerListeners();
+
+//PRODUCT PAGE QUANTITY
+
+const pqBtn = document.querySelectorAll('.pq-button');
+
+pqBtn.forEach((button) => {
+      const quantity = button.parentElement.querySelector('.quantity-field');
+      const currentQuantity = Number(quantity.value);
+      const isUp = button.classList.contains(
+        "button-plus"
+      );
+      const newQuantity = isUp ? currentQuantity + 1 : currentQuantity - 1;
+
+      quantity.value = newQuantity;
+})
