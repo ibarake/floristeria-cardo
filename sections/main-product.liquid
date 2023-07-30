@@ -30,7 +30,6 @@
         {{ product.description | strip_html }}
       </p>
       <container-buttons>
-        {% form 'cart', cart, class: 'cart-drawer-form' %}
                         <div class="cart-drawer-quantity-selector">
                           <button class="cart-drawer-quantity-selector-minus" type="button">
                             -
@@ -38,7 +37,6 @@
                           <input type="text" readonly value="1">
                           <button class="cart-drawer-quantity-selector-plus" type="button">+</button>
                         </div>
-        {% endform %}
     
     
       </container-buttons>
