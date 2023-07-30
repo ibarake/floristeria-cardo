@@ -2237,11 +2237,11 @@ in-container {
     visibility: hidden;
   }
 
-  #desktop-image {
+  .desktop-image {
     display: none;
   }
 
-  #responsive-image {
+  .responsive-image {
     display: block;
   }
 }
