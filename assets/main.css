@@ -1816,7 +1816,7 @@ filter-drawer{
     display: block;
   }
   product-grid{
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 47% 47%;
   }
 }
 
