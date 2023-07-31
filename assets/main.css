@@ -2752,6 +2752,12 @@ cart-footer{
   }
   cart-item-responsive .button-minus, cart-item-responsive .button-plus, cart-item-responsive .quantity-field {
     height: 1.5rem;
+    width: 1.5rem;
+  }
+
+  item-info {
+    width: 25%;
+    margin: 0 1rem 1.5rem;
   }
 }
 
