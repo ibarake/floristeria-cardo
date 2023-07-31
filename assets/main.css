@@ -1837,6 +1837,11 @@ filter-drawer{
     width: 67px;
   }
 
+  .filter-group-display__erase {
+    display: flex; */
+    justify-content: flex-start;
+  }
+
   .filter-group-display__erase input[type="submit"] {
     display: flex;
     width: 174px;
