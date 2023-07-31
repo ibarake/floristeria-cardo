@@ -2274,6 +2274,7 @@ product-page {
 }
 
 #fgh {
+  display: block;
   text-decoration: none;
   color: var(--main-black);
   width: fit-content;
