@@ -2654,6 +2654,7 @@ container-met-pagos{
   color: var(--main-white);
   border: none;
   cursor: pointer;
+  width: 100%;
 }
 
 item-info {
