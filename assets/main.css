@@ -2575,8 +2575,11 @@ cart-info{
   background-color: var(--main-dark-color);
 }
 
+metodo svg {
+  width: 90px;
+}
+
 summary{
-  width: 100%;
   min-height: 50%;
   background-color: var(--main-color);
   display: flex;
@@ -2624,7 +2627,6 @@ container-resumen{
 }*/
 
 met-pagos{
-  width: 100%;
   display: flex; 
   border-radius: 12px;
   background-color: var(--main-color);
