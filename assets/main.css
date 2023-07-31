@@ -961,6 +961,7 @@ card-footer {
 
 .price{
   color: var(--main-black);
+  padding-right: 3rem;
 }
 
 .card-product-title{
@@ -2552,7 +2553,7 @@ cart-item {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  width: 94%;
+  width: 90%;
   gap: 15px;
   margin: 45px 0px;
 }
