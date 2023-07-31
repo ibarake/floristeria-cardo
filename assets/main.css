@@ -2528,6 +2528,16 @@ title-add-combo {
 }
 
 /* CART STYLES */
+.popup {
+  overflow: hidden;
+  transition: height 0.5s;
+  height: 0;
+}
+
+.popup.open {
+  height: auto;
+}
+
 container-cart-item{
   margin-left: 5rem;
 }
