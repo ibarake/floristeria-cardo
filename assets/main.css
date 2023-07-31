@@ -2629,7 +2629,7 @@ container-met-pagos{
   line-height: normal;
 }
 
-button-cart{
+.button-cart{
   display: flex;
   padding: 10px 10px;
   justify-content: center;
