@@ -2721,6 +2721,7 @@ cart-footer{
     flex-direction: row;
   }
   cart-item-responsive .subtitulo-1{
+    width: 55%;
     font-size: 16px;
     line-height: 16px;
   }
