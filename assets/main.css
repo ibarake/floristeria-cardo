@@ -2679,7 +2679,7 @@ item-info {
 .popup-content textarea {
   margin-top: 1rem;
   border-radius: 8px;
-  background-color: var(--main-color);
+  background-color: var(--main-dark-color);
 }
 
 #df {
