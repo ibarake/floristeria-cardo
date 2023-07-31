@@ -1858,6 +1858,13 @@ filter-drawer{
     height: 0px;
   }
 
+  span-borrar{
+
+  }
+
+  span-aplicar{
+    
+  }
 
   .filter-drawer-btn{
     display: block;
