@@ -1848,6 +1848,10 @@ filter-drawer{
     background: var(--main-olive);
   }
 
+  span-filtros{
+    color: var(--main-olive);
+  }
+
 
   .filter-drawer-btn{
     display: block;
