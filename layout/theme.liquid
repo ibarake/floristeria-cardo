@@ -51,6 +51,16 @@
     {% section 'header' %}
     {{ content_for_layout }}
     {% section 'footer' %}
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.slider').slick({
+          infinite: true,
+          slidesToShow: 2,
+          slidesToScroll: 2
+        });
+      });
+    </script>
   </body>
   <script async src="{{ 'main.js' | asset_url }}"></script>
 </html>
