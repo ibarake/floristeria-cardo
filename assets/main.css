@@ -2672,8 +2672,12 @@ item-info {
   cursor: pointer;
 }
 
+#di {
+  width: 30%;
+}
+
 #df {
-  min-width: 60%;
+  width: 60%;
 }
 cart-item-responsive{
   display: none;
