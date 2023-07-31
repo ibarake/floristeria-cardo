@@ -294,10 +294,12 @@ document.addEventListener('DOMContentLoaded', function() {
         // If the popup is currently open, close it
         popup.style.height = '0px';
         popup.classList.remove('open');
+        console.log("close")
       } else {
         // If the popup is currently closed, open it
         popup.style.height = 'auto';
         popup.classList.add('open');
+        console.log("open");
       }
     });
   });
