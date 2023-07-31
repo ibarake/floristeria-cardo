@@ -16,6 +16,10 @@ p {
   z-index: 10;
 }
 
+.hidden{
+  display: none;
+}
+
 /* VARIABLES */
 .full-width {
   width: 100%;
