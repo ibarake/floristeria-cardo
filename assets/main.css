@@ -1873,6 +1873,11 @@ filter-drawer{
     background: var(--main-color);
     color: var(--main-olive);
   }
+
+  filter-aplicar{
+    display: flex;
+  }
+
   product-grid{
     grid-template-columns: 47% 47%;
   }
