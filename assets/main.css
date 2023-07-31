@@ -2807,9 +2807,10 @@ collection-slider-2 {
   z-index: 1;
 }
 
-card-ff {
+.slider card-ff {
   background-color: var(--main-white);
   border-radius: 8px;
+  width: 256px;
 }
 
 image-picker {
