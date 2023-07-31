@@ -269,7 +269,7 @@ document.addEventListener('DOMContentLoaded', function() {
       var notes = [];
       
       textareas.forEach(function(ta) {
-        var productTitle = ta.closest('cart-item, cart-item-responsive').querySelector('.subtitulo-1').innerText;
+        var productTitle = ta.closest('cart-item, cart-item-responsive').querySelector('.pc-title').innerText;
         var note = ta.value;
         
         if (note) {
