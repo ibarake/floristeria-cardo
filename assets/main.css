@@ -1858,10 +1858,6 @@ filter-drawer{
     height: 0px;
   }
 
-  .filter-group-display__erase {
-
-  }
-
   .filter-group-display__erase input[type="submit"] {
     display: flex;
     width: 174px;
@@ -1873,12 +1869,8 @@ filter-drawer{
     flex-shrink: 0;
   }
 
-  .filter-group-display__submit {
-  }
-  
-  
   .filter-group-display__submit input[type="submit"] {
-   display: flex;
+    display: flex;
     width: 174px;
     height: 40px;
     padding: 10px 80px;
