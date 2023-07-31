@@ -21,9 +21,9 @@
       </a>
     </buttons-ba-container>
   </con-t>
-  <div class="multiple-items">
+  <collection-slider-2 class="multiple-items">
     {% for block in section.blocks %}
-      <div>
+      <card-ff>
         <a href=" {{ block.settings.tag-url }} " id="fgh">
           <image-picker>
             {{ block.settings['COL-image'] | img_tag: block.settings['COL-image'].alt, 'col-card-image', '300x256' }}
@@ -38,9 +38,9 @@
             </p>
           </COL-titles>
         </a>
-      </div>
+      </card-ff>
     {% endfor %}
-  </div>
+  </collection-slider-2>
 </main-ba-container>
 
 {% schema %}
