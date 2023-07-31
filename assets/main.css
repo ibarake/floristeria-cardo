@@ -2635,7 +2635,7 @@ container-met-pagos{
   justify-content: center;
   align-items: center;
   border-radius: 8px;
-  background: var(--main-olive);
+  background-color: var(--main-olive);
   font-family: Poppins;
   color: var(--main-white);
 }
