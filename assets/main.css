@@ -2806,7 +2806,7 @@ collection-slider-2 {
 .slider card-ff {
   background-color: var(--main-white);
   border-radius: 8px;
-  width: 256px !important;
+  width: fit-content !important;
 }
 
 image-picker {
