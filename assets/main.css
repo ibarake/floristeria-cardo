@@ -2763,7 +2763,7 @@ cart-footer{
 
   #gf {
     text-transform: uppercase;
-    margin: 0;
+    margin: 1rem 0 0 0;
     color: var(--main-gray);
   }
 }
