@@ -1822,6 +1822,8 @@ filter-drawer{
     background-color: var(--main-white);
     bottom: -1000px;
     transition: all 300ms ease-out;
+    border-radius: 8px;
+    padding: 10px;
   }
 
   span-filtros{
@@ -1853,6 +1855,7 @@ filter-drawer{
     justify-content: center;
     border-radius: 8px;
     background: var(--main-olive);
+    color: var(--main-white);
   }
 
   .filter-drawer-btn{
@@ -2511,7 +2514,7 @@ title-add-combo {
   }
 
   form {
-    width: 100%;
+    width: 95%;
     flex-direction: column;
     align-items: flex-start;
   }
