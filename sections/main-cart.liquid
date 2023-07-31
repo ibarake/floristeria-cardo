@@ -1,10 +1,10 @@
-<section class="cart page-width">
-  <container-cart-item>
-    <h1 class="titulo-4" id="title-cart">Mi carrito</h1>
-    {% if cart.item_count == 0 %}
-      <p class="titulo-5">No hay Arreglos en su carrito.</p>
-    {% else %}
-      {% form 'cart', cart %}
+{% form 'cart', cart %}
+  <section class="cart page-width">
+    <container-cart-item>
+      <h1 class="titulo-4" id="title-cart">Mi carrito</h1>
+      {% if cart.item_count == 0 %}
+        <p class="titulo-5">No hay Arreglos en su carrito.</p>
+      {% else %}
         {% for item in cart.items %}
           <cart-item data-item-key="{{ item.key }}">
             <image class="cart-item-image">
@@ -75,65 +75,65 @@
           </cart-item-responsive>
         {% endfor %}
         <textarea name="note" form="cart" type="hidden"></textarea>
-      {% endform %}
-    {% endif %}
-    <add-combo>
-      <title-add-combo>
-        {% render 'button-plus' %}
-        <p class="subtitulo-1" id="add-combo-title">
-          {{ section.settings['agregar-combo'] }}
-        </p>
-      </title-add-combo>
-    </add-combo>
-  </container-cart-item>
-  <container-resumen>
-    <met-pagos>
-      <p class="subtitulo-2" id="pagos">Metodos de Pagos</p>
-      <container-met-pagos>
-        <metodo>
-          {% render 'cart-vs' %}
-        </metodo>
-        <metodo>
-          {% render 'cart-mc' %}
-        </metodo>
+      {% endif %}
+      <add-combo>
+        <title-add-combo>
+          {% render 'button-plus' %}
+          <p class="subtitulo-1" id="add-combo-title">
+            {{ section.settings['agregar-combo'] }}
+          </p>
+        </title-add-combo>
+      </add-combo>
+    </container-cart-item>
+    <container-resumen>
+      <met-pagos>
+        <p class="subtitulo-2" id="pagos">Metodos de Pagos</p>
+        <container-met-pagos>
+          <metodo>
+            {% render 'cart-vs' %}
+          </metodo>
+          <metodo>
+            {% render 'cart-mc' %}
+          </metodo>
 
-        <metodo>
-          {% render 'cart-mp' %}
-        </metodo>
-        <metodo>
-          {% render 'cart-pu' %}
-        </metodo>
-      </container-met-pagos>
-    </met-pagos>
-    <cart-info>
-      <summary>
-        <summary-1>
-          <p class="subtitulo-2">Resumen</p>
-          {% for item in cart.items %}
-            <summary-cart-item>
-              <span id="df" class="parrafo-3">{{ item.product.title }}</span>
-              <span class="parrafo-2">{{ item.product.price | money_with_currency }}</span>
-            </summary-cart-item>
-          {% endfor %}
-        </summary-1>
-        <cart-total>
-          <span class="subtitulo-2" id="subtotal-cart">Subtotal</span>
-          <span class="parrafo-1">{{ cart.total_price | money_with_currency }}</span>
-        </cart-total>
-      </summary>
-    </cart-info>
-    <button type="submit" name="checkout" form="cart" class="button-cart subtitulo-2">Realizar Compra</button>
-  </container-resumen>
-  <cart-footer>
-    <span class="ft-subtotal">
-      <p class="subtitulo-5">Subtotal</p>
-      <p class="price parrafo-1">{{ cart.total_price | money_with_currency }}</p>
-    </span>
-    <span class="button-comprar-responsive">
-      <button type="submit" name="checkout" form="cart" class="button-cart subtitulo-2">Realizar Compra</button>
-    </span>
-  </cart-footer>
-</section>
+          <metodo>
+            {% render 'cart-mp' %}
+          </metodo>
+          <metodo>
+            {% render 'cart-pu' %}
+          </metodo>
+        </container-met-pagos>
+      </met-pagos>
+      <cart-info>
+        <summary>
+          <summary-1>
+            <p class="subtitulo-2">Resumen</p>
+            {% for item in cart.items %}
+              <summary-cart-item>
+                <span id="df" class="parrafo-3">{{ item.product.title }}</span>
+                <span class="parrafo-2">{{ item.product.price | money_with_currency }}</span>
+              </summary-cart-item>
+            {% endfor %}
+          </summary-1>
+          <cart-total>
+            <span class="subtitulo-2" id="subtotal-cart">Subtotal</span>
+            <span class="parrafo-1">{{ cart.total_price | money_with_currency }}</span>
+          </cart-total>
+        </summary>
+      </cart-info>
+      <input type="submit" name="checkout" form="cart" class="button-cart subtitulo-2" value="Realizar Compra">
+    </container-resumen>
+    <cart-footer>
+      <span class="ft-subtotal">
+        <p class="subtitulo-5">Subtotal</p>
+        <p class="price parrafo-1">{{ cart.total_price | money_with_currency }}</p>
+      </span>
+      <span class="button-comprar-responsive">
+        <input type="submit" name="checkout" form="cart" class="button-cart subtitulo-2" value="Realizar Compra">
+      </span>
+    </cart-footer>
+  </section>
+{% endform %}
 {% schema %}
 {
   "name": "main cart",
