@@ -2794,13 +2794,11 @@ con-wf {
 }
 
 collection-slider-2 {
-  overflow-y: visible;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 32px;
-  padding-left: 5rem;
   z-index: 1;
 }
 
