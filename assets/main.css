@@ -1852,6 +1852,12 @@ filter-drawer{
     color: var(--main-olive);
   }
 
+  .close-filter-drawer{
+    border-radius: 55%;
+    border: none;
+    height: 0px;
+  }
+
 
   .filter-drawer-btn{
     display: block;
@@ -2654,12 +2660,6 @@ container-resumen{
   margin-right: 5rem;
   margin-top: 7.5rem;
 }
-
-
-/*.cart-item-image {
-  width: 200px;
-  height: 200px;
-}*/
 
 met-pagos{
   width: 100%;
