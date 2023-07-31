@@ -2278,6 +2278,10 @@ product-page {
   color: var(--main-black);
 }
 
+.slick-slider card-ff{
+  width: 256px;
+}
+
 .image-product{
   width: 100%;
   height: 100%;
