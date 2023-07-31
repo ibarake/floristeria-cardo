@@ -260,6 +260,29 @@ function addCartDrawerListeners() {
 
 addCartDrawerListeners();
 
+document.addEventListener('DOMContentLoaded', function() {
+  var textareas = document.querySelectorAll('.popup-content textarea');
+  var hiddenTextarea = document.querySelector('textarea[name="note"]');
+
+  textareas.forEach(function(textarea) {
+    textarea.addEventListener('input', function() {
+      var notes = [];
+      
+      textareas.forEach(function(ta) {
+        var productTitle = ta.closest('cart-item, cart-item-responsive').querySelector('.subtitulo-1').innerText;
+        var note = ta.value;
+        
+        if (note) {
+          notes.push(productTitle + ': ' + note);
+        }
+      });
+
+      hiddenTextarea.value = notes.join('. ');
+    });
+  });
+});
+
+
 //PRODUCT PAGE QUANTITY
 
 const pqBtn = document.querySelectorAll('.pq-button');
