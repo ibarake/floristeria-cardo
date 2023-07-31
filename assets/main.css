@@ -2803,8 +2803,6 @@ collection-slider-2 {
 }
 
 card-ff {
-  width: 300px;
-  height: 300px;
   background-color: var(--main-white);
   border-radius: 8px;
 }
