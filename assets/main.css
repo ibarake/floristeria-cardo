@@ -1859,21 +1859,10 @@ filter-drawer{
   }
 
   .filter-group-display__erase {
-    display: flex;
-    width: 174px;
-    height: 40px;
-    padding: 10px 80px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    flex-shrink: 0;
+
   }
 
   .filter-group-display__erase input[type="submit"] {
-  
-  }
-
-  .filter-group-display__submit {
     display: flex;
     width: 174px;
     height: 40px;
@@ -1882,11 +1871,21 @@ filter-drawer{
     align-items: center;
     gap: 10px;
     flex-shrink: 0;
+  }
+
+  .filter-group-display__submit {
   }
   
   
   .filter-group-display__submit input[type="submit"] {
-   
+   display: flex;
+    width: 174px;
+    height: 40px;
+    padding: 10px 80px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
   }
 
   .filter-drawer-btn{
