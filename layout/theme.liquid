@@ -55,13 +55,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css">
 
     <script type="text/javascript">
-      $(document).ready(function(){
-        $('.slider').slick({
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 3
-      });
-      });
+          $(document).ready(function(){
+            $('.slider').slick({
+            slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+          });
+          });
     </script>
   </body>
   <script async src="{{ 'main.js' | asset_url }}"></script>
