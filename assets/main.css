@@ -1835,25 +1835,22 @@ filter-drawer{
   }
 
   .filter-group-display__erase input[type="submit"] {
+    display: flex;
     width: 174px;
     height: 40px;
     padding: 10px 80px;
     justify-content: center;
-    align-items: center;
-    gap: 10px;
-    flex-shrink: 0;
     text-align: center;
     color: var(--main-olive);
+    border-radius: 8px;
   }
 
   .filter-group-display__submit input[type="submit"] {
+    display: flex;
     width: 171px;
     height: 40px;
     padding: 10px 80px;
     justify-content: center;
-    align-items: center;
-    gap: 10px;
-    flex-shrink: 0;
     border-radius: 8px;
     background: var(--main-olive);
   }
