@@ -2531,7 +2531,7 @@ title-add-combo {
 .popup {
   overflow: hidden;
   transition: height 0.5s;
-  height: 0;
+  height: 0px;
 }
 
 .popup.open {

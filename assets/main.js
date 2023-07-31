@@ -292,7 +292,7 @@ document.addEventListener('DOMContentLoaded', function() {
       
       if (popup.classList.contains('open')) {
         // If the popup is currently open, close it
-        popup.style.height = '0';
+        popup.style.height = '0px';
         popup.classList.remove('open');
       } else {
         // If the popup is currently closed, open it
