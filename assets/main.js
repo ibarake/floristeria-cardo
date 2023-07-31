@@ -283,9 +283,9 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-  var buttons = document.querySelectorAll('.cart-note');
+  var noteButtons = document.querySelectorAll('.cart-note');
 
-  buttons.forEach(function(button) {
+  noteButtons.forEach(function(button) {
     button.addEventListener('click', function(e) {
       
       var popup = this.nextElementSibling;
