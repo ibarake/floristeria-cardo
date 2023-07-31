@@ -1833,7 +1833,8 @@ filter-drawer{
   .close-filter-drawer{
     border-radius: 55%;
     border: none;
-    height: 0px;
+    background-color: transparent;
+    width: 67px;
   }
 
   .filter-group-display__erase input[type="submit"] {
