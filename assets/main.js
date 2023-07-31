@@ -282,6 +282,25 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  var buttons = document.querySelectorAll('.cart-note');
+
+  buttons.forEach(function(button) {
+    button.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      var popup = this.nextElementSibling;
+      
+      if (popup.classList.contains('open')) {
+        // If the popup is currently open, close it
+        popup.classList.remove('open');
+      } else {
+        // If the popup is currently closed, open it
+        popup.classList.add('open');
+      }
+    });
+  });
+});
 
 //PRODUCT PAGE QUANTITY
 
