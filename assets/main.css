@@ -2664,6 +2664,7 @@ item-info {
 
 .cart-note {
   display: flex;
+  cursor: pointer;
 }
 
 #df {
