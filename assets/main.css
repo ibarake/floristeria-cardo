@@ -2696,7 +2696,7 @@ cart-footer{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     position: fixed;
     bottom: 0;
@@ -2759,6 +2759,12 @@ cart-footer{
   item-info {
     width: 25%;
     margin: 0 1rem 1.5rem;
+  }
+
+  #asd {
+    text-transform: uppercase;
+    margin: 0;
+    color: var(--main-gray);
   }
 }
 
