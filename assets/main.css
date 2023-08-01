@@ -865,6 +865,7 @@ product-card {
   flex-direction: column;
   z-index: 20;
 }
+
 .product-card-image{
   height: 256px;
   object-fit: cover;
