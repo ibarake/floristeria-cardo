@@ -825,8 +825,8 @@ collection-slider::-webkit-scrollbar {
   position: relative;
   background-color: var(--main-dark-color);
 }
-collection-card{
-  margin-right: 10px;
+.collection-item-link{
+  margin-right: 20px;
 }
 collection-card img {
   width: 100%;
