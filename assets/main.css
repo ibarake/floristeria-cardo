@@ -870,6 +870,11 @@ product-card {
   object-fit: cover;
   object-position: 50% 50%;
 }
+
+card-product-title{
+  min-height: 50px;  
+}
+
 product-card:hover {
   transform: scale(1.05);
   transition: all 100ms ease-out;
