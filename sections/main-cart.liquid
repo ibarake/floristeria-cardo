@@ -40,7 +40,7 @@
             </responsive-container>
             <p class="subtitulo-4 price">{{ item.product.price | money_with_currency }}</p>
 
-            <a href="{{ item.url_to_remove }}">{% render 'delete-cart' %}</a>
+            <a id="remove" href="{{ item.url_to_remove }}">{% render 'delete-cart' %}</a>
           </cart-item>
           <cart-item-responsive data-item-key="{{ item.key }}">
             {{ item.image | img_tag: item.image.alt, '', '124x124' }}
@@ -71,7 +71,7 @@
                 </div>
               </div>
             </item-info>
-            <a id="remove" href="{{ item.url_to_remove }}">{% render 'delete-cart' %}</a>
+            <a href="{{ item.url_to_remove }}">{% render 'delete-cart' %}</a>
           </cart-item-responsive>
         {% endfor %}
         <textarea name="note" form="cart" class="hidden"></textarea>
