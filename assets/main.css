@@ -516,10 +516,6 @@ hero-banner {
   padding: 60px 0px 60px 40px;
 }
 
-product-card img.hero {
-  width: 290px !important;
-  height: 256px !important;
-}
 a.product-item{
   text-decoration: none;
   width: 300px;
