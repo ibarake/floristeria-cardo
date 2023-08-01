@@ -2323,8 +2323,16 @@ in-container {
     display: none;
   }
 
+  #responsive-image {
+    display: block;
+    display: block;
+    width: 50px;
+    height: 345px;
+  }
+
   #responsive-image-2 {
     display: block;
+    border-radius: 8px;
   }
 }
 
