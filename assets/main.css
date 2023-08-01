@@ -875,6 +875,9 @@ product-card {
   min-height: 50px;  
 }
 
+.card-product-title.hero{
+  margin-right: 20px;
+}
 product-card:hover {
   transform: scale(1.05);
   transition: all 100ms ease-out;
