@@ -2272,6 +2272,10 @@ in-container {
   display: none;
 }
 
+.responsive-image-2 {
+  display: none;
+}
+
 @media only screen and (max-width: 768px) {
   buttons-container {
     width: 100%;
@@ -2320,6 +2324,10 @@ in-container {
   }
 
   .responsive-image {
+    display: block;
+  }
+
+  .responsive-image-2 {
     display: block;
   }
 }
