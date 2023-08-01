@@ -21,13 +21,13 @@
         <a class="cta-3 subtitulo-3" href="{{ section.settings.link }}">{{ section.settings['cta-3'] }}</a>
       </collection-button>
     </collection-title>
-    <collection-slider class="slider">
+    <div class="slider">
       {% for collection in section.settings.collection_list %}
         <a class="collection-item" href="{{ collection.url }}">
           {% include 'collection-card', collection: collection %}
         </a>
       {% endfor %}
-    </collection-slider>
+    </div>
     <a class="cta-3-responsive subtitulo-3" href="{{ section.settings.link }}">{{ section.settings['cta-3'] }}</a>
   </collection-list>
 </section>
