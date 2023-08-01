@@ -2772,6 +2772,11 @@ cart-footer{
   display: none;
 }
 @media (max-width: 768px) {
+  .popup-content textarea {
+    width: 85%;
+    height: 3rem;
+  }
+
   cart-footer{
     display: flex;
     flex-direction: row;
@@ -2796,18 +2801,19 @@ cart-footer{
   cart-item{
     display:none;
   }
-  cart-item-responsive{
+  cart-item-responsive {
+    width: 46%;
     display: flex;
     flex-direction: row;
   }
   cart-item-responsive .subtitulo-1{
-    width: 55%;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 16px;
+    margin: 0;
   }
   cart-item-responsive .price{
     margin: 0;
-    font-size: 14px;
+    font-size: 12px;
   }
   container-cart-item {
     margin-left: 10px;
