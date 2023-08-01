@@ -2269,6 +2269,10 @@ in-container {
   height: 800px;
 }
 
+.responsive-image {
+  display: none;
+}
+
 #responsive-image {
   display: none;
 }
