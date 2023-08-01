@@ -2772,6 +2772,7 @@ main-ba-container {
   display: grid;
     grid-template-columns: 1fr 1fr;
   background-color: #F7F0E2;
+  padding: 30px;
 }
 
 #title-ba-1 {
