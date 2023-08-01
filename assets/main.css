@@ -2766,6 +2766,10 @@ cart-footer{
     margin: 1rem 0 0 0;
     color: var(--main-gray);
   }
+
+  #gd {
+    margin: 0;
+  }
 }
 
 @media (max-width: 480px) {
