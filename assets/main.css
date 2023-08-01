@@ -2269,7 +2269,7 @@ in-container {
   height: 800px;
 }
 
-#responsive-image {
+.responsive-image {
   display: none;
 }
 
