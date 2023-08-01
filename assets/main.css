@@ -2942,4 +2942,8 @@ COL-titles {
     padding-left: 40rem;
     padding-top: 2rem;
   }
+
+  COL-titles {
+    margin-top: .5rem;
+  }
 }
