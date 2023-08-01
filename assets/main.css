@@ -522,6 +522,7 @@ product-card img.hero {
 }
 a.product-item{
   text-decoration: none;
+  width: 300px;
 }
 
 .atc-btn-form{
