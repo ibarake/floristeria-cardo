@@ -725,6 +725,13 @@ hero-title {
 }
 
 /* COLLECTION LIST STYLES */
+
+cont-amg {
+  display: flex;
+  margin: 1rem 0;
+  justify-content: space-around;
+}
+
 collection-list {
   position: relative;
   padding: 96px 0 0 0;
@@ -1725,8 +1732,8 @@ sort-by {
   align-items: center;
   gap: 10px;
   border-radius: 8px;
-  border: 1px solid var(--lino-2, #EFE4CF);
-  background: var(--lino, #F7F0E2);
+  border: 1px solid var(--main-linen);
+  background: var(--main-color);
   margin-left: 15px;
 }
 
@@ -1756,6 +1763,11 @@ filter label {
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
+    font-family: NewYork;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .filter-element {
@@ -1802,6 +1814,12 @@ filter-drawer{
   topbar{
     grid-template-columns: 100%;
   }
+
+  top-drawer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
   sort-by{
     display: none;
   }
@@ -1816,10 +1834,64 @@ filter-drawer{
     background-color: var(--main-white);
     bottom: -1000px;
     transition: all 300ms ease-out;
+    border-radius: 8px;
+    padding: 10px;
   }
+
+  span-filtros{
+    color: var(--main-olive);
+  }
+
+  .close-filter-drawer{
+    border-radius: 55%;
+    border: none;
+    background-color: transparent;
+    width: 67px;
+  }
+
+  .filter-group-display__erase input[type="submit"] {
+    display: flex;
+    width: 150px;
+    height: 40px;
+    padding: 10px 80px;
+    justify-content: center;
+    text-align: center;
+    color: var(--main-olive);
+    border-radius: 8px;
+    border: none;
+  }
+
+  .filter-group-display__submit input[type="submit"] {
+    display: flex;
+    width: 150px;
+    height: 40px;
+    padding: 10px 80px;
+    justify-content: center;
+    border-radius: 8px;
+    background: var(--main-olive);
+    color: var(--main-white);
+    border: none;
+  }
+
   .filter-drawer-btn{
     display: block;
+    display: flex;
+    width: 111px;
+    height: 32px;
+    padding: 4px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    border: 1px solid var(--main-linen);
+    background: var(--main-color);
+    color: var(--main-olive);
   }
+
+  filter-aplicar{
+    display: flex;
+  }
+
   product-grid{
     grid-template-columns: 47% 47%;
   }
@@ -2462,7 +2534,7 @@ title-add-combo {
   }
 
   form {
-    width: 100%;
+    width: 95%;
     flex-direction: column;
     align-items: flex-start;
   }
@@ -2619,12 +2691,6 @@ container-resumen{
   margin-right: 5rem;
   margin-top: 7.5rem;
 }
-
-
-/*.cart-item-image {
-  width: 200px;
-  height: 200px;
-}*/
 
 met-pagos{
   display: flex; 
