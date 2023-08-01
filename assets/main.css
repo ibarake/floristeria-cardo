@@ -911,10 +911,6 @@ card-product-info {
   height: 100%;
 }
 
-.card-width {
-  width: 300px;
-}
-
 card-footer {
   display: flex;
   flex-direction: row;
