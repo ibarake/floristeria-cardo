@@ -2272,7 +2272,7 @@ in-container {
   display: none;
 }
 
-.responsive-image-2 {
+#responsive-image-2 {
   display: none;
 }
 
@@ -2327,7 +2327,7 @@ in-container {
     display: block;
   }
 
-  .responsive-image-2 {
+  #responsive-image-2 {
     display: block;
   }
 }
