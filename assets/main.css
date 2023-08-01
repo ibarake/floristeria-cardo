@@ -2289,7 +2289,7 @@ product-page {
   display: block;
   text-decoration: none;
   color: var(--main-black);
-  width: fit-content;
+  width: 100%;
 }
 
 .image-product{
