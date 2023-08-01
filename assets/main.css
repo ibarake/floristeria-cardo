@@ -2810,6 +2810,7 @@ collection-slider-2 {
   background-color: var(--main-white);
   border-radius: 8px;
   max-width: 300px;
+  margin-right: 20px;
 }
 
 image-picker {
