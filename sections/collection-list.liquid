@@ -23,7 +23,7 @@
     </collection-title>
     <div class="slider-2">
       {% for collection in section.settings.collection_list %}
-        <a class="collection-item-link" href="{{ collection.url }}">
+        <a class="collection-item-link" href="{{ collection.url }}" style="text-decoration: none;">
           {% include 'collection-card', collection: collection %}
         </a>
       {% endfor %}
