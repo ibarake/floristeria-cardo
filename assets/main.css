@@ -2817,8 +2817,8 @@ image-picker {
   display: flex;
   border-top-right-radius: 8px;
   border-top-left-radius: 8px;
-  height: 220px;
-  width: 300px;
+  height: auto;
+  width: 100%;
 }
 
 COL-titles {
