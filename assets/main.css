@@ -969,6 +969,7 @@ card-footer {
 .price{
   color: var(--main-black);
   padding-right: 3rem;
+  margin-top: 3rem;
 }
 
 .card-product-title{
