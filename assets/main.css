@@ -865,7 +865,11 @@ product-card {
   flex-direction: column;
   z-index: 20;
 }
-
+.product-card-image{
+  height: 256px;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
 product-card:hover {
   transform: scale(1.05);
   transition: all 100ms ease-out;
