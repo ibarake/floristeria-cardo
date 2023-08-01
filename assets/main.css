@@ -871,7 +871,7 @@ product-card {
   object-position: 50% 50%;
 }
 
-card-product-title{
+.card-product-title{
   min-height: 50px;  
 }
 
