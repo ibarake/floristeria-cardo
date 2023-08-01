@@ -2638,11 +2638,15 @@ container-cart-item{
   font-size: 32px;
 }
 
+responsive-container {
+  margin-top: 3rem;
+}
+
 cart-item {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   width: 90%;
   gap: 15px;
   margin: 45px 0px;
