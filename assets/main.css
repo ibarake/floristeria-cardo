@@ -2828,6 +2828,7 @@ cart-footer{
   .cart {
     flex-direction: column;
     justify-content: flex-start;
+    width: 106%;
   }
 
   .container-resumen {
