@@ -31,7 +31,7 @@
     </hero-buttons>
   </inline-half-container>
   <inline-half-container class="right">
-    <products-container class="slider">
+    <products-container class="">
       {% for hero-product in section.settings['hero-collection'].products %}
         <a class="product-item" href="{{ hero-product.url }}">
           {% include 'product-card',
