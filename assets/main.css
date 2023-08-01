@@ -1845,7 +1845,7 @@ filter-drawer{
 
   .filter-group-display__erase input[type="submit"] {
     display: flex;
-    width: 170px;
+    width: 150px;
     height: 40px;
     padding: 10px 80px;
     justify-content: center;
@@ -1857,7 +1857,7 @@ filter-drawer{
 
   .filter-group-display__submit input[type="submit"] {
     display: flex;
-    width: 170px;
+    width: 150px;
     height: 40px;
     padding: 10px 80px;
     justify-content: center;
