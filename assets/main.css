@@ -2268,7 +2268,7 @@ in-container {
   height: 800px;
 }
 
-.responsive-image {
+#responsive-image {
   display: none;
 }
 
@@ -2323,7 +2323,7 @@ in-container {
     display: none;
   }
 
-  .responsive-image {
+  #responsive-image {
     display: block;
   }
 
