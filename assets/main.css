@@ -49,10 +49,15 @@ p {
   }
 }
 
-@media only screen and (max-width: 1024px) and (min-width: 768px) {
+@media only screen and (width: 1024px) and (min-width: 768px) {
   .page-width {
     width: 850px;
   }
+
+  product-grid {
+    grid-template-columns: 30% 30% 30%;
+  }
+
 }
 
 :root {
