@@ -53,10 +53,6 @@ p {
   .page-width {
     width: 850px;
   }
-
-  product-grid {
-    grid-template-columns: 30% 30% 30%;
-  }
 }
 
 :root {
@@ -1744,7 +1740,7 @@ content{
 
 product-grid{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 30% 30% 30%;
   gap: 20px;
 }
 
