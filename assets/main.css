@@ -56,7 +56,7 @@ p {
 
   product-grid {
     grid-template-columns: 31% 31% 31%;
-}
+  }
 }
 
 :root {
