@@ -832,6 +832,7 @@ collection-slider::-webkit-scrollbar {
     margin-right: 0px;
     margin-left: 0px;
     justify-content: flex-start;
+    margin: 0;
   }
 }
 
