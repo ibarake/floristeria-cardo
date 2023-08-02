@@ -2513,6 +2513,10 @@ container-title {
   color: var(--main-olive);
 }
 
+pc-title subtitulo-1 {
+  margin: 5px 0;
+}
+
 .add-t-cart {
   display: flex;
   flex-direction: row;
