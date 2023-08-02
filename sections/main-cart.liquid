@@ -154,6 +154,16 @@
             });
 
             hiddenTextarea.value = notes.join('. ');
+
+                  const res = await fetch('/cart/update.js', {
+        method:'post',
+        headers: {
+          Accept: 'application/json',
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({updates: {[key]: newQuantity}})
+      })
+
           });
         });
       });
