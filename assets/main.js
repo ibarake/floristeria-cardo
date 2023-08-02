@@ -265,7 +265,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var hiddenTextarea = document.querySelector('textarea[name="note"]');
 
   textareas.forEach(function(textarea) {
-    textarea.addEventListener('input', function() {
+    textarea.addEventListener('keyup', function() {
       var notes = [];
       
       textareas.forEach(function(ta) {
@@ -278,6 +278,7 @@ document.addEventListener('DOMContentLoaded', function() {
       });
 
       hiddenTextarea.value = notes.join('. ');
+      console.log(notes)
     });
   });
 });
