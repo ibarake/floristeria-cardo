@@ -174,7 +174,12 @@
             });
 
             hiddenTextarea.value = notes.join('. ');
+            try{
             jQuery.post(window.Shopify.routes.root + 'cart/update.js', { note: hiddenTextarea.value });
+            console.log('post')
+            } catch {
+              console.log('no post')
+            }
           });
         });
       });
