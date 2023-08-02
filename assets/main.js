@@ -267,8 +267,9 @@ document.addEventListener('DOMContentLoaded', function() {
   textareas.forEach(function(textarea) {
     textarea.addEventListener('keyup', function() {
       var notes = [];
-      
-      textareas.forEach(function(ta) {
+      console.log(notes)
+      console.log('hello')
+      textareas.forEach((ta) => {
         var productTitle = ta.closest('cart-item, cart-item-responsive').querySelector('.pc-title').innerText;
         var note = ta.value;
         
