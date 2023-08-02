@@ -2772,7 +2772,7 @@ cart-footer{
 /* BANNER 2 STYLES */
 
 con-t {
-  width: 45%;
+  width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
