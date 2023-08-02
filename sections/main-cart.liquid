@@ -141,9 +141,6 @@
         var textareas = document.querySelectorAll('.popup-content textarea');
         var hiddenTextarea = document.querySelector('textarea[name="note"]');
 
-        hiddenTextarea.addEventListener('keyup', () => {
-          console.log(e.target.value)
-        })
         textareas.forEach(function(textarea) {
           textarea.addEventListener('keyup', function() {
             var notes = [];
