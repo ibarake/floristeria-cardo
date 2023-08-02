@@ -813,7 +813,7 @@ collection-slider::-webkit-scrollbar {
 }
 
 @media only screen and (max-width: 768px) {
-  a.product-item{
+  container-4products a.product-item{
     width: 45%;
   }
   
