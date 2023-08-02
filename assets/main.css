@@ -49,6 +49,16 @@ p {
   }
 }
 
+@media only screen and (min-width: 1024px) {
+  .page-width {
+    width: 850px;
+  }
+
+  product-grid {
+    grid-template-columns: 31% 31% 31%;
+  }
+}
+
 :root {
   --main-color: #f7f0e2;
   --main-dark-color: #fefaf7;
@@ -2156,7 +2166,8 @@ address {
   }
 
   info-container {
-    display: block;
+    display: grid;
+    margin-left: 0;
   }
 
   phone {
@@ -2222,7 +2233,7 @@ address {
   }
 
   main-container {
-    height: 420px;
+    height: 500px;
   }
 }
 
@@ -2337,7 +2348,7 @@ in-container {
 
   in-container {
     flex-direction: column-reverse;
-    margin: 5rem 0;
+    margin: 7rem 0;
   }
 
   .button-proc {
@@ -2349,8 +2360,7 @@ in-container {
   }
 
   container-flor1-1 {
-    margin-top: -48rem;
-    margin-right: -3rem;
+    margin-top: -35rem;
   }
 
   container-flor3-1 {
