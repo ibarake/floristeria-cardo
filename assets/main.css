@@ -2044,6 +2044,7 @@ info-container {
   display: flex;
   justify-content: center;
   margin-left: 8rem;
+  z-index: 1;
 }
 
 phone {
