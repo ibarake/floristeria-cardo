@@ -2043,6 +2043,7 @@ info-container {
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-left: 8rem;
 }
 
 phone {
