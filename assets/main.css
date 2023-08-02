@@ -2777,7 +2777,7 @@ con-t {
   justify-content: center;
   flex-direction: column;
   z-index: 9999;
-  padding: 20% 5% 20% 20%;
+  padding: 20% 0% 20% 20%;
 }
 
 main-ba-container {
@@ -2787,6 +2787,7 @@ main-ba-container {
   align-items: center;
   grid-template-columns: 40% 55%;
   background-color: #F7F0E2;
+  gap: 5%;
 }
 
 #title-ba-1 {
