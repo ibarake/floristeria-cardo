@@ -260,33 +260,6 @@ function addCartDrawerListeners() {
 
 addCartDrawerListeners();
 
-document.addEventListener('DOMContentLoaded', function() {
-  var textareas = document.querySelectorAll('.popup-content textarea');
-  var hiddenTextarea = document.querySelector('textarea[name="note"]');
-
-  hiddenTextarea.addEventListener('keyup', () => {
-    console.log(e.target.value)
-  })
-  textareas.forEach(function(textarea) {
-    textarea.addEventListener('keyup', function() {
-      var notes = [];
-      console.log(notes)
-      console.log('hello')
-      textareas.forEach((ta) => {
-        var productTitle = ta.closest('cart-item, cart-item-responsive').querySelector('.pc-title').innerText;
-        var note = ta.value;
-        
-        if (note) {
-          notes.push(productTitle + ': ' + note);
-        }
-      });
-
-      hiddenTextarea.value = notes.join('. ');
-      console.log(notes)
-    });
-  });
-});
-
 
 
 //PRODUCT PAGE QUANTITY
