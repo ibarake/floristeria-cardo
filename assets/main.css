@@ -2864,8 +2864,8 @@ COL-titles {
 
 @media only screen and (max-width: 768px) {
   main-ba-container {
-    flex-direction: column;
-    justify-content: center;
+    grid-template-columns: 1fr;
+    justify-items: center;
     align-items: center;
   }
 
