@@ -55,7 +55,7 @@ p {
   }
 
   product-grid {
-    grid-template-columns: 31% 31% 31%;
+    grid-template-columns: 200px repeat(auto-fill, 100px) 300px;;
   }
 }
 
