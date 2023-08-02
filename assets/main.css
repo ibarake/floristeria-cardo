@@ -1778,6 +1778,7 @@ filter input[type=checkbox] + label {
   display: block;
   border: solid 1px var(--gray-light);
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .filter-form input[type=checkbox]:checked + label {
