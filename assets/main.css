@@ -2772,11 +2772,12 @@ cart-footer{
 /* BANNER 2 STYLES */
 
 con-t {
-  width: 100%;
+  width: 90%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   z-index: 9999;
+  padding: 10%
 }
 
 main-ba-container {
