@@ -137,6 +137,26 @@
       </span>
     </cart-footer>
     <script>
+      const noteButtons = document.querySelectorAll('.cart-note');
+
+            noteButtons.forEach(function(button) {
+              button.addEventListener('click', function(e) {
+
+                const popup = this.nextElementSibling;
+
+                if (popup.classList.contains('open')) {
+                  // If the popup is currently open, close it
+                  popup.style.height = '0px';
+                  popup.classList.remove('open');
+                } else {
+                  // If the popup is currently closed, open it
+                  popup.style.height = 'auto';
+                  popup.classList.add('open');
+                }
+
+              });
+            });
+
             document.addEventListener('DOMContentLoaded', function() {
         var textareas = document.querySelectorAll('.popup-content textarea');
         var hiddenTextarea = document.querySelector('textarea[name="note"]');
@@ -167,26 +187,6 @@
           });
         });
       });
-
-            const noteButtons = document.querySelectorAll('.cart-note');
-
-            noteButtons.forEach(function(button) {
-              button.addEventListener('click', function(e) {
-
-                const popup = this.nextElementSibling;
-
-                if (popup.classList.contains('open')) {
-                  // If the popup is currently open, close it
-                  popup.style.height = '0px';
-                  popup.classList.remove('open');
-                } else {
-                  // If the popup is currently closed, open it
-                  popup.style.height = 'auto';
-                  popup.classList.add('open');
-                }
-
-              });
-            });
     </script>
   </section>
 {% endform %}
