@@ -24,7 +24,7 @@
   <collection-slider-2 class="drag-scroll">
     {% for block in section.blocks %}
       <card-ff>
-        <a href=" {{ block.settings.tag-url }} " id="fgh">
+        <a href=" {{ block.settings.tag-url }} " id="fgh" class="grow">
           <image-picker>
             {{ block.settings['COL-image'] | img_tag: block.settings['COL-image'].alt, 'col-card-image', '300x256' }}
           </image-picker>
