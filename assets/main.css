@@ -2783,6 +2783,7 @@ item-info {
 .cart-note {
   display: flex;
   cursor: pointer;
+  color: var(--main-olive);
 }
 
 #di {
@@ -2810,6 +2811,10 @@ cart-footer{
     height: 3rem;
   }
 
+  .cart-note {
+    width: 125%;
+  }
+  
   cart-footer{
     display: flex;
     flex-direction: row;
