@@ -1755,6 +1755,7 @@ sort-by {
   align-items: center;
   justify-content: flex-end;
   gap: 5px;
+  cursor: pointer;
 }
 
 #sort-by{
