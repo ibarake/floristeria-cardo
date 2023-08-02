@@ -2218,10 +2218,11 @@ address {
 /* POLITICAS DE ENVIO STYLES */
 
 buttons-container {
-  display: flex;
-  width: 35%;
-  justify-content: space-evenly;
-  margin-top: 2rem;
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+    margin-top: 2rem;
 }
 
 .ver-por-ocasion {
