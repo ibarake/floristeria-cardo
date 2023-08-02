@@ -55,7 +55,9 @@ p {
   }
 
   product-grid {
-    grid-template-columns: 31% 31% 31%;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    gap: 20px;
   }
 }
 
