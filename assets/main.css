@@ -2409,7 +2409,7 @@ product-page {
 
 product-information {
   width: 45%;
-  z-index: 9999;
+  z-index: 2;
 }
 
 .flor11-2 {
