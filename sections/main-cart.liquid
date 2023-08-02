@@ -40,7 +40,7 @@
             </responsive-container>
             <p class="subtitulo-4 price">{{ item.product.price | money_with_currency }}</p>
 
-            <a id="remove" href="{{ item.url_to_remove }}">{% render 'delete-cart' %}</a>
+            <a id="remove" class="grow" href="{{ item.url_to_remove }}">{% render 'delete-cart' %}</a>
           </cart-item>
           <cart-item-responsive data-item-key="{{ item.key }}">
             {{ item.image | img_tag: item.image.alt, '', '124x124' }}
@@ -125,7 +125,7 @@
           </cart-total>
         </summary>
       </cart-info>
-      <input type="submit" name="checkout" class="button-cart subtitulo-2" value="Realizar Compra">
+      <input type="submit" name="checkout" class="button-cart subtitulo-2 grow" value="Realizar Compra">
     </container-resumen>
     <cart-footer>
       <span class="ft-subtotal">
@@ -133,7 +133,7 @@
         <p class="price subtitulo-3" id="gd">{{ cart.total_price | money_with_currency }}</p>
       </span>
       <span class="button-comprar-responsive">
-        <input type="submit" name="checkout" class="button-cart subtitulo-4" value="Realizar Compra">
+        <input type="submit" name="checkout" class="button-cart subtitulo-4 grow" value="Realizar Compra">
       </span>
     </cart-footer>
     <script>
