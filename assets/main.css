@@ -2155,7 +2155,8 @@ address {
   }
 
   info-container {
-    display: block;
+    display: grid;
+    margin-left: 0;
   }
 
   phone {
