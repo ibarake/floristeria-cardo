@@ -2065,6 +2065,7 @@ information-container {
 right-sobre {
   width: 30%;
   margin: 0 3rem 0 3rem;
+  z-index: 1;
 }
 
 #titulo-3 {
