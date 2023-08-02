@@ -1740,7 +1740,7 @@ content{
 
 product-grid{
   display: grid;
-  grid-template-columns: 30% 30% 30%;
+  grid-template-columns: 200px 200px 200px;
   gap: 20px;
 }
 
