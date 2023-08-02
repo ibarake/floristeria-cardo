@@ -79,7 +79,7 @@
             <a href="{{ item.url_to_remove }}">{% render 'delete-cart' %}</a>
           </cart-item-responsive>
         {% endfor %}
-        <textarea name="note" form="cart" class="hidden"></textarea>
+        <textarea name="note" form="cart" value="{{ cart.note }}"></textarea>
       {% endif %}
       <add-combo>
         <title-add-combo>
