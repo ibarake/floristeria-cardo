@@ -2545,6 +2545,7 @@ container-title {
   border-radius: 8px;
   cursor: pointer;
   height: 2.7rem;
+  color: var(--main-olive);
 }
 
 #atc {
