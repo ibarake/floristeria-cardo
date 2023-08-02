@@ -137,12 +137,12 @@
       </span>
     </cart-footer>
     <script>
-      var noteButtons = document.querySelectorAll('.cart-note');
+      const noteButtons = document.querySelectorAll('.cart-note');
 
       noteButtons.forEach(function(button) {
         button.addEventListener('click', function(e) {
 
-          var popup = this.nextElementSibling;
+          const popup = this.nextElementSibling;
 
           if (popup.classList.contains('open')) {
             // If the popup is currently open, close it
