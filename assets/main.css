@@ -308,7 +308,6 @@ nav ul li {
   padding: 10px 15px;
   border-radius: 8px;
   text-decoration: none;
-  color: var(--main-olive);
 }
 
 .add-to-cart:hover {
@@ -2545,6 +2544,7 @@ container-title {
   border-radius: 8px;
   cursor: pointer;
   height: 2.7rem;
+  color: var(--main-olive);
 }
 
 #atc {
