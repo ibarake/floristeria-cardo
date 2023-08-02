@@ -682,6 +682,11 @@ hero-title {
   hero-title {
     text-align: center;
   }
+
+  procuts-container {
+    margin-left: 1rem;
+  }
+  
   hero-buttons {
     display: flex;
     flex-direction: row;
