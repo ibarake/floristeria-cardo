@@ -1015,6 +1015,7 @@ card-footer {
   background-color: var(--main-color);
   padding: 5px;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 #order-vertical-btn path{
@@ -1026,6 +1027,7 @@ card-footer {
   background-color: transparent;
   padding: 5px;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 #order-horizontal-btn path{
