@@ -19,7 +19,7 @@
               </button-note>
               <div class="popup">
                 <div class="popup-content">
-                  <textarea id="note" rows="4" cols="40"></textarea>
+                  <textarea id="note" name="attributes[{{ item.product.title }}]" rows="4" cols="40"></textarea>
                 </div>
               </div>
             </item-info>
@@ -67,14 +67,20 @@
               </button-note>
               <div class="popup">
                 <div class="popup-content">
-                  <textarea id="note" class="subtitulo-2" rows="4" cols="40"></textarea>
+                  <textarea
+                    id="note"
+                    name="attributes[{{ item.product.title }}]"
+                    class="subtitulo-2"
+                    rows="4"
+                    cols="40"
+                  ></textarea>
                 </div>
               </div>
             </item-info>
             <a href="{{ item.url_to_remove }}">{% render 'delete-cart' %}</a>
           </cart-item-responsive>
         {% endfor %}
-        <textarea name="attributes[{{ item.product.title }}]" form="cart" class="hidden"></textarea>
+        <textarea name="note" form="cart" class="hidden"></textarea>
       {% endif %}
       <add-combo>
         <title-add-combo>
