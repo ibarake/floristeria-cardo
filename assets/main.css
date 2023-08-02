@@ -1403,6 +1403,7 @@ contacto h1 {
 
 informacion {
   width: 42%;
+  z-index: 1;
 }
 
 cuadro {
