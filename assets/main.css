@@ -53,7 +53,7 @@ p {
   .page-width {
     width: 850px;
   }
-  
+
 }
 
 :root {
@@ -1926,7 +1926,9 @@ filter-drawer{
   }
 
   product-grid{
-    grid-template-columns: 47% 47%;
+    margin-top: 1rem;
+    grid-template-columns: 42% 42%;
+    justify-content: center;
   }
 }
 
