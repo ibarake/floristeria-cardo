@@ -166,10 +166,10 @@
             var notes = [];
             textareas.forEach((ta) => {
               var productTitle = ta.closest('cart-item, cart-item-responsive').querySelector('.pc-title').innerText;
-              var note = ta.value;
+              var noted = ta.value;
 
               if (note) {
-                notes.push(productTitle + ': ' + note);
+                notes.push(productTitle + ': ' + noted);
               }
             });
 
