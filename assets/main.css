@@ -2513,7 +2513,7 @@ container-title {
   color: var(--main-olive);
 }
 
-pc-title subtitulo-1 {
+.pc-title .subtitulo-1 {
   margin: 5px 0;
 }
 
