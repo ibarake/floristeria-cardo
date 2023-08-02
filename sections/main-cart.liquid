@@ -177,11 +177,6 @@
             jQuery.post(window.Shopify.routes.root + 'cart/update.js', { note: hiddenTextarea.value });
           });
         });
-
-        hiddenTextarea.addEventListener('input', (e) => {
-          console.log('hello')
-          jQuery.post(window.Shopify.routes.root + 'cart/update.js', { note: hiddenTextarea.value });
-        })
       });
     </script>
   </section>
