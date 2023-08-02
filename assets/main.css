@@ -2772,12 +2772,12 @@ cart-footer{
 /* BANNER 2 STYLES */
 
 con-t {
-  width: 90%;
+  width: 80%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   z-index: 9999;
-  padding: 10%
+  padding: 20%
 }
 
 main-ba-container {
@@ -2785,7 +2785,7 @@ main-ba-container {
   height: 500px;
   display: grid;
   align-items: center;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 40% 60%;
   background-color: #F7F0E2;
 }
 
