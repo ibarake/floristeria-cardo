@@ -2800,9 +2800,9 @@ main-ba-container {
 buttons-ba-container {
   display: flex;
   margin-top: 2rem;
-  margin-left: -25px;
-  justify-content: space-evenly;
-  width: 115%;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 30px;
 }
 
 con-wf {
