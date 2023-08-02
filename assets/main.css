@@ -2834,7 +2834,7 @@ image-picker {
 COL-titles {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   margin-left: 1rem;
   margin-top: 1rem;
 }
