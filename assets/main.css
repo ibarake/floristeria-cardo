@@ -1066,7 +1066,7 @@ products-4-item {
   flex-direction: row;
   align-items: center;
   position: absolute;
-  right: -175px;
+  right: -150px;
   color: var(--main-olive);
 }
 
