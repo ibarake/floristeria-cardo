@@ -301,6 +301,7 @@ nav ul li {
   padding: 10px 15px;
   border-radius: 8px;
   text-decoration: none;
+  color: var(--main-olive);
 }
 
 .add-to-cart:hover {
