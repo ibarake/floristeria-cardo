@@ -2499,6 +2499,7 @@ container-buttons {
   background-color: var(--main-linen);
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
+  cursor: pointer;
 }
 
 .button-minus {
@@ -2511,6 +2512,7 @@ container-buttons {
   background-color: var(--main-linen);
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
+  cursor: pointer;
 }
 
 quantity {
