@@ -2827,9 +2827,8 @@ cart-footer{
     display: none;
   }
   cart-item-responsive img{
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
+    width: 130px;
+    height: 150px;
   }
   cart-item{
     display:none;
