@@ -2785,8 +2785,8 @@ main-ba-container {
   height: 500px;
   display: grid;
   align-items: center;
-  grid-template-columns: 40% 60%;
-  gap: 50px
+  grid-template-columns: 40% 55%;
+  gap: 5%;
   background-color: #F7F0E2;
 }
 
