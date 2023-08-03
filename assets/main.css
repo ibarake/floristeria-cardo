@@ -2832,106 +2832,65 @@ cart-item-responsive{
 cart-footer{
   display: none;
 }
-@media (max-width: 768px) {
-  .popup-content textarea {
-    width: 85%;
-    height: 3rem;
+@media (max-width: 769px)and (max-width: 1024px) {
+  .popup {
+    /* Estilos para la ventana emergente (popup) */
+    overflow: hidden;
+    transition: height 0.5s;
+    height: 0px;
   }
 
-  .cart-note {
-    width: 135%;
+  .popup.open {
+    height: auto;
   }
-  
-  cart-footer{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-    position: fixed;
-    bottom: 0;
-    background-color: var(--main-white);
-    z-index: 99;
-    width: 100%;
-    
-  }
-  container-resumen{
-    display: none;
-  }
-  cart-item-responsive img{
-    width: 130px;
-    height: 130px;
-  }
-  cart-item{
-    display:none;
-  }
-  cart-item-responsive {
-    width: 85%;
-    display: flex;
-    flex-direction: row;
-  }
-  cart-item-responsive .subtitulo-1{
-    font-size: 14px;
-    line-height: 16px;
-    margin: 0;
-  }
-  cart-item-responsive .price{
-    margin: 0;
-    font-size: 12px;
-  }
+
   container-cart-item {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 2rem; /* Ajusta el margen izquierdo para tablets */
   }
-  
 
-  #title-cart{
-    font-size: 24px;
+  #title-cart {
+    font-size: 28px; /* Reduzca el tamaño del título para tablets */
+  }
+
+  cart-item {
+    flex-direction: column; /* Cambia la dirección para una disposición vertical */
+    align-items: center;
+    width: 100%; /* Ocupa el ancho completo */
+    gap: 10px;
+    margin: 30px 0; /* Ajusta el margen superior e inferior */
+  }
+
+  cart-info {
+    /* ... Tus estilos para cart-info ... */
   }
 
   .cart {
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 106%;
+    flex-direction: column; /* Cambia la dirección para una disposición vertical */
+    align-items: center;
+    /* ... Otros estilos para la sección cart ... */
   }
 
-  .container-resumen {
-    width: 100%;
-    margin: 1rem 0;
-  }
-  add-combo{
-    display:none;
-  }
-  cart-item-responsive .button-minus, cart-item-responsive .button-plus {
-    height: 1.5rem;
-    width: 1.5rem;
+  metodo svg {
+    width: 70px; /* Reduzca el tamaño del svg del método de pago */
   }
 
-  cart-item-responsive .quantity-field {
-    height: 1.376rem;
-    width: 1.5rem;
+  summary {
+    /* ... Tus estilos para summary ... */
   }
 
-  item-info {
-    width: 25%;
-    margin: 0 1rem 2.5rem;
+  summary-cart-item {
+    /* ... Tus estilos para summary-cart-item ... */
   }
 
-  #gf {
-    text-transform: uppercase;
-    margin: 1rem 0 0 0;
-    color: var(--main-gray);
+  cart-total {
+    /* ... Tus estilos para cart-total ... */
   }
 
-  quantity {
-    margin: 2px 0;
+  #precio-cart {
+    font-size: 14px; /* Reduzca el tamaño de la fuente para el precio */
+    margin-left: 1rem; /* Ajusta el margen izquierdo */
   }
-
-  #gd {
-    margin: 0;
-  }
-}
-
+  
 @media (max-width: 480px) {
   .container-cart-item {
     margin-left: 1rem;
@@ -2946,91 +2905,6 @@ cart-footer{
     flex-direction: column;
   }
 }
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  main-pr-container {
-    flex-direction: column-reverse;
-  }
-
-  #atc {
-    padding: 0;
-  }
-
-  add-combo {
-    display: none;
-  }
-
-  product-information {
-    width: 90%;
-    margin-left: 1rem;
-  }
-
-  form {
-    width: 95%;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .add-t-cart {
-    margin: 1.5rem 0;
-  }
-
-  .quantity-field {
-    width: 25%;
-  }
-
-  .payment-1 button {
-    padding: 0 37px;
-    display: flex;
-    justify-content: center;
-  }
-
-  .cc {
-    flex-direction: column;
-    padding: 0;
-  }
-
-  #pr-description {
-    display: none;
-  }
-
-  .responsive-image {
-    display: block;
-    width: 310px;
-    height: 360px;
-    margin-bottom: 1rem;
-  }
-
-  #responsive-image-2 {
-    width: 310px;
-    height: 360px;
-  }
-
-  product-page {
-    display: none;
-  }
-
-  #title-recommended {
-    text-align: center;
-  }
-
-  #description-product {
-    display: block;
-    border-top: 1px solid var(--main-linen);
-    margin: 0;
-    padding: 1rem 20px;
-    width: 86%;
-  }
-
-  .flor11-2 {
-    right: -150px;
-    top: -25px;
-  }
-  
-  .flor22-3 {
-    display: none;
-  }
-
 
 /* BANNER 2 STYLES */
 
