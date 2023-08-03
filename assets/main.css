@@ -2322,7 +2322,7 @@ in-container {
   display: none;
 }
 
-#responsive-image-2 {
+.responsive-image-2 {
   display: none;
 }
 
@@ -2379,7 +2379,7 @@ in-container {
     height: 345px;
   }
 
-  #responsive-image-2 {
+  .responsive-image-2 {
     display: block;
     border-radius: 8px;
   }
@@ -2638,7 +2638,7 @@ title-add-combo {
     margin-bottom: 1rem;
   }
 
-  #responsive-image-2 {
+  .responsive-image-2 {
     width: 310px;
     height: 360px;
   }
