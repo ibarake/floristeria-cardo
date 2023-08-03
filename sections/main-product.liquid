@@ -20,11 +20,7 @@
         {{ product.price | money }}
       </h5>
       <product-page id="responsive-image">
-        <img
-          id="responsive-image-2"
-          src="{{ product.featured_image | img_url: product.featured_image.url }}"
-          alt="{{ product.featured_image.alt }}"
-        >
+        {{ product.featured_image | img_tag: product.featured_image.alt, '', '500x500' }}
       </product-page>
       <p class="subtitulo-6" id="pr-description">
         {{ product.description | strip_html }}
@@ -94,6 +90,7 @@
 </section>
 
 <script>
+  
       
     
     
@@ -340,6 +337,7 @@ const productRecommendationsSection = document.querySelector('.product-recommend
 const observer = new IntersectionObserver(handleIntersection, {rootMargin: '0px 0px 200px 0px'});
 
 observer.observe(productRecommendationsSection);
+
 
 
 
