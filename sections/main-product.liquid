@@ -1,36 +1,36 @@
 <section class="main-product">
-  <main-pr-container>
-    <div class="flor22-3">
-      {% render 'Flor-2' %}
-    </div>
-    <div class="flor11-2">
-      {% render 'Flor-1' %}
-    </div>
-    <product-page>
-      {{ product.featured_image | img_tag: product.featured_image.alt, 'image-product', '535x533' }}
-    </product-page>
-    <product-information>
-      <p class="subtitulo-3" id="pr-subtitle">
-        {{ product.collections[0].title }}
-      </p>
-      <h3 class="titulo-3" id="pr-title">
-        {{ product.title }}
-      </h3>
-      <h5 class="titulo-5" id="pr-price">
-        {{ product.price | money }}
-      </h5>
-      <product-page id="responsive-image">
-        <img
-          id="responsive-image-2"
-          src="{{ product.featured_image | img_url: product.featured_image.url }}"
-          alt="{{ product.featured_image.alt }}"
-        >
+  {% form 'product', product, class: 'product-form', novalidate: 'novalidate', id: 'pr-form-wd' %}
+    <main-pr-container>
+      <div class="flor22-3">
+        {% render 'Flor-2' %}
+      </div>
+      <div class="flor11-2">
+        {% render 'Flor-1' %}
+      </div>
+      <product-page>
+        {{ product.featured_image | img_tag: product.featured_image.alt, 'image-product', '535x533' }}
       </product-page>
-      <p class="subtitulo-6" id="pr-description">
-        {{ product.description | strip_html }}
-      </p>
-      <container-buttons>
-        {% form 'product', product, class: 'product-form', novalidate: 'novalidate', id: 'pr-form-wd' %}
+      <product-information>
+        <p class="subtitulo-3" id="pr-subtitle">
+          {{ product.collections[0].title }}
+        </p>
+        <h3 class="titulo-3" id="pr-title">
+          {{ product.title }}
+        </h3>
+        <h5 class="titulo-5" id="pr-price">
+          {{ product.price | money }}
+        </h5>
+        <product-page id="responsive-image">
+          <img
+            id="responsive-image-2"
+            src="{{ product.featured_image | img_url: product.featured_image.url }}"
+            alt="{{ product.featured_image.alt }}"
+          >
+        </product-page>
+        <p class="subtitulo-6" id="pr-description">
+          {{ product.description | strip_html }}
+        </p>
+        <container-buttons>
           <select name="id" style="display: none;">
             {% for variant in product.variants %}
               <option
@@ -59,41 +59,42 @@
           <payment class="subtitulo-2 payment-1">
             {{ form | payment_button }}
           </payment>
-        {% endform %}
-      </container-buttons>
-      <faq class="faq-container" id="description-product">
-        <question class="FAQ-title subtitulo-3">
-          <h3 class="subtitulo-3">
-            {{ section.settings['description-title'] }}
-          </h3>
-          {% render 'icon-arrow-right-dropdown' %}
-        </question>
-        <answer class="FAQ-text parrafo-2">
-          {{ product.description | strip_html }}
-        </answer>
-      </faq>
-      <container-spam>
-        {% if section.settings.envio != blank %}
-          <shipping class="extra-product">
-            {% render 'icon-transport' %}
-            <p class="subtitulo-2" id="ss">{{ section.settings.envio }}</p>
-          </shipping>
-        {% endif %}
-        {% if section.settings['info-extra'] != blank %}
-          <information class="extra-product">
-            {% render 'icon-information' %}
-            <p class="subtitulo-2" id="ss">{{ section.settings['info-extra'] }}</p>
-          </information>
-        {% endif %}
-      </container-spam>
-    </product-information>
-  </main-pr-container>
-  <add-combo>
-    {% render 'eg-frequently-bought-together' %}
-  </add-combo>
+        </container-buttons>
+        <faq class="faq-container" id="description-product">
+          <question class="FAQ-title subtitulo-3">
+            <h3 class="subtitulo-3">
+              {{ section.settings['description-title'] }}
+            </h3>
+            {% render 'icon-arrow-right-dropdown' %}
+          </question>
+          <answer class="FAQ-text parrafo-2">
+            {{ product.description | strip_html }}
+          </answer>
+        </faq>
+        <container-spam>
+          {% if section.settings.envio != blank %}
+            <shipping class="extra-product">
+              {% render 'icon-transport' %}
+              <p class="subtitulo-2" id="ss">{{ section.settings.envio }}</p>
+            </shipping>
+          {% endif %}
+          {% if section.settings['info-extra'] != blank %}
+            <information class="extra-product">
+              {% render 'icon-information' %}
+              <p class="subtitulo-2" id="ss">{{ section.settings['info-extra'] }}</p>
+            </information>
+          {% endif %}
+        </container-spam>
+      </product-information>
+    </main-pr-container>
+    <add-combo>
+      {% render 'eg-frequently-bought-together' %}
+    </add-combo>
+  {% endform %}
 </section>
 
 <script>
+  
   
   
   
@@ -179,6 +180,7 @@ const productRecommendationsSection = document.querySelector('.product-recommend
 const observer = new IntersectionObserver(handleIntersection, {rootMargin: '0px 0px 200px 0px'});
 
 observer.observe(productRecommendationsSection);
+
 
 
 
