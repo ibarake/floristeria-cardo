@@ -20,7 +20,7 @@
         {{ product.price | money }}
       </h5>
       <product-page id="responsive-image">
-        {{ product.featured_image | img_tag: product.featured_image.alt, '', '500x500' }}
+        {{ product.featured_image | img_tag: product.featured_image.alt, 'responsive-image-2', '500x500' }}"
       </product-page>
       <p class="subtitulo-6" id="pr-description">
         {{ product.description | strip_html }}
