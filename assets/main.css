@@ -550,7 +550,7 @@ inline-half-container .slider{
   display: none;
 }
 products-container {
-  display: flex;
+  display: none;
   flex-direction: row;
   flex-wrap: nowrap;
   gap: 20px;
