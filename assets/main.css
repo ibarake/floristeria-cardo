@@ -667,6 +667,10 @@ hero-title {
 }
 
 @media only screen and (max-width: 768px) {
+  inline-half-container .slider{
+  display: none;
+}
+  
   .hero-banner .card-width {
     width: 100% !important;
   }
