@@ -538,6 +538,10 @@ inline-half-container.right {
   width: 50%;
 }
 
+inline-half-container .slider{
+  display: block;
+}
+
 .overflow-auto {
   overflow-x: auto;
   cursor: grab;
