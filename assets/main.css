@@ -517,8 +517,7 @@ dropdown-mega-menu {
 
 hero-banner {
   position: relative;
-  display: flex !important;
-  flex-wrap: nowrap;
+  display: flex;
   flex-direction: row;
   gap: 50px;
   background-color: var(--main-color);
