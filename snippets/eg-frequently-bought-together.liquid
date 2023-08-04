@@ -168,6 +168,7 @@
   <script>
     
     
+    
     window.addEventListener('DOMContentLoaded', (event) => {
       window.money_format = '{{ shop.money_format }}'
       window.cart_route = '{{ routes.cart_url }}'
@@ -256,6 +257,7 @@
       }
 
       async addSelectedToCart() {
+        console.log('hello')
         const btn = this.querySelector('.fbt-btn-atc')
         btn.style.width = `${
           btn.clientWidth
@@ -348,6 +350,7 @@
     }
     customElements.define('frequently-bought-together', FrequentlyBoughtTogether)
   })
+
 
 
   </script>
