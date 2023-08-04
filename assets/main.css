@@ -2540,7 +2540,7 @@ container-title {
   justify-content: center;
   background-color: var(--main-color);
   border: 1px solid var(--main-olive);
-  padding: 10px 35px;
+  padding: 10px 60px;
   border-radius: 8px;
   cursor: pointer;
   height: 2.7rem;
@@ -2831,7 +2831,7 @@ cart-item-responsive{
 cart-footer{
   display: none;
 }
-@media (max-width: 768px) {
+@media (max-width: 769px)and (max-width: 1024px) {
   .popup-content textarea {
     width: 85%;
     height: 3rem;
@@ -2943,6 +2943,10 @@ cart-footer{
 
   .container-met-pagos {
     flex-direction: column;
+  }
+
+  #gd {
+    margin: 0;
   }
 }
 
