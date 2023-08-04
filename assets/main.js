@@ -167,12 +167,11 @@ const mouseUpHandler = function () {
 
 elements.forEach((element) => {
     element.addEventListener('mousedown', mouseDownHandler);
-    element.querySelectorAll('*').forEach((child) => {
-        child.addEventListener('mousedown', (e) => e.stopPropagation());
+    element.querySelectorAll('.product-card img').forEach((img) => {
+        img.addEventListener('mousedown', (e) => e.preventDefault());
     });
     element.style.cursor = 'grab';
 });
-
 
 
 function toggleSlide(element) {
