@@ -758,6 +758,10 @@ collection-slider {
   margin-right: -200px;
   margin-top: 50px;
 }
+.slider-2{
+  display: block;
+}
+
 collection-slider::-webkit-scrollbar {
   display: none;
 }
@@ -809,7 +813,7 @@ collection-slider::-webkit-scrollbar {
 
 @media only screen and (max-width: 768px) {
   .slider-2{
-    display: block;
+    display: none;
   }
   collection-title {
     flex-direction: column;
