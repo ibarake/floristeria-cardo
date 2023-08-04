@@ -670,7 +670,9 @@ hero-title {
   inline-half-container .slider{
   display: none;
 }
-  
+  products-container{
+    display: flex;
+  }
   .hero-banner .card-width {
     width: 100% !important;
   }
