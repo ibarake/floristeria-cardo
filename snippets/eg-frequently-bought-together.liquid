@@ -169,6 +169,7 @@
     
     
     
+    
     window.addEventListener('DOMContentLoaded', (event) => {
       window.money_format = '{{ shop.money_format }}'
       window.cart_route = '{{ routes.cart_url }}'
@@ -262,7 +263,7 @@
         btn.style.width = `${
           btn.clientWidth
         }px`
-
+        console.log(btn)
         btn.innerHTML = `
                 <div class="spinner-border" role="status">
                     <span class="visually-hidden">Loading...</span>
@@ -350,6 +351,7 @@
     }
     customElements.define('frequently-bought-together', FrequentlyBoughtTogether)
   })
+
 
 
 
