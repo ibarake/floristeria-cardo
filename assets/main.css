@@ -2900,7 +2900,7 @@ COL-titles {
 
 @media only screen and (max-width: 768px) {
   main-ba-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 100%;
     justify-items: center;
     align-items: center;
   }
