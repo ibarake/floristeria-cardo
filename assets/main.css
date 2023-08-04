@@ -833,6 +833,9 @@ collection-slider::-webkit-scrollbar {
 }
 
 @media only screen and (max-width: 768px) {
+  .atc-btn-text{
+    display: none;
+  }
   collection-list .slider-2{
     display: none;
   }
