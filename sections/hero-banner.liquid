@@ -42,6 +42,17 @@
         </a>
       {% endfor %}
     </div>
+    <products-container class="overflow-auto drag-scroll">
+      {% for hero-product in section.settings['hero-collection'].products %}
+        <a class="product-item" href="{{ hero-product.url }}">
+          {% include 'product-card',
+            hero-product: hero-product,
+            atc-btn: section.settings['add-to-cart-title'],
+            classes: 'hero'
+          %}
+        </a>
+      {% endfor %}
+    </products-container>
   </inline-half-container>
 </hero-banner>
 
