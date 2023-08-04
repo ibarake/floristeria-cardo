@@ -1020,6 +1020,13 @@ card-footer {
   fill: var(--main-linen);
 }
 
+@media only screen and (max-width: 768px) {
+.card-product-title{
+  min-height: 30px;  
+}
+}
+
+
 /* PRODUCTS FAQ STYLES */
 
 .product-4 {
