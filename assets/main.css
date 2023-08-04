@@ -2911,12 +2911,12 @@ COL-titles {
 
   #title-ba-1 {
     text-align: center;
-    width: 50%;
+    width: auto;
   }
 
   #parrafo-ba-1 {
     text-align: center;
-    width: 70%;
+    width: auto;
     margin-left: -30px;
   }
 
