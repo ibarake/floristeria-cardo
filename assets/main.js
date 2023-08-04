@@ -167,7 +167,7 @@ const mouseUpHandler = function () {
 
 elements.forEach((element) => {
     element.addEventListener('mousedown', mouseDownHandler);
-    element.querySelectorAll('.product-card img').forEach((img) => {
+    element.querySelectorAll('img').forEach((img) => {
         img.addEventListener('mousedown', (e) => e.preventDefault());
     });
     element.style.cursor = 'grab';
