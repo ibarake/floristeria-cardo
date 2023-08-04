@@ -839,6 +839,9 @@ collection-slider::-webkit-scrollbar {
   container-4products a.product-item{
     width: 45%;
   }
+  product-grid a.product-item{
+    width: 100%;
+  }
   collection-title {
     flex-direction: column;
     padding: 0px 20px;
