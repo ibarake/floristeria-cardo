@@ -1027,6 +1027,11 @@ card-footer {
   .product-card-image{
   height: 200px;
 }
+  product-card .parrafo-4{
+    font-size: 9px;
+}
+    
+  }
 }
 
 
