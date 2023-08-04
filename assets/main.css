@@ -758,7 +758,7 @@ collection-slider {
   margin-right: -200px;
   margin-top: 50px;
 }
-.slider-2{
+.collection-list .slider-2{
   display: block;
 }
 
@@ -812,7 +812,7 @@ collection-slider::-webkit-scrollbar {
 }
 
 @media only screen and (max-width: 768px) {
-  .slider-2{
+  .collection-list .slider-2{
     display: none;
   }
   collection-title {
