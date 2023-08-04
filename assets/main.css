@@ -230,7 +230,7 @@ p {
 header {
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 6fr 1fr;
+  grid-template-columns: 20% 60% 20%;
   align-items: center;
   justify-content: center;
   width: 100%;
