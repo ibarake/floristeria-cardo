@@ -19,7 +19,7 @@
               </button-note>
               <div class="popup">
                 <div class="popup-content">
-                  <textarea id="note" rows="4" cols="40"></textarea>
+                  <textarea id="note" name="attributes[{{ item.product.title }}]" form="cart"></textarea>
                 </div>
               </div>
             </item-info>
@@ -38,16 +38,16 @@
                 <input type="button" value="+" class="qButton button-plus" data-field="quantity">
               </quantity>
             </responsive-container>
-            <p class="price">{{ item.product.price | money_with_currency }}</p>
+            <p class="subtitulo-4 price">{{ item.product.price | money_with_currency }}</p>
 
-            <a href="{{ item.url_to_remove }}">{% render 'delete-cart' %}</a>
+            <a id="remove" class="grow" href="{{ item.url_to_remove }}">{% render 'delete-cart' %}</a>
           </cart-item>
           <cart-item-responsive data-item-key="{{ item.key }}">
             {{ item.image | img_tag: item.image.alt, '', '124x124' }}
             <item-info>
               <p class="parrafo-4 collection-tag">{{ item.product.collections[0].title }}</p>
               <h2 class="pc-title subtitulo-1">{{ item.product.title }}</h2>
-              <p class="price">{{ item.product.price | money_with_currency }}</p>
+              <p class="price subtitulo-4">{{ item.product.price | money_with_currency }}</p>
               <quantity>
                 <input type="button" value="-" class="qButton button-minus" data-field="quantity">
                 <input
@@ -67,7 +67,12 @@
               </button-note>
               <div class="popup">
                 <div class="popup-content">
-                  <textarea id="note" rows="4" cols="40"></textarea>
+                  <textarea
+                    id="note"
+                    name="attributes[{{ item.product.title }}]"
+                    class="subtitulo-2"
+                    form="cart"
+                  ></textarea>
                 </div>
               </div>
             </item-info>
@@ -110,46 +115,70 @@
             {% for item in cart.items %}
               <summary-cart-item>
                 <span id="df" class="parrafo-3">{{ item.product.title }}</span>
-                <span class="parrafo-2">{{ item.product.price | money_with_currency }}</span>
+                <span id="di" class="subtitulo-4">{{ item.product.price | money_with_currency }}</span>
               </summary-cart-item>
             {% endfor %}
           </summary-1>
           <cart-total>
             <span class="subtitulo-2" id="subtotal-cart">Subtotal</span>
-            <span class="parrafo-1">{{ cart.total_price | money_with_currency }}</span>
+            <span class="subtitulo-4">{{ cart.total_price | money_with_currency }}</span>
           </cart-total>
         </summary>
       </cart-info>
-      <input type="submit" name="checkout" class="button-cart subtitulo-2" value="Realizar Compra">
+      <input type="submit" name="checkout" class="button-cart subtitulo-2 grow" value="Realizar Compra">
     </container-resumen>
     <cart-footer>
       <span class="ft-subtotal">
-        <p class="subtitulo-5">Subtotal</p>
-        <p class="price parrafo-1">{{ cart.total_price | money_with_currency }}</p>
+        <p class="subtitulo-4" id="gf">Subtotal</p>
+        <p class="price subtitulo-3" id="gd">{{ cart.total_price | money_with_currency }}</p>
       </span>
       <span class="button-comprar-responsive">
-        <input type="submit" name="checkout" class="button-cart subtitulo-2" value="Realizar Compra">
+        <input type="submit" name="checkout" class="button-cart subtitulo-4 grow" value="Realizar Compra">
       </span>
     </cart-footer>
     <script>
-          document.addEventListener('DOMContentLoaded', function() {
-        var noteButtons = document.querySelectorAll('.cart-note');
+      const noteButtons = document.querySelectorAll('.cart-note');
 
-        noteButtons.forEach(function(button) {
-          button.addEventListener('click', function(e) {
+            noteButtons.forEach(function(button) {
+              button.addEventListener('click', function(e) {
 
-            var popup = this.nextElementSibling;
+                const popup = this.nextElementSibling;
 
-            if (popup.classList.contains('open')) {
-              // If the popup is currently open, close it
-              popup.style.height = '0px';
-              popup.classList.remove('open');
-              console.log("close")
-            } else {
-              // If the popup is currently closed, open it
-              popup.style.height = 'auto';
-              popup.classList.add('open');
-              console.log("open");
+                if (popup.classList.contains('open')) {
+                  // If the popup is currently open, close it
+                  popup.style.height = '0px';
+                  popup.classList.remove('open');
+                } else {
+                  // If the popup is currently closed, open it
+                  popup.style.height = 'auto';
+                  popup.classList.add('open');
+                }
+
+              });
+            });
+
+        document.addEventListener('DOMContentLoaded', function() {
+        var textareas = document.querySelectorAll('.popup-content textarea');
+        var hiddenTextarea = document.querySelector('textarea[name="note"]');
+
+        textareas.forEach(function(textarea) {
+          textarea.addEventListener('keyup', function() {
+            var notes = [];
+            textareas.forEach((ta) => {
+              var productTitle = ta.closest('cart-item, cart-item-responsive').querySelector('.pc-title').innerText;
+              var noted = ta.value;
+
+              if (noted) {
+                notes.push(productTitle + ': ' + noted);
+              }
+            });
+
+            hiddenTextarea.value = notes.join('. ');
+            try{
+            jQuery.post(window.Shopify.routes.root + 'cart/update.js', { note: hiddenTextarea.value });
+            console.log('post')
+            } catch {
+              console.log('no post')
             }
           });
         });

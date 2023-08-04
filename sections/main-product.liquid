@@ -20,11 +20,7 @@
         {{ product.price | money }}
       </h5>
       <product-page id="responsive-image">
-        <img
-          id="responsive-image-2"
-          src="{{ product.featured_image | img_url: product.featured_image.url }}"
-          alt="{{ product.featured_image.alt }}"
-        >
+        {{ product.featured_image | img_tag: product.featured_image.alt, 'responsive-image-2', '500x500' }}"
       </product-page>
       <p class="subtitulo-6" id="pr-description">
         {{ product.description | strip_html }}
@@ -89,19 +85,11 @@
     </product-information>
   </main-pr-container>
   <add-combo>
-    <title-add-combo>
-      {% render 'button-plus' %}
-      <p class="subtitulo-1" id="add-combo-title">
-        {{ section.settings['agregar-combo'] }}
-      </p>
-    </title-add-combo>
+    {% render 'eg-frequently-bought-together' %}
   </add-combo>
 </section>
 
 <script>
-  
-  
-  
   
   /* FAQ DROPDOWN ANIMATION */
 document.addEventListener('DOMContentLoaded', function() {
@@ -183,6 +171,13 @@ const productRecommendationsSection = document.querySelector('.product-recommend
 const observer = new IntersectionObserver(handleIntersection, {rootMargin: '0px 0px 200px 0px'});
 
 observer.observe(productRecommendationsSection);
+
+
+
+
+
+
+
 
 
 
