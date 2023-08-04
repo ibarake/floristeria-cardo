@@ -21,6 +21,9 @@
       href="https://fonts.gstatic.com"
       crossorigin
     >
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
@@ -47,6 +50,27 @@
     {% section 'header' %}
     {{ content_for_layout }}
     {% section 'footer' %}
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.slider').slick({
+          infinite: true,
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          autoplay: true,
+          autoplaySpeed: 10000
+        });
+        $('.slider-2').slick({
+          infinite: true,
+          slidesToShow: 5,
+          slidesToScroll: 2,
+          autoplay: true,
+          autoplaySpeed: 10000
+        });
+      });
+    </script>
   </body>
   <script async src="{{ 'main.js' | asset_url }}"></script>
 </html>

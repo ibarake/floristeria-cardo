@@ -1,10 +1,4 @@
 <main-ba-container>
-  <container-flor1-2 id="asd">
-    {% render 'Flor1-2' %}
-  </container-flor1-2>
-  <container-flor2-3 class="asb">
-    {% render 'Flor2-3' %}
-  </container-flor2-3>
   <con-t>
     <h1 class="titulo-1" id="title-ba-1">
       {{ section.settings.title }}
@@ -21,7 +15,7 @@
       </a>
     </buttons-ba-container>
   </con-t>
-  <collection-slider-2 class="drag-scroll">
+  <collection-slider-2 class="slider">
     {% for block in section.blocks %}
       <card-ff>
         <a href=" {{ block.settings.tag-url }} " id="fgh">
@@ -41,8 +35,36 @@
       </card-ff>
     {% endfor %}
   </collection-slider-2>
-</main-ba-container>
+  <inline-half-container>
+    <products-container class="overflow-auto drag-scroll">
+      {% for block in section.blocks %}
+        <card-ff>
+          <a href=" {{ block.settings.tag-url }} " id="fgh">
+            <image-picker>
+              {{ block.settings['COL-image'] | img_tag: block.settings['COL-image'].alt, 'col-card-image', '300x256' }}
+            </image-picker>
+            <COL-titles>
+              <p class="subtitulo-5" id="COL-subtitle">
+                {{ block.settings['COL-subtitle'] }}
+              </p>
+              <p class="subtitulo-6" id="COL-title">
+                {{ block.settings['COL-title'] }}
+                {% render 'icon-arrow-right' %}
+              </p>
+            </COL-titles>
+          </a>
+        </card-ff>
+      {% endfor %}
+    </products-container>
+  </inline-half-container>
 
+  <container-flor1-2 id="asd">
+    {% render 'Flor1-2' %}
+  </container-flor1-2>
+  <container-flor2-3 class="asb">
+    {% render 'Flor2-3' %}
+  </container-flor2-3>
+</main-ba-container>
 {% schema %}
 {
   "name": "Banner 2",
