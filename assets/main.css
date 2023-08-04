@@ -229,10 +229,9 @@ p {
 
 header {
   position: relative;
-  display: grid;
-  grid-template-columns: 15% 70% 15%;
+  display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   width: 100%;
   background-color: var(--main-white);
   min-height: 85px;
