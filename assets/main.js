@@ -167,11 +167,12 @@ const mouseUpHandler = function () {
 
 elements.forEach((element) => {
     element.addEventListener('mousedown', mouseDownHandler);
-    element.querySelectorAll('img').forEach((img) => {
-        img.addEventListener('mousedown', (e) => e.preventDefault());
+    element.querySelectorAll('*').forEach((child) => {
+        child.addEventListener('mousedown', (e) => e.stopPropagation());
     });
     element.style.cursor = 'grab';
 });
+
 
 
 function toggleSlide(element) {
