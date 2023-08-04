@@ -813,7 +813,7 @@ collection-slider::-webkit-scrollbar {
 
 @media only screen and (max-width: 768px) {
   .collection-list .slider-2{
-    display: none;
+    display: none !important;
   }
   collection-title {
     flex-direction: column;
