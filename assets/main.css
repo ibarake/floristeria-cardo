@@ -3086,7 +3086,7 @@ COL-titles {
   padding: 5px 10px;
   border-radius: 5px;
   background-color: var(--main-color);
-  margin: 0;
+  margin: 0 16px;
 }
 
 #COL-title {
