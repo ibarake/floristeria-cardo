@@ -17,7 +17,7 @@
   </con-t>
   <collection-slider-2 class="slider">
     {% for block in section.blocks %}
-      <card-ff>
+      <card-ff class="grow">
         <a href=" {{ block.settings.tag-url }} " id="fgh">
           <image-picker>
             {{ block.settings['COL-image'] | img_tag: block.settings['COL-image'].alt, 'col-card-image', '300x256' }}
