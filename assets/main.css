@@ -30,6 +30,10 @@ p {
   margin: auto;
 }
 
+.flex {
+  display: flex;
+}
+
 .relative {
   position: relative;
 }
