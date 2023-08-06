@@ -45,14 +45,14 @@
             <input type="button" value="+" class="pq-button button-plus" data-field="quantity">
           </quantity>
           <add-to-car id="atc">
-            <button class="atc-product add-t-cart">
+            <button class="atc-product add-t-cart grow">
               {% render 'icon-cart' %}
               <p class="add-t-cart-text subtitulo-2">
                 <b> {{ section.settings['button-title'] }} </b>
               </p>
             </button>
           </add-to-car>
-          <payment class="subtitulo-2 payment-1">
+          <payment class="subtitulo-2 payment-1 grow">
             {{ form | payment_button }}
           </payment>
         {% endform %}
