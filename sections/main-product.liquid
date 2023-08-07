@@ -1,95 +1,98 @@
-<section class="main-product">
-  <main-pr-container>
-    <div class="flor22-3">
-      {% render 'Flor-2' %}
-    </div>
-    <div class="flor11-2">
-      {% render 'Flor-1' %}
-    </div>
-    <product-page>
-      {{ product.featured_image | img_tag: product.featured_image.alt, 'image-product', '535x533' }}
-    </product-page>
-    <product-information>
-      <p class="subtitulo-3" id="pr-subtitle">
-        {{ product.collections[0].title }}
-      </p>
-      <h3 class="titulo-3" id="pr-title">
-        {{ product.title }}
-      </h3>
-      <h5 class="titulo-5" id="pr-price">
-        {{ product.price | money }}
-      </h5>
-      <product-page id="responsive-image">
-        {{ product.featured_image | img_tag: product.featured_image.alt, 'responsive-image-2', '500x500' }}"
+<section>
+  <product-form class="main-product">
+    <main-pr-container>
+      <div class="flor22-3">
+        {% render 'Flor-2' %}
+      </div>
+      <div class="flor11-2">
+        {% render 'Flor-1' %}
+      </div>
+      <product-page>
+        {{ product.featured_image | img_tag: product.featured_image.alt, 'image-product', '535x533' }}
       </product-page>
-      <p class="subtitulo-6" id="pr-description">
-        {{ product.description | strip_html }}
-      </p>
-      <container-buttons>
-        {% form 'product', product, class: 'product-form', novalidate: 'novalidate', id: 'pr-form-wd' %}
-          <select name="id" style="display: none;">
-            {% for variant in product.variants %}
-              <option
-                value="{{ variant.id }}"
-                {% if variant == product.selected_or_first_available_variant %}
-                  selected="selected"
-                {% endif %}
-              >
-                {{ variant.title }} - {{ variant.price | money }}
-              </option>
-            {% endfor %}
-          </select>
-          <quantity>
-            <input type="button" value="-" class="pq-button button-minus" data-field="quantity">
-            <input readonly type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
-            <input type="button" value="+" class="pq-button button-plus" data-field="quantity">
-          </quantity>
-          <add-to-car id="atc">
-            <button class="atc-product add-t-cart grow">
-              {% render 'icon-cart' %}
-              <p class="add-t-cart-text subtitulo-2">
-                <b> {{ section.settings['button-title'] }} </b>
-              </p>
-            </button>
-          </add-to-car>
-          <payment class="subtitulo-2 payment-1 grow">
-            {{ form | payment_button }}
-          </payment>
-        {% endform %}
-      </container-buttons>
-      <faq class="faq-container" id="description-product">
-        <question class="FAQ-title subtitulo-3">
-          <h3 class="subtitulo-3">
-            {{ section.settings['description-title'] }}
-          </h3>
-          {% render 'icon-arrow-right-dropdown' %}
-        </question>
-        <answer class="FAQ-text parrafo-2">
+      <product-information>
+        <p class="subtitulo-3" id="pr-subtitle">
+          {{ product.collections[0].title }}
+        </p>
+        <h3 class="titulo-3" id="pr-title">
+          {{ product.title }}
+        </h3>
+        <h5 class="titulo-5" id="pr-price">
+          {{ product.price | money }}
+        </h5>
+        <product-page id="responsive-image">
+          {{ product.featured_image | img_tag: product.featured_image.alt, 'responsive-image-2', '500x500' }}"
+        </product-page>
+        <p class="subtitulo-6" id="pr-description">
           {{ product.description | strip_html }}
-        </answer>
-      </faq>
-      <container-spam>
-        {% if section.settings.envio != blank %}
-          <shipping class="extra-product">
-            {% render 'icon-transport' %}
-            <p class="subtitulo-2" id="ss">{{ section.settings.envio }}</p>
-          </shipping>
-        {% endif %}
-        {% if section.settings['info-extra'] != blank %}
-          <information class="extra-product">
-            {% render 'icon-information' %}
-            <p class="subtitulo-2" id="ss">{{ section.settings['info-extra'] }}</p>
-          </information>
-        {% endif %}
-      </container-spam>
-    </product-information>
-  </main-pr-container>
-  <add-combo>
-    {% render 'eg-frequently-bought-together' %}
-  </add-combo>
+        </p>
+        <container-buttons>
+          {% form 'product', product, class: 'product-form', novalidate: 'novalidate', id: 'pr-form-wd' %}
+            <select name="id" style="display: none;">
+              {% for variant in product.variants %}
+                <option
+                  value="{{ variant.id }}"
+                  {% if variant == product.selected_or_first_available_variant %}
+                    selected="selected"
+                  {% endif %}
+                >
+                  {{ variant.title }} - {{ variant.price | money }}
+                </option>
+              {% endfor %}
+            </select>
+            <quantity>
+              <input type="button" value="-" class="pq-button button-minus" data-field="quantity">
+              <input readonly type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
+              <input type="button" value="+" class="pq-button button-plus" data-field="quantity">
+            </quantity>
+            <add-to-car id="atc">
+              <button class="atc-product add-t-cart grow">
+                {% render 'icon-cart' %}
+                <p class="add-t-cart-text subtitulo-2">
+                  <b> {{ section.settings['button-title'] }} </b>
+                </p>
+              </button>
+            </add-to-car>
+            <payment class="subtitulo-2 payment-1 grow">
+              {{ form | payment_button }}
+            </payment>
+          {% endform %}
+        </container-buttons>
+        <faq class="faq-container" id="description-product">
+          <question class="FAQ-title subtitulo-3">
+            <h3 class="subtitulo-3">
+              {{ section.settings['description-title'] }}
+            </h3>
+            {% render 'icon-arrow-right-dropdown' %}
+          </question>
+          <answer class="FAQ-text parrafo-2">
+            {{ product.description | strip_html }}
+          </answer>
+        </faq>
+        <container-spam>
+          {% if section.settings.envio != blank %}
+            <shipping class="extra-product">
+              {% render 'icon-transport' %}
+              <p class="subtitulo-2" id="ss">{{ section.settings.envio }}</p>
+            </shipping>
+          {% endif %}
+          {% if section.settings['info-extra'] != blank %}
+            <information class="extra-product">
+              {% render 'icon-information' %}
+              <p class="subtitulo-2" id="ss">{{ section.settings['info-extra'] }}</p>
+            </information>
+          {% endif %}
+        </container-spam>
+      </product-information>
+    </main-pr-container>
+    <add-combo>
+      {% render 'eg-frequently-bought-together' %}
+    </add-combo>
+  </product-form>
 </section>
 
 <script>
+  
   
   /* FAQ DROPDOWN ANIMATION */
 document.addEventListener('DOMContentLoaded', function() {
@@ -171,6 +174,7 @@ const productRecommendationsSection = document.querySelector('.product-recommend
 const observer = new IntersectionObserver(handleIntersection, {rootMargin: '0px 0px 200px 0px'});
 
 observer.observe(productRecommendationsSection);
+
 
 
 
