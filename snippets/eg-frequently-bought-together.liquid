@@ -132,6 +132,7 @@
 
   <script>
     
+    
 window.addEventListener('DOMContentLoaded', (event) => { 
     window.money_format = '{{ shop.money_format }}'
     window.cart_route = '{{ routes.cart_url }}'
@@ -153,6 +154,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
             })
 
             this.querySelector('.fbt-btn-atc').addEventListener('click', this.addSelectedToCart.bind(this))
+
+          console.log('created')
         }
 
         onSelectChange (select) {
@@ -288,6 +291,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     }
     customElements.define('frequently-bought-together', FrequentlyBoughtTogether)
 })
+
 
   </script>
 
