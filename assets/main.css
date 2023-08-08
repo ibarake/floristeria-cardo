@@ -313,7 +313,7 @@ nav ul li {
   border-radius: 8px;
   text-decoration: none;
   width: 15%;
-  float: right;
+  float: left;
 }
 
 .add-to-cart:hover {
