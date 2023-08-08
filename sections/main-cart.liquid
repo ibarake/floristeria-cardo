@@ -47,7 +47,7 @@
             <item-info>
               <p class="parrafo-4 collection-tag">{{ item.product.collections[0].title }}</p>
               <h2 class="pc-title subtitulo-1">{{ item.product.title }}</h2>
-              <p class="price subtitulo-4">{{ item.product.price | money_with_currency }}</p>
+              <p class="price subtitulo-4">{{ item.product.price | times: item.quantity | money_with_currency }}</p>
               <quantity>
                 <input type="button" value="-" class="qButton button-minus" data-field="quantity">
                 <input
