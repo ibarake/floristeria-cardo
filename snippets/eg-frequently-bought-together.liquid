@@ -136,11 +136,11 @@ window.addEventListener('DOMContentLoaded', (event) => {
     window.money_format = '{{ shop.money_format }}'
     window.cart_route = '{{ routes.cart_url }}'
 
+    console.log("hello");
+  
     class FrequentlyBoughtTogether extends HTMLElement {
         constructor () {
             super()
-
-          console.log("hello");
 
             this.querySelectorAll('.fbt-variant-select').forEach((select) => {
                 select.addEventListener('change', () => {
