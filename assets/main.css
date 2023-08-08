@@ -479,7 +479,7 @@ dropdown-mega-menu {
 
 @media only screen and (max-width: 768px) {
   header {
-    grid-template-columns: 30% 40% 30%;
+    width: 100%;
   }
   .hamburguer-menu {
     display: block;
