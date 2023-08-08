@@ -232,7 +232,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
                 }
             })
 
-            await fetch('/cart/add.js', {
+            await fetch('/cart/add', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ items })
