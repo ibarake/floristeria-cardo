@@ -482,7 +482,7 @@ dropdown-mega-menu {
 @media only screen and (max-width: 768px) {
   header {
     width: 100%;
-    padding: 0;
+    padding: 0px 0px;
   }
   .hamburguer-menu {
     display: block;
