@@ -1994,6 +1994,7 @@ filter-drawer{
     margin-top: 1rem;
     grid-template-columns: 42% 42%;
     justify-content: center;
+    gap: 20px;
   }
 }
 
