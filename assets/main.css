@@ -244,6 +244,7 @@ header {
   background-color: var(--main-white);
   min-height: 85px;
   z-index: 99;
+  padding: 0 100px;
 }
 
 .header-logo {
