@@ -133,10 +133,9 @@
   <script>
     
 window.addEventListener('DOMContentLoaded', (event) => { 
+    console.log("hello");
     window.money_format = '{{ shop.money_format }}'
     window.cart_route = '{{ routes.cart_url }}'
-
-    console.log("hello");
   
     class FrequentlyBoughtTogether extends HTMLElement {
         constructor () {
