@@ -3157,6 +3157,7 @@ COL-titles {
   
 
   collection-slider-2 {
+    display: none !important;
     padding-left: 40rem;
     padding-top: 2rem;
   }
