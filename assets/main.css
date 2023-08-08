@@ -235,6 +235,11 @@ p {
 
 header {
   position: relative;
+  display: flex !important;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
   width: 80%;
   background-color: var(--main-white);
   min-height: 85px;
@@ -246,7 +251,7 @@ header {
   align-self: center;
   justify-self: center;
   max-height: 70px;
-  width: 15%;
+  width: auto;
   height: auto;
 }
 
@@ -254,7 +259,6 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 70%;
 }
 
 nav ul {
@@ -312,8 +316,6 @@ nav ul li {
   padding: 10px 15px;
   border-radius: 8px;
   text-decoration: none;
-  width: 15%;
-  float: left;
 }
 
 .add-to-cart:hover {
