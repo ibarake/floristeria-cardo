@@ -240,7 +240,7 @@ header {
   align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap;
-  width: 90%;
+  width: 80%;
   background-color: var(--main-white);
   min-height: 85px;
   z-index: 99;
