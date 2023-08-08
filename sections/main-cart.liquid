@@ -115,7 +115,9 @@
             {% for item in cart.items %}
               <summary-cart-item>
                 <span id="df" class="parrafo-3">{{ item.product.title }}</span>
-                <span id="di" class="subtitulo-4">{{ item.product.price | money_with_currency }}</span>
+                <span id="di" class="subtitulo-4">
+                  {{- item.product.price | times: item.quantity | money_with_currency -}}
+                </span>
               </summary-cart-item>
             {% endfor %}
           </summary-1>
