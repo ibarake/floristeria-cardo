@@ -140,6 +140,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
         constructor () {
             super()
 
+          console.log("hello");
+
             this.querySelectorAll('.fbt-variant-select').forEach((select) => {
                 select.addEventListener('change', () => {
                     this.onSelectChange(select)
