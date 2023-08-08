@@ -481,7 +481,7 @@ dropdown-mega-menu {
 
 @media only screen and (max-width: 768px) {
   .price{
-    margin-top: 0;
+    margin-top: 0rem;
   }
   header {
     width: 100%;
