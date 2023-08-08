@@ -38,7 +38,7 @@
                 <input type="button" value="+" class="qButton button-plus" data-field="quantity">
               </quantity>
             </responsive-container>
-            <p class="subtitulo-4 price">{{ item.product.price | money_with_currency }}</p>
+            <p class="subtitulo-4 price">{{ item.product.price | times: item.quantity | money_with_currency }}</p>
 
             <a id="remove" class="grow" href="{{ item.url_to_remove }}">{% render 'delete-cart' %}</a>
           </cart-item>
