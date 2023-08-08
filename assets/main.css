@@ -246,7 +246,7 @@ header {
   align-self: center;
   justify-self: center;
   max-height: 70px;
-  width: auto;
+  width: 15%;
   height: auto;
 }
 
@@ -254,6 +254,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 70%;
 }
 
 nav ul {
@@ -311,6 +312,7 @@ nav ul li {
   padding: 10px 15px;
   border-radius: 8px;
   text-decoration: none;
+  width: 15%;
 }
 
 .add-to-cart:hover {
