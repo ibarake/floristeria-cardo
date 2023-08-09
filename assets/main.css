@@ -240,11 +240,10 @@ header {
   align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap;
-  width: 80%;
+  width: 100%;
   background-color: var(--main-white);
   min-height: 85px;
   z-index: 99;
-  padding: 0 10%;
 }
 
 .header-logo {
