@@ -150,6 +150,7 @@
     
     
     
+    
 window.addEventListener('DOMContentLoaded', (event) => { 
     window.money_format = "{{ shop.money_format }}"
     window.cart_route = "{{ routes.cart_url }}"
@@ -323,6 +324,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 
 
+
   </script>
 
   <frequently-bought-together>
@@ -342,51 +344,53 @@ window.addEventListener('DOMContentLoaded', (event) => {
           <h3 class="fbt-product-title subtitulo-3">
             {{ product.title }}
           </h3>
-          <p class="fbt-product-price">
-            <span
-              class="fbt-product-price-compare"
-              style="{% unless product.first_available_variant.compare_at_price > product.first_available_variant.price %}display: none;{% endunless %}"
-            >
-              <span class="visually-hidden"> Regular price </span>
-              <s>
-                {{ product.first_available_variant.compare_at_price | money }}
-              </s>
-            </span>
-            <span class="fbt-product-price-final">
-              {{ product.price | money }}
-            </span>
-          </p>
-          <select
-            class="fbt-variant-select"
-            name="id"
-            aria-label="Select variant"
-            style="{% if product.has_only_default_variant %}display: none;{% endif %}"
-          >
-            {% for variant in product.variants %}
-              {% liquid
-                assign variant_image = null
-                if variant.image
-                  assign variant_image = variant.image | image_url: width: img_width, height: img_height, crop: 'center'
-                endif
-              %}
-              <option
-                value="{{ variant.id }}"
-                data-image="{{ variant_image }}"
-                data-compare-price="{{ variant.compare_at_price }}"
-                data-price="{{ variant.price }}"
-                {% unless variant.available %}
-                  disabled
-                {% endunless %}
+          <div class="card-fbt-footer">
+            <p class="fbt-product-price">
+              <span
+                class="fbt-product-price-compare"
+                style="{% unless product.first_available_variant.compare_at_price > product.first_available_variant.price %}display: none;{% endunless %}"
               >
-                {{ variant.title }}
-              </option>
-            {% endfor %}
-          </select>
-          <div class="fbt-add-checkbox-wrapper">
-            <input id="fbt-add-checkbox-{{ product.id }}" class="fbt-add-checkbox" type="checkbox" checked>
-            <label class="" for="fbt-add-checkbox-{{ product.id }}">
-              {{ text_add_this }}
-            </label>
+                <span class="visually-hidden"> Regular price </span>
+                <s>
+                  {{ product.first_available_variant.compare_at_price | money }}
+                </s>
+              </span>
+              <span class="fbt-product-price-final">
+                {{ product.price | money }}
+              </span>
+            </p>
+            <select
+              class="fbt-variant-select"
+              name="id"
+              aria-label="Select variant"
+              style="{% if product.has_only_default_variant %}display: none;{% endif %}"
+            >
+              {% for variant in product.variants %}
+                {% liquid
+                  assign variant_image = null
+                  if variant.image
+                    assign variant_image = variant.image | image_url: width: img_width, height: img_height, crop: 'center'
+                  endif
+                %}
+                <option
+                  value="{{ variant.id }}"
+                  data-image="{{ variant_image }}"
+                  data-compare-price="{{ variant.compare_at_price }}"
+                  data-price="{{ variant.price }}"
+                  {% unless variant.available %}
+                    disabled
+                  {% endunless %}
+                >
+                  {{ variant.title }}
+                </option>
+              {% endfor %}
+            </select>
+            <div class="fbt-add-checkbox-wrapper">
+              <input id="fbt-add-checkbox-{{ product.id }}" class="fbt-add-checkbox" type="checkbox" checked>
+              <label class="" for="fbt-add-checkbox-{{ product.id }}">
+                {{ text_add_this }}
+              </label>
+            </div>
           </div>
         </li>
       {% endfor %}
