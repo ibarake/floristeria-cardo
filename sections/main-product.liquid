@@ -85,7 +85,15 @@
         </container-spam>
       </product-information>
     </main-pr-container>
-    {% render 'eg-frequently-bought-together' %}
+    <add-combo>
+      <title-add-combo>
+        {% render 'button-plus' %}
+        <p class="subtitulo-1" id="add-combo-title">
+          {{ section.settings['agregar-combo'] }}
+        </p>
+      </title-add-combo>
+      {% render 'eg-frequently-bought-together' %}
+    </add-combo>
   </product-form>
 </section>
 
