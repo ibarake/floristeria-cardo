@@ -1085,9 +1085,6 @@ card-footer {
 .card-product-title{
   min-height: 30px;  
 }
-  container-4product product-card .parrafo-4 {
-    font-size: 12px;
-  }
   
   container-4products .product-card-image{
     height: 200px;
@@ -1098,8 +1095,8 @@ card-footer {
     height: 100px;
     width: 100%;
 }
-  product-card .parrafo-4{
-    font-size: 8px;
+  container-4products product-card .parrafo-4{
+    font-size: 12px;
 }
     
   }
