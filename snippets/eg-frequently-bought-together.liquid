@@ -10,7 +10,7 @@
   endcomment
   assign heading_title = ''
   assign heading_size = 'h3'
-  assign item_width = '100%'
+  assign item_width = '33%'
   assign limit = 3
   assign text_align = 'center'
   assign img_width = 360
@@ -87,7 +87,7 @@
     .fbt-product-item {
         width: {{ item_width }};
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
 
         padding: .5rem;
         margin: 0 0 1rem;
@@ -138,6 +138,8 @@
   </style>
 
   <script>
+    
+    
     
     
     
@@ -306,6 +308,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
     }
     customElements.define('frequently-bought-together', FrequentlyBoughtTogether)
 })
+
+
 
 
 
