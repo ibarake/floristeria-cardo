@@ -2645,7 +2645,6 @@ add-combo {
 title-add-combo {
   display: flex;
   align-items: center;
-  margin-left: 4.5rem;
 }
 
 #add-combo-title {
