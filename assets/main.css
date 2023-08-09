@@ -2460,7 +2460,6 @@ main-pr-container {
   max-width: 100%;
   background-color: var(--main-color);
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
   align-items: flex-start;
   padding: 3rem 0;
