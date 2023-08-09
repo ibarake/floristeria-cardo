@@ -79,6 +79,8 @@
         list-style: none;
         display: flex;
         flex-wrap: wrap;
+        flex-direction: column;
+        width: 100%;
         margin: 0 -.5rem;
         padding: 0;
     }
@@ -133,6 +135,7 @@
   </style>
 
   <script>
+    
     
     
     
@@ -303,12 +306,10 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 
 
+
   </script>
 
   <frequently-bought-together>
-    <h2 class="fbt-heading-title {{ heading_size }}">
-      {{ heading_title }}
-    </h2>
     <ul class="fbt-product-list">
       {% for handle in product_handles limit: limit %}
         {% assign product = all_products[handle] %}
