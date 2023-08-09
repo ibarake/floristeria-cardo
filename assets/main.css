@@ -489,6 +489,7 @@ dropdown-mega-menu {
   .hamburguer-menu {
     display: block;
     justify-self: flex-start;
+    margin: 0;
   }
   .navigation-menu {
     display: none;
