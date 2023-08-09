@@ -2638,7 +2638,7 @@ shipping {
 add-combo {
   background-color: var(--main-color);
   border-bottom: 1px solid var(--main-linen);
-  padding: 0 3rem;
+  width: 100%;
 }
 
 title-add-combo {
