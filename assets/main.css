@@ -693,6 +693,7 @@ hero-title {
 }
   products-container{
     display: flex;
+    gap: 0;
   }
   .hero-banner .card-width {
     width: 100% !important;
