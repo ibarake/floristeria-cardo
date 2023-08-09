@@ -2639,6 +2639,7 @@ add-combo {
   background-color: var(--main-color);
   border-bottom: 1px solid var(--main-linen);
   width: 100%;
+  padding: 0 100px;
 }
 
 title-add-combo {
