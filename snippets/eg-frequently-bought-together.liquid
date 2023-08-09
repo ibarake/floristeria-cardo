@@ -220,10 +220,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
                 }
             })
             
-            let formattedPrice = this.moneyFormat(totalPrice);
-let priceValue = formattedPrice.match(/<span class="money">(.*?)<\/span>/)[1];
-this.querySelector('.fbt-total-price').textContent = priceValue;
-
+            this.querySelector('.fbt-total-price').textContent = this.moneyFormat(totalPrice)
 
             if (totalPrice === 0) {
                 this.querySelector('.fbt-btn-atc').disabled = true
