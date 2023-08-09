@@ -66,7 +66,9 @@
 
     /* Snippet styling */
     frequently-bought-together {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
         margin: 2rem 0;
         text-align: {{ text_align }};
     }
@@ -131,6 +133,7 @@
   </style>
 
   <script>
+    
     
     
     
@@ -294,6 +297,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     }
     customElements.define('frequently-bought-together', FrequentlyBoughtTogether)
 })
+
 
 
 
