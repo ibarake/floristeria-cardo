@@ -147,6 +147,7 @@
     
     
     
+    
 window.addEventListener('DOMContentLoaded', (event) => { 
     window.money_format = "{{ shop.money_format }}"
     window.cart_route = "{{ routes.cart_url }}"
@@ -219,7 +220,10 @@ window.addEventListener('DOMContentLoaded', (event) => {
                 }
             })
             
-            this.querySelector('.fbt-total-price').textContent = this.moneyFormat(totalPrice)
+            let formattedPrice = this.moneyFormat(totalPrice);
+let priceValue = formattedPrice.match(/<span class="money">(.*?)<\/span>/)[1];
+this.querySelector('.fbt-total-price').textContent = priceValue;
+
 
             if (totalPrice === 0) {
                 this.querySelector('.fbt-btn-atc').disabled = true
@@ -305,6 +309,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     }
     customElements.define('frequently-bought-together', FrequentlyBoughtTogether)
 })
+
 
 
 
