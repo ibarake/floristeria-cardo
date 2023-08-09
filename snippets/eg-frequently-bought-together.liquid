@@ -135,6 +135,7 @@
     
     
     
+    
 window.addEventListener('DOMContentLoaded', (event) => { 
     window.money_format = "{{ shop.money_format }}"
     window.cart_route = "{{ routes.cart_url }}"
@@ -297,6 +298,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 
 
+
   </script>
 
   <frequently-bought-together>
@@ -308,20 +310,16 @@ window.addEventListener('DOMContentLoaded', (event) => {
         {% assign product = all_products[handle] %}
         {% assign total_price = total_price | plus: product.selected_or_first_available_variant.price %}
         <li class="fbt-product-item">
-          <a class="" href="{{ product.url }}">
-            <img
-              class="fbt-product-img img-fluid {{ section.settings.fbt_product_img_border }}"
-              src="{{ product.featured_image.src | image_url: width: img_width, height: img_height, crop: 'center' }}"
-              alt="{{ product.featured_image.alt | escape }}"
-              width="{{ img_width }}"
-              height="{{ img_height }}"
-              loading="lazy"
-            >
-          </a>
+          <img
+            class="fbt-product-img img-fluid {{ section.settings.fbt_product_img_border }}"
+            src="{{ product.featured_image.src | image_url: width: img_width, height: img_height, crop: 'center' }}"
+            alt="{{ product.featured_image.alt | escape }}"
+            width="{{ img_width }}"
+            height="{{ img_height }}"
+            loading="lazy"
+          >
           <h3 class="fbt-product-title h6">
-            <a class="" href="{{ product.url }}">
-              {{ product.title }}
-            </a>
+            {{ product.title }}
           </h3>
           <p class="fbt-product-price">
             <span
