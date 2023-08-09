@@ -1085,6 +1085,11 @@ card-footer {
 .card-product-title{
   min-height: 30px;  
 }
+
+  products-container .product-card-image{
+    height: 150px;
+    width: 100%;
+  }
   
   container-4products .product-card-image{
     height: 200px;
