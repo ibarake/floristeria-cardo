@@ -77,52 +77,6 @@
               </div>
             </item-info>
             <a href="{{ item.url_to_remove }}">{% render 'delete-cart' %}</a>
-            <script>
-              const noteButtons = document.querySelectorAll('.cart-note');
-
-                    noteButtons.forEach(function(button) {
-                      button.addEventListener('click', function(e) {
-
-                        const popup = this.nextElementSibling;
-
-                        if (popup.classList.contains('open')) {
-                          // If the popup is currently open, close it
-                          popup.style.height = '0px';
-                          popup.classList.remove('open');
-                        } else {
-                          // If the popup is currently closed, open it
-                          popup.style.height = 'auto';
-                          popup.classList.add('open');
-                        }
-
-                      });
-                    });
-
-                var textareas = document.querySelectorAll('.popup-content textarea');
-                var hiddenTextarea = document.querySelector('textarea[name="note"]');
-
-                textareas.forEach(function(textarea) {
-                  textarea.addEventListener('keyup', function() {
-                    var notes = [];
-                    textareas.forEach((ta) => {
-                      var productTitle = ta.closest('cart-item, cart-item-responsive').querySelector('.pc-title').innerText;
-                      var noted = ta.value;
-
-                      if (noted) {
-                        notes.push(productTitle + ': ' + noted);
-                      }
-                    });
-
-                    hiddenTextarea.value = notes.join('. ');
-                    try{
-                    jQuery.post(window.Shopify.routes.root + 'cart/update.js', { note: hiddenTextarea.value });
-                    console.log('post')
-                    } catch {
-                      console.log('no post')
-                    }
-                  });
-                });
-            </script>
           </cart-item-responsive>
         {% endfor %}
         <textarea name="note" form="cart" class="hidden"></textarea>
