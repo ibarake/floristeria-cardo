@@ -148,6 +148,7 @@
     
     
     
+    
 window.addEventListener('DOMContentLoaded', (event) => { 
     window.money_format = "{{ shop.money_format }}"
     window.cart_route = "{{ routes.cart_url }}"
@@ -220,7 +221,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
                 }
             })
             
-            this.querySelector('.fbt-total-price').textContent = this.moneyFormat(totalPrice)
+            this.querySelector('.fbt-total-price').innerHTML = this.moneyFormat(totalPrice)
 
             if (totalPrice === 0) {
                 this.querySelector('.fbt-btn-atc').disabled = true
@@ -306,6 +307,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     }
     customElements.define('frequently-bought-together', FrequentlyBoughtTogether)
 })
+
 
 
 
