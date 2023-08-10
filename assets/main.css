@@ -2565,7 +2565,9 @@ container-buttons {
 
 .payment-1 button {
   display: flex;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
   border: 1px solid var(--main-olive);
   background-color: var(--main-olive);
   width: 95%;
