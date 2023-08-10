@@ -587,6 +587,19 @@ inline-half-container .slider{
   bottom: -50px;
 }
 
+.slider-2 .slick-prev{
+  top: auto !important;
+  left: 0 !important;
+  bottom: 0px;
+}
+
+.slider-2 .slick-next{
+  top: auto !important;
+  right: auto !important;
+  left: 25px !important;
+  bottom: 0px;
+}
+
 .slider .overflow-auto {
   overflow-x: auto;
   cursor: grab;
