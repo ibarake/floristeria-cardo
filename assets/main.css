@@ -530,6 +530,13 @@ dropdown-mega-menu {
   }
 }
 
+.slick-prev:before {
+  color: var(--main-olive)!important;
+}
+.slick-next:before {
+  color: var(--main-olive)!important;
+}
+
 /* HERO BANNER STYLES */
 
 hero-banner {
@@ -1053,7 +1060,7 @@ card-footer {
 .price{
   color: var(--main-black);
   padding-right: 3rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 #remove {
@@ -1122,7 +1129,7 @@ card-footer {
 }
     
   }
-}
+
 
 
 /* PRODUCTS FAQ STYLES */
@@ -1223,7 +1230,6 @@ product4 {
   position: absolute;
   bottom: -300px;
   right: 0;
-  z-index: 1;
 }
 
 .flor-7 {
@@ -1453,6 +1459,7 @@ answer {
 @media only screen and (max-width: 768px) {
   preguntas {
     width: 100%;
+    z-index: 2;
   }
   .faq-container {
     width: 80%;
