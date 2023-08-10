@@ -2685,6 +2685,10 @@ title-add-combo {
   padding-left: 1rem;
 }
 
+.flor11-3{
+  display: none;
+}
+
 @media only screen and (max-width: 768px) {
   main-pr-container {
     flex-direction: column-reverse;
@@ -2762,6 +2766,12 @@ title-add-combo {
 
   .flor11-2 {
     display: none;
+  }
+
+  .flor11-3{
+    position: absolute;
+    top: 0;
+    right: 0;
   }
   
   .flor22-3 {
