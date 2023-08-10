@@ -568,12 +568,12 @@ inline-half-container .slider{
 }
 
 .slick-prev{
-  top: auto;
+  top: auto !important;
   bottom: -50px;
 }
 
 .slick-next{
-  top: auto;
+  top: auto !important;
   bottom: -50px;
 }
 
