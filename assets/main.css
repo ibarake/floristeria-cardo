@@ -2769,6 +2769,7 @@ title-add-combo {
   }
 
   .flor11-3{
+    display: block;
     position: absolute;
     top: 0;
     right: 0;
