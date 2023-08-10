@@ -710,7 +710,7 @@ hero-title {
 }
   products-container{
     display: flex;
-    gap: 0;
+    gap: 10px;
   }
   .hero-banner .card-width {
     width: 100% !important;
