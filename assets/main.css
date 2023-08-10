@@ -2469,7 +2469,7 @@ in-container {
 
   #responsive-image {
     display: block;
-    width: 50px;
+    width: 100%;
     height: 345px;
   }
 
