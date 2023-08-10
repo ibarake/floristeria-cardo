@@ -1047,7 +1047,7 @@ card-footer {
 .price{
   color: var(--main-black);
   padding-right: 3rem;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 #remove {
@@ -1447,6 +1447,7 @@ answer {
 @media only screen and (max-width: 768px) {
   preguntas {
     width: 100%;
+    z-index: auto;
   }
   .faq-container {
     width: 80%;
