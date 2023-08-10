@@ -2493,6 +2493,7 @@ main-pr-container {
   justify-content: space-around;
   align-items: flex-start;
   padding: 3rem 0;
+  overflow: hidden;
 }
 
 product-page {
