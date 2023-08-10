@@ -531,10 +531,10 @@ dropdown-mega-menu {
 }
 
 .slick-prev:before {
-  color: var(--main-olive);
+  color: var(--main-olive)!important;
 }
 .slick-next:before {
-  color: var(--main-olive);
+  color: var(--main-olive)!important;
 }
 
 /* HERO BANNER STYLES */
