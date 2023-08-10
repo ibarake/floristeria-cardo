@@ -2692,6 +2692,7 @@ title-add-combo {
 @media only screen and (max-width: 768px) {
   main-pr-container {
     flex-direction: column-reverse;
+    position: relative;
   }
 
   #atc {
@@ -2772,6 +2773,7 @@ title-add-combo {
     display: block;
     position: absolute;
     top: 0px;
+    right: 0px;
   }
   
   .flor22-3 {
