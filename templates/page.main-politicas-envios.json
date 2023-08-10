@@ -3,12 +3,12 @@
     "main": {
       "type": "main-politicas-envios",
       "settings": {
-        "title": "Lorem ipsum dolor sit amet",
+        "title": "Proceso de Entrega",
         "subtitle": "Pellentesque cras adipiscing tempus libero vel nullam mauris tellus. Aliquam ultrices tellus consequat amet,",
-        "image": "shopify:\/\/shop_images\/WhatsAppImage2023-05-05at2.12.13PM.jpg",
+        "image": "shopify:\/\/shop_images\/politicas-de-envio-floristeria-cardo.webp",
         "ver-por-ocasion": "Ver por Ocasion",
         "contacto-button": "Contacto",
-        "title-proceso": "Proceso de Entrega",
+        "title-proceso": "El proceso",
         "subtitle-proceso": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque rutrum fermentum.",
         "spam-proceso": "Lorem Ipsum",
         "sub-1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque rutrum fermentum.",
