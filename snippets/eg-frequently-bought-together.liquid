@@ -125,6 +125,9 @@
     .fbt-add-checkbox-wrapper .fbt-add-checkbox {
         display: none;
     }
+    .fbt-add-checkbox:checked + label {
+      background-color: var(--main-color);
+    }
     .fbt-total-price-wrapper {
         margin: 0 0 1rem;
         font-size: 1.125em;
@@ -140,6 +143,7 @@
   </style>
 
   <script>
+    
     
     
     
@@ -318,6 +322,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     }
     customElements.define('frequently-bought-together', FrequentlyBoughtTogether)
 })
+
 
 
 
