@@ -158,6 +158,7 @@
     
     
     
+    
 window.addEventListener('DOMContentLoaded', (event) => { 
     window.money_format = "{{ shop.money_format }}"
     window.cart_route = "{{ routes.cart_url }}"
@@ -334,6 +335,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 
 
+
   </script>
 
   <frequently-bought-together>
@@ -397,7 +399,8 @@ window.addEventListener('DOMContentLoaded', (event) => {
             <div class="fbt-add-checkbox-wrapper">
               <input id="fbt-add-checkbox-{{ product.id }}" class="fbt-add-checkbox" type="checkbox" checked>
               <label class="" for="fbt-add-checkbox-{{ product.id }}">
-                {{ text_add_this }}
+                {% render 'icon-cart' -%}
+                {{- text_add_this }}
               </label>
             </div>
           </div>
