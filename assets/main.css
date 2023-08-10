@@ -1217,7 +1217,6 @@ product4 {
   position: absolute;
   bottom: -300px;
   right: 0;
-  z-index: 1;
 }
 
 .flor-7 {
@@ -1447,7 +1446,6 @@ answer {
 @media only screen and (max-width: 768px) {
   preguntas {
     width: 100%;
-    z-index: auto;
   }
   .faq-container {
     width: 80%;
