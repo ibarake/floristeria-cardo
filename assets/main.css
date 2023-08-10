@@ -567,6 +567,11 @@ inline-half-container .slider{
   display: block;
 }
 
+.slick-prev{
+  top: auto;
+  bottom: 50px;
+}
+
 .overflow-auto {
   overflow-x: auto;
   cursor: grab;
