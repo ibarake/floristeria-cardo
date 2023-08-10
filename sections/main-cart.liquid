@@ -121,9 +121,11 @@
       </cart-info>
       {% assign combo_in_cart = false %}
       {% for item in cart.items %}
-        {% if item.product.handle == 'combo' %}
-          {% assign combo_in_cart = true %}
-        {% endif %}
+        {% for tag in item.product.tags %}
+          {% if tag == 'combo' %}
+            {% assign combo_in_cart = true %}
+          {% endif %}
+        {% endfor %}
       {% endfor %}
 
       {% if combo_in_cart %}
