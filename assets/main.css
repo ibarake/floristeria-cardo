@@ -78,6 +78,10 @@ p {
   --soft-gray:#6b6b6b;
 }
 
+.olive{
+      color: var(--main-olive);
+}
+
 /* TEXT PRESET STYLES*/
 
 .titulo-1 {
