@@ -530,6 +530,13 @@ dropdown-mega-menu {
   }
 }
 
+.slick-prev:before {
+  color: var(--main-olive);
+}
+.slick-next:before {
+  color: var(--main-olive);
+}
+
 /* HERO BANNER STYLES */
 
 hero-banner {
@@ -1109,7 +1116,7 @@ card-footer {
 }
     
   }
-}
+
 
 
 /* PRODUCTS FAQ STYLES */
