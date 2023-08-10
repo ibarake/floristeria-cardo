@@ -2761,8 +2761,7 @@ title-add-combo {
   }
 
   .flor11-2 {
-    right: -150px;
-    top: -25px;
+    display: none;
   }
   
   .flor22-3 {
