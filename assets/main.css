@@ -574,7 +574,7 @@ inline-half-container .slider{
   display: block;
 }
 
-.slick-prev{
+.slider .slick-prev{
   top: auto !important;
   left: 0 !important;
   bottom: -50px;
