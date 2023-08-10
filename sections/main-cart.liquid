@@ -119,7 +119,19 @@
           </cart-total>
         </summary>
       </cart-info>
-      <input type="submit" name="checkout" class="button-cart subtitulo-2 grow" value="Realizar Compra">
+      {% assign combo_in_cart = false %}
+      {% for item in cart.items %}
+        {% if item.product.handle == 'combo' %}
+          {% assign combo_in_cart = true %}
+        {% endif %}
+      {% endfor %}
+
+      {% if combo_in_cart %}
+        <input type="submit" name="checkout" class="button-cart subtitulo-2 grow" value="Realizar Compra" disabled>
+        <p class="warning-text">Porfavor agregue un arreglo a tu combo</p>
+      {% else %}
+        <input type="submit" name="checkout" class="button-cart subtitulo-2 grow" value="Realizar Compra">
+      {% endif %}
     </container-resumen>
     <cart-footer>
       <span class="ft-subtotal">
