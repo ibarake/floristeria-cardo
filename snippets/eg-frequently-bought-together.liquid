@@ -209,6 +209,7 @@
     
     
     
+    
 window.addEventListener('DOMContentLoaded', (event) => { 
     window.money_format = "{{ shop.money_format }}"
     window.cart_route = "{{ routes.cart_url }}"
@@ -416,6 +417,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 
 
+
   </script>
 
   <frequently-bought-together>
@@ -493,12 +495,14 @@ window.addEventListener('DOMContentLoaded', (event) => {
         {{ total_price | money }}
       </b>
     </p>
-    <button
-      class="payment-1 fbt-btn-atc button button--primary btn btn-primary"
-      type="button"
-      data-text-add-selected="{{ text_add_selected }}"
-    >
-      {{ text_add_selected }}
-    </button>
+    <div class="payment-1">
+      <button
+        class="fbt-btn-atc button button--primary btn btn-primary"
+        type="button"
+        data-text-add-selected="{{ text_add_selected }}"
+      >
+        {{ text_add_selected }}
+      </button>
+    </div>
   </frequently-bought-together>
 {% endif %}
