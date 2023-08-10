@@ -203,6 +203,7 @@
     
     
     
+    
 window.addEventListener('DOMContentLoaded', (event) => { 
     window.money_format = "{{ shop.money_format }}"
     window.cart_route = "{{ routes.cart_url }}"
@@ -259,8 +260,10 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
             if (checkbox.checked) {
                 imgEl.style.opacity = '1'
+                productItem.style.border = '2px solid var(--main-olive)';
             } else {
                 imgEl.style.opacity = '0.2'
+                productItem.style.border = 'none';
             }
             
             this.calcTotalPrice()
@@ -361,6 +364,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     }
     customElements.define('frequently-bought-together', FrequentlyBoughtTogether)
 })
+
 
 
 
