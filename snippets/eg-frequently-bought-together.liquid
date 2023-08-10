@@ -137,13 +137,16 @@
     }
     .fbt-add-checkbox:checked + label {
       background-color: var(--main-color);
+      border: solid 2px var(--main-olive);
     }
     .fbt-total-price-wrapper {
         margin: 0 0 1rem;
         font-size: 1.125em;
     }
 
-    .fbt-add-checkbox:checked +
+    .fbt-add-checkbox:checked + .fbt-product-item {
+      border: 2px solid var(--main-olive);
+    }
     .fbt-btn-atc {
         margin-bottom: .5rem;
     }
@@ -161,6 +164,7 @@
   </style>
 
   <script>
+    
     
     
     
@@ -357,6 +361,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     }
     customElements.define('frequently-bought-together', FrequentlyBoughtTogether)
 })
+
 
 
 
