@@ -1366,7 +1366,8 @@ product4 {
   }
 
   .card-add-to-cart svg {
-    margin-right: -7px;
+    margin-right: 0px;
+    padding: 5px;
   }
 
   .p1 {
