@@ -569,7 +569,12 @@ inline-half-container .slider{
 
 .slick-prev{
   top: auto;
-  bottom: 50px;
+  bottom: -50px;
+}
+
+.slick-next{
+  top: auto;
+  bottom: -50px;
 }
 
 .overflow-auto {
