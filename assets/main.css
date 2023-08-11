@@ -555,6 +555,10 @@ a.product-item{
 
 .atc-btn-form{
   margin: 0;
+      display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
 }
 inline-half-container {
   z-index: 9;
