@@ -2991,7 +2991,8 @@ cart-footer{
     
   }
   container-resumen{
-    width: 100%;
+    width: calc(100% - 5%);
+    margin: auto;
   }
   cart-item-responsive img{
     width: 130px;
