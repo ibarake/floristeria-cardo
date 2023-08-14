@@ -1220,6 +1220,7 @@ container-4products {
   display: flex;
   align-items: flex-start;
   position: relative;
+  justify-content: center;
   gap: 20px;
 }
 
