@@ -605,6 +605,7 @@ inline-half-container .slider{
 
 .slick-slider .slick-track, .slick-slider .slick-list {
   overflow-x: auto;
+  overflow-y: none;
 }
 
 
