@@ -1618,6 +1618,8 @@ contacto flor.mobile {
     width: 109%;
     height: 49px;
     margin-left: -1px;
+    font-size: 18px;
+    border-radius: 11px;
   }
 
   #parrafo-contacto {
