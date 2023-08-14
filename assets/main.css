@@ -1233,7 +1233,7 @@ products-4-item {
   flex-direction: row;
   align-items: center;
   position: absolute;
-  right: 10px;
+  right: -10px;
   color: var(--main-olive);
 }
 
@@ -1242,7 +1242,7 @@ products-4-item {
   flex-direction: row;
   align-items: center;
   position: absolute;
-  right: 165px;
+  right: 155px;
   top: -55px;
   color: var(--main-olive);
 }
