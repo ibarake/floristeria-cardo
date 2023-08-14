@@ -608,6 +608,9 @@ inline-half-container .slider{
   overflow-y: hidden;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
 
 .slider .overflow-auto {
   overflow-x: auto;
