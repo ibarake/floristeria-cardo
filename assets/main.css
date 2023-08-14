@@ -590,13 +590,13 @@ inline-half-container .slider{
   bottom: -50px;
 }
 
-.slider-2 .slick-prev{
+.slider- .slick-prev{
   top: auto !important;
   left: 0 !important;
   bottom: -50px;
 }
 
-.slider-2 .slick-next{
+.slider- .slick-next{
   top: auto !important;
   right: auto !important;
   left: 25px !important;
