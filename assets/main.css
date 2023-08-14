@@ -1232,7 +1232,7 @@ products-4-item {
   flex-direction: row;
   align-items: center;
   position: absolute;
-  right: -50px;
+  right: 10px;
   color: var(--main-olive);
 }
 
