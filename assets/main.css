@@ -1615,10 +1615,9 @@ contacto flor.mobile {
     padding: 15px 10px;
   }
   .button-contacto {
-    width: 100%;
-    font-size: 18px;
-    border-radius: 11px;
-    padding: 5px 5px;
+    width: 109%;
+    height: 49px;
+    margin-left: -1px;
   }
 
   #parrafo-contacto {
