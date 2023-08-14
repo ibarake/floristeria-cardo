@@ -603,14 +603,11 @@ inline-half-container .slider{
   bottom: 0px;
 }
 
-slick-list draggable {
+slick-list {
   overflow-x: auto;
   overflow-y: none;
 }
 
-::-webkit-scrollbar {
-    display: none;
-}
 
 .slider .overflow-auto {
   overflow-x: auto;
