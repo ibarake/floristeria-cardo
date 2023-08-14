@@ -598,12 +598,12 @@ inline-half-container .slider{
 
 .slider-2 .slick-next{
   top: 95%;
-  right: 70rem;
+  right: 75rem;
 }
 
 .slider-2 .slick-prev{
   top: 95%;
-  left: -10px;
+  left: 10px;
 }
 
 .slider-3 .slick-next{
