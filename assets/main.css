@@ -392,6 +392,9 @@ mega-menu-item {
   font-size: 14px;
 }
 
+.menu-items{
+      padding: 0;
+}
 .hamburguer-menu {
   display: none;
   background-color: var(--main-white);
