@@ -1915,7 +1915,9 @@ filter input[type=checkbox i] {
 }
 
 filter input[type=checkbox] + label {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: solid 1px var(--gray-light);
   border-radius: 8px;
   cursor: pointer;
