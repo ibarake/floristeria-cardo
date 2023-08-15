@@ -1919,6 +1919,8 @@ filter input[type=checkbox] + label {
   border: solid 1px var(--gray-light);
   border-radius: 8px;
   cursor: pointer;
+      min-height: 30px;
+    max-height: 50px;
 }
 
 .filter-form input[type=checkbox]:checked + label {
@@ -1947,6 +1949,7 @@ filter label {
 .filter-element {
   flex: 1 1 auto;
   width: calc(50% - 5px);
+  
 }
 
 .filter-element:nth-child(3n),
