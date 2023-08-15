@@ -1952,7 +1952,7 @@ filter label {
 .filter-element:nth-child(3n),
 .filter-element:nth-child(4n),
 .filter-element:nth-child(5n) {
-  width: calc(33.33% - 5px);
+  width: calc(50% - 5px);
 }
 
 filter-top{
