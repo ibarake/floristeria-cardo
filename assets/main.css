@@ -55,6 +55,12 @@ p {
   }
 }
 
+@media only screen and (max-width: 1024px) and (min-width: 768px) {
+  .page-width {
+    width: 850px;
+  }
+
+}
 
 :root {
   --main-color: #f7f0e2;
@@ -238,7 +244,7 @@ header {
   align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap;
-  width: calc(100% - 100px);
+  width: calc(100% - 10%);
   background-color: var(--main-white);
   min-height: 85px;
   z-index: 99;
