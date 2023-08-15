@@ -596,17 +596,6 @@ inline-half-container .slider{
   bottom: -50px;
 }
 
-.slider-2 .slick-next{
-  top: 95%;
-  right: 73rem;
-}
-
-.slider-2 .slick-prev{
-  top: 95%;
-  left: 10px;
-  z-index: 10;
-}
-
 .slider-3 .slick-prev{
   top: auto !important;
   left: 0 !important;
