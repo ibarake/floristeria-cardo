@@ -563,7 +563,11 @@ a.product-item{
     justify-content: flex-end;
 }
 inline-half-container {
-  z-index: 9;
+      z-index: 9;
+    overflow: auto;
+    position: relative;
+    width: 100%;
+    height: 300px;
 }
 inline-half-container.left {
   width: 40%;
@@ -773,6 +777,10 @@ hero-title {
 
   products-container {
     margin-left: 1rem;
+    overflow: auto;
+    position: absolute;
+    left: 0;
+    top: 0;
   }
   
   hero-buttons {
