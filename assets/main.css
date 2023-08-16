@@ -2713,11 +2713,6 @@ container-title {
   padding: 0 3rem;
 }
 
-#atc button p{
-  white-space: none;
-    width: 200px;
-}
-
 #description-product {
   display: none;
 }
