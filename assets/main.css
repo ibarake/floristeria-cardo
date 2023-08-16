@@ -2616,6 +2616,7 @@ product-information {
 
 #pr-form-wd {
   display: flex;
+  flex-wrap: wrap;
 }
 
 container-buttons {
