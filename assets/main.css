@@ -2715,6 +2715,10 @@ container-title {
   cursor: pointer;
   height: 2.7rem;
   color: var(--main-olive);
+  padding: 0 15px;
+  white-space: nowrap;
+  overflow: hidden; 
+  text-overflow: ellipsis;
 }
 
 .add-t-cart-text{
