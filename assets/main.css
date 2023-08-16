@@ -2711,7 +2711,10 @@ container-title {
 }
 #atc {
   padding: 0 3rem;
-  width: 150px;
+}
+
+#atc button{
+    width: 150px;
 }
 
 #description-product {
