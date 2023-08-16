@@ -91,43 +91,6 @@
       {%- endfor -%}
     </form>
     <script>
-      
-                function updateProducts() {
-    // Extract the current filters and sort order
-    var sortBy = document.querySelector('#sort-by').value;
-    var filters = Array.from(document.querySelectorAll('.filter-form input[type="checkbox"]:checked')).map(checkbox => checkbox.name + '=' + checkbox.value).join('&');
-
-    // Make an AJAX request to Shopify's API
-    fetch('/collections/my-collection?view=json&sort_by=' + sortBy + '&' + filters)
-    .then(response => response.json())
-    .then(data => {
-        // Replace the product-grid content with the new products
-        var productGrid = document.querySelector('product-grid');
-        productGrid.innerHTML = ''; // Clear current products
-        
-        data.products.forEach(product => {
-            var productItem = document.createElement('a');
-            productItem.className = 'product-item';
-            productItem.href = product.url;
-            productItem.innerHTML = `
-                // You will replace this comment with your product card HTML structure
-                // Ensure you populate it with the product data you get from the API
-            `;
-            productGrid.appendChild(productItem);
-        });
-    });
-}
-          // Prevent default form submission and update products
-document.querySelector('.filter-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    updateProducts();
-});
-
-          // Update products on sort by change without reloading the page
-document.querySelector('#sort-by').addEventListener('change', function(e) {
-    e.preventDefault();
-    updateProducts();
-});
             document.addEventListener('DOMContentLoaded', function() {
         var checkboxes = document.querySelectorAll('aside .filter-form input[type="checkbox"]');
 
@@ -137,7 +100,6 @@ document.querySelector('#sort-by').addEventListener('change', function(e) {
           });
         });
       });
-
     </script>
   </aside>
   <content>
