@@ -2622,7 +2622,6 @@ container-buttons {
   width: 100%;
   display: flex;
   margin-top: 2rem;
-  overflow-x: auto;
 }
 
 .payment-1 button {
