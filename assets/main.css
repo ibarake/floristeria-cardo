@@ -2645,10 +2645,10 @@ container-buttons {
 
 .payment-1 button span {
   width: 100%;
-  text-align: center; 
-  padding: 5px 0;
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis;
 }
-
 .quantity-field {
   text-align: center;
   border: 1px solid var(--main-linen);
