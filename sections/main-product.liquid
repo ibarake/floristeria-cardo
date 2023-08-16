@@ -52,7 +52,7 @@
               <button class="atc-product add-t-cart grow">
                 {% render 'icon-cart' %}
                 <p class="add-t-cart-text subtitulo-2">
-                  <b> {{ section.settings['button-title'] }} </b>
+                  {{ section.settings['button-title'] }}
                 </p>
               </button>
             </add-to-car>
@@ -101,6 +101,7 @@
 </section>
 
 <script>
+  
   
   
   
@@ -190,6 +191,7 @@ const productRecommendationsSection = document.querySelector('.product-recommend
 const observer = new IntersectionObserver(handleIntersection, {rootMargin: '0px 0px 200px 0px'});
 
 observer.observe(productRecommendationsSection);
+
 
 
 
