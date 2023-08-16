@@ -2706,6 +2706,9 @@ container-title {
   color: var(--main-olive);
 }
 
+.add-t-cart-text{
+  width: 100px;
+}
 #atc {
   padding: 0 3rem;
 }
