@@ -175,10 +175,14 @@
       var productGrid = document.querySelector('product-grid');
       var productHorizontalCards = document.querySelectorAll('.horizontal');
       var productVerticalCards = document.querySelectorAll('.vertical');
+      var cardWidth = document.querySelectorAll('a.product-item')
 
       orderVerticalBtn.addEventListener('click', function() {
         productVerticalCards.forEach((pc) => {
           pc.style.display = "flex";
+        })
+        cardWidth.forEach((c) =>{
+          c.style.width = '300px';
         })
         productHorizontalCards.forEach((pc) => {
           pc.style.display = "none";
@@ -198,6 +202,10 @@
       orderHorizontalBtn.addEventListener('click', function() {
         productGrid.classList.add('order-horizontal');
         productGrid.classList.remove('order-vertical');
+
+        cardWidth.forEach((c) =>{
+          c.style.width = '100%';
+        })
 
         productVerticalCards.forEach((pc) => {
           pc.style.display = "none";
