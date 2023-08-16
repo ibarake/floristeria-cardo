@@ -2622,6 +2622,9 @@ container-buttons {
   width: 100%;
   display: flex;
   margin-top: 2rem;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 10px;
 }
 
 .payment-1 button {
@@ -2637,6 +2640,7 @@ container-buttons {
   border-radius: 8px;
   margin: 0;
   color: var(--main-white);
+  padding: 0 10px;
 }
 
 .quantity-field {
