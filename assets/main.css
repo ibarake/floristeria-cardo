@@ -566,6 +566,7 @@ inline-half-container {
       z-index: 9;
 }
 main-ba-container inline-half-container {
+  display: none;
       overflow: auto;
     position: relative;
     width: 100%;
@@ -3234,6 +3235,9 @@ COL-titles {
     align-items: center;
   }
 
+  main-ba-container inline-half-container {
+  display: block;
+}
   .col-card-image{
     width: 100%;
     height: 200px;
