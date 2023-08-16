@@ -2722,7 +2722,7 @@ container-title {
 }
 
 .add-t-cart-text{
-  width: 100px;
+  width: auto;
 }
 #atc {
   padding: 0 15px;
