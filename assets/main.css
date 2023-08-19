@@ -3004,7 +3004,9 @@ item-info {
   }
 
   .price {
+    font-size: 12px;
     margin-top: 2rem;
+    padding-right: 0;
   }
 
   metodo svg {
