@@ -787,7 +787,6 @@ hero-title {
   products-container {
     margin-left: 1rem;
     overflow: auto;
-    position: absolute;
     left: 0;
     top: 0;
   }
