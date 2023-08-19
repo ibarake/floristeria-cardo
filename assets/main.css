@@ -1895,7 +1895,7 @@ content{
 product-grid{
   display: grid;
   grid-template-columns: 30% 30% 30%;
-  gap: 55px;
+  gap: 30px;
 }
 
 sort-by {
