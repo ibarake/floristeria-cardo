@@ -1469,6 +1469,7 @@ preguntas {
 #titulo-preguntas {
   color: var(--main-olive);
   margin: 0;
+  width: 60%
 }
 
 .FAQ-title {
