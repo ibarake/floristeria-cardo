@@ -3006,6 +3006,10 @@ item-info {
   .price {
     margin-top: 2rem;
   }
+
+  metodo svg {
+    width: 70px;
+  }
 }
 
 #form-cart {
