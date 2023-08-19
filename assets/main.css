@@ -556,6 +556,12 @@ a.product-item{
   width: 300px;
 }
 
+@media only screen and (max-width: 1024px) {
+  a.product-item{
+    width: 230px;
+  }
+}
+
 .atc-btn-form{
   margin: 0;
       display: flex;
