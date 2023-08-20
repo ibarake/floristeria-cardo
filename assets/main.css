@@ -775,7 +775,8 @@ hero-title {
   }
   inline-half-container.right {
     width: 100%;
-    margin-left: 1rem;
+    margin: 0 1rem;
+    overflow-x: auto;
   }
   hero-banner {
     flex-direction: column;
