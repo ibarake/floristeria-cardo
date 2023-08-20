@@ -1265,6 +1265,8 @@ products-4-item {
 .s-d {
   display: block;
   width: auto;
+  position: absolute;
+  right: -5rem;
   align-self: center;
 }
 
