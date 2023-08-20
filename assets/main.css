@@ -553,7 +553,7 @@ hero-banner {
 
 a.product-item{
   text-decoration: none;
-  width: 300px;
+  width: 270px;
 }
 
 @media only screen and (max-width: 1024px) {
