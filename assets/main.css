@@ -1270,6 +1270,10 @@ products-4-item {
   align-self: center;
 }
 
+hero-banner .vertical {
+  width: 100%
+}
+
 .product4 {
   position: relative;
   width: 100%;
