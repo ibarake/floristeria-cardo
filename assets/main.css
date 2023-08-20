@@ -784,7 +784,8 @@ hero-title {
     text-align: center;
   }
 
-  products-container {
+  .inline-half-container products-container {
+    position: absolute;
     margin-left: 1rem;
     overflow: auto;
     left: 0;
