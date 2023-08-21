@@ -2969,6 +2969,10 @@ container-resumen{
   margin-top: 7.5rem;
 }
 
+container-resumen-1 {
+  display: none;
+}
+
 met-pagos{
   display: flex; 
   border-radius: 12px;
