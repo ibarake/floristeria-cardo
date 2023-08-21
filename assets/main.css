@@ -2979,6 +2979,10 @@ met-pagos{
   padding: 15px;
 }
 
+#pagos{
+  display: none;
+}
+
 container-met-pagos{
   display: flex;
   justify-content: space-around;
@@ -3150,6 +3154,10 @@ cart-footer{
 
   #gd {
     margin: 0;
+  }
+
+  #pagos{
+    display: block;
   }
 }
 
