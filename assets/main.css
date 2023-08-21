@@ -931,6 +931,10 @@ collection-slider::-webkit-scrollbar {
   .truncate-32 {
     display: none;
   }
+
+  .horizontal .product-card-image {
+    height: 170px;
+  }
   
   collection-list .slider-2{
     display: none;
