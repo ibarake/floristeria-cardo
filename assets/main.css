@@ -911,6 +911,7 @@ collection-slider::-webkit-scrollbar {
 }
 .collection-description {
   color: var(--main-gray);
+  display: none;
 }
 
 .collection-flor {
