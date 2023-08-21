@@ -3152,7 +3152,7 @@ cart-footer{
     margin: 0;
   }
   
-  .met-pagos {
+  met-pagos {
     order: -1;
     margin-top: 2rem;
     display: flex !important;
