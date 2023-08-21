@@ -1,5 +1,70 @@
 {% form 'cart', cart %}
   <section class="cart page-width">
+
+  <container-resumen-1>
+      <met-pagos>
+        <p class="subtitulo-2" id="pagos">Metodos de Pagos</p>
+        <container-met-pagos>
+          <metodo>
+            {% render 'cart-vs' %}
+          </metodo>
+          <metodo>
+            {% render 'cart-mc' %}
+          </metodo>
+          <metodo>
+            {% render 'cart-mp' %}
+          </metodo>
+          <metodo>
+            {% render 'cart-pu' %}
+          </metodo>
+        </container-met-pagos>
+      </met-pagos>
+      <cart-info>
+        <summary>
+          <summary-1>
+            <p class="subtitulo-2">Resumen</p>
+            {% for item in cart.items %}
+              <summary-cart-item>
+                <span id="df" class="parrafo-3">{{ item.product.title }}</span>
+                <span id="di" class="subtitulo-4">
+                  {{- item.product.price | times: item.quantity | money_with_currency -}}
+                </span>
+              </summary-cart-item>
+            {% endfor %}
+          </summary-1>
+          <cart-total>
+            <span class="subtitulo-2" id="subtotal-cart">Subtotal</span>
+            <span class="subtitulo-4">{{ cart.total_price | money_with_currency }}</span>
+          </cart-total>
+        </summary>
+      </cart-info>
+      {% assign combo_in_cart = false %}
+      {% for item in cart.items %}
+        {% for tag in item.product.tags %}
+          {% if tag == 'combo' %}
+            {% assign combo_in_cart = true %}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+
+      {% assign product_without_combo = false %}
+      {% for item in cart.items %}
+        {% unless item.product.tags contains 'combo' %}
+          {% assign product_without_combo = true %}
+        {% endunless %}
+      {% endfor %}
+
+      {% if combo_in_cart %}
+        {% if product_without_combo %}
+          <input type="submit" name="checkout" class="button-cart subtitulo-2 grow" value="Realizar Compra">
+        {% else %}
+          <p class="subtitulo-3">Porfavor agregue un arreglo a tu combo</p>
+        {% endif %}
+      {% else %}
+        <input type="submit" name="checkout" class="button-cart subtitulo-2 grow" value="Realizar Compra">
+      {% endif %}
+    </container-resumen-1>
+    
     <container-cart-item>
       <h1 class="titulo-4" id="title-cart">Mi carrito</h1>
       {% if cart.item_count == 0 %}
@@ -139,7 +204,7 @@
         {% if product_without_combo %}
           <input type="submit" name="checkout" class="button-cart subtitulo-2 grow" value="Realizar Compra">
         {% else %}
-          <p class="subtitulo-3">Por favor agregue un arreglo a tu combo</p>
+          <p class="subtitulo-3">Porfavor agregue un arreglo a tu combo</p>
         {% endif %}
       {% else %}
         <input type="submit" name="checkout" class="button-cart subtitulo-2 grow" value="Realizar Compra">
@@ -151,15 +216,7 @@
         <p class="price subtitulo-3" id="gd">{{ cart.total_price | money_with_currency }}</p>
       </span>
       <span class="button-comprar-responsive">
-        {% if combo_in_cart %}
-        {% if product_without_combo %}
-          <input type="submit" name="checkout" class="button-cart subtitulo-4 grow" value="Realizar Compra">
-        {% else %}
-          <p class="subtitulo-3">Por favor agregue un arreglo a tu combo</p>
-        {% endif %}
-      {% else %}
         <input type="submit" name="checkout" class="button-cart subtitulo-4 grow" value="Realizar Compra">
-      {% endif %}
       </span>
     </cart-footer>
   </section>
