@@ -2979,7 +2979,7 @@ met-pagos{
   padding: 15px;
 }
 
-#pagos{
+#pagos1{
   display: none;
 }
 
@@ -3156,7 +3156,7 @@ cart-footer{
     margin: 0;
   }
 
-  #pagos{
+  #pagos1{
     display: block;
   }
 }
