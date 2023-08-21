@@ -1123,7 +1123,7 @@ card-footer {
 .price{
   color: var(--main-black);
   padding-right: 3rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 
 #remove {
