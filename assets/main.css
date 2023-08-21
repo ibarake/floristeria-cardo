@@ -3079,7 +3079,6 @@ cart-footer{
     
   }
   container-resumen{
-    display: none;
     width: calc(100% - 5%);
     margin: auto;
   }
