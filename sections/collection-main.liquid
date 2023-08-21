@@ -183,9 +183,6 @@
         productVerticalCards.forEach((pc) => {
           pc.style.display = "flex";
         })
-        cardWidth.forEach((c) =>{
-          c.style.width = '300px';
-        })
         productHorizontalCards.forEach((pc) => {
           pc.style.display = "none";
 
@@ -199,7 +196,7 @@
           vp.style.fill = "var(--linen-3)";
         })
         if (window.innerWidth <= 768) {
-        productGrid.style.gridTemplateColumns = "1fr 1fr";
+        productGrid.style.gridTemplateColumns = "42% 42%";
     } else {
         productGrid.style.gridTemplateColumns = "30% 30% 30%";
     }
@@ -210,7 +207,7 @@
         productGrid.classList.remove('order-vertical');
 
         cardWidth.forEach((c) =>{
-          c.style.width = '100%';
+          c.style.width = '95%';
         })
 
         productVerticalCards.forEach((pc) => {
