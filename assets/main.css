@@ -3064,6 +3064,10 @@ cart-footer{
   .cart-note {
     width: 135%;
   }
+
+  met-pagos {
+    display: none;
+  }
   
   cart-footer{
     display: flex;
