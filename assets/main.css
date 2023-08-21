@@ -2982,6 +2982,15 @@ met-pagos{
   padding: 15px;
 }
 
+met-pagos-1{
+  display: flex; 
+  border-radius: 12px;
+  background-color: var(--main-color);
+  margin-bottom: 10px;
+  flex-direction: column;
+  padding: 15px;
+}
+
 container-met-pagos{
   display: flex;
   justify-content: space-around;
