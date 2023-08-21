@@ -1,22 +1,5 @@
 {% form 'cart', cart %}
   <section class="cart page-width">
-    <met-pagos id="pagos1">
-      <p class="subtitulo-2" id="pagos">Metodos de Pagos</p>
-      <container-met-pagos>
-        <metodo>
-          {% render 'cart-vs' %}
-        </metodo>
-        <metodo>
-          {% render 'cart-mc' %}
-        </metodo>
-        <metodo>
-          {% render 'cart-mp' %}
-        </metodo>
-        <metodo>
-          {% render 'cart-pu' %}
-        </metodo>
-      </container-met-pagos>
-    </met-pagos>
     <container-cart-item>
       <h1 class="titulo-4" id="title-cart">Mi carrito</h1>
       {% if cart.item_count == 0 %}
@@ -100,6 +83,23 @@
       {% endif %}
     </container-cart-item>
     <container-resumen>
+      <met-pagos>
+        <p class="subtitulo-2" id="pagos">Metodos de Pagos</p>
+        <container-met-pagos>
+          <metodo>
+            {% render 'cart-vs' %}
+          </metodo>
+          <metodo>
+            {% render 'cart-mc' %}
+          </metodo>
+          <metodo>
+            {% render 'cart-mp' %}
+          </metodo>
+          <metodo>
+            {% render 'cart-pu' %}
+          </metodo>
+        </container-met-pagos>
+      </met-pagos>
       <cart-info>
         <summary>
           <summary-1>
