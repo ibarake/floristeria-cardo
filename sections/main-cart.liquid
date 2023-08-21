@@ -19,31 +19,6 @@
           </metodo>
         </container-met-pagos>
       </met-pagos>
-      {% assign combo_in_cart = false %}
-      {% for item in cart.items %}
-        {% for tag in item.product.tags %}
-          {% if tag == 'combo' %}
-            {% assign combo_in_cart = true %}
-          {% endif %}
-        {% endfor %}
-      {% endfor %}
-
-      {% assign product_without_combo = false %}
-      {% for item in cart.items %}
-        {% unless item.product.tags contains 'combo' %}
-          {% assign product_without_combo = true %}
-        {% endunless %}
-      {% endfor %}
-
-      {% if combo_in_cart %}
-        {% if product_without_combo %}
-          <input type="submit" name="checkout" class="button-cart subtitulo-2 grow" value="Realizar Compra">
-        {% else %}
-          <p class="subtitulo-3">Porfavor agregue un arreglo a tu combo</p>
-        {% endif %}
-      {% else %}
-        <input type="submit" name="checkout" class="button-cart subtitulo-2 grow" value="Realizar Compra">
-      {% endif %}
     </container-resumen-1>
     
     <container-cart-item>
