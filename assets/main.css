@@ -1274,7 +1274,7 @@ products-4-item {
 
 hero-banner .vertical {
     width: calc(100% - 10px);
-    margin: 0 10px;
+    margin-right: 10px;
 }
 
 .product4 {
