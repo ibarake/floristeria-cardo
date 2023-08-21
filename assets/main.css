@@ -927,6 +927,11 @@ collection-slider::-webkit-scrollbar {
   .atc-btn-text{
     display: none;
   }
+
+  .truncate-32 {
+    display: none;
+  }
+  
   collection-list .slider-2{
     display: none;
   }
