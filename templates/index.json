@@ -79,8 +79,8 @@
         "983a6bd6-6300-4100-81f1-975c20d9c221": {
           "type": "FAQ",
           "settings": {
-            "FAQ-title": "Is there any warranty exclusions?",
-            "FAQ-text": "Elementum ullamcorper felis nulla scelerisque. Nunc enim nunc mattis leo massa."
+            "FAQ-title": "¿Qué medios de pago manejan?",
+            "FAQ-text": "Floristería Cardó cuenta con pagos a través del sitio web haciendo directamente el proceso de la compra, también cuenta con transferencias electrónicas las cuales serán verificadas para realización de despacho, no tenemos en cuenta el desprendible o comprobante enviado, solo la transacción efectiva que reporte nuestro banco."
           }
         },
         "9b54aeaa-1948-491a-88f5-bfb9a7984cf8": {
@@ -106,7 +106,7 @@
         "f8002893-50fd-4db1-b929-3ed71cd8fe2b"
       ],
       "settings": {
-        "arreglos-title": "¿Cómo",
+        "arreglos-title": "Lorem Ipsum",
         "arreglos-subtitle": "Arreglos Funebres",
         "collection": "",
         "button-text": "Añadir al carrito",
