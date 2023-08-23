@@ -58,7 +58,7 @@
       ],
       "settings": {
         "title": "Todos los productos",
-        "subtitle": "Pellentesque cras adipiscing tempus libero vel nullam mauris tellus. Aliquam ultrices tellus consequat amet,",
+        "subtitle": "Encuentra el mejor arreglo floral o bono de condolencia.",
         "button_lin4": "Ver Por Ocasion",
         "button_lin5": "Contactanos",
         "collection_list": [
@@ -73,7 +73,7 @@
       "type": "collection-main",
       "settings": {
         "add-to-cart-title": "Añadir al carrito",
-        "total-p": "Todos los Arreglos"
+        "total-p": "Todos los Productos"
       }
     }
   },
