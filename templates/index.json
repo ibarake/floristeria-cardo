@@ -3,7 +3,7 @@
     "7208b537-5179-4c35-a9f0-5b7e2ed3aa1f": {
       "type": "hero-banner",
       "settings": {
-        "hero-title": "¿No sabes cómo decirlo? <br> Dilo con Flores.",
+        "hero-title": "¿No sabes cómo expresarlo? <br> Exprésalo con Flores.",
         "hero-collection": "arreglos-de-nacimiento",
         "hero-subtitle": "Pellentesque cras adipiscing tempus libero vel nullam mauris tellus. Aliquam ultrices tellus consequat amet,",
         "add-to-cart-title": "Añadir al carrito",
@@ -17,7 +17,7 @@
       "type": "collection-list",
       "settings": {
         "subtitle-text": "Categorias",
-        "title-text": "Encuentra el regalo ideal",
+        "title-text": "Encuentra el arreglo ideal",
         "p-text": "Pellentesque cras adipiscing tempus libero vel nullam mauris tellus. Aliquam ultrices tellus consequat amet,",
         "cta-3": "Ver por Ocasión",
         "collection_list": [
@@ -40,8 +40,8 @@
     "main": {
       "type": "products-4",
       "settings": {
-        "arreglos-title": "Lorem ipsum dolor sit amet",
-        "arreglos-subtitle": "Arreglos Funebres",
+        "arreglos-title": "Especiales para toda ocasión",
+        "arreglos-subtitle": "Arreglos Florales",
         "collection": [
           "arreglo-floral-inspiracion",
           "arreglo-inspiracion",
@@ -119,7 +119,7 @@
       "type": "products-4",
       "settings": {
         "arreglos-title": "Lorem ipsum dolor sit amet",
-        "arreglos-subtitle": "Arreglos Funebres",
+        "arreglos-subtitle": "Arreglos Fúnebres",
         "collection": [
           "arreglo-armonia-de-orquideas-1",
           "arreglo-armonia",
