@@ -3,15 +3,15 @@
     "main": {
       "type": "main-page",
       "settings": {
-        "title": "Lorem ipsum dolor sit amet",
-        "subtitle": "Pellentesque cras adipiscing tempus libero vel nullam mauris tellus. Aliquam ultrices tellus consequat amet,",
+        "title": "Contáctanos",
+        "subtitle": "Comunícate con nosotros si cuentas con alguna solicitud especial o requieres apoyo en el proceso de compra.",
         "image": "shopify:\/\/shop_images\/fotos-montaje-cardo-08_medium_2x_2760f2ba-0071-4ef2-905a-33d3287f9485.webp",
         "label-correo": "Correo",
-        "correo": "prueba@gmail.com",
+        "correo": "ventas@floristeriacardo.com.co",
         "label-numero": "Número",
-        "numero": 3203949606,
-        "label-direccion": "Dirección",
-        "direccion": "Calle 98 # 18-21 Bogotá D.C. - Colombia"
+        "numero": 3123775900,
+        "label-direccion": "Dirección en Bogotá",
+        "direccion": "Calle 98 # 18-21"
       }
     },
     "ab468724-9c43-46f4-88d0-5e4aaa13eb36": {
