@@ -43,10 +43,10 @@
         "arreglos-title": "Especiales para toda ocasión",
         "arreglos-subtitle": "Arreglos Florales",
         "collection": [
-          "arreglo-floral-inspiracion",
-          "arreglo-inspiracion",
-          "corazon-de-mama",
-          "corazon-dulce"
+          "copia-de-arreglo-inspiracion",
+          "inolvidable",
+          "arreglo-armonia",
+          "arreglo-armonia-de-orquideas-1"
         ],
         "button-text": "Añadir al carrito",
         "title-preguntas": "Sobre Cardó",
@@ -134,7 +134,7 @@
         "color": false,
         "border": false,
         "style-s": "style 2",
-        "link": "shopify:\/\/collections\/arreglos-funebres"
+        "link": "shopify:\/\/collections\/all"
       }
     },
     "ec7ee139-7af0-40a7-b9d3-a60e0edf94c7": {
