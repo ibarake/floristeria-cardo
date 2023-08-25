@@ -3257,7 +3257,7 @@ con-wf {
 }
 
 collection-slider-2 {
-  width: 90%;
+  width: 100%;
   display: grid;
   grid-template-columns: 50% 50%;
   z-index: 1;
