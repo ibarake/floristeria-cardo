@@ -34,7 +34,7 @@ dropdownMenus.forEach(function (dropdownMenu) {
     // Check if a different dropdown is already active
     if (activeDropdown && activeDropdown !== childLi) {
       var activeDropdownMenu = activeDropdown.previousElementSibling;
-      if (activeDropdownMenu.style.transform = "scaleY(1)"){
+      if (activeDropdownMenu.style.transform === "scaleY(1)"){
         activeDropdownMenu.style.transform = "scaleY(-1)";
       } else {
         activeDropdownMenu.style.transform = "scaleY(1)";
