@@ -82,9 +82,8 @@
     }
     .fbt-product-item {
         width: {{ item_width }};
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
         margin: 0 0 1rem;
         background-color: white;
         border-radius: 8px;
@@ -164,6 +163,7 @@
   </style>
 
   <script>
+    
     
     
     
@@ -385,6 +385,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
     }
     customElements.define('frequently-bought-together', FrequentlyBoughtTogether)
 })
+
 
 
 
