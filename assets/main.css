@@ -2003,6 +2003,7 @@ filter-top{
   justify-content: space-between;
   align-items: center;
   width: 90%;
+  margin: auto;
 }
 
 filter-btn{
