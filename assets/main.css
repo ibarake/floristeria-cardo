@@ -3231,7 +3231,6 @@ main-ba-container {
   align-items: center;
   grid-template-columns: 40% 60%;
   background-color: #F7F0E2;
-  gap: 5;
   justify-items: center;
 }
 
