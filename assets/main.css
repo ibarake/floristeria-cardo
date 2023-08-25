@@ -623,7 +623,7 @@ inline-half-container .slider{
 }
 
 .slider-3 .slick-next{
-  top: 25.2rem !important;
+  top: auto !important;
   right: auto !important;
   left: 25px !important;
   bottom: 0px !important;
