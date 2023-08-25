@@ -620,6 +620,7 @@ inline-half-container .slider{
   top: auto !important;
   left: 0 !important;
   bottom: 0px;
+  z-index: 10;
 }
 
 .slider-3 .slick-next{
