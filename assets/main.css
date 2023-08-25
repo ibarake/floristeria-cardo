@@ -1047,7 +1047,7 @@ hor-product-card {
   width: 100%;
 }
 .card-description{
-  color: var(--main-gray)
+  color: var(--main-gray);
 }
 hor-product-card:hover {
   transform: scale(1.05);
