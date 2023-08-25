@@ -226,6 +226,7 @@
     
     
     
+    
 window.addEventListener('DOMContentLoaded', (event) => { 
     window.money_format = "{{ shop.money_format }}"
     window.cart_route = "{{ routes.cart_url }}"
@@ -449,6 +450,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
 
 
+
   </script>
 
   <frequently-bought-together>
@@ -458,12 +460,17 @@ window.addEventListener('DOMContentLoaded', (event) => {
         {% assign total_price = total_price | plus: product.selected_or_first_available_variant.price %}
         <li class="fbt-product-item">
           <div class="fbt-add-checkbox-wrapper">
-            <input id="fbt-add-checkbox-{{ product.id }}" class="fbt-add-checkbox" type="checkbox" checked>
+            {% if forloop.index == 1 %}
+              <input id="fbt-add-checkbox-{{ product.id }}" class="fbt-add-checkbox" type="checkbox" checked>
+            {% else %}
+              <input id="fbt-add-checkbox-{{ product.id }}" class="fbt-add-checkbox" type="checkbox">
+            {% endif %}
             <label class="subtitulo-5 olive" for="fbt-add-checkbox-{{ product.id }}">
               {% render 'icon-cart' -%}
               {{- text_add_this }}
             </label>
           </div>
+
           <img
             class="fbt-product-img img-fluid {{ section.settings.fbt_product_img_border }}"
             src="{{ product.featured_image.src | image_url: width: img_width, height: img_height, crop: 'center' }}"
