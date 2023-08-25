@@ -1,7 +1,6 @@
 {% form 'cart', cart %}
   <section class="cart page-width">
-
-  <container-resumen-1>
+    <container-resumen-1>
       <met-pagos-1>
         <p class="subtitulo-2" id="pagos">Metodos de Pagos</p>
         <container-met-pagos>
@@ -20,7 +19,7 @@
         </container-met-pagos>
       </met-pagos-1>
     </container-resumen-1>
-    
+
     <container-cart-item>
       <h1 class="titulo-4" id="title-cart">Mi carrito</h1>
       {% if cart.item_count == 0 %}
@@ -172,7 +171,15 @@
         <p class="price subtitulo-3" id="gd">{{ cart.total_price | money_with_currency }}</p>
       </span>
       <span class="button-comprar-responsive">
-        <input type="submit" name="checkout" class="button-cart subtitulo-4 grow" value="Realizar Compra">
+        {% if combo_in_cart %}
+          {% if product_without_combo %}
+            <input type="submit" name="checkout" class="button-cart subtitulo-4 grow" value="Realizar Compra">
+          {% else %}
+            <p class="subtitulo-5">Porfavor agregue un arreglo a tu combo</p>
+          {% endif %}
+        {% else %}
+          <input type="submit" name="checkout" class="button-cart subtitulo-4 grow" value="Realizar Compra">
+        {% endif %}
       </span>
     </cart-footer>
   </section>
