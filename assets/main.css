@@ -2014,6 +2014,9 @@ filter-drawer{
 }
 
 @media only screen and (max-width: 768px) {
+  filter-top{
+    width: 85px;
+  }
   #collection-main {
     grid-template-columns: 100%; 
     grid-template-areas: "topbar"
