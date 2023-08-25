@@ -3364,6 +3364,7 @@ COL-titles {
     background-color: var(--main-white);
     border-radius: 8px;
     overflow: hidden;
+    margin-right: 20px;
   }
   
 
