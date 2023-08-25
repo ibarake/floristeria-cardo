@@ -2250,6 +2250,10 @@ info-container {
   z-index: 1;
 }
 
+cont-icon{
+  margin-right: 20px;
+}
+
 phone {
   border-right: 1px solid gray;
   border-left: 1px solid gray;
