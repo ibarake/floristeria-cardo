@@ -1046,7 +1046,9 @@ hor-product-card {
   z-index: 20;
   width: 100%;
 }
-
+.card-description{
+  color: var(--main-gray)
+}
 hor-product-card:hover {
   transform: scale(1.05);
   transition: all 100ms ease-out;
