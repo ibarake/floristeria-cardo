@@ -2325,6 +2325,10 @@ phone {
   display: flex;
 }
 
+cont-infor{
+  align-self: center;
+}
+
 address {
   display: flex;
 }
