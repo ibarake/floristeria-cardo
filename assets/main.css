@@ -2255,7 +2255,7 @@ phone {
   border-right: 1px solid gray;
   border-left: 1px solid gray;
   padding: 0 30px 0 30px;
-  margin: 0 20px 0 30px;
+  margin: 0 30px 0 30px;
 }
 
 information-container {
@@ -2363,11 +2363,11 @@ address {
     align-items: center;
     border-bottom: 1px solid var(--main-gray);
     border-top: 1px solid var(--main-gray);
-    padding-bottom: 30px;
+    padding-bottom: 15px;
   }
 
   gmail {
-    padding-bottom: 20px;
+    padding-bottom: 15px;
 }
 
   container-flor1-2 {
