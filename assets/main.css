@@ -628,12 +628,6 @@ inline-half-container .slider{
   left: 25px !important;
   bottom: 0px !important;
 }
-
-.slick-slider .slick-list {
-  overflow-x: auto;
-  overflow-y: hidden;
-}
-
 ::-webkit-scrollbar {
     display: none;
 }
