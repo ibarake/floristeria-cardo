@@ -230,6 +230,7 @@
     
     
     
+    
 window.addEventListener('DOMContentLoaded', (event) => { 
     window.money_format = "{{ shop.money_format }}"
     window.cart_route = "{{ routes.cart_url }}"
@@ -402,11 +403,11 @@ window.addEventListener('DOMContentLoaded', (event) => {
 document.addEventListener('DOMContentLoaded', function() {
 const check = document.querySelectorAll('.fbt-add-checkbox');
 
-check.forEach(() => {
-            const productItem = check.closest('.fbt-product-item')
+check.forEach((c) => {
+            const productItem = c.closest('.fbt-product-item')
             const imgEl = productItem.querySelector('.fbt-product-img')
 
-            if (check.checked) {
+            if (c.checked) {
                 imgEl.style.opacity = '1'
                 productItem.style.border = '2px solid var(--main-olive)';
             } else {
@@ -416,6 +417,7 @@ check.forEach(() => {
 })
 
 })
+
 
 
 
