@@ -54,12 +54,12 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <script type="text/javascript">
-        $(document).ready(function(){
-          $('.slider').slick({
-            infinite: true,
-            slidesToShow: 3,
-            slidesToScroll: 3,
-          });
+          $(document).ready(function(){
+            $('.slider').slick({
+              infinite: true,
+              slidesToShow: 3,
+              slidesToScroll: 3,
+            });
 
 
       // Debounce function
@@ -76,38 +76,38 @@
 
       // Wheel event handler wrapped in debounce
       var handleWheel = debounce(function(e) {
-          if (e.originalEvent.deltaY < 0) {
-              $(this).find('.slick-prev').click(); // Simulate click on previous button
-          } else {
+          // Check for horizontal scroll
+          if (e.originalEvent.deltaX > 0) {
+              e.preventDefault(); // Prevent horizontal scroll
               $(this).find('.slick-next').click(); // Simulate click on next button
+          } else if (e.originalEvent.deltaX < 0) {
+              e.preventDefault(); // Prevent horizontal scroll
+              $(this).find('.slick-prev').click(); // Simulate click on previous button
           }
-      }, 100);
+          // For vertical scroll, do nothing and let the page scroll normally
+      }, 400);
 
-          $('.slider').on('wheel', function(e) {
-          e.preventDefault();
-          handleWheel.call(this, e);
-      });
-          $('.slider-3').slick({
-            infinite: true,
-            slidesToShow: 3,
-            slidesToScroll: 3,
-          });
-          $('.slider-3').on('wheel', function(e) {
-          e.preventDefault();
-          handleWheel.call(this, e);
-      });
-          $('.slider-2').slick({
-            infinite: true,
-            slidesToShow: 5,
-            slidesToScroll: 2,
-            autoplay: true,
-            autoplaySpeed: 10000,
-          });
-          $('.slider-2').on('wheel', function(e) {
-          e.preventDefault();
-          handleWheel.call(this, e);
-      });
+
+            $('.slider-3').slick({
+              infinite: true,
+              slidesToShow: 3,
+              slidesToScroll: 3,
+            });
+
         });
+            $('.slider-2').slick({
+              infinite: true,
+              slidesToShow: 5,
+              slidesToScroll: 2,
+              autoplay: true,
+              autoplaySpeed: 10000,
+            });
+                $('.slider').on('wheel', handleWheel);
+            $('.slider-2').on('wheel', handleWheel);
+      $('.slider-3').on('wheel', handleWheel);
+
+        });
+          });
     </script>
   </body>
   <script src="{{ 'main.js' | asset_url }}"></script>
