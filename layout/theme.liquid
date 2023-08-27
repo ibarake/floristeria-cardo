@@ -88,7 +88,6 @@
       }, 100);
 
             $('.slider').on('wheel', function(e) {
-            e.preventDefault();
             handleWheel.call(this, e);
         });
             $('.slider-3').slick({
@@ -97,7 +96,6 @@
               slidesToScroll: 3,
             });
             $('.slider-3').on('wheel', function(e) {
-            e.preventDefault();
             handleWheel.call(this, e);
         });
             $('.slider-2').slick({
@@ -108,7 +106,6 @@
               autoplaySpeed: 10000,
             });
             $('.slider-2').on('wheel', function(e) {
-            e.preventDefault();
             handleWheel.call(this, e);
         });
           });
