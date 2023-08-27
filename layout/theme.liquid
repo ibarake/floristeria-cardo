@@ -60,29 +60,51 @@
           slidesToShow: 3,
           slidesToScroll: 3,
         });
-        $('.slider').on('wheel', (function(e) {
-          e.preventDefault();
+        var isSliding = false;
 
-          if (e.originalEvent.deltaY < 0) {
-            $(this).slick('slickPrev');
-          } else {
-            $(this).slick('slickNext');
-          }
-        }));
+        $('.slider').on('wheel', function(e) {
+            e.preventDefault();
+
+            if (isSliding) return; // If already sliding, exit
+
+            isSliding = true; // Set the flag to true
+
+            if (e.originalEvent.deltaY < 0) {
+                $(this).slick('slickPrev');
+            } else {
+                $(this).slick('slickNext');
+            }
+
+            // Reset the flag after a delay
+            setTimeout(function() {
+                isSliding = false;
+            }, 400); // 400ms delay, adjust as needed
+        });
         $('.slider-3').slick({
           infinite: true,
           slidesToShow: 3,
           slidesToScroll: 3,
         });
-        $('.slider-3').on('wheel', (function(e) {
-          e.preventDefault();
+        var isSliding = false;
 
-          if (e.originalEvent.deltaY < 0) {
-            $(this).slick('slickPrev');
-          } else {
-            $(this).slick('slickNext');
-          }
-        }));
+        $('.slider-3').on('wheel', function(e) {
+            e.preventDefault();
+
+            if (isSliding) return; // If already sliding, exit
+
+            isSliding = true; // Set the flag to true
+
+            if (e.originalEvent.deltaY < 0) {
+                $(this).slick('slickPrev');
+            } else {
+                $(this).slick('slickNext');
+            }
+
+            // Reset the flag after a delay
+            setTimeout(function() {
+                isSliding = false;
+            }, 400); // 400ms delay, adjust as needed
+        });
         $('.slider-2').slick({
           infinite: true,
           slidesToShow: 5,
@@ -91,15 +113,26 @@
           autoplaySpeed: 10000,
         });
 
-        $('.slider-2').on('wheel', (function(e) {
-          e.preventDefault();
+        var isSliding = false;
 
-          if (e.originalEvent.deltaY < 0) {
-            $(this).slick('slickPrev');
-          } else {
-            $(this).slick('slickNext');
-          }
-        }));
+        $('.slider-2').on('wheel', function(e) {
+            e.preventDefault();
+
+            if (isSliding) return; // If already sliding, exit
+
+            isSliding = true; // Set the flag to true
+
+            if (e.originalEvent.deltaY < 0) {
+                $(this).slick('slickPrev');
+            } else {
+                $(this).slick('slickNext');
+            }
+
+            // Reset the flag after a delay
+            setTimeout(function() {
+                isSliding = false;
+            }, 400); // 400ms delay, adjust as needed
+        });
       });
     </script>
   </body>
