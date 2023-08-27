@@ -71,17 +71,14 @@
 
             if (e.originalEvent.deltaY < 0) {
                 $(this).slick('slickPrev');
-                $(this).slick('slickPrev');
-                $(this).slick('slickPrev');
             } else {
-                $(this).slick('slickNext');
-                $(this).slick('slickNext');
                 $(this).slick('slickNext');
             }
 
             // Reset the flag after a delay
             setTimeout(function() {
                 isSliding = false;
+                $('.slider').slick('slickSetOption', 'slidesToScroll', 3, true);
             }, 400); // 400ms delay, adjust as needed
         });
         $('.slider-3').slick({
@@ -100,18 +97,15 @@
 
             if (e.originalEvent.deltaY < 0) {
                 $(this).slick('slickPrev');
-                $(this).slick('slickPrev');
-                $(this).slick('slickPrev');
             } else {
-                $(this).slick('slickNext');
-                $(this).slick('slickNext');
                 $(this).slick('slickNext');
             }
 
             // Reset the flag after a delay
             setTimeout(function() {
-                isSliding = false;
-            }, 400); // 400ms delay, adjust as needed
+                  isSliding = false;
+                  $('.slider-3').slick('slickSetOption', 'slidesToScroll', 3, true);
+              }, 400); // 400ms delay, adjust as needed
         });
         $('.slider-2').slick({
           infinite: true,
@@ -132,17 +126,14 @@
 
             if (e.originalEvent.deltaY < 0) {
                 $(this).slick('slickPrev');
-                $(this).slick('slickPrev');
-                $(this).slick('slickPrev');
             } else {
-                $(this).slick('slickNext');
-                $(this).slick('slickNext');
                 $(this).slick('slickNext');
             }
 
             // Reset the flag after a delay
             setTimeout(function() {
                 isSliding = false;
+                $('.slider-2').slick('slickSetOption', 'slidesToScroll', 3, true);
             }, 400); // 400ms delay, adjust as needed
         });
       });
