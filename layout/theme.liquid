@@ -54,89 +54,92 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <script type="text/javascript">
-      $(document).ready(function(){
-        $('.slider').slick({
-          infinite: true,
-          slidesToShow: 3,
-          slidesToScroll: 3,
-        });
-        var isSliding = false;
+        $(document).ready(function(){
+          $('.slider').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+          });
+          var isSliding = false;
 
-        $('.slider').on('wheel', function(e) {
-            e.preventDefault();
+      $('.slider').on('wheel', function(e) {
+          e.preventDefault();
 
-            if (isSliding) return; // If already sliding, exit
+          if (isSliding) return; // If already sliding, exit
 
-            isSliding = true; // Set the flag to true
+          isSliding = true; // Set the flag to true
 
-            if (e.originalEvent.deltaY < 0) {
-                $(this).slick('slickPrev');
-            } else {
-                $(this).slick('slickNext');
-            }
+          var currentSlide = $(this).slick('slickCurrentSlide');
 
-            // Reset the flag after a delay
-            setTimeout(function() {
-                isSliding = false;
-                $('.slider').slick('slickSetOption', 'slidesToScroll', 3, true);
-            }, 400); // 400ms delay, adjust as needed
-        });
-        $('.slider-3').slick({
-          infinite: true,
-          slidesToShow: 3,
-          slidesToScroll: 3,
-        });
-        var isSliding = false;
+          if (e.originalEvent.deltaY < 0) {
+              $(this).slick('slickGoTo', currentSlide - 1);
+          } else {
+              $(this).slick('slickGoTo', currentSlide + 1);
+          }
 
-        $('.slider-3').on('wheel', function(e) {
-            e.preventDefault();
-
-            if (isSliding) return; // If already sliding, exit
-
-            isSliding = true; // Set the flag to true
-
-            if (e.originalEvent.deltaY < 0) {
-                $(this).slick('slickPrev');
-            } else {
-                $(this).slick('slickNext');
-            }
-
-            // Reset the flag after a delay
-            setTimeout(function() {
-                  isSliding = false;
-                  $('.slider-3').slick('slickSetOption', 'slidesToScroll', 3, true);
-              }, 400); // 400ms delay, adjust as needed
-        });
-        $('.slider-2').slick({
-          infinite: true,
-          slidesToShow: 5,
-          slidesToScroll: 2,
-          autoplay: true,
-          autoplaySpeed: 10000,
-        });
-
-        var isSliding = false;
-
-        $('.slider-2').on('wheel', function(e) {
-            e.preventDefault();
-
-            if (isSliding) return; // If already sliding, exit
-
-            isSliding = true; // Set the flag to true
-
-            if (e.originalEvent.deltaY < 0) {
-                $(this).slick('slickPrev');
-            } else {
-                $(this).slick('slickNext');
-            }
-
-            // Reset the flag after a delay
-            setTimeout(function() {
-                isSliding = false;
-                $('.slider-2').slick('slickSetOption', 'slidesToScroll', 3, true);
-            }, 400); // 400ms delay, adjust as needed
-        });
+          // Reset the flag after a delay
+          setTimeout(function() {
+              isSliding = false;
+          }, 400); // 400ms delay, adjust as needed
       });
+          $('.slider-3').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+          });
+          var isSliding = false;
+
+      $('.slider-3').on('wheel', function(e) {
+          e.preventDefault();
+
+          if (isSliding) return; // If already sliding, exit
+
+          isSliding = true; // Set the flag to true
+
+          var currentSlide = $(this).slick('slickCurrentSlide');
+
+          if (e.originalEvent.deltaY < 0) {
+              $(this).slick('slickGoTo', currentSlide - 1);
+          } else {
+              $(this).slick('slickGoTo', currentSlide + 1);
+          }
+
+          // Reset the flag after a delay
+          setTimeout(function() {
+              isSliding = false;
+          }, 400); // 400ms delay, adjust as needed
+      });
+          $('.slider-2').slick({
+            infinite: true,
+            slidesToShow: 5,
+            slidesToScroll: 2,
+            autoplay: true,
+            autoplaySpeed: 10000,
+          });
+
+          var isSliding = false;
+
+      $('.slider-2').on('wheel', function(e) {
+          e.preventDefault();
+
+          if (isSliding) return; // If already sliding, exit
+
+          isSliding = true; // Set the flag to true
+
+          var currentSlide = $(this).slick('slickCurrentSlide');
+
+          if (e.originalEvent.deltaY < 0) {
+              $(this).slick('slickGoTo', currentSlide - 1);
+          } else {
+              $(this).slick('slickGoTo', currentSlide + 1);
+          }
+
+          // Reset the flag after a delay
+          setTimeout(function() {
+              isSliding = false;
+          }, 400); // 400ms delay, adjust as needed
+      });
+        });
     </script>
   </body>
   <script src="{{ 'main.js' | asset_url }}"></script>
