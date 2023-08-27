@@ -70,10 +70,10 @@
             isSliding = true; // Set the flag to true
 
             if (e.originalEvent.deltaY < 0) {
-                $(this).slick('slickPrev');
-            } else {
-                $(this).slick('slickNext');
-            }
+            $(this).find('.slick-prev').click(); // Simulate click on previous button
+        } else {
+            $(this).find('.slick-next').click(); // Simulate click on next button
+        }
 
             // Reset the flag after a delay
             setTimeout(function() {
@@ -95,10 +95,10 @@
             isSliding = true; // Set the flag to true
 
             if (e.originalEvent.deltaY < 0) {
-                $(this).slick('slickPrev');
-            } else {
-                $(this).slick('slickNext');
-            }
+            $(this).find('.slick-prev').click(); // Simulate click on previous button
+        } else {
+            $(this).find('.slick-next').click(); // Simulate click on next button
+        }
 
             // Reset the flag after a delay
             setTimeout(function() {
@@ -123,10 +123,10 @@
             isSliding = true; // Set the flag to true
 
             if (e.originalEvent.deltaY < 0) {
-                $(this).slick('slickPrev');
-            } else {
-                $(this).slick('slickNext');
-            }
+            $(this).find('.slick-prev').click(); // Simulate click on previous button
+        } else {
+            $(this).find('.slick-next').click(); // Simulate click on next button
+        }
 
             // Reset the flag after a delay
             setTimeout(function() {
