@@ -129,9 +129,9 @@
           var currentSlide = $(this).slick('slickCurrentSlide');
 
           if (e.originalEvent.deltaY < 0) {
-              $(this).slick('slickGoTo', currentSlide - 1);
+              $(this).slick(currentSlide - 1, 'slickGoTo');
           } else {
-              $(this).slick('slickGoTo', currentSlide + 1);
+              $(this).slick(currentSlide + 1, 'slickGoTo');
           }
 
           // Reset the flag after a delay
