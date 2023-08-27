@@ -79,10 +79,10 @@
           // Check for horizontal scroll
           if (e.originalEvent.deltaX > 0) {
               e.preventDefault(); // Prevent horizontal scroll
-              $(this).find('.slick-next').click(); // Simulate click on next button
+              $(this).slick('slickNext'); // Simulate click on next button
           } else if (e.originalEvent.deltaX < 0) {
               e.preventDefault(); // Prevent horizontal scroll
-              $(this).find('.slick-prev').click(); // Simulate click on previous button
+              $(this).find('.slickPrev').click(); // Simulate click on previous button
           }
           // For vertical scroll, do nothing and let the page scroll normally
       }, 400);
