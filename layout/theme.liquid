@@ -72,9 +72,9 @@
           var currentSlide = $(this).slick('slickCurrentSlide');
 
           if (e.originalEvent.deltaY < 0) {
-              $(this).slick(currentSlide - 1, 'slickGoTo');
+              $(this).slick('slickGoTo', currentSlide - 1);
           } else {
-              $(this).slick(currentSlide + 1, 'slickGoTo');
+              $(this).slick('slickGoTo', currentSlide + 1);
           }
 
           // Reset the flag after a delay
@@ -99,9 +99,9 @@
           var currentSlide = $(this).slick('slickCurrentSlide');
 
           if (e.originalEvent.deltaY < 0) {
-              $(this).slick(currentSlide - 1, 'slickGoTo');
+              $(this).slick('slickGoTo', currentSlide - 1);
           } else {
-              $(this).slick(currentSlide + 1, 'slickGoTo');
+              $(this).slick('slickGoTo', currentSlide + 1);
           }
 
           // Reset the flag after a delay
@@ -129,9 +129,9 @@
           var currentSlide = $(this).slick('slickCurrentSlide');
 
           if (e.originalEvent.deltaY < 0) {
-              $(this).slick(currentSlide - 1, 'slickGoTo');
+              $(this).slick('slickGoTo', currentSlide - 1);
           } else {
-              $(this).slick(currentSlide + 1, 'slickGoTo');
+              $(this).slick('slickGoTo', currentSlide + 1);
           }
 
           // Reset the flag after a delay
