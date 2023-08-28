@@ -31,6 +31,8 @@
           {% endfor %}
         </select>
         <script>
+          var collectionHandle = "{{ collection.handle }}";
+
                     Shopify.queryParams = {};
 
                     // Preserve existing query parameters
@@ -52,7 +54,7 @@
               Shopify.queryParams.sort_by = value;
               var newUrl = new URLSearchParams(Shopify.queryParams).toString();
 
-              fetch('/collections/' + collection.handle + '?' + newUrl)
+              fetch('/collections/' + collectionHandle + '?' + newUrl)
               .then(response => response.text())
               .then(data => {
                   var parser = new DOMParser();
