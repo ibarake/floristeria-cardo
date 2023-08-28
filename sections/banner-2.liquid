@@ -23,7 +23,11 @@
         {% endif %}
       </a>
       <a href="{{ section.settings.button_link-5 }}" class="contact-button subtitulo-3 grow">
-        {{ collection.metafields.custom.page_button_2 }}
+        {% if collection.metafields.custom.page_button_2 != blank %}
+          {{ collection.metafields.custom.page_button_2 }}
+        {% else %}
+          {{ section.settings.button_lin5 }}
+        {% endif %}
       </a>
     </buttons-ba-container>
   </con-t>
