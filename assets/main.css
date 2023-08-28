@@ -1088,14 +1088,6 @@ card-footer {
   border-top: solid 1.5px var(--main-color);
 }
 
-card-footer .price{
-  margin: 0;
-}
-
-card-footer .collection-tag{
-  font-size: 11px !important;
-}
-
 .card-add-to-cart {
   display: flex;
   flex-direction: row;
@@ -1178,6 +1170,14 @@ card-footer .collection-tag{
 }
 
 @media only screen and (max-width: 768px) {
+card-footer .price{
+  margin: 0;
+}
+
+product-card-title .collection-tag{
+  font-size: 11px;
+}
+  
 .card-product-title{
   min-height: 30px;  
 }
