@@ -1086,6 +1086,7 @@ card-footer {
   justify-content: space-between;
   align-items: center;
   border-top: solid 1.5px var(--main-color);
+  height: fit-content;
 }
 
 .card-add-to-cart {
