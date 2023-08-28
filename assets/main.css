@@ -646,6 +646,7 @@ products-container {
   flex-direction: row;
   flex-wrap: nowrap;
   gap: 20px;
+  margin: 10px 0;
 }
 
 .hero-title {
@@ -1185,7 +1186,6 @@ product-card-title .collection-tag{
   products-container .product-card-image{
     height: 150px;
     width: 100%;
-    margin: 10px 0;
   }
   
   container-4products .product-card-image{
