@@ -76,7 +76,30 @@
                       $(this).slick('slickPrev'); // Move to previous slide
                   }
 
-                  last
+                  lastHandled = now;
+              }
+          }
+
+          $('.slider').on('wheel', handleHorizontalScroll);
+
+          $('.slider-3').slick({
+              infinite: true,
+              slidesToShow: 3,
+              slidesToScroll: 3,
+          });
+
+          $('.slider-3').on('wheel', handleHorizontalScroll);
+
+          $('.slider-2').slick({
+              infinite: true,
+              slidesToShow: 5,
+              slidesToScroll: 2,
+              autoplay: true,
+              autoplaySpeed: 10000,
+          });
+
+          $('.slider-2').on('wheel', handleHorizontalScroll);
+      });
     </script>
   </body>
   <script src="{{ 'main.js' | asset_url }}"></script>
