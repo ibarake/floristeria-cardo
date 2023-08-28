@@ -1092,6 +1092,10 @@ card-footer .price{
   margin: 0;
 }
 
+card-footer .collection-tag{
+  font-size: 11px;
+}
+
 .card-add-to-cart {
   display: flex;
   flex-direction: row;
