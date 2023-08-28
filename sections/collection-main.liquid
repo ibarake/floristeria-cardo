@@ -107,13 +107,6 @@
               var checkboxes = document.querySelectorAll('aside .filter-form input[type="checkbox"]');
 
               checkboxes.forEach(function(checkbox) {
-                checkbox.addEventListener('change', function() {
-                  this.closest('form').submit();
-                });
-              });
-            });
-
-            document.querySelectorAll('aside .filter-form input[type="checkbox"]').forEach(function(checkbox) {
           checkbox.addEventListener('change', function() {
               var form = this.closest('form');
               var formData = new FormData(form);
@@ -130,6 +123,9 @@
 
               history.pushState({}, '', '?' + searchParams);
           });
+            });
+
+            document.querySelectorAll('aside .filter-form input[type="checkbox"]').forEach();
       });
     </script>
   </aside>
