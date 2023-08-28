@@ -54,74 +54,72 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <script type="text/javascript">
-            $(document).ready(function() {
-          $('.slider').slick({
-              infinite: true,
-              slidesToShow: 3,
-              slidesToScroll: 3,
-          });
-
-          // Throttle function
-          function throttle(func, limit) {
-              let lastRan;
-              return function() {
-                  const context = this;
-                  const args = arguments;
-                  if (!lastRan || (Date.now() - lastRan) >= limit) {
-                      func.apply(context, args);
-                      lastRan = Date.now();
-                  }
-              }
-          }
-
-          let recentlyHandled = false;
-
-          // Wheel event handler wrapped in throttle
-          var handleWheel = throttle(function(e) {
-              if (recentlyHandled) return;
-
-              if (e.originalEvent.deltaX > 0) {
-                  e.preventDefault();
-                  $(this).slick('slickNext');
-              } else if (e.originalEvent.deltaX < 0) {
-                  e.preventDefault();
-                  $(this).slick('slickPrev');
-              }
-
-              recentlyHandled = true;
-              setTimeout(() => {
-                  recentlyHandled = false;
-              }, 100);  // Adjust this value as needed
-
-          }, 50);  // Adjust this value as needed
-
-          function attachWheelHandler(slider) {
-              slider.on('wheel', function(e) {
-                  if (Math.abs(e.deltaX) > Math.abs(e.deltaY)) {
-                      e.preventDefault();
-                  }
-                  handleWheel.call(this, e);
+            $(document).ready(function(){
+              $('.slider').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 3,
               });
-          }
 
-          attachWheelHandler($('.slider'));
 
-          $('.slider-3').slick({
-              infinite: true,
-              slidesToShow: 3,
-              slidesToScroll: 3,
+        // Debounce function
+        function debounce(func, wait) {
+            var timeout;
+            return function() {
+                var context = this, args = arguments;
+                clearTimeout(timeout);
+                timeout = setTimeout(function() {
+                    func.apply(context, args);
+                }, wait);
+            };
+        }
+
+        // Wheel event handler wrapped in debounce
+        var handleWheel = debounce(function(e) {
+            // Check for horizontal scroll
+            if (e.originalEvent.deltaX > 0) {
+                e.preventDefault(); // Prevent horizontal scroll
+                $(this).slick('slickNext'); // Simulate click on next button
+            } else if (e.originalEvent.deltaX < 0) {
+                e.preventDefault(); // Prevent horizontal scroll
+                $(this).slick('slickPrev'); // Simulate click on previous button
+            }
+            // For vertical scroll, do nothing and let the page scroll normally
+        }, 100);
+
+              $('.slider').on('wheel', function(e) {
+                if (Math.abs(e.deltaX) > Math.abs(e.deltaY)) {
+          e.preventDefault();
+      }
+
+              handleWheel.call(this, e);
           });
-          attachWheelHandler($('.slider-3'));
-
-          $('.slider-2').slick({
-              infinite: true,
-              slidesToShow: 5,
-              slidesToScroll: 2,
-              autoplay: true,
-              autoplaySpeed: 10000,
+              $('.slider-3').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+              });
+              $('.slider-3').on('wheel', function(e) {
+                if (Math.abs(e.deltaX) > Math.abs(e.deltaY)) {
+          e.preventDefault();
+      }
+              handleWheel.call(this, e);
           });
-          attachWheelHandler($('.slider-2'));
-      });
+              $('.slider-2').slick({
+                infinite: true,
+                slidesToShow: 5,
+                slidesToScroll: 2,
+                autoplay: true,
+                autoplaySpeed: 10000,
+              });
+              $('.slider-2').on('wheel', function(e) {
+                if (Math.abs(e.deltaX) > Math.abs(e.deltaY)) {
+          e.preventDefault();
+      }
+
+              handleWheel.call(this, e);
+          });
+            });
     </script>
   </body>
   <script src="{{ 'main.js' | asset_url }}"></script>
