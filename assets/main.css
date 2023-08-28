@@ -1088,6 +1088,10 @@ card-footer {
   border-top: solid 1.5px var(--main-color);
 }
 
+card-footer .price{
+  margin: 0;
+}
+
 .card-add-to-cart {
   display: flex;
   flex-direction: row;
