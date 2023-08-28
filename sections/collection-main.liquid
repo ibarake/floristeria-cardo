@@ -31,61 +31,28 @@
           {% endfor %}
         </select>
         <script>
-          
-                Shopify.queryParams = {};
+          Shopify.queryParams = {};
 
-                // Preserve existing query parameters
-                if (location.search.length) {
-                    var params = location.search.substr(1).split('&');
+          // Preserve existing query parameters
+          if (location.search.length) {
+              var params = location.search.substr(1).split('&');
 
-                    for (var i = 0; i < params.length; i++) {
-                    var keyValue = params[i].split('=');
+              for (var i = 0; i < params.length; i++) {
+              var keyValue = params[i].split('=');
 
-                    if (keyValue.length) {
-                        Shopify.queryParams[decodeURIComponent(keyValue[0])] = decodeURIComponent(keyValue[1]);
-                    }
-                    }
-                }
+              if (keyValue.length) {
+                  Shopify.queryParams[decodeURIComponent(keyValue[0])] = decodeURIComponent(keyValue[1]);
+              }
+              }
+          }
 
-                // Update sort_by query parameter on select change
-                document.querySelector('#sort-by').addEventListener('change', function(e) {
-              e.preventDefault();
+          // Update sort_by query parameter on select change
+          document.querySelector('#sort-by').addEventListener('change', function(e) {
               var value = e.target.value;
-              fetchProducts(value);
+
+              Shopify.queryParams.sort_by = value;
+              location.search = new URLSearchParams(Shopify.queryParams).toString();
           });
-
-          function fetchProducts(sortByValue) {
-    var collectionHandle = 'your-collection-handle'; // Replace with your collection handle
-    var endpoint = '/collections/' + collectionHandle + '/products.json?view=ajax&sort_by=' + sortByValue;
-
-    fetch(endpoint)
-        .then(response => response.json())
-        .then(data => {
-            updateProductGrid(data.products);
-        })
-        .catch(error => {
-            console.error('Error fetching products:', error);
-        });
-}
-
-function updateProductGrid(products) {
-    var productGrid = document.querySelector('product-grid');
-    var newContent = '';
-
-    products.forEach(product => {
-        newContent += `
-            <a class="product-item" href="${product.url}">
-                <!-- You can adjust the product card structure here -->
-                <img src="${product.image.src}" alt="${product.title}">
-                <h2>${product.title}</h2>
-                <p>${product.price}</p>
-            </a>
-        `;
-    });
-
-    productGrid.innerHTML = newContent;
-}
-
         </script>
       </sort-by>
       <button class="filter-drawer-btn" id="parrafo-2">
