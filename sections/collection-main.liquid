@@ -181,89 +181,93 @@
 </filter-drawer>
 
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      var orderVerticalBtn = document.getElementById('order-vertical-btn');
-      var orderHorizontalBtn = document.getElementById('order-horizontal-btn');
-      var horPath = document.querySelectorAll('#order-horizontal-btn path');
-      var verPath = document.querySelectorAll('#order-vertical-btn path');
-      var productGrid = document.querySelector('product-grid');
-      var productHorizontalCards = document.querySelectorAll('.horizontal');
-      var productVerticalCards = document.querySelectorAll('.vertical');
-      var cardWidth = document.querySelectorAll('a.product-item')
+      document.addEventListener('DOMContentLoaded', function() {
+        var orderVerticalBtn = document.getElementById('order-vertical-btn');
+        var orderHorizontalBtn = document.getElementById('order-horizontal-btn');
+        var horPath = document.querySelectorAll('#order-horizontal-btn path');
+        var verPath = document.querySelectorAll('#order-vertical-btn path');
+        var productGrid = document.querySelector('product-grid');
+        var productHorizontalCards = document.querySelectorAll('.horizontal');
+        var productVerticalCards = document.querySelectorAll('.vertical');
+        var cardWidth = document.querySelectorAll('a.product-item')
 
-      orderVerticalBtn.addEventListener('click', function() {
-        productVerticalCards.forEach((pc) => {
-          pc.style.display = "flex";
-        })
-        productHorizontalCards.forEach((pc) => {
-          pc.style.display = "none";
+        orderVerticalBtn.addEventListener('click', function() {
+          productVerticalCards.forEach((pc) => {
+            pc.style.display = "flex";
+          })
+          productHorizontalCards.forEach((pc) => {
+            pc.style.display = "none";
 
-        })
-        orderVerticalBtn.style.backgroundColor = "var(--main-color)";
-          orderHorizontalBtn.style.backgroundColor = "transparent";
-        horPath.forEach((hp) => {
-                  hp.style.fill = "var(--main-linen)";
-        })
-        verPath.forEach((vp) => {
-          vp.style.fill = "var(--linen-3)";
-        })
-        if (window.innerWidth <= 768) {
-        productGrid.style.gridTemplateColumns = "42% 42%";
-    } else {
-        productGrid.style.gridTemplateColumns = "30% 30% 30%";
-    }
+          })
+          orderVerticalBtn.style.backgroundColor = "var(--main-color)";
+            orderHorizontalBtn.style.backgroundColor = "transparent";
+          horPath.forEach((hp) => {
+                    hp.style.fill = "var(--main-linen)";
+          })
+          verPath.forEach((vp) => {
+            vp.style.fill = "var(--linen-3)";
+          })
+          if (window.innerWidth <= 768) {
+          productGrid.style.gridTemplateColumns = "42% 42%";
+      } else {
+          productGrid.style.gridTemplateColumns = "30% 30% 30%";
+      }
+        });
+
+        orderHorizontalBtn.addEventListener('click', function() {
+          productGrid.classList.add('order-horizontal');
+          productGrid.classList.remove('order-vertical');
+
+          cardWidth.forEach((c) =>{
+            c.style.width = '95%';
+          })
+
+          productVerticalCards.forEach((pc) => {
+            pc.style.display = "none";
+          })
+          productHorizontalCards.forEach((pc) => {
+            pc.style.display = "flex";
+          })
+          orderVerticalBtn.style.backgroundColor = "transparent";
+          orderHorizontalBtn.style.backgroundColor = "var(--main-color)";
+          horPath.forEach((hp) => {
+            hp.style.fill = "var(--linen-3)";
+          })
+          verPath.forEach((vp) => {
+            vp.style.fill = "var(--main-linen)";
+          })
+          productGrid.style.gridTemplateColumns = "1fr";
+        });
       });
 
-      orderHorizontalBtn.addEventListener('click', function() {
-        productGrid.classList.add('order-horizontal');
-        productGrid.classList.remove('order-vertical');
+      // FILTER DRAWER COLLECTION
 
-        cardWidth.forEach((c) =>{
-          c.style.width = '95%';
-        })
+    const filterDisplayBtn = document.querySelectorAll('.filter-drawer-btn');
 
-        productVerticalCards.forEach((pc) => {
-          pc.style.display = "none";
-        })
-        productHorizontalCards.forEach((pc) => {
-          pc.style.display = "flex";
-        })
-        orderVerticalBtn.style.backgroundColor = "transparent";
-        orderHorizontalBtn.style.backgroundColor = "var(--main-color)";
-        horPath.forEach((hp) => {
-          hp.style.fill = "var(--linen-3)";
-        })
-        verPath.forEach((vp) => {
-          vp.style.fill = "var(--main-linen)";
-        })
-        productGrid.style.gridTemplateColumns = "1fr";
-      });
+    filterDisplayBtn.forEach((fbutton) => {
+      const drawer = fbutton.parentElement.parentElement.parentElement.parentElement.querySelector('filter-drawer');
+      const close = drawer.querySelector('.close-filter-drawer');
+
+      close.addEventListener('click', () => {
+        if (drawer.style.bottom === '0px') {
+            drawer.style.bottom = '-1000px';
+        } else {
+            drawer.style.bottom = '0px';
+        }
+      })
+      fbutton.addEventListener('click', () => {
+        if (drawer.style.bottom === '0px') {
+            drawer.style.bottom = '-1000px';
+        } else {
+            drawer.style.bottom = '0px';
+        }
     });
 
-    // FILTER DRAWER COLLECTION
 
-  const filterDisplayBtn = document.querySelectorAll('.filter-drawer-btn');
+    });
 
-  filterDisplayBtn.forEach((fbutton) => {
-    const drawer = fbutton.parentElement.parentElement.parentElement.parentElement.querySelector('filter-drawer');
-    const close = drawer.querySelector('.close-filter-drawer');
-
-    close.addEventListener('click', () => {
-      if (drawer.style.bottom === '0px') {
-          drawer.style.bottom = '-1000px';
-      } else {
-          drawer.style.bottom = '0px';
-      }
-    })
-    fbutton.addEventListener('click', () => {
-      if (drawer.style.bottom === '0px') {
-          drawer.style.bottom = '-1000px';
-      } else {
-          drawer.style.bottom = '0px';
-      }
-  });
-
-
+            window.addEventListener('popstate', function(event) {
+      location.reload(); // Reload the page to reflect the previous state
   });
 </script>
 
