@@ -61,25 +61,26 @@
               slidesToScroll: 3,
           });
 
-          var lastScrollTime = 0;
+          var isScrolling = false;
           var delay = 400; // 400ms delay, adjust as needed
 
           function handleHorizontalScroll(e) {
-              var currentTime = new Date().getTime();
-
-              if (currentTime - lastScrollTime < delay) {
-                  return;
-              }
-
               if (Math.abs(e.originalEvent.deltaX) > Math.abs(e.deltaY)) {
                   e.preventDefault(); // Prevent horizontal scroll
-                  if (e.originalEvent.deltaX > 0) {
-                      $(this).slick('slickNext'); // Move to next slide
-                  } else {
-                      $(this).slick('slickPrev'); // Move to previous slide
-                  }
 
-                  lastScrollTime = currentTime;
+                  if (!isScrolling) {
+                      if (e.originalEvent.deltaX > 0) {
+                          $(this).slick('slickNext'); // Move to next slide
+                      } else {
+                          $(this).slick('slickPrev'); // Move to previous slide
+                      }
+
+                      isScrolling = true;
+
+                      setTimeout(function() {
+                          isScrolling = false;
+                      }, delay);
+                  }
               }
           }
 
