@@ -113,11 +113,14 @@
   
   
   
+  
   document.querySelector('title-add-combo').addEventListener('click', () =>{
     if (document.querySelector('frequently-bought-together').style.height === 'auto') {
             document.querySelector('frequently-bought-together').style.height = '0px';
+            document.querySelector('frequently-bought-together').style.transform = 'scaleY(0)';
     } else {
             document.querySelector('frequently-bought-together').style.height = 'auto';
+            document.querySelector('frequently-bought-together').style.height = 'scaleY(1)';
     }
   })
 
@@ -202,6 +205,7 @@ const productRecommendationsSection = document.querySelector('.product-recommend
 const observer = new IntersectionObserver(handleIntersection, {rootMargin: '0px 0px 200px 0px'});
 
 observer.observe(productRecommendationsSection);
+
 
 
 
