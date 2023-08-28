@@ -1093,7 +1093,7 @@ card-footer .price{
 }
 
 card-footer .collection-tag{
-  font-size: 11px;
+  font-size: 11px !important;
 }
 
 .card-add-to-cart {
