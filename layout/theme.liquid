@@ -54,7 +54,7 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <script type="text/javascript">
-      $(document).ready(function() {
+            $(document).ready(function() {
           $('.slider').slick({
               infinite: true,
               slidesToShow: 3,
@@ -63,28 +63,23 @@
 
           // Throttle function
           function throttle(func, limit) {
-              let lastFunc;
               let lastRan;
               return function() {
                   const context = this;
                   const args = arguments;
-                  if (!lastRan) {
+                  if (!lastRan || (Date.now() - lastRan) >= limit) {
                       func.apply(context, args);
                       lastRan = Date.now();
-                  } else {
-                      clearTimeout(lastFunc);
-                      lastFunc = setTimeout(function() {
-                          if ((Date.now() - lastRan) >= limit) {
-                              func.apply(context, args);
-                              lastRan = Date.now();
-                          }
-                      }, limit - (Date.now() - lastRan));
                   }
               }
           }
 
+          let recentlyHandled = false;
+
           // Wheel event handler wrapped in throttle
           var handleWheel = throttle(function(e) {
+              if (recentlyHandled) return;
+
               if (e.originalEvent.deltaX > 0) {
                   e.preventDefault();
                   $(this).slick('slickNext');
@@ -92,7 +87,13 @@
                   e.preventDefault();
                   $(this).slick('slickPrev');
               }
-          }, 100);  // Adjust this value as needed
+
+              recentlyHandled = true;
+              setTimeout(() => {
+                  recentlyHandled = false;
+              }, 100);  // Adjust this value as needed
+
+          }, 50);  // Adjust this value as needed
 
           function attachWheelHandler(slider) {
               slider.on('wheel', function(e) {
