@@ -31,6 +31,7 @@
           {% endfor %}
         </select>
         <script>
+          
                 Shopify.queryParams = {};
 
                 // Preserve existing query parameters
@@ -52,6 +53,39 @@
               var value = e.target.value;
               fetchProducts(value);
           });
+
+          function fetchProducts(sortByValue) {
+    var collectionHandle = 'your-collection-handle'; // Replace with your collection handle
+    var endpoint = '/collections/' + collectionHandle + '/products.json?view=ajax&sort_by=' + sortByValue;
+
+    fetch(endpoint)
+        .then(response => response.json())
+        .then(data => {
+            updateProductGrid(data.products);
+        })
+        .catch(error => {
+            console.error('Error fetching products:', error);
+        });
+}
+
+function updateProductGrid(products) {
+    var productGrid = document.querySelector('product-grid');
+    var newContent = '';
+
+    products.forEach(product => {
+        newContent += `
+            <a class="product-item" href="${product.url}">
+                <!-- You can adjust the product card structure here -->
+                <img src="${product.image.src}" alt="${product.title}">
+                <h2>${product.title}</h2>
+                <p>${product.price}</p>
+            </a>
+        `;
+    });
+
+    productGrid.innerHTML = newContent;
+}
+
         </script>
       </sort-by>
       <button class="filter-drawer-btn" id="parrafo-2">
