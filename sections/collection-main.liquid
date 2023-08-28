@@ -103,14 +103,33 @@
       {%- endfor -%}
     </form>
     <script>
-            document.addEventListener('DOMContentLoaded', function() {
-        var checkboxes = document.querySelectorAll('aside .filter-form input[type="checkbox"]');
+                  document.addEventListener('DOMContentLoaded', function() {
+              var checkboxes = document.querySelectorAll('aside .filter-form input[type="checkbox"]');
 
-        checkboxes.forEach(function(checkbox) {
+              checkboxes.forEach(function(checkbox) {
+                checkbox.addEventListener('change', function() {
+                  this.closest('form').submit();
+                });
+              });
+            });
+
+            document.querySelectorAll('aside .filter-form input[type="checkbox"]').forEach(function(checkbox) {
           checkbox.addEventListener('change', function() {
-            this.closest('form').submit();
+              var form = this.closest('form');
+              var formData = new FormData(form);
+              var searchParams = new URLSearchParams(formData).toString();
+
+              fetch('/collections/' + collectionHandle + '?' + searchParams)
+              .then(response => response.text())
+              .then(data => {
+                  var parser = new DOMParser();
+                  var doc = parser.parseFromString(data, 'text/html');
+                  var newProductGrid = doc.querySelector('product-grid').innerHTML;
+                  document.querySelector('product-grid').innerHTML = newProductGrid;
+              });
+
+              history.pushState({}, '', '?' + searchParams);
           });
-        });
       });
     </script>
   </aside>
