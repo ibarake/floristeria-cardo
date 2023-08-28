@@ -66,6 +66,8 @@
           var handleWheel = function(e) {
               if (isSliding) return; // If already sliding, ignore the event
 
+              e.stopPropagation(); // Prevent the event from bubbling up
+
               // Check for horizontal scroll
               if (e.originalEvent.deltaX > 0) {
                   e.preventDefault(); // Prevent horizontal scroll
