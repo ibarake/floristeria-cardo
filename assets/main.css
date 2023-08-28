@@ -2788,7 +2788,6 @@ add-combo {
 title-add-combo {
   display: flex;
   align-items: center;
-  height: 0px;
 }
 
 #add-combo-title {
