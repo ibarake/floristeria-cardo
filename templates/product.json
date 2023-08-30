@@ -3,7 +3,7 @@
     "main": {
       "type": "main-product",
       "settings": {
-        "envio": "Envío gratis",
+        "envio": "Envío gratis en Bogotá",
         "info-extra": "Información extra",
         "button-title": "Agregar al carrito",
         "collection": [
