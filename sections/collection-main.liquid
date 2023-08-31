@@ -91,6 +91,7 @@
               });
             });
           }
+          initializeOrder();
                   var collectionHandle = "{{ collection.handle }}";
 
                             Shopify.queryParams = {};
@@ -258,8 +259,6 @@
 </filter-drawer>
 
 <script>
-  initializeOrder();
-
     // FILTER DRAWER COLLECTION
 
   const filterDisplayBtn = document.querySelectorAll('.filter-drawer-btn');
