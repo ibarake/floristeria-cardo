@@ -254,6 +254,7 @@
     
     
     
+    
 window.addEventListener('DOMContentLoaded', (event) => { 
     window.money_format = "{{ shop.money_format }}"
     window.cart_route = "{{ routes.cart_url }}"
@@ -513,6 +514,7 @@ check.forEach((c) => {
 
 
 
+
   </script>
 
   <frequently-bought-together>
@@ -589,12 +591,14 @@ check.forEach((c) => {
         </li>
       {% endfor %}
     </ul>
-    <p class="fbt-total-price-wrapper">
-      <span class="subtitulo-1"> {{ text_total_price }}: </span>
-      <b class="subtitulo-1 fbt-total-price">
-        {{ total_price | money }}
-      </b>
-    </p>
+    {% comment %}
+      <p class="fbt-total-price-wrapper">
+        <span class="subtitulo-1"> {{ text_total_price }}: </span>
+        <b class="subtitulo-1 fbt-total-price">
+          {{ total_price | money }}
+        </b>
+      </p>
+    {% endcomment %}
     <div class="payment-1">
       <button
         class="fbt-btn-atc button button--primary btn btn-primary subtitulo-2"
