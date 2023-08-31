@@ -42,6 +42,9 @@
               var productVerticalCards = document.querySelectorAll('.vertical');
               var cardWidth = document.querySelectorAll('a.product-item')
 
+                  console.log("Initializing order:", orderVerticalBtn, orderHorizontalBtn, productGrid, productHorizontalCards, productVerticalCards);
+
+
               orderVerticalBtn.addEventListener('click', function() {
                 productVerticalCards.forEach((pc) => {
                   pc.style.display = "flex";
