@@ -2817,10 +2817,6 @@ title-add-combo {
     padding: 0;
   }
 
-  add-combo {
-    display: none;
-  }
-
   product-information {
     width: 90%;
     margin-left: 1rem;
@@ -3169,9 +3165,6 @@ cart-footer{
   .container-resumen {
     width: 100%;
     margin: 1rem 0;
-  }
-  add-combo{
-    display:none;
   }
   cart-item-responsive .button-minus, cart-item-responsive .button-plus {
     height: 1.5rem;
