@@ -32,7 +32,6 @@
         </select>
         <script>
                   function initializeOrder() {
-            document.addEventListener('DOMContentLoaded', function() {
               var orderVerticalBtn = document.getElementById('order-vertical-btn');
               var orderHorizontalBtn = document.getElementById('order-horizontal-btn');
               var horPath = document.querySelectorAll('#order-horizontal-btn path');
@@ -92,7 +91,6 @@
                 })
                 productGrid.style.gridTemplateColumns = "1fr";
               });
-            });
           }
           initializeOrder();
                   var collectionHandle = "{{ collection.handle }}";
