@@ -180,6 +180,7 @@
                   var doc = parser.parseFromString(data, 'text/html');
                   var newProductGrid = doc.querySelector('product-grid').innerHTML;
                   document.querySelector('product-grid').innerHTML = newProductGrid;
+                initializeOrder();
               });
 
               history.pushState({}, '', '?' + searchParams);
