@@ -73,6 +73,17 @@
           </answer>
         </faq>
         <container-spam>
+          {% if section.settings['agregar-combo'] != blank %}
+            <add-combo>
+              <title-add-combo>
+                {% render 'button-plus' %}
+                <p class="subtitulo-1" id="add-combo-title">
+                  {{ section.settings['agregar-combo'] }}
+                </p>
+              </title-add-combo>
+              {% render 'eg-frequently-bought-together' %}
+            </add-combo>
+          {% endif %}
           {% if section.settings.envio != blank %}
             <shipping class="extra-product">
               {% render 'icon-transport' %}
@@ -85,17 +96,6 @@
               <p class="subtitulo-2" id="ss">{{ section.settings['info-extra'] }}</p>
             </information>
           {% endif %}
-          {% if section.settings['agregar-combo'] != blank %}
-            <add-combo>
-              <title-add-combo>
-                {% render 'button-plus' %}
-                <p class="subtitulo-1" id="add-combo-title">
-                  {{ section.settings['agregar-combo'] }}
-                </p>
-              </title-add-combo>
-              {% render 'eg-frequently-bought-together' %}
-            </add-combo>
-          {% endif %}
         </container-spam>
       </product-information>
     </main-pr-container>
@@ -103,6 +103,7 @@
 </section>
 
 <script>
+  
   
   
   
@@ -209,6 +210,7 @@ const productRecommendationsSection = document.querySelector('.product-recommend
 const observer = new IntersectionObserver(handleIntersection, {rootMargin: '0px 0px 200px 0px'});
 
 observer.observe(productRecommendationsSection);
+
 
 
 
