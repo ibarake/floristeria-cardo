@@ -103,33 +103,7 @@
 
 <script>
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  document.querySelector('title-add-combo').addEventListener('click', () =>{
-    if (document.querySelector('frequently-bought-together').style.transform === 'scaleY(1)') {
-            document.querySelector('frequently-bought-together').style.transform = 'scaleY(0)';
-            document.querySelector('frequently-bought-together').style.height = '0px';
-    } else {
-            document.querySelector('frequently-bought-together').style.transform = 'scaleY(1)';
-            document.querySelector('frequently-bought-together').style.height = 'auto';
-    }
-  })
 
-  
   /* FAQ DROPDOWN ANIMATION */
 document.addEventListener('DOMContentLoaded', function() {
   var faqTitles = document.querySelectorAll('.FAQ-title');
@@ -210,6 +184,7 @@ const productRecommendationsSection = document.querySelector('.product-recommend
 const observer = new IntersectionObserver(handleIntersection, {rootMargin: '0px 0px 200px 0px'});
 
 observer.observe(productRecommendationsSection);
+
 
 
 
