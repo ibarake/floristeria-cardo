@@ -255,6 +255,7 @@
     
     
     
+    
 window.addEventListener('DOMContentLoaded', (event) => { 
     window.money_format = "{{ shop.money_format }}"
     window.cart_route = "{{ routes.cart_url }}"
@@ -515,6 +516,7 @@ check.forEach((c) => {
 
 
 
+
   </script>
 
   <frequently-bought-together>
@@ -557,9 +559,7 @@ check.forEach((c) => {
                   {{ product.first_available_variant.compare_at_price | money }}
                 </s>
               </span>
-              <span class="parrafo-1 fbt-product-price-final">
-                {{ product.price | money }}
-              </span>
+              <span class="parrafo-1 fbt-product-price-final"> {{ product.price | money }} COP </span>
             </p>
             <select
               class="fbt-variant-select"
