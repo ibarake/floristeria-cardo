@@ -50,13 +50,21 @@
             "FAQ-title": "¿Cómo puedo hacer un cambio?",
             "FAQ-text": "El cambio para los producto de flores adquirido en la tienda online de FLORISTERÍA CARDÓ por calidad, puede solicitarse dentro de los primeros cinco (5) días calendario siguientes al día de la compra, enviando un correo a ventas@floristeriacardo.com.co con una fotografía del producto y explicación del reclamo o llamando a nuestra línea 6016005758 (GTM-5). En caso de cambio, nuestro personal revisará el correcto estado del producto y procederemos a enviarle el nuevo producto 1 día hábil después de recibido el producto. Por otro lado el cambio de los productos de BONOS DE CONDOLENCIA adquirido en la tienda online de FLORISTERÍA CARDÓ por error en la digitación de datos por parte del COMPRADOR, no existirá ningún tipo de cambio."
           }
+        },
+        "4e1dad0f-3b14-4f47-9269-cf797140f6aa": {
+          "type": "FAQ",
+          "settings": {
+            "FAQ-title": "¿Entregan en todo Colombia?",
+            "FAQ-text": "Para el caso de productos de Flores, solo entregamos en Bogotá y la Sabana (Mosquera, Madrid, Funza, Facatativá, Subachoque, El Rosal, Cota, Chía, Cajicá, Zipaquirá, Cogua, Nemocón, Sibaté, Soacha, Sopó, Tabio, Tenjo, Tocancipá, Gachancipá, Sesquilé, Suesca, Chocontá y Guatavita). Para el caso de Bonos entregamos en Ciudades principales y ciudades intermedias únicamente."
+          }
         }
       },
       "block_order": [
         "a2a46735-1107-4568-a288-1725097a2497",
         "6dca9e0d-d864-49c3-b227-69863d2bced4",
         "28266eab-65c2-4286-81c0-ace7e248a349",
-        "e945dbe0-4640-4549-9464-fa6e1cb1af51"
+        "e945dbe0-4640-4549-9464-fa6e1cb1af51",
+        "4e1dad0f-3b14-4f47-9269-cf797140f6aa"
       ],
       "settings": {
         "arreglos-title": "Lorem ipsum dolor sit amet",
