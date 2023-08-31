@@ -256,6 +256,7 @@
     
     
     
+    
 window.addEventListener('DOMContentLoaded', (event) => { 
     window.money_format = "{{ shop.money_format }}"
     window.cart_route = "{{ routes.cart_url }}"
@@ -517,6 +518,7 @@ check.forEach((c) => {
 
 
 
+
   </script>
 
   <frequently-bought-together>
@@ -535,6 +537,9 @@ check.forEach((c) => {
               {% render 'icon-cart' -%}
               {{- text_add_this }}
             </label>
+            <h3 class="fbt-product-title subtitulo-3" style="padding: 0 0 0 10px;">
+              {{ product.title }}
+            </h3>
           </div>
 
           <img
@@ -545,9 +550,6 @@ check.forEach((c) => {
             height="{{ img_height }}"
             loading="lazy"
           >
-          <h3 class="fbt-product-title subtitulo-3" style="padding: 0 0 0 10px;">
-            {{ product.title }}
-          </h3>
           <div class="card-fbt-footer">
             <p class="fbt-product-price">
               <span
