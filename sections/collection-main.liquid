@@ -90,7 +90,7 @@
                 productGrid.style.gridTemplateColumns = "1fr";
               });
           }
-          initializeOrder();
+
                   var collectionHandle = "{{ collection.handle }}";
 
                             Shopify.queryParams = {};
@@ -165,6 +165,7 @@
     </form>
     <script>
                   document.addEventListener('DOMContentLoaded', function() {
+                    initializeOrder();
               var checkboxes = document.querySelectorAll('aside .filter-form input[type="checkbox"]');
 
               checkboxes.forEach(function(checkbox) {
