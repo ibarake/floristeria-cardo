@@ -61,6 +61,7 @@
                   var doc = parser.parseFromString(data, 'text/html');
                   var newProductGrid = doc.querySelector('product-grid').innerHTML;
                   document.querySelector('product-grid').innerHTML = newProductGrid;
+                initializeOrder()
               });
 
               history.pushState({}, '', '?' + newUrl);
@@ -196,6 +197,7 @@
 </filter-drawer>
 
 <script>
+  function initializeOrder() {
     document.addEventListener('DOMContentLoaded', function() {
       var orderVerticalBtn = document.getElementById('order-vertical-btn');
       var orderHorizontalBtn = document.getElementById('order-horizontal-btn');
@@ -254,6 +256,8 @@
         productGrid.style.gridTemplateColumns = "1fr";
       });
     });
+  }
+  initializeOrder();
 
     // FILTER DRAWER COLLECTION
 
