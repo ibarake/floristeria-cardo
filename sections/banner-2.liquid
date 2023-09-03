@@ -53,7 +53,7 @@
   </collection-slider-2>
   <inline-half-container>
     <products-container class="overflow-auto drag-scroll">
-      {% for hero-product in section.settings['hero-collection'].products %}
+      {% for hero-product in collection.metafields.custom.featured_collection.products %}
         <a class="product-item" href="{{ hero-product.url }}">
           {% include 'product-card',
             hero-product: hero-product,
