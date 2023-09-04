@@ -84,6 +84,8 @@
     .fbt-product-list {
         list-style: none;
         padding: 0;
+        height: 200px;
+        overflow: auto;
     }
     .fbt-product-item {
         width: {{ item_width }};
@@ -214,12 +216,13 @@
 
     @media (max-width: 768px) {
 
-
+        .fbt-product-list
 
     }
   </style>
 
   <script>
+    
     
     
     
@@ -453,6 +456,7 @@ const initialize = () => {
 document.addEventListener('DOMContentLoaded', function() {
 initialize();
 })
+
 
 
 
