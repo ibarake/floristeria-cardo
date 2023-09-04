@@ -3101,7 +3101,7 @@ cart-footer{
     display: none;
   }
   
-  cart-footer{
+  cart-footer {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -3114,7 +3114,7 @@ cart-footer{
     width: 100%;
     
   }
-  container-resumen{
+  container-resumen {
     width: calc(100% - 5%);
     margin: auto;
   }
@@ -3125,7 +3125,7 @@ cart-footer{
     margin: auto;
   }
 
-  cart-item-responsive img{
+  cart-item-responsive img {
     width: 130px;
     height: 130px;
   }
