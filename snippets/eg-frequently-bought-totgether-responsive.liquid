@@ -307,6 +307,7 @@
     
     
     
+    
     window.addEventListener('DOMContentLoaded', (event) => { 
     window.money_format = "{{ shop.money_format }}"
     window.cart_route = "{{ routes.cart_url }}"
@@ -466,12 +467,13 @@
 })
 
 const initialize = () => {
-  document.querySelector('.fbt-add-checkbox-wrapper svg').style.opacity = '1';
+  document.querySelector('add-combo-responsive .fbt-add-checkbox-wrapper svg').style.opacity = '1';
 }
 
 document.addEventListener('DOMContentLoaded', function() {
 initialize();
 })
+
 
 
 
