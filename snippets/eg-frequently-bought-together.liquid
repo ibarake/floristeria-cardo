@@ -35,7 +35,7 @@
 {% if product_handles.size > 1 %}
   <style>
     @media (max-width: 768px) {
-    .payment-1 {
+    .slick-next {
       display: none;
     }
     /* General styles */
@@ -468,6 +468,7 @@
     
     
     
+    
     window.addEventListener('DOMContentLoaded', (event) => { 
     window.money_format = "{{ shop.money_format }}"
     window.cart_route = "{{ routes.cart_url }}"
@@ -633,6 +634,7 @@ const initialize = () => {
 document.addEventListener('DOMContentLoaded', function() {
 initialize();
 })
+
 
 
 
