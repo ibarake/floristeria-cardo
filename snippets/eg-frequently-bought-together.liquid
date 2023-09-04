@@ -226,6 +226,7 @@
     
     
     
+    
     window.addEventListener('DOMContentLoaded', (event) => { 
     window.money_format = "{{ shop.money_format }}"
     window.cart_route = "{{ routes.cart_url }}"
@@ -425,7 +426,7 @@ check.forEach((c) => {
 
 
 
-$('.slick-next-c').on('click', () => {$('.slick-4').slick('slickNext')}); 
+
 
 
 
@@ -496,3 +497,7 @@ $('.slick-next-c').on('click', () => {$('.slick-4').slick('slickNext')});
     {% endcomment %}
   </frequently-bought-together>
 {% endif %}
+
+<script>
+  $('.slick-next-c').on('click', () => {$('.slick-4').slick('slickNext')});
+</script>
