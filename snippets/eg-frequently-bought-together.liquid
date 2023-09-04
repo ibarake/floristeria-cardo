@@ -200,6 +200,7 @@
     
     
     
+    
     window.addEventListener('DOMContentLoaded', (event) => { 
     window.money_format = "{{ shop.money_format }}"
     window.cart_route = "{{ routes.cart_url }}"
@@ -393,6 +394,7 @@ check.forEach((c) => {
 
 
 
+
   </script>
 
   <frequently-bought-together>
@@ -416,7 +418,7 @@ check.forEach((c) => {
             {% else %}
               <input id="fbt-add-checkbox-{{ product.id }}" class="fbt-add-checkbox" type="checkbox">
             {% endif %}
-            <label class="subtitulo-5 olive" for="fbt-add-checkbox-{{ product.id }}">
+            <label class="subtitulo-3 olive" for="fbt-add-checkbox-{{ product.id }}">
               {% render 'icon-cart' -%}
               {{- text_add_this }}
             </label>
@@ -435,7 +437,7 @@ check.forEach((c) => {
             loading="lazy"
           >
           <div class="card-fbt-footer">
-            <p class="subtitulo-5 fbt-product-price-final">
+            <p class="subtitulo-1 fbt-product-price-final">
               <strong>{{ product.price | money }} COP </strong>
             </p>
             <p class="parrafo-1 agregado">MONTO AGREGADO</p>
