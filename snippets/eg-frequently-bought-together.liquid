@@ -172,107 +172,7 @@
   <script>
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-window.addEventListener('DOMContentLoaded', (event) => { 
+    window.addEventListener('DOMContentLoaded', (event) => { 
     window.money_format = "{{ shop.money_format }}"
     window.cart_route = "{{ routes.cart_url }}"
 
@@ -455,100 +355,15 @@ check.forEach((c) => {
                 imgEl.style.opacity = '0.2'
                 productItem.style.border = 'none';
             }
-})
+  })
 
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
   </script>
 
   <frequently-bought-together>
-    <ul class="fbt-product-list">
+    <ul class="fbt-product-list slider-3">
       {% for handle in product_handles limit: limit %}
         {% assign product = all_products[handle] %}
         {% assign total_price = total_price | plus: product.selected_or_first_available_variant.price %}
