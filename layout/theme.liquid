@@ -65,7 +65,6 @@
               infinite: true,
               slidesToShow: 3,
               slidesToScroll: 3,
-              nextArrow: {% render 'fbt-icon' %},
           });
 
           let isSliding = false;
@@ -104,6 +103,7 @@
               slidesToScroll: 3,
           });
           $('.slider-3').on('wheel', handleWheel);
+          $('.slider-4').on('wheel', handleWheel);
 
           $('.slider-2').slick({
               infinite: true,
