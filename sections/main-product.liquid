@@ -75,11 +75,6 @@
         <container-spam>
           {% if section.settings['agregar-combo'] != blank %}
             <add-combo>
-              <title-add-combo>
-                <p class="subtitulo-1" id="add-combo-title">
-                  {{ section.settings['agregar-combo'] }}
-                </p>
-              </title-add-combo>
               {% render 'eg-frequently-bought-together' %}
             </add-combo>
           {% endif %}
@@ -102,6 +97,7 @@
 </section>
 
 <script>
+  
   
 
   /* FAQ DROPDOWN ANIMATION */
@@ -184,6 +180,7 @@ const productRecommendationsSection = document.querySelector('.product-recommend
 const observer = new IntersectionObserver(handleIntersection, {rootMargin: '0px 0px 200px 0px'});
 
 observer.observe(productRecommendationsSection);
+
 
 
 
