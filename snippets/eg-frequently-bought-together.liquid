@@ -773,6 +773,19 @@ initialize();
             </p>
             <p class="parrafo-3 agregado">MONTO AGREGADO</p>
           </div>
+          <select class="fbt-variant-select" name="id" aria-label="Select variant" style="{% if product.has_only_default_variant %}display: none;{% endif %}">
+                    {% for variant in product.variants %}
+                        {% liquid
+                            assign variant_image = nil
+                            if variant.image
+                                assign variant_image = variant.image | image_url: width: img_width, height: img_height, crop: 'center'
+                            endif
+                        %}    
+                        <option value="{{ variant.id }}" data-image="{{ variant_image }}" data-compare-price="{{ variant.compare_at_price }}" data-price="{{ variant.price }}" {% unless variant.available %}disabled{% endunless %}>
+                            {{ variant.title }}
+                        </option>
+                    {% endfor %}
+                </select>
         </li>
       {% endfor %}
     </ul>
