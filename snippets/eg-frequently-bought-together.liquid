@@ -191,6 +191,7 @@
     
     
     
+    
     window.addEventListener('DOMContentLoaded', (event) => { 
     window.money_format = "{{ shop.money_format }}"
     window.cart_route = "{{ routes.cart_url }}"
@@ -379,6 +380,7 @@ check.forEach((c) => {
 
 
 
+
   </script>
 
   <frequently-bought-together>
@@ -421,19 +423,8 @@ check.forEach((c) => {
             loading="lazy"
           >
           <div class="card-fbt-footer">
-            <p class="fbt-product-price">
-              <span
-                class="fbt-product-price-compare"
-                style="{% unless product.first_available_variant.compare_at_price > product.first_available_variant.price %}display: none;{% endunless %}"
-              >
-                <span class="visually-hidden"> Regular price </span>
-                <s>
-                  {{ product.first_available_variant.compare_at_price | money }}
-                </s>
-              </span>
-              <p class="subtitulo-5 fbt-product-price-final">
-                <strong>{{ product.price | money }} COP </strong>
-              </p>
+            <p class="subtitulo-5 fbt-product-price-final">
+              <strong>{{ product.price | money }} COP </strong>
             </p>
             <p class="parrafo-1 agregado">MONTO AGREGADO</p>
             <select
