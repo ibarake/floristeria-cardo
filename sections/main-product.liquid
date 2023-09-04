@@ -77,6 +77,9 @@
             <add-combo>
               {% render 'eg-frequently-bought-together' %}
             </add-combo>
+            <add-combo-responsive>
+              {% render 'eg-frequently-bought-totgether-responsive' %}
+            </add-combo-responsive>
           {% endif %}
           {% if section.settings.envio != blank %}
             <shipping class="extra-product">
@@ -97,6 +100,8 @@
 </section>
 
 <script>
+  
+  
   
   
 
@@ -180,6 +185,8 @@ const productRecommendationsSection = document.querySelector('.product-recommend
 const observer = new IntersectionObserver(handleIntersection, {rootMargin: '0px 0px 200px 0px'});
 
 observer.observe(productRecommendationsSection);
+
+
 
 
 
