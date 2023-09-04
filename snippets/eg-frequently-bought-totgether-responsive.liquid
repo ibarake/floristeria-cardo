@@ -34,6 +34,8 @@
 
 {% if product_handles.size > 1 %}
   <style>
+        @media (max-width: 768px) {
+
     /* General styles */
     .visually-hidden {
         position: absolute;
@@ -214,14 +216,12 @@
       cursor: pointer;
     }
 
-    @media (max-width: 768px) {
-
-        .fbt-product-list
 
     }
   </style>
 
   <script>
+    
     
     
     
@@ -456,6 +456,7 @@ const initialize = () => {
 document.addEventListener('DOMContentLoaded', function() {
 initialize();
 })
+
 
 
 
