@@ -211,9 +211,17 @@
       border: none;
       cursor: pointer;
     }
+
+    @media (max-width: 768px) {
+
+
+
+    }
   </style>
 
   <script>
+    
+    
     
     
     
@@ -510,18 +518,11 @@ initialize();
 
 
 
+
+
   </script>
 
   <frequently-bought-together>
-    <div class="payment-1">
-      <button
-        class="fbt-btn-atc button button--primary btn btn-primary subtitulo-3"
-        type="button"
-        data-text-add-selected="{{ text_add_selected }}"
-      >
-        {{ text_add_selected }}
-      </button>
-    </div>
     <ul class="fbt-product-list">
       {% for handle in product_handles limit: limit %}
         {% assign product = all_products[handle] %}
@@ -560,7 +561,6 @@ initialize();
         </li>
       {% endfor %}
     </ul>
-    <button type="button" class="slick-next-c">{% render 'fbt-arrow' %}</button>
     {% comment %}
       <p class="fbt-total-price-wrapper">
         <span class="subtitulo-1"> {{ text_total_price }}: </span>
@@ -569,5 +569,14 @@ initialize();
         </b>
       </p>
     {% endcomment %}
+    <div class="payment-1">
+      <button
+        class="fbt-btn-atc button button--primary btn btn-primary subtitulo-3"
+        type="button"
+        data-text-add-selected="{{ text_add_selected }}"
+      >
+        {{ text_add_selected }}
+      </button>
+    </div>
   </frequently-bought-together>
 {% endif %}
