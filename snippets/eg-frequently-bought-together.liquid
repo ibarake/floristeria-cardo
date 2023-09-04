@@ -475,6 +475,7 @@
     
     
     
+    
     window.addEventListener('DOMContentLoaded', (event) => { 
     window.money_format = "{{ shop.money_format }}"
     window.cart_route = "{{ routes.cart_url }}"
@@ -714,6 +715,7 @@ initialize();
 
 
 
+
   </script>
 
   <frequently-bought-together>
@@ -741,7 +743,7 @@ initialize();
               {% render 'fbt-check' -%}
               {{- text_add_this }}
             </label>
-            <h3 class="fbt-product-title subtitulo-3" style="padding: 0 0 0 20px;">
+            <h3 class="fbt-product-title subtitulo-3">
               {% if forloop.index > 1 %}+{% endif -%}
               {{- product.title }}
             </h3>
