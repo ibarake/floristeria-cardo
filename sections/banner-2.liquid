@@ -1,4 +1,8 @@
 <main-ba-container>
+  {% assign collectionMetafields = collection.metafields.custom.featured_collection.products %}
+  <script>
+    console.log('{{ collectionMetafields }}')
+  </script>
   <con-t>
     <h1 class="titulo-1" id="title-ba-1">
       {% if collection.metafields.custom.page_title != blank %}
