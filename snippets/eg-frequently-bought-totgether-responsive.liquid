@@ -65,7 +65,7 @@
     /* Snippet styling */
     frequently-bought-together {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         width: 100%;
         margin: 0rem 0;
         text-align: {{ text_align }};
@@ -92,11 +92,11 @@
     .fbt-product-item {
         width: {{ item_width }};
         height: 100px;
-        display: grid;
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: row;
         margin: 0px 10px;
         background-color: white;
-        justify-items: center;
+        justify-content: space-around;
         align-items: center;
         border-radius: 8px;
         overflow: hidden;
