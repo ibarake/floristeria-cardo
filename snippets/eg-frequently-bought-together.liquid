@@ -210,6 +210,7 @@
     
     
     
+    
     window.addEventListener('DOMContentLoaded', (event) => { 
     window.money_format = "{{ shop.money_format }}"
     window.cart_route = "{{ routes.cart_url }}"
@@ -413,6 +414,7 @@ $('.slick-next-c').on('click', () => {$('.slick-4').slick('slickNext')});
 
 
 
+
   </script>
 
   <frequently-bought-together>
@@ -462,8 +464,8 @@ $('.slick-next-c').on('click', () => {$('.slick-4').slick('slickNext')});
           </div>
         </li>
       {% endfor %}
-      <button type="button" class="slick-next-c">{% render 'fbt-arrow' %}</button>
     </ul>
+    <button type="button" class="slick-next-c">{% render 'fbt-arrow' %}</button>
     {% comment %}
       <p class="fbt-total-price-wrapper">
         <span class="subtitulo-1"> {{ text_total_price }}: </span>
