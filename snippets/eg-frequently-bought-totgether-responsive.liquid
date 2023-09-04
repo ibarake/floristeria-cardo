@@ -276,6 +276,7 @@
     
     
     
+    
     window.addEventListener('DOMContentLoaded', (event) => { 
     window.money_format = "{{ shop.money_format }}"
     window.cart_route = "{{ routes.cart_url }}"
@@ -506,6 +507,7 @@ initialize();
 
 
 
+
   </script>
 
   <frequently-bought-together>
@@ -518,7 +520,7 @@ initialize();
         {{ text_add_selected }}
       </button>
     </div>
-    <ul class="fbt-product-list slider-4">
+    <ul class="fbt-product-list">
       {% for handle in product_handles limit: limit %}
         {% assign product = all_products[handle] %}
         {% assign total_price = total_price | plus: product.selected_or_first_available_variant.price %}
