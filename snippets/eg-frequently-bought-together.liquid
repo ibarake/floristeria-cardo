@@ -152,9 +152,11 @@
         display: none;
     }
     .fbt-add-checkbox:checked + label {
-      opacity: 1;
       background-color: #2D9CDB;
       border: none;
+    }
+    .fbt-add-checkbox:checked + label svg {
+      opacity: 1;
     }
     .fbt-add-checkbox-wrapper label {
       border: 1px solid var(--main-gray);
@@ -210,6 +212,7 @@
   </style>
 
   <script>
+    
     
     
     
@@ -435,6 +438,7 @@ check.forEach((c) => {
   })
 
 })
+
 
 
 
