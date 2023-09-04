@@ -3272,6 +3272,11 @@ collection-slider-2 {
   margin-right: 20px;
 }
 
+.slider-3 {
+  padding: 25px 0;
+  margin: 25px 0;
+}
+
 .slider-3 card-ff {
   background-color: var(--main-white);
   border-radius: 8px;
