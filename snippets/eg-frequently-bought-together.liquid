@@ -208,6 +208,7 @@
     
     
     
+    
     window.addEventListener('DOMContentLoaded', (event) => { 
     window.money_format = "{{ shop.money_format }}"
     window.cart_route = "{{ routes.cart_url }}"
@@ -408,6 +409,7 @@ check.forEach((c) => {
 
 
 
+
   </script>
 
   <frequently-bought-together>
@@ -457,6 +459,7 @@ check.forEach((c) => {
           </div>
         </li>
       {% endfor %}
+      <button type="button" class="slick-next">{% render 'fbt-arrow' %}</button>
     </ul>
     {% comment %}
       <p class="fbt-total-price-wrapper">
