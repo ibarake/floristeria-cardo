@@ -1,8 +1,5 @@
 <main-ba-container>
   {% assign collectionMetafields = collection.metafields.custom.featured_collection.value %}
-  <script>
-    console.log('{{ collectionMetafields.products }}')
-  </script>
   <con-t>
     <h1 class="titulo-1" id="title-ba-1">
       {% if collection.metafields.custom.page_title != blank %}
@@ -36,7 +33,7 @@
     </buttons-ba-container>
   </con-t>
   <collection-slider-2 class="slider-3">
-    {% for hero-product in collection.metafields.custom.featured_collection.products %}
+    {% for hero-product in collection.metafields.custom.featured_collection.value.products %}
       <a class="product-item" href="{{ hero-product.url }}">
         {% include 'product-card',
           hero-product: hero-product,
@@ -48,7 +45,7 @@
   </collection-slider-2>
   <inline-half-container>
     <products-container class="overflow-auto drag-scroll">
-      {% for hero-product in collection.metafields.custom.featured_collection.products %}
+      {% for hero-product in collection.metafields.custom.featured_collection.value.products %}
         <a class="product-item" href="{{ hero-product.url }}">
           {% include 'product-card',
             hero-product: hero-product,
