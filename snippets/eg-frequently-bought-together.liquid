@@ -263,6 +263,9 @@
     
     
     
+    
+    
+    
     window.addEventListener('DOMContentLoaded', (event) => { 
     window.money_format = "{{ shop.money_format }}"
     window.cart_route = "{{ routes.cart_url }}"
@@ -431,15 +434,16 @@ check.forEach((c) => {
             const imgEl = productItem.querySelector('.fbt-product-img')
 
             if (c.checked) {
-                imgEl.style.opacity = '1'
                 productItem.style.border = '2px solid var(--main-olive)';
             } else {
-                imgEl.style.opacity = '0.2'
                 productItem.style.border = 'none';
             }
   })
 
 })
+
+
+
 
 
 
