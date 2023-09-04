@@ -743,7 +743,7 @@ initialize();
               {% render 'fbt-check' -%}
               {{- text_add_this }}
             </label>
-            <h3 class="fbt-product-title subtitulo-3">
+            <h3 class="fbt-product-title subtitulo-3" style="padding: 0 0 0 20px;">
               {% if forloop.index > 1 %}+{% endif -%}
               {{- product.title }}
             </h3>
@@ -758,7 +758,7 @@ initialize();
             loading="lazy"
           >
           <div class="card-fbt-footer">
-            <h3 class="fbt-product-title subtitulo-3" style="padding: 0 0 0 20px;">
+            <h3 class="fbt-product-title subtitulo-3">
               {% if forloop.index > 1 %}+{% endif -%}
               {{- product.title }}
             </h3>
