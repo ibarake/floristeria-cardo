@@ -267,6 +267,7 @@
     
     
     
+    
     window.addEventListener('DOMContentLoaded', (event) => { 
     window.money_format = "{{ shop.money_format }}"
     window.cart_route = "{{ routes.cart_url }}"
@@ -321,11 +322,9 @@
             const imgEl = productItem.querySelector('.fbt-product-img')
 
             if (checkbox.checked) {
-                productItem.style.border = '2px solid var(--main-olive)';
                 productItem.querySelector('label svg').style.opacity = '1';
             } else {
                 productItem.querySelector('label svg').style.opacity = '0';
-                productItem.style.border = 'none';
             }
             
             this.calcTotalPrice()
@@ -446,6 +445,7 @@ check.forEach((c) => {
   })
 initialize();
 })
+
 
 
 
