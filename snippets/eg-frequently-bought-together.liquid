@@ -638,7 +638,20 @@
 })
 
 const initialize = () => {
-  document.querySelector('.fbt-add-checkbox-wrapper svg').style.opacity = '1';
+  // Select all checkboxes within the frequently-bought-together container
+  const checkboxes = document.querySelectorAll('.fbt-add-checkbox-wrapper .fbt-add-checkbox');
+
+  // Loop through each checkbox
+  checkboxes.forEach(checkbox => {
+    // If the checkbox is checked
+    if (checkbox.checked) {
+      // Find the closest SVG to the checkbox and set its opacity to 1
+      const svg = checkbox.closest('.fbt-add-checkbox-wrapper').querySelector('svg');
+      if (svg) {
+        svg.style.opacity = '1';
+      }
+    }
+  });
 }
 
 document.addEventListener('DOMContentLoaded', function() {
