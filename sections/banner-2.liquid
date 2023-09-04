@@ -1,31 +1,20 @@
-<hero-banner>
-  <div class="flor-1">
-    {% render 'Flor-1' %}
-  </div>
-  <div class="flor-2">
-    {% render 'Flor-2' %}
-  </div>
-  <div class="flor-3">
-    {% render 'flor-3' %}
-  </div>
-  <inline-half-container class="left">
-    <hero-title>
-      <h1 class="titulo-1" id="title-ba-1">
-        {% if collection.metafields.custom.page_title != blank %}
-          {{ collection.metafields.custom.page_title }}
-        {% else %}
-          {{ section.settings.title }}
-        {% endif %}
-      </h1>
-      <p class="parrafo-1" id="parrafo-ba-1">
-        {% if collection.metafields.custom.page_description != blank %}
-          {{ collection.metafields.custom.page_description }}
-        {% else %}
-          {{ section.settings.subtitle }}
-        {% endif %}
-      </p>
-    </hero-title>
-    <hero-buttons>
+<main-ba-container>
+  <con-t>
+    <h1 class="titulo-1" id="title-ba-1">
+      {% if collection.metafields.custom.page_title != blank %}
+        {{ collection.metafields.custom.page_title }}
+      {% else %}
+        {{ section.settings.title }}
+      {% endif %}
+    </h1>
+    <p class="parrafo-1" id="parrafo-ba-1">
+      {% if collection.metafields.custom.page_description != blank %}
+        {{ collection.metafields.custom.page_description }}
+      {% else %}
+        {{ section.settings.subtitle }}
+      {% endif %}
+    </p>
+    <buttons-ba-container>
       <a href="{{ section.settings.button_link-4 }}" class="ver-por-ocasion subtitulo-3 grow">
         {% if collection.metafields.custom.page_button_1 != blank %}
           {{ collection.metafields.custom.page_button_1 }}
@@ -40,20 +29,20 @@
           {{ section.settings.button_lin5 }}
         {% endif %}
       </a>
-    </hero-buttons>
-  </inline-half-container>
-  <inline-half-container class="right">
-    <div class="slider">
-      {% for hero-product in collection.metafields.custom.featured_collection.products %}
-        <a class="product-item" href="{{ hero-product.url }}">
-          {% include 'product-card',
-            hero-product: hero-product,
-            atc-btn: section.settings['add-to-cart-title'],
-            classes: 'hero'
-          %}
-        </a>
-      {% endfor %}
-    </div>
+    </buttons-ba-container>
+  </con-t>
+  <collection-slider-2 class="slider-3">
+    {% for hero-product in collection.metafields.custom.featured_collection.products %}
+      <a class="product-item" href="{{ hero-product.url }}">
+        {% include 'product-card',
+          hero-product: hero-product,
+          atc-btn: section.settings['add-to-cart-title'],
+          classes: 'hero'
+        %}
+      </a>
+    {% endfor %}
+  </collection-slider-2>
+  <inline-half-container>
     <products-container class="overflow-auto drag-scroll">
       {% for hero-product in collection.metafields.custom.featured_collection.products %}
         <a class="product-item" href="{{ hero-product.url }}">
@@ -73,7 +62,7 @@
   <container-flor2-3 class="asb">
     {% render 'Flor2-3' %}
   </container-flor2-3>
-</hero-banner>
+</main-ba-container>
 {% schema %}
 {
   "name": "Banner 2",
