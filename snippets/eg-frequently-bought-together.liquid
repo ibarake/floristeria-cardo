@@ -209,6 +209,7 @@
     
     
     
+    
     window.addEventListener('DOMContentLoaded', (event) => { 
     window.money_format = "{{ shop.money_format }}"
     window.cart_route = "{{ routes.cart_url }}"
@@ -408,6 +409,8 @@ check.forEach((c) => {
 
 
 
+$('.slick-next-c').on('click', () => {$('.slick-4').slick('slickNext')}); 
+
 
 
   </script>
@@ -459,7 +462,7 @@ check.forEach((c) => {
           </div>
         </li>
       {% endfor %}
-      <button type="button" class="slick-next">{% render 'fbt-arrow' %}</button>
+      <button type="button" class="slick-next-c">{% render 'fbt-arrow' %}</button>
     </ul>
     {% comment %}
       <p class="fbt-total-price-wrapper">
