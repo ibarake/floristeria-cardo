@@ -477,6 +477,8 @@
     
     
     
+    
+    
     window.addEventListener('DOMContentLoaded', (event) => { 
     window.money_format = "{{ shop.money_format }}"
     window.cart_route = "{{ routes.cart_url }}"
@@ -718,6 +720,8 @@ initialize();
 
 
 
+
+
   </script>
 
   <frequently-bought-together>
@@ -789,6 +793,8 @@ initialize();
 
   if ($(window).width() < 768) {
      $(".fbt-product-list").removeClass("slider-4");
-  document.querySelector('.fbt-product-title').style.display = 'none';
+      document.querySelectorAll('.fbt-product-item').forEach((item) => {
+      item.querySelector('.fbt-product-title').style.display = 'none';
+      })
   }
 </script>
