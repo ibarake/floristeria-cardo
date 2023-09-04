@@ -10,7 +10,7 @@
   endcomment
   assign heading_title = ''
   assign heading_size = 'h3'
-  assign item_width = '33%'
+  assign item_width = '100%'
   assign limit = 999
   assign text_align = 'left'
   assign img_width = 100
@@ -220,6 +220,8 @@
   </style>
 
   <script>
+    
+    
     
     
     
@@ -520,6 +522,8 @@ initialize();
 
 
 
+
+
   </script>
 
   <frequently-bought-together>
@@ -538,10 +542,6 @@ initialize();
               {% render 'fbt-check' -%}
               {{- text_add_this }}
             </label>
-            <h3 class="fbt-product-title subtitulo-3" style="padding: 0 0 0 20px;">
-              {% if forloop.index > 1 %}+{% endif -%}
-              {{- product.title }}
-            </h3>
           </div>
 
           <img
@@ -553,6 +553,10 @@ initialize();
             loading="lazy"
           >
           <div class="card-fbt-footer">
+            <h3 class="fbt-product-title subtitulo-3" style="padding: 0 0 0 20px;">
+              {% if forloop.index > 1 %}+{% endif -%}
+              {{- product.title }}
+            </h3>
             <p class="subtitulo-3 fbt-product-price-final">
               <strong>{{ product.price | money }} COP </strong>
             </p>
