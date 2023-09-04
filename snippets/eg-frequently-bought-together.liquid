@@ -266,6 +266,7 @@
     
     
     
+    
     window.addEventListener('DOMContentLoaded', (event) => { 
     window.money_format = "{{ shop.money_format }}"
     window.cart_route = "{{ routes.cart_url }}"
@@ -426,6 +427,10 @@
     customElements.define('frequently-bought-together', FrequentlyBoughtTogether)
 })
 
+const initialize = () => {
+  document.querySelector('.fbt-add-checkbox-wrapper svg').style.opacity = '1';
+}
+
 document.addEventListener('DOMContentLoaded', function() {
 const check = document.querySelectorAll('.fbt-add-checkbox');
 
@@ -439,8 +444,9 @@ check.forEach((c) => {
                 productItem.style.border = 'none';
             }
   })
-
+initialize();
 })
+
 
 
 
