@@ -152,11 +152,12 @@
         display: none;
     }
     .fbt-add-checkbox:checked + label {
+      display: block;
       background-color: #2D9CDB;
       border: none;
     }
-    .fbt-add-checkbox:checked + svg {
-      fill: white;
+    .fbt-add-checkbox + svg {
+      display: none;
     }
     .fbt-total-price-wrapper {
         margin: 0 0 1rem;
@@ -205,6 +206,7 @@
   </style>
 
   <script>
+    
     
     
     
@@ -422,6 +424,7 @@ check.forEach((c) => {
   })
 
 })
+
 
 
 
