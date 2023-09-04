@@ -178,6 +178,7 @@
     
     
     
+    
     window.addEventListener('DOMContentLoaded', (event) => { 
     window.money_format = "{{ shop.money_format }}"
     window.cart_route = "{{ routes.cart_url }}"
@@ -364,9 +365,19 @@ check.forEach((c) => {
 
 
 
+
   </script>
 
   <frequently-bought-together>
+    <div class="payment-1">
+      <button
+        class="fbt-btn-atc button button--primary btn btn-primary subtitulo-2"
+        type="button"
+        data-text-add-selected="{{ text_add_selected }}"
+      >
+        {{ text_add_selected }}
+      </button>
+    </div>
     <ul class="fbt-product-list slider-3">
       {% for handle in product_handles limit: limit %}
         {% assign product = all_products[handle] %}
@@ -448,13 +459,4 @@ check.forEach((c) => {
       </p>
     {% endcomment %}
   </frequently-bought-together>
-  <div class="payment-1">
-    <button
-      class="fbt-btn-atc button button--primary btn btn-primary subtitulo-2"
-      type="button"
-      data-text-add-selected="{{ text_add_selected }}"
-    >
-      {{ text_add_selected }}
-    </button>
-  </div>
 {% endif %}
