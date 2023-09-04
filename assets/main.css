@@ -48,8 +48,13 @@ p {
   transform: scale(1.05);
   transition: transform 100ms ease-out;
 }
-
+add-combo {
+  display: block;
+}
 @media only screen and (max-width: 768px) {
+  add-combo {
+    display: none;
+  }
   .page-width {
     width: auto;
   }
