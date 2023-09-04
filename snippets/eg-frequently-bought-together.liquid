@@ -464,6 +464,7 @@
     
     
     
+    
     window.addEventListener('DOMContentLoaded', (event) => { 
     window.money_format = "{{ shop.money_format }}"
     window.cart_route = "{{ routes.cart_url }}"
@@ -694,6 +695,7 @@ initialize();
 
 
 
+
   </script>
 
   <frequently-bought-together>
@@ -758,4 +760,8 @@ initialize();
 
 <script>
   $('.slick-next-c').on('click', () => {$('.slider-4').slick('slickNext')});
+
+  if ($(window).width() < 768) {
+     $(".fbt-product-list").removeClass("slider-4");
+  }
 </script>
