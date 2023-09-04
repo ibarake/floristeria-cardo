@@ -645,12 +645,17 @@ const initialize = () => {
   checkboxes.forEach(checkbox => {
     // Find the closest SVG to the checkbox
     const svg = checkbox.closest('.fbt-add-checkbox-wrapper').querySelector('svg');
-    if (svg) {
+    const label = checkbox.closest('.fbt-add-checkbox-wrapper').querySelector('label');
+    if (svg && label) {
       // If the checkbox is checked
       if (checkbox.checked) {
         svg.style.opacity = '1'; // Show the SVG
+        label.style.backgroundColor = '#2D9CDB'; // Set the label background color to blue
+        label.style.border = 'none'; // Remove the border
       } else {
         svg.style.opacity = '0'; // Hide the SVG with opacity
+        label.style.backgroundColor = 'transparent'; // Reset the label background color
+        label.style.border = '1px solid var(--main-gray)'; // Set the border to grey
       }
     }
   });
