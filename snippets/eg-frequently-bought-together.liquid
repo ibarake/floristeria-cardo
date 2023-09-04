@@ -643,12 +643,14 @@ const initialize = () => {
 
   // Loop through each checkbox
   checkboxes.forEach(checkbox => {
-    // If the checkbox is checked
-    if (checkbox.checked) {
-      // Find the closest SVG to the checkbox and set its opacity to 1
-      const svg = checkbox.closest('.fbt-add-checkbox-wrapper').querySelector('svg');
-      if (svg) {
-        svg.style.opacity = '1';
+    // Find the closest SVG to the checkbox
+    const svg = checkbox.closest('.fbt-add-checkbox-wrapper').querySelector('svg');
+    if (svg) {
+      // If the checkbox is checked
+      if (checkbox.checked) {
+        svg.style.opacity = '1'; // Show the SVG
+      } else {
+        svg.style.opacity = '0'; // Hide the SVG with opacity
       }
     }
   });
