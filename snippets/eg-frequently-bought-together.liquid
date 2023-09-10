@@ -680,44 +680,6 @@ initialize();
 
 
 
-document.addEventListener('DOMContentLoaded', function() {
-
-    // ... other existing code ...
-
-    // "Add to Cart" button listener
-    document.querySelector('.atc-product').addEventListener('click', function(event) {
-        event.preventDefault();
-        addProductsToCart().then(() => {
-            // Redirect to cart after adding items
-            location.href = "/cart";
-        });
-    });
-
-    // "Comprar Ahora" button listener
-    document.querySelector('.comprar-ahora').addEventListener('click', function(event) {
-        event.preventDefault();
-        addProductsToCart().then(() => {
-            // Redirect to checkout after adding items
-            location.href = "/checkout";
-        });
-    });
-
-    async function addProductsToCart() {
-        const mainProductId = document.querySelector('[data-main-product]').dataset.mainProduct;
-        const items = [{ id: mainProductId, quantity: 1 }];
-        
-        document.querySelectorAll('.fbt-add-checkbox:checked').forEach(checkbox => {
-            const productId = checkbox.dataset.productId;
-            items.push({ id: productId, quantity: 1 });
-        });
-
-        await fetch('/cart/add.js', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ items })
-        });
-    }
-});
 
 
 
