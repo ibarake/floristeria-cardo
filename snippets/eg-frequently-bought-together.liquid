@@ -493,9 +493,9 @@
                 })
             })
 
-            document.querySelector('.fbt-btn-atc').addEventListener('click', (event) => {
-              event.preventDefault();
-              event.addSelectedToCart.bind(event)
+            document.querySelector('.fbt-btn-atc').addEventListener('click', () => {
+              this.preventDefault();
+              this.addSelectedToCart.bind(this)
             })
 
         }
