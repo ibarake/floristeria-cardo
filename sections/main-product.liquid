@@ -571,20 +571,19 @@
 
         async addSelectedToCart () {
             const mainProductId = document.querySelector('[data-main-product]').getAttribute('data-main-product');
-            const mainProductQuantity = parseInt(document.querySelector('.quantity-field').value);
-
+            const mainProductQuantity = parseInt(document.querySelector('.main-product .quantity-field').value);
+        
             const btn = document.querySelector('.fbt-btn-atc')
-            console.log(btn)
             btn.style.width = `${btn.clientWidth}px`
-
+        
             btn.innerHTML = `
                 <div class="spinner-border" role="status">
                     <span class="visually-hidden">Loading...</span>
                 </div>
             `
-
+        
             const items = []
-
+        
             this.querySelectorAll('.fbt-variant-select').forEach((select) => {
                 if (select.closest('.fbt-product-item').querySelector('.fbt-add-checkbox').checked) {
                     items.push({
@@ -592,16 +591,14 @@
                         quantity: mainProductQuantity
                     });
                 }
-            })
-
-            console.log(items)
-          
+            });
+        
             await fetch('/cart/add.js', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ items })
             })
-
+        
             if (document.querySelector('#cart-drawer')) {
                 btn.innerHTML = btn.dataset.textAddSelected
                 loadEgCartDrawer(true)
@@ -609,6 +606,7 @@
                 // location.href = window.cart_route
             }
         }
+
 
         // Shopify format money (helper function)
         // https://gist.github.com/stewartknapman/8d8733ea58d2314c373e94114472d44c
