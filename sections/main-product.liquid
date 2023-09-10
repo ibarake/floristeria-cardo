@@ -57,13 +57,7 @@
               </button>
             </add-to-car>
             <payment class="subtitulo-2 payment-1 grow">
-              <button
-                class="fbt-btn-atc button button--primary btn btn-primary subtitulo-3"
-                type="button"
-                data-text-add-selected="Comprar ahora"
-              >
-                Comprar ahora
-              </button>
+              {{ form | payment_button }}
             </payment>
           {% endform %}
         </container-buttons>
