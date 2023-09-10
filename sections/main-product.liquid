@@ -590,9 +590,9 @@
             this.querySelectorAll('.fbt-variant-select').forEach((select) => {
                 if (select.closest('.fbt-product-item').querySelector('.fbt-add-checkbox').checked) {
                     items.push({
-                        id: Number(select.value),
-                        quantity: 1
-                    })
+                        id: Number(mainProductId),
+                        quantity: mainProductQuantity
+                    });
                 }
             })
 
