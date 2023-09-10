@@ -503,10 +503,9 @@
             })
 
             document.querySelector('.fbt-btn-atc').addEventListener('click', (event) => {
-              event.preventDefault();
-              this.addSelectedToCart.bind(this)
+                event.preventDefault();
+                this.addSelectedToCart();
             })
-
         }
 
         onSelectChange (select) {
