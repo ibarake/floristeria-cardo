@@ -813,14 +813,12 @@ initialize();
       {% endfor %}
     </ul>
     <button type="button" class="slick-next-c">{% render 'fbt-arrow' %}</button>
-    {% comment %}
-      <p class="fbt-total-price-wrapper">
+      <p class="fbt-total-price-wrapper" style="display: none;">
         <span class="subtitulo-1"> {{ text_total_price }}: </span>
         <b class="subtitulo-1 fbt-total-price">
           {{ total_price | money }}
         </b>
       </p>
-    {% endcomment %}
   </frequently-bought-together>
 {% endif %}
 
