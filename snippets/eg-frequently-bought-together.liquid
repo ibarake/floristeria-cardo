@@ -758,9 +758,9 @@ initialize();
         <li class="fbt-product-item">
           <div class="fbt-add-checkbox-wrapper">
             {% if forloop.index == 1 %}
-              <input id="fbt-add-checkbox-{{ product.id }}" class="fbt-add-checkbox" type="checkbox" data-product-id="{{ product.selected_or_first_available_variant.id }}">
+              <input id="fbt-add-checkbox-{{ product.id }}" class="fbt-add-checkbox" type="checkbox" checked>
             {% else %}
-              <input id="fbt-add-checkbox-{{ product.id }}" class="fbt-add-checkbox" type="checkbox" data-product-id="{{ product.selected_or_first_available_variant.id }}">
+              <input id="fbt-add-checkbox-{{ product.id }}" class="fbt-add-checkbox" type="checkbox">
             {% endif %}
             <label class="subtitulo-5 olive" for="fbt-add-checkbox-{{ product.id }}">
               {% render 'fbt-check' -%}
