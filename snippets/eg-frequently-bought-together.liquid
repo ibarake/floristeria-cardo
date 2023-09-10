@@ -79,7 +79,7 @@
         list-style: none;
         padding: 0;
     }
-    .shopify-payment-button__button {
+    .fbt-product-item {
         width: {{ item_width }};
         display: grid;
         grid-template-columns: 1fr;
@@ -262,7 +262,7 @@
         height: 200px;
         overflow: auto;
     }
-    .shopify-payment-button__button {
+    .fbt-product-item {
         width: 95%;
         height: 100px;
         display: flex;
@@ -493,14 +493,14 @@
                 })
             })
 
-            document.querySelector('.shopify-payment-button__button').addEventListener('click', this.addSelectedToCart.bind(this))
+            this.querySelector('.shopify-payment-button__button').addEventListener('click', this.addSelectedToCart.bind(this))
 
         }
 
         onSelectChange (select) {
             const { image, comparePrice, price } = select.options[select.selectedIndex].dataset
 
-            const productItem = select.closest('.shopify-payment-button__button')
+            const productItem = select.closest('.fbt-product-item')
             const imgEl = productItem.querySelector('.fbt-product-img')
             const comparePriceEl = productItem.querySelector('.fbt-product-price-compare')
             const priceEl = productItem.querySelector('.fbt-product-price-final')
@@ -523,7 +523,7 @@
         }
 
         onCheckboxChange (checkbox) {
-            const productItem = checkbox.closest('.shopify-payment-button__button')
+            const productItem = checkbox.closest('.fbt-product-item')
             const imgEl = productItem.querySelector('.fbt-product-img')
 
             if (checkbox.checked) {
@@ -539,7 +539,7 @@
             let totalPrice = 0
             
             this.querySelectorAll('.fbt-variant-select').forEach((select) => {
-                if (select.closest('.shopify-payment-button__button').querySelector('.fbt-add-checkbox').checked) {
+                if (select.closest('.fbt-product-item').querySelector('.fbt-add-checkbox').checked) {
                     totalPrice += Number(select.options[select.selectedIndex].dataset.price)
                 }
             })
@@ -566,7 +566,7 @@
             const items = []
 
             this.querySelectorAll('.fbt-variant-select').forEach((select) => {
-                if (select.closest('.shopify-payment-button__button').querySelector('.fbt-add-checkbox').checked) {
+                if (select.closest('.fbt-product-item').querySelector('.fbt-add-checkbox').checked) {
                     items.push({
                         id: Number(select.value),
                         quantity: 1
@@ -820,7 +820,7 @@ initialize();
 
   if ($(window).width() < 768) {
      $(".fbt-product-list").removeClass("slider-4");
-      document.querySelectorAll('.shopify-payment-button__button').forEach((item) => {
+      document.querySelectorAll('.fbt-product-item').forEach((item) => {
       item.querySelector('.fbt-product-title').style.display = 'none';
       })
   }
