@@ -30,7 +30,6 @@
           {{ product.description | strip_html }}
         </p>
         <container-buttons>
-          {% form 'product', product, class: 'product-form', novalidate: 'novalidate', id: 'pr-form-wd' %}
             <select name="id" style="display: none;">
               {% for variant in product.variants %}
                 <option
@@ -57,7 +56,6 @@
                 </p>
               </button>
             </add-to-car>
-            {% endform %}
             <payment class="subtitulo-2 payment-1 grow">
               <button
                 class="button button--primary btn btn-primary subtitulo-3"
