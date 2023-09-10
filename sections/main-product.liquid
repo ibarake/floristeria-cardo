@@ -48,7 +48,7 @@
               <input readonly type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
               <input type="button" value="+" class="pq-button button-plus" data-field="quantity">
             </quantity>
-          {% endform %}
+
             <add-to-car id="atc">
               <button class="atc-product add-t-cart grow fbt-btn-atc">
                 {% render 'icon-cart' %}
@@ -57,6 +57,7 @@
                 </p>
               </button>
             </add-to-car>
+            {% endform %}
             <payment class="subtitulo-2 payment-1 grow">
               <button
                 class="button button--primary btn btn-primary subtitulo-3"
