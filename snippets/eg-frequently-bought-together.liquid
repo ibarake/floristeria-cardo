@@ -538,23 +538,29 @@
             this.calcTotalPrice()
         }
 
-        calcTotalPrice () {
-            let totalPrice = 0
-            
+        calcTotalPrice() {
+            let totalPrice = 0;
+        
             this.querySelectorAll('.fbt-variant-select').forEach((select) => {
                 if (select.closest('.fbt-product-item').querySelector('.fbt-add-checkbox').checked) {
-                    totalPrice += Number(select.options[select.selectedIndex].dataset.price)
+                    totalPrice += Number(select.options[select.selectedIndex].dataset.price);
                 }
-            })
-            
-            this.querySelector('.fbt-total-price').innerHTML = this.moneyFormat(totalPrice)
-
-            if (totalPrice === 0) {
-                this.querySelector('.fbt-btn-atc').disabled = true
+            });
+        
+            const totalPriceElement = this.querySelector('.fbt-total-price');
+            if (totalPriceElement) {
+                totalPriceElement.innerHTML = this.moneyFormat(totalPrice);
             } else {
-                this.querySelector('.fbt-btn-atc').disabled = false
+                console.warn('Element with class .fbt-total-price not found.');
+            }
+        
+            if (totalPrice === 0) {
+                this.querySelector('.fbt-btn-atc').disabled = true;
+            } else {
+                this.querySelector('.fbt-btn-atc').disabled = false;
             }
         }
+
 
         async addSelectedToCart () {
             const btn = this.querySelector('.fbt-btn-atc')
