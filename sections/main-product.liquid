@@ -572,7 +572,7 @@
         async addSelectedToCart () {
             const mainProductId = document.querySelector('[data-main-product]').getAttribute('data-main-product');
             const mainProductQuantity = parseInt(document.querySelector('.main-product .quantity-field').value);
-        
+            console.log(mainProductQuantity)
             const btn = document.querySelector('.fbt-btn-atc')
             btn.style.width = `${btn.clientWidth}px`
         
