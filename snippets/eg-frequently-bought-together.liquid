@@ -493,10 +493,7 @@
                 })
             })
 
-            document.querySelector('.atc-product').addEventListener('click', (event) => {
-              event.preventDefault();
-              this.addSelectedToCart.bind(this)
-            })
+            document.querySelector('.atc-product').addEventListener('click', this.addSelectedToCart.bind(this))
 
         }
 
