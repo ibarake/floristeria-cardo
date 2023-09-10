@@ -744,6 +744,7 @@ document.querySelectorAll('.fbt-product-item')[0].style.display = "none";
 
   <frequently-bought-together>
     <div class="payment-1">
+  {% comment %}
       <button
         class="fbt-btn-atc button button--primary btn btn-primary subtitulo-3"
         type="button"
@@ -751,6 +752,7 @@ document.querySelectorAll('.fbt-product-item')[0].style.display = "none";
       >
         {{ text_add_selected }}
       </button>
+  {% endcomment %}
     </div>
     <ul class="fbt-product-list slider-4">
       {% for handle in product_handles limit: limit %}
