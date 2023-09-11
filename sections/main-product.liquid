@@ -503,8 +503,12 @@
 
             document.querySelector('.fbt-btn-atc').addEventListener('click', (event) => {
                 event.preventDefault();
-                this.addSelectedToCart();
+                this.addSelectedToCart(false);
             })
+            document.querySelector('.buy-now-button').addEventListener('click', function() {
+    const fbt = document.querySelector('frequently-bought-together');
+    fbt.addSelectedToCart(true);
+});
         }
 
         onSelectChange (select) {
@@ -569,7 +573,7 @@
         }
 
 
-        async addSelectedToCart () {
+        async addSelectedToCart (redirectToCheckout = false) {
             const mainProductId = document.querySelector('[data-main-product]').getAttribute('data-main-product');
     const mainProductQuantity = parseInt(document.querySelector('.main-product .quantity-field').value);
 
@@ -608,6 +612,10 @@ this.querySelectorAll('.fbt-variant-select').forEach((select) => {
         body: JSON.stringify({ items })
     });
         
+             if (redirectToCheckout) {
+            // Redirect to checkout instead of cart drawer or cart page
+            location.href = "/checkout";
+        } else {
             if (document.querySelector('#cart-drawer')) {
                 btn.innerHTML = btn.dataset.textAddSelected
                 loadEgCartDrawer(true)
@@ -615,7 +623,7 @@ this.querySelectorAll('.fbt-variant-select').forEach((select) => {
                 location.href = window.cart_route
             }
         }
-
+        }
 
         // Shopify format money (helper function)
         // https://gist.github.com/stewartknapman/8d8733ea58d2314c373e94114472d44c
