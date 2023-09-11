@@ -621,6 +621,10 @@ this.querySelectorAll('.fbt-variant-select').forEach((select) => {
         }
         }
 
+        document.querySelector('.buy-now-button').addEventListener('click', function() {
+    const fbt = document.querySelector('frequently-bought-together');
+    fbt.addSelectedToCart(true);
+});
 
         // Shopify format money (helper function)
         // https://gist.github.com/stewartknapman/8d8733ea58d2314c373e94114472d44c
