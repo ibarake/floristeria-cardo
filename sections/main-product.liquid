@@ -503,7 +503,7 @@
 
             document.querySelector('.fbt-btn-atc').addEventListener('click', (event) => {
                 event.preventDefault();
-                this.addSelectedToCart();
+                this.addSelectedToCart(false);
             })
         }
 
@@ -569,7 +569,7 @@
         }
 
 
-        async addSelectedToCart () {
+        async addSelectedToCart (redirectToCheckout = false) {
             const mainProductId = document.querySelector('[data-main-product]').getAttribute('data-main-product');
     const mainProductQuantity = parseInt(document.querySelector('.main-product .quantity-field').value);
 
