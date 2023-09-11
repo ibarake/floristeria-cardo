@@ -591,14 +591,17 @@
     }); */
 
     // Add the checked products from the Frequently Bought Together section to the items array
-    this.querySelectorAll('.fbt-variant-select').forEach((select) => {
+this.querySelectorAll('.fbt-variant-select').forEach((select) => {
     if (select.closest('.fbt-product-item').querySelector('.fbt-add-checkbox').checked) {
+        const variantId = Number(select.value); // Get the selected variant's ID
+        const quantity = 1; // Assuming default quantity is 1 for each product in FBT. Adjust as necessary.
         items.push({
-            id: Number(mainProductId),
-            quantity: mainProductQuantity
+            id: variantId,
+            quantity: quantity
         });
     }
 });
+
 
           console.log(items)
 
