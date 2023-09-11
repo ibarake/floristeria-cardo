@@ -592,13 +592,13 @@
 
     // Add the checked products from the Frequently Bought Together section to the items array
     this.querySelectorAll('.fbt-variant-select').forEach((select) => {
-        if (select.closest('.fbt-product-item').querySelector('.fbt-add-checkbox').checked) {
-            items.push({
-                id: Number(select.value), // Get the ID of the selected variant
-                quantity: 1 // Assuming a quantity of 1 for each checked product
-            });
-        }
-    });
+    if (select.closest('.fbt-product-item').querySelector('.fbt-add-checkbox').checked) {
+        items.push({
+            id: Number(mainProductId),
+            quantity: mainProductQuantity
+        });
+    }
+});
 
     await fetch('/cart/add.js', {
         method: 'POST',
