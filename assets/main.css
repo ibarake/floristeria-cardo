@@ -2811,6 +2811,10 @@ title-add-combo {
     position: relative;
   }
 
+  container-buttons {
+    flex-direction: column;
+  }
+
   #atc {
     padding: 0;
   }
