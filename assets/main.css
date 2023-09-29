@@ -2679,7 +2679,7 @@ container-buttons {
   border-radius: 8px;
   margin: 0;
   color: var(--main-white);
-  padding: 0 10px;
+  padding: 0 50px;
 }
 
 .payment-1 button span {
