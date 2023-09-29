@@ -2663,7 +2663,6 @@ container-buttons {
   display: flex;
   margin-top: 2rem;
   justify-content: space-around;
-  align-items: center;
   padding: 0;
 }
 
