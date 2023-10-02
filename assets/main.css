@@ -3191,6 +3191,7 @@ cart-footer{
 
   quantity {
     margin: 2px 0;
+    margin-bottom: -12px;
   }
 
   #gd {
