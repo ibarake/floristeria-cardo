@@ -2813,6 +2813,7 @@ title-add-combo {
 
   container-buttons {
     flex-direction: column;
+    margin-bottom: 15px;
   }
 
   #atc {
