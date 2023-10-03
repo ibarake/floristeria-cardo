@@ -2754,7 +2754,7 @@ container-title {
   cursor: pointer;
   height: 2.7rem;
   color: var(--main-olive);
-  padding: 0 15px;
+  padding: 0 75px;
   white-space: nowrap;
   overflow: hidden; 
   text-overflow: ellipsis;
@@ -2835,13 +2835,14 @@ title-add-combo {
   }
 
   .quantity-field {
-    width: 15%;
+    width: 55%;
   }
 
   .payment-1 button {
     padding: 0 37px;
     display: flex;
     justify-content: center;
+    width: 100%;
   }
 
   .cc {
