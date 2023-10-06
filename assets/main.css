@@ -2826,6 +2826,7 @@ title-add-combo {
   }
 
   .add-t-cart {
+    width:100%;
     margin: 1.5rem 0;
     padding: 0 96px;
   }
