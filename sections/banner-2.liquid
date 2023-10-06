@@ -48,7 +48,7 @@
         </a>
     {% endfor %}
 {% else %}
-    <!-- Aquí puedes especificar qué productos mostrar si la colección está vacía -->
+    {% assign alternative_collection = collections[section.settings.alternative_collection] %}
     {% for alternative-product in alternative_collection.products %}
         <a class="product-item" href="{{ alternative-product.url }}">
             {% include 'product-card',
@@ -128,6 +128,11 @@
       "type": "collection_list",
       "id": "collection_list",
       "label": "collection"
+    },
+       {
+      "type": "collection",
+      "id": "alternative_collection",
+      "label": "Colección alternativa"
     },
     {
       "type": "url",
