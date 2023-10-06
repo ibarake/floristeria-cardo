@@ -34,7 +34,7 @@
   </con-t>
   
   <collection-slider-2 class="slider-3">
-    {% assign products = collection.metafields.custom.featured_collection.value.products %}
+   {% assign products = collection.metafields.custom.featured_collection.value.products %}
 
 {% if products.size > 0 %}
     {% for hero-product in products %}
@@ -48,16 +48,19 @@
         </a>
     {% endfor %}
 {% else %}
-    {% assign alternative_collection = collections[section.settings.alternative_collection] %}
-    {% for alternative-product in alternative_collection.products %}
-        <a class="product-item" href="{{ alternative-product.url }}">
-            {% include 'product-card',
-                hero-product: alternative-product,
-                atc-btn: section.settings['add-to-cart-title'],
-                atc-rsp: section.settings['add-to-cart-title-mobile'],
-                classes: 'hero'
-            %}
-        </a>
+    {% for block in section.blocks %}
+        {% assign alternative_collection = collections[block.settings.alternative_collection_block] %}
+        <!-- Puedes limitar el número de productos que deseas mostrar de cada colección alternativa -->
+        {% for alternative-product in alternative_collection.products limit: X %}
+            <a class="product-item" href="{{ alternative-product.url }}">
+                {% include 'product-card',
+                    hero-product: alternative-product,
+                    atc-btn: section.settings['add-to-cart-title'],
+                    atc-rsp: section.settings['add-to-cart-title-mobile'],
+                    classes: 'hero'
+                %}
+            </a>
+        {% endfor %}
     {% endfor %}
 {% endif %}
 
@@ -148,6 +151,19 @@
       "type": "url",
       "id": "link4",
       "label": "link product"
+    }
+  ],
+    "blocks": [
+    {
+      "type": "alternative_collection",
+      "name": "Colección Alternativa",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "alternative_collection_block",
+          "label": "Seleccionar colección alternativa"
+        }
+      ]
     }
   ],
   "presets": [{
