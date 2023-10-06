@@ -2,67 +2,14 @@
   "sections": {
     "b5a72c45-9479-4564-b5b3-8ac96b63d529": {
       "type": "banner-2",
-      "blocks": {
-        "650bd025-295c-4205-bb4d-7490299026ec": {
-          "type": "Collection-card",
-          "settings": {
-            "COL-title": "Ver todos",
-            "COL-subtitle": "Arreglos Fúnebres",
-            "COL-image": "shopify:\/\/shop_images\/5_9f79c9bb-dfaf-43a3-84f5-74274a20c1e6.png",
-            "tag-url": ""
-          }
-        },
-        "917be7cb-507c-4780-a185-1bf83c6d97aa": {
-          "type": "Collection-card",
-          "settings": {
-            "COL-title": "Ver todos",
-            "COL-subtitle": "Cajas de Rosas",
-            "COL-image": "shopify:\/\/shop_images\/2.png",
-            "tag-url": ""
-          }
-        },
-        "78f05ce4-dbe8-4b28-8bae-fcac698f6ffe": {
-          "type": "Collection-card",
-          "settings": {
-            "COL-title": "Ver todos",
-            "COL-subtitle": "Flores para Cumpleaños",
-            "COL-image": "shopify:\/\/shop_images\/3.png",
-            "tag-url": ""
-          }
-        },
-        "97a78c01-567a-4413-a2e8-e0115b413794": {
-          "type": "Collection-card",
-          "settings": {
-            "COL-title": "Ver todos",
-            "COL-subtitle": "Arreglos de rosas",
-            "COL-image": "shopify:\/\/shop_images\/4.png",
-            "tag-url": ""
-          }
-        },
-        "87a05e50-b484-438b-94ee-b8042dd91abf": {
-          "type": "Collection-card",
-          "settings": {
-            "COL-title": "Ver todos",
-            "COL-subtitle": "Bonos de condolencia",
-            "COL-image": "shopify:\/\/shop_images\/1.jpg",
-            "tag-url": ""
-          }
-        }
-      },
-      "block_order": [
-        "650bd025-295c-4205-bb4d-7490299026ec",
-        "917be7cb-507c-4780-a185-1bf83c6d97aa",
-        "78f05ce4-dbe8-4b28-8bae-fcac698f6ffe",
-        "97a78c01-567a-4413-a2e8-e0115b413794",
-        "87a05e50-b484-438b-94ee-b8042dd91abf"
-      ],
       "settings": {
         "title": "Todos los productos",
+        "add-to-cart-title": "Lorem ipsum dolor sit amet",
         "subtitle": "Encuentra aquí todos los arreglos florales para la ocasión que deseas así como los bonos de condolencias.",
         "button_lin4": "Arreglos Florales",
         "button_lin5": "Contáctanos",
         "collection_list": [
-
+          "arreglos-de-rosas"
         ],
         "button-link-4": "",
         "button-link-5": "",
