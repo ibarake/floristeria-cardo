@@ -81,8 +81,10 @@
                 >
                 <input type="button" value="+" class="qButton button-plus" data-field="quantity">
               </quantity>
-              
-
+              <button-note class="cart-note subtitulo-5">
+                {% render 'cart-note' %}
+                {{ section.settings['cart-note'] }}
+              </button-note>
               <div class="popup">
                 <div class="popup-content">
                   <textarea
