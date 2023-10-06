@@ -37,6 +37,7 @@
           {% include 'product-card',
             hero-product: product,
             atc-btn: section.settings['button-text'],
+            atc-rsp: section.settings['add-to-cart-title-mobile'],
             classes: 'product-4-img'
           %}
         </a>
@@ -75,7 +76,14 @@
         "id": "button-text",
         "label": "Boton de texto",
         "default": "Añadir al carrito"
-      }, {
+      },
+       {
+      "type": "text",
+      "id": "add-to-cart-title-mobile",
+      "label": "Titulo para movil",
+      "default": "Añadir"
+    },
+      {
 			"type": "text",
 			"id": "title-preguntas",
 			"label": "Title section",
