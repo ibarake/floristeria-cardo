@@ -49,7 +49,7 @@
     {% endfor %}
 {% else %}
     {% assign alternative_collection = collections[section.settings.alternative_collection] %}
-    {% for alternative-product in alternative_collection.products %}
+   {% for alternative-product in alternative_collection.products limit: 5 %}
         <a class="product-item" href="{{ alternative-product.url }}">
             {% include 'product-card',
                 hero-product: alternative-product,
