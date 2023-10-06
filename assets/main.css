@@ -925,7 +925,9 @@ collection-slider::-webkit-scrollbar {
   .atc-btn-text {
     display: none;
   }
-
+  .text-responsive {
+    display: block;
+  }
   .truncate-32 {
     display: none;
   }
