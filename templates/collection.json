@@ -5,12 +5,14 @@
       "settings": {
         "title": "Todos los productos",
         "add-to-cart-title": "Lorem ipsum dolor sit amet",
+        "add-to-cart-title-mobile": "Añadir",
         "subtitle": "Encuentra aquí todos los arreglos florales para la ocasión que deseas así como los bonos de condolencias.",
         "button_lin4": "Arreglos Florales",
         "button_lin5": "Contáctanos",
         "collection_list": [
           "arreglos-de-rosas"
         ],
+        "alternative_collection": "arreglos-de-nacimiento",
         "button-link-4": "",
         "button-link-5": "",
         "link4": ""
@@ -20,6 +22,7 @@
       "type": "collection-main",
       "settings": {
         "add-to-cart-title": "Añadir al carrito",
+        "add-to-cart-title-mobile": "Añadir",
         "total-p": "Todos los Productos"
       }
     }
