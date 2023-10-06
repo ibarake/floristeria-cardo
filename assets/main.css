@@ -920,7 +920,9 @@ collection-slider::-webkit-scrollbar {
   top: 50px;
   right: 0;
 }
-
+.text-responsive {
+    display: none;
+  }
 @media only screen and (max-width: 768px) {
   .atc-btn-text {
     display: none;
