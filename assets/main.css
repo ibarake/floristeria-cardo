@@ -2804,7 +2804,9 @@ title-add-combo {
     flex-direction: column-reverse;
     position: relative;
   }
-
+div#shopify-section-template--14830506868814__main > container-buttons > quantity {
+  width: 10%;
+}
   container-buttons {
     flex-direction: column;
     margin-bottom: 15px;
