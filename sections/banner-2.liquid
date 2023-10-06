@@ -33,7 +33,7 @@
     </buttons-ba-container>
   </con-t>
   <collection-slider-2 class="slider-3">
-    {% for hero-product in collection.metafields.custom.featured_collection.value.products %}
+    {% for hero-product in collection.metafields.custom.featured_collection.value %}
       <a class="product-item" href="{{ hero-product.url }}">
         {% include 'product-card',
           hero-product: hero-product,
