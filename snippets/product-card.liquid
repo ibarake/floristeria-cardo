@@ -7,7 +7,7 @@
       <p class="parrafo-1 card-product-title">{{ hero-product.title }}</p>
     </product-card-title>
     <card-footer>
-      <p class="price parrafo-1">{{ hero-product.price | money_with_currency }}</p>
+      <p class="price parrafo-1">{{ hero-product.price}}</p>
       <form action="/cart/add" method="post" id="product-form-{{ hero-product.id }}" class="atc-btn-form">
         <input type="hidden" name="id" value="{{ hero-product.variants.first.id }}">
         <button type="submit" name="add" class="card-add-to-cart">
