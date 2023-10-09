@@ -27,33 +27,28 @@ closeMenu.addEventListener("click", function () {
 });
 
 dropdownMenus.forEach(function (dropdownMenu) {
-  dropdownMenu.addEventListener("click", function () {
-    var parentLi = this.closest(".drawer-item-container");
-    var childLi = parentLi.querySelector("dropdown-mega-menu");
+    dropdownMenu.addEventListener("click", function () {
+        var parentLi = this.closest(".drawer-item-container");
+        var childLi = parentLi.querySelector("dropdown-mega-menu");
+        
+        // Si hay otro menú desplegable abierto, ciérralo
+        if (activeDropdown && activeDropdown !== childLi) {
+            var activeDropdownMenu = activeDropdown.closest('.drawer-item-container').querySelector('.dropdown-open');
+            activeDropdownMenu.style.transform = "scaleY(1)";
+            activeDropdown.style.height = "0";
+        }
 
-    // Check if a different dropdown is already active
-    if (activeDropdown && activeDropdown !== childLi) {
-      console.log(activeDropdown)
-      var activeDropdownMenu = activeDropdown.parentElements.querySelector('.dropdown-open');
-      if (activeDropdownMenu.style.transform === "scaleY(1)"){
-        activeDropdownMenu.style.transform = "scaleY(-1)";
-      } else {
-        activeDropdownMenu.style.transform = "scaleY(1)";
-      }
-      activeDropdown.style.height = "0";
-    }
-
-    // Toggle the clicked dropdown
-    if (childLi.style.height === "0px" || !childLi.style.height) {
-      dropdownMenu.style.transform = "scaleY(-1)";
-      childLi.style.height = childLi.scrollHeight + "px";
-      activeDropdown = childLi;
-    } else {
-      dropdownMenu.style.transform = "scaleY(1)";
-      childLi.style.height = "0";
-      activeDropdown = null;
-    }
-  });
+        // Alternar el menú desplegable en el que se hizo clic
+        if (childLi.style.height === "0px" || !childLi.style.height) {
+            dropdownMenu.style.transform = "scaleY(-1)";  // Gira la flecha
+            childLi.style.height = childLi.scrollHeight + "px";  // Abre el menú desplegable
+            activeDropdown = childLi;
+        } else {
+            dropdownMenu.style.transform = "scaleY(1)";  // Restablece la flecha
+            childLi.style.height = "0";  // Cierra el menú desplegable
+            activeDropdown = null;
+        }
+    });
 });
 
 function disableScroll() {
