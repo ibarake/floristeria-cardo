@@ -641,10 +641,9 @@
     btn.style.width = `${btn.clientWidth}px`;
 
     btn.innerHTML = `
-        {% render 'icon-cart' %}
-                <p class="add-t-cart-text subtitulo-2">
-                  {{ section.settings['button-title'] }}
-                </p>
+        <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
     `;
 
     const items = [];
@@ -682,9 +681,10 @@ this.querySelectorAll('.fbt-variant-select').forEach((select) => {
                 loadEgCartDrawer(true)
             } else {
                 btn.innerHTML = `
-                    <div class="spinner-border" role="status">
-                        <span class="visually-hidden">Loading...</span>
-                    </div>
+                    {% render 'icon-cart' %}
+                <p class="add-t-cart-text subtitulo-2">
+                  {{ section.settings['button-title'] }}
+                </p>
                 `;
                 var popup = document.querySelector('.added-to-cart');
                 popup.style.display = 'flex'
