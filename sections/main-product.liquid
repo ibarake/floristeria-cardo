@@ -532,7 +532,12 @@
   </style>
 
   <script>
+
     window.addEventListener('DOMContentLoaded', (event) => { 
+    var keepBuying = document.querySelector('.keep-buying');
+    keepBuying.addEventListener('click', () => {
+      document.querySelector('.added-to-cart').style.display = 'none';
+    })
     window.money_format = "{{ shop.money_format }}"
     window.cart_route = "{{ routes.cart_url }}"
 
