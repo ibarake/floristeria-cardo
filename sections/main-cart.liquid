@@ -95,6 +95,22 @@
                   ></textarea>
                 </div>
               </div>
+              <script>
+                document.addEventListener('DOMContentLoaded', () => {
+                  var checkoutBtn =  document.querySelectorAll('.cart input[type="submit"]')
+                  var textAreas = document.querySelectorAll('.popup-content');
+                  textAreas.forEach(ta, () => {  
+                  ta.addEventListener('change', () =>{   
+                    if (ta.value === "") {
+                      checkoutBtn.forEach(btn, () => {
+                        btn.disabled = 'true'
+                      })
+                    }
+                  })
+                  })
+               
+                })
+              </script>
             </item-info>
             <a href="{{ item.url_to_remove }}">{% render 'delete-cart' %}</a>
           </cart-item-responsive>
