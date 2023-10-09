@@ -101,9 +101,13 @@
                   var textAreas = document.querySelectorAll('.popup-content');
                   textAreas.forEach(ta, () => {  
                   ta.addEventListener('change', () =>{   
-                    if (ta.value === "") {
+                    if (ta.value.trim() === "") {
                       checkoutBtn.forEach(btn, () => {
                         btn.disabled = 'true'
+                      })
+                    } else {
+                      checkoutBtn.forEach(btn, () => {
+                        btn.disabled = 'false'
                       })
                     }
                   })
