@@ -2055,6 +2055,8 @@ filter-drawer {
     display: block;
     position: fixed;
     width: 100%;
+    height: 80%;
+    overflow-y: auto;
     z-index: 9999;
     background-color: var(--main-white);
     bottom: -1000px;
