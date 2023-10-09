@@ -36,6 +36,8 @@
               {% for tag in item.product.tags %}
                 {% if tag == 'combo' %}
                   {% assign product_is_combo = true %}
+                {% else %}
+                  {% assign product_is_combo = false %}
                 {% endif %}
               {% endfor %}
               {% if product_is_combo == false %}
