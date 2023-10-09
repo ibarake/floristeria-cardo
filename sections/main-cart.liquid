@@ -97,32 +97,27 @@
               </div>
               <script>
                 document.addEventListener('DOMContentLoaded', () => {
-                  var checkoutBtn =  document.querySelectorAll('.cart input[type="submit"]')
-                  var textAreas = document.querySelectorAll('.popup-content');
-                  textAreas.forEach(ta, () => {  
-                  if (ta.value.trim() === "") {
-                      checkoutBtn.forEach(btn, () => {
-                        btn.disabled = 'true'
-                      })
-                    } else {
-                      checkoutBtn.forEach(btn, () => {
-                        btn.disabled = 'false'
-                      })
-                    }
-                  ta.addEventListener('change', () =>{   
-                    if (ta.value.trim() === "") {
-                      checkoutBtn.forEach(btn, () => {
-                        btn.disabled = 'true'
-                      })
-                    } else {
-                      checkoutBtn.forEach(btn, () => {
-                        btn.disabled = 'false'
-                      })
-                    }
-                  })
-                  })
-               
-                })
+                  var checkoutBtns = document.querySelectorAll('.cart input[type="submit"]');
+                  var textAreas = document.querySelectorAll('.popup-content textarea'); // Make sure to target the textarea inside the .popup-content
+              
+                  const originalBtnTexts = Array.from(checkoutBtns).map(btn => btn.value);  // Store original button texts
+              
+                  const updateButtonState = () => {
+                      let isAnyTextAreaFilled = Array.from(textAreas).some(ta => ta.value.trim() !== "");
+              
+                      checkoutBtns.forEach((btn, index) => {
+                          btn.disabled = !isAnyTextAreaFilled;
+                          btn.value = isAnyTextAreaFilled ? originalBtnTexts[index] : "Rellena las notas del producto";
+                      });
+                  };
+              
+                  // Initial check
+                  updateButtonState();
+              
+                  textAreas.forEach(ta => {
+                      ta.addEventListener('input', updateButtonState);  // "input" event is more reliable than "change" for textareas
+                  });
+              });
               </script>
             </item-info>
             <a href="{{ item.url_to_remove }}">{% render 'delete-cart' %}</a>
