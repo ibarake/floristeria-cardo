@@ -538,6 +538,10 @@
     keepBuying.addEventListener('click', () => {
       document.querySelector('.added-to-cart').style.display = 'none';
     })
+    var viewCart = document.querySelector('.view-cart');
+      viewCart.addEventListener('click', () => {
+        location.href = window.cart_route
+      })
     window.money_format = "{{ shop.money_format }}"
     window.cart_route = "{{ routes.cart_url }}"
 
