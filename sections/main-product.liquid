@@ -671,7 +671,8 @@ this.querySelectorAll('.fbt-variant-select').forEach((select) => {
                 btn.innerHTML = btn.dataset.textAddSelected
                 loadEgCartDrawer(true)
             } else {
-                CAMBIARESTO
+                var popup = document.querySelector('.added-to-cart');
+                popup.style.display = 'flex'
             }
         }
         }
