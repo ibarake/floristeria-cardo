@@ -108,14 +108,14 @@
                       checkoutBtns.forEach((btn, index) => {
                           btn.disabled = !isAnyTextAreaFilled;
                           btn.value = isAnyTextAreaFilled ? originalBtnTexts[index] : "Rellena las notas del producto";
+                          if (isAnyTextAreaFilled) {
+                              btn.classList.add('grow');
+                              btn.style.opacity = "1";
+                          } else {
+                              btn.classList.remove('grow');
+                              btn.style.opacity = "0.8";
+                          }
                       });
-                      if (isAnyTextAreaFilled) {
-                          btn.classList.add('grow');
-                          btn.style.opacity = "1";
-                      } else {
-                          btn.classList.remove('grow');
-                          btn.style.opacity = "0.8";
-                      }
                   };
               
                   // Initial check
