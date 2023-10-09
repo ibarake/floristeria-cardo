@@ -1,4 +1,15 @@
 <div data-main-product="{{ product.selected_or_first_available_variant.id }}">
+  <div class="added-to-cart">
+    <div class="pop-container">
+      <p>Haz agregado a tu carrito.</p>
+      <button class="view-cart">
+        Ver carrito
+      </button>
+      <button class="keep-buying">
+        Seguir comprando
+      </button>
+    </div>
+  </div>
   <product-form class="main-product">
     <main-pr-container>
       <div class="flor22-3">
@@ -627,7 +638,7 @@ this.querySelectorAll('.fbt-variant-select').forEach((select) => {
                 btn.innerHTML = btn.dataset.textAddSelected
                 loadEgCartDrawer(true)
             } else {
-                location.href = window.cart_route
+                CAMBIARESTO
             }
         }
         }
