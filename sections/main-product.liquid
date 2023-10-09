@@ -641,9 +641,10 @@
     btn.style.width = `${btn.clientWidth}px`;
 
     btn.innerHTML = `
-        <div class="spinner-border" role="status">
-            <span class="visually-hidden">Loading...</span>
-        </div>
+        {% render 'icon-cart' %}
+                <p class="add-t-cart-text subtitulo-2">
+                  {{ section.settings['button-title'] }}
+                </p>
     `;
 
     const items = [];
@@ -680,7 +681,11 @@ this.querySelectorAll('.fbt-variant-select').forEach((select) => {
                 btn.innerHTML = btn.dataset.textAddSelected
                 loadEgCartDrawer(true)
             } else {
-                btn.innerHTML = btn.dataset.textAddSelected;
+                btn.innerHTML = `
+                    <div class="spinner-border" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                `;
                 var popup = document.querySelector('.added-to-cart');
                 popup.style.display = 'flex'
             }
