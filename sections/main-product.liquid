@@ -552,9 +552,9 @@
                 this.addSelectedToCart(false);
             })
             document.querySelector('.buy-now-button').addEventListener('click', function() {
-    const fbt = document.querySelector('frequently-bought-together');
-    fbt.addSelectedToCart(true);
-});
+                const fbt = document.querySelector('frequently-bought-together');
+                fbt.addSelectedToCart(false);
+            });
         }
 
         onSelectChange (select) {
