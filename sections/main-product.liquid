@@ -554,8 +554,7 @@
 
             document.querySelector('.fbt-btn-atc').addEventListener('click', (event) => {
                 event.preventDefault();
-                this.addSelectedToCart();
-                displayCartItems();
+                this.displayCartItems();
             })
             document.querySelector('.buy-now-button').addEventListener('click', function() {
                 const fbt = document.querySelector('frequently-bought-together');
@@ -565,7 +564,7 @@
 
         // Function to display cart items in the popup
         async displayCartItems() {
-          this.addSelectedToCart(false);
+          await this.addSelectedToCart(false);
           fetch('/cart.js')
             .then(response => response.json())
             .then(cart => {
