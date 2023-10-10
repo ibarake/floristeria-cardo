@@ -769,7 +769,7 @@ initialize();
   assign product_handles = product_handles | split: ','
 %}
 
-{% if product_handles.size > 1 %}
+{% if product_handles.size < 1 %}
   
 <style>
   frequently-bought-together{
