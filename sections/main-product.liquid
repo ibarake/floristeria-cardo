@@ -553,7 +553,7 @@
             })
             document.querySelector('.buy-now-button').addEventListener('click', function() {
                 const fbt = document.querySelector('frequently-bought-together');
-                fbt.addSelectedToCart(false);
+                fbt.addSelectedToCart(true);
             });
         }
 
@@ -660,7 +660,7 @@ this.querySelectorAll('.fbt-variant-select').forEach((select) => {
         
              if (redirectToCheckout) {
             // Redirect to checkout instead of cart drawer or cart page
-            location.href = "/checkout";
+            location.href = "/cart";
         } else {
             if (document.querySelector('#cart-drawer')) {
                 btn.innerHTML = btn.dataset.textAddSelected
