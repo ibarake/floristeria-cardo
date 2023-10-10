@@ -616,7 +616,7 @@
                   <p class="pc-title subtitulo-1">${item.title}</p>
                 </div>
                 <p class="pc-title subtitulo-1">${item.quantity}</p>
-                <p class="parrafo-1 price">${item.price}</p>
+                <p class="parrafo-1 price">${'$' + parseFloat(item.price).toFixed(2)}</p>
                 </div>
               `;
               cartItemsContainer.appendChild(cartItem);
