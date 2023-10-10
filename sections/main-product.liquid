@@ -750,6 +750,12 @@ initialize();
 })
 </script>
           {% if section.settings['agregar-combo'] != blank %}
+<style>
+  add-combo{
+    display: none;
+  }
+</style>
+            {% endif %}
             <add-combo>
 
 {% liquid
@@ -764,8 +770,12 @@ initialize();
 %}
 
 {% if product_handles.size > 1 %}
-
-
+<style>
+  frequently-bought-together{
+    display: none;
+  }
+</style>
+{% endif %}
   <frequently-bought-together>
   {% comment %}
     <div class="payment-1">
@@ -837,7 +847,6 @@ initialize();
         </b>
       </p>
   </frequently-bought-together>
-{% endif %}
 
 <script>
   $('.slick-next-c').on('click', () => {$('.slider-4').slick('slickNext')});
@@ -851,7 +860,6 @@ initialize();
 </script>
 
             </add-combo>
-          {% endif %}
           {% if section.settings.envio != blank %}
             <shipping class="extra-product">
               {% render 'icon-transport' %}
