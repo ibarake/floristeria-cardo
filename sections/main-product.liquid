@@ -1,15 +1,15 @@
 <div data-main-product="{{ product.selected_or_first_available_variant.id }}">
   <div class="added-to-cart">
   <div class="pop-container">
-    <p class="titulo-1">Haz agregado a tu carrito.</p>
+    <p class="titulo-3">Haz agregado a tu carrito.</p>
     
     <!-- Cart items placeholder -->
       <div class="cart-items-list">
         <!-- Items will be dynamically added here -->
       </div>
     
-    <button class="parrafo-1 view-cart  grow">Ver carrito</button>
-    <button class="parrafo-1 keep-buying grow">Seguir comprando</button>
+    <button class="subtitulo-1 view-cart  grow">Ver carrito</button>
+    <button class="subtitulo-1 keep-buying grow">Seguir comprando</button>
   </div>
 </div>
 
@@ -607,16 +607,16 @@
             cart.items.forEach(item => {
               const cartItem = document.createElement('div'); // Create a table row
               cartItem.innerHTML = `
-                <div class="parrafo-1">
+                <div class="parrafo-3">
                 <image class="cart-item-image">
                   <img class="cart-image-tag" src="${item.image}" alt="${item.title}" width="85">
                 </image>
                 <div class="pop-text-container">
-                  <p class="parrafo-4 collection-tag">{{ product.collections[0].title }}</p>
-                  <p class="pc-title subtitulo-1">${item.title}</p>
+                  <p class="parrafo-5 collection-tag">{{ product.collections[0].title }}</p>
+                  <p class="pc-title subtitulo-3">${item.title}</p>
                 </div>
                 <p class="pc-title subtitulo-1">${'x' + item.quantity}</p>
-                <p class="parrafo-1 price">${'$' + parseFloat(item.price).toFixed(2)}</p>
+                <p class="parrafo-2 price">${'$' + parseFloat(item.price).toFixed(2)}</p>
                 </div>
               `;
               cartItemsContainer.appendChild(cartItem);
