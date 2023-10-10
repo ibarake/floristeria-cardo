@@ -1,15 +1,18 @@
 <div data-main-product="{{ product.selected_or_first_available_variant.id }}">
   <div class="added-to-cart">
-    <div class="pop-container">
-      <p class="titulo-1">Haz agregado a tu carrito.</p>
-      <button class="parrafo-1 view-cart">
-        Ver carrito
-      </button>
-      <button class="parrafo-1 keep-buying">
-        Seguir comprando
-      </button>
+  <div class="pop-container">
+    <p class="titulo-1">Haz agregado a tu carrito.</p>
+    
+    <!-- Cart items placeholder -->
+    <div class="cart-items-list">
+      <!-- Items will be dynamically added here -->
     </div>
+    
+    <button class="parrafo-1 view-cart">Ver carrito</button>
+    <button class="parrafo-1 keep-buying">Seguir comprando</button>
   </div>
+</div>
+
   <product-form class="main-product">
     <main-pr-container>
       <div class="flor22-3">
