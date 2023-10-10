@@ -583,7 +583,7 @@
           fetch('/cart.js')
           .then(response => response.json())
           .then(cart => {
-            const cartItemsContainer = document.querySelector('.cart-items-list tbody');
+            const cartItemsContainer = document.querySelector('.cart-items-list');
             cartItemsContainer.innerHTML = '';  // Clear previous items
             
             cart.items.forEach(item => {
