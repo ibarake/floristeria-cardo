@@ -523,7 +523,8 @@
   <script>
 
     // Function to display cart items in the popup
-function displayCartItems() {
+function displayCartItems(object) {
+  await object.addSelectedToCart(false);
   fetch('/cart.js')
     .then(response => response.json())
     .then(cart => {
@@ -572,8 +573,7 @@ function displayCartItems() {
 
             document.querySelector('.fbt-btn-atc').addEventListener('click', (event) => {
                 event.preventDefault();
-                this.addSelectedToCart(false);
-                displayCartItems();
+                displayCartItems(this);
             })
             document.querySelector('.buy-now-button').addEventListener('click', function() {
                 const fbt = document.querySelector('frequently-bought-together');
