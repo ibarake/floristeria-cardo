@@ -598,6 +598,7 @@
             
             cart.items.forEach(item => {
               const cartItem = document.createElement('tr'); // Create a table row
+              console.log(item);
               this.fetchProductCollection(item.id)
               cartItem.innerHTML = `
                 <td class="parrafo-1">
