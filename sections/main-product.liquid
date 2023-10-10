@@ -572,8 +572,8 @@ function displayCartItems() {
 
             document.querySelector('.fbt-btn-atc').addEventListener('click', (event) => {
                 event.preventDefault();
-                this.addSelectedToCart(false);
                 displayCartItems();
+                this.addSelectedToCart(false);
             })
             document.querySelector('.buy-now-button').addEventListener('click', function() {
                 const fbt = document.querySelector('frequently-bought-together');
