@@ -577,21 +577,22 @@
         async displayCartItems() {
           await this.addSelectedToCart(false);
           fetch('/cart.js')
-            .then(response => response.json())
-            .then(cart => {
-              const cartItemsContainer = document.querySelector('.cart-items-list');
-              cartItemsContainer.innerHTML = '';  // Clear previous items
-        
-              cart.items.forEach(item => {
-                const cartItem = document.createElement('div');
-                cartItem.className = 'cart-item';
-                cartItem.innerHTML = `
-                  <img src="${item.image}" alt="${item.title}" width="50">
-                  <span>${item.title} - ${item.quantity} x ${item.price}</span>
-                `;
-                cartItemsContainer.appendChild(cartItem);
-              });
+          .then(response => response.json())
+          .then(cart => {
+            const cartItemsContainer = document.querySelector('.cart-items-list tbody');
+            cartItemsContainer.innerHTML = '';  // Clear previous items
+      
+            cart.items.forEach(item => {
+              const cartItem = document.createElement('tr'); // Create a table row
+              cartItem.innerHTML = `
+                <td><img src="${item.image}" alt="${item.title}" width="50"></td>
+                <td>${item.title}</td>
+                <td>${item.quantity}</td>
+                <td>${item.price}</td>
+              `;
+              cartItemsContainer.appendChild(cartItem);
             });
+          });
         }
       
         onSelectChange (select) {
