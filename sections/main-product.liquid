@@ -589,16 +589,15 @@
             cart.items.forEach(item => {
               const cartItem = document.createElement('tr'); // Create a table row
               cartItem.innerHTML = `
-                <td class="parrafo-1">
+                <div class="parrafo-1">
                 <image class="cart-item-image">
                   <img class="cart-image-tag" src="${item.image}" alt="${item.title}" width="50"></td>
                 </image>
-                <td>
                   <p class="parrafo-4 collection-tag">${item.collection.title}</p>
                   <p class="pc-title subtitulo-1">${item.title}</p>
-                </td>
-                <td class="parrafo-1"><p class="pc-title subtitulo-1">${item.quantity}</p></td>
-                <td class="parrafo-1 price">${item.price}</td>
+                <p class="pc-title subtitulo-1">${item.quantity}</p></td>
+                <p class="parrafo-1 price">${item.price}</p>
+                </div>
               `;
               cartItemsContainer.appendChild(cartItem);
             });
