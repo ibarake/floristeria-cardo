@@ -90,8 +90,6 @@
           </answer>
         </faq>
         <container-spam>
-          {% if section.settings['agregar-combo'] != blank %}
-            <add-combo>
               {% liquid
   comment
     Snippet Options
@@ -108,20 +106,7 @@
   assign text_total_price = 'Total Combo'
   assign text_add_selected = 'Agregar combo al carrito'
 %}
-
-{% liquid
-  assign product_handles = product.handle | append: ','
-  for tag in product.tags
-    if tag contains upsell_tag
-      assign handle = tag | split: ':' | last
-      assign product_handles = product_handles | append: handle | append: ','
-    endif
-  endfor
-  assign product_handles = product_handles | split: ','
-%}
-
-{% if product_handles.size > 1 %}
-  <style>
+            <style>
     .view-cart{
       background: transparent;
       border: 1px solid var(--main-olive);
@@ -764,6 +749,22 @@ document.addEventListener('DOMContentLoaded', function() {
 initialize();
 })
 </script>
+          {% if section.settings['agregar-combo'] != blank %}
+            <add-combo>
+
+{% liquid
+  assign product_handles = product.handle | append: ','
+  for tag in product.tags
+    if tag contains upsell_tag
+      assign handle = tag | split: ':' | last
+      assign product_handles = product_handles | append: handle | append: ','
+    endif
+  endfor
+  assign product_handles = product_handles | split: ','
+%}
+
+{% if product_handles.size > 1 %}
+
 
   <frequently-bought-together>
   {% comment %}
