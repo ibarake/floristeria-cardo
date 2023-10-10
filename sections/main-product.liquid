@@ -519,6 +519,26 @@
 
   <script>
 
+    // Function to display cart items in the popup
+function displayCartItems() {
+  fetch('/cart.js')
+    .then(response => response.json())
+    .then(cart => {
+      const cartItemsContainer = document.querySelector('.cart-items-list');
+      cartItemsContainer.innerHTML = '';  // Clear previous items
+
+      cart.items.forEach(item => {
+        const cartItem = document.createElement('div');
+        cartItem.className = 'cart-item';
+        cartItem.innerHTML = `
+          <img src="${item.image}" alt="${item.title}" width="50">
+          <span>${item.title} - ${item.quantity} x ${item.price}</span>
+        `;
+        cartItemsContainer.appendChild(cartItem);
+      });
+    });
+}
+
     window.addEventListener('DOMContentLoaded', (event) => { 
     var keepBuying = document.querySelector('.keep-buying');
     keepBuying.addEventListener('click', () => {
@@ -550,6 +570,7 @@
             document.querySelector('.fbt-btn-atc').addEventListener('click', (event) => {
                 event.preventDefault();
                 this.addSelectedToCart(false);
+                displayCartItems();
             })
             document.querySelector('.buy-now-button').addEventListener('click', function() {
                 const fbt = document.querySelector('frequently-bought-together');
