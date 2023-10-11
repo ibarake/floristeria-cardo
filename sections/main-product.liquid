@@ -875,11 +875,13 @@ initialize();
                         {{- product.title }}
                       </h3>
                     </div>
-
+                    {% assign classes = 'fbt-product-img img-fluid '
+                      | append: section.settings.fbt_product_img_border
+                    %}
                     {{
                       product.featured_image
-                      | img_tag: class: 'fbt-product-img img-fluid '
-                      | append: section.settings.fbt_product_img_border,
+                      | img_tag:
+                        class: classes,
                         width: img_width,
                         height: img_height,
                         crop: 'center',
