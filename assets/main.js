@@ -332,4 +332,21 @@ pqBtn.forEach((button) => {
     })
 });
 
+// product cards
+
+document.addEventListener('DOMContentLoaded', () => {
+    const titles = document.querySelectorAll('.card-product-title');
+
+    titles.forEach(title => {
+      // Check if the height of the element is 40px
+      if (title.offsetHeight > 40 && title.offsetHeight > 70) {
+        // Set the min-height to 50px
+        title.style.minHeight = '50px';
+      }
+      if (title.offsetHeight > 71 && title.offsetHeight > 80) {
+        // Set the min-height to 50px
+        title.style.minHeight = '80px';
+      }
+    });
+})
 
