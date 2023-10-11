@@ -349,10 +349,8 @@ document.addEventListener('DOMContentLoaded', () => {
     titles.forEach(title => {
       title.style.minHeight = `${maxHeight}px`;
     });
-});
 
-document.addEventListener('DOMContentLoaded', () => {
-    // Select the container
+  // Select the container
     const container = document.querySelector('.main-ba-container.inline-half-container');
 
     // Compute the total height of all its children
@@ -364,5 +362,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Set the container's height to that computed value
     container.style.height = `${totalHeight}px`;
 });
+
 
 
