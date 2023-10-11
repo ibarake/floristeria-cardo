@@ -555,6 +555,7 @@
           <script>
             
             
+            
 
     
 
@@ -818,6 +819,7 @@ initialize();
 })
 
 
+
           </script>
           {% if section.settings['agregar-combo'] == blank %}
             <style>
@@ -879,14 +881,12 @@ initialize();
                     </div>
                     {{
                       product.featured_image
-                      | img_tag:
-                        class: 'fbt-product-img img-fluid ',
+                      | img_tag: 'fbt-product-img img-fluid ',
                         width: img_width,
                         height: img_height,
                         crop: 'center',
                         loading: 'lazy',
                         alt: product.featured_image.alt
-                      | escape
                     }}
                     <div class="card-fbt-footer">
                       <p class="subtitulo-3 fbt-product-price-final">
@@ -956,6 +956,7 @@ initialize();
 </div>
 
 <script>
+  
   
   
   /* FAQ DROPDOWN ANIMATION */
@@ -1038,6 +1039,7 @@ const productRecommendationsSection = document.querySelector('.product-recommend
 const observer = new IntersectionObserver(handleIntersection, {rootMargin: '0px 0px 200px 0px'});
 
 observer.observe(productRecommendationsSection);
+
 
 
 
