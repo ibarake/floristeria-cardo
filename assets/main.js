@@ -362,7 +362,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Set the container's height to that computed value
     container1.style.height = `${totalHeight}px`;
 
-  const container = document.querySelector('main-ba-container inline-half-container');
+  const container = document.querySelector('hero-banner inline-half-container');
 
   // Compute the total height of all its children
     let totalHeight = 0;
