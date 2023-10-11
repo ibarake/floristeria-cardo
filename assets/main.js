@@ -338,10 +338,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const titles2 = document.querySelectorAll('.fbt-product-title');
 
     // Find the tallest element
-    let maxHeight = 0;
+    let maxHeight2 = 0;
     titles2.forEach(title => {
-      if (title.offsetHeight > maxHeight) {
-        maxHeight = title.offsetHeight;
+      if (title.offsetHeight > maxHeight2) {
+        maxHeight2 = title.offsetHeight;
       }
     });
 
@@ -354,16 +354,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const titles1 = document.querySelectorAll('main-ba-container .card-product-title');
 
     // Find the tallest element
-    let maxHeight = 0;
+    let maxHeight1 = 0;
     titles1.forEach(title => {
-      if (title.offsetHeight > maxHeight) {
-        maxHeight = title.offsetHeight;
+      if (title.offsetHeight > maxHeight1) {
+        maxHeight1 = title.offsetHeight;
       }
     });
 
     // Set the min-height of all elements to the maxHeight
     titles1.forEach(title => {
-      title.style.minHeight = `${maxHeight}px`;
+      title.style.minHeight = `${maxHeight1}px`;
     });
     const titles = document.querySelectorAll('hero-banner .card-product-title');
 
