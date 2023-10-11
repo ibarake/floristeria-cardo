@@ -335,7 +335,23 @@ pqBtn.forEach((button) => {
 // product cards
 
 document.addEventListener('DOMContentLoaded', () => {
-    const titles = document.querySelectorAll('main-ba-container .card-product-title');
+    const titles = document.querySelectorAll('.fbt-product-title');
+
+    // Find the tallest element
+    let maxHeight = 0;
+    titles.forEach(title => {
+      if (title.offsetHeight > maxHeight) {
+        maxHeight = title.offsetHeight;
+      }
+    });
+
+    // Set the min-height of all elements to the maxHeight
+    titles.forEach(title => {
+      title.style.minHeight = `${maxHeight}px`;
+    });
+
+
+    const titles = document.querySelectorAll('main-ba-container .card-product-title');fbt-product-title
 
     // Find the tallest element
     let maxHeight = 0;
