@@ -351,9 +351,20 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
   // Select the container
-    const container = document.querySelector('main-ba-container inline-half-container');
+    const container1 = document.querySelector('main-ba-container inline-half-container');
 
     // Compute the total height of all its children
+    let totalHeight = 0;
+    for (let child of container1.children) {
+        totalHeight += child.offsetHeight;
+    }
+
+    // Set the container's height to that computed value
+    container1.style.height = `${totalHeight}px`;
+
+  const container = document.querySelector('main-ba-container inline-half-container');
+
+  // Compute the total height of all its children
     let totalHeight = 0;
     for (let child of container.children) {
         totalHeight += child.offsetHeight;
