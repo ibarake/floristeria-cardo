@@ -32,39 +32,12 @@
       </a>
     </buttons-ba-container>
   </con-t>
-  
+
   <collection-slider-2 class="slider-3">
     {% assign products = collection.metafields.custom.featured_collection.value.products %}
 
-{% if products.size > 0 %}
-    {% for hero-product in products %}
-        <a class="product-item" href="{{ hero-product.url }}">
-            {% include 'product-card',
-                hero-product: hero-product,
-                atc-btn: section.settings['add-to-cart-title'],
-                atc-rsp: section.settings['add-to-cart-title-mobile'],
-                classes: 'hero'
-            %}
-        </a>
-    {% endfor %}
-{% else %}
-    {% assign alternative_collection = collections[section.settings.alternative_collection] %}
-   {% for alternative-product in alternative_collection.products %}
-        <a class="product-item" href="{{ alternative-product.url }}">
-            {% include 'product-card',
-                hero-product: alternative-product,
-                atc-btn: section.settings['add-to-cart-title'],
-                atc-rsp: section.settings['add-to-cart-title-mobile'],
-                classes: 'hero'
-            %}
-        </a>
-    {% endfor %}
-{% endif %}
-
-  </collection-slider-2>
-  <inline-half-container>
-    <products-container class="overflow-auto drag-scroll">
-      {% for hero-product in collection.metafields.custom.featured_collection.value.products %}
+    {% if products.size > 0 %}
+      {% for hero-product in products %}
         <a class="product-item" href="{{ hero-product.url }}">
           {% include 'product-card',
             hero-product: hero-product,
@@ -74,6 +47,46 @@
           %}
         </a>
       {% endfor %}
+    {% else %}
+      {% assign alternative_collection = collections[section.settings.alternative_collection] %}
+      {% for alternative-product in alternative_collection.products %}
+        <a class="product-item" href="{{ alternative-product.url }}">
+          {% include 'product-card',
+            hero-product: alternative-product,
+            atc-btn: section.settings['add-to-cart-title'],
+            atc-rsp: section.settings['add-to-cart-title-mobile'],
+            classes: 'hero'
+          %}
+        </a>
+      {% endfor %}
+    {% endif %}
+  </collection-slider-2>
+  <inline-half-container>
+    <products-container class="overflow-auto drag-scroll">
+      {% if products.size > 0 %}
+        {% for hero-product in products %}
+          <a class="product-item" href="{{ hero-product.url }}">
+            {% include 'product-card',
+              hero-product: hero-product,
+              atc-btn: section.settings['add-to-cart-title'],
+              atc-rsp: section.settings['add-to-cart-title-mobile'],
+              classes: 'hero'
+            %}
+          </a>
+        {% endfor %}
+      {% else %}
+        {% assign alternative_collection = collections[section.settings.alternative_collection] %}
+        {% for alternative-product in alternative_collection.products %}
+          <a class="product-item" href="{{ alternative-product.url }}">
+            {% include 'product-card',
+              hero-product: alternative-product,
+              atc-btn: section.settings['add-to-cart-title'],
+              atc-rsp: section.settings['add-to-cart-title-mobile'],
+              classes: 'hero'
+            %}
+          </a>
+        {% endfor %}
+      {% endif %}
     </products-container>
   </inline-half-container>
 
