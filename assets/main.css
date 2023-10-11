@@ -1725,6 +1725,7 @@ footer {
 footer .parrafo-3 {
   color: var(--main-gray);
   width: 90%;
+  margin: auto;
 }
 
 footer item {
