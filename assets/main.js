@@ -349,6 +349,20 @@ document.addEventListener('DOMContentLoaded', () => {
     titles.forEach(title => {
       title.style.minHeight = `${maxHeight}px`;
     });
+    const titles = document.querySelectorAll('hero-banner .card-product-title');
+
+    // Find the tallest element
+    let maxHeight = 0;
+    titles.forEach(title => {
+      if (title.offsetHeight > maxHeight) {
+        maxHeight = title.offsetHeight;
+      }
+    });
+
+    // Set the min-height of all elements to the maxHeight
+    titles.forEach(title => {
+      title.style.minHeight = `${maxHeight}px`;
+    });
 
   // Select the container
     const container1 = document.querySelector('main-ba-container inline-half-container');
