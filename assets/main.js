@@ -351,3 +351,18 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    // Select the container
+    const container = document.querySelector('.main-ba-container.inline-half-container');
+
+    // Compute the total height of all its children
+    let totalHeight = 0;
+    for (let child of container.children) {
+        totalHeight += child.offsetHeight;
+    }
+
+    // Set the container's height to that computed value
+    container.style.height = `${totalHeight}px`;
+});
+
+
