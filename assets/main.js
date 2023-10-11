@@ -351,7 +351,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
   // Select the container
-    const container = document.querySelector('.main-ba-container.inline-half-container');
+    const container = document.querySelector('inline-half-container');
 
     // Compute the total height of all its children
     let totalHeight = 0;
