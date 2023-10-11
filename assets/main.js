@@ -395,7 +395,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const container = document.querySelector('hero-banner inline-half-container');
   
     // Compute the total height of all its children
-      let totalHeight = 0;
+      totalHeight = 0;
       for (let child of container.children) {
           totalHeight += child.offsetHeight;
       }
