@@ -101,8 +101,8 @@
             assign item_width = '33%'
             assign limit = 999
             assign text_align = 'left'
-            assign img_width = 100
-            assign img_height = 100
+            assign img_width = 500
+            assign img_height = 500
             assign upsell_tag = 'upsell:'
             assign text_add_this = ''
             assign text_total_price = 'Total Combo'
@@ -554,8 +554,6 @@
 
           <script>
             
-            
-            
 
     
 
@@ -818,8 +816,6 @@ document.addEventListener('DOMContentLoaded', function() {
 initialize();
 })
 
-
-
           </script>
           {% if section.settings['agregar-combo'] == blank %}
             <style>
@@ -879,15 +875,15 @@ initialize();
                         {{- product.title }}
                       </h3>
                     </div>
-                    {{
-                      product.featured_image
-                      | img_tag: 'fbt-product-img img-fluid ',
-                        width: img_width,
-                        height: img_height,
-                        crop: 'center',
-                        loading: 'lazy',
-                        alt: product.featured_image.alt
-                    }}
+
+                    <img
+                      class="fbt-product-img img-fluid {{ section.settings.fbt_product_img_border }}"
+                      src="{{ product.featured_image.src | image_url: width: img_width, height: img_height, crop: 'center' }}"
+                      alt="{{ product.featured_image.alt | escape }}"
+                      width="{{ img_width }}"
+                      height="{{ img_height }}"
+                      loading="lazy"
+                    >
                     <div class="card-fbt-footer">
                       <p class="subtitulo-3 fbt-product-price-final">
                         <strong>{{ product.price | money }} COP </strong>
@@ -956,8 +952,6 @@ initialize();
 </div>
 
 <script>
-  
-  
   
   /* FAQ DROPDOWN ANIMATION */
 document.addEventListener('DOMContentLoaded', function() {
@@ -1039,8 +1033,6 @@ const productRecommendationsSection = document.querySelector('.product-recommend
 const observer = new IntersectionObserver(handleIntersection, {rootMargin: '0px 0px 200px 0px'});
 
 observer.observe(productRecommendationsSection);
-
-
 
 
 </script>
