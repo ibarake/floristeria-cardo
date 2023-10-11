@@ -3348,7 +3348,7 @@ COL-titles {
   main-ba-container inline-half-container {
     display: block;
     padding: 20px 0px;
-    overflow-y: hidden;
+    overflow: auto;
   }
   .col-card-image {
     width: 100%;
