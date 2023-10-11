@@ -1028,8 +1028,10 @@ product-card {
   object-fit: cover;
   object-position: 50% 50%;
 }
-
-.card-product-title {
+.card-product-title:is(:where(height: 40px)) {
+  min-height: 50px;
+}
+.card-product-title:is(:where(height: 72px)) {
   min-height: 80px;
 }
 
