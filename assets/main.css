@@ -844,7 +844,7 @@ cont-amg {
 
 collection-list {
   position: relative;
-  padding: 96px 0 0 0;
+  padding: 96px 0;
 }
 collection-title {
   display: flex;
