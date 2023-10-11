@@ -554,6 +554,7 @@
 
           <script>
             
+            
 
     
 
@@ -816,6 +817,7 @@ document.addEventListener('DOMContentLoaded', function() {
 initialize();
 })
 
+
           </script>
           {% if section.settings['agregar-combo'] == blank %}
             <style>
@@ -859,7 +861,12 @@ initialize();
                 {% for handle in product_handles limit: limit %}
                   {% assign product = all_products[handle] %}
                   {% assign total_price = total_price | plus: product.selected_or_first_available_variant.price %}
-                  <li class="fbt-product-item">
+                  <li
+                    class="fbt-product-item"
+                    {% if forloop.index == 1 %}
+                      style="display: none;"
+                    {% endif %}
+                  >
                     <div class="fbt-add-checkbox-wrapper">
                       {% if forloop.index == 1 %}
                         <input id="fbt-add-checkbox-{{ product.id }}" class="fbt-add-checkbox" type="checkbox" checked>
@@ -953,6 +960,7 @@ initialize();
 
 <script>
   
+  
   /* FAQ DROPDOWN ANIMATION */
 document.addEventListener('DOMContentLoaded', function() {
   var faqTitles = document.querySelectorAll('.FAQ-title');
@@ -1033,6 +1041,7 @@ const productRecommendationsSection = document.querySelector('.product-recommend
 const observer = new IntersectionObserver(handleIntersection, {rootMargin: '0px 0px 200px 0px'});
 
 observer.observe(productRecommendationsSection);
+
 
 
 </script>
