@@ -346,7 +346,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Set the min-height of all elements to the maxHeight
-    titles1.forEach(title => {
+    titles.forEach(title => {
       title.style.minHeight = `${maxHeight}px`;
     });
 
