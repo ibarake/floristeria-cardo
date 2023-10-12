@@ -350,6 +350,21 @@ pqBtn.forEach((button) => {
       title1.style.minHeight = `${maxHeight}px`;
     });
 
+  var titles1 = document.querySelectorAll('inline-half-container .card-product-title');
+
+    // Find the tallest element
+    let maxHeight1 = 0;
+    titles.forEach(title => {
+      if (title.offsetHeight > maxHeight1) {
+        maxHeight1 = title.offsetHeight;
+      }
+    });
+
+    // Set the min-height of all elements to the maxHeight
+    titles.forEach(title1 => {
+      title1.style.minHeight = `${maxHeight1}px`;
+    });
+
 
   // Select the container
   var container = document.querySelector('inline-half-container');
