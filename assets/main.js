@@ -349,8 +349,8 @@ document.addEventListener('DOMContentLoaded', () => {
     titles2.forEach(title => {
       title.style.minHeight = `${maxHeight2}px`;
     });
-
-
+});
+document.addEventListener('DOMContentLoaded', () => {
     const titles1 = document.querySelectorAll('main-ba-container .card-product-title');
 
     // Find the tallest element
@@ -365,6 +365,8 @@ document.addEventListener('DOMContentLoaded', () => {
     titles1.forEach(title => {
       title.style.minHeight = `${maxHeight1}px`;
     });
+});
+document.addEventListener('DOMContentLoaded', () => {
     const titles = document.querySelectorAll('hero-banner .card-product-title');
 
     // Find the tallest element
@@ -379,10 +381,11 @@ document.addEventListener('DOMContentLoaded', () => {
     titles.forEach(title => {
       title.style.minHeight = `${maxHeight}px`;
     });
-
+});
+document.addEventListener('DOMContentLoaded', () => {
   // Select the container
   const container1 = document.querySelector('main-ba-container inline-half-container');
-  if (container1) {
+
       // Compute the total height of all its children
       let totalHeight = 0;
       for (let child of container1.children) {
@@ -390,8 +393,8 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       // Set the container's height to that computed value
       container1.style.height = `${totalHeight}px`;
-  }
-  
+});
+document.addEventListener('DOMContentLoaded', () => {
   const container = document.querySelector('hero-banner inline-half-container');
   if (container) {
       // Compute the total height of all its children
