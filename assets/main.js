@@ -354,14 +354,14 @@ pqBtn.forEach((button) => {
 
     // Find the tallest element
     let maxHeight1 = 0;
-    titles.forEach(title => {
+    titles1.forEach(title => {
       if (title.offsetHeight > maxHeight1) {
         maxHeight1 = title.offsetHeight;
       }
     });
 
     // Set the min-height of all elements to the maxHeight
-    titles.forEach(title1 => {
+    titles1.forEach(title1 => {
       title1.style.minHeight = `${maxHeight1}px`;
     });
 
