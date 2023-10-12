@@ -118,4 +118,38 @@
     </script>
   </body>
   <script src="{{ 'main.js' | asset_url }}"></script>
+  <script>
+    
+    document.addEventListener('DOMContentLoaded', () => {
+    const titles = document.querySelectorAll('inline-half-container .card-product-title');
+
+    // Find the tallest element
+    let maxHeight = 0;
+    titles.forEach(title => {
+      if (title.offsetHeight > maxHeight) {
+        maxHeight = title.offsetHeight;
+      }
+    });
+
+    // Set the min-height of all elements to the maxHeight
+    titles.forEach(title => {
+      title.style.minHeight = `${maxHeight}px`;
+    });
+
+
+  // Select the container
+  const container = document.querySelector('inline-half-container');
+
+      // Compute the total height of all its children
+      let totalHeight = 0;
+      if (container.children){
+      for (let child of container.children) {
+          totalHeight += child.offsetHeight;
+      }
+      }
+      // Set the container's height to that computed value
+      container.style.height = `${totalHeight}px`;
+});
+
+  </script>
 </html>
