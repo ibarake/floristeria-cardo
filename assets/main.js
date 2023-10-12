@@ -335,7 +335,7 @@ pqBtn.forEach((button) => {
 // product cards
 
 document.addEventListener('DOMContentLoaded', () => {
-    const titles = document.querySelectorAll('inline-half-container .card-product-title');
+    const titles = document.querySelectorAll('.card-product-title');
 
     // Find the tallest element
     let maxHeight = 0;
