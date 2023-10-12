@@ -363,7 +363,7 @@
                       .pop-container{
                         width: 80%;
                       }
-                      .pop-container p.pc-title {
+                      .pop-container p.quantity {
                         display: none;
                       }
                 .slick-next-c {
@@ -567,6 +567,7 @@
             
             
             
+            
 
     
 
@@ -628,7 +629,7 @@
                   <p class="parrafo-5 collection-tag">{{ product.collections[0].title }}</p>
                   <p class="pc-title subtitulo-3">${item.title}</p>
                 </div>
-                <p class="pc-title subtitulo-1">${'x' + item.quantity}</p>
+                <p class="quantity pc-title subtitulo-1">${'x' + item.quantity}</p>
                 <p class="parrafo-2 price">${'$' + parseFloat(item.price).toFixed(2)}</p>
                 </div>
               `;
@@ -835,6 +836,7 @@ initialize();
 
 
 
+
           </script>
           {% if section.settings['agregar-combo'] == blank %}
             <style>
@@ -983,6 +985,7 @@ initialize();
   
   
   
+  
   /* FAQ DROPDOWN ANIMATION */
 document.addEventListener('DOMContentLoaded', function() {
   var faqTitles = document.querySelectorAll('.FAQ-title');
@@ -1063,6 +1066,7 @@ const productRecommendationsSection = document.querySelector('.product-recommend
 const observer = new IntersectionObserver(handleIntersection, {rootMargin: '0px 0px 200px 0px'});
 
 observer.observe(productRecommendationsSection);
+
 
 
 
