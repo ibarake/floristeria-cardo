@@ -373,8 +373,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
       // Compute the total height of all its children
       let totalHeight = 0;
+      if (container1.children){
       for (let child of container1.children) {
           totalHeight += child.offsetHeight;
+      }
       }
       // Set the container's height to that computed value
       container1.style.height = `${totalHeight}px`;
