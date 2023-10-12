@@ -117,8 +117,8 @@
       });
     </script>
   </body>
-  <script src="{{ 'main.js' | asset_url }}"></script>
   <script>
+    
     
     document.addEventListener('DOMContentLoaded', () => {
     const titles = document.querySelectorAll('inline-half-container .card-product-title');
@@ -151,5 +151,7 @@
       container.style.height = `${totalHeight}px`;
 });
 
+
   </script>
+  <script src="{{ 'main.js' | asset_url }}"></script>
 </html>
