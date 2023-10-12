@@ -350,7 +350,7 @@ pqBtn.forEach((button) => {
       title1.style.minHeight = `${maxHeight}px`;
     });
 
-  var titles1 = document.querySelectorAll('inline-half-container .card-product-title');
+  var titles1 = document.querySelectorAll('main-ba-container .card-product-title');
 
     // Find the tallest element
     let maxHeight1 = 0;
