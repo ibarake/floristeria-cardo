@@ -91,7 +91,7 @@
             {{ product.description | strip_html }}
           </answer>
         </faq>
-        <p class="titulo-5">Cómpralo con</p>
+        <p class="titulo-5" style="margin-bottom: 0px;">Cómpralo con</p>
         <container-spam>
           {% liquid
             comment
@@ -558,6 +558,7 @@
             
             
             
+            
 
     
 
@@ -823,6 +824,7 @@ initialize();
 
 
 
+
           </script>
           {% if section.settings['agregar-combo'] == blank %}
             <style>
@@ -968,6 +970,7 @@ initialize();
   
   
   
+  
   /* FAQ DROPDOWN ANIMATION */
 document.addEventListener('DOMContentLoaded', function() {
   var faqTitles = document.querySelectorAll('.FAQ-title');
@@ -1048,6 +1051,7 @@ const productRecommendationsSection = document.querySelector('.product-recommend
 const observer = new IntersectionObserver(handleIntersection, {rootMargin: '0px 0px 200px 0px'});
 
 observer.observe(productRecommendationsSection);
+
 
 
 
