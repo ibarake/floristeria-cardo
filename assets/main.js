@@ -351,7 +351,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 document.addEventListener('DOMContentLoaded', () => {
-    const titles1 = document.querySelectorAll('main-ba-container .card-product-title');
+    const titles1 = document.querySelectorAll('inline-half-container .card-product-title');
 
     // Find the tallest element
     let maxHeight1 = 0;
@@ -366,22 +366,7 @@ document.addEventListener('DOMContentLoaded', () => {
       title.style.minHeight = `${maxHeight1}px`;
     });
 });
-document.addEventListener('DOMContentLoaded', () => {
-    const titles = document.querySelectorAll('hero-banner .card-product-title');
 
-    // Find the tallest element
-    let maxHeight = 0;
-    titles.forEach(title => {
-      if (title.offsetHeight > maxHeight) {
-        maxHeight = title.offsetHeight;
-      }
-    });
-
-    // Set the min-height of all elements to the maxHeight
-    titles.forEach(title => {
-      title.style.minHeight = `${maxHeight}px`;
-    });
-});
 document.addEventListener('DOMContentLoaded', () => {
   // Select the container
   const container1 = document.querySelector('main-ba-container inline-half-container');
