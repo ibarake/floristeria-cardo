@@ -361,8 +361,8 @@ pqBtn.forEach((button) => {
     });
 
     // Set the min-height of all elements to the maxHeight
-    titles1.forEach(title1 => {
-      title1.style.minHeight = `${maxHeight1}px`;
+    titles1.forEach(title => {
+      title.style.minHeight = `${maxHeight1}px`;
     });
 
 
