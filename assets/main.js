@@ -381,27 +381,27 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
   // Select the container
-    const container1 = document.querySelector('main-ba-container inline-half-container');
-if (container1) {
-    // Compute the total height of all its children
-    let totalHeight = 0;
-    for (let child of container1.children) {
-        totalHeight += child.offsetHeight;
-    }
-    // Set the container's height to that computed value
-    container1.style.height = `${totalHeight}px`;
-}
-
-const container = document.querySelector('hero-banner inline-half-container');
-if (container) {
-    // Compute the total height of all its children
-    let totalHeight1 = 0;
-    for (let child of container.children) {
-        totalHeight1 += child.offsetHeight;
-    }
-    // Set the container's height to that computed value
-    container.style.height = `${totalHeight1}px`;
-}
+  const container1 = document.querySelector('main-ba-container inline-half-container');
+  if (container1) {
+      // Compute the total height of all its children
+      let totalHeight = 0;
+      for (let child of container1.children) {
+          totalHeight += child.offsetHeight;
+      }
+      // Set the container's height to that computed value
+      container1.style.height = `${totalHeight}px`;
+  }
+  
+  const container = document.querySelector('hero-banner inline-half-container');
+  if (container) {
+      // Compute the total height of all its children
+      let totalHeight1 = 0;
+      for (let child of container.children) {
+          totalHeight1 += child.offsetHeight;
+      }
+      // Set the container's height to that computed value
+      container.style.height = `${totalHeight1}px`;
+  }
 });
 
 
