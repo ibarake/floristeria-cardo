@@ -369,7 +369,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener('DOMContentLoaded', () => {
   // Select the container
-  const container1 = document.querySelector('main-ba-container inline-half-container');
+  const container1 = document.querySelector('inline-half-container');
 
       // Compute the total height of all its children
       let totalHeight = 0;
@@ -381,20 +381,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // Set the container's height to that computed value
       container1.style.height = `${totalHeight}px`;
 });
-document.addEventListener('DOMContentLoaded', () => {
-  const container = document.querySelector('hero-banner inline-half-container');
-  if (container) {
-      // Compute the total height of all its children
-      let totalHeight1 = 0;
-      if (container1.children){
-      for (let child of container.children) {
-          totalHeight1 += child.offsetHeight;
-      }
-      }
-      // Set the container's height to that computed value
-      container.style.height = `${totalHeight1}px`;
-  }
-});
+
 
 
 
