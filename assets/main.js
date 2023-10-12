@@ -338,7 +338,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const titles = document.querySelectorAll('inline-half-container .card-product-title');
 
     // Find the tallest element
-    const maxHeight = 0;
+    let maxHeight = 0;
     titles.forEach(title => {
       if (title.offsetHeight > maxHeight) {
         maxHeight = title.offsetHeight;
