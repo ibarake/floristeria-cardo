@@ -80,6 +80,7 @@
       "type": "contacto",
       "settings": {
         "contact-title": "Recibe un 10% de descuento",
+        "image": "shopify:\/\/shop_images\/f14463c755a98e8cdb24ca7e0907ec3b.jpg",
         "contact-subtitle": "Suscríbete a nuestra base de clientes preferenciales y recibe un 10% de descuento en tu primera compra.",
         "button-title": "Quiero descuento"
       }
