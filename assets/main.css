@@ -1086,7 +1086,7 @@ hor-product-card .card-width {
 card-product-info {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 10px 10px 0 10px;
   height: 100%;
 }
