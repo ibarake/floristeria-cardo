@@ -1,66 +1,72 @@
-      const sizings = function() {
-  // product cards
+const sizings = function() {
+    // product cards
 
-      var titles = document.querySelectorAll('inline-half-container .card-product-title');
+    var titles = document.querySelectorAll('.inline-half-container .card-product-title');
 
-    // Find the tallest element
-    var maxHeight3 = 0;
-    titles.forEach(title => {
-      if (title.offsetHeight > maxHeight3) {
-        maxHeight3 = title.offsetHeight;
-      }
-    });
+    if (titles.length > 0) {
+        // Find the tallest element
+        var maxHeight3 = 0;
+        titles.forEach(title => {
+            if (title.offsetHeight > maxHeight3) {
+                maxHeight3 = title.offsetHeight;
+            }
+        });
 
-    // Set the min-height of all elements to the maxHeight
-    titles.forEach(title => {
-      title.style.minHeight = `${maxHeight3}px`;
-    });
+        // Set the min-height of all elements to the maxHeight
+        titles.forEach(title => {
+            title.style.minHeight = `${maxHeight3}px`;
+        });
+    }
 
-    var titles1 = document.querySelectorAll('main-ba-container .card-product-title');
+    var titles1 = document.querySelectorAll('.main-ba-container .card-product-title');
 
-    // Find the tallest element
-    var maxHeight1 = 0;
-    titles1.forEach(title => {
-      if (title.offsetHeight > maxHeight1) {
-        maxHeight1 = title.offsetHeight;
-      }
-    });
+    if (titles1.length > 0) {
+        // Find the tallest element
+        var maxHeight1 = 0;
+        titles1.forEach(title => {
+            if (title.offsetHeight > maxHeight1) {
+                maxHeight1 = title.offsetHeight;
+            }
+        });
 
-    // Set the min-height of all elements to the maxHeight
-    titles1.forEach(title => {
-      title.style.minHeight = `${maxHeight1}px`;
-    });
+        // Set the min-height of all elements to the maxHeight
+        titles1.forEach(title => {
+            title.style.minHeight = `${maxHeight1}px`;
+        });
+    }
 
     var titles2 = document.querySelectorAll('.fbt-product-title');
 
-    // Find the tallest element
-    var maxHeight2 = 0;
-    titles2.forEach(title => {
-      if (title.offsetHeight > maxHeight2) {
-        maxHeight2 = title.offsetHeight;
-      }
-    });
+    if (titles2.length > 0) {
+        // Find the tallest element
+        var maxHeight2 = 0;
+        titles2.forEach(title => {
+            if (title.offsetHeight > maxHeight2) {
+                maxHeight2 = title.offsetHeight;
+            }
+        });
 
-    // Set the min-height of all elements to the maxHeight
-    titles2.forEach(title => {
-      title.style.minHeight = `${maxHeight2}px`;
-    });
+        // Set the min-height of all elements to the maxHeight
+        titles2.forEach(title => {
+            title.style.minHeight = `${maxHeight2}px`;
+        });
+    }
 
+    // Select the container
+    var container = document.querySelector('.inline-half-container');
 
-  // Select the container
-  var container = document.querySelector('inline-half-container');
+    if (container) {
+        // Compute the total height of all its children
+        var totalHeight = 0;
+        for (let child of container.children) {
+            totalHeight += child.offsetHeight;
+        }
 
-      // Compute the total height of all its children
-      var totalHeight = 0;
-      if (container.children){
-      for (let child of container.children) {
-          totalHeight += child.offsetHeight;
-      }
-      }
-      // Set the container's height to that computed value
-      container.style.height = `${totalHeight}px`;
-
+        // Set the container's height to that computed value
+        container.style.height = `${totalHeight}px`;
+    }
 }
+
 
 sizings();
 
