@@ -396,14 +396,7 @@ const sizings = () => {
 
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-     
-
-  console.log(titles);  // Should display a NodeList with the selected elements
-console.log(container);  // Should display the selected container element
-
-
-});
+document.addEventListener('DOMContentLoaded', setTimeout(sizings, 1000));
       
    
 
