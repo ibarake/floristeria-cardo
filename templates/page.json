@@ -17,9 +17,9 @@
     "ab468724-9c43-46f4-88d0-5e4aaa13eb36": {
       "type": "contacto",
       "settings": {
-        "contact-title": "Contáctanos",
-        "contact-subtitle": "Pellentesque cras adipiscing tempus libero vel nullam mauris tellus. Aliquam ultrices tellus consequat amet,",
-        "button-title": "Recibir Información"
+        "contact-title": "Recibe un 10% de descuento",
+        "contact-subtitle": "Suscríbete a nuestra base de clientes preferenciales y recibe un 10% de descuento en tu primera compra.",
+        "button-title": "Quiero descuento"
       }
     }
   },
