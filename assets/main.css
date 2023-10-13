@@ -1610,7 +1610,7 @@ cuadro {
   background: var(--main-white);
   border-radius: 12px;
   margin-left: 37px;
-  background-attachment: cover;
+  background-size: cover;
   background-position: center center;
 }
 
