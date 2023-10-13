@@ -1080,6 +1080,7 @@ hor-product-card img {
 
 hor-product-card .card-width {
   width: 70%;
+  flex-grow: 1;
 }
 
 card-product-info {
