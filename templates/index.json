@@ -3,6 +3,7 @@
     "7208b537-5179-4c35-a9f0-5b7e2ed3aa1f": {
       "type": "hero-banner",
       "settings": {
+        "add-to-cart-title-mobile": "Añadir",
         "hero-title": "Exprésalo con flores, Floristería en Bogotá.",
         "hero-collection": "coronas-flores",
         "hero-subtitle": "Expresa tus sentimientos a través de nuestros arreglos florales, con diseños únicos y exclusivos. Somos Cardó, floristería en Bogotá.",
@@ -49,6 +50,7 @@
           "arreglo-armonia-de-orquideas-1"
         ],
         "button-text": "Añadir al carrito",
+        "add-to-cart-title-mobile": "Añadir",
         "title-preguntas": "Sobre Cardó",
         "subtitle-preguntas": "preguntas frecuentes",
         "subtitulo-fotos": "Ver todos",
@@ -127,6 +129,7 @@
           "copia-de-ramo-de-pie-funebre-con-flores-exoticas"
         ],
         "button-text": "Añadir al carrito",
+        "add-to-cart-title-mobile": "Añadir",
         "title-preguntas": "Sobre Cardó",
         "subtitle-preguntas": "preguntas frecuentes",
         "subtitulo-fotos": "Ver todos",
@@ -141,6 +144,7 @@
       "type": "contacto",
       "settings": {
         "contact-title": "Recibe un 10% de descuento",
+        "image": "shopify:\/\/shop_images\/f14463c755a98e8cdb24ca7e0907ec3b.jpg",
         "contact-subtitle": "Suscríbete a nuestra base de clientes preferenciales y recibe un 10% de descuento en tu primera compra.",
         "button-title": "Quiero descuento"
       }
