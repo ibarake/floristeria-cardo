@@ -395,7 +395,9 @@ const sizings = function() {
       container.style.height = `${totalHeight}px !important`;
 
 }
-document.addEventListener('DOMContentLoaded', setTimeout(sizings, 1000));
+document.addEventListener('DOMContentLoaded', () => {
+  setTimeout(sizings, 1000);
+});
       
    
 
