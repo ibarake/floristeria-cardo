@@ -16,6 +16,8 @@ const sizings = function() {
         titles.forEach(title => {
             title.style.minHeight = `${maxHeight3}px`;
         });
+    } else {
+      console.log('error')
     }
 
     var titles1 = document.querySelectorAll('.main-ba-container .card-product-title');
@@ -33,6 +35,8 @@ const sizings = function() {
         titles1.forEach(title => {
             title.style.minHeight = `${maxHeight1}px`;
         });
+    } else {
+      console.log('error')
     }
 
     var titles2 = document.querySelectorAll('.fbt-product-title');
@@ -50,6 +54,8 @@ const sizings = function() {
         titles2.forEach(title => {
             title.style.minHeight = `${maxHeight2}px`;
         });
+    } else {
+      console.log('error')
     }
 
     // Select the container
@@ -64,6 +70,8 @@ const sizings = function() {
 
         // Set the container's height to that computed value
         container.style.height = `${totalHeight}px`;
+    } else {
+      console.log('error')
     }
 }
 
