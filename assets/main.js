@@ -395,10 +395,7 @@ const sizings = () => {
       container.style.height = `${totalHeight}px !important`;
 
 }
-
-window.onload = sizings();
-
-// document.addEventListener('DOMContentLoaded', setTimeout(sizings, 1000));
+document.addEventListener('DOMContentLoaded', setTimeout(sizings, 1000));
       
    
 
