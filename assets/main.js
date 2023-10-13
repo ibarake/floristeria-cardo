@@ -396,7 +396,9 @@ const sizings = () => {
 
 }
 
-document.addEventListener('DOMContentLoaded', setTimeout(sizings, 1000));
+window.onload = sizings();
+
+// document.addEventListener('DOMContentLoaded', setTimeout(sizings, 1000));
       
    
 
