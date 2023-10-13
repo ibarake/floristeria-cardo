@@ -332,67 +332,6 @@ pqBtn.forEach((button) => {
     })
 });
 
-// product cards
-
-      var titles = document.querySelectorAll('inline-half-container .card-product-title');
-
-    // Find the tallest element
-    let maxHeight = 0;
-    titles.forEach(title => {
-      if (title.offsetHeight > maxHeight) {
-        maxHeight = title.offsetHeight;
-      }
-    });
-
-    // Set the min-height of all elements to the maxHeight
-    titles.forEach(title1 => {
-      title1.style.minHeight = `${maxHeight}px`;
-    });
-
-    var titles1 = document.querySelectorAll('main-ba-container .card-product-title');
-
-    // Find the tallest element
-    let maxHeight1 = 0;
-    titles1.forEach(title => {
-      if (title.offsetHeight > maxHeight1) {
-        maxHeight1 = title.offsetHeight;
-      }
-    });
-
-    // Set the min-height of all elements to the maxHeight
-    titles1.forEach(title => {
-      title.style.minHeight = `${maxHeight1}px`;
-    });
-
-    var titles2 = document.querySelectorAll('.fbt-product-title');
-
-    // Find the tallest element
-    let maxHeight2 = 0;
-    titles2.forEach(title => {
-      if (title.offsetHeight > maxHeight2) {
-        maxHeight2 = title.offsetHeight;
-      }
-    });
-
-    // Set the min-height of all elements to the maxHeight
-    titles2.forEach(title => {
-      title.style.minHeight = `${maxHeight2}px`;
-    });
-
-
-  // Select the container
-  var container = document.querySelector('inline-half-container');
-
-      // Compute the total height of all its children
-      let totalHeight = 0;
-      if (container.children){
-      for (let child of container.children) {
-          totalHeight += child.offsetHeight;
-      }
-      }
-      // Set the container's height to that computed value
-      container.style.height = `${totalHeight}px`;
-
 
 
 
