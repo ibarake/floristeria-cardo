@@ -396,6 +396,7 @@ const sizings = function() {
 
 }
 document.addEventListener('DOMContentLoaded', () => {
+  console.log('hello')
   setTimeout(sizings, 5000);
 });
       
