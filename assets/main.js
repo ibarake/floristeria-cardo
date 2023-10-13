@@ -1,7 +1,7 @@
 const sizings = function() {
     // product cards
 
-    var titles = document.querySelectorAll('.card-product-title');
+    var titles = document.querySelectorAll('inline-half-container .card-product-title');
 
     if (titles.length > 0) {
         // Find the tallest element
@@ -20,7 +20,7 @@ const sizings = function() {
       console.log('error')
     }
 
-    var titles1 = document.querySelectorAll('.main-ba-container .card-product-title');
+    var titles1 = document.querySelectorAll('main-ba-container .card-product-title');
 
     if (titles1.length > 0) {
         // Find the tallest element
@@ -59,7 +59,7 @@ const sizings = function() {
     }
 
     // Select the container
-    var container = document.querySelector('.inline-half-container');
+    var container = document.querySelector('inline-half-container');
 
     if (container) {
         // Compute the total height of all its children
