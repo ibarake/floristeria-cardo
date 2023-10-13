@@ -332,7 +332,7 @@ pqBtn.forEach((button) => {
     })
 });
 
-const sizings = () => {
+const sizings = function() {
   // product cards
 
       var titles = document.querySelectorAll('inline-half-container .card-product-title');
