@@ -76,8 +76,9 @@ const sizings = function() {
 }
 
 
-sizings();
-
+window.onload = function() {
+  sizings();
+}
 /* DRAWER MENU ACTION JAVASCRIPT */
 var hamburguerMenu = document.querySelector(".hamburguer-menu");
 var responsiveMenu = document.querySelector(".responsive-menu");
