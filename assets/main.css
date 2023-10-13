@@ -1055,7 +1055,7 @@ hor-product-card {
   flex-direction: row;
   z-index: 20;
   width: 100%;
-  align-items: space-between;
+  height: 256px;
 }
 .card-description {
   color: var(--main-gray);
