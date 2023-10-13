@@ -1113,7 +1113,7 @@ card-footer {
 }
 .card-add-to-cart svg {
   fill: var(--main-olive);
-  width: 10px;
+  width: 15px;
   height: auto;
 }
 
