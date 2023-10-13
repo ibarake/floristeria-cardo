@@ -393,6 +393,11 @@ document.addEventListener('DOMContentLoaded', function() {
       // Set the container's height to that computed value
       container.style.height = `${totalHeight}px !important`;
 
+
+  console.log(titles);  // Should display a NodeList with the selected elements
+console.log(container);  // Should display the selected container element
+
+
 });
       
    
