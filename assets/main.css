@@ -1113,7 +1113,6 @@ card-footer {
 }
 .card-add-to-cart svg {
   fill: var(--main-olive);
-  margin-right: 10px;
 }
 
 .atc-btn-text {
