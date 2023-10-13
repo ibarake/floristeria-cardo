@@ -13,7 +13,7 @@
 
     // Set the min-height of all elements to the maxHeight
     titles.forEach(title => {
-      title.style.minHeight = `${maxHeight3}px !important`;
+      title.style.minHeight = `${maxHeight3}px`;
     });
 
     var titles1 = document.querySelectorAll('main-ba-container .card-product-title');
@@ -28,7 +28,7 @@
 
     // Set the min-height of all elements to the maxHeight
     titles1.forEach(title => {
-      title.style.minHeight = `${maxHeight1}px !important`;
+      title.style.minHeight = `${maxHeight1}px`;
     });
 
     var titles2 = document.querySelectorAll('.fbt-product-title');
@@ -43,7 +43,7 @@
 
     // Set the min-height of all elements to the maxHeight
     titles2.forEach(title => {
-      title.style.minHeight = `${maxHeight2}px !important`;
+      title.style.minHeight = `${maxHeight2}px`;
     });
 
 
@@ -58,7 +58,7 @@
       }
       }
       // Set the container's height to that computed value
-      container.style.height = `${totalHeight}px !important`;
+      container.style.height = `${totalHeight}px`;
 
 }
 
