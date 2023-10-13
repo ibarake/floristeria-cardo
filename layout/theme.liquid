@@ -120,15 +120,16 @@
   <script src="{{ 'main.js' | asset_url }}"></script>
   <script>
     
+    
     // product cards
 
       var titles = document.querySelectorAll('inline-half-container .card-product-title');
 
     // Find the tallest element
-    let maxHeight = 0;
+    let maxHeight3 = 0;
     titles.forEach(title => {
-      if (title.offsetHeight > maxHeight) {
-        maxHeight = title.offsetHeight;
+      if (title.offsetHeight > maxHeight3) {
+        maxHeight3 = title.offsetHeight;
       }
     });
 
@@ -180,6 +181,7 @@
       }
       // Set the container's height to that computed value
       container.style.height = `${totalHeight}px`;
+
 
 
 
