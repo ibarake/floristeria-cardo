@@ -335,7 +335,8 @@ pqBtn.forEach((button) => {
 // product cards
 
 
-    var titles = document.querySelectorAll('inline-half-container .card-product-title');
+document.addEventListener('DOMContentLoaded', () => {
+      var titles = document.querySelectorAll('inline-half-container .card-product-title');
 
     // Find the tallest element
     let maxHeight = 0;
@@ -350,7 +351,7 @@ pqBtn.forEach((button) => {
       title1.style.minHeight = `${maxHeight}px`;
     });
 
-  var titles1 = document.querySelectorAll('main-ba-container .card-product-title');
+    var titles1 = document.querySelectorAll('main-ba-container .card-product-title');
 
     // Find the tallest element
     let maxHeight1 = 0;
@@ -365,7 +366,7 @@ pqBtn.forEach((button) => {
       title.style.minHeight = `${maxHeight1}px`;
     });
 
-var titles2 = document.querySelectorAll('.fbt-product-title');
+    var titles2 = document.querySelectorAll('.fbt-product-title');
 
     // Find the tallest element
     let maxHeight2 = 0;
@@ -393,6 +394,7 @@ var titles2 = document.querySelectorAll('.fbt-product-title');
       }
       // Set the container's height to that computed value
       container.style.height = `${totalHeight}px`;
+})
 
 
 
