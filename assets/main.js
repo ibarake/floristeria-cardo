@@ -19,6 +19,24 @@ const sizings = function() {
     } else {
       console.log('error')
     }
+    var titles3 = document.querySelectorAll('inline-half-container .collection-tag');
+
+    if (titles.length > 0) {
+        // Find the tallest element
+        var maxHeight3 = 0;
+        titles.forEach(title => {
+            if (title.offsetHeight > maxHeight3) {
+                maxHeight3 = title.offsetHeight;
+            }
+        });
+
+        // Set the min-height of all elements to the maxHeight
+        titles.forEach(title => {
+            title.style.minHeight = `${maxHeight3}px`;
+        });
+    } else {
+      console.log('error')
+    }
 
     var titles1 = document.querySelectorAll('main-ba-container .card-product-title');
 
