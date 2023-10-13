@@ -1,7 +1,7 @@
 const sizings = function() {
     // product cards
 
-    var titles = document.querySelectorAll('.inline-half-container .card-product-title');
+    var titles = document.querySelectorAll('.card-product-title');
 
     if (titles.length > 0) {
         // Find the tallest element
