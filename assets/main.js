@@ -393,10 +393,6 @@ document.addEventListener('DOMContentLoaded', function() {
       // Set the container's height to that computed value
       container.style.height = `${totalHeight}px`;
 
-    })
-
-
-
 });
       
    
