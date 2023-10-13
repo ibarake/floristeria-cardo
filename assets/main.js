@@ -331,9 +331,8 @@ pqBtn.forEach((button) => {
         }
     })
 });
-
-      
-    // product cards
+document.addEventListener('DOMContentLoaded', function() {
+     // product cards
 
       var titles = document.querySelectorAll('inline-half-container .card-product-title');
 
@@ -398,6 +397,9 @@ pqBtn.forEach((button) => {
 
 
 
+});
+      
+   
 
 
 
