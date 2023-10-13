@@ -1132,7 +1132,7 @@ card-footer {
   margin: 0;
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
 }
 
 .price {
