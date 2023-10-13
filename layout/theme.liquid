@@ -122,12 +122,13 @@
     
     
     
+    
     // product cards
 
       var titles = document.querySelectorAll('inline-half-container .card-product-title');
 
     // Find the tallest element
-    let maxHeight3 = 0;
+    var maxHeight3 = 0;
     titles.forEach(title => {
       if (title.offsetHeight > maxHeight3) {
         maxHeight3 = title.offsetHeight;
@@ -142,7 +143,7 @@
     var titles1 = document.querySelectorAll('main-ba-container .card-product-title');
 
     // Find the tallest element
-    let maxHeight1 = 0;
+    var maxHeight1 = 0;
     titles1.forEach(title => {
       if (title.offsetHeight > maxHeight1) {
         maxHeight1 = title.offsetHeight;
@@ -157,7 +158,7 @@
     var titles2 = document.querySelectorAll('.fbt-product-title');
 
     // Find the tallest element
-    let maxHeight2 = 0;
+    var maxHeight2 = 0;
     titles2.forEach(title => {
       if (title.offsetHeight > maxHeight2) {
         maxHeight2 = title.offsetHeight;
@@ -174,7 +175,7 @@
   var container = document.querySelector('inline-half-container');
 
       // Compute the total height of all its children
-      let totalHeight = 0;
+      var totalHeight = 0;
       if (container.children){
       for (let child of container.children) {
           totalHeight += child.offsetHeight;
@@ -182,6 +183,7 @@
       }
       // Set the container's height to that computed value
       container.style.height = `${totalHeight}px`;
+
 
 
 
