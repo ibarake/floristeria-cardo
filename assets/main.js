@@ -32,7 +32,7 @@ const sizings = function() {
 
         // Set the min-height of all elements to the maxHeight
         titles3.forEach(title => {
-            title.style.minHeight = `${maxHeight3}px`;
+            title.parentElement.style.minHeight = `${maxHeight3}px`;
         });
     } else {
       console.log('error')
@@ -50,7 +50,7 @@ const sizings = function() {
 
         // Set the min-height of all elements to the maxHeight
         titles4.forEach(title => {
-            title.style.minHeight = `${maxHeight3}px`;
+            title.parentElement.style.minHeight = `${maxHeight3}px`;
         });
     } else {
       console.log('error')
