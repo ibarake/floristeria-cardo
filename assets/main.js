@@ -55,7 +55,7 @@ const sizings = function() {
     } else {
       console.log('error')
     }
-    var titles5 = document.querySelectorAll('container-4products .collection-tag');
+    var titles5 = document.querySelectorAll('container-4products .card-product-title');
 
     if (titles5.length > 0) {
         // Find the tallest element
