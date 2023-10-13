@@ -331,8 +331,9 @@ pqBtn.forEach((button) => {
         }
     })
 });
-document.addEventListener('DOMContentLoaded', function() {
-     // product cards
+
+const sizings = () => {
+  // product cards
 
       var titles = document.querySelectorAll('inline-half-container .card-product-title');
 
@@ -393,6 +394,10 @@ document.addEventListener('DOMContentLoaded', function() {
       // Set the container's height to that computed value
       container.style.height = `${totalHeight}px !important`;
 
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+     
 
   console.log(titles);  // Should display a NodeList with the selected elements
 console.log(container);  // Should display the selected container element
