@@ -6,7 +6,7 @@
     <flor class="mobile">
       {% render 'flor-contacto-mobile' %}
     </flor>
-    <cuadro></cuadro>
+    <cuadro style="background-image: url('{{ section.settings.image | image_url: width: '1000' }}')"></cuadro>
     <informacion>
       <h1 class="titulo-7">
         {{ section.settings['contact-title'] }}
@@ -40,7 +40,13 @@
       "type": "text",
       "id": "contact-title",
       "label": "Contactanos"
-    }, {
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "imagen de contacto"
+    },
+    {
       "type": "textarea",
       "id": "contact-subtitle",
       "label": "Subtitle"
