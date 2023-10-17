@@ -172,7 +172,12 @@ async function handleAddToCart(e) {
     });
 
     if (btn) {
-        btn.innerHTML = `Add to Cart`;  // Placeholder text, replace with your desired text or icon
+        btn.innerHTML = `
+                    {% render 'icon-cart' %}
+                <p class="add-t-cart-text subtitulo-2">
+                  {{ section.settings['button-title'] }}
+                </p>
+                `;  // Placeholder text, replace with your desired text or icon
     }
 
     // Show the popup
