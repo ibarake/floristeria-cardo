@@ -186,7 +186,7 @@ document.querySelectorAll('.atc-btn-form').forEach(form => {
     const btn = form.querySelector('button[type="submit"], input[type="submit"]');
     if (btn) {
         btn.addEventListener('click', () => {
-          handleAddToCart();
+          handleAddToCart(e);
         });
     }
 });
