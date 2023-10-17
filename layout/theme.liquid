@@ -133,43 +133,62 @@
       });
 
 
-      document.addEventListener("DOMContentLoaded", function() {
-        const addToC = document.querySelector('[data-product-id]');
-                    const mainProductId = addToC.getAttribute('data-product-id');
+// Function to handle Add to Cart action
+async function handleAddToCart(e) {
+    e.preventDefault();
 
-    const btn = addToC.querySelector('.fbt-btn-atc');
-    btn.style.width = `${btn.clientWidth}px`;
+    // Fetch the nearest form or the form containing the add to cart button
+    const form = e.target.closest('form');
 
-    btn.innerHTML = `
-        <div class="spinner-border" role="status">
-            <span class="visually-hidden">Loading...</span>
-        </div>
-    `;
+    // If form is not found, exit
+    if (!form) return;
+
+    // Find the button within the form to display loading spinner
+    const btn = form.querySelector('button[type="submit"], input[type="submit"]');
+    if (btn) {
+        btn.style.width = `${btn.clientWidth}px`;
+        btn.innerHTML = `
+            <div class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        `;
+    }
 
     const items = [];
 
-    // Add the main product to the items array
-    items.push({
-        id: Number(mainProductId),
-        quantity: 1
-    });
+    // Assuming every form will have an input with name="id" to get product ID
+    const productIdInput = form.querySelector('input[name="id"]');
+    if (productIdInput) {
+        items.push({
+            id: Number(productIdInput.value),
+            quantity: 1  // Assuming quantity is 1, you can adjust based on your needs
+        });
+    }
 
     await fetch('/cart/add.js', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ items })
     });
-        btn.innerHTML = `
-            {% render 'icon-cart' %}
-        <p class="add-t-cart-text subtitulo-2">
-          {{ section.settings['button-title'] }}
-        </p>
-        `;
-        var popup = document.querySelector('.added-to-cart');
-        popup.style.display = 'flex'
-        
 
-      });
+    if (btn) {
+        btn.innerHTML = `Add to Cart`;  // Placeholder text, replace with your desired text or icon
+    }
+
+    // Show the popup
+    const popup = document.querySelector('.added-to-cart');
+    if (popup) {
+        popup.style.display = 'flex';
+    }
+}
+
+// Attach event listener to all Add to Cart buttons
+document.querySelectorAll('.atc-btn-form').forEach(form => {
+    const btn = form.querySelector('button[type="submit"], input[type="submit"]');
+    if (btn) {
+        btn.addEventListener('click', handleAddToCart);
+    }
+});
 
       
     </script>
