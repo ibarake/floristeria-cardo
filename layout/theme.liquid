@@ -133,47 +133,67 @@
       });
 
 
-
       document.addEventListener("DOMContentLoaded", function() {
-    var atcForms = document.querySelectorAll('form.atc-btn-form');
+        const addToC = document.querySelector('[data-product-id]');
+                    const mainProductId = addToC.getAttribute('data-product-id');
 
-    atcForms.forEach(function(form) {
-        form.addEventListener('submit', function(e) {
-            e.preventDefault();
+    const btn = addToC.querySelector('.fbt-btn-atc');
+    btn.style.width = `${btn.clientWidth}px`;
 
-            var formData = new FormData(form);
+    btn.innerHTML = `
+        <div class="spinner-border" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    `;
 
-            fetch(form.action, {
-                method: 'POST',
-                body: formData
-            })
-            .then(function(response) {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                return response.text();
-            })
-            .then(function() {
-                // Actualiza la lista de productos en el carrito si es necesario
-                // Por ejemplo, puedes añadir el producto recién agregado a ".cart-items-list"
+    const items = [];
 
-                // Muestra el mensaje de "agregado al carrito"
-                var addedToCartMessage = document.querySelector('.added-to-cart');
-                addedToCartMessage.style.display = 'block';
+    // Add the main product to the items array
+  /*  items.push({
+        id: Number(mainProductId),
+        quantity: mainProductQuantity
+    }); */
 
-                // Opcional: ocultar el mensaje después de unos segundos
-                setTimeout(function() {
-                    addedToCartMessage.style.display = 'none';
-                }, 5000);
-            })
-            .catch(function(error) {
-                console.log('Hubo un problema con la operación fetch: ' + error.message);
-                alert('Hubo un error al añadir el producto al carrito.');
-            });
+    // Add the checked products from the Frequently Bought Together section to the items array
+this.querySelectorAll('.fbt-variant-select').forEach((select) => {
+    if (select.closest('.fbt-product-item').querySelector('.fbt-add-checkbox').checked) {
+        const variantId = Number(select.value); // Get the selected variant's ID
+        const quantity = 1; // Assuming default quantity is 1 for each product in FBT. Adjust as necessary.
+        items.push({
+            id: variantId,
+            quantity: quantity
         });
-    });
+    }
 });
 
+    await fetch('/cart/add.js', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ items })
+    });
+        
+             if (redirectToCheckout) {
+            // Redirect to checkout instead of cart drawer or cart page
+            location.href = "/cart";
+        } else {
+            if (document.querySelector('#cart-drawer')) {
+                btn.innerHTML = btn.dataset.textAddSelected
+                loadEgCartDrawer(true)
+            } else {
+                btn.innerHTML = `
+                    {% render 'icon-cart' %}
+                <p class="add-t-cart-text subtitulo-2">
+                  {{ section.settings['button-title'] }}
+                </p>
+                `;
+                var popup = document.querySelector('.added-to-cart');
+                popup.style.display = 'flex'
+            }
+        }
+
+      });
+
+      
     </script>
   </body>
   <script src="{{ 'main.js' | asset_url }}"></script>
