@@ -133,7 +133,7 @@
       });
 
 
-displayItems() {
+async function displayItems() {
           await this.addSelectedToCart(false);
           fetch('/cart.js')
           .then(response => response.json())
