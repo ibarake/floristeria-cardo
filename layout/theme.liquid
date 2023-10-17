@@ -193,6 +193,13 @@ async function handleAddToCart(e) {
             cartItemsContainer.innerHTML = '';  // Clear previous items
             
             cart.items.forEach(item => {
+                          // Fetch product details to get the collection
+            const productDetails = await fetch(`/products/${item.handle}.json`).then(response => response.json());
+            
+            const collectionTitle = productDetails.product && productDetails.product.collections && productDetails.product.collections[0] 
+                                    ? productDetails.product.collections[0].title 
+                                    : 'Unknown Collection';
+
               const cartItem = document.createElement('div'); // Create a table row
               cartItem.innerHTML = `
                 <div class="parrafo-3">
@@ -200,7 +207,7 @@ async function handleAddToCart(e) {
                   <img class="cart-image-tag" src="${item.image}" alt="${item.title}" width="85">
                 </image>
                 <div class="pop-text-container">
-                  <p class="parrafo-5 collection-tag">{{ item }}</p>
+                  <p class="parrafo-5 collection-tag">${collectionTitle}</p>
                   <p class="pc-title subtitulo-3">${item.title}</p>
                 </div>
                 <p class="quantity pc-title subtitulo-1">${'x' + item.quantity}</p>
