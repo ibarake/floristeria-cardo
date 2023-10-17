@@ -170,6 +170,7 @@ async function handleAddToCart(e) {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ items })
     });
+    console.log(response)
     if (btn) {
         btn.innerHTML = `Add to Cart`;  // Placeholder text, replace with your desired text or icon
     }
@@ -185,9 +186,7 @@ async function handleAddToCart(e) {
 document.querySelectorAll('.atc-btn-form').forEach(form => {
     const btn = form.querySelector('button[type="submit"], input[type="submit"]');
     if (btn) {
-        btn.addEventListener('click', () => {
-          handleAddToCart(e);
-        });
+        btn.addEventListener('click', handleAddToCart);
     }
 });
 
