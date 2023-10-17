@@ -170,7 +170,7 @@ async function handleAddToCart(e) {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ items })
     });
-    console.log(response)
+
     if (btn) {
         btn.innerHTML = `Add to Cart`;  // Placeholder text, replace with your desired text or icon
     }
