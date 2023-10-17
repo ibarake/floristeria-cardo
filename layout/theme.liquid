@@ -198,8 +198,8 @@ async function handleAddToCart(e) {
 
             console.log(productDetails)
             
-            const collectionTitle = productDetails.product && productDetails.product.tags && productDetails.product.tags[0] 
-                                    ? productDetails.product.tags[0] 
+            const collectionTitle = productDetails.product && productDetails.product.product_type
+                                    ? productDetails.product.product_type 
                                     : '';
 
             const cartItem = document.createElement('div'); // Create a table row
