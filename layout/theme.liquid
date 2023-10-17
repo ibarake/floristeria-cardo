@@ -190,6 +190,16 @@ document.querySelectorAll('.atc-btn-form').forEach(form => {
     }
 });
 
+    document.addEventListener('DOMContentLoaded', () => {
+          var keepBuying = document.querySelector('.keep-buying');
+    keepBuying.addEventListener('click', () => {
+      document.querySelector('.added-to-cart').style.display = 'none';
+    })
+    var viewCart = document.querySelector('.view-cart');
+      viewCart.addEventListener('click', () => {
+        location.href = window.cart_route
+      })
+    })
       
     </script>
   </body>
