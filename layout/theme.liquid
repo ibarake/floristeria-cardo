@@ -132,7 +132,48 @@
           $('.slider-2').on('wheel', handleWheel);
       });
 
-      
+
+
+      document.addEventListener("DOMContentLoaded", function() {
+    var atcForms = document.querySelectorAll('form.atc-btn-form');
+
+    atcForms.forEach(function(form) {
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            var formData = new FormData(form);
+
+            fetch(form.action, {
+                method: 'POST',
+                body: formData
+            })
+            .then(function(response) {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.text();
+            })
+            .then(function() {
+                // Actualiza la lista de productos en el carrito si es necesario
+                // Por ejemplo, puedes añadir el producto recién agregado a ".cart-items-list"
+
+                // Muestra el mensaje de "agregado al carrito"
+                var addedToCartMessage = document.querySelector('.added-to-cart');
+                addedToCartMessage.style.display = 'block';
+
+                // Opcional: ocultar el mensaje después de unos segundos
+                setTimeout(function() {
+                    addedToCartMessage.style.display = 'none';
+                }, 5000);
+            })
+            .catch(function(error) {
+                console.log('Hubo un problema con la operación fetch: ' + error.message);
+                alert('Hubo un error al añadir el producto al carrito.');
+            });
+        });
+    });
+});
+
     </script>
   </body>
   <script src="{{ 'main.js' | asset_url }}"></script>
