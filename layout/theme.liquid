@@ -149,47 +149,25 @@
     const items = [];
 
     // Add the main product to the items array
-  /*  items.push({
+    items.push({
         id: Number(mainProductId),
-        quantity: mainProductQuantity
-    }); */
-
-    // Add the checked products from the Frequently Bought Together section to the items array
-this.querySelectorAll('.fbt-variant-select').forEach((select) => {
-    if (select.closest('.fbt-product-item').querySelector('.fbt-add-checkbox').checked) {
-        const variantId = Number(select.value); // Get the selected variant's ID
-        const quantity = 1; // Assuming default quantity is 1 for each product in FBT. Adjust as necessary.
-        items.push({
-            id: variantId,
-            quantity: quantity
-        });
-    }
-});
+        quantity: 1
+    });
 
     await fetch('/cart/add.js', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ items })
     });
+        btn.innerHTML = `
+            {% render 'icon-cart' %}
+        <p class="add-t-cart-text subtitulo-2">
+          {{ section.settings['button-title'] }}
+        </p>
+        `;
+        var popup = document.querySelector('.added-to-cart');
+        popup.style.display = 'flex'
         
-             if (redirectToCheckout) {
-            // Redirect to checkout instead of cart drawer or cart page
-            location.href = "/cart";
-        } else {
-            if (document.querySelector('#cart-drawer')) {
-                btn.innerHTML = btn.dataset.textAddSelected
-                loadEgCartDrawer(true)
-            } else {
-                btn.innerHTML = `
-                    {% render 'icon-cart' %}
-                <p class="add-t-cart-text subtitulo-2">
-                  {{ section.settings['button-title'] }}
-                </p>
-                `;
-                var popup = document.querySelector('.added-to-cart');
-                popup.style.display = 'flex'
-            }
-        }
 
       });
 
