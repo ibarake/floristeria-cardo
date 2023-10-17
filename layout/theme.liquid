@@ -198,9 +198,9 @@ async function handleAddToCart(e) {
 
             console.log(productDetails)
             
-            const collectionTitle = productDetails.product && productDetails.product.collections && productDetails.product.collections[0] 
-                                    ? productDetails.product.collections[0].title 
-                                    : 'Unknown Collection';
+            const collectionTitle = productDetails.product && productDetails.product.tags && productDetails.product.tags[0] 
+                                    ? productDetails.product.tags[0] 
+                                    : '';
 
             const cartItem = document.createElement('div'); // Create a table row
             cartItem.innerHTML = `
