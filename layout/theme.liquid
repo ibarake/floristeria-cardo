@@ -185,6 +185,32 @@ async function handleAddToCart(e) {
     if (popup) {
         popup.style.display = 'flex';
     }
+
+              fetch('/cart.js')
+          .then(response => response.json())
+          .then(cart => {
+            const cartItemsContainer = document.querySelector('.cart-items-list');
+            cartItemsContainer.innerHTML = '';  // Clear previous items
+            
+            cart.items.forEach(item => {
+              const cartItem = document.createElement('div'); // Create a table row
+              cartItem.innerHTML = `
+                <div class="parrafo-3">
+                <image class="cart-item-image">
+                  <img class="cart-image-tag" src="${item.image}" alt="${item.title}" width="85">
+                </image>
+                <div class="pop-text-container">
+                  <p class="parrafo-5 collection-tag">{{ product.collections[0].title }}</p>
+                  <p class="pc-title subtitulo-3">${item.title}</p>
+                </div>
+                <p class="quantity pc-title subtitulo-1">${'x' + item.quantity}</p>
+                <p class="parrafo-2 price">${'$' + parseFloat(item.price).toFixed(2)}</p>
+                </div>
+              `;
+              cartItemsContainer.appendChild(cartItem);
+            });
+          });
+
 }
 
 // Attach event listener to all Add to Cart buttons
