@@ -3515,7 +3515,7 @@ COL-titles {
                     flex-direction: column;
                     width: 100%;
                     margin: 0rem 0;
-                    text-align: {{ text_align }};
+                    text-align: left;
                     height: auto;
                     overflow-y: hidden;
                     transition: all 500ms ease;
@@ -3535,7 +3535,7 @@ COL-titles {
                     padding: 0;
                 }
                 .fbt-product-item {
-                    width: {{ item_width }};
+                    width: 33%;
                     display: grid;
                     grid-template-columns: 1fr;
                     margin: 0px 10px;
@@ -3723,7 +3723,7 @@ COL-titles {
                     flex-direction: column;
                     width: 100%;
                     margin: 0rem 0;
-                    text-align: {{ text_align }};
+                    text-align: left;
                     height: auto;
                     overflow-y: hidden;
                     transition: all 500ms ease;
