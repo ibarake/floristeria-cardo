@@ -195,6 +195,8 @@ async function handleAddToCart(e) {
         for (const item of cart.items) {
             // Fetch product details to get the collection
             const productDetails = await fetch(`/products/${item.handle}.json`).then(response => response.json());
+
+            console.log(productDetails)
             
             const collectionTitle = productDetails.product && productDetails.product.collections && productDetails.product.collections[0] 
                                     ? productDetails.product.collections[0].title 
