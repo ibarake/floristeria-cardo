@@ -165,12 +165,12 @@ async function handleAddToCart(e) {
         });
     }
 
-    await fetch('/cart/add.js', {
+    const  response = await fetch('/cart/add.js', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ items })
     });
-
+    console.log(response)
     if (btn) {
         btn.innerHTML = `Add to Cart`;  // Placeholder text, replace with your desired text or icon
     }
