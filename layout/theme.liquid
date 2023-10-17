@@ -134,7 +134,7 @@
 
 
 async function displayItems() {
-          await this.addSelectedToCart(false);
+          await handleAddToCart();
           fetch('/cart.js')
           .then(response => response.json())
           .then(cart => {
@@ -214,7 +214,6 @@ document.querySelectorAll('.atc-btn-form').forEach(form => {
     const btn = form.querySelector('button[type="submit"], input[type="submit"]');
     if (btn) {
         btn.addEventListener('click', () => {
-          handleAddToCart();
           displayItems();
         });
     }
