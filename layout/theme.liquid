@@ -131,6 +131,37 @@
           });
           $('.slider-2').on('wheel', handleWheel);
       });
+
+      $(document).ready(function() {
+  $('form.atc-btn-form').on('submit', function(e) {
+    e.preventDefault();  // Evita la redirección
+
+    var $thisForm = $(this);
+
+    // Hacer la llamada AJAX para añadir el producto al carrito
+    $.ajax({
+      url: $thisForm.attr('action'),
+      method: 'POST',
+      data: $thisForm.serialize(),
+      success: function(response) {
+        // Actualiza la lista de productos en el carrito si es necesario
+        // Por ejemplo, puedes añadir el producto recién agregado a ".cart-items-list"
+
+        // Muestra el mensaje de "agregado al carrito"
+        $('.added-to-cart').fadeIn();
+
+        // Opcional: ocultar el mensaje después de unos segundos
+        setTimeout(function() {
+          $('.added-to-cart').fadeOut();
+        }, 5000);
+      },
+      error: function() {
+        alert('Hubo un error al añadir el producto al carrito.');
+      }
+    });
+  });
+});
+
     </script>
   </body>
   <script src="{{ 'main.js' | asset_url }}"></script>
