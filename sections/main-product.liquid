@@ -480,6 +480,11 @@ initialize();
                       loading="lazy"
                     >
                     <div class="card-fbt-footer">
+                      <h3 class="fbt-product-title-r subtitulo-3" style="padding: 0 0 0 20px;">
+                        {% if forloop.index > 1 %}+{% endif -%}
+                        {{- product.title }}
+                      </h3>
+
                       <p class="subtitulo-3 fbt-product-price-final">
                         <strong>{{ product.price | money }} COP </strong>
                       </p>
