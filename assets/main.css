@@ -3802,6 +3802,8 @@ COL-titles {
                 .fbt-product-price-final {
                   text-align: center;
                   margin: 0px;
+                  line-height: 0px;
+                  margin-top: 20px;
                 }
                 .fbt-variant-select {
                     width: 100%;
