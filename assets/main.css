@@ -3677,6 +3677,9 @@ COL-titles {
                   cursor: pointer;
                 }
                     @media (max-width: 768px) {
+                      .fbt-product-title-r {
+                  display: flex;
+                }
                       .cart-items-list .pc-title{
                         font-size: 10px;
                         line-height: 16px;
