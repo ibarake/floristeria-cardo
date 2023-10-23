@@ -19,42 +19,7 @@ const sizings = function() {
     } else {
       console.log('error')
     }
-    var titles3 = document.querySelectorAll('inline-half-container .collection-tag');
-
-    if (titles3.length > 0) {
-        // Find the tallest element
-        var maxHeight3 = 0;
-        titles3.forEach(title => {
-            if (title.offsetHeight > maxHeight3) {
-                maxHeight3 = title.offsetHeight;
-            }
-        });
-
-        // Set the min-height of all elements to the maxHeight
-        titles3.forEach(title => {
-            title.style.minHeight = `${maxHeight3}px`;
-        });
-    } else {
-      console.log('error')
-    }
-    var titles4 = document.querySelectorAll('container-4products .collection-tag');
-
-    if (titles4.length > 0) {
-        // Find the tallest element
-        var maxHeight3 = 0;
-        titles4.forEach(title => {
-            if (title.offsetHeight > maxHeight3) {
-                maxHeight3 = title.offsetHeight;
-            }
-        });
-
-        // Set the min-height of all elements to the maxHeight
-        titles4.forEach(title => {
-            title.style.minHeight = `${maxHeight3}px`;
-        });
-    } else {
-      console.log('error')
-    }
+    
     var titles5 = document.querySelectorAll('container-4products .card-product-title');
 
     if (titles5.length > 0) {
