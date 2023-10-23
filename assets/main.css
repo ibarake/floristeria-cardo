@@ -2668,7 +2668,7 @@ product-information {
 
 #pr-description {
   margin: 0;
-  color: var(--main-gray);
+  color: var(--dark-gray);
 }
 
 #pr-form-wd {
