@@ -3,7 +3,7 @@
   {{ hero-product | img_tag: hero-product.featured_image.alt, class, '300x256' }}
   <card-product-info class="card-width">
     <product-card-title>
-      <p class="parrafo-4 collection-tag">{{ hero-product.type }}</p>
+      {% if hero-product.type %}<p class="parrafo-4 collection-tag">{{ hero-product.type }}</p>{% endif %}
       <p class="parrafo-1 card-product-title">{{ hero-product.title }}</p>
     </product-card-title>
     <card-footer>
