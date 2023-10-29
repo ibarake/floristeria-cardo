@@ -213,7 +213,7 @@ async function handleAddToCart(e) {
                         <p class="pc-title subtitulo-3">${item.title}</p>
                     </div>
                     <p class="quantity pc-title subtitulo-1">${'x' + item.quantity}</p>
-                    <p class="parrafo-2 price">${'$' + parseFloat(item.price).toFixed(2)}</p>
+                    <p class="parrafo-2 price">${'$' + parseFloat(item.price)}</p>
                 </div>
             `;
             cartItemsContainer.appendChild(cartItem);
