@@ -1,7 +1,7 @@
 {
   "sections": {
     "main": {
-      "type": "main-product",
+      "type": "main-product-combo",
       "settings": {
         "envio": "Envío gratis",
         "info-extra": "Información extra",
