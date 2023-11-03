@@ -143,9 +143,9 @@
     "ec7ee139-7af0-40a7-b9d3-a60e0edf94c7": {
       "type": "contacto",
       "settings": {
-        "contact-title": "Recibe un 10% de descuento",
+        "contact-title": "Suscríbete a nuestro boletín",
         "image": "shopify:\/\/shop_images\/f14463c755a98e8cdb24ca7e0907ec3b.jpg",
-        "contact-subtitle": "Suscríbete a nuestra base de clientes preferenciales y recibe un 10% de descuento en tu primera compra.",
+        "contact-subtitle": "Suscríbete a nuestra base de clientes preferenciales para recibir descuentos y actualización de nuevos productos.",
         "button-title": "Quiero descuento"
       }
     }
