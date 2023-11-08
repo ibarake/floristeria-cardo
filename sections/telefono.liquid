@@ -63,7 +63,7 @@
 <!-- templates/telofono.liquid -->
 <div class="call-to-action">
   <!-- Button -->
-  <a style="text-decoration: none;" class="call-to-action-button parrafo-3">
+  <a href="{{ section.settings.url }}" style="text-decoration: none;" class="call-to-action-button parrafo-3">
     {{ section.settings.button_label }}
   </a>
 
@@ -89,6 +89,11 @@
       "id": "phone_number",
       "label": "Phone Number",
       "default": "320-3949506"
+    },
+    {
+      "type": "url",
+      "id": "url",
+      "label": "Phone Number"
     },
     {
       "type": "text",
