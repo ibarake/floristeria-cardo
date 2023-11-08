@@ -126,6 +126,14 @@
           "subtitulo-fotos": "Ver todos",
           "style-s": "style 1"
         }
+      },
+      "telefono": {
+        "type": "telefono",
+        "settings": {
+          "phone_number": "320-3949506",
+          "url": "tel:3203949506",
+          "button_label": "Llamanos"
+        }
       }
     },
     "content_for_index": [
