@@ -2,6 +2,7 @@
   "current": {
     "logo": "shopify:\/\/shop_images\/Rectangle_1891.png",
     "favicon": "shopify:\/\/shop_images\/favicon.png",
+    "checkout_logo_image": "shopify:\/\/shop_images\/LOGO-FLORISTERIA-CARDO-EN-BOGOTA.png",
     "checkout_body_background_color": "#fdfaf8",
     "checkout_sidebar_background_color": "#fdfaf8",
     "checkout_accent_color": "#615420",
