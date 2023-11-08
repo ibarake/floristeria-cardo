@@ -118,7 +118,7 @@
               
                       checkoutBtns.forEach((btn, index) => {
                           btn.disabled = !isAnyTextAreaFilled;
-                          btn.value = isAnyTextAreaFilled ? "Ahora puedes pagar" : "Primero redacta mensaje personalizado";
+                          btn.value = isAnyTextAreaFilled ? "Ahora puedes pagar aquí" : "Redacta mensaje personalizado";
                           if (isAnyTextAreaFilled) {
                               btn.classList.add('grow');
                               btn.style.opacity = "1";
