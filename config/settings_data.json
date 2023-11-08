@@ -2,6 +2,11 @@
   "current": {
     "logo": "shopify:\/\/shop_images\/Rectangle_1891.png",
     "favicon": "shopify:\/\/shop_images\/favicon.png",
+    "checkout_body_background_color": "#fdfaf8",
+    "checkout_sidebar_background_color": "#fdfaf8",
+    "checkout_accent_color": "#615420",
+    "checkout_button_color": "#625420",
+    "checkout_error_color": "#a64949",
     "sections": {
       "header": {
         "type": "header",
