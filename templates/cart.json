@@ -3,7 +3,7 @@
     "main": {
       "type": "main-cart",
       "settings": {
-        "cart-note": "Agregar mensaje personalizado",
+        "cart-note": "Agrega aquí el mensaje que quieres que diga la tarjeta que acompaña el arreglo o bono..",
         "agregar-combo": "Agregar a tu combo"
       }
     },
@@ -19,6 +19,7 @@
           "arreglo-condolencias-en-orquideas"
         ],
         "button-text": "Añadir al carrito",
+        "add-to-cart-title-mobile": "Añadir",
         "title-preguntas": "Sobre Cardó",
         "subtitle-preguntas": "preguntas frecuentes",
         "subtitulo-fotos": "Ver todos",
