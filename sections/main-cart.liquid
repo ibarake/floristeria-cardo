@@ -118,7 +118,7 @@
               
                       checkoutBtns.forEach((btn, index) => {
                           btn.disabled = !isAnyTextAreaFilled;
-                          btn.value = isAnyTextAreaFilled ? "Realizar compra" : "Rellena las notas del producto";
+                          btn.value = isAnyTextAreaFilled ? "Ahora puedes pagar" : "Primero diligencia mensaje";
                           if (isAnyTextAreaFilled) {
                               btn.classList.add('grow');
                               btn.style.opacity = "1";
@@ -201,7 +201,7 @@
         {% if product_without_combo %}
           <input type="submit" name="checkout" class="button-cart subtitulo-2 grow" value="Realizar Compra">
         {% else %}
-          <p class="subtitulo-3">Porfavor agregue un arreglo a tu combo</p>
+          <p class="subtitulo-3">Por favor agrega un arreglo a tu combo</p>
         {% endif %}
       {% else %}
         <input type="submit" name="checkout" class="button-cart subtitulo-2 grow" value="Realizar Compra">
@@ -217,7 +217,7 @@
           {% if product_without_combo %}
             <input type="submit" name="checkout" class="button-cart subtitulo-4 grow" value="Realizar Compra">
           {% else %}
-            <p class="subtitulo-5">Porfavor agregue un arreglo a tu combo</p>
+            <p class="subtitulo-5">Por favor agrega un arreglo a tu combo</p>
           {% endif %}
         {% else %}
           <input type="submit" name="checkout" class="button-cart subtitulo-4 grow" value="Realizar Compra">
