@@ -42,12 +42,6 @@
                   {% assign product_is_combo = false %}
                 {% endif %}
               {% endfor %}
-              {% if product_is_combo == false %}
-                <button-note class="cart-note subtitulo-5">
-                  {% render 'cart-note' %}
-                  {{ section.settings['cart-note'] }}
-                </button-note>
-              {% endif %}
             </item-info>
             <responsive-container>
               <quantity>
@@ -87,10 +81,6 @@
                 >
                 <input type="button" value="+" class="qButton button-plus" data-field="quantity">
               </quantity>
-              <button-note class="cart-note subtitulo-5">
-                {% render 'cart-note' %}
-                {{ section.settings['cart-note'] }}
-              </button-note>
             </item-info>
             <a href="{{ item.url_to_remove }}">{% render 'delete-cart' %}</a>
           </cart-item-responsive>
