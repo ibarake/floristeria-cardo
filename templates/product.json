@@ -3,7 +3,7 @@
     "main": {
       "type": "main-product",
       "settings": {
-        "envio": "Envío gratis en Bogotá",
+        "envio": "Envío gratis en Bogotá por compras superiores a $200.000",
         "info-extra": "Información extra",
         "button-title": "Agregar al carrito",
         "collection": [
@@ -34,6 +34,7 @@
           "arreglo-condolencias-en-orquideas"
         ],
         "button-text": "Añadir al carrito",
+        "add-to-cart-title-mobile": "Añadir",
         "title-preguntas": "Sobre Cardó",
         "subtitle-preguntas": "preguntas frecuentes",
         "subtitulo-fotos": "Ver todos",
