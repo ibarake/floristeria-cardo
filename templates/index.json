@@ -140,9 +140,9 @@
     "ec7ee139-7af0-40a7-b9d3-a60e0edf94c7": {
       "type": "contacto",
       "settings": {
-        "contact-title": "Suscríbete a nuestro boletín",
+        "contact-title": "Recibe 10% de descuento",
         "image": "shopify:\/\/shop_images\/f14463c755a98e8cdb24ca7e0907ec3b.jpg",
-        "contact-subtitle": "Suscríbete a nuestra base de clientes preferenciales para recibir descuentos y actualización de nuevos productos.",
+        "contact-subtitle": "Recibe un 10% de descuento en tu primera compra si esta es mayor a COP300.000 usa nuestro cupón de descuento: M1PR1M3R4C0MPR4",
         "button-title": "Quiero descuento"
       }
     }
