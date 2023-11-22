@@ -43,10 +43,10 @@
                 {% endif %}
               {% endfor %}
               {% if product_is_combo == false %}
-              <button-note class="cart-note subtitulo-5">
-                {% render 'cart-note' %}
-                {{ section.settings['cart-note'] }}
-              </button-note>
+                <button-note class="cart-note subtitulo-5">
+                  {% render 'cart-note' %}
+                  {{ section.settings['cart-note'] }}
+                </button-note>
               {% endif %}
               <div class="popup">
                 <div class="popup-content">
@@ -96,47 +96,6 @@
                 {% render 'cart-note' %}
                 {{ section.settings['cart-note'] }}
               </button-note>
-              <div class="popup">
-                <div class="popup-content">
-                  <textarea
-                    id="note"
-                    name="attributes[{{ item.product.title }}]"
-                    class="subtitulo-2"
-                    form="cart"
-                  ></textarea>
-                </div>
-              </div>
-              <script>
-                document.addEventListener('DOMContentLoaded', () => {
-                  var checkoutBtns = document.querySelectorAll('.cart input[type="submit"]');
-                  var textAreas = document.querySelectorAll('.popup-content textarea'); // Make sure to target the textarea inside the .popup-content
-              
-                  const originalBtnTexts = Array.from(checkoutBtns).map(btn => btn.value);  // Store original button texts
-              
-                  const updateButtonState = () => {
-                      let isAnyTextAreaFilled = Array.from(textAreas).some(ta => ta.value.trim() !== "");
-              
-                      checkoutBtns.forEach((btn, index) => {
-                          btn.disabled = !isAnyTextAreaFilled;
-                          btn.value = isAnyTextAreaFilled ? "Ahora puedes pagar aquí" : "Agrega mensaje personalizado";
-                          if (isAnyTextAreaFilled) {
-                              btn.classList.add('grow');
-                              btn.style.opacity = "1";
-                          } else {
-                              btn.classList.remove('grow');
-                              btn.style.opacity = "0.8";
-                          }
-                      });
-                  };
-              
-                  // Initial check
-                  updateButtonState();
-              
-                  textAreas.forEach(ta => {
-                      ta.addEventListener('input', updateButtonState);  // "input" event is more reliable than "change" for textareas
-                  });
-              });
-              </script>
             </item-info>
             <a href="{{ item.url_to_remove }}">{% render 'delete-cart' %}</a>
           </cart-item-responsive>
