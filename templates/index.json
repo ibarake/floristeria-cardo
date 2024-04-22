@@ -139,6 +139,7 @@
     },
     "ec7ee139-7af0-40a7-b9d3-a60e0edf94c7": {
       "type": "contacto",
+      "disabled": true,
       "settings": {
         "contact-title": "Recibe 10% de descuento",
         "image": "shopify:\/\/shop_images\/f14463c755a98e8cdb24ca7e0907ec3b.jpg",
