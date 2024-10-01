@@ -65,7 +65,7 @@
       'items': [
       {% for item in cart.items %}
       {
-      'item_id': "shopify_CO_" + {{ item.variant.product.id }} + "_" + {{ item.variant_id }},
+      'item_id': "idshopify_CO_" + {{ item.variant.product.id }} + "_" + {{ item.variant_id }},
       'item_name': '{{item.title}}',
       'quantity': '{{item.quantity}}',
       'item_brand': {{item.product.vendor | json}},
