@@ -57,27 +57,26 @@
     <script>
       console.log("carrito");
       {% if template contains 'cart' %}
-            var ecommerce = {
-                'currency': {{cart.currency.iso_code | json}},
-                'value': {{cart.total_price | divided_by: 100.0 | json}},
-                'items':[{% for line_item in cart.items %}{
-                    'item_id'        : {{line_item.product.id | json}},                  
-                    'item_variant'    : {{line_item.variant.title | json}},             
-                    'item_name'      : {{line_item.product.title | json}},
-                    'price'           : {{line_item.product.price | money_without_currency | replace: ',', '.' | json}},
-                    'item_brand'      : {{line_item.product.vendor | json}},
-                    'item_category'   : {{line_item.product.type | json}},
-                    'item_list_name'  : {{line_item.collection.title | json}},
-                    'quantity'        : {{line_item.quantity | json}},
-                    'discount'		  : {{discount.code | json}}
-                },{% endfor %}],
-            };
-            dataLayer.push({
-                'pageType' : 'Cart',
-                'event'    : 'view_cart',
-                ecommerce
-            });
-        {% endif %}
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+      'event': 'view_cart',
+      'currency': {{cart.currency.iso_code | json}},
+      'value': {{cart.total_price| times: 0.01}},
+      'items': [
+      {% for item in cart.items %}
+      {
+      'item_id': '{{item.id}}',
+      'item_name': '{{item.title}}',
+      'quantity': '{{item.quantity}}',
+      'item_brand': {{item.product.vendor | json}},
+      'item_category' : {{item.product.type | json}},
+      'price': {{ item.price }}
+      },
+      {% endfor %}
+      ]
+      });
+      {% endif %}
+
     </script>
   </head>
   <body>
