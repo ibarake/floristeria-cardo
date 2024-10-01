@@ -54,6 +54,26 @@
       })(window,document,'script','dataLayer','GTM-MP5D654');
     </script>
     <!-- End Google Tag Manager -->
+    <script>
+      console.log("carrito");
+      {% if template contains 'cart' %}
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+      'event': 'view_cart',
+      'value': {{cart.total_price| times: 0.01}},
+      'items': [
+      {% for item in cart.items %}
+      {
+      'item_id': '{{item.id}}',
+      'item_name': '{{item.title}}',
+      'quantity': '{{item.quantity}}',
+      'price': '{{ item.price | times: 0.01 }}'
+      },
+      {% endfor %}
+      ]
+      });
+      {% endif %}
+    </script>
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
