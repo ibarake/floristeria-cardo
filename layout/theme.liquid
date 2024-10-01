@@ -12,7 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     {% capture h_header %}
     {% comment %}{{ content_for_header }}{% endcomment %}
-    {{ content_for_header | replace: 'trackingId', 'Nulled' }}
+    {{ content_for_header | replace:'Google Analytics"', 'Null Google Analytics"' }}
     {% endcapture %}
     {{ h_header | replace:'<meta name="robots" content="noindex,nofollow">':'<meta name="robots" content="index,follow">' }}
     <link rel="preconnect" href="https://fonts.googleapis.com">
