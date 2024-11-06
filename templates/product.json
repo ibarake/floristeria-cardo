@@ -1,9 +1,18 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
       "type": "main-product",
       "settings": {
-        "envio": "Envío gratis en Bogotá por compras superiores a $200.000",
+        "envio": "Envío gratis en Bogotá por compras superiores a $250.000",
         "info-extra": "Información extra",
         "button-title": "Agregar al carrito",
         "collection": [
@@ -42,7 +51,7 @@
         "color": true,
         "border": true,
         "style-s": "style 1",
-        "link": "shopify:\/\/collections\/all"
+        "link": "shopify://collections/all"
       }
     }
   },
