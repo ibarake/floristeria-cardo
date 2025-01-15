@@ -440,7 +440,8 @@ document.addEventListener('DOMContentLoaded', function () {
   const popupForm = document.getElementById('popupForm');
 
   // Mostrar el popup
-  openPopupButton.addEventListener('click', function () {
+  openPopupButton.addEventListener('click', function (e) {
+    e.preventDefault();
     popupOverlay.style.display = 'flex';
   });
 
