@@ -468,6 +468,20 @@ document.addEventListener('DOMContentLoaded', function () {
     window.location.href = 'tel:3112085671';
     popupOverlay.style.display = 'none';
   });*/
+
+  popupForm.addEventListener('submit', function (event) {
+    event.preventDefault(); // Evita el envío inicial
+
+    grecaptcha.ready(function () {
+      grecaptcha.execute('your-site-key', { action: 'submit' }).then(function (token) {
+        // Agrega el token al campo oculto
+        document.getElementById('g-recaptcha-response').value = token;
+
+        // Envía el formulario
+        popupForm.submit();
+      });
+    });
+  });
 });
 
 
