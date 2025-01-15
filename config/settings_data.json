@@ -1,8 +1,17 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
-    "logo": "shopify:\/\/shop_images\/Rectangle_1891.png",
-    "favicon": "shopify:\/\/shop_images\/favicon.png",
-    "checkout_header_image": "shopify:\/\/shop_images\/f14463c755a98e8cdb24ca7e0907ec3b.jpg",
+    "logo": "shopify://shop_images/Rectangle_1891.png",
+    "favicon": "shopify://shop_images/favicon.png",
+    "checkout_header_image": "shopify://shop_images/f14463c755a98e8cdb24ca7e0907ec3b.jpg",
     "checkout_body_background_color": "#fdfaf8",
     "checkout_sidebar_background_color": "#fdfaf8",
     "checkout_accent_color": "#615420",
@@ -110,9 +119,9 @@
           "correo-contacto": "ventas@floristeriacardo.com.co",
           "telefono-contacto": "573112085671 - 6014660639",
           "direccion-contacto": "Calle 98 # 18-21 Bogotá D.C. - Colombia",
-          "url-facebook": "https:\/\/www.facebook.com\/FloristeriaCardo\/?locale=es_LA",
-          "url-messenger": "https:\/\/api.whatsapp.com\/send\/?phone=573112085671",
-          "url-instagram": "https:\/\/www.instagram.com\/floristeriacardobogota\/?hl=es"
+          "url-facebook": "https://www.facebook.com/FloristeriaCardo/?locale=es_LA",
+          "url-messenger": "https://api.whatsapp.com/send/?phone=573112085671",
+          "url-instagram": "https://www.instagram.com/floristeriacardobogota/?hl=es"
         }
       },
       "products-4": {
@@ -142,27 +151,25 @@
         }
       }
     },
-    "content_for_index": [
-
-    ],
+    "content_for_index": [],
     "blocks": {
       "7570552984445421165": {
-        "type": "shopify:\/\/apps\/yotpo-product-photo-reviews\/blocks\/settings\/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+        "type": "shopify://apps/yotpo-product-photo-reviews/blocks/settings/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "152906827736512534": {
-        "type": "shopify:\/\/apps\/popupsmart-popup-sales-email\/blocks\/app-embed\/cca16dd6-0222-4342-9519-bc3a8c43228c",
+        "type": "shopify://apps/popupsmart-popup-sales-email/blocks/app-embed/cca16dd6-0222-4342-9519-bc3a8c43228c",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "15683396631634586217": {
-        "type": "shopify:\/\/apps\/inbox\/blocks\/chat\/841fc607-4181-4ad1-842d-e24d7f8bad6b",
-        "disabled": false,
+        "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
+        "disabled": true,
         "settings": {
           "button_color": "#615420",
+          "secondary_color": "#FFFFFF",
+          "ternary_color": "#6A6A6A",
           "button_icon": "chat_bubble",
           "button_text": "no_text",
           "button_horizontal_position": "bottom_right",
