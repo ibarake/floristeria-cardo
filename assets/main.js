@@ -465,8 +465,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const phone = document.getElementById('phone').value;
 
     console.log('Datos enviados:', { name, email, phone });
-
-    alert('Gracias por enviar tus datos.');
+    window.location.href = 'tel:3112085671';
     popupOverlay.style.display = 'none';
   });
 });
