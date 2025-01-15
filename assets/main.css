@@ -3998,7 +3998,8 @@ COL-titles {
 }
 
 .form-submit:hover {
-  background: #0056b3; /* Más oscuro al pasar el mouse */
+  background: #615420;
+  color: #e0b37f;
 }
 
 /* Animaciones */
