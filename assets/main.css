@@ -3916,7 +3916,6 @@ COL-titles {
   height: 100%;
   background: rgba(0, 0, 0, 0.8); /* Fondo oscuro con transparencia */
   z-index: 9999;
-  display: flex;
   justify-content: center;
   align-items: center;
   animation: fadeIn 0.3s ease-in-out;
