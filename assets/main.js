@@ -473,7 +473,7 @@ document.addEventListener('DOMContentLoaded', function () {
     event.preventDefault(); // Evita el envío inicial
 
     grecaptcha.ready(function () {
-      grecaptcha.execute('your-site-key', { action: 'submit' }).then(function (token) {
+      grecaptcha.execute('6LeC17gqAAAAAHeLHTrNifBSxLwYy1HcOqgj1xw8', { action: 'submit' }).then(function (token) {
         // Agrega el token al campo oculto
         document.getElementById('g-recaptcha-response').value = token;
 
