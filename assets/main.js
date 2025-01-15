@@ -433,8 +433,43 @@ pqBtn.forEach((button) => {
 });
 
 
-      
-   
+document.addEventListener('DOMContentLoaded', function () {
+  const openPopupButton = document.getElementById('openPopup');
+  const closePopupButton = document.getElementById('closePopup');
+  const popupOverlay = document.getElementById('popupOverlay');
+  const popupForm = document.getElementById('popupForm');
+
+  // Mostrar el popup
+  openPopupButton.addEventListener('click', function () {
+    popupOverlay.style.display = 'flex';
+  });
+
+  // Ocultar el popup
+  closePopupButton.addEventListener('click', function () {
+    popupOverlay.style.display = 'none';
+  });
+
+  // Cerrar el popup al hacer clic fuera del contenido
+  popupOverlay.addEventListener('click', function (event) {
+    if (event.target === popupOverlay) {
+      popupOverlay.style.display = 'none';
+    }
+  });
+
+  // Manejo del envío del formulario
+  popupForm.addEventListener('submit', function (event) {
+    event.preventDefault();
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const phone = document.getElementById('phone').value;
+
+    console.log('Datos enviados:', { name, email, phone });
+
+    alert('Gracias por enviar tus datos.');
+    popupOverlay.style.display = 'none';
+  });
+});
+
 
 
 
