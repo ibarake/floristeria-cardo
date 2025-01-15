@@ -68,18 +68,18 @@
   <div class="popup-content">
     <span id="closePopup" class="popup-close">&times;</span>
     <h2>Antes de llamarnos, déjanos tus datos</h2>
-    <form id="popupForm">
+    <form method="POST" action="/contact" id="popupForm">
       <div class="form-group">
         <label for="name">Nombre:</label>
-        <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+        <input type="text" id="name" name="contact[name]" placeholder="Tu nombre" required>
       </div>
       <div class="form-group">
         <label for="email">Correo:</label>
-        <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+        <input type="email" id="email" name="contact[email]" placeholder="Tu correo electrónico" required>
       </div>
       <div class="form-group">
         <label for="phone">Teléfono:</label>
-        <input type="tel" id="phone" name="phone" placeholder="Tu teléfono" required>
+        <input type="tel" id="phone" name="contact[phone]" placeholder="Tu teléfono" required>
       </div>
       <button type="submit" class="form-submit">Enviar</button>
     </form>
