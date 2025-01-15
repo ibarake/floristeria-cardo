@@ -457,7 +457,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  // Manejo del envío del formulario
+  /*Manejo del envío del formulario
   popupForm.addEventListener('submit', function (event) {
     event.preventDefault();
     const name = document.getElementById('name').value;
@@ -467,7 +467,7 @@ document.addEventListener('DOMContentLoaded', function () {
     console.log('Datos enviados:', { name, email, phone });
     window.location.href = 'tel:3112085671';
     popupOverlay.style.display = 'none';
-  });
+  });*/
 });
 
 
