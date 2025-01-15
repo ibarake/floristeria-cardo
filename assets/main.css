@@ -3908,8 +3908,11 @@ COL-titles {
 
 /* Estilo para el overlay del popup */
 
-.popup-overlay h2, .popup-overlay label, .popup-overlay button{
+.popup-overlay h2{
   font-family: "NewYork", sans-serif;
+}
+.popup-overlay label, .popup-overlay button{
+font-family: "DM Sans";
 }
 .popup-overlay {
   display: none; /* Inicialmente oculto */
