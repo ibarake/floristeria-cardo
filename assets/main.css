@@ -3908,7 +3908,7 @@ COL-titles {
 
 /* Estilo para el overlay del popup */
 
-.popup-overlay *{
+.popup-overlay h2, .popup-overlay label, .popup-overlay button{
   font-family: "NewYork", sans-serif;
 }
 .popup-overlay {
