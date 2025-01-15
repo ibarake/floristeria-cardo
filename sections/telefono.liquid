@@ -69,6 +69,7 @@
     <span id="closePopup" class="popup-close">&times;</span>
     <h2>Antes de llamarnos, déjanos tus datos</h2>
     <form method="POST" action="/contact" id="popupForm">
+      <input type="hidden" name="form_type" value="contact">
       <div class="form-group">
         <label for="name">Nombre:</label>
         <input type="text" id="name" name="contact[name]" placeholder="Tu nombre" required>
@@ -81,7 +82,6 @@
         <label for="phone">Teléfono:</label>
         <input type="tel" id="phone" name="contact[phone]" placeholder="Tu teléfono" required>
       </div>
-       <!-- Campo oculto para reCAPTCHA -->
       <button type="submit" class="form-submit">Enviar</button>
     </form>
   </div>
