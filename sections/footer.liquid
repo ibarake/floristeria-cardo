@@ -5,6 +5,25 @@
         <img src="{{ settings.logo.src | img_url }}" alt="{{ settings.logo.alt }}" width="auto" height="auto">
       </a>
       <p class="parrafo-3">{{ section.settings['descripcion-marca'] }}</p>
+      <container-resumen-1>
+        <met-pagos-1>
+          <p class="subtitulo-2" id="pagos">Metodos de Pagos</p>
+          <container-met-pagos>
+            <metodo>
+              {% render 'cart-vs' %}
+            </metodo>
+            <metodo>
+              {% render 'cart-mc' %}
+            </metodo>
+            <metodo>
+              <img src="https://cdn.shopify.com/shopifycloud/admin-ui-foundations/payment-icons/d3e3d.svg" width="70">
+            </metodo>
+            <metodo>
+              {% render 'cart-pu' %}
+            </metodo>
+          </container-met-pagos>
+        </met-pagos-1>
+      </container-resumen-1>
     </item>
     <menu class="item-menu-1">
       <h3 class="subtitulo-3">{{ section.settings['titulo-menu-1'] }}</h3>
@@ -97,7 +116,7 @@
   </social-mobile>
   <hr>
   <footer-copyright>
-    <p class="parrafo-2">© Copyright 2023 Floristería Cardó. Hecho con 🤯 por <a href="https://almasagencia.com/">Almas Agencia</a></p>
+    <p class="parrafo-2">©Copyright 2023 Floristería Cardó. Hecho con 🤯 por <a href="https://almasagencia.com/">Almas Agencia</a></p>
     <links-social>
       {% if section.settings['url-facebook'] != blank %}
         <a href="{{ section.settings.url-facebook }}">
