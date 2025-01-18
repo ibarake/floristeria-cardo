@@ -186,7 +186,7 @@
   },
   "platform_customizations": {
     "custom_css": [
-      "@media only screen and (max-width: 768px) {.call-to-action {width: auto; bottom: 10px !important; left: 10px; padding: 10px; top: auto; }}",
+      "@media only screen and (max-width: 768px) {.call-to-action {width: auto; bottom: 10px !important; left: 10px; padding: 10px; top: auto; } .ocultartextotelefono{display:none; }}",
       ".call-to-action {top: auto; bottom: 20px;}",
       "._formContainerCloseButtonPosition_stahb_282 {display: none !important;}"
     ]
