@@ -79,6 +79,18 @@
       {% endif %}
 
     </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        // Get the current URL
+        const currentUrl = window.location.href;
+      
+        // Check if the URL contains the specific query parameter
+        if (currentUrl.includes('/pages/contacto?contactopopup=true')) {
+          // Redirect to the tel link
+          window.location.href = 'tel:3112085671'; // Replace with your desired phone number
+        }
+      });   
+    </script>
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
