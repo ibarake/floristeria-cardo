@@ -3931,7 +3931,7 @@ font-family: "DM Sans";
 /* Contenedor del contenido del popup */
 .popup-content {
     background: #ffffff;
-    padding: 30px;
+    padding: 20px;
     border-radius: 12px;
     max-width: 350px;
     box-sizing: border-box;
@@ -3946,14 +3946,16 @@ font-family: "DM Sans";
 
 /* Botón de cerrar */
 .popup-close {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  font-size: 24px;
-  font-weight: bold;
-  color: #555;
-  cursor: pointer;
-  transition: color 0.2s ease-in-out;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+    background: black;
 }
 
 .popup-close:hover {
