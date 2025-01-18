@@ -3936,12 +3936,12 @@ font-family: "DM Sans";
     max-width: 350px;
     box-sizing: border-box;
     width: 100%;
-    display: table;
+    
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
     text-align: center;
     position: relative;
     animation: scaleUp 0.3s ease-in-out;
-    margin: 0 auto !important;
+    
 }
 
 /* Botón de cerrar */
