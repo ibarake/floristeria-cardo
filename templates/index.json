@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "7208b537-5179-4c35-a9f0-5b7e2ed3aa1f": {
@@ -9,9 +18,9 @@
         "hero-subtitle": "Expresa tus sentimientos a través de nuestros arreglos florales, con diseños únicos y exclusivos. Somos Cardó, floristería en Bogotá.",
         "add-to-cart-title": "Añadir al carrito",
         "cta-1": "Ver por Ocasión",
-        "link-1": "shopify:\/\/collections\/all",
+        "link-1": "shopify://collections/all",
         "cta-2": "Contáctanos",
-        "link-2": "shopify:\/\/pages\/contacto"
+        "link-2": "shopify://pages/contacto"
       }
     },
     "37db2c69-b11d-4881-b7e3-83e27a003a12": {
@@ -32,7 +41,7 @@
           "fruteros",
           "plantas-decorativas"
         ],
-        "link": "shopify:\/\/collections\/all"
+        "link": "shopify://collections/all"
       }
     },
     "main": {
@@ -55,7 +64,7 @@
         "color": true,
         "border": true,
         "style-s": "style 1",
-        "link": "shopify:\/\/collections\/arreglos-florales"
+        "link": "shopify://collections/arreglos-florales"
       }
     },
     "c2d637ea-0301-46b4-814f-646ba281c446": {
@@ -121,7 +130,7 @@
         "arreglos-subtitle": "Arreglos Fúnebres",
         "collection": [
           "arreglo-condolencias-en-orquideas",
-          "copia-de-arreglo-sala-en-rosas-lirios-o-azucenas-bocas-o-estrellas-sf10-3",
+          "arreglo-sala-cima-floral-sf10-3",
           "corona-funebre-5",
           "ramo-4"
         ],
@@ -134,7 +143,7 @@
         "color": false,
         "border": false,
         "style-s": "style 2",
-        "link": "shopify:\/\/collections\/all"
+        "link": "shopify://collections/all"
       }
     },
     "ec7ee139-7af0-40a7-b9d3-a60e0edf94c7": {
@@ -142,7 +151,7 @@
       "disabled": true,
       "settings": {
         "contact-title": "Recibe 10% de descuento",
-        "image": "shopify:\/\/shop_images\/f14463c755a98e8cdb24ca7e0907ec3b.jpg",
+        "image": "shopify://shop_images/f14463c755a98e8cdb24ca7e0907ec3b.jpg",
         "contact-subtitle": "Recibe un 10% de descuento en tu primera compra si esta es mayor a COP300.000 usa nuestro cupón de descuento: M1PR1M3R4C0MPR4",
         "button-title": "Quiero descuento"
       }
