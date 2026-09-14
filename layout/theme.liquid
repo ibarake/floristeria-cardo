@@ -14,7 +14,7 @@
     {% comment %}{{ content_for_header }}{% endcomment %}
     {{ content_for_header | replace:'Google Analytics"', 'Null Google Analytics"' }}
     {% endcapture %}
-    {{ h_header | replace:'<meta name="robots" content="noindex,nofollow">':'<meta name="robots" content="index,follow">' }}
+    {{ h_header | replace: '<meta name="robots" content="noindex,nofollow">', '<meta name="robots" content="index,follow">' }}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link
       rel="preconnect"
@@ -311,3 +311,15 @@ document.querySelectorAll('.atc-btn-form').forEach(form => {
   </body>
   <script src="{{ 'main.js' | asset_url }}"></script>
 </html>
+{% comment %}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: '{{ h_header | replace:''<meta name="robots" content="noindex,nofollow">'':''<meta
+    name="robots" content="index,follow">'' }}'
+  to: '{{ h_header | replace: ''<meta name="robots" content="noindex,nofollow">'',
+    ''<meta name="robots" content="index,follow">'' }}'
+  position: 709..831
+{% endcomment %}
